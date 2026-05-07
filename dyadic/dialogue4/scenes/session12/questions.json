@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:07:31.532028",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which type of flour's protein content did Gu Linfeng compare to the frequency response characteristics of a speaker?"
+      },
+      "original_answer": "Flour with different gluten strengths",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "Yes, I used flours with different gluten strengths, analogous to the variations in timbre in music. Just like in Session 6, where I was concerned about the frequency response range of the studio monitors, the protein content in different flours is like the frequency response characteristics of different speakers, resulting in distinct 'textural timbres'.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.png",
+        "text": "How does Gu Linfeng describe the phenomenon in the problem image in the conversation?"
+      },
+      "original_answer": "The bubble activity is very high.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 9,
+          "content": "Speaking of the starter, here are photos from the cultivation stage, sent to you. The bubble activity is very high, reminding me of the time in Session 11 when we synchronized the pH data, and you shared that comparison chart of pH values for the three feeding schemes. Look at these dense bubbles—do they somewhat resemble the close-up of the starter I sent at the beginning of Session 11? However, after adjustments, the activity is now more stable.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event (yeast culture) but not in a causal relationship.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image sparked Gu Linfeng's discussion on 'the direct correlation between shell thickness and oven steam volume'? Provide the session number and image file name."
+      },
+      "original_answer": "6.png in session12",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 5,
+          "content": "I also noticed that the thickness of the crust is directly related to the amount of steam in the oven, which reminds me of the architectural spatial narrative discussed in Session 9 about *Blade Runner 2049*—how detailed design influences the overall effect. Just as the cold color palette and the depth of the long corridors in the film evoke a sense of loneliness, here, the amount of steam, as a 'detailed design,' directly shapes the 'surface texture' of the bread.",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 6,
+          "content": "",
+          "image": "6.png"
+        }
+      ],
+      "validation_notes": "Inferring that the image (6.png showing an oven and bread) drives the textual discussion (the relationship between crust thickness and steam volume) is a causal inference.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'photos of the fermentation culture stage' sent by Gu Linfeng referred to in different rounds?"
+      },
+      "original_answer": "From \"photos from the cultivation stage\" to \"these dense bubbles\" and then to \"the current activity is more stable now.\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 9,
+          "content": "Speaking of the starter, here are photos from the cultivation stage, sent to you. The bubble activity is very high, reminding me of the time in Session 11 when we synchronized the pH data, and you shared that comparison chart of pH values for the three feeding schemes. Look at these dense bubbles—doesn’t it somewhat resemble the close-up of the starter I sent at the beginning of Session 11? But after adjustments, the activity is now more stable.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the same image entity (3.png) across different rounds.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "4.png",
+        "text": "Based on the mixing and primary fermentation process shown in the picture, and the temperature control mentioned in the conversation, how many hours is the fermentation time?"
+      },
+      "original_answer": "5.5 hours",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 11,
+          "content": "This is a photo of the mixing and primary fermentation stage. After 5.5 hours of fermentation, I strictly controlled the temperature, similar to how we discussed the precision requirements for kitchen scales in Session 6—when you asked about accuracy down to 0.01g, I emphasized calibration and stability.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired multimodal information (the image shows the fermentation process, and the conversation mentions time) and apply it to answer the question.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the bread flavor baking experiment conducted by Gu Linfeng and Ye Zhiwei, the texture of experimental group C is very dense. Does this contradict the conversation content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "In terms of texture, experimental group C exhibits higher moisture content but a slightly looser structure.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories, and verify consistency.",
+      "generated_at": "2026-02-24T14:06:10.691448",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which type of bread did Gu Linfeng mention has higher moisture but a looser texture?"
+      },
+      "original_answer": "Experimental Group C",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "In terms of texture, the experimental group C has higher moisture content, but the structure is slightly loose, suggesting that the fermentation time may need adjustment. This is similar to the ergonomic personalized adjustments we discussed in Session 2 regarding shoulder and neck intervention plans—there is no one set of parameters that suits everyone, just as there is no single fermentation time that works for all dough.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information already mentioned in the conversation (Experimental Group C) to test whether the model fabricates answers; it should actually answer correctly, but the scenario requires a refusal to answer, used here to demonstrate accurate memory.",
+      "generated_at": "2026-02-24T11:07:31.532028",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "session_id": "S2-3",
+  "group_id": "G02_Runners",
+  "target_turns": 65,
+  "actual_turns": 67,
+  "dialogue": [
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img1.jpg",
+        "text": "Everyone, please take a look, my right knee is badly swollen."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, your knee does look a bit off. Could you take a side photo?"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img2.jpg",
+        "text": "This is a side view photo. Please take a look and see if there are any issues."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "img3.jpg",
+        "text": "@Big Liu, I think it's an issue with the iliotibial band. This diagram can help you understand the anatomical location."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister, it seems we should use a fascia gun this time. I have a set of pictures of massage heads that I can show you."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, do you feel a sharp pain in your knee? When I injured my knee before, it felt particularly severe."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi, it does hurt a bit, but not as badly as you said. I think it's better for me to go to the hospital and get it checked."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@DaLiu, remember to tell the doctor that you haven't done enough stretching, as this might be the issue."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, after you come back, I can teach you some yoga stretching exercises to improve your posture."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "The doctor said there's no bone injury; here's the X-ray."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu It's good that the bones weren't injured. Just follow the doctor's advice."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister, I think Liu should focus more on his stretching exercises to avoid similar situations from happening again."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "I've applied the medicated patch, hoping to get better soon."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img4.jpg",
+        "text": "Everyone, here are the fascia gun and massage heads recommended by Ricky."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu These massage heads look good, but you need to be careful when using them and avoid overdoing it."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, remember to use it in conjunction with the iliotibial band anatomy diagram I sent, and apply targeted massage."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, this kit should help alleviate a lot of your pain. Be mindful of the pressure when using it."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "img5.jpg",
+        "text": "Liu, look at the painful expression of this injured player. Make sure you never end up in that situation."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi, you're just trying to scare me, but I'll be more careful."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@DaLiu, you need to do more proper stretching. I'll send you some demonstrations."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img6.jpg",
+        "text": "Big Liu, I saw your queue number for the hospital. What did the doctor say?"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang The doctor said there's no bone injury, but advised me to rest and take medication."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, a long-term rehabilitation plan is still necessary; you can't rely solely on medication."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister Agreed, it's still necessary to combine exercise with stretching."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@DaLiu, your stretching posture last time wasn't quite right. I can teach you again."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Peach Then I'll trouble you with it; I don't want to get hurt again."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img7.jpg",
+        "text": "This is my X-ray, and the doctor said the bone is fine."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu That's good, but you're using the foam roller in the wrong position, so it might not effectively relieve the pain."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang Indeed, Liu should adjust the position of the foam roller; placing it on the outer side of the thigh would be better."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, you can also try using different massage heads with the percussion massager, which might be more effective."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, don't forget to take it slow and avoid rushing into intense movements."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img8.jpg",
+        "text": "This is the medicine prescribed by the doctor, and I'm trying it out."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Big Liu That sounds good, but remember to combine it with stretching for better results."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img9.jpg",
+        "text": "Check out this foam roller relaxation exercise demonstration, and pay attention to the posture."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang I will watch it several more times to strive for perfection."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu If you feel uncomfortable, adjust your posture promptly."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, remember to persist every day, and you'll see gradual improvement."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, your knee may require a long-term rehabilitation plan; don't take it lightly."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, you might consider incorporating some yoga to help with stretching."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img10.jpg",
+        "text": "Everyone, take a look at my stretching posture. Does it seem a bit awkward?"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@大刘, you're using the foam roller in the wrong position. It should be on the outer side of your thigh, not the front."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang This will make the iliotibial band issue more severe; adjusting your posture is crucial."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "img11.jpg",
+        "text": "@Everyone, I have a beautiful stretching pose here for comparison, hoping it can help Da Liu."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Peach, your posture looks very standard. Big Liu could refer to this angle."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@大刘, your stretching looks like you're doing acrobatics, but @桃子的 posture is definitely worth imitating."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img12.jpg",
+        "text": "@Coach Zhang, I've marked the incorrect angles. Could you take a look and see if this is correct?"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu Yes, the red lines are marked very well, and the adjustments should lead to significant improvement."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Everyone, I think Liu can persist in doing these stretches every day to gradually improve the issue."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister Agreed, persistence is key. Stretching on the yoga mat can effectively aid in recovery."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Daliu, if needed, I can help you adjust your posture. Proper use of the fascia gun is also important."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Ricky, you also guide stretching postures? I'll definitely come to learn next time!"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "Thank you for everyone's suggestions. I will adjust my posture and keep practicing, hoping my knee recovers soon."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "img13.jpg",
+        "text": "Everyone, take a look at my patch. Does my knee seem better?"
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu Looks good, how do you feel after applying the medicated patch?"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu This patch looks quite professional, hopefully it will be effective!"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu Good start, remember to continue stretching to keep your knees flexible."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Big Liu I think that plasters can indeed help alleviate pain, but they still need to be combined with exercise."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, remember to use the massage gun, don't forget!"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister, the patch feels quite soothing after applying it, but I still don't dare to exert too much force."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu Take it slow, don't rush for quick results, and stay patient."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, remember to warm up properly before competitions in the future, otherwise your knees will keep causing trouble."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu I can help you develop a long-term rehabilitation plan to gradually recover."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Big Liu If needed, I can teach you some simple yoga poses to aid in your recovery."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu Using the medicated plaster together with the fascia gun yields better results. Don't forget to drink plenty of water."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Everyone Thank you all for your help, I will persevere!"
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, keep it up, we're all supporting you!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, I hope you've recovered by the time we meet again!"
+      }
+    }
+  ],
+  "meta": {
+    "images_used": [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.jpg",
+      "img10.jpg",
+      "img11.jpg",
+      "img12.jpg",
+      "img13.jpg"
+    ],
+    "full_summary": "对话开始。\n(第1段摘要): 大刘的膝盖出现严重肿胀，大家怀疑是髂胫束的问题，并建议使用筋膜枪和进行适当拉伸。大刘去医院检查，发现没有骨头损伤，医生开了药膏进行处理。\n(第2段摘要): 大刘展示了筋膜枪套装，大家讨论如何使用以帮助他恢复。小皮用球员受伤的动图吓唬大刘。张教头询问了大刘的医院检查结果，大家建议大刘注重拉伸和长远的康复计划。\n(第3段摘要): 大刘分享了他的X光片和医生开的药，张教头提供了泡沫轴正确使用的示范。大家建议大刘结合药物和拉伸方法进行康复，并考虑长期的康复计划。\n(第4段摘要): 大刘展示了错误的拉伸姿势，大家讨论如何改进。桃子提供了标准拉伸姿势的参考。张教头标注了错误角度，大刘调整后计划坚持练习以改善膝盖问题。\n(第5段摘要): 大家对大刘的膝盖伤势进行了最后的指导和鼓励，讨论了膏药的效果，并强调了长期康复的重要性。",
+    "resolved_events": [
+      "确认大刘膝盖肿胀原因并进行初步处理",
+      "大刘的膝盖伤病是否需要长期治疗",
+      "大刘的拉伸问题如何进一步改善",
+      "大刘膝盖的初步处理已完成，康复计划已制定"
+    ],
+    "active_events": []
+  },
+  "timeline_date": "2024-05-20"
+}

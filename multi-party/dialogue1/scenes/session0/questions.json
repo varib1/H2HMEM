@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T09:19:07.516086",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T09:19:07.516095"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "On February 20th, what are the technical similarities between the shoebox running shoes recommended by Ricky to Da Liu, which feature specific athlete quotes, and the shoes mentioned by Ricky on February 18th that caused his heart rate to spike?"
+      },
+      "original_answer": "Both pairs of shoes utilize carbon plate technology.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 39,
+          "content": "Ricky: @Iron Sister, yes, these are newly purchased carbon plate running shoes. The bounce is so strong that I find them a bit hard to control.",
+          "image": "session1/img9.jpg"
+        },
+        {
+          "session": "2",
+          "turn": 21,
+          "content": "Ricky: [Sending picture: img5.jpg] This is the midsole technology of my new shoes, check out this carbon plate.",
+          "image": "session2/img5.jpg"
+        },
+        {
+          "session": "2",
+          "turn": 43,
+          "content": "Ricky: [Sent picture: img10.jpg] Check out these top-tier racing shoes I just unboxed...",
+          "image": "session2/img10.jpg"
+        }
+      ],
+      "validation_notes": "Integrating the heart rate reasons from Session 1 and the shoe details from Session 2, assess the memory of equipment technology.",
+      "generated_at": "2026-04-01T09:19:07.516117",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In session 1, the issues with A Jie's kitchen equipment (such as the peeling coating on the bottom of the pot) were mentioned multiple times. By session 3, when A Jie attempted to recreate the viral pork chop recipe, how did his equipment problems affect the cooking process, and what updated suggestions did Lin Sen and Dr. Wu provide?"
+      },
+      "original_answer": "In session 1, A Jie experienced cooking issues due to the peeling of the pot's inner coating (session1/img8.jpg) and a broken stove knob (session1/img9.jpg). In session 3, while attempting to recreate pork chops, A Jie encountered equipment problems that led to cheese leakage from the pot (session3/img5.jpg) and unstable oil temperature. Lin Sen suggested purchasing a professional meat tenderizer and an oil thermometer, while Dr. Wu advised paying attention to oil absorption and adopting healthier cooking methods. Ultimately, in session 3, A Jie showed improvement but still has room for further progress.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 34,
+          "content": "Ah Jie: [Sent a picture: img8.jpg] The coating on my pot is peeling off, help...",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "1",
+          "turn": 39,
+          "content": "Ah Jie: [Sent a picture: img9.jpg] The stove knob is broken too, need some comfort.",
+          "image": "img9.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 21,
+          "content": "B_Kiki: [Sent image: img5.jpg] Family, look at this mess! The cheese leaked all over the pot, I can't stop laughing hahaha~ Ajay, is there something wrong with your sealing?",
+          "image": "img5.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 50,
+          "content": "A_LinSen: @D_AhJie The heat is still a bit off. Actually, the oil temperature needs to be kept stable at around 180 degrees to avoid excessive browning.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 60,
+          "content": "A_LinSen: @D_AhJie Listen to me, buy this brand of oil thermometer to stabilize the oil temperature for better results.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 61,
+          "content": "E_DrWu: @D_AhJie Remember to pair it with vegetables, and keep your fat intake within an appropriate range.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Issue Tracking: The Evolution of AJ's Device Problem from Session 1 to Session 3, and Suggested Updates, Examining Knowledge Updates and Consistency Maintenance.",
+      "generated_at": "2026-04-01T09:19:07.516131",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Please arrange the following four key events in chronological order based on the logical progression of the conversation:\nA. Da Liu initiates a \"cloud consultation\" for help due to knee swelling.\nB. Ricky unboxes and showcases top-tier racing shoes featuring athlete quotes.\nC. Dr. Wu provides remote guidance on light meal calories during a gathering.\nD. Xiao Pi ends up eating instant noodles the next day after staying up late watching a soccer match."
+      },
+      "original_answer": "The correct order is: B -> A -> D -> C.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 43,
+          "content": "Ricky: [Sent picture: img10.jpg] Check out these top-tier racing shoes I just unboxed...",
+          "image": "session2/img10.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Da Liu: [Sent picture: img1.jpg] Everyone, please take a look. My right knee is badly swollen.",
+          "image": "session3/img1.jpg"
+        },
+        {
+          "session": "4",
+          "turn": 81,
+          "content": "Da Liu: [Sends picture: img16.jpg] Look outside quickly, the sky is already bright.",
+          "image": "session4/img16.jpg"
+        },
+        {
+          "session": "5",
+          "turn": 20,
+          "content": "Dr. Wu: @Ricky Let me check if the calorie content of these light meals is appropriate.",
+          "image": "session5/img8.jpg"
+        }
+      ],
+      "validation_notes": "Assess the ability to organize the timeline of key events across four different Sessions.",
+      "generated_at": "2026-04-01T09:19:07.516141",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    }
+  ],
+  "summary": {
+    "total_questions": 3,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Knowledge Resolution": 1,
+      "Temporal Reasoning": 1
+    },
+    "by_difficulty": {
+      "medium": 2,
+      "hard": 1
+    },
+    "converted_from_cross_session": true
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:19:11.623134",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "On November 22, Xia Qingchuan mentioned what are the top and base notes of the newly purchased ambient candle?"
+      },
+      "original_answer": "The top note is the crisp scent of cedar, while the base note is the warm fragrance of amber.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Especially this newly purchased scented candle on the bedside table, with its initial notes of cool cedarwood that gradually transition into warm amber, instantly transports me into a state of tranquility.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation on November 20, Xia Qingchuan mentioned that there was a picture that Su Mingche had sent before. Please provide this repeatedly sent picture. Provide the session number and the picture file name."
+      },
+      "original_answer": "2.png in session10",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 10,
+          "content": "Qingchuan, I'm sending you a picture that might help you think more clearly. We can use this framework to understand your candle consumption.",
+          "image": "2.png"
+        },
+        {
+          "session": "session10",
+          "turn": 11,
+          "content": "I remember, did you send me this picture once before? My candle might be at the intersection of the three.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recalling corresponding image content (color) based on textual information belongs to a correlational relationship, not causal inference.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.jpg",
+        "text": "How does Su Mingche evaluate the problematic images?"
+      },
+      "original_answer": "Warm and meticulously detailed, it very much embodies Xia Qingchuan's own style.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "",
+          "image": "1.jpg"
+        },
+        {
+          "session": "session10",
+          "turn": 2,
+          "content": "Qingchuan, this corner looks so cozy. The attention to detail really reflects your style.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image drives the subsequent text, which falls under causal inference.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what is Xia Qingchuan's candle referred to as from being described as a 'newly bought ambiance candle' in round 3 to being called in round 9?"
+      },
+      "original_answer": "An anchor point.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Especially this newly purchased scented candle on the bedside table, with its initial notes of crisp cedarwood that gradually transition into warm amber, instantly transports me into a state of tranquility.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 9,
+          "content": "During the intense creative period of Session 1, I often felt exhilarated. Now, the tranquil ambiance of this candle serves as an anchor, reminding me to slow down.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the same entity (candle) across different rounds.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Xia Qingchuan said that the top note of the atmosphere candle he bought is lemon, and the base note is sandalwood. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Especially this newly purchased scented candle on the bedside table, with its initial notes of crisp cedarwood that gradually transition into warm amber, instantly transports me into a state of tranquility.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Where did Xia Qingchuan mention buying the candles?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Asking about information not present in the conversation (purchase location) to test refusal ability and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:19:11.623134",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 4
+    }
+  }
+}

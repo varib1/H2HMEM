@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:24:47.330639",
+    "session_name": "session14",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 14,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session14",
+    "session_number": 14,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What activities are the paper-cutting artist and the physical education teacher mentioned by Lin Shu in the conversation responsible for?"
+      },
+      "original_answer": "Paper Cutting Instruction, Traditional Game Guidance",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 9,
+          "content": "Lin Shu: Our community has the space to plan these specialized areas. I'll take care of coordinating logistics and volunteers, Mingyuan, you focus more on activity design and educational value. By the way, the parent-child activity idea bank you shared earlier, such as nature treasure hunts and family theater nights, can also be integrated.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 10,
+          "content": "Zhou Mingyuan: For children, diverse activities can enhance engagement. We could try this: set up a 'Cultural Experience Corner,' invite paper-cutting artists to teach, and have retired physical education teachers guide traditional games. Follow-up feedback is crucial—collect opinions after the activities.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recall the explicitly mentioned activity arrangements in the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "Which specific task or activity in the conversation does the problem image correspond to?"
+      },
+      "original_answer": "Synchronization of Meeting Materials and Division of Labor Review",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "Lin Shu: [Sent picture: 1.png] Mingyuan, I've just finished organizing the core work schedule for the meeting and am sending it to you for review. The division of labor table clearly outlines the publicity team, event team, and logistics team. Everyone is highly motivated, and the preliminary budget is currently being submitted for support from the neighborhood office.",
+          "image": "1.png"
+        },
+        {
+          "session": "session14",
+          "turn": 0,
+          "content": "Image 1 (File name: 1.png): Core Scene: This is a screenshot of a meeting document titled \"Core Work Progress Table for the First Preparatory Meeting of the Community Culture Festival (Expanded Version)\".",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Based on the meeting progress chart in the image, recall the corresponding dialogue task description.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "What kind of comment did the problematic picture elicit from Zhou Mingyuan?"
+      },
+      "original_answer": "This is a good time, with pleasant weather, and both parents and children are free.",
+      "answer_source": "both",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 5,
+          "content": "Lin Shu: [Sent picture: 2.png] Completely agree! I just made an information notice summarizing the meeting details, including the topic, time, and person in charge. Sending it to you for reference to facilitate follow-up promotion and coordination.",
+          "image": "2.png"
+        },
+        {
+          "session": "session14",
+          "turn": 0,
+          "content": "Image 2 (File Name: 2.png): Core Scenario: This is an information notice diagram, primarily detailing the preparations for a community cultural festival meeting. It includes information such as the theme, event date, responsible persons, and activity reporting content.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: Image 2.png directly prompted Lin Shu to mention the action of creating an information notice chart in the conversation.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "How are problem images referenced and cited in the conversation?"
+      },
+      "original_answer": "Volunteer Registration Form",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 11,
+          "content": "Lin Shu: [Sending picture: 3.png] Speaking of volunteers, I just designed a registration form and am sending it to you for a look. Our community has enthusiastic residents, and school teacher representatives are also actively participating. This form can help with task allocation and matching specialties.",
+          "image": "3.png"
+        },
+        {
+          "session": "session14",
+          "turn": 0,
+          "content": "Image 3 (File name: 3.png): Core Scenario: This is an image of a registration form for volunteer recruitment at a community cultural festival, with a light blue background. The content includes the form title, fields to be filled out, and options.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Image tracking text: The image 3.png is referred to as the volunteer registration form in the conversation.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what is the specific amount of the cultural festival budget mentioned by Lin Shu?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "Lin Shu: [Sent picture: 1.png] Mingyuan, I've just finished organizing the core work schedule for the meeting and am sending it to you for review. The division of labor table clearly outlines the publicity team, event team, and logistics team. Everyone is highly motivated, and the preliminary budget is currently being submitted for support from the neighborhood office.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Refusal Scenario: When asked for information not present in the conversation (such as specific budget amounts), the response should be to decline to answer or point out the missing information.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "When Lin Shu was preparing for the community cultural festival, she couldn't find any volunteers. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "both",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 4,
+          "content": "Zhou Mingyuan: For children, participating in such activities can enhance their sense of community identity. How about this: we set the theme as 'Our Home, Our Shared Festival,' and schedule it around the May Day holiday next year. What do you think?",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 5,
+          "content": "Lin Shu: [Sent picture: 2.png] Completely agree! I just made an information notice summarizing the meeting details, including the topic, time, and person in charge. Sending it to you for reference to facilitate follow-up promotion and coordination.",
+          "image": "2.png"
+        },
+        {
+          "session": "session14",
+          "turn": 0,
+          "content": "Image 2 (File name: 2.png): Core Scenario: This is an information notice diagram, primarily detailing the preparations for a community cultural festival meeting. It includes information such as the theme, event date, responsible personnel, and activity reports.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Identify potential contradictions between dialogue text (vague time) and image information (specific date), assessing the ability to recognize inconsistencies.",
+      "generated_at": "2026-02-24T11:24:47.330639",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Answer Refusal (AR)": 1,
+      "Conflict Detection (CD)": 1
+    },
+    "by_difficulty": {
+      "medium": 4,
+      "easy": 1,
+      "hard": 1
+    }
+  }
+}

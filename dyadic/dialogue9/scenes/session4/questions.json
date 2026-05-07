@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:17:32.109442",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What fruit from Aunt Zhang's house in their neighborhood, mentioned by Li Yifan, will crack if not picked in time when ripe?"
+      },
+      "original_answer": "Tomato",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Li Yifan, look at the photos Aunt Zhang just sent. She harvested over a dozen cucumbers from her balcony all at once, and the tomatoes are so ripe that they’ll split if not picked in time. Several other elderly folks in the building are in the same situation—it’s such a shame to let vegetables go to waste. I was thinking, could we set up a \"shared vegetable basket\" downstairs? Anyone with extra vegetables or fruits could leave them there, and those in need could take what they want.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall plain text fact: Date planned to initiate discussion.",
+      "generated_at": "2026-02-27T13:53:39.605286",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the dialogue, how many layers of shelves did Li Yifan mention are needed to prevent the vegetables from being piled up and crushed?"
+      },
+      "original_answer": "Four floors",
+      "answer_source": "both",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 6,
+          "content": "Look at this sketch, a four-tier shelf with compartments on each level.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Based on the textual information (described by Li Yifan), recall the content of the corresponding image (3.png): the number of shelf levels.",
+      "generated_at": "2026-02-27T13:53:39.605286",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "The problematic picture sparked Zhao Xiaotang's thoughts?"
+      },
+      "original_answer": "It's such a pity that the tomatoes have gone bad. We need to act quickly, or more vegetables will go to waste.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "Look at this photo, what a shame the tomatoes have gone bad. We need to act quickly, or more vegetables will go to waste.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Infer that the image (2.png, showing a rotten tomato) drives the text (Zhao Xiaotang's concerns and urging).",
+      "generated_at": "2026-02-27T13:53:39.605286",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "3.png",
+        "text": "How many times was the item in the question image referenced in the conversation between the two individuals on June 20th?"
+      },
+      "original_answer": "6 times",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 6,
+          "content": "Look at this sketch, a four-tier shelf with compartments on each level.",
+          "image": "3.png"
+        },
+        {
+          "session": "session4",
+          "turn": 8,
+          "content": "Well, taken into account. A paper registration book can also be provided simultaneously and placed next to the shelf.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "When do you think the shelf will be ready?",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 14,
+          "content": "I can also create a user guide to post next to the shelf, explaining the operating steps and rules.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 16,
+          "content": "The table is clear; I am responsible for the shelves and the registration system.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 17,
+          "content": "Once you've set up the framework, we'll run a trial for a week, gather feedback, and then make adjustments.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential changes of the 'shelf' entity across different rounds: from the initial proposal to the sketch design and then to the production plan.",
+      "generated_at": "2026-02-27T13:53:39.605286",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The shelf for storing vegetables will take a week to complete. Does this contradict the completion time mentioned in the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 10,
+          "content": "I have some old wooden boards at home, so I can start working on it this weekend. It should take about two days to complete.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Introduction of new information that may contradict the question and dialogue (to be completed within a week), to test whether the model can identify errors.",
+      "generated_at": "2026-02-27T13:02:57.487726",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What breed is Xia Qingchuan's cat 'Snowball'?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue (cat breed) to test the ability to decline answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:17:32.109442",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

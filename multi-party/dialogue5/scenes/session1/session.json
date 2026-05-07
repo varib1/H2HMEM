@@ -1,0 +1,541 @@
+{
+  "session_id": "S5-1",
+  "group_id": "G05_Travelers",
+  "target_turns": 70,
+  "actual_turns": 71,
+  "dialogue": [
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img1.jpg",
+        "text": "Everyone, take a look at this beautiful snowy scene. Mia says she wants to go to Japan."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Vicky Look, the night view here is truly dreamy!"
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "img2.jpg",
+        "text": "If we go to Japan, we can also enjoy such kaiseki cuisine, which is definitely worth the money."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "img3.jpg",
+        "text": "I'm afraid I can't afford to go! Look at my balance."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@小白 I think Changbai Mountain is also a good choice, and the cost is relatively reasonable."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@Dawei, I also find the barbecue at Changbai Mountain very appealing."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger However, there are too many people on Changbai Mountain, so it might not be easy to take good photos."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@小白 Japan is indeed expensive, but if you stay at the hotel in picture 9, the view is amazing."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "The hotel in Figure 9 is very close to the scenic area, making travel very convenient."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@Vicky I see the budget is seriously overrun, so let's consider Changbai Mountain first."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "The budget is indeed an issue, but I'm still leaning towards Changbai Mountain."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang If everyone has decided, then I'll reluctantly accept it."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "The barbecue at Changbai Mountain is truly not to be missed; we can really enjoy it."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Alright, then it's decided—we're going to Changbai Mountain. The flight tickets are already booked!"
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img4.jpg",
+        "text": "Look at this scenery of Tianchi Lake on Changbai Mountain, isn't it very attractive?"
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "Changbai Mountain's Tianchi is not just beautiful; it is also China's deepest alpine lake, with a depth of over 300 meters. Moreover, it is a crater lake, formed after a volcanic eruption."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang It is indeed beautiful, but I'm still a bit hesitant about crowded places."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Mia Actually, we could go during the off-season when there are fewer tourists."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "img5.jpg",
+        "text": "Besides the scenery, there's also this barbecue—just thinking about it makes my mouth water."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "@Vicky I dare not eat too much; I need to save some money."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Xiao Bai Don't worry, barbecue isn't expensive, we can enjoy it to our heart's content."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "img6.jpg",
+        "text": "But look, this crowded tourist spot is really a bit worrying."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Mia, this is indeed a bit scary, but we can avoid the peak times or visit some lesser-known attractions."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Vicky is right, and we can make plans in advance to avoid crowded places."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Overall, I think Changbai Mountain is quite appealing, especially considering our budget."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang Yes, and this trip can be more flexible without worrying too much about the cost."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "That puts my mind at ease, looking forward to this trip."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "Alright, I'm starting to look forward to it too, thinking about taking some nice photos."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Alright, it's settled then. Let's plan it out properly and make sure we have a great time."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img7.jpg",
+        "text": "Take a look at the flight prices for these two places, what do you think?"
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, it's true that Japan has become much more expensive, but if you stay at the hotel in Figure 9, it might still be worth considering."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Vicky I also think the hotel in picture 9 is nice, but the budget is a bit tight."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, domestic airfare prices are more affordable, so I'm leaning towards traveling domestically."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "I agree with Xiao Bai, the temptation of barbecue is also not to be overlooked!"
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "img8.jpg",
+        "text": "I've done a simple analysis of the budget. Please take a look and see if any adjustments are needed."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@David, have you considered hotel expenses like those in Figure 9 in your budget?"
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@David If we can stay in Picture 9, I think the budget could be reconsidered."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "It seems there are still some differences of opinion regarding the accommodation. Let's take a closer look at the specific situation in Figure 9."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "img9.jpg",
+        "text": "This hotel has a pleasant environment and convenient transportation."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@David It does look very comfortable, but we need to consider the budget more carefully."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@David, I think a comfortable hotel like the one in Picture 9 can make the journey more enjoyable."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger If we could stay in this kind of hotel, Changbai Mountain would be a good choice."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Alright, since everyone is interested in the hotel in Figure 9, we can look into how to adjust the budget to make this plan work."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img10.jpg",
+        "text": "Look at the distance from this hotel to the scenic area; the transportation is very convenient."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang Indeed, the distance isn't far, but the luxury of the hotel itself is the key factor."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Mia The floor-to-ceiling window and bathtub in Picture 9 are both excellent; I think they're worth considering."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@Vicky But I can't afford the budget for a luxury hotel; we still need to find a balance."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@小白 You can adjust other expenses, such as dining and activities, to focus on experiencing the hotel."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@David Agreed, the hotel experience was the highlight of this trip, and we can save on other aspects."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img11.jpg",
+        "text": "This is the previous voting result, we have already decided on Changbai Mountain."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang Since the decision has been made, let's see how to optimize the budget."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@Mia We can consider sharing a room to reduce accommodation costs."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "@Vicky Sharing a room is a great idea; it can significantly reduce expenses."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@小白 If everyone agrees, I think it could work."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@David I'm fine with it, as long as everyone is comfortable."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img12.jpg",
+        "text": "The vote result is 4:2, so let's proceed as planned."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang Since the votes are already decided, let's look forward to the trip to Changbai Mountain."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "img13.jpg",
+        "text": "Look at this, there are also nice places in Changbai Mountain."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Mia Indeed, from this perspective, Changbai Mountain is also quite appealing."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Mia Those forests look really beautiful, looking forward to taking photos there."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img14.jpg",
+        "text": "The flight tickets are all set, everyone get ready!"
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang That's great, everything is finally confirmed."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "Now we're just waiting to set off, looking forward to the beautiful scenery of Changbai Mountain."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "Although I was a bit reluctant at first, I hope to have a pleasant journey."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@Mia, staying at that five-star hotel would probably make you even more satisfied."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "Yes, once we get there, we must try some delicious barbecue."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "Barbecue is a must! But I might have to keep an eye on my spending."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Xiao Bai No problem, we can share together, and the budget won't be exceeded."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Alright, is everyone ready? The itinerary is all set."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "Ready, hoping to come back and take some beautiful photos."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "Looking forward to this trip to Changbai Mountain, it feels like it's going to be great."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "Then let's set off, see you at Changbai Mountain!"
+      }
+    }
+  ],
+  "meta": {
+    "images_used": [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.jpg",
+      "img10.jpg",
+      "img11.jpg",
+      "img12.jpg",
+      "img13.jpg",
+      "img14.jpg"
+    ],
+    "full_summary": "对话开始。\n(第1段摘要): 通过对话，大家讨论了去日本和长白山的优劣，最终决定去长白山。\n(第2段摘要): 经过一番讨论，大家虽然对长白山的人流量有些顾虑，但在预算、景色和美食的吸引下，最终都决定前往长白山，并计划通过巧妙的安排避开旅游高峰。\n(第3段摘要): 通过对机票价格、预算分析和酒店环境的讨论，大家逐渐接受长白山的计划，并考虑通过合理调整预算来实现入住豪华酒店的可能。\n(第4段摘要): 讨论了酒店距离和豪华程度，调整预算以实现入住豪华酒店。最终确认了旅行计划细节。\n(第5段摘要): 最终的旅行决定已经达成，大家对于长白山的行程表示期待，并准备出发。",
+    "resolved_events": [
+      "目的地决策：决定去长白山",
+      "目的地决策：决定去长白山",
+      "预算调整以实现豪华酒店入住",
+      "最终确认旅行计划细节",
+      "目的地决策已彻底解决",
+      "旅行准备完成"
+    ],
+    "active_events": []
+  },
+  "timeline_date": "2024-11-01"
+}

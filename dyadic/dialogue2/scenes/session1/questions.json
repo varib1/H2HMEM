@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:20:23.742207",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the frequency of Chen Pi's activities as observed by Shen Qingyan?"
+      },
+      "original_answer": "The activity frequency is very low, and most of the time it lies still.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "The activity level is very low; most of the time, it lies still, and its eyes appear listless.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-03-01T12:20:23.741195",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the name of the pet-related app that Lu Zhixing shared with Shen Qingyan?"
+      },
+      "original_answer": "PetPace",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 8,
+          "content": "Oh, this purple interface is designed quite simply.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "[Send image: 2.jpg]",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image: Based on the textual information from the conversation (purple interface), retrieve the corresponding image (2.png).",
+      "generated_at": "2026-03-01T12:20:23.741195",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which picture did Shen Qingyan send to express her concern about Chen Pi's health condition? Provide the session number and the picture file name."
+      },
+      "original_answer": "1.png in session1",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Shen Qingyan: [Sent a picture: 1.jpg] Zhixing, Chenpi is acting very strange today. I took a photo and sent it to you. Look, it’s not even interested in its favorite snacks. Normally, it would rush over as soon as it hears the sound of the packaging.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The question is based on image-driven text causal inference, asking for the reason behind sending the image.",
+      "generated_at": "2026-03-01T23:45:23.741403",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the APP name mentioned by Lu Zhixing evolve from an initial description to a specific reference?"
+      },
+      "original_answer": "From \"Pet Health-Related APP\" evolved into \"PetPace,\" then abbreviated as \"APP.\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "I'm sharing a pet health-related app with you called PetPace.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "The app should be able to generate trend charts for your convenience in observation.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 14,
+          "content": "The reminder feature of this app, I set it to record every morning and evening.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for entities (APP) across different rounds.",
+      "generated_at": "2026-03-01T12:20:23.741195",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "If a cat is sick, based on the conversation, what aspects of information can be recorded to monitor the cat's condition?"
+      },
+      "original_answer": "Food intake, excretion status, activity frequency",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 2,
+          "content": "We need to conduct a systematic analysis. What specific symptoms are there? For instance, have you observed any changes in data such as food intake, excretion, or activity frequency?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learn new information (APP name PetPace) and apply it to answer the data content entered by Shen Qingyan.",
+      "generated_at": "2026-03-01T12:20:23.742207",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "If someone says Shen Qingyan used a notebook to manually record the data of Chen Pi, does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "Recording... yes, recording makes me feel more secure. But how should I do it? Write it down in a notebook by hand? I'm afraid I might miss some details.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "I have already downloaded the app and started entering today's data for Chen Pi.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (notebook handwriting) and existing memories (using the APP).",
+      "generated_at": "2026-03-01T12:20:23.742207",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What is Chen Pi's favorite toy?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not present in the conversation should be refused to avoid hallucinations.",
+      "generated_at": "2026-03-01T12:20:23.742207",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

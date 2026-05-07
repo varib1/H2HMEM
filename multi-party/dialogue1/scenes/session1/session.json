@@ -1,0 +1,533 @@
+{
+  "session_id": "S1-1",
+  "group_id": "G01_Foodies",
+  "target_turns": 70,
+  "actual_turns": 71,
+  "dialogue": [
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "img1.jpg",
+        "text": "Everyone, take a look at the plating of this steak. @Dr. Wu, is the texture of the meat okay?"
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen Absolutely amazing! Who among us can truly appreciate this? The plating is so professional! But hurry, take a look at my pizza—let's go!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen This steak looks good, but you still need to pay attention to the fat ratio in the meat."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "img2.jpg",
+        "text": "@Kiki I also made some ochazuke. Look at the wooden bowl in this light, isn't it soothing?"
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "@Su Qian This ochazuke looks so comforting, but I still need to figure out my fried egg situation, help..."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "img3.jpg",
+        "text": "Everyone, look at this pizza! @Dr. Wu, please don't mention the calories—just share the link!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Kiki This pizza isn't exactly healthy; the sodium content in the sausage is over the limit."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, your issue with the fried egg can actually be solved by controlling the heat. Listen to me, next time try using medium-low heat."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen, the pink hue of your steak is quite professional, but you could add a bit more artistic flair to the plating."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "@林森 Okay, I'll definitely pay attention to the heat next time. But the coating on my pot has worn off, so there's nothing I can do about it..."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰 The issue with this pot indeed affects your cooking results. It's recommended to get a new one."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰 It's best to eat less of charred food; carcinogens should not be underestimated."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿杰 I think you could try some new recipes, or just come over to Lao Lin's place for a meal!"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@Kiki I also have some simple recipes here that I can share with you."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "img4.jpg",
+        "text": "This time's fried egg, life-saving..."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰, your egg is severely burnt, it might be carcinogenic."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, the heat control is still a bit off. Listen to me, buy this brand of pot, it works well."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿杰, family, who can understand? Should this pot be retired?"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@阿杰 It really seems like new equipment is needed, maybe try some new ingredient combinations?"
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "img5.jpg",
+        "text": "This is actually the Maillard reaction, and 60 degrees is just right."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@Old Lin, absolutely amazing! This pink flesh looks incredibly tempting!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Old Lin is indeed very professional, but you should eat less red meat and control your sodium intake."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@Old Lin, this cross-section is truly artistic, and the lighting is excellent as well."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "img6.jpg",
+        "text": "Charge! Is this Old Lin's secret weapon?"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Old Lin The water bath machine is well set up, with very precise temperature control."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "@Old Lin, boss, please guide me. Is this temperature the key?"
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰 Yes, slow cooking can preserve the juiciness and tenderness of the meat."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿杰, did you learn? Hurry up and get a new pot!"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "img7.jpg",
+        "text": "I also made a little plum tea over rice, and the lighting is just perfect."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@Su Qian Absolutely amazing! The color of these dried plums is just perfect. Who else gets it, fam?"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Su Qian, please pay attention to the sodium content in dried plums. While they are comforting, it's important to prioritize your health."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "@苏浅 looks very comforting, but my burnt instant noodles can't compare..."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@Su Qian This is actually the Maillard reaction, and the lighting is indeed quite good."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "img8.jpg",
+        "text": "The coating on my pot is peeling off, help..."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿杰, it's really time to change this pot. Let's get a new one!"
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, listen to me, buy this brand, and it won't turn black next time."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰, this kind of pot with peeling coating is also not good for health."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@阿杰 Maybe consider getting a new stove?"
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "img9.jpg",
+        "text": "The stove knob is broken too, I need some comfort."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@A Jie, you're really going all out with the kitchen renovation! That's absolutely amazing—go for it!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰 This stove is unsafe; it is recommended to repair it as soon as possible."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰 Next time you cook with new equipment, the heat control still needs a bit of work."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "img10.jpg",
+        "text": "Family, check out the leftover crust of my pizza, absolutely amazing!"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@Kiki The edges look a bit dry, but the pizza has a nice color."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Kiki This sausage really isn't healthy; it's best to eat less of it. It has excessive carbs and fat."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@Kiki Listen to me, you should try making pizza yourself from now on. Using fresh ingredients will make it taste much better."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "img11.jpg",
+        "text": "Hey folks, how's my boiled chicken breast and broccoli looking?"
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿杰 It feels a bit monotonous, who else gets it? Eating like this is no fun."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰 Actually, low-fat and high-protein is good, but make sure to vary your diet and not eat like that for every meal."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@阿杰 It would be better with a richer color combination, making it look more appetizing."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "img12.jpg",
+        "text": "Let me show you too, how does this strawberry arrangement look?"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@林森 The plating is truly artistic, and the lighting is fantastic—it's so soothing and full of healing vibes."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen, cousin, what brand of strawberries did you buy? I want to try them too."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@林森 These strawberries are good, but they're high in sugar, so it's best to eat them in moderation."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "Everyone's food looks so good. I wish I could upgrade my kitchen equipment soon."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, listen to me. First, get a better pot, then fix the stove. It will definitely improve your cooking skills."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "img13.jpg",
+        "text": "This is actually the Maillard reaction... Everyone, take a look at my pour-over coffee setup this time."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen Wow, absolutely amazing! This equipment looks so high-end, I'm buying it!"
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen The lighting is really good, and the equipment looks very textured, making the shot appear like a work of art."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Lin Sen, your equipment is quite impressive, but how well do you control the acidity of the coffee?"
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "img14.jpg",
+        "text": "Help... can anyone help me with this mountain of dirty dishes?"
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "@阿Jie, can anyone relate? This bowl is stacked way too high. Jie, you don't usually do this, do you?"
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, this is a bit overcooked and still not quite right. Ah Jie, maybe it's time to upgrade your kitchen equipment."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@阿杰 There's quite a bit of oil in these bowls. Try to eat less sugar, Ah Jie."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@阿杰 Although there are many bowls, you can wash them in batches, which might feel more therapeutic."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "Folks, I get it now. Looks like I really need to change my pot and stove."
+      }
+    },
+    {
+      "role": "Kiki",
+      "content": {
+        "image": "",
+        "text": "Charge! Ah Jie, go buy a new one right away. We absolutely cannot continue like this anymore."
+      }
+    },
+    {
+      "role": "Lin Sen",
+      "content": {
+        "image": "",
+        "text": "@阿杰, listen to me, buy this brand; it's quite durable."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@林森 and @阿杰, the new equipment is also very helpful for healthy eating."
+      }
+    },
+    {
+      "role": "Su Qian",
+      "content": {
+        "image": "",
+        "text": "@林森 The equipment you recommended is indeed good, and I've also made a little..."
+      }
+    },
+    {
+      "role": "Ajie",
+      "content": {
+        "image": "",
+        "text": "Thank you for your suggestions. I'll go check the equipment right away and strive to avoid making mistakes next time."
+      }
+    }
+  ],
+  "meta": {
+    "images_used": [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.jpg",
+      "img10.jpg",
+      "img11.jpg",
+      "img12.jpg",
+      "img13.jpg",
+      "img14.jpg"
+    ],
+    "full_summary": "对话开始。\n(第1段摘要): 本段主要讨论了林森的牛排专业度，苏浅的茶泡饭治愈感，以及Kiki的披萨健康问题。阿杰继续求助于荷包蛋的烹饪技巧，吴医生提供健康饮食建议。\n(第2段摘要): 阿杰的荷包蛋问题受到关注，并建议换锅。林森展示牛排截面和水浴机设定，获得点赞。Kiki继续感叹林森的厨艺。\n(第3段摘要): 本段主要围绕苏浅的梅干茶泡饭的视觉效果和阿杰的厨房设备问题展开。苏浅的茶泡饭得到赞赏，阿杰的锅和灶台问题引发关注，吴医生提供健康建议。\n(第4段摘要): 本段通过展示和评价食物图片，讨论了健康饮食和美学摆盘，阿杰的厨房设备问题得到了进一步关注。\n(第5段摘要): 本段中，林森展示了手冲咖啡设备，引发了对咖啡品质的讨论。阿杰再次展示了厨房设备的问题，大家纷纷建议他更换锅和灶台。最终，阿杰接受了建议，决定去改进他的厨房设备。",
+    "resolved_events": [
+      "林森的牛排质量得到认可",
+      "苏浅的茶泡饭视觉效果被赞赏",
+      "阿杰的荷包蛋烹饪问题",
+      "Kiki的披萨健康问题",
+      "阿杰的厨房设备问题"
+    ],
+    "active_events": []
+  },
+  "timeline_date": "2024-02-18"
+}

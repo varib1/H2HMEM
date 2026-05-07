@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T17:30:19.325370",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 12",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 12"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Cheng Yanqiu mentioned that when the average pressure value exceeds a certain threshold, there is an 85% probability that the proportion of deep sleep will decrease."
+      },
+      "original_answer": "65",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "For example, when the average pressure value exceeds 65, there is an 85% probability that the proportion of deep sleep will decrease.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding recollection of the original conversation, but focusing on important information.",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the screenshot of Cheng Yanqiu's health data dashboard from the conversation, how many steps are shown?"
+      },
+      "original_answer": "4,043 steps",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "This is a screenshot of my health data dashboard from the past week.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, where the images and text are related to the same event (sharing health data), not in a causal relationship.",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which picture triggered Cheng Yanqiu's discussion on 'prediction anxiety'? Provide the session number and the picture file name."
+      },
+      "original_answer": "1.png in session12",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Zhiwei, this is a screenshot of my health data dashboard from the past week, I wanted to share it.",
+          "image": "1.png"
+        },
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "Sometimes I do experience 'forecast anxiety'; seeing unfavorable data trends makes me unconsciously tense.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image (health data dashboard) drives the text (discussion predicting anxiety), which is causal inference.",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is the 'early warning system' mentioned by Cheng Yanqiu referred to and cited?"
+      },
+      "original_answer": "From \"warning system\" to \"that warning system\" and then to \"system\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "I am optimizing an early warning system.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "But when that warning system sounded the alarm,",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 13,
+          "content": "The system can suggest taking a break or meditating.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity (warning system) across different rounds.",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "If someone says Cheng Yanqiu's warning system is based solely on objective data and does not consider any subjective factors, does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 9,
+          "content": "I tried to incorporate more contextual variables into the early warning system, such as mood logs.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 17,
+          "content": "I will continue to optimize the system and attempt to integrate more subjective elements.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between new information (based solely on objective data) and conversational memory (considering subjective factors).",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Cheng Yanqiu mentioned what specific numerical value his sleep quality is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not present (specific numerical values of sleep quality) should be refused to avoid hallucinations.",
+      "generated_at": "2026-03-01T17:30:19.325370",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 1,
+      "hard": 2
+    }
+  }
+}

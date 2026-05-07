@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:25:03.711347",
+    "session_name": "session2",
+    "dialogue_name": "Dialogue 14",
+    "session_number": 2,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session2",
+    "session_number": 2,
+    "dialogue_name": "Dialogue 14"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the health points redemption reward proposed by Lin Xingwan in the conversation?"
+      },
+      "original_answer": "A hotpot meal or milk tea",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 6,
+          "content": "We can establish a \"health points\" system: earn points by meeting goals, such as averaging at least 7 hours of sleep per day and limiting sedentary time to no more than 8 hours, which can then be redeemed for rewards like a hotpot meal or bubble tea.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:25:03.710339",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "Which health data dashboard description in the conversation corresponds to the problem image?"
+      },
+      "original_answer": "Local web application, capturing WakaTime, step count, and sleep data.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "I've completed that health data dashboard, a local web application that pulls data from WakaTime, step counts, and sleep data.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image→Text Retrieval, finding corresponding textual descriptions based on images.",
+      "generated_at": "2026-02-24T11:25:03.710339",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "What exclamation did the picture evoke from Lu Chenguang?"
+      },
+      "original_answer": "The sleep part is a complete disaster.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 9,
+          "content": "Send a screenshot of the schedule. This is my activity distribution over the past few weeks: green for sleep, blue for work, and purple for travel. The sleep portion is a disaster, but it serves as baseline data.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Causal inference of text driven by images, where images lead to subsequent textual descriptions.",
+      "generated_at": "2026-02-24T11:25:03.710339",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the health data dashboard developed by Lu Chenguang referred to and cited?"
+      },
+      "original_answer": "From the 'Health Data Dashboard' to 'Dashboard' to 'Project' to the 'Health Dashboard and Social Contract' project.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "I've got that health data dashboard sorted out.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 4,
+          "content": "I propose adding a 'social supervision' module: you authorize me to view the board (read-only).",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 13,
+          "content": "Open source sharing, I'll post the kanban code on GitHub later.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 14,
+          "content": "The project is named 'Health Dashboard and Social Contract'.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:25:03.710339",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 4,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

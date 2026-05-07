@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:23:06.625883",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'detailed plan schedule' mentioned by Lin Shu referred to and cited?"
+      },
+      "original_answer": "Lin Shu described it as a 'detailed schedule,' Zhou Mingyuan responded with 'the schedule is very detailed,' and finally, Lin Shu summarized it as part of the 'Old Things, New Life' plan.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "Lin Shu: [Sent picture: 3.png] Teacher Zhou, I've created a detailed plan table, including organizational dimensions and specific implementation plans.",
+          "image": "3.png"
+        },
+        {
+          "session": "session8",
+          "turn": 10,
+          "content": "Zhou Mingyuan: The schedule is very detailed! For children, this can help them learn the process of organizing activities.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 17,
+          "content": "Lin Shu: Teacher Zhou, thank you for your support! I will take charge of the initiative and recruit volunteers, just like we did for the previous community activities. Let's work together to make this 'Old Things, New Life' project a success, promoting the circular economy and neighborhood interaction.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the references and evolution of the same entity (detailed schedule) across different rounds.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "Based on the organization method of idle items shown in the problem picture, what suggestion did Lin Shu propose in the conversation to utilize these items?"
+      },
+      "original_answer": "Flea market",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Lin Shu: [Sends picture: 1.png] Teacher Zhou, while organizing the community activity room today, I noticed that the donated idle children's clothing, toys, and books from residents are piling up. Simply stacking them isn't a solution.",
+          "image": "1.png"
+        },
+        {
+          "session": "session8",
+          "turn": 2,
+          "content": "Zhou Mingyuan: Director Lin, this is truly a positive development! For children, having idle items circulate not only promotes environmental protection but also fosters interaction among neighbors. How about this: let's regularly organize a small 'flea market' or 'used goods exchange corner' in the community square!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Study and learn new information (idle items displayed in the image) and apply it to make recommendations based on this.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": false
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "Which activity theme in the dialogue does the problem picture correspond to?"
+      },
+      "original_answer": "Old Things New Life Project",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "Lin Shu: [Sends picture: 2.png] Teacher Zhou, I've made a preliminary design for a promotional poster with the theme 'Old Things, New Life Project.' What do you think?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Recall corresponding dialogue topics based on image information.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "4.png",
+        "text": "What kind of evaluation did the problematic image provoke from Zhou Mingyuan?"
+      },
+      "original_answer": "Warm atmosphere",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 15,
+          "content": "Lin Shu: [Sent picture: 4.png] Teacher Zhou, I found a reference picture of an indoor flea market, with children sitting around and participating, and the atmosphere is very lively.",
+          "image": "4.png"
+        },
+        {
+          "session": "session8",
+          "turn": 16,
+          "content": "Zhou Mingyuan: The atmosphere shown in the picture is so heartwarming! What's important is that it allows children to learn about sharing and trading in a relaxed environment.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Image→Text: It is inferred that the image drives the textual evaluation.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "The location for the \"Community Flea Market Duration Event\" organized by Lin Shu's community is the community activity room. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 13,
+          "content": "Lin Shu: Teacher Zhou, what do you think about scheduling the event for weekend mornings? Just like the previous parent-child cooking activity, we can choose a time that is convenient for families to participate.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 14,
+          "content": "Zhou Mingyuan: Weekend mornings are perfect for family participation. For children, this can be a meaningful activity for their weekends.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Check the consistency of newly input information (potentially contradictory time descriptions) with existing memories.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Lin Shu mentioned what her favorite color is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:23:06.625883",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "hard": 1,
+      "medium": 3,
+      "easy": 2
+    }
+  }
+}

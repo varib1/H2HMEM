@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:28:44.380392",
+    "session_name": "session13",
+    "dialogue_name": "Dialogue 15",
+    "session_number": 13,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session13",
+    "session_number": 13,
+    "dialogue_name": "Dialogue 15"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What factors were used to generate the pre-match strategy heatmap mentioned by Lin Cedu in the conversation?"
+      },
+      "original_answer": "Weather forecast and track elevation map",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 1,
+          "content": "Pre-race strategy heatmap has been sent, generated based on weather forecasts and track elevation maps. Recommended pacing zones are marked, with a focus on downhill and flat sections to avoid early exhaustion.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which data analysis result in the conversation corresponds to the problem image?"
+      },
+      "original_answer": "Comparison of Actual Pace vs. Predicted Pace",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 8,
+          "content": "The image has been sent. The blue solid line shows that my actual pace deviates from the predicted range. The model issued a warning in Session 12 but was not executed. Lin, how is your data?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall corresponding dialogue content based on image information, both related to the same event (post-match data comparison).",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "What suggestions did the issue image prompt Lin Measure to propose in the conversation?"
+      },
+      "original_answer": "Focus on the downhill and flat sections.",
+      "answer_source": "both",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 1,
+          "content": "Pre-race strategy heatmap has been sent, generated based on weather forecasts and track elevation maps. Recommended pacing zones are marked, with a focus on downhill and flat sections to avoid early exhaustion.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png sparked Lin Cedu's suggestions for pre-match strategies.",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.webp",
+        "text": "How are the problem images referred to in the conversation?"
+      },
+      "original_answer": "Supply Station Reference Diagram, Typical Supply Scenario",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 5,
+          "content": "The image has been sent, showing a typical resupply scenario. We will proceed accordingly to ensure standardized data collection, as required by the Session 3 protocol.",
+          "image": "3.webp"
+        }
+      ],
+      "validation_notes": "Track the evolution of image references across different rounds to ensure comprehensive tracking.",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "How is the 'efficiency index' mentioned in the conversation quantified?"
+      },
+      "original_answer": "Finish Time/Running Power Index",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 10,
+          "content": "Quantitative Analysis: My race efficiency index (finish time / running power index) is 1.15, which is higher than the ideal value of 1.0, indicating that training effectiveness has not been maximized. What is your index?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess the understanding and application ability of the newly introduced concept (efficiency index).",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "If someone says that the efficiency index of the Lin measure is higher than 1.0, does this contradict the content of the conversation?"
+      },
+      "original_answer": "Yes, contradiction. The dialogue actually refers to 0.98.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 11,
+          "content": "My efficiency index is 0.98, approaching optimal. Based on the quantitative results from Session 3, this indicates effective strategy execution. Han Shuli, your deviation may stem from execution issues rather than model flaws.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What specific time point does the 'resupply timing' mentioned in the conversation refer to?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 4,
+          "content": "My CGM historical data indicates that the optimal times for refueling are at 45 and 90 minutes, which have been integrated into the plan.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "For information not mentioned in the conversation, refuse to answer or point out that the information is not present, avoiding hallucinations.",
+      "generated_at": "2026-02-24T11:28:44.380392",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

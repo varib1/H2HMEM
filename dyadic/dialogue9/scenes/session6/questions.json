@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-27T17:04:16.634325",
+    "session_name": "session6",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 6,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session6",
+    "session_number": 6,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What were the main idle items that Zhao Xiaotang found while cleaning the community activity room?"
+      },
+      "original_answer": "Old toys and books",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 1,
+          "content": "Zhao Xiaotang: Yifan, while cleaning up in the community activity room just now, I found these old toys and books donated by residents piled up in the corner.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the content of the large text in the poster designed by Li Yifan for the 'Community Sharing Market' event in the dialogue?"
+      },
+      "original_answer": "Second-hand item exchange market",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "Li Yifan: I just sketched a draft and sent it to you for a look. Use warm tones to highlight a cozy atmosphere, just like in this picture—a neatly arranged desk with books and toys, and add some balloons and greenery in the background.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image, recalling corresponding images based on conversational text information, both related to the same event.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which picture prompted Zhao Xiaotang to suggest holding a second-hand item exchange market? Provide the session number and the picture file name."
+      },
+      "original_answer": "1.png in session6",
+      "answer_source": "inference",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 1,
+          "content": "Zhao Xiaotang: [Sends picture: 1.png] Yifan, while cleaning the community activity room just now, I found these old toys and books donated by residents piled up in the corner. Look at this photo—it’s such a waste to let them gather dust. I was thinking of organizing a \"second-hand item swap fair\" in the community to get these things circulating. What do you think? Is it feasible?",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text, where the content of the image triggers subsequent behavioral descriptions, falls under causal inference.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the evolution of the 'free minor repairs' stall mentioned by Li Yifan progress from suggestion to specific division of labor?"
+      },
+      "original_answer": "It is recommended to increase the number of maintenance stalls, with clear responsibilities assigned for managing the stalls and preparing the tools.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 4,
+          "content": "Li Yifan: Hmm, the name is quite fitting. I suggest adding a 'Free Minor Repairs' booth where I can help with small issues like electric fans, kettles, children's toy cars, and the like.",
+          "image": ""
+        },
+        {
+          "session": "session6",
+          "turn": 12,
+          "content": "Li Yifan: The division of labor chart is essential. I will be responsible for repairing the booth and preparing the tools, while you handle promotion, item collection, and on-site coordination.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of the same topic across multiple rounds of conversation, focusing on changes in the chain of reference.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The location of the 'Community Sharing Market' event organized by Zhao Xiaotang and others is at the community square. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 10,
+          "content": "Li Yifan: Hmm, let's choose the community activity room as the location; the space should be sufficient.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories, assessing the ability to identify contradictions.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Which specific repair tool brands did Zhao Xiaotang mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 8,
+          "content": "Li Yifan: [Sent picture: 3.png] I've basically got all the tools ready, sending you a photo. Pliers, hammer, wrench, screwdriver—I have them all.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue to test refusal-to-answer capability and avoid hallucinations.",
+      "generated_at": "2026-02-27T17:04:16.634325",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

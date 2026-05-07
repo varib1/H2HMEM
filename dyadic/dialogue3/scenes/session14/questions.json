@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:08:23.940149",
+    "session_name": "session14",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 14,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session14",
+    "session_number": 14,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the title of the annual mashup video produced by Zhou Xingchen?"
+      },
+      "original_answer": "\"Troublemaking 2024\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "Xiaomeng, check out the cover of the annual compilation video I just made! I've included all the hilarious gaming fails.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses, and base answers on dialogue details.",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "How many segments is the script of the mixed video edited by Zhou Xingchen divided into?"
+      },
+      "original_answer": "4 fragments",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 16,
+          "content": "The copy is ready! The title is '2024, Our Yearbook of Shenanigans,' blending your humor with my subtlety. What do you think?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, reflecting the correlation between text and images, not causal inference.",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "How does Su Xiaomeng evaluate the cover of the annual mashup video produced by Zhou Xingchen?"
+      },
+      "original_answer": "Wow, this cover design is so thoughtful! The blue-white gradient and orange curve decorations look so vibrant.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 16,
+          "content": "Wow, this cover design is so thoughtful! The blue-white gradient and orange curve decorations look so vibrant.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text.",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, how does Zhou Xingchen refer to the question image, and how does Su Xiaomeng refer to it?"
+      },
+      "original_answer": "Screenshot from my newly made annual compilation video, this cover design",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "Xiaomeng, check out the cover of my latest annual compilation video! I’ve included all the hilarious gaming fails, the boss’s most embarrassing moments (they definitely deserve a shoutout), and even our team dinners and product unboxings. I’m calling it ‘2024: The Year of Shenanigans!’ What do you think—does it scream drama queen or what?",
+          "image": "1.png"
+        },
+        {
+          "session": "session14",
+          "turn": 2,
+          "content": "Wow, this cover design is so thoughtful! The blue-white gradient and orange curve decorations look so vibrant.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "The fan community for \"Boss\" was established in March. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 9,
+          "content": "Now there are over fifty thousand fans, and the community interface is centered around the boss's avatar.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 13,
+          "content": "After the success of the June event, we'll discuss fan community operations and commercialization.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (established in March) and existing memories (discussed in June) to verify consistency.",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Zhou Xingchen mentioned what his favorite movie is."
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:08:23.940149",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

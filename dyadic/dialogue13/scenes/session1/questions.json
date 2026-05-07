@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:21:38.844817",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What profession did Zhou Mingyuan mention his wife has?"
+      },
+      "original_answer": "Pediatrician",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "My wife is a pediatrician.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts (professional information) from the conversation.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "What sentiments did the problematic image evoke in the conversation?"
+      },
+      "original_answer": "Warm care can alleviate a child's discomfort.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "Warm care can alleviate a child's discomfort.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Based on the image content (1.png depicts an intimate care scenario), evoking reflections in the conversation.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.png",
+        "text": "How are the problem images referred to in the conversation?"
+      },
+      "original_answer": "Nursing Advice Form",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "I have compiled a nursing advice form, covering fever, cough, prevention of cross-infection, and more.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Cross-round reference tracking: Track the evolution of how image 3.png is referred to in the conversation.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Based on the image information, which picture prompted Zhou Mingyuan to share insights on home care details when a child is sick during the conversation? Provide the session number and the image file name."
+      },
+      "original_answer": "2.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "",
+          "image": "2.png"
+        },
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "I usually share health knowledge in class, but when my own child falls ill, I truly understand the details of home care.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: 2.png (photo of a child's bedroom) triggered Zhou Mingyuan to share insights on family care details in the subsequent conversation (Round 7), indicating a causal inference relationship.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is the 'community experience sharing' mentioned by Lin Shu further specified in subsequent rounds?"
+      },
+      "original_answer": "First, there is 'community experience sharing,' followed by 'the community also has similar care sharing,' and later, 'a care suggestion table has been compiled.'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 2,
+          "content": "Our community has experience sharing.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "Our community also has similar care sharing.",
+          "image": "1.png"
+        },
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "I have compiled a nursing advice form.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Cross-round reference tracking: Track the evolution of the topic 'Community Experience Sharing' across different rounds, from general mentions to specific resource provision.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the nursing advice compiled by Lin Shu in the conversation, if a child's fever exceeds 38.5 degrees, what measures should be taken according to the newly learned knowledge?"
+      },
+      "original_answer": "Take children's fever-reducing medication, with the dosage calculated based on body weight.",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "I have compiled a nursing advice table, covering fever, cough, prevention of cross-infection, and more.",
+          "image": "3.png"
+        },
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "If a child's fever exceeds 38.5°C, fever-reducing medication can be used, but it is important to pay attention to the dosage.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learning during testing: Assessing whether the model can learn new information (nursing forms) introduced in the dialogue and apply it to answer questions, requiring the integration of image and text information.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What are the names of Zhou Mingyuan's twin daughters?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: Responding to information not present in the conversation (daughter's name) to assess refusal capability and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:21:38.844817",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 2,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 3
+    }
+  }
+}

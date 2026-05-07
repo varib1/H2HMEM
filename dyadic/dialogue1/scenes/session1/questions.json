@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:20:22.064942",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the name of Lin Chang'an's cat? What is the origin of the name?"
+      },
+      "original_answer": "Almond, its fur color when it was young somewhat resembles the color of an almond.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "Yes, Almond! Because when it was little, its fur color somewhat resembled the color of an almond, and now that it's grown up, it's even whiter.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, recalling pure textual facts from the conversation.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the conversation, what was Xingren wearing around her neck while playing with the yarn ball?"
+      },
+      "original_answer": "A signboard inscribed with \"Almond\"",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "It loves playing with yarn balls and is particularly focused. Look at this one—it's holding a yarn ball, all fluffy and lively in its movements.",
+          "image": "2.png"
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "Haha, this photo is really well taken. Almond looks so funny playing with the yarn ball. It seems very happy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue involves recalling unmentioned information from the image based on the text content, which aligns with the second type of Cross-modal Related Retrieval. The conversation mentions the tag but does not describe its textual details, while the image description notes that there is text on the tag.",
+      "generated_at": "2026-03-01T23:28:00.147259",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "In the picture where Zhou Pingfan commented that Almond playing with the yarn ball looks funny, is the color of the yarn ball that Almond is playing with brown or black?"
+      },
+      "original_answer": "Brown",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "It loves playing with yarn balls, especially with great focus. Look at this one, it's grabbing a yarn ball to play with.",
+          "image": "2.png"
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "Haha, this photo is really well taken. Almond looks so funny playing with the yarn ball.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text, Image 2 triggered Zhou Pingfan's evaluation.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the almond feeder gradually described from its introduction to the emergence of interesting anecdotes?"
+      },
+      "original_answer": "Initially introduced as an automatic feeder for timed and measured feeding, it was later mentioned that Xingren had once opened the lid on its own to steal cat food.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "Yes, I use an automatic feeder, which allows for timed and measured feeding.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 17,
+          "content": "Once when I came home late from working overtime, Xingren actually managed to open the lid of the feeder by herself and stole a little cat food.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of entities across different rounds, focusing on changes in the reference chain.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the information learned from the conversation, what other functions does the automatic feeder have besides scheduled feeding?"
+      },
+      "original_answer": "It can be controlled via a mobile app and records the feeding amount.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 9,
+          "content": "Yes, it can be controlled via a mobile app, and it can also record the feeding amount.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learning to acquire multimodal information and apply it, examining online adaptability.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that the almond's fur color is pure white. Is this contradictory to the content of the dialogue? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "Because its fur color resembled that of an almond when it was young, and now it has grown whiter.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "",
+          "image": "1.png"
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories; the dialogue is clearer, but the image shows dark areas.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What is Xingren's favorite toy?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "It enjoys playing with yarn balls, showing great focus.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Asking about non-existent information (favorite), testing refusal-to-answer capability, avoiding hallucinations.",
+      "generated_at": "2026-03-01T12:20:22.064942",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "hard": 3,
+      "medium": 2
+    }
+  }
+}

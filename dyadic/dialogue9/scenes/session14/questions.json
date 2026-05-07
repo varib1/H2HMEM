@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:19:54.666876",
+    "session_name": "session14",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 14,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session14",
+    "session_number": 14,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "According to the conversation, what is the approximate total budget for public supplies procurement suggested by Li Yifan?"
+      },
+      "original_answer": "Around 430 yuan",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 10,
+          "content": "According to the list, the air pump is about 80 yuan, the first aid kit with medicine is 150 yuan, and the tool set is 200 yuan, totaling approximately 430 yuan.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts (budget amounts) from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:19:54.666876",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "The procurement list mentioned in the conversation, how many categories of supplies does it include? What are they respectively?"
+      },
+      "original_answer": "Three types: public air pump, large medical kit, universal repair kit.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 6,
+          "content": "The tool set should at least include a Phillips/flathead screwdriver, an adjustable wrench, and a voltage tester, balancing practicality and cost-effectiveness.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 6,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information (pump specifications). The two are related due to the same procurement event, with no causal relationship.",
+      "generated_at": "2026-02-24T11:19:54.666876",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "In the conversation, why is the item shown in the question image being made?"
+      },
+      "original_answer": "Because Zhao Xiaotang indicated that the funds from micro-public welfare might not be sufficient to cover the expenses of supplementary tools, crowdfunding is needed. This poster was designed to assist in raising the necessary funds.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 12,
+          "content": "Okay, the supplementary tools are quite practical. Financially, I checked the micro-public welfare fund and there's about 500 yuan left, which might not be enough. How about we launch a crowdfunding campaign with a goal of 500 yuan, along with a promotional poster? You were so great at designing posters before—could you help create a simple version?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Inferring that the image (promotional poster) drives the text (discussion about drug inspection) is a causal inference relationship.",
+      "generated_at": "2026-02-24T11:19:54.666876",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'borrowing logbook' mentioned by Li Yifan gradually described across different rounds?"
+      },
+      "original_answer": "First, it is recommended to establish a borrowing registration book, similar to a health monitoring record form; then, it is mentioned that the design should be simple and clear, so that even the elderly can understand and use it; finally, it is suggested to include a user guide with the registration book.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 10,
+          "content": "I also suggest establishing a simple borrowing log to standardize the use of supplies, similar to a health monitoring record form.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 12,
+          "content": "Just like the previous blood pressure monitoring record form, it should be designed to be simple and clear, so that even the elderly can understand and use it.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 18,
+          "content": "I can design simple usage instructions to be included in the borrowing log.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and referencing methods of the 'Borrowing Registration Book' entity across different rounds.",
+      "generated_at": "2026-02-24T11:19:54.666876",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The air pressure of the pump should not exceed 120 PSI. Is this statement correct?"
+      },
+      "original_answer": "Incorrect",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 5,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired multimodal information (image scenes and dialogue content), and apply this knowledge to answer questions.",
+      "generated_at": "2026-02-24T11:19:54.666876",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "How many washing machines does Zhao Xiaotang plan to purchase for the community?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": null,
+          "content": "The conversation only mentions public supplies such as air pumps, medical kits, and repair tools, and does not involve washing machines.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question asks about information not present (washing machine), testing the ability to refuse to answer to avoid hallucinations.",
+      "generated_at": "2026-03-03T02:01:02.094280",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:21:33.883856",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What kind of noodles did Shen Qingyan eat on May 15th?"
+      },
+      "original_answer": "Tomato and Egg Noodles",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure text facts from conversations (Tool Name).",
+      "generated_at": "2026-03-01T12:21:33.883856",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Did Lu Zhixing make fried rice for dinner on May 15th? Was there soy milk?"
+      },
+      "original_answer": "There is fried rice, but no soy milk.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Just got off work and made a simple dinner. My bowl of soup is still steaming hot. Have you started eating yet?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Image: Retrieve corresponding images (tomato and egg noodles) based on dialogue text (bright red tomatoes).",
+      "generated_at": "2026-03-01T12:21:33.883856",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image caused Shen Qingyan to mention the feeling of eating at home during childhood? Provide the session number and image file name."
+      },
+      "original_answer": "1.png in session5",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Just got off work and made a simple dinner. My bowl of soup is still steaming hot. Have you started eating yet?",
+          "image": "1.png"
+        },
+        {
+          "session": "session5",
+          "turn": 6,
+          "content": "Well, I enjoy these moments of slowing down. The breakfast style on your tray reminds me of the feeling of eating at home when I was a child.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png (Tray Breakfast) evokes Shen Qingyan's nostalgic description.",
+      "generated_at": "2026-03-01T12:21:33.883856",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is Shen Qingyan's tomato and egg noodles referred to and how does its reference evolve from the initial mention to subsequent references?"
+      },
+      "original_answer": "Initially described as \"tomato and egg noodles,\" it was later referred to as \"this bowl of noodles\" and associated with memories of corn silk porridge.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "Coincidentally, I just finished making it too. Following the recipe you shared last time, tomato and egg noodles—simple and comforting.",
+          "image": "2.png"
+        },
+        {
+          "session": "session5",
+          "turn": 12,
+          "content": "Thank you for always helping. This bowl of noodles reminds me of the corn silk porridge you recommended—simple yet nourishing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the entity (Tomato Egg Noodles) across different rounds: from specific description to \"this bowl of noodles.\"",
+      "generated_at": "2026-03-01T12:21:33.883856",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Lu Zhixing mentioned in the conversation that Shen Qingyan's dinner atmosphere was very quiet. Does this contradict the content of the conversation? Answer yes or no?"
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 5,
+          "content": "The dinner atmosphere at your place seems quite cozy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question presents contradictory information, requiring detection and explanation of the contradiction.",
+      "generated_at": "2026-03-03T01:52:45.518057",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Lu Zhixing mentioned in the conversation what his favorite movie genre is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 15,
+          "content": "I prefer science fiction or documentaries, as they are more logical. However, chatting while eating feels like an informal ritual.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Refusal to answer scenario: The question asks for information not previously mentioned (\"favorite\" movie genre), while the conversation only mentions \"preferences.\"",
+      "generated_at": "2026-03-01T12:21:33.883856",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

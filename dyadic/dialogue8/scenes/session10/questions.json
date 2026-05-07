@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:15:16.749206",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 8",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 8"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What item did Gu Zhizhou purchase in Uzbekistan, and what characteristics of its embroidery patterns were mentioned?"
+      },
+      "original_answer": "Gu Zhizhou purchased a cushion with an embroidered pattern that blends traditional and modern elements.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "Of course! The embroidery pattern on this cushion combines traditional and modern elements, which is quite interesting.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:15:16.749206",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "4.png",
+        "text": "Based on the dialogue, what role does the item shown in the question image play in Uzbek culture?"
+      },
+      "original_answer": "Not only a practical item, but also a medium for social interaction and rituals.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 7,
+          "content": "Yes, and this teapot. In Uzbek culture, tea sets are not just practical items but also a medium for social interaction and rituals. This phenomenon is quite interesting.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Retrieving text information based on images, where both are related to the same event, not a causal relationship.",
+      "generated_at": "2026-02-24T11:15:16.749206",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "Why did Gu Zhizhou send the problematic picture?"
+      },
+      "original_answer": "Because Lin Jianshen asked if he had bought any local specialty items, Gu Zhizhou sent the picture to vividly illustrate the items he had purchased.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 4,
+          "content": "Did you buy any local specialty items?",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "Of course! The embroidery pattern on this cushion combines traditional and modern elements, which is quite interesting.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Inferring that images drive the text, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:15:16.749206",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Gu Zhizhou left Uzbekistan by ship. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Just arrived at the airport, ready to leave Uzbekistan.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Detect the consistency between newly input information and existing memory, and examine the ability to identify contradictions.",
+      "generated_at": "2026-02-24T11:15:16.749206",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "How many days did Gu Zhizhou stay in Uzbekistan?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 7,
+          "content": "Yes, and this teapot. In the culture of Country X, tea sets are not just practical items but also a medium for social interaction and rituals. This phenomenon is quite interesting.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Asking about information not present in the conversation (the color of the teapot) to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:15:16.749206",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:31:57.040508",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 16",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 16"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "From which ancient text did Shen Jingyan find the recipe for the 'Calming Tea'?"
+      },
+      "original_answer": "Health Preservation Miscellany of the Qing Dynasty",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "Shen Jingyan: Yu An, are you free this weekend? I recently found a recipe for a \"Calming Tea\" from a Qing Dynasty health miscellany and tried brewing it. It feels quite soothing. This is what the tea setup looks like—I’d like to invite you to try it together.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Accurately recall pure textual facts (names of ancient texts) from the conversation.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which experience or location in the conversation does this image correspond to?"
+      },
+      "original_answer": "Traditional tea ceremony",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "Shen Jingyan: [Send picture: 2.jpg] Just go with the flow, as being deliberate loses the true essence. As mentioned in this miscellany, the essence of tea lies in following nature. Look, beside the book pages are the tea ingredients I've prepared. The amber liquid is honey, used for blending.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Based on the image content (book pages, tea ingredients, amber honey) corresponding to the traditional tea ceremony experience in the dialogue.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "What exclamation did the picture evoke from Su Yu'an?"
+      },
+      "original_answer": "Elegant and simple, the warmth of autumn.",
+      "answer_source": "both",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "Su Yu'an: Jingyan, this tea set looks so elegant and simple, just like the still life photos you shared before. It has a warm, autumnal feel to it.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: Image1.png (displaying a tea setting) directly evokes Su Yu'an's exclamation (elegant simplicity, the warmth of autumn).",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.jpg",
+        "text": "How is the image referred to in the conversation?"
+      },
+      "original_answer": "Tea ingredients, dried fruits",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 8,
+          "content": "Su Yu'an: [Sent a picture: 3.jpg] Let me take a look at the tea ingredients—these dried fruits have such vibrant colors, with red, yellow, and green interwoven, like the joy of a bountiful harvest.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Coreference Tracking: The image 3.jpg is referred to as 'tea material' and 'dried fruit' in the conversation.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, from the initial mention of the 'Calming Tea' formula to the subsequent discussions, how does Shen Jingyan gradually describe its key points?"
+      },
+      "original_answer": "From \"the combination is very simple\" to \"the focus is on the state of mind while brewing—water just boiling like crab eyes, pour it in and wait for three breaths,\" then to \"tea drinking emphasizes following nature\" and \"creating a space to 'slow down'.\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "Shen Jingyan: Primarily, it's silk tree flowers and lilies, with a small amount of dried tangerine peel. The combination is simple, but the key lies in the state of mind during brewing—the water should be just boiling, like crab eyes, and after pouring it in, wait quietly for three breaths.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "Shen Jingyan: Just go with the flow; forcing it loses its true essence. As this miscellany says, the essence of tea lies in following nature.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 7,
+          "content": "Shen Jingyan: The tea recipe itself does not pursue efficacy but rather creates a space to \"slow down.\"",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: Monitor the evolution of the description of the 'Calming Tea' formula across different rounds (from simple ingredient combinations to brewing mindset, following nature, and creating space to slow down), focusing on changes in the chain of reference.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.jpg",
+        "text": "Based on the newly learned information from the conversation that 'honey makes the tea broth smoother, like a gentle isolating film,' what role does the amber liquid in the image play in the tea recipe?"
+      },
+      "original_answer": "Blend the tea infusion",
+      "answer_source": "both",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "Shen Jingyan: Look, beside the book pages are the tea ingredients I've prepared. The amber liquid is honey, used for blending.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session11",
+          "turn": 7,
+          "content": "Shen Jingyan: Honey makes the tea smoother, just like the 'gentle barrier' you mentioned earlier, adding an extra layer of cushioning in empathy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Online Adaptation: Examine learning new information (the function of honey analogized as a 'gentle isolation membrane') and apply it, combining with images (amber liquid) to answer questions.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that the 'Calming Tea' formula includes albizia julibrissin flowers, lily bulbs, and dried tangerine peel, but someone said there are also chrysanthemums in the formula. Is this correct?"
+      },
+      "original_answer": "Incorrect",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "Shen Jingyan: Mainly silk tree flowers and lilies, with a small amount of dried tangerine peel.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose information (chrysanthemum) that may contradict the dialogue content (prescription ingredients) and check whether the contradiction is recognized.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Which specific tea variety did Shen Jingyan mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: Information not present in the question (tea varieties), testing refusal ability to avoid hallucinations.",
+      "generated_at": "2026-02-24T11:31:57.040508",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 2,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

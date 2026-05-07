@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:26:06.261424",
+    "session_name": "session6",
+    "dialogue_name": "Dialogue 20",
+    "session_number": 6,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session6",
+    "session_number": 6,
+    "dialogue_name": "Dialogue 20"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Hesui mentioned feeling tired and irritable, and not being interested in any activities?"
+      },
+      "original_answer": "Festival Planning",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 3,
+          "content": "New Year Greetings: [Sending image: 2.png] Look at this selfie of mine. I haven't been sleeping well lately, feeling both physically and mentally exhausted, and I've lost interest in planning for the holidays.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Precise Recall]: The task requires accurately extracting the type of activity mentioned by Hesui from the dialogue."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which picture corresponds to the meditation or yoga method mentioned in the conversation?"
+      },
+      "original_answer": "3.png in session6",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "Ji Shi'an: [Sending picture: 3.png] Try this method—meditation or yoga—it's suitable for nurturing your current state.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "[Cross-modal related retrieval]: Requires finding corresponding images from the activities mentioned in the conversation."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "What kind of emotional description does this image evoke for the New Year?"
+      },
+      "original_answer": "Physically and mentally exhausted",
+      "answer_source": "inference",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 3,
+          "content": "New Year Greetings: [Send picture: 2.png] Look at this selfie of mine. I haven't been sleeping well lately, feeling both physically and mentally exhausted, and I've lost interest in planning for the holidays.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "[Causal Inference]: The image evokes descriptions of festive New Year emotions, requiring inference of causal relationships."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, in which round is the 'Yuanbao Incident' mentioned by Ji Shi'an referenced, and what is it used to analogize?"
+      },
+      "original_answer": "Round 14, Analogy Shift",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 14,
+          "content": "Ji Shi'an: Yes, avoid perfectionism. Just like the incident with Yuanbao, you went from panic to having direction, and now you need such a transformation as well.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Cross-Round Citation Tracking]: Tracking citations of the 'Yuanbao Incident' in the conversation."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "3.png",
+        "text": "Based on the information learned from this image and the conversation, what perception can meditation help He Sui recover?"
+      },
+      "original_answer": "Time perception",
+      "answer_source": "inference",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "Ji Shi'an: [Sending picture: 3.png] Try this method—meditation or yoga—it's suitable for nurturing your current state.",
+          "image": "3.png"
+        },
+        {
+          "session": "session6",
+          "turn": 8,
+          "content": "Ji Shi'an: Just like when we worked on the guide, starting with simple tools. Meditation can help you restore your sense of time and reduce irritability.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Learning During Testing]: Assessing the ability to apply new knowledge by integrating picture and dialogue information."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that Hesui planned all community activities from the Lunar New Year's Eve to the Lantern Festival, but new information says Hesui only planned activities during the Spring Festival. Is there a contradiction?"
+      },
+      "original_answer": "Contradiction",
+      "answer_source": "inference",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 1,
+          "content": "New Year's Greetings: [Image sent: 1.png] Shi An, I've been feeling particularly exhausted lately. This is the list of all the community events I've planned from the Lunar New Year to the Lantern Festival. Take a look.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "[Contradiction Detection]: Detect contradictions between new information and the dialogue content."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what festival did Hesui mention as his favorite?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "[Refuse to answer]: The question involves information not mentioned in the conversation and must be declined."
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

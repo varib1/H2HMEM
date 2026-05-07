@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T17:05:33.143675",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 16",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T17:05:33.143675"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 16"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What were the main colors used in the emotional doodle mentioned by Su Yu'an in Session 1 and the watercolor painting created in Session 3?"
+      },
+      "original_answer": "The emotional doodles in Session 1 are predominantly in blue, green, and purple; the watercolor paintings in Session 3 feature soft tones, primarily warm hues, such as the ivory white, black patterns, and sunny tones in the teacup steam painting, and the golden yellow in the golden retriever painting.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I recently drew this doodle, and it feels like the whirlpool inside my heart—chaotic and exhausting.",
+          "image": "1.png"
+        },
+        {
+          "session": "1",
+          "turn": null,
+          "content": "Image 1 Description: Primarily in deep blue, purple, and green.",
+          "image": "1.png"
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.jpg] Jingyan, I've recently painted some small watercolors and wanted to share them with you.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 9,
+          "content": "Su Yu'an: [Sent picture: 2.jpg] I drew the steam rising from this teacup, hoping to convey that sense of warm tranquility.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "3",
+          "turn": null,
+          "content": "Image 2 Description: Teacup color: Ivory white, decorated with black patterns.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 13,
+          "content": "Su Yu'an: [Sent picture: 3.png] This sleeping golden retriever is another quiet moment I observed.",
+          "image": "3.png"
+        },
+        {
+          "session": "3",
+          "turn": null,
+          "content": "Image 3 description: The golden dog has golden-yellow fur.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Recalling the color details of images from different sessions requires integrating information from Session 1 and Session 3.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What are the name of the old cat mentioned by Shen Jingyan in Session 5 and the memorial album materials mentioned in Session 6?"
+      },
+      "original_answer": "The old cat's name is Ink Stain; the materials for the commemorative album are leftover ancient Xuan paper scraps from Shen Jingyan.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 7,
+          "content": "Shen Jingyan: It's named Mohen, because its fur resembles the ink stains found in ancient books.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 13,
+          "content": "Shen Jingyan: I lean towards physical objects. Just like restoring ancient texts, the tactile sensation is important. We can use the leftover scraps of my old Xuan paper; those materials themselves have stories to tell.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recalling textual facts from different conversations requires integrating information from Session 5 and Session 6.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "session2/3.jpg",
+        "text": "In Session 2, Shen Jingyan sent this picture of a cat sleeping. How did Su Yu'an describe a similar scene in Session 5?"
+      },
+      "original_answer": "In Session 5, when Su Yu'an described the photo of an old cat quietly curled up by the window in the sunlight sent by Shen Jingyan, he said, \"The light is so gentle, like giving it a warm hug.\"",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 12,
+          "content": "Shen Jingyan: [Sent picture: 3.jpg] Just like this old cat, it simply sleeps without worrying about tomorrow. Tranquility gives birth to wisdom; when you relax, wisdom naturally emerges. This photo is for you, a reminder of the beauty of slowing down.",
+          "image": "3.png"
+        },
+        {
+          "session": "5",
+          "turn": 2,
+          "content": "Su Yu'an: The light is so gentle, as if giving it a warm embrace. It looks so peaceful, reminding me of the atmosphere in the still life photos you shared before.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Based on the images from Session 2, recall the relevant text descriptions from Session 5 to establish image-text associations.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In Session 8, Su Yu'an recommended a documentary about the restoration of traditional Japanese instruments and shared a screenshot of an old craftsman intently tuning an instrument. In Session 9, how did Shen Jingyan describe a similar working state in text?"
+      },
+      "original_answer": "In Session 9, Shen Jingyan describes the state of \"uniting the mind, eyes, and hands\" required when restoring ancient texts, and mentions that the direction of the paper fibers is like its \"voice,\" which must be carefully listened to.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "8",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent a picture: 1.jpg] Jingyan, I recently watched a documentary and really wanted to share it with you. In this screenshot, the old craftsman's focused expression while tuning reminded me of your concentration when restoring ancient books.",
+          "image": "1.png"
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 2.webp] After watching the documentary you recommended, the state of 'unity of heart and ear' when artisans tune instruments reminded me of the need for 'unity of eye, mind, and hand' when restoring ancient books. This is a photo of my workbench—the direction of the paper fibers is like its 'voice,' requiring careful listening.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Based on the image-related text from Session 8, retrieve the corresponding text descriptions from Session 9 to establish image-text associations.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In Session 1, Su Yu'an mentioned experiencing insomnia for a consecutive week, with excessive empathy at work leading to mental exhaustion. What changes occurred in her sleep condition by Session 3?"
+      },
+      "original_answer": "In Session 3, Su Yu'an's sleep improved somewhat, and he no longer suffered from insomnia as before.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I recently drew this doodle. It feels like a whirlpool in my heart—chaotic and exhausting. I haven’t been able to sleep for a week straight, and I’ve been over-empathizing at work, leaving me utterly drained.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 9,
+          "content": "Su Yu'an: [Sent picture: 2.jpg] I drew the steam rising from this teacup to convey a sense of warm tranquility. After calming my mind, my sleep has improved a bit, and I no longer suffer from insomnia like before.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect how the new information in Session 3 updates the old information in Session 1, focusing on the process of knowledge change.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ005"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In Session 2, Su Yu'an's doodles were predominantly blue, but with some lighter blue strokes added, giving a more chaotic feel. In Session 3, what shift occurred in the color palette of her artwork?"
+      },
+      "original_answer": "In Session 3, Su Yu'an's paintings have a much softer and warmer tone, like small watercolors capturing quiet moments, with a gentle and warm palette.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I tried the meditation you suggested last time, but my mind felt like countless little people were holding a meeting, and my emotions became even more chaotic. This is a doodle I just drew—still mostly blue, but with some lighter blue strokes added, making it feel even more disordered.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 2,
+          "content": "Shen Jingyan: Yu An, this painting gives me a sense of breathing space in its blankness, just as you once said—stillness is not emptiness, but a capacity to hold. The color palette has softened a lot, and it feels very warm.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect how the new information in Session 3 updates the old information in Session 2, focusing on the process of knowledge change.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ006"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "According to Session 1, Session 3, and Session 10, what is the chronological order of events from Su Yu'an's emotional exhaustion to the introduction of the \"Slow Creation\" workshop?"
+      },
+      "original_answer": "The sequence is as follows: In Session 1, Su Yu'an experiences emotional exhaustion and sends an emotional doodle for help → In Session 3, after attempting to calm her mind, her sleep improves and she creates soft watercolor paintings → In Session 10, inspired by a documentary, she introduces a \"slow creation\" segment in the workshop.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I recently drew this doodle. It feels like the whirlpool inside my heart—chaotic and exhausting. I haven't slept for a week straight, and I've been over-empathizing at work, completely drained.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 9,
+          "content": "Su Yu'an: [Sent picture: 2.jpg] I drew the steam rising from this teacup to convey a sense of warm tranquility. After calming my mind, my sleep has improved a bit, and I no longer suffer from insomnia like before.",
+          "image": ""
+        },
+        {
+          "session": "10",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.jpg] Jingyan, look, this is a moment from today's workshop. Inspired by our previous discussion about the documentary, I tried to incorporate some 'slow creation' sessions.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Cross-session temporal reasoning involves inferring the chronological order of events based on information from multiple sessions.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ007"
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Based on Session 5, Session 6, and Session 7, what is the chronological order of the stages in Shen Jingyan's process of creating a commemorative album for the old cat Mohen, from proposal to completion?"
+      },
+      "original_answer": "The sequence is as follows: In Session 5, Su Yu'an proposes creating a \"Life Memorial Album\" for Mo Hen → In Session 6, Shen Jingyan shares photos and begins the specific creation of the memorial album → In Session 7, the memorial album is completed and photos are shared.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 10,
+          "content": "Su Yu'an: This reminds me of the mindfulness guide we collaborated on. Perhaps we could create a \"Life Memorial Album\" for Mo Hen? Not waiting until the end, but starting now to record these peaceful moments through art.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 1.jpg] Yu'an, I took a close-up of Mohen's claws. It once scratched the packaging rope of an ancient book, leaving marks.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 19,
+          "content": "Shen Jingyan: Alright. Let’s take it slow, as slow is fast. The commemorative album has moved from concept to concrete creation. Thank you for your suggestion and support.",
+          "image": ""
+        },
+        {
+          "session": "7",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 2.png] The commemorative album is finished. I took photos of a few pages and sent them to you. During the process of making it, I found that observing the traces of ink in daily life more carefully actually alleviated my anxiety about the future.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Cross-session temporal reasoning involves inferring the chronological order of events based on information from multiple sessions.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ008"
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "",
+        "text": "What specific changes in color are there in Su Yu'an's doodle drawn after attempting meditation in Session 2, compared to the emotional doodle from Session 1?"
+      },
+      "original_answer": "The doodle in Session 1 features a vortex shape against a dark background, accented with blue, green, and purple smears. In Session 2, the doodle is predominantly blue, but with additional light blue strokes, giving it a more chaotic feel.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I recently drew this doodle. It feels like a whirlpool in my heart—chaotic and exhausting.",
+          "image": "1.png"
+        },
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I tried the meditation you suggested last time, but my mind felt like countless little people were holding a meeting, and my emotions became even more chaotic. This is a doodle I just drew—still mostly blue, but with some lighter blue strokes added, making it feel even more disordered.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The issue involves comparing the image content between Session 1 and Session 2, requiring cross-session recall of color detail changes.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ009"
+    },
+    {
+      "question_id": "Q010",
+      "question": {
+        "image": "",
+        "text": "What is the commonality in the core ideas between the concept of \"peace of mind leads to freedom from illness\" mentioned by Shen Jingyan in Session 4 and the principle of \"restoration to original condition\" emphasized during the restoration of Buddhist scriptures in Session 8?"
+      },
+      "original_answer": "Both emphasize acceptance rather than confrontation: Session 4's \"A peaceful mind prevents all illnesses\" reflects the idea of achieving harmony through calm acceptance; Session 8's \"Restore as it was\" emphasizes accepting the wear and tear of time as part of history, rather than restoring it to a new state.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 1.png] Yu An, last time we discussed combining mindfulness with work. Recently, while restoring a Ming Dynasty medical text, I was deeply moved by the idea that \"a peaceful mind keeps all illnesses at bay.\"",
+          "image": "1.png"
+        },
+        {
+          "session": "8",
+          "turn": 4,
+          "content": "Shen Jingyan: [Sent picture: 2.jpg] This photo captures a moment when I was restoring a Buddhist scripture from the Song Dynasty. For me, restoration is not about \"restoring to new,\" but rather \"restoring to old\"—allowing the wear and tear of time to become part of the scripture itself.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "The issue requires inferring the causal relationships of core concepts by integrating textual information across Session 4 and Session 8, involving a deep comparative analysis of underlying ideas.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ010"
+    },
+    {
+      "question_id": "Q011",
+      "question": {
+        "image": "",
+        "text": "In Session 5, Shen Jingyan mentioned the old cat's name and its favorite quiet corner. How were these references represented and evolved in the creation of the memorial book in Sessions 6 and 7?"
+      },
+      "original_answer": "In Session 5, the old cat is named Ink Stain, often staying on the cushion by the window and the workbench; in Session 6, the memorial album records close-ups of its paws, its appearance in the sunlight, and includes the phrase \"Quietly Accompanying the Flow of Light\"; in Session 7, the memorial album is completed, containing a rubbing of the cat's paw print, annotations in small regular script with dates, a patch of cat fur, and the last page left blank, inviting Su Yu'an to draw a door.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 7,
+          "content": "Shen Jingyan: Its name is Ink Stain, because its fur resembles the ink marks on ancient books. Besides the window, it often naps on the mat beside my workbench, listening to the subtle sounds of paper restoration, as if participating in that tranquility.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 1.jpg] Yu An, I took a close-up of Mo Hen's paw. It once scratched the packaging rope of an ancient book, leaving marks.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "6",
+          "turn": 11,
+          "content": "Shen Jingyan: [Sent image: 3.png] I wrote 'Quietly Accompanying the Flow of Time'. For the first time, not for anything else, just for it.",
+          "image": "3.png"
+        },
+        {
+          "session": "7",
+          "turn": 1,
+          "content": "Shen Jingyan: [Sent picture: 2.png] The commemorative album is finished. I took photos of a few pages and sent them to you. During the process of making it, I found that observing the daily traces of ink more carefully actually alleviated my anxiety about the future.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of ink marks referencing from Session 5 to Session 7, involving text and image citations across multiple sessions.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ011"
+    },
+    {
+      "question_id": "Q012",
+      "question": {
+        "image": "",
+        "text": "How do the \"Calming Tea\" recipe that Shen Jingyan invited Su Yu'an to taste in Session 11 and the sketch Su Yu'an drew after the tea gathering in Session 12 resonate in terms of theme and emotional expression?"
+      },
+      "original_answer": "The tea recipe in Session 11 emphasizes peace and harmony with nature, guiding attention back to the present moment through taste. The sketch in Session 12 depicts steam rising from a teacup with the inscription \"subtle in flavor, profound in meaning,\" reflecting the lingering aftertaste of a tea gathering. Both express the value of \"slowness\" and a sense of tranquility.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "11",
+          "turn": 3,
+          "content": "Shen Jingyan: Primarily, it's made of albizia flowers and lilies, with a small amount of dried tangerine peel. The combination is simple, but the key lies in the state of mind during brewing—the water should be just boiling, with bubbles like crab eyes, and after pouring it in, wait for three breaths. This isn't medicine; it's more like guiding attention back to the present moment through taste.",
+          "image": ""
+        },
+        {
+          "session": "12",
+          "turn": 1,
+          "content": "Su Yu'an: [Sent picture: 1.png] Jingyan, I sketched this after our tea gathering. The tea tasted light, but its aftertaste lingered, much like the value of 'slowness' we discussed earlier.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The evolution of the Problem Tracking Tea Formula theme from Session 11 to Session 12 requires analyzing emotional resonance by combining textual and visual information.",
+      "generated_at": "2026-04-01T17:05:33.143675",
+      "validated": true,
+      "original_question_id": "CSQ012"
+    }
+  ],
+  "summary": {
+    "total_questions": 12,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 2,
+      "Knowledge Resolution": 2,
+      "Temporal Reasoning": 2,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 2
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 6,
+      "hard": 4
+    },
+    "converted_from_cross_session": true
+  }
+}

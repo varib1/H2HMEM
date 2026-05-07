@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:11:14.897348",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 5",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 5"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Lin Shuying mentioned in what kind of environment the exhibition is held?"
+      },
+      "original_answer": "Held in an old courtyard.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 3,
+          "content": "Yes, the market is held in an old courtyard, so the environment should be nice. It's like the mindfulness activities we discussed before—it helps people slow down.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the exhibit preview mentioned in the conversation, which two exhibits are included in the late Ming Dynasty printed editions shown in the image of the exhibit preview?"
+      },
+      "original_answer": "Late Ming edition of \"The Peony Pavilion,\" Late Ming edition of \"The Collected Works of Tao Yuanming.\"",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 5,
+          "content": "[Send image: 2.png] This is a preview of the exhibit. Take a look.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Xu Huaian's comment on version differences? Provide the session number and image file name."
+      },
+      "original_answer": "2.png in session12",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 5,
+          "content": "[Send image: 2.png] This is a preview of the exhibit. Take a look.",
+          "image": "2.png"
+        },
+        {
+          "session": "session12",
+          "turn": 6,
+          "content": "Seeing this has piqued my interest even more. These version differences, much like the intricate weaving details we discussed in \"A Lifelong Journey,\" each carry the weight of historical continuity.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Inferring that the image content drives textual comments, with a focus on causal inference.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, what was the problem picture initially called, and how was it later referred to?"
+      },
+      "original_answer": "Originally referred to as 'the promotion of this exhibition', it was later designated as 'the promotional page for this exhibition'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Huai'an, I just saw the promotion for this exhibition and it seems quite intriguing. I was wondering if you'd be interested in going together?",
+          "image": "1.png"
+        },
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "Shuying, this exhibition flyer really looks good.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of image entities across different rounds.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the dialogue content, what are the characteristics of late Ming dynasty printed editions?"
+      },
+      "original_answer": "It carries a rustic charm of handcraftsmanship that machines cannot replicate, embodying individual narratives and regional essence.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 5,
+          "content": "For instance, this late Ming Dynasty printed edition reminds me of the copper lock you shared earlier—both are products of that era, carrying a certain handmade, rustic charm. This rustic quality, as we discussed in Session 1 when talking about Qingtuan, is something machines cannot replicate. It carries individual narratives and the unique essence of a region.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Use newly acquired multimodal information (images and text) to answer questions, testing online adaptability.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What is the specific ticket price for the exhibition mentioned in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:11:14.897348",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

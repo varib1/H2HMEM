@@ -1,0 +1,149 @@
+{
+  "session_id": "health_1_01",
+  "session_title": "Emotional Alert",
+  "theme": "健康-情绪耗竭与静心修复",
+  "generated_at": "2026-02-06T21:14:05.686797",
+  "dialogue": [
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "1.png",
+        "text": "Jingyan, I recently drew this doodle, and it feels like a whirlpool inside me—chaotic and exhausting. I've been suffering from insomnia for a week straight, and at work, I've been over-empathizing, leaving me utterly drained."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Yu An, I see it. Don't rush to analyze or change anything just yet. Observe your exhaustion like watching the flow of water, okay?"
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Observe? I've tried, but as soon as I stop, I get anxious, as if I have to do something to ease it."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "2.jpg",
+        "text": "I'll send you a photo. These are the dewdrops in the courtyard this morning, about to fall but not yet fallen. Sometimes, simply being still is a form of restoration in itself."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Dewdrops... so tiny, yet they carry the tranquility of the entire morning. I understand what you mean, but for me, doing nothing is actually harder."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "This is not about doing nothing, but starting with the simplest awareness of breath. Try to feel the flow of your breath, like the gathering of dewdrops."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Mindful breathing? I often take deep breaths while working, but it feels superficial, and my mind is still a mess inside."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "That's because you are judging or controlling it. Let go of these, simply observe, without any purpose. Stillness gives rise to wisdom, harmony between self and the world."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "You're right, I always try to heal through creation, but this time, doodling just made me more tired. Accepting imperfection is so hard for me."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Slow is fast. Let's start with five minutes and try sitting quietly and observing together, okay? I'll guide you."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Okay, I need guidance. I tried the meditation method you shared before but didn't stick with it. This time, I want to give it a serious try."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Start from a comfortable sitting position, close your eyes, and feel the contact between your body and the ground."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Well, I'm seated. Feeling a bit nervous, afraid I might not be able to do it."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "It's okay, tension is also part of the observation. Now, bring your attention to your breath, and feel the flow of air in and out."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Breathing... a bit rapid, like the swirls in graffiti."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Don't judge it, just observe. Like watching dewdrops, they have their own rhythm."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "I try... feeling my breath gradually calming down, but my thoughts are still drifting."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Thoughts come and go as they please, gently bringing back the breath. The spirit is self-sufficient, with no need to chase after anything."
+      }
+    },
+    {
+      "role": "Su Yu'an",
+      "content": {
+        "image": "",
+        "text": "Thank you, Jingyan. In these five minutes, I feel as though I've touched a bit of tranquility. Expression is healing, but sometimes silence is also a form of strength."
+      }
+    },
+    {
+      "role": "Shen Jingyan",
+      "content": {
+        "image": "",
+        "text": "Yes, gentleness has its own strength. Let's stop here for today. You can continue practicing anytime."
+      }
+    }
+  ],
+  "timeline_date": "2024-01-20"
+}

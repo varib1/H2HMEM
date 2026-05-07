@@ -1,0 +1,145 @@
+{
+  "session_id": "health_1_01",
+  "session_title": "Festival Planner for \"Burnout\"",
+  "theme": "健康-节日工作者的职业耗竭",
+  "generated_at": "2026-03-01T02:32:30.500805",
+  "dialogue": [
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "1.png",
+        "text": "Shi An, I've been feeling particularly exhausted lately. Here's the list of all the community events I've planned from the Lunar New Year to the Lantern Festival. Take a look."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "New Year's greetings, I've seen the list. With so many activities, you must be exhausted. Could you elaborate on how you're feeling tired?"
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "2.png",
+        "text": "Look at this selfie of mine. I haven't been sleeping well lately, feeling both physically and mentally exhausted, and I've lost interest in planning for the holidays."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "It sounds like signs of professional burnout. You mentioned before that rituals create meaning, but does this exhaustion now make you feel like that meaning is being overdrawn?"
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Yes, just like the rhythm balance we discussed earlier, I'm completely out of balance now. Do you have any suggestions?"
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "3.png",
+        "text": "Try this method, meditation or yoga, which is suitable for nurturing your current state."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Meditation? I've heard of it, but I don't know how to get started."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Just as we started with simple tools when collaborating on the guide, meditation can help you restore your sense of time and reduce irritability."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "4.png",
+        "text": "This meditation app offers courses and community interaction, much like our previous neighborhood activities, fostering connections."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Great, the community features of the app can help avoid loneliness, but remember to set boundaries so it doesn't become another burden."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "You're right, just like the self-care you often remind me of. I'll try to set aside some time each day for meditation."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Yes, starting from a short period, gradually establish a rhythm. The enthusiasm you had when planning events requires energy to sustain."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Well, considering the psychological expectation management in our New Year's Eve dinner guide, perhaps I should also adjust my expectations of myself."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Yes, avoid perfectionism. Just like the incident with the ingot, you went from panic to having direction, and now you need that kind of shift."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Thank you, Shi An. You always provide support when I need it. I'm starting to feel hopeful about improvement."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "You're welcome, our collaboration has always been pleasant. Remember, while a sense of ceremony is important, your health is even more crucial."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "I will. I've decided to start using this app for meditation tomorrow and stick with it for a week to see how it goes."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Good idea, let me know if any adjustments are needed. Stay connected authentically, including with yourself."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Well, thank you for your advice and for listening. I feel much better and am starting to take action to improve myself."
+      }
+    }
+  ],
+  "metadata": {
+    "enhancement_failed": true
+  },
+  "timeline_date": "2024-03-02"
+}

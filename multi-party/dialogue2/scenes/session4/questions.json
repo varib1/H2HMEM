@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:10:17.374463",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what device did Da Liu mention using to watch the match?"
+      },
+      "original_answer": "Mobile phone",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 3,
+          "content": "Da Liu: @Ricky You're living the high life! I'm stuck under the covers watching on my phone—what a difference...",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recall pure textual facts from the conversation, such as device names.",
+      "generated_at": "2026-03-23T10:10:17.374284",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "img2.jpg",
+        "text": "In the conversation on May 26th, Ricky showcased his luxurious viewing environment. What was the specific time at that moment?"
+      },
+      "original_answer": "21:42",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 2,
+          "content": "Ricky: [Sent picture: img2.jpg] I'm all set, home theater + imported snacks, time to enjoy~",
+          "image": "img2.jpg"
+        }
+      ],
+      "notes": "图片信息召回，描述部分图片内容定位到图片，询问图片中描述以外信息。"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "img8.jpg",
+        "text": "Which specific reaction did the problematic image cause from which group member?"
+      },
+      "original_answer": "This prompted Da Liu to respond: \"@Ricky, your screenshot is quite clear, but what exactly did the referee see? The line drawn is obviously correct.\"",
+      "answer_source": "both",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 30,
+          "content": "Ricky: [Sends picture: img8.jpg] Calm down, Xiao Pi. I've sent a screenshot of the VAR replay. The lines clearly show it's not offside. Take a closer look.",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "session4",
+          "turn": 31,
+          "content": "Da Liu: @Ricky Your screenshot is quite clear, but what exactly did the referee see? The line drawn is obviously correct.",
+          "image": ""
+        }
+      ],
+      "notes": "因果推断：Ricky发送的VAR截图图片（img8.jpg）直接导致大刘做出回应评论。这是图片驱动文本的清晰因果链。"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which two teams did Xiao Pi mention in the conversation?"
+      },
+      "original_answer": "Barcelona and Real Madrid",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Round 1 Xiao Pi: [Sending image: img1.jpg] Hurry up, hurry up! The match is about to start! Is everyone up?",
+          "image": "img1.jpg"
+        }
+      ],
+      "validation_notes": "Text recall, based on the information in the image description, avoid ambiguity, and provide clear answers.",
+      "generated_at": "2026-03-21T05:28:45.544370",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the knowledge learned in the conversation, in a football match, during an attack, if an attacking player is closer to the goal line than the second-to-last defender at the moment the ball is passed by a teammate, is that attacking player offside? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 23,
+          "content": "Da Liu: @Peach Offside means that the attacking player is positioned closer to the opponent's goal line than the second-last defender at the moment the ball is passed.",
+          "image": ""
+        }
+      ],
+      "notes": "考察模型是否学习了对话中解释的越位规则，并能应用到新的场景中回答问题。"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "On May 26th, Iron Sister was also watching a football match. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 12,
+          "content": "Iron Sister: Stop arguing, you guys. I'm out for a night run, and listening to you debate offside is just boring.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 20,
+          "content": "Iron Sister: [Sending picture: img6.jpg] I still choose to run at night. Let's continue discussing the competition.",
+          "image": "img6.jpg"
+        },
+        {
+          "session": "session4",
+          "turn": 26,
+          "content": "Iron Sister: It seems you won't reach a consensus. I'll continue with my night run.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 50,
+          "content": "Iron Sister: Even if the match is exciting, I still choose to run at night. Health is important.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 61,
+          "content": "Iron Sister: I'm still going for a run, not getting involved in this debate.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 74,
+          "content": "Iron Sister: I still think night running is more fun. You guys can take your time studying the VAR thing.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 80,
+          "content": "Iron Sister: The race is over, I'm going to keep running.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content to detect whether contradictions are recognized.",
+      "generated_at": "2026-03-23T10:10:17.374415",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific score of the match did Xiao Pi mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Xiao Pi: [Sending image: img1.jpg] Hurry up, hurry up! The match is about to start! Is everyone up yet?",
+          "image": "img1.jpg"
+        },
+        {
+          "session": "session4",
+          "turn": 62,
+          "content": "Xiao Pi: [Sent picture: img14.jpg] Alright, anyway, the championship is ours, let's celebrate!",
+          "image": "img14.jpg"
+        }
+      ],
+      "validation_notes": "Refusal scenario: When asked for information not present in the conversation (specific scores), the response should be declined.",
+      "generated_at": "2026-03-23T10:10:17.374430",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 2,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 3
+    }
+  }
+}

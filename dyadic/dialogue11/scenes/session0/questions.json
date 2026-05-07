@@ -1,0 +1,469 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T17:05:33.130586",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 11",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T17:05:33.130586"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 11"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation on February 15, what item did Fang Qing suggest the bus company uniformly add to the first aid kit? In the conversation on April 5, what two issues did Chen Lu worry that feeding stray yellow dogs might cause?"
+      },
+      "original_answer": "Individually packaged glucose tablets; afraid of spoiling it, afraid of causing dissatisfaction among others.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 7,
+          "content": "Would it be better if the bus company could uniformly add some items to the first aid kit, such as individually packaged glucose tablets?",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 3,
+          "content": "I sometimes bring some food, but I'm afraid of spoiling it or causing dissatisfaction among others.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation on March 10th, what were the three tips for preventing motion sickness on the wall in the picture taken by Chen Lu? In the conversation on June 5th, what were the dishes on the lower row of the buffet counter in another cafeteria photo taken by Chen Lu?"
+      },
+      "original_answer": "Tips to Prevent Motion Sickness: Keep the air flowing, close your eyes to rest, and press the Neiguan acupoint.  \nBottom Row Dishes: Cabbage vegetables, Mapo tofu, shredded potatoes.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "[Send image: 1.png]",
+          "image": "1.png"
+        },
+        {
+          "session": "5",
+          "turn": 5,
+          "content": "[Send image: 2.jpg]",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Both questions involve recalling information from images, requiring the extraction of specific details from the image descriptions.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "session2/1.png",
+        "text": "Which suggestion for preventing motion sickness in the problem image was also mentioned in conversations at times other than February 15th?"
+      },
+      "original_answer": "Keep ventilated",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "[Send image: 1.png] Tips to Prevent Motion Sickness: 1. Keep the air flowing 2. Close your eyes and rest 3. Press the Neiguan point",
+          "image": "1.png"
+        },
+        {
+          "session": "1",
+          "turn": 10,
+          "content": "Motion sickness: Open windows for ventilation, stop and rest.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Relate the suggestion of pressing the Neiguan acupoint from the image in Session 2 to the same suggestion in the dialogue text of the same session.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation on April 5th, Fang Qing mentioned that she had already taken the stray cat to be neutered. However, on May 20th, what kind of oversight did she indicate in her actions?"
+      },
+      "original_answer": "Fang Qing discovered another pregnant kitten and mentioned that she might have missed this one earlier.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "3",
+          "turn": 4,
+          "content": "I have experience in feeding stray cats: at a fixed location and time, providing clean food and water, and trying not to disturb others.",
+          "image": ""
+        },
+        {
+          "session": "4",
+          "turn": 3,
+          "content": "I want to contact a local stray animal rescue organization to see if they can capture it for neutering, which is TNR. This is good for the cat and also beneficial for the community.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Problem detection involves updating information from Session 3 to Session 4, examining the process of knowledge correction across sessions.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In Session 5, Chen Lu observed the hygiene in the driver's cafeteria, noting the heavy use of oil and the possible use of cheap frozen meat. In Session 6, Fang Qing suggested home meal preparation as a solution. From Session 5 to Session 6, how has their focus on food safety changed or been supplemented?"
+      },
+      "original_answer": "In Session 5, the focus is primarily on hygiene issues related to eating out, such as oil stains and ingredient quality. In Session 6, the focus expands to include family meal planning, where meal preparation is used to control hygiene, nutrition, and efficiency. This shifts the approach from passively avoiding risks to actively preventing them, offering a healthier and more manageable dietary solution.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Today, I had a meal at the usual driver's canteen and casually took a photo of the kitchen. The owner is honest and generous with portions, but look at the greasy stove—it's heavily used, and the oil has darkened the surface.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Last time we talked about the hygiene issues in the driver's cafeteria, I thought of a solution for home cooking. This is the result of my weekend meal prep—several airtight containers for storing ingredients, functional and not aiming for a trendy look.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Problem detection involves supplementing information from Session 5 to Session 6, examining the process of knowledge updating across sessions.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ005"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "According to Session 1 (Hypoglycemic Events), Session 2 (Health Corner Concept), Session 9 (Feedback on Bus Route Adjustments), and Session 13 (Prevention of Occupational Diseases for Drivers), how did the collaborative project between Chen Lu and Fang Qing develop chronologically?"
+      },
+      "original_answer": "In chronological order:  \n1. Session 1: Address the hypoglycemia incident in the carriage and develop emergency guidelines.  \n2. Session 2: Propose the concept of a health corner to expand health services.  \n3. Session 9: Provide feedback on the impact of bus route adjustments on the elderly and promote policy optimization.  \n4. Session 13: Focus on the prevention of occupational diseases among drivers, plan health lectures, and upgrade first-aid kits.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Just now on the bus, there was a young girl who looked pale and was sweating profusely. She said she hadn’t eaten breakfast and was experiencing low blood sugar. I had some candy with me, so I gave it to her, and she felt better.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 6,
+          "content": "Is it possible to set up a 'Public Transport Health Corner' at bus terminals or hub stations with high passenger flow?",
+          "image": ""
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "I just saw the news that the optimization and adjustment plan for the city's bus routes has been announced.",
+          "image": ""
+        },
+        {
+          "session": "13",
+          "turn": 1,
+          "content": "Recently, I've been driving for long periods, and my lower back feels a bit sore, probably due to prolonged sitting and occasionally helping passengers with their luggage.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The task requires cross-session temporal ordering, inferring the sequence of events based on information from multiple sessions.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ006"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation history, the mutual assistance relationship between Chen Lu and Fang Qing has gradually deepened. Please arrange the following three events in chronological order: A Fang Qing shares a family meal preparation plan; B Chen Lu helps inquire about the cost-sharing for TNR sterilization in the fleet; C Fang Qing creates a long infographic on flu prevention and suggests cabin protection measures."
+      },
+      "original_answer": "The correct chronological order is: C A B",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 4,
+          "content": "Chen Lu: I support you. This is more sustainable than simply feeding them. Do you know the approximate cost and process for neutering? If needed, I can help inquire about resources or share the cost in the community group.",
+          "image": null
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Fang Qing: [Sent picture: 1.jpg] Master Chen, good weekend! Last time we talked about the hygiene issues in the driver's cafeteria, I came up with a solution for home-cooked meals. This is the result of my weekend meal prep...",
+          "image": "1.jpg"
+        },
+        {
+          "session": "10",
+          "turn": 1,
+          "content": "Fang Qing: Chen Lu, I just posted this in the community group. Local news says the flu is entering a high-incidence period. I made a long infographic on 'Key Points for Family Flu Prevention and Care.' If your colleagues in the fleet need it, they can refer to it.",
+          "image": null
+        }
+      ],
+      "validation_notes": "Assess the ability to reason temporally about the sequence of multiple events.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ007"
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Why did Fang Qing propose the systematic concept of establishing a \"Public Transport Health Corner\" at the bus terminal?"
+      },
+      "original_answer": "During the hypoglycemic incident, Chen Lu explicitly mentioned, \"This hypoglycemic event made me realize the importance of systematic preparation.\" This statement directly inspired Fang Qing to elevate scattered emergency responses into the concept of a systematic health corner.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 15,
+          "content": "Chen Lu: Yes, even ordinary positions can accomplish extraordinary things. This hypoglycemia incident has made me more aware of the importance of systematic preparation.",
+          "image": null
+        },
+        {
+          "session": "2",
+          "turn": 6,
+          "content": "Fang Qing: Yes, but more systematically. Could we set up a 'Public Transport Health Corner' at bus terminals or hubs with high passenger flow? Place some health brochures, such as those on heatstroke prevention, flu prevention, first aid knowledge, along with a convenience medicine kit and a free blood pressure monitor.",
+          "image": null
+        }
+      ],
+      "validation_notes": "Causal Reasoning: Chen Lu emphasized the importance of systematic preparation in Session 1 → leading to → Fang Qing proposing the health corner concept in Session 2.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ008"
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "",
+        "text": "Why did Fang Qing propose the family meal preparation plan?"
+      },
+      "original_answer": "Chen Lu discovered serious hygiene issues in the driver's cafeteria, such as heavily greasy stovetops, excessive oil usage, and cross-contamination between raw and cooked foods on cutting boards. This made Fang Qing realize the potential food safety risks associated with eating out, so she suggested addressing dietary health concerns by preparing meals at home.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Fang Qing: [Send picture: 1.jpg] Hello, Master Chen! Regarding the hygiene issues in the driver's cafeteria we discussed last time, I've come up with a solution for home-cooked meals. This is what I prepared over the weekend—several airtight containers with ingredients, functional and not aiming for a trendy look.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Chen Lu: [Sent a picture: 1.jpg] Fang Qing, I had a meal at the driver's canteen I often visit today and casually took a photo of the kitchen. The owner is honest and generous with portions, but look at the grease on the stove—they use a lot of oil, and the color has darkened.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "5",
+          "turn": 4,
+          "content": "Fang Qing: Thanks for the support! From the photo, it looks like the cutting board isn't separated for raw and cooked foods, which can easily lead to cross-contamination.",
+          "image": null
+        }
+      ],
+      "validation_notes": "Causal Inference: Canteen hygiene issues in Session 5 (grease stains, mixing of raw and cooked food) → leads to → Fang Qing proposing a meal preparation plan as a solution in Session 6.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ009"
+    },
+    {
+      "question_id": "Q010",
+      "question": {
+        "image": "session3/1.png",
+        "text": "In the conversation on April 5th, Chen Lu referred to the yellow dog in the picture as 'old buddy'. How did Fang Qing refer to the same animal in the annual review on December 20th?"
+      },
+      "original_answer": "Fang Qing referred to it as 'the stray dog at the station'.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Chen Lu: Here comes the 'old friend' again, looking all eager.",
+          "image": "1.png"
+        },
+        {
+          "session": "11",
+          "turn": 4,
+          "content": "Fang Qing: You reminded me to pay attention to the stray dog at the station, which made me notice more details.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity (the yellow dog) across different conversations, from nicknames to descriptive references.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ010"
+    },
+    {
+      "question_id": "Q011",
+      "question": {
+        "image": "",
+        "text": "During the discussion on group buying on October 15, Chen Lu mentioned, \"Just like the backpack structure diagram you posted earlier.\" Which image is Chen Lu referring to? Please provide the session number and the image file name."
+      },
+      "original_answer": "2.png in Session 7",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "8",
+          "turn": 7,
+          "content": "Chen Lu: You're right, Nurse Fang. Our union is quite well-organized, with established suppliers and a solid reputation, much like the observation and research you emphasized when choosing a spine-protecting backpack.",
+          "image": null
+        },
+        {
+          "session": "7",
+          "turn": 6,
+          "content": "Fang Qing: [Sent picture: 2.jpg] Yes, just looking at advertisements isn't enough. I'm sending you a picture—this is a diagram of the backpack structure I used for health science outreach before, highlighting the support areas and shoulder strap design. You can refer to this and focus on checking these parts when you go to the mall.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "In Session 8, Chen Lu referred to the \"Backpack Structure Diagram\" to denote the image 2.png from Session 7.",
+      "generated_at": "2026-04-01T17:05:33.130586",
+      "validated": true,
+      "original_question_id": "CSQ011"
+    }
+  ],
+  "summary": {
+    "total_questions": 11,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 2,
+      "Knowledge Resolution": 1,
+      "Temporal Reasoning": 2,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 2
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 7,
+      "hard": 1
+    },
+    "converted_from_cross_session": true
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:10:09.230056",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Before the run began, everyone discussed Da Liu's knee brace. Who was the first to notice that Da Liu's knee brace looked professional, and who reminded Da Liu to be careful with its use to avoid affecting his recovery?"
+      },
+      "original_answer": "Xiao Pi was the first to notice that Da Liu's knee pads looked professional. Dr. Wu reminded Da Liu to pay attention to the use of the knee pads to avoid affecting his recovery.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 5,
+          "content": "Xiao Pi: [Sending picture: img5.jpg] Haha, thank you! But Da Liu's knee pads look very professional."
+        },
+        {
+          "session": "session5",
+          "turn": 7,
+          "content": "Dr. Wu: @Big Liu, it's important to be mindful of using knee pads properly to avoid hindering your recovery."
+        }
+      ],
+      "notes": "召回对话文本中的关键信息，涉及两个不同人物对同一事物的不同关注点（小皮关注外观专业，吴医生关注使用安全），答案提炼了核心事实。"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "At the post-run gathering celebration, Iron Sister ordered a beer. What brand was the beer?"
+      },
+      "original_answer": "Tsingtao Beer",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 24,
+          "content": "Iron Sister: [Sending picture: img9.jpg] I couldn't resist ordering a beer to celebrate.",
+          "image": "img9.jpg"
+        },
+        {
+          "session": "session5",
+          "image": "img9.jpg",
+          "description": "啤酒罐：绿色，圆柱形，位于图片中心。罐身上有“TSINGTAO”字样，红色和白色字体。下面有“青岛啤酒”汉字和容量标识“净含量500ml”。"
+        }
+      ],
+      "notes": "基于图片内容提问，召回图片中包含的文本信息（品牌）。"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image led to the conversation where Sister Tie mentioned 'drinking beer should also be in moderation'? Provide the session number and image file name."
+      },
+      "original_answer": "img9.jpg in session5",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 24,
+          "content": "Iron Sister: [Sending picture: img9.jpg] I couldn't resist ordering a beer to celebrate.",
+          "image": "img9.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 25,
+          "content": "Coach Zhang: @Iron Sister, drink beer in moderation, don't let it affect our workout results.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: img9.jpg (a picture of beer) sparked Instructor Zhang's comments on drinking beer in moderation.",
+      "generated_at": "2026-03-23T10:10:09.229937",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "img5.jpg",
+        "text": "In the conversation, how are the objects in the image referred to and cited?"
+      },
+      "original_answer": "Da Liu's knee pads, your knee pads, knee pads",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 19,
+          "content": "Ricky: [Sends picture: img8.jpg] After running, it's good to replenish some nutrients. The light meal on this table looks great.",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 21,
+          "content": "Xiao Pi: @Ricky These salads are very healthy, but are you concerned about the calorie content of the salad dressing?",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 22,
+          "content": "Dr. Wu: Look at this calorie chart, the calorie content of salad dressing really needs attention.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 38,
+          "content": "Dr. Wu: @Xiao Pi Yes, the calorie content of salad dressing should not be overlooked. You all need to pay more attention to it!",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 40,
+          "content": "Iron Sister: Looks like we need to change our dining style for the next gathering—healthy while also keeping calories in check.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: The salad topic transitions from displaying images to discussing calorie concerns, then to reminders and future plans, forming a continuous chain of reference.",
+      "generated_at": "2026-03-23T10:10:09.229954",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "If someone wants to eat light to lose weight, is salad dressing a good choice?"
+      },
+      "original_answer": "No, salad dressing is very high in calories.",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 37,
+          "content": "Xiao Pi: [Sending picture: img11.jpg] The calorie count of this light meal really surprised me. @Dr. Wu, what do you think?",
+          "image": "img11.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 38,
+          "content": "Dr. Wu: @Xiao Pi Yes, the calorie content of salad dressing should not be overlooked. You all need to pay more attention to it!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Online Adaptation: Based on the 'calorie bomb' information from the new image img11.jpg, Dr. Wu learns and applies it, reminding to be cautious of the calorie content in salad dressing.",
+      "generated_at": "2026-03-23T10:10:09.229991",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Xiao Pi is a long-time member of the running event on June 1st, and he has participated many times. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Coach Zhang: [Sends picture: img4.jpg] Hey, it's Xiao Pi's first time here, check out his jersey selfie!"
+        }
+      ],
+      "notes": "直接给出一条与对话内容矛盾的信息（小皮是老成员），考察模型能否识别出与第1轮“小皮第一次来”的矛盾。"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which brand of sports equipment did Peach mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: Information not mentioned in the conversation (Peach mentioned sports equipment brands) should be declined to avoid hallucinations.",
+      "generated_at": "2026-03-23T10:10:09.230025",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

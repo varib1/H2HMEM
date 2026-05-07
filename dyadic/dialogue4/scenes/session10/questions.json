@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:07:21.824034",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the research topic of the paper mentioned by Ye Zhiwei in the conversation?"
+      },
+      "original_answer": "Effects of Different Lactic Acid Bacteria Fermented Sourdough on Bread Quality and Flavor",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Lin Feng, I just read a paper studying the effects of different lactic acid bacteria fermenting sourdough on bread quality and flavor.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, with answers directly from Round 1 dialogue.",
+      "generated_at": "2026-02-24T11:07:21.823028",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the 'preliminary experimental condition requirements' mentioned in the conversation, which image corresponds to this description? Please provide the session number and image file name."
+      },
+      "original_answer": "2.png in session10",
+      "answer_source": "conversation_text/image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "These are the preliminary experimental condition requirements, based on the technical specifications in the paper.",
+          "image": "2.png"
+        },
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding images based on textual information, where the images and text describe different aspects of the same event (as required by experimental conditions).",
+      "generated_at": "2026-02-24T11:07:21.823028",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image triggered Ye Zhiwei's discussion on 'experimental condition requirements'? Provide the session number and file name of the image."
+      },
+      "original_answer": "2.png in session10",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "These are the preliminary experimental condition requirements, based on the technical specifications in the paper.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "It is inferred that the image (2.png) drives the text (the discussion on experimental condition requirements in the 5th round of dialogue), indicating a causal driving relationship.",
+      "generated_at": "2026-02-24T11:07:21.823028",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the abstract of the paper in the image, what measures should be taken to increase the proportion of acetic acid bacteria?"
+      },
+      "original_answer": "Increase feeding frequency",
+      "answer_source": "conversation_text/image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Hypothesis A: Increasing the feeding frequency can raise the proportion of acetic acid bacteria, which may influence the flavor.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Examine and learn the newly acquired multimodal information (the paper abstract and dialogue text in image1.png) and apply it to answer questions, requiring online adaptation.",
+      "generated_at": "2026-02-24T11:07:21.824034",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Ye Zhiwei's fermentation liquid feeding plan comparison table only has two groups. Does this contradict the content of the conversation?"
+      },
+      "original_answer": "Contradiction should be among groups A, B, and C.",
+      "answer_source": "conversation_text/image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 9,
+          "content": "This is the organized feeding plan comparison chart, divided into Groups A, B, and C, including feeding frequency, ingredient ratios, and recording items.",
+          "image": "3.png"
+        },
+        {
+          "session": "session10",
+          "turn": 9,
+          "content": "",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Detect whether there is any contradiction between newly input information (assumptions in the question) and existing memory (dialogue and image descriptions) to verify consistency.",
+      "generated_at": "2026-02-24T11:07:21.824034",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Which specific name of lactic acid bacteria did Ye Zhiwei mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Lin Feng, I just read a paper studying the effects of different lactic acid bacteria fermented sourdough on bread quality and flavor.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Hypothesis A: Increasing the feeding frequency can raise the proportion of acetic acid bacteria, which may influence the flavor.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue (specific names of lactic acid bacteria) to test the ability to decline answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:07:21.824034",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

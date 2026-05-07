@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:13:50.355661",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 5",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 5"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what was Xiao Bai's initial attitude towards traveling to Japan?"
+      },
+      "original_answer": "Xiao Bai initially said he couldn't afford to go to Japan due to budget constraints and was leaning towards Changbai Mountain instead.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "Xiao Bai: [Sending picture: img3.jpg] I'm afraid I can't afford to go! Look at my balance.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "Xiaobai: Budget is indeed an issue, but I still lean towards Changbai Mountain.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, involving Xiaobai's preferences and event details.",
+      "generated_at": "2026-03-23T10:13:50.355488",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "When discussing where to travel for New Year's, does the hotel recommended by Dawei have a bathtub? If so, what color is it?"
+      },
+      "original_answer": "Yes, white.",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "Vicky: [Sending picture: img2.jpg] If we go to Japan, we can also enjoy such kaiseki cuisine, definitely worth the money.",
+          "image": "img2.jpg"
+        }
+      ],
+      "validation_notes": "Recall relevant textual information based on the image content. The image and text are related to the same event (discussing travel to Japan) without a causal relationship.",
+      "generated_at": "2026-03-23T10:13:50.355523",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which picture caused Mia's concern about crowds? Provide the session number and picture file name."
+      },
+      "original_answer": "img6.jpg in session1",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 21,
+          "content": "Mia: [Sends picture: img6.jpg] But look, this crowded tourist spot is really a bit worrying.",
+          "image": "img6.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text, img6.jpg triggered Mia's worry, which is causal inference.",
+      "generated_at": "2026-03-23T10:13:50.355541",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "How was the destination 'Changbai Mountain' gradually confirmed in the conversation?"
+      },
+      "original_answer": "From Dawei's suggestion that 'Changbai Mountain is also a good choice' (Round 5), to Lao Zhang saying 'Let's consider Changbai Mountain first' (Round 10), followed by Xiao Bai and Mia expressing their acceptance (Rounds 11 and 12), and finally Lao Zhang announcing 'We've decided to go to Changbai Mountain' and booking the tickets (Round 14).",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "I think Changbai Mountain is also a good choice, with relatively reasonable costs.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "I see that the budget is seriously overrun, so let's consider Changbai Mountain first.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "The budget is indeed an issue, but I still lean towards Changbai Mountain.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "If everyone has decided, then I'll reluctantly accept it.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 14,
+          "content": "Alright, then it's decided—we're going to Changbai Mountain. The flight tickets are already booked!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: 'Changbai Mountain' as a destination is gradually proposed, discussed, and confirmed over multiple rounds of conversation.",
+      "generated_at": "2026-03-21T05:34:23.901540",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the knowledge learned from the conversation, what type of lake is Changbai Mountain Tianchi? What are its unique geographical features?"
+      },
+      "original_answer": "Changbai Mountain Tianchi is a crater lake formed after a volcanic eruption. It also has a unique geographical feature: it is the deepest alpine lake in China, with a water depth exceeding three hundred meters. The conversation mentioned that Tianchi not only boasts beautiful scenery but also possesses these distinctive geographical characteristics.",
+      "answer_source": "inference",
+      "answer_session": [
+        "S5-1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "S5-1",
+          "turn": 15,
+          "content": "Lao Zhang: [Sending picture: img4.jpg] Look at this view of Tianchi Lake on Changbai Mountain, isn't it very attractive?",
+          "image": "img4.jpg"
+        },
+        {
+          "session": "S5-1",
+          "turn": 16,
+          "content": "Dawei: Changbai Mountain's Tianchi isn't just beautiful; it's also the deepest alpine lake in China, with a depth of over 300 meters. Moreover, it's a crater lake, formed after a volcanic eruption.",
+          "image": ""
+        },
+        {
+          "session": "S5-1",
+          "turn": 17,
+          "content": "Mia: @Old Zhang It is indeed beautiful, but I'm still a bit hesitant about crowded places.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess online adaptability: Require the application to utilize the newly learned general geographic knowledge that 'Tianchi is a crater lake and the deepest alpine lake in China' to identify and describe the geographic features of Tianchi images.",
+      "generated_at": "2026-03-25T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "When Old Zhang suggested going to Japan for New Year's Eve, does this contradict the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "Lao Zhang: @Vicky I see the budget is seriously overrun, so let's consider Changbai Mountain first.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 14,
+          "content": "Lao Zhang: Alright, then it's decided—we're going to Changbai Mountain. The flight tickets are already booked!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detecting contradictions between new information and existing memories, Old Zhang never proposed going to Japan but instead supported Changbai Mountain.",
+      "generated_at": "2026-03-23T10:13:50.355614",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific skiing activity did Gian mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "Fat Tiger: @David, I also find the barbecue at Changbai Mountain very appealing.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 13,
+          "content": "Fat Tiger: The barbecue at Changbai Mountain is truly not to be missed; we can really enjoy it.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present (skiing activity) to assess the ability to decline answering and avoid hallucinations.",
+      "generated_at": "2026-03-23T10:13:50.355630",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

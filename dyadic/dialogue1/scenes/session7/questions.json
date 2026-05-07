@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:22:25.273057",
+    "session_name": "session7",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 7,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session7",
+    "session_number": 7,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What equipment does Zhou Pingfan use for fitness?"
+      },
+      "original_answer": "Barbell",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
+      "generated_at": "2026-03-01T12:22:25.273057",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the conversation, what is the name of the website where you can search for aerobics classes?"
+      },
+      "original_answer": "bilibili",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 7,
+          "content": "You can search for courses on this video website, where there are many free tutorials, just as convenient as when we looked for pet supplies before.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Text→Image, recalling corresponding images based on textual information from the conversation, as both are related to the same event.",
+      "generated_at": "2026-03-01T12:22:25.273057",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "Does Lin Chang'an think the exercise in the problem picture is suitable for him? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 5,
+          "content": "Indoors is also fine. For example, aerobics, which doesn't require a long time and can be done at home.",
+          "image": "2.png"
+        },
+        {
+          "session": "session7",
+          "turn": 6,
+          "content": "This looks like it suits me quite well! But how should I learn it? Figuring it out on my own might not be very effective.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text, inferring that the image triggered subsequent textual responses.",
+      "generated_at": "2026-03-01T12:22:25.273057",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, how is the question image referred to or cited?"
+      },
+      "original_answer": "Described as 'a barbell, the pink bar is quite special,' which later indirectly led to the cause of 'feeling a bit sore in the muscles after a few days of training.'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "[Send picture: 1.png] I've recently started working out and bought some equipment to exercise at home. This barbell just arrived, and the pink bar is quite unique.",
+          "image": "1.png"
+        },
+        {
+          "session": "session7",
+          "turn": 3,
+          "content": "Well, it feels pretty good. After a few days of practice, my muscles are a bit sore, but my spirits have improved a lot.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and referencing methods of entities across different rounds.",
+      "generated_at": "2026-03-01T12:22:25.273057",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Zhou Pingfan started working out at the gym. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "I've recently started working out and bought some equipment to exercise at home.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Introduce new information that may contradict the dialogue to test whether the model can resist such contradictions.",
+      "generated_at": "2026-03-03T12:00:58.427271",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Which color of fitness clothing did Zhou Pingfan recommend?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-01T12:22:25.273057",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

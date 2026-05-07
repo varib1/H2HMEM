@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:09:42.851516",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 5",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 5"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What pattern did Lin Shuying see on the indigo-dyed tea mat at the market?"
+      },
+      "original_answer": "Lotus",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 2,
+          "content": "This indigo-dyed tea mat, with its hand-hammered texture, feels more vibrant than the smoothness of machine-made ones. Is the pattern a lotus flower?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Whose chat screenshot is the problem picture with Lin Shuying?"
+      },
+      "original_answer": "Screenshot of a chat with the author of the Indigo Dye Tea Ceremony.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "This is a screenshot of my chat with the author, where he shared the production process.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where the two are related due to the same event, not through causal inference.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "In the conversation, how does Lin Shuying evaluate the problematic image?"
+      },
+      "original_answer": "This graphic style is simple and elegant, with the charm of ink painting.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "This is a screenshot of my chat with the author, where he shared the production process.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Inferring that images drive the text content, focusing on causal inference rather than direct correlation.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "In a conversation, how are the images in the questions referred to or cited?"
+      },
+      "original_answer": "Referred to as 'this', 'this indigo-dyed tea mat', 'this tea mat', 'such a handmade item', 'it'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Saw this at the market today.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 2,
+          "content": "This indigo-dyed tea mat",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 5,
+          "content": "This tea set",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referring expressions for the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on historical texts and images of indigo dyeing, during which period was indigo dyeing particularly prevalent?"
+      },
+      "original_answer": "From the late Qing Dynasty to the Republic of China period",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 6,
+          "content": "This craft was very popular from the late Qing Dynasty to the Republic of China period.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Assess the ability to learn and apply newly acquired multimodal information.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The blue-dyed tea set for the conversation is machine-made. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 2,
+          "content": "The marks of hand hammering have more vitality than the smoothness of machines.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 3,
+          "content": "He said each piece is hand-dyed.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradiction: The question claims 'machine production', but the dialogue repeatedly emphasizes 'handmade', creating a contradiction.",
+      "generated_at": "2026-02-24T14:08:32.320811",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What other colored tea mats did Lin Shuying see at the market?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:09:42.851516",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

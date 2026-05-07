@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:12:48.621229",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Alex mentioned that they prefer the immersive experience of IMAX, especially for which type of scenes?"
+      },
+      "original_answer": "Action scenes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 32,
+          "content": "Alex: @Pineapple However, we still lean towards the immersive experience of IMAX, especially for the presentation of action scenes.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-03-23T10:12:48.621056",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "The IMAX aspect ratio comparison mentioned in the conversation showcases which movie's viewing guide?"
+      },
+      "original_answer": "\"East Pole Island\"",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 20,
+          "content": "Alex: [Sending image: img6.jpg] To see the IMAX aspect ratio comparison, you must choose the IMAX version.",
+          "image": "img6.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 20,
+          "content": "Image img6 (file name: img6.jpg): Core Scene: - The image displays a viewing guide for the movie \"Dongji Island,\" primarily introducing the different types of IMAX aspect ratios and their highlights.",
+          "image": "img6.jpg"
+        }
+      ],
+      "validation_notes": "Text → Image: Based on the textual information in the conversation (IMAX aspect ratio comparison), retrieve the corresponding image (img6.jpg). The two are related due to the same event (discussion of IMAX aspect ratio), not causally.",
+      "generated_at": "2026-03-23T10:12:48.621092",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image caused the pineapple to mention the difficulty in selecting seats because the session was full? Provide the session number and the image file name."
+      },
+      "original_answer": "img9.jpg in session5",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 37,
+          "content": "Pineapple: [Sending image: img9.jpg] However, it was a bit troublesome when selecting seats; this session is already full.",
+          "image": "img9.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 37,
+          "content": "Image img9 (file name: img9.jpg): Core scenario: - The image shows a movie ticket booking interface where all seats are sold out, prompting the user to choose a different showtime.",
+          "image": "img9.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text: img9.jpg (showing a fully booked seating interface) directly leads to Pineapple's textual response (mentioning the hassle of seat selection), establishing a causal driving relationship.",
+      "generated_at": "2026-03-23T10:12:48.621110",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "img1.png",
+        "text": "In the conversation, how was the pineapple referred to when the question image was initially sent? And how was it referred to afterwards?"
+      },
+      "original_answer": "Initially, it referred to the promotional poster for this action film; later, it referred to the poster I posted.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Pineapple: [Sending image: img1.png] Everyone, take a look at this action movie teaser poster. What do you think?",
+          "image": "img1.png"
+        },
+        {
+          "session": "session5",
+          "turn": 9,
+          "content": "Pineapple: [Sending image: img1.png] Is this poster a bit exaggerated? The explosion scene looks like it's from a big-budget production.",
+          "image": "img1.png"
+        }
+      ],
+      "validation_notes": "Tracking Evolution: Monitor the changes in reference and description of the same image entity (img1.png) across different rounds (Round 1 and Round 9), from \"trailer poster for an action movie\" to \"exaggerated, explosion scenes look high-budget.\"",
+      "generated_at": "2026-03-23T10:12:48.621126",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Based on the knowledge learned from the conversation, what is the difference between IMAX and a regular screen?"
+      },
+      "original_answer": "This image illustrates that the biggest difference between IMAX and regular screens is the larger screen size and different aspect ratio.",
+      "answer_source": "inference",
+      "answer_session": [
+        "S3-5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "S3-5",
+          "turn": 13,
+          "content": "Lao Meng: @Alex, what are the differences between IMAX and regular screens?",
+          "image": ""
+        },
+        {
+          "session": "S3-5",
+          "turn": 20,
+          "content": "Alex: [Sent image: img6.jpg] To see the IMAX aspect ratio comparison, you must choose the IMAX version.",
+          "image": "img6.jpg"
+        },
+        {
+          "session": "S3-5",
+          "turn": 32,
+          "content": "Pineapple: [Send image: img8.jpg] Then take a look at this screen size comparison chart, it's really different.",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "S3-5",
+          "turn": 33,
+          "content": "Pomelo: @Pineapple Indeed, a larger screen provides a more immersive experience, but it also depends on the overall sound quality and brightness.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess online adaptability: Requires the application to identify and respond to the core differences illustrated in the screen size comparison chart (img8.jpg) using the newly learned knowledge of 'the difference between IMAX and regular screens' from the conversation.",
+      "generated_at": "2026-03-25T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Does Yuzu's dislike of romantic art films contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Pomelo: [Sent picture: img3.jpg] I think this art-house romance film is better; it has a very aesthetic feel to it.",
+          "image": "img3.jpg"
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content to detect whether contradictions are recognized.",
+      "generated_at": "2026-03-21T05:32:33.505021",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which sci-fi movie's IMAX version did they discuss?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "Alex: How about we see if there's a new Nolan film? The trailer we saw last time was really captivating.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 18,
+          "content": "Lao Meng: [Sent picture: img5.jpg] Look, the promotional poster for Nolan's new film, the visual effects are bound to be stunning.",
+          "image": "img5.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 20,
+          "content": "Alex: [Sends picture: img6.jpg] To see the IMAX aspect ratio comparison, you must choose the IMAX version.",
+          "image": "img6.jpg"
+        }
+      ],
+      "validation_notes": "Refusal scenario: The question involves information not present in the conversation (the IMAX version of a sci-fi movie). The discussion is about Nolan's new film (possibly non-sci-fi) and the IMAX version of \"Dongji Island,\" but no specific sci-fi movie is mentioned. The response should either refuse to answer or point out that it has not been mentioned.",
+      "generated_at": "2026-03-23T10:12:48.621197",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

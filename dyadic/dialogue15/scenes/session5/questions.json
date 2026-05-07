@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:26:41.403697",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 15",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 15"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Han Shuli asked what the data acquisition frequency of the attitude sensor is."
+      },
+      "original_answer": "Once per minute",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "The data acquisition frequency is set at once per minute to reduce random errors.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, recalling pure text facts from the conversation (data collection frequency).",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.jpg",
+        "text": "Which device description in the dialogue corresponds to the problem image?"
+      },
+      "original_answer": "Posture correction device",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "The sensor is worn on the back, similar to this posture correction device, and I calibrated it by referring to the product manual.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text, retrieve device descriptions from the conversation based on image 1.png.",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.jpg",
+        "text": "What kind of discussion did this picture spark regarding the Lin measure?"
+      },
+      "original_answer": "Standardized Pain Score",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 6,
+          "content": "To standardize the pain score, I referred to this pain intensity rating chart.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text, image 3.png (Pain Intensity Rating Chart) sparked a discussion by Lin Measure on standardized pain scoring.",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'attitude sensor' referred to?"
+      },
+      "original_answer": "Attitude Sensor (Round 1) → Posture Correction Device (Round 3) → Sensor (Round 3)",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "This is a time-series graph of the cervical forward tilt angle collected over a week using a posture sensor.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "The sensor is worn on the back, similar to this type of posture-correcting device.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the entity (posture sensor) across different rounds, from 'posture sensor' to 'posture correction device' and then to 'sensor'.",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "4.jpg",
+        "text": "Based on the problem image, what environmental details does the Lin measure suggest recording as covariates?"
+      },
+      "original_answer": "Seat height",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 10,
+          "content": "Here, it is necessary to record details of the working environment, such as seat height, as covariates.",
+          "image": "4.jpg"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired multimodal information (image 4.png shows an office scene), and apply this new knowledge to answer questions (record seat height as a covariate).",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation on May 5th, Han Shuli mentioned that the posture sensor should be worn on the back. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "No",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "The sensor is worn on the back, similar to this posture correction device, and I calibrated it by referring to the product manual.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Detect whether there is any contradiction between the newly input information (description in the question) and the existing memory (dialogue and images). Here, the two are consistent, with no contradiction.",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue does not mention which machine learning model Han Shuli used to predict pain scores."
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test whether the model can correctly refuse to answer.",
+      "generated_at": "2026-02-24T11:26:41.403697",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 3,
+      "Text": 2,
+      "Text-Image": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

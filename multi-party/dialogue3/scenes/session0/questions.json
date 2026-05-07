@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T09:19:07.514928",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T09:19:07.514936"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What was the movie rating mentioned by Alex in the conversation on July 15th? What was the limited edition number of the statue he purchased in the conversation on August 1st?"
+      },
+      "original_answer": "In the conversation on July 15th, Alex mentioned that the movie rating was 10.0 (out of 10). In the conversation on August 1st, the limited edition number of the statue he purchased was 007/500.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 27,
+          "content": "Alex: [Sends image: img7.jpg] Look at this rating, I think it's too low.",
+          "image": "img7.jpg"
+        },
+        {
+          "session": "1",
+          "turn": 53,
+          "content": "Alex: I gave this movie a perfect score on Douban!",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 13,
+          "content": "Alex: The limited edition number is 007/500. It is indeed a bit smaller, but the value of a limited edition lies in this.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 56,
+          "content": "Alex: [Sent picture: img11.jpg] Let me show everyone the limited edition number, 007/500. It really has great collectible value!",
+          "image": "img11.jpg"
+        }
+      ],
+      "validation_notes": "The problem integrates textual facts from Session 1 (movie ratings) and Session 3 (statue numbers), requiring cross-session recall of unimodal details.",
+      "generated_at": "2026-04-01T09:19:07.514959",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In Session 1, what was Alex's view on the spacecraft design? In Session 3, how did he update his perspective on the statue's flaws?"
+      },
+      "original_answer": "In Session 1, Alex felt that the spaceship design was unreasonable (such as the wing design), which made him somewhat disengaged. In Session 3, he updated his view, believing that the painting flaws on the statue (such as color bleeding on the belt) did not affect its overall collectible value, as the limited edition number 007 and display effect were more important.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 21,
+          "content": "Alex: However, the design of the spaceship's wings is unreasonable, which still takes me out of the moment a bit.",
+          "image": ""
+        },
+        {
+          "session": "1",
+          "turn": 39,
+          "content": "Alex: The design of the spacecraft is indeed somewhat unreasonable, but that doesn't affect me giving it full marks.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 9,
+          "content": "Pineapple: @Alex The paint on this belt has overflowed, doesn't seem too good.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 10,
+          "content": "Alex: @Pineapple, this little flaw is nothing, just take a look at my display cabinet.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 32,
+          "content": "Alex: Yes, although there are some flaws, the overall collection value is still quite high.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 49,
+          "content": "Alex: @Pineapple, I think the limited edition number 007 and the overall display effect are sufficient to offset these minor flaws.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue examines the knowledge update process from Session 1 (unreasonable spacecraft design) to Session 3 (acceptable statue flaws), focusing on Alex's revision of views on flaws.",
+      "generated_at": "2026-04-01T09:19:07.514973",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Based on the information from Session 1, Session 3, and Session 5, what is the chronological order of the activities Alex participated in?"
+      },
+      "original_answer": "In chronological order: First, in Session 1, Alex watched the movie premiere and discussed the details; then in Session 3, he received a limited edition statue and unboxed it for discussion; finally, in Session 5, he plans to watch Nolan's new film and purchase IMAX tickets.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Alex: [Sends picture: img1.jpg] Look at this, I've got tickets for the IMAX Laser GT theater!",
+          "image": "img1.jpg"
+        },
+        {
+          "session": "1",
+          "turn": 52,
+          "content": "Alex: Overall, this movie was definitely worth watching, and I'm looking forward to the director's next work.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Alex: [Sent picture: img1.jpg] The bulk shipment has arrived!",
+          "image": "img1.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 66,
+          "content": "Alex: Thank you all for the discussion. Looking forward to sharing new collections together next time.",
+          "image": ""
+        },
+        {
+          "session": "5",
+          "turn": 8,
+          "content": "Alex: How about we see if there's a new film by Nolan? The trailer we watched last time was really captivating.",
+          "image": ""
+        },
+        {
+          "session": "5",
+          "turn": 28,
+          "content": "Alex: @Pomelo Just bought the tickets, we can set off now.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The task requires inferring the chronological order of events across sessions, based on clues from Session 1 (after watching the movie), Session 3 (after the statue arrives), and Session 5 (planning a new movie viewing).",
+      "generated_at": "2026-04-01T09:19:07.514984",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    }
+  ],
+  "summary": {
+    "total_questions": 3,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Knowledge Resolution": 1,
+      "Temporal Reasoning": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 1,
+      "hard": 1
+    },
+    "converted_from_cross_session": true
+  }
+}

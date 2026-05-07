@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:12:46.144736",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 7",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 7"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Which key health indicators did Song Weian mention tracking in the conversation?"
+      },
+      "original_answer": "Blood lipids and sleep quality",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "For instance, there is a tendency for blood lipid levels to approach critical thresholds, and sleep quality data also correlates with work stress cycles.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which picture did Shen Qingyin mention in the conversation that is related to assessing risks based on probabilistic thinking? Provide the session number and the picture file name."
+      },
+      "original_answer": "2.png in session1",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "Perfect timing. I'm sharing an actuarial table based on large-scale population data, which covers major health risks and expected medical expenses across different age groups. This can help you assess risks from a probabilistic perspective. For example, the cholesterol trends you mentioned might correspond to chronic disease risks at specific ages.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event (probabilistic thinking in risk assessment), but not causally.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Song Weian to inquire about configuring commercial insurance to hedge against identified risks? Provide the session number and image file name."
+      },
+      "original_answer": "2.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "",
+          "image": "2.png"
+        },
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "This table is very clear, with cost-effectiveness and risk stratification presented at a glance. However, I'm not very familiar with insurance. You mentioned transparency of information earlier—could you elaborate on how to configure commercial insurance to hedge against these identified risks?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "It is inferred that the image (2.png) drives the text (the 5th round of dialogue), indicating a causal driving relationship.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'actuarial table' mentioned and referenced by Shen Qingyin?"
+      },
+      "original_answer": "'Actuarial table', 'This table', 'Your actuarial table', 'My table'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "Perfect timing, I'd like to share an actuarial table based on large-scale population data, which covers major health risks and expected medical expenses across different age groups.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "This table is very clear, with cost-effectiveness and risk stratification presented at a glance.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "Weian, we can set the tone of our discussion as integrating health management with financial security, much like how your dashboard and my spreadsheet complement each other.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity (actuarial tables) across different rounds.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the dialogue, how do the health risks of chronic diseases and major illnesses compare during childhood?"
+      },
+      "original_answer": "Relatively low",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "",
+          "image": "2.png"
+        },
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "The risk during childhood is relatively low, but specific diseases such as asthma should not be overlooked.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Apply the newly acquired multimodal information (the actuarial table in image2.png) to answer the question, testing online adaptation capabilities.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Sleep quality data is correlated with work stress cycles. Does this contradict the conversation content? Answer yes or no."
+      },
+      "original_answer": "No",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Sleep quality data is also correlated with work stress cycles.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (leisure activity cycle) and existing memories (work stress cycle).",
+      "generated_at": "2026-02-24T14:12:04.187586",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific types of charts did Song Weian mention are included in his family health data dashboard?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Qingyin, this is a screenshot of the 2023 family health data dashboard I just finished organizing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue (specific chart types) to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:12:46.144736",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:22:55.805925",
+    "session_name": "session7",
+    "dialogue_name": "Dialogue 11",
+    "session_number": 7,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session7",
+    "session_number": 7,
+    "dialogue_name": "Dialogue 11"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What color is the backpack that Chen Lu sent to Fang Qing to buy for their son?"
+      },
+      "original_answer": "Pink",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall pure image facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:22:55.804926",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the backpack structure diagram sent by Fang Qing to Chen Lu for health science communication, what percentage of body weight is required for the total weight of the backpack to be less than?"
+      },
+      "original_answer": "15%",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 6,
+          "content": "I agree, just looking at ads isn't enough. I'll send you a picture—it's a diagram of the backpack structure I used for health science outreach before, highlighting the support areas and shoulder strap design.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall important information from the image.",
+      "generated_at": "2026-02-24T11:22:55.804926",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Fang Qing mentioned several key points from a medical perspective regarding spine-protecting backpacks. One of the key points she mentioned is that the total weight of the backpack itself plus the books should ideally not exceed what percentage of the child's body weight?"
+      },
+      "original_answer": "10%-15%",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 4,
+          "content": "Additionally, the combined weight of the backpack itself and the books should ideally not exceed 10% to 15% of the child's body weight.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Accurately recall details of unimodal text.",
+      "generated_at": "2026-02-24T11:22:55.804926",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.jpg",
+        "text": "After Chen Lu sent the problem image, what specific question did he raise based on the image?"
+      },
+      "original_answer": "Ask Fang Qing if the hospital has any cases involving children with scoliosis.",
+      "answer_source": "both",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "Chen Lu: [Sent picture: 1.jpg] Fang Qing, I've been thinking about buying a new backpack for my son recently. He's starting elementary school, and I saw several brands at the mall promoting spine protection features, all at similar prices. I took a photo, but it's overwhelming to look at. Have you encountered any cases of scoliosis in children at your hospital? From a professional perspective, do you have any suggestions?",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "The problem type is the first scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what behavior of a person in the conversation was caused by the image? Here, the behavior refers to the question posed by Chen Lu based on the image.",
+      "generated_at": "2026-02-28T23:51:12.229526",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Chen Lu repeatedly mentioned the health knowledge previously shared by Fang Qing, such as hypoglycemia management and meal preparation plans. From round 3 to round 11, how did Chen Lu gradually reference Fang Qing's earlier suggestions to support the current discussion on backpack selection?"
+      },
+      "original_answer": "In the third round, Chen Lu mentioned that the health knowledge previously shared by Fang Qing, such as how to handle hypoglycemia and meal preparation plans, was very practical, so he wanted to hear her professional opinion. In the eleventh round, Chen Lu brought up the meal preparation plan Fang Qing had shared earlier, noting that his wife tried it and found it both time-saving and healthy. This time, when choosing a backpack, he wanted to be just as practical.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 3,
+          "content": "The health tips you shared earlier, like how to handle low blood sugar and meal prep plans, are quite practical. So, I’d like to hear your professional opinion.",
+          "image": ""
+        },
+        {
+          "session": "session7",
+          "turn": 11,
+          "content": "The meal prep plan you shared earlier, my wife tried it and said it's both time-saving and healthy. This time, choosing a backpack has to be just as practical.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the citation and evolution of the same topic (Fang Qing's previous health knowledge advice) across different rounds.",
+      "generated_at": "2026-02-24T11:22:55.804926",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "If Chen Lu later learns that his son's weight is 30 kilograms, then based on this new information, what should the total weight of the schoolbag be controlled within?"
+      },
+      "original_answer": "4.5 kilograms",
+      "answer_source": "inference",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 4,
+          "content": "Additionally, the combined weight of the backpack itself and the books inside should ideally not exceed 10% to 15% of the child's body weight.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learn new information from the dialogue (weight percentage recommendation) and apply the new knowledge (child's weight 30 kg) to answer the question.",
+      "generated_at": "2026-02-24T11:22:55.805925",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, Fang Qing suggested that Chen Lu go to the mall to observe the backpacks of kindergarten children. Does this contradict the content of the dialogue? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 8,
+          "content": "I suggest you don't just rely on advertisements; go observe at the school gate. The backpacks carried by older students, if they look the most worn but haven't lost their shape and the straps show little wear, are often the ones that have stood the test of time.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (observing children in a shopping mall kindergarten) and existing memories (observing older children at the school gate).",
+      "generated_at": "2026-02-24T11:22:55.805925",
+      "validated": true
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what color of backpack did Chen Lu mention as his son's favorite?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Information not present in the question should not be answered to avoid hallucinations.",
+      "generated_at": "2026-02-24T11:22:55.805925",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal (Text-Image) Causal Inference": 1,
+      "Cross-turn Reference Tracking": 1,
+      "Test-Time learning(TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 5,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

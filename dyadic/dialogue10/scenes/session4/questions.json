@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:17:49.701121",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Xia Qingchuan mentioned in the conversation that before Snowball became his new companion for emotional recovery, what methods did he use to repair his emotions?"
+      },
+      "original_answer": "Bathing and listening to vinyl records.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "Just as I used to restore my mood by taking a bath and listening to vinyl records, now Snowball has become a new companion in helping me recover my emotions.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:17:49.701121",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation on May 20th, Xia Qingchuan mentioned that his own cat climbed on the keyboard. Please answer whether Xia Qingchuan's computer is a desktop or a laptop?"
+      },
+      "original_answer": "Laptop",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Mingche, look at this photo. Snowball was lying on the edge of my keyboard this afternoon, 'staring' at me with those bright blue eyes.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event, not involving causal inference.",
+      "generated_at": "2026-02-24T11:17:49.701121",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "What knowledge does the problem picture remind Xia Qingchuan of?"
+      },
+      "original_answer": "Pet interaction can be elevated to the level of emotional cognition and physiological regulation.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "Wow, Sunny's gaze is so gentle. This picture reminds me of something I learned before—interacting with pets can enhance emotional awareness and physiological regulation.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The image drives the textual discussion, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:17:49.701121",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how does Xia Qingchuan gradually describe the evolution of Snowball from a 'warning system' to a 'new tool'?"
+      },
+      "original_answer": "From the first round called the 'Early Warning System', to the fifth round called the 'Emotional Barometer', and then to the ninth round called the 'New Tool'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Now, Snowball has become my new 'early warning system'?",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 5,
+          "content": "Now Snowball has become my 'emotional barometer'?",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "Now, Snowball has become my new tool.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the same entity (Snowball) across different rounds.",
+      "generated_at": "2026-02-24T11:17:49.701121",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation content, answer whether pets have the ability to perceive changes in their owner's emotions. Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "both",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 4,
+          "content": "Pets are indeed capable of keenly sensing their owners' emotional and physiological changes, such as blood pressure or pheromones.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learn new information (warm sun photos and discussion) and apply it to answer Xia Qingchuan's plan.",
+      "generated_at": "2026-02-24T11:17:49.701121",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:19:58.277969",
+    "session_name": "session15",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 15,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session15",
+    "session_number": 15,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Zhao Xiaotang mentioned which materials she is responsible for collecting for the low-cost upgraded cat bed?"
+      },
+      "original_answer": "Old clothes and blankets",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 11,
+          "content": "Regarding material collection, I will take charge of the old clothes and blankets.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:19:58.276784",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the description of 'yellow wavy foam' mentioned in the conversation, which picture shows this material? Provide the session number and the picture file name."
+      },
+      "original_answer": "2.png in session15",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 6,
+          "content": "Internal foam boards can be made from waste materials, like the yellow corrugated foam in this picture.",
+          "image": ""
+        },
+        {
+          "session": "session15",
+          "turn": 7,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, as both are related to the same event.",
+      "generated_at": "2026-02-24T11:19:58.276784",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What concerns did the problematic image raise for Zhao Xiaotang?"
+      },
+      "original_answer": "Worried that the cat house won't be finished in time, and the kitten will have to endure the cold.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 7,
+          "content": "The idea of modularization is fantastic! It can handle the cold winter without causing waste. Look at this cold wave warning—we need to hurry. If we don’t act in time, stray cats will suffer from the cold. I’ll take the lead in collecting materials and organizing volunteers, just like the annual procurement plan. How about you take charge of technical guidance?",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Inferring that images drive textual evaluations, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:19:58.276784",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'modular winter cat house' referred to or mentioned?"
+      },
+      "original_answer": "First known as the 'Modular Winter Cat House', then referred to as 'Modular Design', and also called the 'Modular Cat House'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 4,
+          "content": "Modular Winter Cat House",
+          "image": ""
+        },
+        {
+          "session": "session15",
+          "turn": 5,
+          "content": "Modular design",
+          "image": ""
+        },
+        {
+          "session": "session15",
+          "turn": 14,
+          "content": "Modular Cat House",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:19:58.276784",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Li Yifan only designed one renovation plan for the winter cat house. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 8,
+          "content": "",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Detect the consistency between newly input information and existing memory.",
+      "generated_at": "2026-02-24T11:19:58.277969",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

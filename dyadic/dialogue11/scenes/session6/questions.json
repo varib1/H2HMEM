@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:22:06.425873",
+    "session_name": "session6",
+    "dialogue_name": "Dialogue 11",
+    "session_number": 6,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session6",
+    "session_number": 6,
+    "dialogue_name": "Dialogue 11"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the meal preparation results that Fang Qing presented to Chen Lu on August 10th, what are the characteristics of the ingredients portioned in the airtight containers?"
+      },
+      "original_answer": "Highly functional, not chasing after the trendy influencer aesthetic.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 1,
+          "content": "This is the result of my weekend meal prep: several airtight containers for storing ingredients, functional and not chasing after trendy aesthetics.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Text recall, retrieving pure textual facts from the conversation, with images included in the question to locate the context.",
+      "generated_at": "2026-02-28T23:28:01.820713",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.png",
+        "text": "According to the conversation, which previous successful cases were referenced in the design concept of the problem image?"
+      },
+      "original_answer": "Inspired by the 'Emergency Guide Card' and 'Tips for Caring for Stray Animals'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 11,
+          "content": "Round 11 Fang Qing: [Sending image: 3.png] Yes! This is a 'Quick Guide to Making Shredded Pork with Green Peppers' that I specially created, aiming to complete it within 10 minutes. The steps are broken down very clearly. The design concept draws inspiration from our previous successful 'Emergency Guide Cards' and 'Tips for Caring for Stray Animals'—focusing on practicality, visual presentation, and lowering the barrier to execution.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The problem involves recalling information from images based on text content (design approach), which aligns with the second type of requirement in Cross-modal Related Retrieval.",
+      "generated_at": "2026-03-01T12:36:23.056802",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "After Fang Qing sent the problem image, what conclusion did Chen Lu draw?"
+      },
+      "original_answer": "Chen Lu concluded that Fang Qing was methodical in her work.",
+      "answer_source": "both",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 7,
+          "content": "Fang Qing: [Sent picture: 2.jpg] Thank you! These are the meat pieces I cut during meal prep, with some olive oil and herbs placed beside them. After marinating, they are portioned and stored. Just like the principles of \"fixed location, fixed time\" and hygiene we emphasized when feeding the yellow dog (pet_2_01), meal prep also requires attention to the standardization of ingredient handling and storage safety to avoid cross-contamination—this directly addresses your concern about the cutting board not separating raw and cooked ingredients when you took photos of the cafeteria kitchen (food_3_01) last time.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session6",
+          "turn": 8,
+          "content": "Chen Lu: The meat pieces are cut so neatly, you always do things in such an orderly manner. In the last TNR science popularization (pet_2_02), you mentioned scientifically managing stray cat populations. Is this meal prep also a scientific approach to planning family meals? Using planning to replace randomness. By the way, my child is a bit picky with food. Can this kind of pre-prepared meal help solve the issue of picky eating?",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "The question is based on image-driven textual causal inference, asking for conclusions drawn from the image.",
+      "generated_at": "2026-02-28T23:50:52.927733",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'Quick Illustrated Guide to Making Shredded Pork with Green Peppers' mentioned by Fang Qing referred to or cited?"
+      },
+      "original_answer": "From \"Quick Illustrated Guide to Stir-fried Shredded Pork with Green Peppers\" to \"This Illustration\" and then to \"This Method\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 11,
+          "content": "Yes! This is my specially made 'Quick Guide to Making Shredded Pork with Green Peppers'.",
+          "image": ""
+        },
+        {
+          "session": "session6",
+          "turn": 12,
+          "content": "This diagram is so intuitive. The shredded pork is marinated in advance, and the green peppers are sliced and set aside, making stir-frying quick.",
+          "image": ""
+        },
+        {
+          "session": "session6",
+          "turn": 12,
+          "content": "This method could help many people.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of entities across different rounds, focusing on changes in the reference chain.",
+      "generated_at": "2026-02-24T11:22:06.425873",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the meal preparation method mentioned in the conversation, what ingredients should a person prepare in advance if they want to quickly make shredded pork with green peppers on a weekday?"
+      },
+      "original_answer": "Prepare the marinated shredded meat and sliced green peppers in advance.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 11,
+          "content": "This is my specially made 'Quick Guide to Making Shredded Pork with Green Peppers,' designed to be completed within 10 minutes, with each step broken down clearly.",
+          "image": "3.png"
+        },
+        {
+          "session": "session6",
+          "turn": 5,
+          "content": "Look, one box contains the marinated shredded meat, and the other box holds the chopped side dishes.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question is based on meal preparation knowledge learned from the conversation, requiring the application of new information to answer. It is not necessarily related to the dialogue content but requires the use of knowledge from the conversation.",
+      "generated_at": "2026-03-08T16:38:40.720127",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What specific meal preparation plans did Fang Qing mention in the conversation?"
+      },
+      "original_answer": "Shredded Pork with Green Peppers, Scrambled Eggs with Tomatoes, Winter Melon and Pork Rib Soup",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 9,
+          "content": "When preparing meals, you can intentionally create diverse combinations, such as shredded pork with green peppers, scrambled eggs with tomatoes, and winter melon and pork rib soup. I have compiled a minimalist list and quick recipes that emphasize functionality over variety.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information already mentioned in the conversation to test accurate recall, avoiding refusal to answer (this question is not a refusal scenario; it is used to test accurate recall).",
+      "generated_at": "2026-02-24T11:22:06.425873",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "hard": 3
+    }
+  }
+}

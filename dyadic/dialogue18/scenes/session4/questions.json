@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:34:19.986295",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Before setting off, what electronic devices did Yelu confirm were ready?"
+      },
+      "original_answer": "Satellite phone and walkie-talkie",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 3,
+          "content": "The satellite phone and walkie-talkie are fully charged, and the first aid kit has been checked.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which experience in the conversation does this image correspond to?"
+      },
+      "original_answer": "Valley Panorama",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 7,
+          "content": "Shiyan, I'm back safe and sound! Let me send you a panoramic view of the valley first. This hike was absolutely breathtaking.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall the corresponding dialogue experience based on image information.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.jpg",
+        "text": "What kind of evaluation did this picture evoke from Shi Yan?"
+      },
+      "original_answer": "The smile is very bright.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 16,
+          "content": "The smile is radiant, it seems the harvest is quite substantial.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Image→Text: Image 3 (selfie) led to Shiyan's evaluation of the smile.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'waterfall' mentioned by Yelu referred to in different rounds?"
+      },
+      "original_answer": "Waterfall area, waterfall",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 13,
+          "content": "The waterfall area was more slippery than expected. I used a rope for assistance, and the upgraded model you recommended worked really well.",
+          "image": ""
+        },
+        {
+          "session": "session4",
+          "turn": 17,
+          "content": "The waterfall is also quite secluded, and the water flow is much gentler than during the spring consultation, making it perfect for photography.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the 'waterfall' entity across different rounds, focusing on changes in the referential chain.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.jpg",
+        "text": "Based on the conversation information, what techniques might Yelu have used when shooting the panoramic view of the valley?"
+      },
+      "original_answer": "Capture the angle of sunlight",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 8,
+          "content": "The angle of the sunlight is captured nicely.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Assess the ability to evaluate new information in online learning (Shiyan's evaluation) and apply it to infer photography techniques.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": false
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Check if the following information contradicts the conversation: Ye Lu encountered a blizzard while hiking."
+      },
+      "original_answer": "Contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 11,
+          "content": "There was a brief thunderstorm that came on suddenly.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Present potentially contradictory information (blizzard vs. thunderstorm) to assess contradiction detection ability.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Which wild animal did Yelu encounter during the hike?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue (wildlife) to assess the ability to refuse to answer and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:34:19.986295",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

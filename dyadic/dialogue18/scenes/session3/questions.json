@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:33:44.393050",
+    "session_name": "session3",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 3,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session3",
+    "session_number": 3,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the specific arrangement of the scheduled communication plan mentioned by Shi Yan?"
+      },
+      "original_answer": "Twice a day, morning and evening.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 3,
+          "content": "The plan also includes a scheduled communication protocol with the rear contact person, twice daily in the morning and evening, to ensure we remain in contact.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Recall specific communication arrangements based on dialogue text information."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which device in the conversation does this picture correspond to?"
+      },
+      "original_answer": "Walkie-talkie",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 10,
+          "content": "This is my commonly used walkie-talkie, with the background being the valley from our last hike, reminding us of the connection between people and the environment.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall the corresponding dialogue device based on image information."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "What discussion did the picture spark in Shiyan?"
+      },
+      "original_answer": "Risk levels and response procedures in emergency plans.",
+      "answer_source": "both",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 1,
+          "content": "Ye Lu, I've drafted an emergency plan and sent it to you for review. Based on our previous discussions about the route and equipment, I've considered different risk levels, including response procedures for minor injuries, getting lost, sudden weather changes, and serious injuries.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image → Text: The content of the image sparked a discussion about emergency response plans."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.jpg",
+        "text": "What question did the picture lead Ye Lu to ask?"
+      },
+      "original_answer": "Supplement to the Wilderness First Aid Kit Checklist",
+      "answer_source": "inference",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 13,
+          "content": "I'll send you a picture of a first aid kit for reference.",
+          "image": "3.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 12,
+          "content": "The wilderness first aid items list in the emergency plan, do I need to add anything?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image → Text: The image sparked inquiries about the first aid item checklist."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specifically does Ye Lu refer to as the 'absolute safety bottom line'?"
+      },
+      "original_answer": "Immediately retreat in case of sudden weather changes, and do not cross deep streams alone.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 8,
+          "content": "For this shoot, I set several 'absolute safety boundaries,' such as immediately retreating in case of sudden weather changes and not crossing deep streams alone.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 18,
+          "content": "I will integrate safety protocols and communication plans into my shooting schedule.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Track mentions of the 'absolute safety bottom line' across different rounds."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.jpg",
+        "text": "Combining the images and dialogue, what is the role of the walkie-talkie in the contingency plan?"
+      },
+      "original_answer": "Auxiliary tool for internal team communication",
+      "answer_source": "both",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 10,
+          "content": "This is my commonly used walkie-talkie, with the background being the valley from the last hike.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 11,
+          "content": "Walkie-talkies are useful over short distances, but valley terrain may limit signal transmission. We can use them as a supplement for internal team communication, but satellite phones remain the primary means of ensuring connectivity.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image + Text: Learn new information and apply it, answer the walkie-talkie role."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Detect contradiction: Ye Lu said, 'The signal might be poor inside the valley,' but Shi Yan said, 'Walkie-talkies are useful over short distances.' Are these two statements contradictory?"
+      },
+      "original_answer": "Not contradictory",
+      "answer_source": "inference",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 4,
+          "content": "The signal may be poor within the valley, similar to the complex environment you mentioned when analyzing the terrain earlier.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 11,
+          "content": "Walkie-talkies are useful over short distances, but valley terrain may limit the signal. We can use them as a supplement for internal team communication.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Detect consistency between new input information and existing memory."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific equipment upgrade suggestions did Shi Yan mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 11,
+          "content": "We've discussed making your photography gear lighter, so is the weight of the walkie-talkie okay?",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 12,
+          "content": "No problem, I've optimized the equipment, just like you suggested upgrading the rope before.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Text: If the information asked is not present, it should be refused or pointed out as not appearing."
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 3,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 2,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    }
+  }
+}

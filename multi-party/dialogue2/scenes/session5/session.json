@@ -1,0 +1,452 @@
+{
+  "session_id": "S2-5",
+  "group_id": "G02_Runners",
+  "target_turns": 60,
+  "actual_turns": 60,
+  "dialogue": [
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img4.jpg",
+        "text": "Hey, it's Xiao Pi's first time here, check out his jersey selfie!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi, you look very energetic, and the jersey suits you well."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi, but remember to wear running gear next time, it'll make running more comfortable."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi Nice jersey, it feels very energetic!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "img5.jpg",
+        "text": "Haha, thank you! But Da Liu's knee pads look very professional."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, your knee pads are actually thicker than your legs. Take good care of yourself!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@DaLiu, it's important to be mindful of how you use knee pads; don't let them interfere with your recovery."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, looks like you'll have to be careful running today."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "img6.jpg",
+        "text": "Now, let's take a look at our running shoes group photo. Is everyone ready?"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Peach Our shoes look very professional, looking forward to this run!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Peach What an interesting angle, I'll have to take photos like this next time."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Peach Everyone's shoes are so unique; I love this group photo."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Peach It seems we're both well-prepared. Today is going to be amazing!"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "Alright, everyone, let's set off once you're all ready!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "Be safe, and remember to drink plenty of water after your run!"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img7.jpg",
+        "text": "We've finished the run, and everyone is very happy. Take a look at this group photo."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang, we're all drenched in sweat, it's so exhilarating!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang It seems everyone ran very hard, looking forward to the next time."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "img8.jpg",
+        "text": "After running, it's good to replenish some nutrients. The light food on this table looks great."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Ricky I'm here to check if the calorie content of these light meals is appropriate."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Ricky These salads are very healthy, but are you concerned about the calorie content of the salad dressing?"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "Look at this calorie chart; the calorie content of salad dressing really needs attention."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Dr. Wu, it seems we need to control the amount of salad dressing, otherwise all the effort from running will be wasted."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "img9.jpg",
+        "text": "I couldn't resist ordering a beer to celebrate."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister, drink beer in moderation so it doesn't affect our workout results."
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Iron Sister, it's okay to drink some beer in moderation. Everyone is very happy today."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "Compare this, this is how I used to look. Although there hasn't been much change, I will continue to work hard."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@DaLiu, you've already made progress. Just keep it up."
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@DaLiu Although the changes are not significant, the effects of a healthy lifestyle will gradually become apparent."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "Come on, everyone, raise your glasses to celebrate and look forward to the performance next season."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img10.jpg",
+        "text": "Everyone, take a look at this change. @大刘, you've really made a lot of progress!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang Indeed, we can all see Liu's hard work."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, but I think you can still push a bit harder. We all support you!"
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, your perseverance is truly admirable to all of us. Keep up the great work!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Big Liu, I think you could adjust your diet and exercise routine for better results."
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "Thank you for your support. I will keep working hard!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "img11.jpg",
+        "text": "The calorie content of this light meal really surprised me. @Dr. Wu, what do you think?"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "@Xiao Pi Yes, the calorie content of salad dressing is not to be overlooked, so you all should be more mindful of it!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Dr. Wu, thank you for the reminder. We will be more careful next time."
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "It seems we need to change our dining style for the next gathering, focusing on health while also keeping an eye on calorie intake."
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "Indeed, this way everyone can better maintain their condition."
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "img12.jpg",
+        "text": "Finally, let's all raise a toast to celebrate and look forward to the next season!"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang Thank you all for your support. I will definitely work even harder next season!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang, cheers! Looking forward to a better performance next time!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang, cheers, let's keep up the good work together!"
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang, cheers, looking forward to the next running event!"
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "@Coach Zhang, cheers, let's keep up the good form!"
+      }
+    },
+    {
+      "role": "Dr. Wu",
+      "content": {
+        "image": "",
+        "text": "Though I'm not there in person, I raise my glass with you all and wish everyone good health!"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "Thank you, Dr. Wu, for your remote guidance. We will definitely keep running in a healthier way!"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "@Dr. Wu, thank you for your advice. I will keep it in mind."
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "Today's event was fantastic, looking forward to gathering again next time!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "Yeah, today's group run was so much fun, everyone was amazing!"
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "I feel like our team is becoming more and more vibrant!"
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "Looking forward to the next run and dinner, creating more wonderful memories together!"
+      }
+    },
+    {
+      "role": "Zhang Jiaotou",
+      "content": {
+        "image": "",
+        "text": "Have a safe journey, see you next time!"
+      }
+    },
+    {
+      "role": "Liu Cixin",
+      "content": {
+        "image": "",
+        "text": "Take care, everyone. Looking forward to seeing you again next time!"
+      }
+    },
+    {
+      "role": "Xiao Pi",
+      "content": {
+        "image": "",
+        "text": "I'll try harder next time. Let's all keep pushing forward!"
+      }
+    },
+    {
+      "role": "Peach",
+      "content": {
+        "image": "",
+        "text": "Looking forward to the next even more exciting event!"
+      }
+    },
+    {
+      "role": "Iron Sister",
+      "content": {
+        "image": "",
+        "text": "Everyone, go back and rest well, and continue to strive hard next time!"
+      }
+    },
+    {
+      "role": "Ricky",
+      "content": {
+        "image": "",
+        "text": "See you next time, everyone!"
+      }
+    }
+  ],
+  "meta": {
+    "images_used": [
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.jpg",
+      "img10.jpg",
+      "img11.jpg",
+      "img12.jpg"
+    ],
+    "full_summary": "对话开始。\n(第2段摘要): 大家讨论了小皮的首次亮相，调侃了大刘的护膝，欣赏了跑鞋合影，并准备开始跑步。\n(第3段摘要): 大家成功完成了跑步活动，讨论了餐后的轻食和啤酒。吴医生远程点评了轻食的热量，特别是沙拉酱的热量问题。大刘展示了自己的变化，大家举杯庆祝并期待下个赛季的表现。\n(第4段摘要): 在庆祝跑步活动成功后，大家讨论了轻食的热量问题，并为大刘的进步感到欣喜。最后，全员举杯庆祝，并期待下一次的活动。",
+    "resolved_events": [
+      "大家对大刘护膝的调侃已解决",
+      "吴医生远程点评餐后热量",
+      "大刘的护膝问题",
+      "轻食热量讨论"
+    ],
+    "active_events": [
+      "期待下个赛季的表现"
+    ]
+  },
+  "timeline_date": "2024-06-01"
+}

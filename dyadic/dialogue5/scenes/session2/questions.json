@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:09:09.812390",
+    "session_name": "session2",
+    "dialogue_name": "Dialogue 5",
+    "session_number": 2,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session2",
+    "session_number": 2,
+    "dialogue_name": "Dialogue 5"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Xu Huaian mentioned which e-commerce platform's own brand the white glutinous rice flour he is planning to order is from?"
+      },
+      "original_answer": "Jingxi Self-operated",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 3,
+          "content": "I searched and found that this white glutinous rice flour is Jingxi's own brand. There's a promotion during the New Year's sale, and the price is reasonable.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on Lin Shuying's description of the red bean paste filling in the conversation, find the corresponding image. Provide the session number and image file name."
+      },
+      "original_answer": "4.png in session2",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 8,
+          "content": "Look at this red bean paste filling, with its deep reddish-brown color and full-bodied texture, perfect for those with a sweet tooth.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 8,
+          "content": "",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, as both are related to the same event.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "Why did Lin Shuying recommend the problematic image to Xu Huaian?"
+      },
+      "original_answer": "Since Xu Huaian rarely shopped online and had little experience, and the two of them needed glutinous rice flour to make Qingtuan, Xu Huaian hoped Lin Shuying could give him some recommendations. Lin Shuying recommended this 'Gumaimeng' brand of glutinous rice flour, feeling that its quality was quite good.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "I rarely shop online and don't have much experience. Can you recommend something? Last time we talked about trying to make something together, and now it's really time to start preparing.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "Of course. I often buy this brand 'Gu Mai Meng' for glutinous rice flour, the one in the green packaging. I feel its quality is quite good. Look, the rice balls in its promotional image seem quite tempting. I remember you mentioned last time that machine-made green rice balls lack the rustic charm of handmade ones, so choosing good ingredients is important.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text-driven image response, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the topic of 'ingredients for making Qingtuan' gradually evolve?"
+      },
+      "original_answer": "Xu Huaian mentioned the lack of glutinous rice flour and rice flour. Lin Shuying recommended 'Gumaimeng' rice flour. Xu Huaian found white glutinous rice flour and prepared to place an order. Lin Shuying inquired about precautions for using rice flour. The conversation evolved from material shortages to material recommendations, purchases, and specific usage.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Shuying, I've compiled the ingredient list for making Qingtuan and realized we're out of glutinous rice flour and rice flour at home.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "I often buy this brand of rice flour called 'Gumaimeng' with the green packaging; I feel its quality is quite good.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 3,
+          "content": "I checked, and this white glutinous rice flour is sold by Jingxi itself. There's a promotion during the New Year's sale, and the price is reasonable. I'm going to place an order.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 10,
+          "content": "Teacher Xu, are there any precautions to keep in mind when using the rice flour you recommended?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and reference chain of the same topic across multiple rounds of conversation.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation (combined with the image), what ingredients are needed to make egg yolk and pork floss filling?"
+      },
+      "original_answer": "Pork floss + Salted egg yolk + Salad dressing",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 9,
+          "content": "",
+          "image": "5.png"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired image information (ingredient mixing) and apply it to answer questions.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Xu Huaian mentioned that he has enough glutinous rice flour and sticky rice flour at home to make Qingtuan. Does this contradict the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Shuying, I've compiled the ingredient list for making Qingtuan and realized we're out of glutinous rice flour and rice flour at home.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Present potentially contradictory information to test memory consistency.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Xu Huaian mentioned in the conversation what his favorite filling for Qingtuan is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:09:09.812390",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

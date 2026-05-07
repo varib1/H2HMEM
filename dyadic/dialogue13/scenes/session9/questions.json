@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:23:06.281998",
+    "session_name": "session9",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 9,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session9",
+    "session_number": 9,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What activities did Lin Shu mention the community organized during the winter breaks in previous years?"
+      },
+      "original_answer": "Writing Spring Festival couplets, guessing lantern riddles during the Lantern Festival, and parent-child movie screenings.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 2,
+          "content": "In previous years, our community has organized activities such as writing Spring Festival couplets, solving lantern riddles during the Lantern Festival, and parent-child movie screenings, all of which were well-received by everyone.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which activity in the conversation does the problem picture correspond to?"
+      },
+      "original_answer": "Natural Walking Treasure Hunt",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 4,
+          "content": "Speaking of nature treasure hunts, let me show you a picture. This is the 'Nature Walk Treasure Hunt' card we used for our previous activity.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall corresponding dialogue activities based on image information.",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "4.png",
+        "text": "What exclamation or thoughts did the problematic picture evoke in Zhou Mingyuan?"
+      },
+      "original_answer": "Cultivate hands-on skills and imagination",
+      "answer_source": "both",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 7,
+          "content": "I'm posting a photo of a castle my daughters made out of cardboard. They were so engrossed when acting out fairy tales. What matters is that this process nurtured their hands-on skills and imagination, which is more meaningful than buying expensive toys.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Image → Text: The image sparked exclamations or thoughts in the conversation.",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "How are the problem images referred to in the conversation?"
+      },
+      "original_answer": "Family Game Picture",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 10,
+          "content": "Teacher Zhou, you mentioned family drama night, so I'm sharing a picture of a family game. These tabletop games have simple props—just repurpose old items like dice and dominoes—making them perfect for parent-child playtime.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of image references in conversations.",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Lin Shu suggested taking the child to an expensive amusement park during the winter break in the conversation. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 2,
+          "content": "In previous years, our community has organized activities such as writing Spring Festival couplets, solving lantern riddles during the Lantern Festival, and parent-child movie screenings.",
+          "image": ""
+        },
+        {
+          "session": "session9",
+          "turn": 3,
+          "content": "Family Drama Night, performing picture book stories; learning to make a traditional snack together... visiting parents' workplace... parents and children making model toys together.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Check for any contradictions between the newly input information (Zhou Mingyuan's suggestion) and the existing memory (the activity mentioned by Lin Shu).",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Zhou Mingyuan mentioned in the conversation what his daughters' favorite colors are."
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:23:06.281998",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal  Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

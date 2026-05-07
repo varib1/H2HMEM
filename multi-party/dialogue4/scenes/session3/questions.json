@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:11:19.945671",
+    "session_name": "session3",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 3,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session3",
+    "session_number": 3,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "When Una measures the width of the corner, what is the specific width measured in centimeters?"
+      },
+      "original_answer": "80 centimeters",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 7,
+          "content": "Well, I measured with a tape measure, and the corner is only 80cm wide.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-03-23T10:11:19.945495",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation mentioning that the cabinet size is not suitable, what is the width of this cabinet?"
+      },
+      "original_answer": "1 meter",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 18,
+          "content": "Chloe: [Sending picture: img5.jpg] I found the dimension drawing for this chest of drawers. Can we see if we can make some adjustments?",
+          "image": "img5.jpg"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event without a causal relationship.",
+      "generated_at": "2026-03-23T10:11:19.945532",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which picture prompted Una to start renovating her home? Provide the session number and the picture file name."
+      },
+      "original_answer": "img1.jpg in session2",
+      "answer_source": "inference",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 1,
+          "content": "Una: [Sends picture: img1.jpg] Everyone, take a look at this corner of my house. It's piled up with clutter, and I really don't know where to start.",
+          "image": "img1.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text, sparking subsequent conversations and transformation plans.",
+      "generated_at": "2026-03-23T10:11:19.945551",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "img8.jpg",
+        "text": "How are problem images referred to in the conversation?"
+      },
+      "original_answer": "From 'this cabinet' (Round 33) evolving to 'that cabinet' (Round 36), and then to 'the cabinet' (Round 38).",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 33,
+          "content": "Look at this cabinet, the price is very reasonable. Although it's not as exquisite as designer styles, the size is just right.",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 36,
+          "content": "@Vivi That cabinet is just the right size, I'm going to place the order.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 38,
+          "content": "I've started painting the cabinet, and the process is quite interesting.",
+          "image": "img9.jpg"
+        }
+      ],
+      "validation_notes": "Coreference chain: Tracking different ways of referring to the same entity (cabinet) across multiple rounds.",
+      "generated_at": "2026-03-21T05:30:45.133229",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the DIY painting knowledge learned from the conversation, what problems might arise if the sanding step is skipped during the painting process, and why?"
+      },
+      "original_answer": "If the sanding step is omitted, the paint is prone to peeling or flaking. As Chloe mentioned in the conversation, before painting, the surface needs to be sanded with sandpaper first; otherwise, the paint won't adhere properly and is likely to peel or flake over time. Sanding increases surface roughness, thereby improving the adhesion of the paint.",
+      "answer_source": "inference",
+      "answer_session": [
+        "S4-3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "S4-3",
+          "turn": 11,
+          "content": "Vivi: I found a similar chest of drawers on Pinduoduo for just one-tenth of your budget.",
+          "image": ""
+        },
+        {
+          "session": "S4-3",
+          "turn": 12,
+          "content": "Una: Great, I've decided to buy this cabinet and paint it myself!",
+          "image": ""
+        },
+        {
+          "session": "S4-3",
+          "turn": 13,
+          "content": "Chloe: @Una If you're painting it yourself, remember to sand the surface with sandpaper first. Otherwise, the paint won't adhere well and may start peeling or flaking off after a while.",
+          "image": ""
+        },
+        {
+          "session": "S4-3",
+          "turn": 38,
+          "content": "Una: [Sending picture: img9.jpg] I've started painting the cabinet, and the process is quite interesting.",
+          "image": "img9.jpg"
+        },
+        {
+          "session": "S4-3",
+          "turn": 46,
+          "content": "Una: [Sending picture: img10.jpg] The process of painting is really a challenge!",
+          "image": "img10.jpg"
+        }
+      ],
+      "validation_notes": "Assess online adaptability: Require the application to utilize the newly learned general knowledge from the dialogue—'sanding is necessary before painting, otherwise the paint may peel off'—to analyze the potential consequences of Una omitting the sanding step during the painting process.",
+      "generated_at": "2026-03-25T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Una used power tools while painting. Does this contradict the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 38,
+          "content": "I've already started painting the cabinet, and the process is quite interesting.",
+          "image": "img9.jpg"
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose information that may contradict the image description (power tools) and detect whether contradictions are identified.",
+      "generated_at": "2026-03-21T05:30:45.133335",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What color paint did Una use in the renovation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not present in the conversation should be refused to avoid hallucinations.",
+      "generated_at": "2026-03-23T10:11:19.945639",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

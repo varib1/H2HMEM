@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:12:35.949251",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the discussion on November 5th about the incident of a popular actress stumbling on the red carpet, Chloe asked what kind of support structure the waist of the original red carpet dress has?"
+      },
+      "original_answer": "Fishbone support",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "Chloe: @Una Yes, the authentic version has boning support at the waist area, making it much more structured.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-03-23T10:12:35.949069",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the Taobao look-alike of the red carpet dress mentioned in the conversation, what is the price?"
+      },
+      "original_answer": "156.64 yuan",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 15,
+          "content": "Vivi: [Sending picture: img5.jpg] I found the same item on Taobao, it's exactly the same!",
+          "image": "img5.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 16,
+          "content": "Chloe: @Vivi Look at this price, no wonder there are such embroidery issues.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall related images based on textual information (price), where the two are associated due to the same event (Taobao same item), not causally.",
+      "generated_at": "2026-03-23T10:12:35.949106",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which picture sparked the discussion about the male celebrity's suppressed laughter in the conversation? Provide the session number and the picture file name."
+      },
+      "original_answer": "img2.jpg in session5",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 11,
+          "content": "Mia: [Sends picture: img2.jpg] Look at a certain male celebrity in the background; he seems to be secretly laughing.",
+          "image": "img2.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 12,
+          "content": "Una: @Mia This expression is absolutely perfect; I can guess what's on his mind.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image drives the textual discussion (male celebrity secretly smiling), which is a causal inference relationship.",
+      "generated_at": "2026-03-23T10:12:35.949125",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does the reference to 'that male celebrity' evolve from 'a certain male celebrity in the background' to 'he'? Please list the relevant rounds."
+      },
+      "original_answer": "Round 11 (a male celebrity in the background) → Round 12 (he) → Round 22 (that male celebrity) → Round 28 (the male celebrity in the background) → Round 45 (the male celebrity snickering)",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 11,
+          "content": "Mia: [Sends picture: img2.jpg] Look at a certain male celebrity in the background; he seems to be secretly laughing.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 12,
+          "content": "Una: @Mia This expression is absolutely perfect; I wonder what's going through his mind.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 22,
+          "content": "Nina: Did everyone notice the expression of a certain male celebrity on the red carpet? He was secretly laughing.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 28,
+          "content": "Chloe: [Sending picture: img8.jpg] But look at this picture, the male star in the background is smiling. Does he know some inside information?",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 45,
+          "content": "Vivi: But when it comes to the male star who was secretly laughing, do you think he might know some inside information?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity (male celebrity) across different rounds to form a reference chain.",
+      "generated_at": "2026-03-23T10:12:35.949141",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the knowledge of haute couture dressmaking techniques learned from the conversation, if the waist of a red carpet gown appears soft and wrinkled, what key structure might be missing? What is the main function of this structure?"
+      },
+      "original_answer": "This dress may lack a boning support structure. The main function of boning is to shape the waistline, prevent wrinkles in the waist area while walking, and maintain the garment's crisp silhouette. As mentioned in the conversation, the authentic dress has boning support in the waist, which makes it much more structured.",
+      "answer_session": [
+        "S4-5"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "S4-5",
+          "turn": 2,
+          "content": "Chloe: [Sending picture: img2.jpg] This is her high-definition red carpet photo; the dress looks a bit odd.",
+          "image": "img2.jpg"
+        },
+        {
+          "session": "S4-5",
+          "turn": 7,
+          "content": "Una: @Mia I noticed that the waist in Figure 2 lacks boning support, making it appear very soft.",
+          "image": ""
+        },
+        {
+          "session": "S4-5",
+          "turn": 8,
+          "content": "Chloe: @Una Yes, the authentic version has boning support around the waist area, making it much more structured.",
+          "image": ""
+        },
+        {
+          "session": "S4-5",
+          "turn": 9,
+          "content": "Chloe: The purpose of the boning is not only to keep the dress structured but also to shape the waistline and prevent wrinkles at the waist when walking. Haute couture gowns rely on this to maintain their silhouette.",
+          "image": ""
+        },
+        {
+          "session": "S4-5",
+          "turn": 20,
+          "content": "Chloe: However, when it comes to stiffness, the authentic one has boning support at the waist, while hers is soft.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess online adaptability: Require the application of the newly learned general knowledge from the dialogue, \"The function of boning is to shape the waistline and prevent wrinkles,\" to analyze the reasons for the softness of the waist in red carpet gowns and explain the function of boning.",
+      "generated_at": "2026-03-25T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "On November 15th, when discussing a popular actress wearing a knockoff dress on the red carpet, the conversation mentioned that the brand involved in the red carpet event had not issued any statement. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes, contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 33,
+          "content": "Chloe: [Sending picture: img9.jpg] The brand has already issued a statement. Take a look at this. It seems they want to distance themselves as well.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (brand has not issued a statement) and existing memory (statement has been issued).",
+      "generated_at": "2026-03-23T10:12:35.949198",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which character mentioned the actress's age?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the conversation (actress's age) to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-23T10:12:35.949214",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:28:18.731738",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 20",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 20"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Hesui mentioned that the real-time rendering technology of \"Black Myth: Wukong\" has lowered what cost barrier?"
+      },
+      "original_answer": "The cost threshold for fantasy dramas",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 3,
+          "content": "Its real-time rendering technology lowers the cost barrier for fantasy dramas, enabling more teams to explore this genre.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Precision Recall]: Recall pure textual facts from the conversation, avoiding vague responses."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which picture corresponds to the global reputation evaluation mentioned in the conversation?"
+      },
+      "original_answer": "3.png in session12",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "Sending you a screenshot of global user reviews to show you—it has an incredibly high positive rating, and users from various language backgrounds are playing it.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "[Cross-modal Relevance Retrieval]: Retrieving relevant images based on textual information, where the two are related due to the same event, not causally."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "4.png",
+        "text": "What market sentiments did this picture evoke regarding the Lunar New Year?"
+      },
+      "original_answer": "Good content has a market.",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 13,
+          "content": "Yes, and it's also a commercial success! Sending you a screenshot of the sales figures—the data is astonishing. This proves that good content has a market, just like the positive feedback we received from our community activities.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "[Causal Inference]: The answer requires combining both textual and visual information, as the question does not directly contain all the necessary details."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which picture sparked Ji Shi'an's discussion about the game's completion?"
+      },
+      "original_answer": "2.png in session12",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 4,
+          "content": "In the screenshot sent, the article also mentions that the game has a high level of completion, which may reduce players' anxiety.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "[Causal Inference]: Inferring the causal relationship between images and text, where the image leads to discussions about anxiety."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "How is the image referred to in the conversation?"
+      },
+      "original_answer": "Promotional Screenshot, Epic Visuals",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Sending you a promotional screenshot to check out. Doesn't the visual quality have a really epic feel to it?",
+          "image": "1.png"
+        },
+        {
+          "session": "session12",
+          "turn": 3,
+          "content": "Exactly! After trying it out, I think it's not just the visuals that are great; the content is also fantastic.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Cross-Round Tracking]: Track the referential evolution of image entities across different rounds, from specific descriptions to indirect mentions."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "3.png",
+        "text": "How can Hesui use the information in this picture to support his argument?"
+      },
+      "original_answer": "Global Resonance Point",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "Absolutely! Let me send you a screenshot of the global user reviews—it has an incredibly high approval rating, with players from various language backgrounds enjoying it. It's like the balance we discussed while hiking—the game has found a global resonance in both its technical aspects and content.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "[Learning During Testing]: Assesses the ability to learn new image information and apply it, adapting to dialogue content online."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "If someone says Ji Shi'an has played \"Black Myth: Wukong\" in the conversation, does this contradict the content of the conversation?"
+      },
+      "original_answer": "Contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "Although I haven't played it, the promotional materials make it look very well-made.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Conflict Detection]: Detecting contradictions between new information and existing memory, Ji Shi'an clearly stated that he has not played."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific price did Hesui mention for \"Black Myth: Wukong\"?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话20",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "[Refusal to Answer]: The question involves information not present in the conversation, testing the ability to refuse to answer and avoid hallucinations."
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

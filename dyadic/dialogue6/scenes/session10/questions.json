@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:11:16.501754",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 6",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 6"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What place did Qin Shuo achieve in the badminton competition?"
+      },
+      "original_answer": "Third place",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Qin Shuo: Wanqing, look at this! I just got back from the badminton competition and won third place!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:11:16.501754",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the name of the modern Cantonese restaurant mentioned by Qin Shuo in the conversation?"
+      },
+      "original_answer": "Youjingge",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 9,
+          "content": "Look at this new-style Cantonese restaurant. The interior design is unique, and the food is said to be exceptional. Didn’t you always emphasize aesthetic premium? I think you’d like it. The golden-toned design reminds me of the iron supplement packaging you chose—simple yet textured, perfectly matching your aesthetic standards.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on the textual information in the dialogue, where both are related to the same event without a causal relationship.",
+      "generated_at": "2026-02-24T11:11:16.501754",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Why does Jiang Wanqing want to congratulate Qin Shuo? Please provide the corresponding image for the reason. Provide the session number and image file name."
+      },
+      "original_answer": "1.png in session10",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, look at this! I just got back from the badminton competition and won third place! Without your help in creating the training plan and being my practice partner, I definitely wouldn’t have won an award.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Infer the driving relationship between the image content and the text content, where the image leads to the emergence of the gratitude text.",
+      "generated_at": "2026-02-24T11:11:16.501754",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, how are the problem images referred to or cited across different rounds?"
+      },
+      "original_answer": "From \"this\" to \"trophy\" to \"your trophy\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Qin Shuo: [Sending picture: 1.png] Wanqing, look at this!",
+          "image": "1.png"
+        },
+        {
+          "session": "session10",
+          "turn": 2,
+          "content": "Jiang Wanqing: The trophy looks very high-quality.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 20,
+          "content": "Make sure to put your trophy away properly.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity across different rounds.",
+      "generated_at": "2026-02-24T14:10:18.500764",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Qin Shuo mentioned in the conversation that he won first place. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Qin Shuo: Wanqing, look at this! I just got back from the badminton competition and won third place!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect whether there is a contradiction between newly input information and existing memory.",
+      "generated_at": "2026-02-24T11:11:16.501754",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What color of sports shoes did Qin Shuo wear in the competition?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information that has not appeared to test the ability to refuse to answer and avoid hallucinations.",
+      "generated_at": "2026-02-24T14:10:18.500764",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 1,
+      "hard": 1
+    }
+  }
+}

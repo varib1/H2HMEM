@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:27:13.160197",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 14",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 14"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Lu Chenguang mentioned in the conversation, by what percentage did his caffeine intake exceed the limit while programming overnight?"
+      },
+      "original_answer": "200%",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Remember that time in March when I was programming all night, the terminal was flashing red alerts, and my caffeine intake was 200% over the limit?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall factual details in plain text, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:27:13.160197",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.png",
+        "text": "Which experience or location in the conversation does the problem image correspond to?"
+      },
+      "original_answer": "New Year's health goals",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 6,
+          "content": "Look at this! I made a 'New Year Health Goals' chart with Spring Festival elements in the background, symbolizing a fresh start.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Retrieve corresponding dialogue content based on image information.",
+      "generated_at": "2026-02-24T11:27:13.160197",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "How are problem images referenced or cited in the conversation?"
+      },
+      "original_answer": "Health Dashboard Annual Report",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "I retrieved the data from the health dashboard for the past year and compiled an annual report.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of image references in conversations.",
+      "generated_at": "2026-02-24T11:27:13.160197",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "What exclamation or question did the problematic image evoke from Lin Xingwan?"
+      },
+      "original_answer": "Congratulations, Engineer Lu!",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "Congratulations, Engineer Lu! This shows that our \"social contract + visualization\" model is effective.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Infer the emotional expression of the text triggered by the image.",
+      "generated_at": "2026-02-24T11:27:13.160197",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "In the problem image, what data does the blue line graph represent?"
+      },
+      "original_answer": "Annual Trend in Sleep Duration",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Lu Chenguang: Boss Lin, take a look at this! I pulled the data from the health dashboard for the past year and compiled an annual report. The blue curve represents sleep duration, showing an overall upward trend from 4.8 hours at the beginning of the year to 6.2 hours by the end. The red bar chart indicates sedentary alerts, which decreased significantly in the fourth quarter, with the frequency dropping by 40%. Thanks to your supervision, the first phase of the 'Health Project' has basically achieved its KPIs! Remember that time in March when I was programming overnight, and the terminal flashed red alerts for a 200% caffeine overdose? Looking at this data now, it feels like I’ve truly stepped back from the brink of collapse.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The question combines the image and dialogue content, requiring learning from the image description (blue line chart) and dialogue explanation (sleep duration) to answer.",
+      "generated_at": "2026-03-21T15:46:27.094625",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the fourth quarter, the sedentary alert frequency on Lu Chenguang's health dashboard decreased by 50%. Does this contradict the conversation content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Lu Chenguang: Boss Lin, take a look at this! I pulled the data from the health dashboard for the past year and compiled an annual report. The blue curve represents sleep duration, showing an overall upward trend from 4.8 hours at the beginning of the year to 6.2 hours by the end. The red bar chart indicates sedentary alerts, which decreased significantly in the fourth quarter, with the frequency dropping by 40%. Thanks to your supervision, the first phase of the 'Health Project' has basically achieved its KPIs! Remember that time in March when I was programming overnight, and the terminal flashed red alerts for a 200% caffeine overdose? Looking at this data now, it feels like I’ve truly stepped back from the brink of collapse.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question introduces new information that may contradict the dialogue (50% vs 40%), testing whether the model can identify the error.",
+      "generated_at": "2026-03-21T15:46:27.094625",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Lu Chenguang mentioned what his favorite sport is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:27:13.160197",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 1,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

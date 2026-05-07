@@ -1,0 +1,296 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:28:46.889651",
+    "session_name": "session14",
+    "dialogue_name": "Dialogue 15",
+    "session_number": 14,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session14",
+    "session_number": 14,
+    "dialogue_name": "Dialogue 15"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "The preliminary test mentioned by Han Shuli in the conversation shows which components have significant differences in compilation time?"
+      },
+      "original_answer": "No specific components mentioned.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 3,
+          "content": "Initial tests show significant differences in compilation times for some components, but the parallel efficiency of the backtesting script requires more precise measurement.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Text: The dialogue does not specifically mention which components differ significantly."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which performance ranking in the conversation does the problem image correspond to?"
+      },
+      "original_answer": "Single-thread performance ranking",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 6,
+          "content": "I have attached a single-threaded performance ranking list for reference.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Identify the corresponding dialogue content through image recognition."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "How are the problem images referenced in the conversation?"
+      },
+      "original_answer": "Decision matrix, matrix, the matrix I sent.",
+      "answer_source": "both",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "I just organized a decision matrix.",
+          "image": "1.png"
+        },
+        {
+          "session": "session14",
+          "turn": 3,
+          "content": "Initial tests indicate",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 5,
+          "content": "The matrix I sent contains power consumption data.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image→Text: Tracking the evolution of image references in conversations."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.jpg",
+        "text": "What action or reaction did the problematic image provoke from Lin Ce?"
+      },
+      "original_answer": "Send pictures of the cooling system.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 10,
+          "content": "I am sending a picture of the cooling system as a reminder.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Image→Text: Infer the conversational actions triggered by the image."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the decision matrix mentioned by Han Shuli referred to across different rounds?"
+      },
+      "original_answer": "Decision matrix, matrix, the matrix I sent.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "I just organized a decision matrix.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 3,
+          "content": "Initial testing shows",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 5,
+          "content": "The matrix I sent contains power consumption data.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Tracking the evolution of reference methods for the same entity across different rounds."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.jpg",
+        "text": "Based on the information and conversation in the image, which performance is Han Shuli more inclined to optimize?"
+      },
+      "original_answer": "Backtesting speed",
+      "answer_source": "both",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 3,
+          "content": "I tend to optimize backtesting speed because time value can be converted into money.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session14",
+          "turn": 7,
+          "content": "I propose the following weight distribution: backtesting speed accounts for 50%, and single-core performance accounts for 30%.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image + Text → Conclusion: Drawing conclusions by integrating multimodal information."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that Han Shuli suggested leasing two candidate configurations for A/B testing. Does this contradict Lin Cedu's statement?"
+      },
+      "original_answer": "Not contradictory",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 11,
+          "content": "I suggest leasing two candidate configurations for A/B testing.",
+          "image": ""
+        },
+        {
+          "session": "session14",
+          "turn": 12,
+          "content": "The Lin measure does not mention leasing three configurations; the conversation only mentions leasing two.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Confirm that there are no contradictory pieces of information in the dialogue."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Which pet did Han Soo-ri mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session14"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session14",
+          "turn": 1,
+          "content": "Based on our previous collaborative experience from pet behavior analysis to health management",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: The specific type of pet is not mentioned in the conversation."
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 2,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    }
+  }
+}

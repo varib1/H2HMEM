@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:26:31.995366",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 14",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 14"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the screenshot of the campus forum mentioned by Lin Xingwan in the conversation, what is the theme color of the forum?"
+      },
+      "original_answer": "Green",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 2,
+          "content": "Lu Chenguang: Received. The forum interface is designed quite simply, and the green theme fits the campus atmosphere.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Text→Image: Retrieve color information from corresponding images based on dialogue text."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which item or discussion topic in the conversation does the problem image correspond to?"
+      },
+      "original_answer": "Social Media Sentiment Tracking",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 7,
+          "content": "Lin Xingwan: [Sent image: 2.jpg] Look at this social media sentiment tracking chart—the contrast between the red and green sections is clear, and the black line indicates the trend.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image→Text: Recall the corresponding conversation topic based on image information."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.png",
+        "text": "How are the problem images referred to in the conversation?"
+      },
+      "original_answer": "Project Planning Schedule",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 12,
+          "content": "Lu Chenguang: [Sent picture: 3.png] I've just drafted a project planning table, including planning dimensions, specific items, and core details.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Tracking the Evolution of Image References in Conversations."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "What exclamation or suggestion did the problematic image lead Lin Xingwan to make?"
+      },
+      "original_answer": "Customized for Campus Platforms",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 7,
+          "content": "Lin Xingwan: [Sent image: 2.jpg] Look at this social media sentiment tracking chart—the contrast between the red and green sections is clear, and the black line indicates the trend. We can draw inspiration from this visualization method but customize it for the campus platform.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: The image triggered suggestions in the conversation, which falls under causal inference."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "The discussion on the Moments mentioned by Lin Xingwan in the conversation is primarily rational analysis. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 3,
+          "content": "Lin Xingwan: Exactly. I compared the discussions on WeChat Moments and Weibo topics. On WeChat Moments, there are more emotional expressions, like complaining 'I have to move again,' while on Weibo, the topic has already gone beyond the campus circle, with people outside the school joining the discussion.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Text: Detect contradictions between dialogue content and hypotheses."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Which social platform's discussion has gone beyond its original circle, as not mentioned in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 3,
+          "content": "Lin Xingwan: Exactly. I compared the discussions on WeChat Moments and Weibo topics. On WeChat Moments, there are more emotional expressions, like complaining 'I have to move again.' On Weibo, it has already gone beyond the campus circle, with people outside the school discussing it.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Text: Questions about information not present in the conversation should be refused."
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 1,
+      "Multimodal Causal Inference": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

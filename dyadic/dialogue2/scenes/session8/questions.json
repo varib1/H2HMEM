@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:22:37.029502",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "On June 1st, how did Shen Qingyan describe his physical condition?"
+      },
+      "original_answer": "Always suffering from insomnia, and my shoulders and neck ache terribly.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Shen Qingyan: Zhixing, I've been suffering from insomnia lately, and my shoulders and neck are aching badly. It feels like my body is a rusty machine that's not functioning properly.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall the plain text facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-03-01T12:22:37.029502",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Lu Zhixing sent a comparison image of the Huawei Band 7 and 6. What colors are shown for the Huawei Band 7 NFC version in this image?"
+      },
+      "original_answer": "Green, red, black, pink",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 8,
+          "content": "Lu Zhixing: [Sending picture: 2.png] It's not complicated; it's basically ready to wear and use. This is a comparison between the Huawei Band 7 and Band 6. The 7th generation is more optimized in terms of battery life and health monitoring, making it suitable for long-term tracking.",
+          "image": "2.png"
+        },
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "Shen Qingyan: There are quite a few color options. The green one reminds me of the tranquility in \"Little Forest.\" However, I'm more concerned about data accuracy—for example, how is the deep sleep ratio calculated?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall information from the image based on the text content. The conversation mentions color choices but does not list all colors specifically, requiring retrieval from the image description.",
+      "generated_at": "2026-03-01T23:29:04.517501",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "In the dialogue between the two, why did Lu Zhixing send a problematic picture?"
+      },
+      "original_answer": "To demonstrate the comparison between the Huawei Band 7 and 6, in response to Shen Qingyan's inquiry about the complexity of device setup, and to recommend a device suitable for long-term recording.",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 7,
+          "content": "Shen Qingyan: Great, the PetPace and Todo list you recommended earlier were really helpful. I'll take your advice this time too. Does the device require complex setup?",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 8,
+          "content": "Lu Zhixing: [Sent picture: 2.png] It's not complicated; it's basically ready to wear and use. This is a comparison between the Huawei Band 7 and Band 6. The 7th generation is more optimized in terms of battery life and health monitoring, making it suitable for long-term tracking.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "The problem type is the second scenario in Multimodal (Text-Image) Causal Inference: given an image, ask why someone sent that image, recalling the preceding cause. The answer combines the dialogue text and image description, where image2.png is the response to Shen Qingyan's question.",
+      "generated_at": "2026-03-01T23:46:35.976206",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how was 'PetPace' gradually referenced by Shen Qingyan?"
+      },
+      "original_answer": "First, 'Just like how we used PetPace for Chen Pi before,' and then mention, 'Your previous recommendations of PetPace and the to-do list were a huge help.'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 3,
+          "content": "Shen Qingyan: Recording? Like using PetPace for Chen Pi before? I'm willing to give it a try, but I'm not sure where to start.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 7,
+          "content": "Shen Qingyan: Great, your previous recommendations for PetPace and the to-do list were really helpful. I’ll take your advice this time too. Does the device require complicated setup?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the entity 'PetPace' across different rounds (Round 3 and Round 7).",
+      "generated_at": "2026-03-01T12:22:37.029502",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the health monitoring principles mentioned in the conversation, what data indicators can a person focus on if they want to start tracking their physical condition?"
+      },
+      "original_answer": "Sleep duration, deep sleep ratio, and resting heart rate",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 14,
+          "content": "In the initial stages, you can focus on sleep duration, the proportion of deep sleep, and resting heart rate. These metrics can reflect stress levels and recovery status, much like the balance we discussed during our remote meal together.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question is based on newly learned health monitoring knowledge from the conversation, requiring the application of this knowledge to answer new questions.",
+      "generated_at": "2026-03-03T01:54:02.032126",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Lu Zhixing recommended a smartwatch to Shen Qingyan. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 8,
+          "content": "Not complicated, basically ready to wear and use. This is a comparison chart between the Huawei Band 7 and 6. The 7th generation is more optimized in terms of battery life and health monitoring, making it suitable for long-term tracking.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (assuming Lu Zhixing mentioned specific data) and existing memory (not mentioned in the conversation).",
+      "generated_at": "2026-03-01T12:22:37.029502",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

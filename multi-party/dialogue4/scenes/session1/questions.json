@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:11:39.680821",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation on October 15th, Mia mentioned that Model B could receive another coupon. How much can be saved?"
+      },
+      "original_answer": "50 yuan",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 47,
+          "content": "Mia: Nina, I just found out that Model B has an extra coupon available, saving you 50 yuan! Take a look at this screenshot quickly~",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure textual facts (amounts) from the conversation.",
+      "generated_at": "2026-03-23T10:11:39.680645",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the description of the MaxMara classic coat mentioned in the conversation, which picture shows this coat? Provide the session number and picture file name."
+      },
+      "original_answer": "img2.jpg in session1",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 2,
+          "content": "Chloe: [Sent a picture: img2.jpg] @Nina This is a classic piece from MaxMara, selling for over 5000 on the official website.",
+          "image": "img2"
+        },
+        {
+          "session": "session1",
+          "turn": 45,
+          "content": "Chloe: @Vivi Yes, and after seeing the official MaxMara website image (Figure 2), option B is closer to the texture of the classic style.",
+          "image": "img2"
+        }
+      ],
+      "validation_notes": "Text→Image: Based on the description of the MaxMara classic style mentioned in the conversation, recall the corresponding image img2.",
+      "generated_at": "2026-03-23T10:11:39.680682",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image caused Chloe to criticize the collar as completely wrong in the conversation? Provide the session number and image file name."
+      },
+      "original_answer": "img3.jpg in session1",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "Chloe: @Una The collar in picture 3 is completely wrong; it's way off from the official website image.",
+          "image": "img3"
+        },
+        {
+          "session": "session1",
+          "turn": 45,
+          "content": "Chloe: @Vivi Yes, and after seeing the official MaxMara website image (Figure 2), option B is closer to the texture of the classic style. I noticed that the collar in the Taobao store image (Figure 3) is completely off—the lines are too stiff.",
+          "image": "img3"
+        }
+      ],
+      "validation_notes": "Image-driven text: img3 sparked criticism from Chloe (the collar was not made correctly).",
+      "generated_at": "2026-03-23T10:11:39.680700",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the coat (Model B) that Nina ultimately purchased evolve from its initial mention to the final confirmation of purchase? Please briefly describe its progression."
+      },
+      "original_answer": "Model B was initially recommended by Chloe in the 10th round for its exquisite details and craftsmanship. In the 12th round, Nina added it to her shopping cart. By the 34th round, Nina showed a preference for Model B, and in the 43rd round, she confirmed it in her cart. In the 47th round, Mia provided a coupon, and finally, in the 57th round, Nina successfully completed the payment.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "Chloe: @Nina The details and craftsmanship of Model B are exquisite, and the hand-stitched double-faced wool is highly recommended.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "Nina: @Una I've added Model B to the shopping cart and am ready to check out.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 34,
+          "content": "Nina: [Sending picture: img9.jpg] The details of option B are really exquisite, and I'm leaning towards B as well.",
+          "image": "img9"
+        },
+        {
+          "session": "session1",
+          "turn": 43,
+          "content": "Nina: [Sending image: img11.jpg] Everyone, look, I've added option B to the shopping cart. Final confirmation—there's still time to change your mind!",
+          "image": "img11"
+        },
+        {
+          "session": "session1",
+          "turn": 47,
+          "content": "Mia: [Sent picture: img12.jpg] Nina, I just found out that you can get another coupon for Model B, saving you 50 yuan! Take a look at this screenshot quickly~",
+          "image": "img12"
+        },
+        {
+          "session": "session1",
+          "turn": 57,
+          "content": "Nina: [Sent picture: img13.jpg] Finally, the payment went through successfully!",
+          "image": "img13"
+        }
+      ],
+      "validation_notes": "Tracking Evolution: The Sequential Process of Product B from Recommendation, Adding to Cart, Confirmation, Applying Discounts, to Payment.",
+      "generated_at": "2026-03-23T10:11:39.680717",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "For a wool coat, what percentage of wool content is required to provide effective warmth?"
+      },
+      "original_answer": "50%",
+      "answer_source": "inference",
+      "answer_session": [
+        "S4-1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "S4-1",
+          "turn": 9,
+          "content": "Vivi: @Nina The fabric composition of style A is a bit unreliable, with only 10% wool content.",
+          "image": ""
+        },
+        {
+          "session": "S4-1",
+          "turn": 10,
+          "content": "Chloe: @Nina Generally, the wool content needs to be at least 50% or higher to keep you warm enough in winter. A 10% wool content is basically just for decoration and doesn't provide much warmth.",
+          "image": ""
+        },
+        {
+          "session": "S4-1",
+          "turn": 31,
+          "content": "Vivi: [Sending picture: img8.jpg] Nina, take a look at the fabric composition of style A. It only contains 10% wool, which isn't warm enough.",
+          "image": "img8.jpg"
+        }
+      ],
+      "validation_notes": "Assess online adaptability: Require the application to infer the warmth issue of Coat A by utilizing the newly learned general knowledge about the relationship between wool content and warmth in the conversation.",
+      "generated_at": "2026-03-25T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation on October 15th, Nina ultimately chose to purchase the A-style coat. Is this contradictory to the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 57,
+          "content": "Nina: [Sent picture: img13.jpg] Finally, the payment went through successfully!",
+          "image": "img13"
+        },
+        {
+          "session": "session1",
+          "turn": 43,
+          "content": "Nina: [Sends picture: img11.jpg] Everyone, look, I've added Model B to the shopping cart. Final confirmation—there's still time to change your mind!",
+          "image": "img11"
+        },
+        {
+          "session": "session1",
+          "turn": 44,
+          "content": "Vivi: @Nina I think version B is genuinely better looking than version A, especially in terms of color matching and details. The fabric of version A really isn't worth mentioning.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Contradiction detection: The new information (purchasing model A) contradicts the fact that Nina purchased model B in the conversation.",
+      "generated_at": "2026-03-23T10:11:39.680772",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, where did Nina mention she plans to go for vacation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal Scenario: When asked about information not present in the conversation (vacation plans), the response should be declined.",
+      "generated_at": "2026-03-23T10:11:39.680788",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

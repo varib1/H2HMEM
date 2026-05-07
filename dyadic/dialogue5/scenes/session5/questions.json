@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:09:54.239507",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 5",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 5"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is Lin Shuying's cat's name?"
+      },
+      "original_answer": "Ink dot",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 11,
+          "content": "That's right, it's called 'Ink Spot' because there's a little black dot on its nose.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text fact: the cat's name.",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "How is the problem image described in the conversation?"
+      },
+      "original_answer": "The afternoon sun was just right, casting a perfect angle of light and shadow on the pile of old books by the windowsill, like a still life painting.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "The afternoon sun was just right, casting a perfect angle of light and shadow on the pile of old books by the windowsill, like a still life painting.",
+          "image": "1.png"
+        },
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "[Send image: 1.png]",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Retrieve corresponding images based on text descriptions, both related to the same event (Lin Shuying sharing a photo of a cat by the window).",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What memories and associations did the problematic picture evoke in Lin Shuying?"
+      },
+      "original_answer": "After seeing the picture, Lin Shuying recalled the indigo-dyed tea set she had seen earlier at the market.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "The afternoon sun is just right, casting a perfect angle of light and shadow on the pile of old books by the windowsill, like a still life painting. It reminds me of the indigo-dyed tea mat I saw at the market last time—the hues of the rain-washed bluestone and the layered sense of this light and shadow both exude a serene aesthetic.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Images drive the associations and evaluations in the text, which is causal inference.",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how are the 'quirks' of Xu Huaian's cat 'Old Tea' gradually revealed from its initial mention to subsequent descriptions?"
+      },
+      "original_answer": "Initially, it was mentioned that it liked to nap in a fixed corner. Later, it was specified that it only sleeps on the old rattan chair in the study and refuses to go anywhere else. Finally, it was explained that this habit is related to being picked up from a second-hand market.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "This scene is so serene, it reminds me of my old cat, 'Lao Cha,' who also loved to nap in the sunny corner of my study at a fixed time every afternoon.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 12,
+          "content": "'Old Tea' has a peculiar habit: it only sleeps on the old rattan chair in the study, refusing to go anywhere else, as if it has claimed that spot as its own exclusive corner.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 14,
+          "content": "The eccentricities of 'Old Tea' might be related to the fact that I picked it up from a flea market when it was young, where there was always an aura of old objects.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references and descriptions of the same entity (the cat 'Old Tea') across multiple rounds of dialogue.",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Xu Huaian's cat 'Old Tea' is orange. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "Yes, its fur is a deep brown with a hint of orange, much like the color of aged Pu'er tea.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Possible contradiction detected: The description of 'old tea' in the conversation (dark brown with a hint of orange) does not fully match the description in image 1.png (orange-yellow), but there is no direct conflict, requiring inference.",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What is Lin Shuying's cat 'Ink Spot's' favorite food?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话5",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:09:54.239507",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

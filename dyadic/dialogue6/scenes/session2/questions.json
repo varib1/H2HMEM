@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:09:12.123476",
+    "session_name": "session2",
+    "dialogue_name": "Dialogue 6",
+    "session_number": 2,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session2",
+    "session_number": 2,
+    "dialogue_name": "Dialogue 6"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What time did Qin Shuo arrive in Tokyo last night?"
+      },
+      "original_answer": "Last night at 19:00",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 3,
+          "content": "Yeah, I just arrived at 19:00 last night and started playing today.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, recalling pure textual facts (time details) from the conversation.",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "The close-up of the temple plaque mentioned in the conversation, which temple in Japan does it belong to?"
+      },
+      "original_answer": "Senso-ji Temple",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 3,
+          "content": "Look at this plaque; it feels so historical. I specifically took a close-up shot.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 0,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image, retrieve the corresponding image based on textual information from the conversation (close-up description of the plaque).",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image caused Qin Shuo to question the pedestrian priority rule? Provide the session number and image file name."
+      },
+      "original_answer": "3.png in session2",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 6,
+          "content": "Understood, Japanese transportation indeed has many details. I've just compiled a list and will send it to you. It should be helpful.",
+          "image": "3.png"
+        },
+        {
+          "session": "session2",
+          "turn": 7,
+          "content": "Thank you so much! This information is incredibly useful. I was puzzled today when I saw pedestrians being given such absolute priority, but now I understand.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text, the image 3.png (traffic rules document) sparked Qin Shuo's questions and subsequent understanding of the pedestrian priority rule.",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'must-visit list' mentioned by Qin Shuo referred to and cited?"
+      },
+      "original_answer": "'Messy Must-Visit List', 'Core Itinerary', 'Last Plan'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Remember that messy must-visit list I had last time? I've finally started working on it.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 13,
+          "content": "Thanks to you helping me stabilize the core itinerary from the start, it's much more organized to execute now.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 16,
+          "content": "Don't overload yourself with information like last time we planned; just focus on the present experience.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the entity 'must-visit list' across different rounds (from 'chaotic must-visit list' to 'core itinerary' to 'list').",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, what methods can be used to address travel inconveniences caused by internet issues abroad?"
+      },
+      "original_answer": "Download offline maps in advance or use a local SIM card.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 11,
+          "content": "Yes, I've encountered that too! It's crowded here at the temple, and the internet is slow—even checking the map is lagging. How did you solve it before?",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 12,
+          "content": "I usually download offline maps in advance or use a local SIM card. Give it a try; it can save you a lot of time.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 0,
+          "content": "",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired multimodal information (traffic rules from image 3.png and network problem-solving suggestions from the dialogue), and apply this knowledge to answer questions.",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Qin Shuo said he took a photo in Osaka. Does this contradict the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 14,
+          "content": "Efficiency is the priority. Where are you heading next? Don't rush too much; enjoy the journey itself. Remember, you still have places like Tokyo Tower and Shibuya on your list, right?",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 15,
+          "content": "Planning to visit Senso-ji Temple and then try some local food in the evening. I remember that ramen shop you recommended!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect the contradiction between the new input (Qin Shuo took a photo in Osaka) and existing memories (the conversation only mentioned plans to visit Tokyo Tower, with no mention of Osaka).",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What souvenir did Qin Shuo buy during the trip?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the conversation (souvenir purchase) to assess the ability to decline answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:09:12.123476",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:31:18.439173",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 17",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 17"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What percentage of game prototype stability did Ling Guang mention in the conversation?"
+      },
+      "original_answer": "85%",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Ling Guang: [Sending image: 1.png] This is a screenshot from the first playable version of the game prototype. As you can see, using a simple EEG device, users can control the scaling of geometric shapes on the screen, with latency kept under 200 milliseconds and stability reaching 85%.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which scene concept in the conversation does this image correspond to?"
+      },
+      "original_answer": "Future City Miniature Model",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 2,
+          "content": "Optimus Prime: [Sends image: 2.png] Amazing! Based on this mechanism, I've designed a complete AR scene concept—a miniature model of a futuristic city floating in a real room, changing with focus levels. Visually, I want it to be filled with dynamic lighting and shadows, just like the cyber-cat chip aesthetic we discussed earlier.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall corresponding dialogue scenarios based on image information.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "Which device in the conversation does this picture spark discussion about?"
+      },
+      "original_answer": "Simple EEG device",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Ling Guang: [Sent image: 1.png] This is a screenshot from the first playable version of the game prototype. As you can see, using a simple EEG device, users can control the scaling of geometric shapes on the screen, with latency kept under 200 milliseconds and stability reaching 85%.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Identify devices by combining image and dialogue information.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "What exclamation did this picture lead Optimus Prime to make in the conversation?"
+      },
+      "original_answer": "Full of dynamic light and shadow",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 2,
+          "content": "Optimus Prime: [Sent picture: 2.png] Amazing! Based on this mechanism, I've designed a complete AR scene concept—a miniature model of a futuristic city floating in a real room, changing with focus levels. Visually, I want it to be filled with dynamic light and shadow, just like the cyber-cat chip aesthetic we discussed earlier.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Inferring the exclamatory dialogue triggered by the image.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "3.webp",
+        "text": "How is the image referred to in the conversation?"
+      },
+      "original_answer": "Mixed reality headset, AR glasses",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "Ling Guang: [Sends image: 3.webp] Speaking of equipment, this is a reference image of a mixed reality headset. The prototype is currently screen-based, but it can be integrated with AR glasses in the future to achieve more immersive interactions, just like the core concept of \"consciousness construction\" we discussed.",
+          "image": "3.webp"
+        }
+      ],
+      "validation_notes": "Image→Text: Tracking the Evolution of Image References in Conversations.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The game delay mentioned on September 20th is controlled within 500 milliseconds. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Ling Guang: [Sends image: 1.png] This is a screenshot from the first playable version of the game prototype. As you can see, using a simple EEG device, users can control the scaling of geometric shapes on the screen, with latency kept under 200 milliseconds and stability reaching 85%.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:31:18.437691",
+      "validated": false
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What color scheme for the game prototype did Ling Guang mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 0,
+          "content": "There is no mention of Ling Guang discussing the color scheme of the game prototype in the conversation.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:31:18.439173",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Multimodal Causal Inference": 4,
+      "Text to Text": 3
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

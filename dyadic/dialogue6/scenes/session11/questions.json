@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:11:36.876847",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 6",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 6"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Jiang Wanqing mentioned that in the pet owner needs survey form she shared last month, which two high-proportion needs directly drove market growth?"
+      },
+      "original_answer": "Health monitoring and safety",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "This reminds me of the pet owner needs survey form I shared last month when we were discussing pet smart hardware—the high proportion of health monitoring and safety concerns now appears to be directly driving market growth.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T14:10:25.908772",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the 'growth curve' and 'the proportion of cat consumption is increasing really fast' mentioned in the conversation, please find the corresponding images. Provide the session number and image file names."
+      },
+      "original_answer": "1.png in session11",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "Qin Shuo: Wow, look at this growth curve! The proportion of cat-related spending is rising so fast, it's almost catching up with dogs.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "Jiang Wanqing: [Sent picture: 1.png] Qin Shuo, I just saw a chart about the scale of the pet consumption market in Chinese cities and towns. The trend is quite interesting, so I’m sending it to you.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Based on the textual information in the dialogue (describing the growth curve and the proportion of cat-related consumption), retrieve the corresponding image (1.png). The image and the text are related to the same event (discussing the market size of pet consumption), without a causal relationship, meeting the requirements of Cross-modal Related Retrieval for text-to-image retrieval.",
+      "generated_at": "2026-02-24T11:11:36.876847",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "From which picture did Jiang Wanqing conclude that emotional companionship ranks first? Please provide the session number and the picture file name."
+      },
+      "original_answer": "3.png in session11",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 6,
+          "content": "Haha, I recently came across a survey on the main reasons young people keep pets, and I thought I'd share it with you. It reminded me of when you shared a photo of a trophy before we played badminton, saying that sports are a way to relax. Now, it seems that keeping pets has become a more everyday form of \"emotional decompression\" and a \"lifestyle choice,\" even replacing some social needs.",
+          "image": "3.png"
+        },
+        {
+          "session": "session11",
+          "turn": 7,
+          "content": "Emotional companionship ranks first, which aligns with consumer psychology. Just as you emphasized the value of community when analyzing fitness apps, pets can also fulfill social needs—albeit in the form of a more stable and controllable \"emotional community.\" This reminds me of what you mentioned earlier when reviewing protein powder: brands enhance loyalty through community engagement. In the pet economy, the logic of \"pet owner communities\" might be even more fundamental and enduring.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "It is inferred that the image (3.png) drives the text to focus on causal inference, which aligns with the image-driven text requirement of Multimodal (Text-Image) Causal Inference.",
+      "generated_at": "2026-02-24T11:11:36.876847",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does Qin Shuo gradually describe the pet he keeps?"
+      },
+      "original_answer": "From \"my cat\" to \"I have a cat\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "Qin Shuo: By the way, do you remember the photo I shared of my cat playing with the smart cat toy?",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 8,
+          "content": "Qin Shuo: Speaking of which, ever since I got a cat, I've been using the offline maps and local SIM cards you recommended to solve internet issues while traveling. Now, I have an extra concern—keeping an eye on my pet remotely—which makes the need for smart hardware even more urgent.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity (Qin Shuo's pet) across different turns (from 'my cat' to 'I have a cat'), meeting the requirements of Cross-turn Reference Tracking.",
+      "generated_at": "2026-02-24T11:11:36.876847",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the information learned from the conversation, which aspect accounts for the highest proportion in the consumption structure of pet cats?"
+      },
+      "original_answer": "Food",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Online Adaptation: Learning new information (low insurance penetration) and applying this knowledge to answer questions.",
+      "generated_at": "2026-02-24T14:10:25.908772",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Supplies are the main part of cat and dog consumption. Does this contradict the conversation content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话6",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Present potentially conflicting information (low penetration of insurance in conversation vs. possibly shown as a consumption component in the image), detect whether contradictions are recognized, meeting the requirements of Conflict Detection (CD).",
+      "generated_at": "2026-02-24T11:11:36.876847",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

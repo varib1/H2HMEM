@@ -1,0 +1,269 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:16:59.711358",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What specific materials did Zhao Xiaotang mention in the conversation for making a cat bed?"
+      },
+      "original_answer": "Foam box, old towels, old raincoat (as a waterproof cloth), utility knife, and tape.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "I'll go to the garbage station to check for foam boxes. I have clean old clothes and towels at home that can be used. As for the waterproof cloth, I might need to look around—the community maintenance office might have some discarded ones.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "We found a foam box, and the size is about right. The old towels are also ready, and they're clean. The waterproof cloth is a bit hard to find, but I asked the neighbors, and they might have an old raincoat we can borrow.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "The materials are almost all set: foam boxes, old towels, and an old raincoat from the neighbor to use as a waterproof tarp. I also have a utility knife and tape.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:16:59.711358",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the cat bed design mentioned in the conversation, what are the length, width, and height of the cat bed?"
+      },
+      "original_answer": "30cm, 40cm, 25cm",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "I'll send you a cat house design for reference.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall corresponding images based on textual information, focusing on relevance rather than causality.",
+      "generated_at": "2026-02-24T11:16:59.711358",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which picture caused Zhao Xiaotang to express anxiety and a plea for help in the conversation? Provide the session number and the filename of the picture."
+      },
+      "original_answer": "1.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Li Yifan, urgent help needed! I found a stray mother cat in the corner of the residential area, and she just gave birth to three kittens. Look at this photo—the kittens haven't even opened their eyes yet, huddled together and shivering. It's not good for them to be lying on the cold, damp cement floor. With the recent cold snap, I'm afraid they won't make it. Do you have any ideas for making a simple and warm temporary shelter for them?",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Focus on causal inference; images drive emotions and help-seeking behaviors in the text.",
+      "generated_at": "2026-02-24T11:16:59.711358",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does the entity 'foam box' evolve from material collection to specific production?"
+      },
+      "original_answer": "From Zhao Xiaotang planning to go to the garbage station to find foam boxes, to finding the foam boxes, to Li Yifan guiding the cutting of the entrance, and finally Zhao Xiaotang completing the cut.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "I'll go to the garbage station to check the foam box.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "One foam box has been found, and the size is about right.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "First, cut the entrance by making a hole on one side of the foam box, approximately 15 cm in diameter.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 13,
+          "content": "Working on it. The entrance has been cut, and the edges have been sanded with sandpaper.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the continuous operations and evolution of entities in multi-turn dialogues.",
+      "generated_at": "2026-02-24T11:16:59.711358",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the content of the conversation, what is the recommended diameter for the entrance when making an insulated cat shelter?"
+      },
+      "original_answer": "Approximately 10cm",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 12,
+          "content": "First, cut the entrance by making a hole on one side of the foam box, approximately 10 cm in diameter.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The problem requires integrating information from the dialogue text and image 3.png, necessitating the learning and application of new knowledge.",
+      "generated_at": "2026-02-27T13:02:24.791471",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Zhao Xiaotang mentioned in the conversation that she prepared old towels for the cat bed, but she said these towels are dirty. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "The old towel is also ready, and it's clean.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question raises information that may contradict the dialogue content, testing whether the model can resist contradictions and point out errors.",
+      "generated_at": "2026-02-27T13:02:24.791471",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Zhao Xiaotang mentioned that she has several pet cats?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:16:59.711358",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

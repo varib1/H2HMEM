@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:35:58.656127",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "During his fieldwork, what types of food are typically included in Shi Yan's diet?"
+      },
+      "original_answer": "Dehydrated staple foods, dried meat, dried vegetables (such as carrots, peas)",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "This is my standard gear for fieldwork: dehydrated staple foods plus dried meat and vegetables, for quick energy replenishment.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 9,
+          "content": "Usually, carrots, peas, and other such long-lasting vegetables are chosen.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:35:58.653899",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "This image shows which small snack Ye Lu carries for short-distance shooting?"
+      },
+      "original_answer": "Sesame candy",
+      "answer_source": "both",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 6,
+          "content": "Check this out! I always bring some small snacks for short trips, like sesame candy bars, to quickly replenish sugar and enjoy a moment of sweetness.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Retrieve the corresponding image content based on the dialogue text, as both are related to the same event (Ye Lu sharing snacks).",
+      "generated_at": "2026-02-24T11:35:58.653899",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "This picture sparked a discussion between Shi Yan and others regarding the weight and safety of the gas cylinder."
+      },
+      "original_answer": "Coffee does indeed boost alertness, but the weight and safety of gas canisters need to be balanced.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 12,
+          "content": "For example, like this! I brew coffee with a small gas canister and pair it with a simple meal, instantly warming up the outdoor experience.",
+          "image": "3.png"
+        },
+        {
+          "session": "session11",
+          "turn": 13,
+          "content": "Coffee does indeed boost alertness, but the weight and safety of gas canisters need to be balanced. Just as when we discuss GPS locators, technical backups must be reliable.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image (3.png showing a gas tank) drives the text (Shiyan's response), focusing on causal inference.",
+      "generated_at": "2026-02-24T11:35:58.653899",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the topic of 'optimizing recipes' evolve?"
+      },
+      "original_answer": "From idea to action plan",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 10,
+          "content": "I have an idea! Maybe we can optimize your recipe by adding some light seasonings or pre-made sauces to enhance the flavor without adding too much weight.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 11,
+          "content": "That reminds me, the cold stream water immersion and herbal ointment in the rehabilitation plan you shared earlier were quite practical. If you have similar dietary optimization suggestions, I’d be happy to hear them.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 12,
+          "content": "For example, like this! I brew coffee with a small gas canister and pair it with a simple meal, instantly warming up the outdoor experience.",
+          "image": "3.png"
+        },
+        {
+          "session": "session11",
+          "turn": 18,
+          "content": "Don't worry, I'll base it on your needs. Just like preventing lightning from getting lost, training should be gradual. Perhaps starting with adding a spice packet?",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 19,
+          "content": "Good idea. Lightweight seasoning without compromising safety redundancy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and reference chain of the 'optimized recipe' topic across multiple rounds of conversation.",
+      "generated_at": "2026-02-24T11:35:58.653899",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.jpg",
+        "text": "If Ye Lu plans to go on a long-distance hike, how might she adjust her dietary strategy?"
+      },
+      "original_answer": "Paired with nuts and dried fruits, light seasonings",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 6,
+          "content": "For short trips, I bring along some small snacks, like sesame candy bars, to quickly replenish sugar and enjoy a moment of sweetness.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session11",
+          "turn": 8,
+          "content": "Yes, so I pair them with nuts and dried fruits.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 10,
+          "content": "Perhaps you could optimize your recipe by incorporating some light seasonings or pre-made sauces to enhance the flavor without adding too much weight.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Apply the new information learned from the dialogue (Ye Lu's snack habits and optimization suggestions) to infer behavior in new scenarios.",
+      "generated_at": "2026-02-24T11:35:58.653899",
+      "validated": false
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "If someone says Shi Yan's recipes do not consider nutritional balance, does this contradict the content of the conversation?"
+      },
+      "original_answer": "Contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "From a nutritional perspective, it is highly efficient as it contains a complete balance of carbohydrates, proteins, and fats.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "My recipes are precisely calculated based on the length of the journey and carrying capacity, as practical as setting time boundaries in an emergency plan.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect the conflict between new information (without considering nutritional balance) and existing memories (with complete nutrition).",
+      "generated_at": "2026-02-24T11:35:58.656127",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What is Shi Yan's favorite drink during fieldwork?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:35:58.656127",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

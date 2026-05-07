@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:34:32.868936",
+    "session_name": "session6",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 6,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session6",
+    "session_number": 6,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the rehabilitation exercise diagrams mentioned by Ye Lu in the conversation, how many repetitions are recommended for each exercise?"
+      },
+      "original_answer": "Repeat each movement 10-15 times.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "The key is to maintain the correct posture, perform slowly, and repeat each movement 10-15 times.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure textual facts from the conversation (repetition count of rehabilitation training exercises).",
+      "generated_at": "2026-02-24T11:34:32.867826",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.jpg",
+        "text": "Which product feature description in the conversation does this image correspond to?"
+      },
+      "original_answer": "Portable and easy to use",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 12,
+          "content": "For instance, this green paste is gentle and comfortable, portable and easy to use.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Image→Text: Based on the visual information from image 3.png, recall the corresponding product feature descriptions from the conversation.",
+      "generated_at": "2026-02-24T11:34:32.867826",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.jpg",
+        "text": "What exclamation or question did the image evoke from Shi Yan?"
+      },
+      "original_answer": "The environment looks like a snowy winter landscape.",
+      "answer_source": "both",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 3,
+          "content": "Got the picture. The environment looks like a snowy winter scene, and you're dressed quite warmly.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: Image1.png triggered Shi Yan's lament about the environment.",
+      "generated_at": "2026-02-24T11:34:32.867826",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "How is the image referred to in the conversation?"
+      },
+      "original_answer": "Rehabilitation Training Illustrations, Pictures, Movements",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "Okay, I'll send a diagram of rehabilitation training.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "session6",
+          "turn": 7,
+          "content": "The picture has been received, and the movements appear clear.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: In different rounds, Image 2.png is referred to as 'Rehabilitation Training Diagram', 'Image', and 'Action'.",
+      "generated_at": "2026-02-24T11:34:32.867826",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "3.jpg",
+        "text": "Based on the conversation, under what circumstances is the green paste suitable for use?"
+      },
+      "original_answer": "Muscle fatigue or minor sprains after hiking",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 12,
+          "content": "For instance, this green ointment is gentle and comfortable, portable and easy to use. It is suitable for application after hiking to relieve muscle fatigue or minor sprains.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Online Adaptation: Examine the model's ability to learn newly acquired multimodal information (image 3.png and text description) and apply this new knowledge to answer questions (applicable scenarios of the green paste).",
+      "generated_at": "2026-02-24T11:34:32.868936",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Ye Lu mentioned in the conversation that rehabilitation training should avoid \"ballistic stretching,\" but Shi Yan said he often uses this method in his recovery. Is there a contradiction here?"
+      },
+      "original_answer": "Inconsistent",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 6,
+          "content": "Avoid excessive bending or ballistic stretching to prevent injury.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Present information that may contradict the dialogue content (Shi Yan mentioned frequently using ballistic stretching), but in the actual dialogue, Shi Yan did not say this; instead, he inquired about contraindications. Ye Lu explicitly mentioned avoiding ballistic stretching, so the assumed contradiction needs to be detected.",
+      "generated_at": "2026-02-24T11:34:32.868936",
+      "validated": false
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What color of hiking shoes did Yelu use during the rehabilitation hike?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session6"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session6",
+          "turn": 2,
+          "content": "Shiyan, I just posted a picture of me hiking on a forest trail. Look, I'm using two trekking poles, walking slowly and gently, choosing flat routes and avoiding steep slopes.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Refusal scenario: Information not present in the dialogue (color of hiking shoes). The image description mentions 'black hiking shoes', but the dialogue text does not mention it, so the response should be refused or it should be pointed out that the information is not present.",
+      "generated_at": "2026-02-24T11:34:32.868936",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 3
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:34:35.934966",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 19",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 19"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the spring special topic mentioned by Bai Zhi in the conversation?"
+      },
+      "original_answer": "Traces of recovery",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Gu Yanci, I've been preparing for the spring feature lately, with the theme being \"Traces of Revival.\"",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Precision Recall]: Recall plain text facts, avoiding ambiguity."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which picture corresponds to the 'notebook' mentioned in the conversation?"
+      },
+      "original_answer": "3.png in session5",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 10,
+          "content": "This notebook is quite worn at the edges, but I feel its fading is different from that of the shirt.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "[Cross-modal related retrieval]: Retrieve corresponding images based on textual information, where both are related to the same event."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "What criticism did this picture provoke from Gu Yanci?"
+      },
+      "original_answer": "Focus on the story and ignore the visuals.",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "For example, this repaired ceramic bowl, I think it has a strong sense of story.",
+          "image": "1.png"
+        },
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Angelica, you're here again. Last time during the restaurant inspection, you kept getting carried away by the 'story' and forgot about the visuals themselves.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Causal Inference]: Inferring that the image drives textual criticism is a form of causal inference."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how does Gu Yanci uniformly refer to the 'old rattan chair' and 'notebook' mentioned by Bai Zhi in subsequent rounds?"
+      },
+      "original_answer": "These objects",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 7,
+          "content": "These objects—the clay bowl, the shirt, along with the old rattan chair and notebook you mentioned earlier—they all share one thing in common: time.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Cross-turn Reference Tracking]: Tracking the evolution of entity references across different turns."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the visual standard classification proposed by Gu Yanci in the conversation, which category of marks does the fading of the shirt belong to?"
+      },
+      "original_answer": "Chemical traces",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 14,
+          "content": "First, categorize 'traces': physical (such as cracks, wear) vs. chemical (such as fading, stains).",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 15,
+          "content": "Is the fading of a shirt a chemical change?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[TTL]: Apply newly learned classification knowledge to answer questions."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Baizhi said, 'It seems I've fallen back into my old habit of only seeing the emotional aspect of 'traces'.' Which viewpoint previously mentioned by Gu Yanci might this contradict?"
+      },
+      "original_answer": "Not contradictory",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Angelica, you're here again. Last time during the restaurant inspection, you kept getting carried away by the 'story' and forgot about the visuals themselves.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 9,
+          "content": "I seem to have fallen back into my old habit again, only seeing the emotional aspect of 'traces' without systematically thinking about their visual grammar.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "[Conflict Detection]: Detecting the consistency between new information and existing memory; no contradictions found here."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which item did Baizhi mention is deep red in color?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话19",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "[Refuse to Answer]: Questions about information that has not been presented should be refused to avoid hallucinations."
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T17:30:23.643411",
+    "session_name": "session3",
+    "dialogue_name": "Dialogue 12",
+    "session_number": 3,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session3",
+    "session_number": 3,
+    "dialogue_name": "Dialogue 12"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is Shen Zhiwei's profession?"
+      },
+      "original_answer": "Cultural journalist",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 8,
+          "content": "Completely agree. As a cultural journalist, I focus on the power of stories and the understanding of humanity.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses.",
+      "generated_at": "2026-03-01T17:30:23.643411",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the medical record document sent by Cheng Yanqiu in the conversation, what is the patient's name shown?"
+      },
+      "original_answer": "Abdulkirim",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 3,
+          "content": "Yes, for example, this medical record document includes diagnoses and nursing challenges, but the text description may also imply emotional or social support information.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 3,
+          "content": "",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Text-to-Image Retrieval: Finding corresponding images based on textual descriptions, where both are related to the same event.",
+      "generated_at": "2026-03-01T17:30:23.643411",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 2,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 1
+    }
+  }
+}

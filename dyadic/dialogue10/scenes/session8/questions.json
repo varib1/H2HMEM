@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:18:37.614909",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Xia Qingchuan mentioned that she has watched the movie \"The Pursuit of Happyness\" several times?"
+      },
+      "original_answer": "Six times",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Just finished watching that show. The lighting and shadows in this shot, along with the nuanced micro-expressions of the actors, captured that indescribable sense of regret so profoundly. I couldn't stop crying.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:18:37.614909",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the Chinese subtitle content in the still from \"The Pursuit of Happyness\" sent by Xia Qingchuan?"
+      },
+      "original_answer": "Life is your own, so do whatever makes you comfortable.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "I watched \"The Pursuit of Happyness\" again today, and this is already my sixth time. Look at this kind of still.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where the two are related by the same event, not causally.",
+      "generated_at": "2026-02-24T11:18:37.614909",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.jpg",
+        "text": "Regarding the problematic image, what question did Su Mingche ask Xia Qingchuan?"
+      },
+      "original_answer": "What experiences or feelings from your own life does this scene remind you of?",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "",
+          "image": "1.jpg"
+        },
+        {
+          "session": "session8",
+          "turn": 2,
+          "content": "In that long shot, time seemed to freeze, and I was deeply moved. What experiences or feelings from your own life does this scene remind you of?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Inferring that images drive textual discussions, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:18:37.614909",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the 'Emotional Aesthetics' album mentioned by Xia Qingchuan evolve from its initial concept to include new sections?"
+      },
+      "original_answer": "From creating the 'Emotional Aesthetics' album in Session 3 to visualize vague feelings, to wanting to create a visual series for regrets to include in the album in Session 9, and then planning to add a 'Light of Regret' section in Session 17, using light, shadow, and lines to present it.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "Yes, just like when I created the 'Emotional Aesthetics' album in Session 3, trying to visualize those vague feelings.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "The play of light and shadow in this shot makes me want to create a visual series for this sense of regret, to include it in the 'Emotional Aesthetics' album starting from Session 3. But it’s not just about beautifying it; rather, it’s about understanding it, much like understanding Snowball’s emotional responses.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 17,
+          "content": "I will. Perhaps we can add a 'Light of Regret' section to the 'Emotional Aesthetics' album starting from Session 3, presented through light, shadow, and lines, just like the subway map you shared earlier.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and reference chain of the same entity (the 'Emotional Aesthetics' album) across multiple rounds of conversation.",
+      "generated_at": "2026-02-24T11:18:37.614909",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "According to the psychological theory mentioned in the conversation, which emotion in attachment theory is related to the sense of regret over unfinished events?"
+      },
+      "original_answer": "Separation anxiety",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 4,
+          "content": "This aligns well with the separation anxiety in attachment theory and the sense of regret over unfinished events.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question is based on newly learned psychological knowledge from the dialogue (separation anxiety in attachment theory) and requires applying this knowledge to answer.",
+      "generated_at": "2026-03-08T16:39:29.799829",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Su Mingche has watched \"The Pursuit of Happyness\" six times, while Xia Qingchuan has never seen it. Does this contradict the dialogue content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "I watched \"The Pursuit of Happyness\" again today, and this is already my sixth time watching it.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:18:37.614909",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:13:56.055890",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 8",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 8"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what aspects did Lin Jianshen mention that are associated with kaiseki cuisine?"
+      },
+      "original_answer": "Religious and Cultural Symbolism",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "It appears to be linked to religious and cultural symbolism, while also undergoing reconstruction in the context of modernization and the tourism industry.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:13:56.055890",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "What is the result image of the problem picture?"
+      },
+      "original_answer": "The result chart organized by Gu Zhizhou after a brief exchange with the shop owner.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "For instance, the owner's grandson studied design in London and, upon returning, wanted to redesign the menu with a modern visual approach. This in itself is a cultural and political issue.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event without a causal relationship.",
+      "generated_at": "2026-02-24T11:13:56.055890",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What did the problem picture remind Gu Zhizhou of?"
+      },
+      "original_answer": "Recalling the experience at a Kyoto ryotei.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "From another perspective, this poster reminds me of my previous experience at a Kyoto ryotei.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image drives the textual discussion, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:13:56.055890",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how has the description of 'shojin ryori' mentioned by Lin Jianshen evolved?"
+      },
+      "original_answer": "From its association with religion and cultural symbolism, to becoming a tourist commodity reflecting traditional alienation, and then serving as a case study connecting religious traditions, modern reconstruction, tourism industry, and identity narratives, it ultimately emerges as a political arena reflecting the challenges of modernity.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "It appears to be linked to religious and cultural symbolism, while also undergoing reconstruction in the context of modernization and the tourism industry.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 6,
+          "content": "The transformation of shojin ryori from a religious vegetarian diet into a tourist commodity reflects the alienation of tradition within modernity.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 15,
+          "content": "The knowledge graph shows: Shojin Ryori as a case study connects religious traditions, modern reconstruction, the tourism industry, and identity narratives. Local inventions under globalization can both strengthen cultural identity and lead to alienation. Food becomes a political arena, reflecting the challenges of modernity.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution and reference chain of the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:13:56.055890",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific beverage name did Lin Jianshen mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "For information not mentioned in the question or dialogue, refrain from answering to avoid hallucinations.",
+      "generated_at": "2026-02-24T11:13:56.055890",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

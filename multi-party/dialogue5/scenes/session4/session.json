@@ -1,0 +1,460 @@
+{
+  "session_id": "S5-4",
+  "group_id": "G05_Travelers",
+  "target_turns": 60,
+  "actual_turns": 60,
+  "dialogue": [
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img1.jpg",
+        "text": "What is everyone busy with? My meeting room is so empty you could play tennis in it."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "img2.jpg",
+        "text": "@Old Zhang I'm still working on these sample photos, and the Photoshop interface is almost making my eyes blur."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "img3.jpg",
+        "text": "I'm having dinner at my workstation, and I really can't eat half of this takeout today."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Mia Looks like you're going to have to stay up late."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger I'm also working hard at my desk, and my computer even had a blue screen."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "The boss is really going crazy in the middle of the night; all these requirements were sent at 3 a.m."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@Vicky Time is truly bizarre, no wonder you're complaining."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@David Yeah, looking at these complicated interfaces, I still have to grind for a few more hours."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@小白 The blue screen is really unfortunate. Do you have a backup?"
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Vicky The boss's demands are really hard to figure out."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger No backup, that's really a killer."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@小白 Next time you encounter a blue screen, don't panic right away. Try restarting first. If you still can't get into the system, press F8 during startup to enter Safe Mode, and then copy your important files to a USB drive or external storage device. This way, at least your data will be safe."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@Mia Just looking at it gives me a headache."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Let's keep going, just 15 more days until we can relax a bit."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang Looking forward to it, hoping to finish these tasks soon."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@David, we all need to hold on. Have a good rest over the weekend."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img6.jpg",
+        "text": "Everyone, take a look at this boss's bizarre demands—they're getting more and more outrageous!"
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, I've really had enough of this boss who goes crazy in the middle of the night! Demands at 3 a.m. are absolutely unreasonable."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Vicky Oh, I'm also buried under a mountain of sample films here, feeling the pressure."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Mia @Vicky I can only stare at the table full of takeout in frustration, not even having time to finish my work meal."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "img4.jpg",
+        "text": "Look at this mountain of exam papers; my weekend is going to be buried under them."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "img5.jpg",
+        "text": "My computer has blue-screened again, it's really hopeless."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@Xiao Bai, this computer issue is really giving me a headache. Have you tried restarting it?"
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@David, your workload is really huge. When will you be able to finish it?"
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, I'd like to cheer myself up, but this job is really overwhelming."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger, you could try coffee, but I've already got an empty cup here—too many late nights."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "@Mia, I think you should take a break too. Overworking is not good for your health."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Xiao Bai Got it. I'll make sure to finish these sample shots as soon as possible and then get some proper rest."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Vicky Your boss is really unreasonable; everyone needs their own time."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@David Yeah, work and life need to be balanced."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "Come on, everyone! Let's hang in there for 15 more days, and then we can all go relax together."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "img7.jpg",
+        "text": "Everyone, look at the date marked here. We can finally take a break in 15 days."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang This countdown is really something to look forward to, even though I still have to deal with my boss's bizarre requests."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Vicky Your boss is really going crazy in the middle of the night. I still have a bunch of sample photos to edit over here."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@Mia, you're working too hard. I've just been busy having dinner and haven't made much progress with work."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger At least you got to eat. My students' exam papers are piled up higher than a mountain."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "img8.jpg",
+        "text": "Look at this pitch-black night scene; we're all still working overtime."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@小白 This night scene makes one feel lonely, especially when thinking about the boss still going crazy."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@小白 I think so too, spending every night in the office."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "img9.jpg",
+        "text": "And this notice, it doesn't even include overtime pay or taxi reimbursement."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Xiao Bai, this is really unreasonable; all our hard work goes unnoticed."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@小白 Our work pressure is increasing, and the lack of overtime pay only makes things worse."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@小白 Everyone, hang in there a little longer. Once the departure date arrives, we can all rest properly."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, I hope to completely relax by then and no longer be harassed by the boss."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang I'm also looking forward to that day, even though the sample hasn't been completed yet."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Mia Let's work hard together! The delicious food of Changbai Mountain is waiting for us."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "img10.jpg",
+        "text": "Watching this Changbai Mountain food video really makes my mouth water."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger, you actually have time to watch videos? I have an endless pile of sample films here."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Mia My student papers are also piling up, almost endless."
+      }
+    },
+    {
+      "role": "维基",
+      "content": {
+        "image": "",
+        "text": "@Fat Tiger This food video is really great; it helps me unwind a lot. However, I'm still speechless about the boss going crazy in the middle of the night. The timestamp shows he actually posted it at 3 a.m."
+      }
+    },
+    {
+      "role": "Xiaobai",
+      "content": {
+        "image": "",
+        "text": "@Vicky Wow, sending a request at 3 a.m., that's really insane. Does the boss ever sleep?"
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@Vicky, your boss is really unreasonable. I hope you can get through this. By the way, I've already started the countdown and am looking forward to the holiday in 15 days."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "",
+        "text": "@Old Zhang, I really envy you for being able to count down. I have no idea when I'll be able to finish processing these sample shots."
+      }
+    },
+    {
+      "role": "Gian",
+      "content": {
+        "image": "",
+        "text": "@Mia, hang in there! The holiday will come eventually, and the work will get done."
+      }
+    },
+    {
+      "role": "Vicky",
+      "content": {
+        "image": "img11.jpg",
+        "text": "I'm practically surviving on coffee; just look at the coffee cups on this table."
+      }
+    },
+    {
+      "role": "Beginner",
+      "content": {
+        "image": "",
+        "text": "@Vicky This coffee cup lineup is truly spectacular. Did you have several cups today?"
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Vicky Ah, I'm almost like that too, no choice, too much work."
+      }
+    },
+    {
+      "role": "Old Zhang",
+      "content": {
+        "image": "",
+        "text": "@Vicky Coffee is good, but remember to rest and don't overwork yourself."
+      }
+    },
+    {
+      "role": "Mia",
+      "content": {
+        "image": "img12.jpg",
+        "text": "Send some funny emojis to cheer everyone up. No matter how tiring work gets, stay optimistic."
+      }
+    },
+    {
+      "role": "Giant",
+      "content": {
+        "image": "",
+        "text": "@Mia Haha, this meme is really funny. No matter how tough work gets, we should face it with a smile."
+      }
+    },
+    {
+      "role": "Dawei",
+      "content": {
+        "image": "",
+        "text": "@Mia Yes, optimism is the best remedy, and we will all get through this."
+      }
+    }
+  ],
+  "meta": {
+    "images_used": [
+      "img1.jpg",
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.jpg",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.jpg",
+      "img10.jpg",
+      "img11.jpg",
+      "img12.jpg"
+    ],
+    "full_summary": "对话开始。\n(第1段摘要): 各自忙于工作，吐槽工作压力。老张表示期待15天后的放松。Vicky不满老板的半夜需求，米娅仍在处理复杂样片。\n(第2段摘要): 在吐槽老板不合理要求和工作压力的同时，大家也讨论了工作量的巨大和设备问题。尽管压力巨大，大家互相鼓励，期待未来的放松。\n(第3段摘要): 大家继续吐槽工作压力和老板不合理的要求，分享各自的工作状态和对即将到来的假期的期待。\n(第4段摘要): 本段中大家继续吐槽工作压力，各自分享工作状态。Vicky对老板半夜需求的不满被进一步讨论，而米娅的工作压力仍未解决。各自使用图片来交流和表达情绪，最后通过表情包互相鼓励。",
+    "resolved_events": [
+      "小白电脑蓝屏问题"
+    ],
+    "active_events": [
+      "Vicky对老板需求的不满",
+      "米娅的工作压力"
+    ]
+  },
+  "timeline_date": "2024-12-10"
+}

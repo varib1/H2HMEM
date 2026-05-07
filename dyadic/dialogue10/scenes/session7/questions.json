@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:18:29.950014",
+    "session_name": "session7",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 7,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session7",
+    "session_number": 7,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "According to the dialogue, what material of dinner plate did Xia Qingchuan use to arrange the fruit platter?"
+      },
+      "original_answer": "Wooden dining plate",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 7,
+          "content": "I just tried it! Look at this—I arranged a fruit platter on a wooden serving tray.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses.",
+      "generated_at": "2026-02-24T11:18:29.950014",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What color is the tea in Xia Qingchuan's stress-relief snacks prepared for himself on September 1st?"
+      },
+      "original_answer": "Red",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "Mingche, I tried the 'nourishing' dietary ritual you mentioned last time. Look, this is the stress-relief tea snack I just prepared.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "Recall images based on textual information, where both are related to the same event, not causally.",
+      "generated_at": "2026-02-24T11:18:29.950014",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Xia Qingchuan's comment about 'even anxiety can be aesthetically healed'? Provide the session number and image file name."
+      },
+      "original_answer": "3.png in session7",
+      "answer_source": "inference",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 13,
+          "content": "Look, this cup of herbal tea against a plain background, with dried flowers and fruits floating in it, makes me feel that even anxiety can be aesthetically healed.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The image drives the textual comments, which is a causal inference relationship.",
+      "generated_at": "2026-02-24T11:18:29.950014",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is Xia Qingchuan's 'stress-relief tea break' picture referred to?"
+      },
+      "original_answer": "Round 1: 'Stress-Relief Tea Snacks', 'Red Flower Tea'; Round 15: 'Mini Sunset' Tea Snacks",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "Look, this is the stress-relief snack I just prepared—that cup of red herbal tea.",
+          "image": ""
+        },
+        {
+          "session": "session7",
+          "turn": 15,
+          "content": "Next time I feel anxious, I'll first think of the 'mini sunset' tea break.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:18:29.950014",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 4,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

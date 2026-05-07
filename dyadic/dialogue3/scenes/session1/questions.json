@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:05:10.871739",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Su Xiaomeng mentioned how many consecutive games she had lost?"
+      },
+      "original_answer": "Five games",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Sigh, Xingchen, look at my record—five losses in a row, I'm about to lose my mind!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure text facts from the conversation (consecutive loss count).",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to Zhou Xingchen's mention of part-time work in the conversation, how does he improve his gaming skills?"
+      },
+      "original_answer": "Watch live streams and guides",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 8,
+          "content": "I usually work part-time as a game streamer, so I often watch live streams and guides to learn some strategies and techniques.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Image: Based on textual information (part-time gaming streamer), recall relevant images (2.png displays hero power levels, related to improving skills), but the problem is designed as text recall to meet type requirements.",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which picture caused Su Xiaomeng to express her emotional breakdown? Provide the session number and the picture file name."
+      },
+      "original_answer": "1.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "[Send picture: 1.png] (Sending picture) Sigh, Xingchen, look at my match record—five losses in a row, I'm about to lose my mind!",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png (displaying consecutive loss records) directly triggered Su Xiaomeng's expression of mental breakdown.",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Based on the mid-lane hero tier list shared by Zhou Xingchen, if Su Xiaomeng wants to play a hero with simple mechanics, which tier should she choose?"
+      },
+      "original_answer": "T0 or T1",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "Check this out, the mid-lane hero tier list. I suggest you try the T0 or T1 heroes—they’re easy to play, strong, and beginner-friendly.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Online Adaptation: Learn new information (Image 3.png shows hero levels) and apply it (choose levels with simple operations).",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Su Xiaomeng said she was not very skilled, but Zhou Xingchen said she played very well. Is there a contradiction? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "Really? Don't fool me. I'm not that skilled; I don't want to hold you back.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "Look, this is my hero's combat power. Pretty strong, right? I've got the skills to back it up—no problem carrying you to victory!",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Su Xiaomeng claims to be technically unskilled, but Zhou Xingchen did not say she plays well. The question introduces a fictional contradiction to test detection capabilities.",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "What is Su Xiaomeng's favorite hero mentioned in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal Scenario: When asked about information not present in the conversation (such as favorite hero), the response should be declined to avoid generating hallucinations.",
+      "generated_at": "2026-02-24T11:05:10.871739",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 1,
+      "hard": 1
+    }
+  }
+}

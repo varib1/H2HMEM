@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:13:09.406176",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 8",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 8"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Which ticketing platform did Gu Zhizhou use to buy the ticket?"
+      },
+      "original_answer": "Maoyan app.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "The Cat's Eye app is very popular, and I used it to buy tickets.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall the plain text facts for the question, avoid vague responses, and base the answer on the 7th round of the dialogue.",
+      "generated_at": "2026-02-24T11:13:09.406176",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to Gu Zhizhou in the conversation, what is the rating for the film that is well-rated but highly controversial?"
+      },
+      "original_answer": "7.7 points",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "The ratings are decent but quite controversial, with a strong director and cast. It's a comedy/action film that was recently released.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "The task involves retrieving corresponding images based on textual information, where the images and text are related to the same movie event without a causal relationship.",
+      "generated_at": "2026-02-24T11:13:09.406176",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which picture prompted Gu Zhizhou's comment on the down-to-earth atmosphere of the movie? Provide the session number and the picture file name."
+      },
+      "original_answer": "1.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "I just watched the movie \"Pegasus 2,\" and this poster scene is quite interesting—a conversation under an outdoor canopy, with a blue wall and green trees in the background, full of life. From another perspective, it reflects the down-to-earth atmosphere of the film.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The issue infers the causal relationship between images driving textual comments, where Image 1 leads Gu Zhizhou to make a down-to-earth atmosphere evaluation.",
+      "generated_at": "2026-02-24T11:13:09.406176",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, on which platform can one purchase movie tickets?"
+      },
+      "original_answer": "Taobao Tickets, Maoyan, Wanda Film App, Dadi Service, Low-Price Mini Programs",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "The choice of ticketing platform is crucial! I’ll share a screenshot of a platform list. Different platforms offer varying levels of subsidies, such as Maoyan and Taopiaopiao, each with its own features. As a former foreign correspondent, I’m used to making these kinds of comparisons. 😉",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The task assesses the ability to apply newly learned textual information (movie genres) to answer image-related questions, demonstrating online adaptability.",
+      "generated_at": "2026-02-24T11:13:09.406176",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The release date of Pegasus 2 is 2023. Does this contradict the conversation? Answer yes or no, and if yes, provide the actual time."
+      },
+      "original_answer": "Yes, it should be 2024.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "The issue detects consistency and contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:13:09.406176",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Gu Zhizhou mentioned what the box office revenue of the movie \"Pegasus 2\" is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T14:12:08.652856",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3
+    }
+  }
+}

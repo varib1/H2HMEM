@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:11:31.654770",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what is Alex's rating for the movie \"Underground\"?"
+      },
+      "original_answer": "Alex gave a perfect score of 10.0.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 53,
+          "content": "Alex: [Sent picture: img13.jpg] Although the Douban rating is on the low side, I still gave it a perfect score!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation (scoring details), avoiding generic responses.",
+      "generated_at": "2026-03-23T10:11:31.654595",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the mention of 'screen capture of the end credits' in the conversation, what are the three names shown in the screen capture?"
+      },
+      "original_answer": "杰西卡·德哈默，詹姆斯·格兰特，托比·赫弗曼",
+      "answer_source": "both",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "Pomelo: [Sent picture: img2.jpg] I took a screenshot of the ending credits. It's a bit blurry, but the music is really nice!",
+          "image": "img2"
+        },
+        {
+          "session": "session1",
+          "turn": 0,
+          "content": "Image description: img2 (file name: img2.jpg): - Core scene: - This is a photo taken inside a movie theater, with movie subtitles displayed on the screen.",
+          "image": "img2"
+        }
+      ],
+      "validation_notes": "Text→Image: Retrieve corresponding images based on dialogue text information ('screen capture of end credits'), where the two are related by the same event without a causal relationship.",
+      "generated_at": "2026-03-23T10:11:31.654631",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image led to Alex's criticism of the spacecraft design being unreasonable? Provide the session number and image file name."
+      },
+      "original_answer": "img10.jpg in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 40,
+          "content": "Alex: [Sends picture: img10.jpg] Everyone, take a look at the spaceship design on this poster. It feels a bit unrealistic, doesn't it?",
+          "image": "img10"
+        },
+        {
+          "session": "session1",
+          "turn": 41,
+          "content": "Old Meng: @Alex I also think the wings of the spacecraft look a bit odd. Were they intentionally exaggerated for visual effect?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: img10.jpg triggered Alex's critique of the unreasonable design of the spacecraft, indicating a causal driving relationship.",
+      "generated_at": "2026-03-23T10:11:31.654650",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation after watching the movie, the discussion about 'symbols' starts from round 10. How is it subsequently referred to and how does it evolve?"
+      },
+      "original_answer": "From the 10th round 'this symbol', to the 11th round 'the symbol in the corner of Figure 5', the 15th round 'the symbol from the previous work', and the 22nd round 'the symbol seen last time'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "Lao Meng: @Pomelo This symbol, I remember it also appeared in the previous work. It might be a foreshadowing.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 11,
+          "content": "Pomelo: Are you referring to the symbol in the corner of Figure 5? I also find it familiar.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 15,
+          "content": "Lao Meng: @Pomelo According to the previous screenshot, it does indeed resemble the symbol from the previous work.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 22,
+          "content": "Pineapple: [Sending picture: img6.jpg] This screenshot, the symbol I saw last time is also here.",
+          "image": "img6"
+        },
+        {
+          "session": "session1",
+          "turn": 57,
+          "content": "Yuzu: I noticed that in Figures 5/6, there's a tattoo of the male protagonist from the previous work!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: Monitor the changes in the reference chain of the 'symbol' entity across multiple rounds of dialogue, from generic references to specific image associations.",
+      "generated_at": "2026-03-23T10:11:31.654667",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "If someone says that a director includes Easter eggs just to show off, how would you respond?"
+      },
+      "original_answer": "I would refute this claim because, as Lao Meng mentioned, the director stated in an interview that including Easter eggs is not about showing off skills, but rather about making the audience feel that \"those who discover the Easter eggs are the ones who truly understand the film.\" This way, viewers can gain a greater sense of achievement after watching.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 61,
+          "content": "Lao Meng: I once watched an interview with a director who said that including these Easter eggs isn't about showing off skills, but rather about making the audience feel that \"those who discover the Easter eggs truly understand the film.\" This way, viewers gain a greater sense of accomplishment after watching.",
+          "image": ""
+        }
+      ],
+      "notes": "TTL问题：模型在对话中学到了“导演埋彩蛋的真实意图”这一新知识，现在需要应用这个知识来回应一个相反的观点。"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "On Douban, Alex rated the movie \"Underground\" 9.1 points. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 53,
+          "content": "Alex: [Sent picture: img13.jpg] Although the Douban rating is low, I still gave it a perfect score!",
+          "image": "img13"
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content (Alex's rating) and identify contradictions.",
+      "generated_at": "2026-03-23T10:11:31.654722",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which specific release date of a movie did Pineapple mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: Avoid answering information not mentioned in the conversation (such as the release date of the movie mentioned by Pineapple) to prevent hallucinations.",
+      "generated_at": "2026-03-23T10:11:31.654739",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

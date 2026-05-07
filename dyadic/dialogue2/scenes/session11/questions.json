@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:23:40.499100",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What brand is Lu Zhixing's noise-cancelling headphones?"
+      },
+      "original_answer": "Sony",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 14,
+          "content": "The pleasure brought by details is important. My noise-canceling headphones create a focused space in noisy environments, much like your lamp sets the mood for reading.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-03-01T12:23:40.498107",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What kind of flower is depicted in the decoration on the reading lamp that Shen Qingyan bought?"
+      },
+      "original_answer": "Plum blossom",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "I also bought a reading light.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 5,
+          "content": "",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event.",
+      "generated_at": "2026-03-01T12:23:40.498107",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.jpg",
+        "text": "After Shen Qingyan sent the problem image, how did Lu Zhixing evaluate it?"
+      },
+      "original_answer": "Looks like good quality, with the combination of a wooden tray and transparent glass.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "Qingyan, this looks quite nice in terms of texture. The combination of the wooden tray and the transparent glass reminds me of your attention to detail when you shared healing recipes before.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "The causal inference for the problem type 'image-driven text' inquires about Lu Zhixing's evaluation of the image sent by Shen Qingyan.",
+      "generated_at": "2026-03-01T23:47:08.551952",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Shen Qingyan said her coffee equipment is 'purely functional' items. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 9,
+          "content": "Yes, it's not purely function-oriented like the massage device I bought before; it offers more emotional companionship.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-03-01T12:23:40.499100",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "How many books did Shen Qingyan mention she bought in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-01T12:23:40.499100",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 1
+    }
+  }
+}

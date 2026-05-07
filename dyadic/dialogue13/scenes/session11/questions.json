@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:23:49.846341",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how many families has Lin Shu mentioned have signed up for the trial run of the Pet Partner Program?"
+      },
+      "original_answer": "Three families",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 4,
+          "content": "The Pet Companion Program has already had three families sign up for the trial run.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses.",
+      "generated_at": "2026-02-24T11:23:49.846341",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.png",
+        "text": "What additional content did Lin Shu contribute to the health corner section in the image?"
+      },
+      "original_answer": "The community has contacted the street office and received initial support. Preparations for supplies and volunteer training are currently underway.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 6,
+          "content": "This is a real-life photo of the health corner, showcasing a blood pressure monitor and health education materials.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information.",
+      "generated_at": "2026-02-24T11:23:49.846341",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how has the Health Corner project evolved?"
+      },
+      "original_answer": "From having received initial support from the street office, currently preparing supplies and volunteer training, to being proposed as one of the priority implementation projects for 2025.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 6,
+          "content": "At the Health Corner, I'd like to add: Our community has already contacted the neighborhood office and received initial support. We are currently preparing supplies and organizing volunteer training.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 14,
+          "content": "Based on this table and the progress, I think the Health Corner and Pet Companion Program can be prioritized, as they already have preliminary support or are in trial operation, allowing for quick results.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the state evolution and referential changes of the same entity (Health Corner Project) across multiple rounds of dialogue.",
+      "generated_at": "2026-02-24T11:23:49.846341",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 3,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 1
+    },
+    "by_difficulty": {
+      "easy": 1,
+      "medium": 1,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T17:05:33.133567",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 12",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T17:05:33.133567"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 12"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What was the average heart rate shown on the health data dashboard shared by Cheng Yanqiu on February 10th? On July 10th, Shen Zhiwei mentioned the emotional regulation effect provided by Metis during her writing. What device did Cheng Yanqiu suggest to record physiological data in order to verify this effect?"
+      },
+      "original_answer": "The average heart rate is 85 beats/min. Cheng Yanqiu recommends using a heart rate wristband or wearable device to record HRV (Heart Rate Variability) data.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Image1.png shows: Heart Rhythm: 85 beats/min (Average)",
+          "image": "1.png"
+        },
+        {
+          "session": "5",
+          "turn": 6,
+          "content": "Cheng Yanqiu said: If there were wearable devices, such as heart rate bracelets, they could record HRV.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question integrates the textual details from the images in Session 1 and the dialogue text details in Session 5, requiring cross-session recall of unimodal information.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "On March 25th, in the chronic patient story shared by Shen Zhiwei, what was the most troubling issue for the patient? On May 15th, in the collaboration proposal put forward by Cheng Yanqiu, what technology is planned to be used to extract soft features from electronic medical record texts?"
+      },
+      "original_answer": "What troubles patients the most is the loss of identity and social isolation caused by the illness; Cheng Yanqiu plans to use NLP (Natural Language Processing) models to extract soft features such as emotions and mentions of social relationships.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 3,
+          "content": "Shen Zhiwei said: What troubles him the most is the loss of identity and social isolation caused by the illness.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Cheng Yanqiu said: Attempt to use NLP models to extract 'soft features' such as emotions and mentions of social relationships from the text.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue integrates the details of the dialogue texts from Session 2 and Session 3, requiring cross-session recall of unimodal information.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "session2/3.jpg",
+        "text": "In Session 2, Shen Zhiwei shared this diagram illustrating changes in social networks to explain the social isolation of chronic disease patients. In Session 4, when discussing pet behavior experiments, Cheng Yanqiu mentioned a method similar to the one used in Session 2 for quantifying soft variables. Based on the description of the image from Session 2, recall how Cheng Yanqiu referenced the discussion in Session 2 to draw an analogy with pet behavior analysis in Session 4?"
+      },
+      "original_answer": "In Session 4, Round 6, Cheng Yanqiu mentioned, \"This reminds me of the variable of loneliness we discussed earlier in the patient story,\" drawing an analogy between quantifying pet behavior motivation and the challenge of quantifying loneliness in Session 2.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Shen Zhiwei sent image 3.png, describing changes in the patient's social network.",
+          "image": "3.png"
+        },
+        {
+          "session": "4",
+          "turn": 6,
+          "content": "Cheng Yanqiu said: This reminds me of the variable of loneliness we discussed in the patient stories earlier.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The task is based on the image from Session 2, requiring the retrieval of relevant textual references from Session 4 to establish an image-text correlation.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "session6/3.png",
+        "text": "In Session 6, Cheng Yanqiu shared this sentiment trend chart, showing a sharp increase in negative emotions after the eighth episode. In Session 7, Shen Zhiwei created a character arc diagram to analyze character development. Based on the description of the image from Session 6, recall how Shen Zhiwei referenced the public opinion data from Session 6 in Session 7 to discuss narrative supplementation?"
+      },
+      "original_answer": "In Session 7, Round 9, Shen Zhiwei mentioned: \"This reminds me of the challenges in Session 6 when you analyzed Weibo comments, where the NLP model struggled with fine-grained emotion classification.\" This connects the analysis of character arcs with the difficulties encountered in public opinion data analysis from Session 6.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Cheng Yanqiu sent image 3.png, showing a surge in negative emotions.",
+          "image": "3.png"
+        },
+        {
+          "session": "7",
+          "turn": 9,
+          "content": "Shen Zhiwei said: This reminds me of the challenges you mentioned in Session 6 regarding NLP models in analyzing nuanced emotional types when examining Weibo comments.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The task is based on the images from Session 6, requiring the retrieval of relevant textual references from Session 7 to establish connections between images and text.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "session1/1.jpg",
+        "text": "Based on the health data dashboard image shared by Cheng Yanqiu in Session 1 (showing the date range from October 6th to 10th) and the event mentioned in the 7th round of dialogue in Session 1 where he felt dizzy despite normal indicators, along with the concept of data \"disenchantment\" mentioned by Shen Zhiwei in the 13th round of Session 2, explain how Cheng Yanqiu began to reflect on data blind spots in Session 1, and connect it to the discussion on the gap between data and narrative in Session 2."
+      },
+      "original_answer": "In Session 1, Cheng Yanqiu's health dashboard data showed normal readings, but he subjectively felt dizzy, revealing a data blind spot and prompting him to reflect on how data fails to capture subjective experiences. In Session 2, Shen Zhiwei introduced the concept of data 'disenchantment' through patient stories, emphasizing the need to look beyond numbers to see the people behind them. This deepened the discussion on the gap between data and subjective experiences from Session 1, collectively encouraging Cheng Yanqiu to consider integrating soft variables such as emotion logs.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 7,
+          "content": "Cheng Yanqiu said: For instance, last Wednesday, I felt a bit dizzy, but my heart rate and blood sugar were normal. The data couldn't explain it, which left me puzzled.",
+          "image": "1.png"
+        },
+        {
+          "session": "2",
+          "turn": 13,
+          "content": "Shen Zhiwei said: This makes me think about the 'disenchantment' of data—we need to look beyond the numbers and see the people behind them.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue requires integrating the image and textual information from Session 1 with the textual information from Session 2 to analyze how knowledge evolves from the data blind spots in Session 1 to the concept of data disenchantment in Session 2, reflecting information correction and supplementation.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ005"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "session3/1.jpg",
+        "text": "Based on the image of the medical record document sent by Cheng Yanqiu in Session 3 (showing patient care challenges), his proposed NLP model collaboration idea from the first round of dialogue in Session 3, and the research proposal outline he drafted in the first round of Session 14, explain how Cheng Yanqiu concretized the collaboration idea into a formal research project from Session 3 to Session 14, and what methodological details were updated."
+      },
+      "original_answer": "In Session 3, Cheng Yanqiu proposed the idea of using NLP models to extract soft features from electronic medical record texts and correlate them with physiological indicators, based on examples from medical records. By Session 14, he drafted a formal research plan, specifying the use of the de-identified public dataset MIMIC-III and a pre-trained BERT architecture for sentiment analysis. He also clarified the division of labor, transforming the initial idea into an actionable research project.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Cheng Yanqiu proposed a collaborative concept: using NLP models to extract 'soft features' such as emotions and mentions of social relationships from texts, and then conducting correlation analysis with physiological indicators.",
+          "image": "1.png"
+        },
+        {
+          "session": "14",
+          "turn": 1,
+          "content": "Cheng Yanqiu drafted the research proposal: The core is to integrate electronic medical record texts with physiological data, utilizing de-identified public datasets such as MIMIC-III, and employing a pre-trained BERT architecture for the sentiment analysis model.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The issue requires integrating the image and text information from Session 3 with the text information from Session 14 to analyze how the knowledge evolved from the initial concept in Session 3 to the specific plan in Session 14, reflecting the supplementation and concretization of information.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ006"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Looking back at the collaboration between Cheng Yanqiu and Shen Zhiwei in the health field, they went through a process from initially discovering data blind spots, to deepening the issues with patient stories, proposing technical solutions, and finally formally initiating the project. Please arrange the following four key stages in chronological order:  \nA. Formal initiation of the \"Hermes Project,\" adding narrative logs and ethical reviews;  \nB. Cheng Yanqiu discovered \"prediction anxiety\" and data blind spots;  \nC. Cheng Yanqiu proposed the idea of using NLP to extract soft features;  \nD. Shen Zhiwei used patient stories to reveal the \"disenchantment\" of data."
+      },
+      "original_answer": "The correct order is: B → D → C → A.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 5,
+          "content": "Cheng Yanqiu: Sometimes I do experience 'prediction anxiety.' When I see unfavorable data trends, I can't help but feel nervous.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 13,
+          "content": "Shen Zhiwei: Data 'Disenchantment'—We Need to Look Beyond the Numbers and See the People Behind Them.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Cheng Yanqiu: Attempt to use NLP models to extract soft features such as emotions and mentions of social relationships from the text.",
+          "image": ""
+        },
+        {
+          "session": "14",
+          "turn": 6,
+          "content": "Shen Zhiwei: Name this project the 'Hermes Project'—symbolizing the bridge between data and narrative.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess the ability to reason about the temporal order of events across sessions, with event descriptions not including session numbers.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ007"
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the collaborative reporting project on \"Urban Youth Living Conditions,\" Cheng Yanqiu and Shen Zhiwei went through the process from data presentation to proposing ideas, and finally to initiating execution. Please arrange the following three key stages in chronological order: A. The two held a project kickoff meeting, sharing the initial data draft and interview outline; B. Cheng Yanqiu presented youth employment data, providing a macro framework; C. Shen Zhiwei proposed the idea for a collaborative report on the theme of \"Youth Living Conditions in Hangzhou.\""
+      },
+      "original_answer": "The correct order is: B → C → A.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "8",
+          "turn": 1,
+          "content": "Cheng Yanqiu: [Sent picture: 1.png] The flexible employment rate for vocational college graduates is approximately 1.2%, while for undergraduate graduates, it is about 1.8%.",
+          "image": "1.png"
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "Shen Zhiwei: I want to do an in-depth report on the theme of 'Living Conditions of Young People in Hangzhou'.",
+          "image": ""
+        },
+        {
+          "session": "15",
+          "turn": 1,
+          "content": "Cheng Yanqiu: [Sending image: 1.png] This is the initial draft of the visualization. On the left is the residential heat distribution, and on the right is the commuting OD matrix.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Assess the ability to reason about temporal order across sessions within the same event chain, with event descriptions not including session numbers.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ008"
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "session2/3.jpg",
+        "text": "In Session 2, Shen Zhiwei shared this patient's social network diagram, which shows that the patient's social relationships have shifted from close to distant. What idea did Cheng Yanqiu propose in Session 3 as a result of this diagram?"
+      },
+      "original_answer": "Cheng Yanqiu proposed the idea of using NLP models to extract soft features such as emotions and social relationships from electronic medical record texts.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Shen Zhiwei: [Sent picture: 3.jpg] I drew the changes in his social network before and after his illness.",
+          "image": "3.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Cheng Yanqiu: Attempt to use NLP models to extract soft features such as emotions and mentions of social relationships from the text.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The content of the image led Cheng Yanqiu to propose a technical concept.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ009"
+    },
+    {
+      "question_id": "Q010",
+      "question": {
+        "image": "",
+        "text": "In Session 8, Cheng Yanqiu presented youth employment data, noting that the flexible employment rate for junior college graduates was 1.2%, and for undergraduates, 1.8%. What reporting idea did Shen Zhiwei propose in Session 9 based on these data?"
+      },
+      "original_answer": "Shen Zhiwei proposed a joint reporting concept centered on the theme of \"Living Conditions of Young People in Hangzhou,\" with her responsible for conducting in-depth interviews to gather stories, and Cheng Yanqiu in charge of data profiling.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "8",
+          "turn": 1,
+          "content": "Cheng Yanqiu: The flexible employment rate for vocational college graduates is approximately 1.2%, while for undergraduate graduates, it is about 1.8%.",
+          "image": ""
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "Shen Zhiwei: I want to do an in-depth report on the theme of 'Living Conditions of Young People in Hangzhou'.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Employment data led Shen Zhiwei to propose the idea of a residential report.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ010"
+    },
+    {
+      "question_id": "Q011",
+      "question": {
+        "image": "",
+        "text": "In the conversation on November 10th, Shen Zhiwei mentioned \"the employment data chart you previously presented.\" Which image is she referring to? Please provide the session number and the image file name."
+      },
+      "original_answer": "1.png in Session 8",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "9",
+          "turn": 4,
+          "content": "Shen Zhiwei: Regarding the employment data chart you previously presented, the flexible employment rate for vocational college graduates was 1.2%.",
+          "image": ""
+        },
+        {
+          "session": "8",
+          "turn": 1,
+          "content": "Cheng Yanqiu: [Sent picture: 1.png] The flexible employment rate for vocational college graduates is approximately 1.2%, while for undergraduate graduates, it is about 1.8%.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The text in Session 9 refers to the \"Employment Data Chart,\" recalling the table image from Session 8.",
+      "generated_at": "2026-04-01T17:05:33.133567",
+      "validated": true,
+      "original_question_id": "CSQ011"
+    }
+  ],
+  "summary": {
+    "total_questions": 11,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 2,
+      "Knowledge Resolution": 2,
+      "Temporal Reasoning": 2,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 7,
+      "hard": 2
+    },
+    "converted_from_cross_session": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:17:06.556506",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the picture sent by Xia Qingchuan to Su Mingche on March 1st, does it show daytime or nighttime?"
+      },
+      "original_answer": "Night",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "Inspiration explosion! Feels like I could go three days without sleep!",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:17:06.556506",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which specific coffee brand did Xia Qingchuan mention in the conversation?"
+      },
+      "original_answer": "The specific coffee brand was not mentioned in the conversation.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:17:06.556506",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 2,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 0,
+      "Multimodal Information Fusion": 0,
+      "Multimodal (Text-Image) Causal Inference": 0,
+      "Cross-turn Reference Tracking": 0,
+      "Test-Time learning(TTL)": 0,
+      "Conflict Detection (CD)": 0,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:07:20.791155",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What theme of store exploration videos does Zhou Xingchen mention he plans to shoot in the conversation?"
+      },
+      "original_answer": "How to practice the \"Clean Plate Campaign\" at trendy restaurants",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "By the way, here’s an idea for an exploration video: I’m planning to shoot one titled ‘How to Achieve a Clean Plate Campaign at a Trendy Restaurant,’ combined with my dramatic flair. What do you think?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation, the moment of toasting at last Saturday's dinner that was mentioned, how many people took the photo together?"
+      },
+      "original_answer": "Three people",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Look at this group photo; the green plants in the background and the scenery outside the window are both beautiful, and the atmosphere is very warm.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event without a causal relationship.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "The picture that sparked Zhou Xingchen's inspiration for filming a shop exploration video, what kind of scene does it depict?"
+      },
+      "original_answer": "In the center is a large round dining table, covered with tableware and leftover food.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Take a look at this one—the 'battle results' after our dinner gathering. See how well we practiced the 'Clean Plate Campaign'? Impressive, right? The Tom Yum soup was completely finished, and the dessert presentation was perfect for photos. It reminds me of the 'Most Adorable Contrast Award' you designed for our previous pet social event—both focus on interaction and experience. By the way, here’s an idea for a food exploration video: I’m thinking of filming one titled 'How to Achieve the Clean Plate Campaign at a Trendy Restaurant,' combined with my dramatic flair. What do you think?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Inferring that the image content drives the emergence of the text content, with a focus on causal inference.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "In a conversation, how is the question image referred to or cited?"
+      },
+      "original_answer": "From 'this group photo' (Round 1) to 'this photo is really well taken' (Round 2)",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Haha, Xiaomeng, look at this photo! Do you remember the moment we raised our glasses to celebrate at the dinner last Saturday?",
+          "image": "1.png"
+        },
+        {
+          "session": "session10",
+          "turn": 2,
+          "content": "Wow, this photo is really well taken! The green plants in the background and the scenery outside the window are both beautiful, and the atmosphere is very cozy.",
+          "image": "1.png"
+        },
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "Exactly! And look at this one, the 'achievements' after the meal—check out our 'Clean Plate Campaign,' impressive, right?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same image entity across different rounds.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Zhou Xingchen does not engage in advertising planning at all. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 9,
+          "content": "The live stream is going okay, and the number of followers is slowly increasing. It might be related to the gameplay highlights I shared earlier and the sci-fi style skin for Lan.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect whether there is a contradiction between newly input information and existing memory, and propose potentially contradictory information for verification here.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Su Xiaomeng mentioned what her favorite movie is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:07:20.791155",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

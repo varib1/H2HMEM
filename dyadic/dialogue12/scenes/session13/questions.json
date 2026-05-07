@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T17:34:54.903937",
+    "session_name": "session13",
+    "dialogue_name": "Dialogue 12",
+    "session_number": 13,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session13",
+    "session_number": 13,
+    "dialogue_name": "Dialogue 12"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the name of the exhibition mentioned by Shen Zhiwei in the conversation?"
+      },
+      "original_answer": "Data Flow Theater",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 1,
+          "content": "Yanqiu, I recently discovered a particularly interesting exhibition called 'Data Flow Theater'.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid ambiguity, and ensure the answer is clearly derived from the first round of the conversation.",
+      "generated_at": "2026-03-01T17:34:54.903937",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Shen Zhiwei sent the interactive process of the \"Data Flow Theater\" exhibition's official website. How many steps does their interactive process include? What are they?"
+      },
+      "original_answer": "Includes five steps: user registration, event sign-up, information submission, approval, and participation in the event.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 3,
+          "content": "I just checked the official website, and the interaction flow is designed quite cleverly. Let me show you.",
+          "image": ""
+        },
+        {
+          "session": "session13",
+          "turn": 3,
+          "content": "",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Recall relevant images based on textual information, where the text and images describe different aspects of the same event (official website flowchart) without a causal relationship.",
+      "generated_at": "2026-03-01T17:34:54.903937",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "What is Cheng Yanqiu's evaluation of the problematic images?"
+      },
+      "original_answer": "Cheng Yanqiu commented that Shen Zhiwei's mind map is very enlightening and can be supplemented at the data level.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 9,
+          "content": "Shen Zhiwei: [Sent image: 3.png] I'm so excited! I just drew a simple mind map to outline the possible dimensions for observation: technical implementation, audience interaction, narrative metaphors, etc. You see, this is like how we attempted to operationalize narrative theory into computable metrics in Session 7, but this time it's the reverse—extracting narrative elements from data art.",
+          "image": "3.png"
+        },
+        {
+          "session": "session13",
+          "turn": 10,
+          "content": "Cheng Yanqiu: Your mind map is very enlightening! I can add aspects related to data: real-time latency, data cleaning methods, algorithm transparency, etc. In Session 11, we discussed data validation for consumption narratives. Here, we might explore the data foundation for artistic narratives. When exchanging notes, we can compare these dimensions.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask what someone's evaluation of a certain image is? The answer is based on Cheng Yanqiu's direct evaluation triggered by image 3.png.",
+      "generated_at": "2026-03-01T23:50:37.709052",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the 'mind map' mentioned by Shen Zhiwei referred to and cited in the dialogue?"
+      },
+      "original_answer": "Initially called 'Mind Map', later Cheng Yanqiu referred to it as 'Your Mind Map'.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 9,
+          "content": "I just drew a simple mind map.",
+          "image": ""
+        },
+        {
+          "session": "session13",
+          "turn": 10,
+          "content": "Your mind map is very inspiring!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity (mind map) across multiple rounds of dialogue, from 'mind map' to 'your mind map'.",
+      "generated_at": "2026-03-01T17:34:54.903937",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The \"Data Stream Theater\" exhibition that the two are going to attend only lasts for a week. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 5,
+          "content": "Starting next weekend, lasting for two weeks.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between new information (lasting only one week) and conversation content (lasting two weeks).",
+      "generated_at": "2026-03-01T17:34:54.903937",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Did Shen Zhiwei mention the specific address of the exhibition in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not mentioned in the conversation (such as the exhibition address) should be refused or pointed out as not previously discussed.",
+      "generated_at": "2026-03-01T17:34:54.903937",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

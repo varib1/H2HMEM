@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:36:50.557054",
+    "session_name": "session15",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 15,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session15",
+    "session_number": 15,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Among the backpack designs mentioned by Shi Yan, which one might cause the backpack's center of gravity to be unstable?"
+      },
+      "original_answer": "Side-opening",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 4,
+          "content": "The side-opening design allows for quick and easy access to the camera, but could it affect the balance of the packing? During my last hike, I frequently took out and put back my equipment, which made me feel like the backpack's center of gravity was unstable.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Text: Recall factual text from the conversation, avoiding generic responses."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which backpack retrieval method in the conversation does this image correspond to?"
+      },
+      "original_answer": "Side-opening",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 6,
+          "content": "I'll send a photo from a previous shoot. Look at how this backpack is accessed—does it resemble a side-opening style?",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Retrieve the corresponding text description based on image information, both related to the same event (discussion of side-opening backpacks)."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "What feelings did this picture evoke in Yelu?"
+      },
+      "original_answer": "The shoulders are under a lot of pressure.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 6,
+          "content": "I'm sharing a photo from a previous shoot. Look at how this backpack is accessed—doesn't it resemble a side-opening style? At the time, I felt a lot of pressure on my shoulders.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: The image (2.jpg) drives the text (Ye Lu's evaluation of shoulder pressure), which falls under causal inference."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "2.jpg",
+        "text": "How is the image referred to in the conversation?"
+      },
+      "original_answer": "The access method of this backpack",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 6,
+          "content": "I'll share a photo from a previous shoot. Look at how this backpack is accessed—does it resemble a side-opening style?",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Tracking the evolution of reference methods for images across different rounds."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "1.png",
+        "text": "Based on the advantages and disadvantages of the modular attachment system, which backpack did Yelu select that emphasizes modularity?"
+      },
+      "original_answer": "A focus on modularity",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 8,
+          "content": "Based on your suggestions, I have preliminarily narrowed down to 2-3 candidates, one focusing on modularity and the other on side-opening access.",
+          "image": ""
+        },
+        {
+          "session": "session15",
+          "turn": 3,
+          "content": "Modularity is indeed flexible, but I must remind you: it may compromise the overall carrying stability and waterproofing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Apply the newly learned information from the conversation (advantages and disadvantages of modular systems) to answer the question."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The flexibility of the modular attachment system is low but its stability is high. Does this contradict the conversation content? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session15",
+          "turn": 2,
+          "content": "The modular accessory system appears to be highly flexible and can be adjusted as needed.",
+          "image": ""
+        },
+        {
+          "session": "session15",
+          "turn": 3,
+          "content": "Modularity is indeed flexible, but I must remind you: it may compromise the overall carrying stability and waterproofing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text → Text: Detect whether there is a contradiction between newly input information (high flexibility) and existing memory (which may sacrifice stability), and verify consistency."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What is the color of the camera bag mentioned in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session15"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Text→Text: For information not present in the conversation (e.g., the color of the camera bag), the response should be declined to avoid generating hallucinations."
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Multimodal Causal Inference": 2,
+      "Text-Image": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Text Consistency": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    }
+  }
+}

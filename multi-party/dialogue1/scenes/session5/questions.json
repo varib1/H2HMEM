@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:10:10.949564",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what position does white sugar hold in the Thousand Island dressing ingredient list mentioned by Dr. Wu?"
+      },
+      "original_answer": "Second",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "E_DrWu: @Kiki, try to eat less sugar. White sugar is the second ingredient listed in the Thousand Island dressing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
+      "generated_at": "2026-03-23T10:10:10.949385",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "img3.jpg",
+        "text": "Whose opinions did Ajie listen to in order to choose the items in the problem picture?"
+      },
+      "original_answer": "Lin Sen and Dr. Wu",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 28,
+          "content": "C_SuQian: @阿杰 This shape is truly so healing; every time I see it, it feels like a miracle of nature.",
+          "image": "img7.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 27,
+          "content": "D_AhJie: [Sent picture: img7.jpg] Everyone, take a look at this Romanesco broccoli—it feels like a work of art!",
+          "image": "img7.jpg"
+        }
+      ],
+      "validation_notes": "Text → Image, based on the textual information in the conversation (Su Qian's description of the shape), retrieve the corresponding image (img7.jpg), both of which are related to the same event (Romanesco broccoli).",
+      "generated_at": "2026-03-23T10:10:10.949423",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Dr. Wu to remind Ajie to pay attention to the white sugar content? Provide the session number and image file name."
+      },
+      "original_answer": "img9.jpg in session5",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 34,
+          "content": "E_DrWu: [Sent picture: img9.jpg] @阿杰 Look at this near-expiration yogurt, it has a high sugar content, so be careful to eat less.",
+          "image": "img9.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text, where img9.jpg (a picture of near-expiry yogurt) directly triggered Dr. Wu's reminder (text response), demonstrates a causal driving relationship.",
+      "generated_at": "2026-03-23T10:10:10.949442",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "img3.jpg",
+        "text": "How many people in the conversation have mentioned things in the picture?"
+      },
+      "original_answer": "4 people",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "D_AhJie: [Sent picture: img1.jpg] Family, look at all these choices on the shelf!",
+          "image": "img1.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 10,
+          "content": "D_AhJie: [Sent image: img1.jpg] I didn’t notice these details earlier. Thanks for the reminder, everyone.",
+          "image": "img1.jpg"
+        }
+      ],
+      "validation_notes": "Track the evolution of the same image entity (img1.jpg) across multiple rounds of conversation, from initially displaying the shelf to later mentioning changes in details.",
+      "generated_at": "2026-03-23T10:10:10.949458",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, which is healthier: vinaigrette or Thousand Island dressing?"
+      },
+      "original_answer": "Vinaigrette",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 17,
+          "content": "A_LinSen: [Sent picture: img5.jpg] The ingredient list for the vinaigrette is also here, take a look at its components.",
+          "image": "img5.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 19,
+          "content": "E_DrWu: @Lin Sen, the vinaigrette is indeed healthier, with lower sodium content.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Online adaptation, learning newly acquired multimodal information (img5.jpg image and Dr. Wu's textual evaluation), and applying this knowledge to answer questions.",
+      "generated_at": "2026-03-23T10:10:10.949495",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Vinaigrette contains high fat, does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Image img3 description: The label text includes...\"0 fat\"...",
+          "image": "img3.jpg"
+        }
+      ],
+      "validation_notes": "Contradiction detection: Present new information (vinaigrette contains high fat) that contradicts existing memory (vinaigrette has 0 fat), testing the ability to recognize contradictions.",
+      "generated_at": "2026-03-23T10:10:10.949514",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which brand of chips did Ajie buy?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: The question involves information not present in the conversation (milk brand), testing refusal ability to avoid hallucinations.",
+      "generated_at": "2026-03-23T10:10:10.949531",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

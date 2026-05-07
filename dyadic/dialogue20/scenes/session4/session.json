@@ -1,0 +1,152 @@
+{
+  "session_id": "pet_1_01",
+  "session_title": "The fear of \"Nian\"",
+  "theme": "宠物-节日噪音引发的宠物应激",
+  "generated_at": "2026-03-01T02:31:08.145298",
+  "dialogue": [
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "1.png",
+        "text": "Shi An, help me quickly! Yuan Bao has been extremely frightened since New Year's Eve, trembling all over. I'll send you a photo to see."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Happy New Year, don't worry, I see it. Yuanbao is hiding under the sofa, with couplets and lanterns in the background. Is it because the firecrackers are too intense, causing it to become stressed?"
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Very likely! I was so focused on planning the event that I forgot pets can also be affected by holiday noise. Just like when we discussed post-holiday syndrome before, you mentioned the importance of maintaining a balanced rhythm—now Yuanbao's rhythm is completely disrupted."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Yes, pets also need emotional well-being. Take a deep breath first and stay calm, so you can better help Yuanbao. I’ll send you a guide chart for handling noise stress in pets. Try following the instructions."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Okay, I've received it. This guide looks quite practical; I'll give it a try first."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "I followed the instructions in the picture and prepared a quiet little room for Yuanbao, playing some soothing music. It seems to be trembling less now, but it's still huddled in the corner, looking very scared."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "This is a good start! Stress responses take time to ease. Just like when we were planning the New Year's Eve dinner event, you emphasized the sense of ceremony. Now, for Yuanbao, building a sense of security is also a kind of ritual."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "You're right, rituals create meaning. But I'm still worried, what if the sound of firecrackers starts again? Will Yuanbao get worse?"
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Don't panic, we can take preventive measures in advance. Remember how we adjusted the awards in the neighborhood New Year's Eve dinner to avoid competitive pressure? Similarly, prepare some anti-noise measures for Yuanbao, such as soundproof pads or soothing toys."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Great idea! I'll go look for it now. By the way, you mentioned real connections earlier, and now I feel that taking care of Yuanbao is also a kind of connection, making me pay more attention to the details of family life."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Yes, both self-care and family care are important. If Yuanbao continues to experience fear, emergency handling principles may be necessary: maintain a stable environment, avoid sudden stimuli, and consider consulting a veterinarian."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Thank you for your guidance, Shi An. From the New Year's Eve dinner to the pet's stress, you always help me shift from panic to direction. Yuanbao has quieted down a bit now, and I'll continue to observe."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "You're welcome, and happy New Year. Your enthusiasm and organizational skills were great during the event, and now they're also well-suited for taking care of Yuanbao. Remember, amid the festive fervor, it's important to pay attention to these subtle rhythms as well."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "I understand. Just as we discussed balancing tradition and modernity for a simple New Year's Eve dinner, we now need to balance festive joy with pet welfare. Yuanbao seems to be slowly peeking out."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "That's a good sign! Continue to provide gentle companionship, avoid paying too much attention to it, and let it adjust on its own. If needed, feel free to contact me anytime."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Okay, I will. This experience has made me reflect on whether pet-friendly elements should be incorporated into festival planning, just like how the Year of the Dragon dolls were added to attract children before."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "Great idea! This can foster a more comprehensive sense of community belonging. You focus on recovering the ingots first, and we'll discuss this later."
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Thank you, Shi An. I feel less anxious now, and Yuan Bao has also calmed down a bit. Your psychological support is always so timely."
+      }
+    },
+    {
+      "role": "Ji Shi'an",
+      "content": {
+        "image": "",
+        "text": "I'm glad I could help, He Sui. Remember the emergency principle: stay calm and soothe step by step. Wishing you a happy Lantern Festival, and may Yuanbao recover soon!"
+      }
+    },
+    {
+      "role": "New Year's Greetings",
+      "content": {
+        "image": "",
+        "text": "Thank you! I wish you a joyful holiday as well. I will continue to work hard to bridge tradition with modernity while also taking good care of every family member."
+      }
+    }
+  ],
+  "metadata": {
+    "enhancement_failed": true
+  },
+  "timeline_date": "2024-02-10"
+}

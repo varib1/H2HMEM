@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T17:05:33.153862",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 2",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T17:05:33.153862"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 2"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Which specific applications or tools did Lu Zhixing recommend to help Lin Chang'an with recording and management? Please list the names of these tools."
+      },
+      "original_answer": "PetPace, To-Do List App, Health Monitoring App, Smartwatch.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 6,
+          "content": "I'm sharing a pet health-related app with you called PetPace, which can help automate recording and analysis.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 4,
+          "content": "I recommend using this to-do list app; it has a clear interface and is great for managing daily tasks.",
+          "image": "session3/3.png"
+        },
+        {
+          "session": "8",
+          "turn": 4,
+          "content": "This is the data overview from my health app, recorded with a watch. You can refer to it, such as metrics like sleep quality and heart rate variability.",
+          "image": "session8/1.png"
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "Zhixing, I bought the fitness tracker you recommended earlier—the Huawei one with the light pink strap.",
+          "image": "session9/1.png"
+        }
+      ],
+      "validation_notes": "The issue requires cross-session recall of text details, involving tool names mentioned across multiple sessions.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Which specific movie titles did Shen Qingyan mention when sharing about films? Please list the names of these movies."
+      },
+      "original_answer": "\"Little Forest\", \"Our Little Sister\", \"Maborosi\", \"Still Walking\".",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Recently, I've been under a lot of pressure at work. I watched two movies, \"Little Forest\" and \"Our Little Sister,\" and I feel like my whole being has calmed down.",
+          "image": ""
+        },
+        {
+          "session": "7",
+          "turn": 5,
+          "content": "After watching these two, I also caught up with \"Maborosi\" and \"Still Walking,\" and I realized that even in his early works, he focused on using imagery to capture the passage of time, much like dynamic ink wash paintings.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue requires cross-session recall of text details, involving the movie titles mentioned in session 6 and session 7.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "session4/1.png",
+        "text": "On May 15th, during a remote synchronized dinner, which food did Shen Qingyan mention that reminded her of the food in this picture?"
+      },
+      "original_answer": "Tomato and Egg Noodles.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 1,
+          "content": "Qing Yan, I can see you've been working hard lately taking care of Chen Pi, so I made some corn silk and rice porridge—simple and nourishing. Here's a photo; I think it suits your current situation perfectly.",
+          "image": "session4/1.png"
+        },
+        {
+          "session": "5",
+          "turn": 12,
+          "content": "This bowl of noodles reminds me of the corn silk porridge you recommended—simple yet nourishing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Based on the image from session4, recall the relevant text descriptions from session5 to establish an image-text association.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "session1/2.jpg",
+        "text": "Was the problematic image mentioned in the conversation between the two on June 1st? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Zhixing, I just got back from the vet. This is Chenpi's test report. The doctor explained a lot, but my mind is all jumbled. Can you help me take a look?",
+          "image": "session2/1.png"
+        },
+        {
+          "session": "3",
+          "turn": 8,
+          "content": "Based on the lab report data, the risk of drug side effects is low, but we need to continue monitoring.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Based on the images from session2, recall the relevant textual information from session3 to establish image-text associations.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In session 1, when Shen Qingyan initially noticed that Chen Pi had a poor appetite, Lu Zhixing suggested starting to record baseline data. In session 2, based on the lab test results, Lu Zhixing updated the treatment recommendations. What specific treatment plan did he suggest? How did this modify the initial monitoring plan from session 1?"
+      },
+      "original_answer": "In session 2, Lu Zhixing suggested first trying conservative treatment (such as medication), which revised the initial monitoring plan from session 1, upgrading it from simply recording data to specific treatment interventions, and established a budget plan and monitoring process.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 4,
+          "content": "I suggest starting to record basic data, such as daily weight, water intake, food consumption, and frequency of bowel movements. This will allow for more objective tracking of changes and help avoid subjective judgment biases.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 8,
+          "content": "Based on the lab report data, the indicators are abnormal but not at a critical level. I suggest trying conservative treatment first. This aligns with logical optimization: starting with low-risk options and monitoring the effects, similar to how we previously used PetPace for tracking.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 14,
+          "content": "Alright, decision made. Next, we need to prepare by confirming the medication dosage, setting up reminders, and continuing to monitor Chen Pi's condition using the app. I'll help you organize a schedule.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "How does the new information in problem detection session2 correct the understanding from session1, involving knowledge update.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ005"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In session 6, Shen Qingyan shared movies to relieve stress. In session 8, she mentioned feeling unwell, and Lu Zhixing suggested keeping track of health data. In session 9, after Shen Qingyan started recording the data, she discovered a connection between stress and sleep. How did this update her understanding of stress management?"
+      },
+      "original_answer": "In session 9, Shen Qingyan discovered through health data that stressful events (such as high work pressure) directly lead to a decline in sleep quality (such as reduced deep sleep). This updated her understanding of stress management, expanding from relying solely on film and television therapy to systematically managing stress through data monitoring and minor adjustments (such as putting down the phone earlier and increasing physical activity).",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Recently, I've been under a lot of pressure at work. I watched two movies, \"Little Forest\" and \"Our Little Sister,\" and felt completely calmed down.",
+          "image": ""
+        },
+        {
+          "session": "8",
+          "turn": 1,
+          "content": "Zhixing, I've been suffering from insomnia lately, and my shoulders and neck are aching badly. It feels like my body is a rusty machine that's not functioning properly.",
+          "image": ""
+        },
+        {
+          "session": "9",
+          "turn": 3,
+          "content": "This is the sleep report. The average total sleep time is 5.8 hours, but the proportion of deep sleep fluctuates significantly. The deep sleep phase almost disappeared on Wednesday night. What happened that day? I recall experiencing particularly high work pressure and suffering from insomnia that night.",
+          "image": "session9/2.png"
+        },
+        {
+          "session": "9",
+          "turn": 16,
+          "content": "My suggestions for you: First, put down your phone 15 minutes earlier each night to read a book; second, set three 5-minute activity reminders on workdays; third, maintain one slow meal on weekends, just like our remote shared meals. Make small adjustments and keep observing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "How does the new information in session9 supplement and update the knowledge from session6 and session8, involving cross-session knowledge updating.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ006"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Based on the dialogues from session1, session2, and session3, please infer the chronological order of the following events in the Chen Pi health incident: Lu Zhixing suggests conservative treatment, Shen Qingyan notices Chen Pi's loss of appetite, Lu Zhixing recommends recording data, Shen Qingyan takes Chen Pi to administer medication, and Shen Qingyan takes Chen Pi to the hospital for tests."
+      },
+      "original_answer": "1. Shen Qingyan noticed that Chen Pi had a poor appetite;  \n2. Lu Zhixing suggested recording data;  \n3. Shen Qingyan took Chen Pi to the hospital for tests;  \n4. Lu Zhixing recommended conservative treatment;  \n5. Shen Qingyan took Chen Pi for medication injections.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Zhixing, Chenpi is acting very strange today. I took a photo and sent it to you. Look, he’s not even interested in his favorite snacks. Normally, he would rush over as soon as he hears the sound of the packaging.",
+          "image": ""
+        },
+        {
+          "session": "1",
+          "turn": 4,
+          "content": "I suggest starting to record basic data, such as daily weight, water intake, food consumption, and frequency of bowel movements. This will allow for more objective tracking of changes and help avoid subjective judgment biases.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 1,
+          "content": "Zhixing, I just got back from the vet. This is Chenpi's lab report. The doctor explained a lot, but my mind is all over the place. Could you help me take a look?",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 8,
+          "content": "Based on the lab report data, the indicators are abnormal but not at a critical level. I suggest trying conservative treatment first.",
+          "image": ""
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Zhixing, I brought Chenpi to the hospital for a medication injection. Here are the medicine bottle and syringe prescribed by the doctor.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The problem requires cross-session inference of the temporal order of events, involving information from sessions 1, 2, and 3.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ007"
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Based on the dialogues from session 4, session 5, and session 11, what is the common theme emphasized by Shen Qingyan in sharing happiness items, healing recipes, and remote synchronized dinners regarding daily experiences? Please also rank these activities."
+      },
+      "original_answer": "The common theme is the pursuit of poetry in everyday life, slow living, and spiritual self-sufficiency. Chronological order: 1. Sharing healing recipes; 2. Remote synchronized dinners; 3. Sharing small items that bring happiness.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 4,
+          "content": "I love this little touch of poetry in everyday life, just as you said before, finding order amidst the chaos.",
+          "image": ""
+        },
+        {
+          "session": "5",
+          "turn": 6,
+          "content": "Well, I enjoy these moments of slowing down.",
+          "image": ""
+        },
+        {
+          "session": "11",
+          "turn": 1,
+          "content": "Zhixing, I recently bought a set of coffee equipment. Although it was a bit over budget, the ritual of brewing coffee makes winter something to look forward to.",
+          "image": ""
+        },
+        {
+          "session": "4",
+          "turn": 2,
+          "content": "Chen Pi has been recovering well these past few days, thanks to the care plan you designed for me earlier.",
+          "image": ""
+        },
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Just got off work and made a simple dinner.",
+          "image": ""
+        },
+        {
+          "session": "11",
+          "turn": 1,
+          "content": "It makes winter something to look forward to.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue requires cross-session comparison of topics and inference of chronological order, involving information from sessions 4, 5, and 11.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ008"
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "session9/1.png",
+        "text": "Why did Shen Qingyan choose the items in the picture?"
+      },
+      "original_answer": "Because Lu Zhiwei recommended this watch to Shen Qingyan and mentioned that the 7th generation is more optimized in terms of battery life and health monitoring, making it suitable for long-term tracking.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "8",
+          "turn": 8,
+          "content": "Lu Zhixing: [Sent picture: 2.png] It's not complicated; it's basically ready to wear and use. This is a comparison between the Huawei Band 7 and 6. The 7th generation is more optimized in terms of battery life and health monitoring, making it suitable for long-term tracking.",
+          "image": "2.png"
+        },
+        {
+          "session": "9",
+          "turn": 1,
+          "content": "Shen Qingyan: [Sent a picture: 1.png] Zhixing, I bought the fitness tracker you recommended earlier—the Huawei one with the light pink strap.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Causal Inference: The recommendations from Session 8 (text and images) directly led to the purchase decision in Session 9 (text and images), involving cross-session driving relationships.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ009"
+    },
+    {
+      "question_id": "Q010",
+      "question": {
+        "image": "session2/1.png",
+        "text": "How did the results in the image influence the focus of Lu Zhixing's recommendations when assisting in the development of the care plan?"
+      },
+      "original_answer": "The image indicates abnormal indicators that are not yet critical, leading Lu Zhixing to recommend conservative drug treatment and a detailed care plan, emphasizing continuous monitoring and low-risk intervention.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 2,
+          "content": "Lu Zhixing: Qingyan, don't worry, let me take a look. Hmm, the lab report shows several abnormal indicators, such as elevated liver enzymes and kidney function values, which could be early signs of a chronic condition.",
+          "image": "1.png"
+        },
+        {
+          "session": "3",
+          "turn": 2,
+          "content": "Lu Zhixing: Qingyan, don't worry. You've already made the right choice. Conservative medical treatment is a safe starting point. We can work together to develop a detailed care plan, just like we did before with PetPace to record data, to keep things organized.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Causal Inference: The image information from Session 2 (abnormal lab results) drives the textual decision-making in Session 3 (conservative treatment and care plan), reflecting a cross-session causal chain.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ010"
+    },
+    {
+      "question_id": "Q011",
+      "question": {
+        "image": "",
+        "text": "In multiple conversations, how did Shen Qingyan use and evaluate the applications recommended by Lu Zhixing, and how did these references evolve from tools to emotional support?"
+      },
+      "original_answer": "PetPace was recommended as a pet health record tool and later praised by Shen Qingyan for providing a sense of control; the to-do list was recommended as a care management tool and later mentioned as being very helpful. These applications evolved from functional tools into symbols of emotional support and life optimization.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 7,
+          "content": "Lu Zhixing: [Sending picture: 2.jpg] This app can set reminders, record health metrics, and has a community feature for sharing experiences. The interface is quite intuitive, so you should be able to get the hang of it quickly.",
+          "image": "2.jpg"
+        },
+        {
+          "session": "3",
+          "turn": 4,
+          "content": "Lu Zhixing: [Sent image: 3.png] I recommend using this to-do list app. It has a clear interface and is suitable for managing daily tasks.",
+          "image": "3.png"
+        },
+        {
+          "session": "4",
+          "turn": 6,
+          "content": "Shen Qingyan: Handwritten? That's so thoughtful. It reminds me of how my mom used to write down recipes when I was a child. This sense of passing things down feels really nice. I'm still using the PetPace app you recommended earlier to track Chenpi's recovery data.",
+          "image": ""
+        },
+        {
+          "session": "10",
+          "turn": 7,
+          "content": "Shen Qingyan: I hope it can be used both at home and in the office, with a moderate budget. By the way, the to-do list you recommended earlier was a huge help, so I'm counting on you again this time.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Referential Evolution: Tracking the mentions of applications across different sessions, from initial recommendations to subsequent usage and emotional evaluations, to illustrate the evolution of topics.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ011"
+    },
+    {
+      "question_id": "Q012",
+      "question": {
+        "image": "session1/2.jpg",
+        "text": "How is the object in the picture referred to in the multiple conversations between the two individuals?"
+      },
+      "original_answer": "Directly refer to it using the app name PetPace.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话2",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 4,
+          "content": "Shen Qingyan: Yes, I've received it. Corn silk, red dates, carrots... these ingredients are all quite common, and the preparation isn't complicated either. I like this kind of small poetry in everyday life, just as you said before—finding order amidst the chaos.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Shen Qingyan: I've been under a lot of pressure at work lately, so I watched two movies, \"Little Forest\" and \"Our Little Sister,\" and I feel like my whole self has calmed down.",
+          "image": ""
+        },
+        {
+          "session": "9",
+          "turn": 6,
+          "content": "Lu Zhixing: Yes, data is the body's signal. We can start with small adjustments. For example, try putting down your phone 15 minutes earlier than usual and reading two pages of a physical book—just as you said when recommending \"Little Forest,\" slowing down can bring peace.",
+          "image": ""
+        },
+        {
+          "session": "11",
+          "turn": 1,
+          "content": "Shen Qingyan: [Sent a picture: 2.jpg] Zhixing, I recently bought a set of coffee equipment. It was a bit over budget, but the ritual of brewing coffee makes winter something to look forward to.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Topic Evolution: Track the development of themes such as 'Poetry in Daily Life' and 'Slow Living' across different conversations, spanning from diet and entertainment to health and shopping, reflecting cross-conversational references.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ012"
+    }
+  ],
+  "summary": {
+    "total_questions": 12,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 2,
+      "Knowledge Resolution": 2,
+      "Temporal Reasoning": 2,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 2
+    },
+    "by_difficulty": {
+      "medium": 7,
+      "easy": 1,
+      "hard": 4
+    },
+    "converted_from_cross_session": true
+  }
+}

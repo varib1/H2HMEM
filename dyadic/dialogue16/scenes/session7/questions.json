@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:31:10.075539",
+    "session_name": "session7",
+    "dialogue_name": "Dialogue 16",
+    "session_number": 7,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session7",
+    "session_number": 7,
+    "dialogue_name": "Dialogue 16"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What activity did Shen Jingyan engage in to alleviate anxiety about the future while creating the memorial album?"
+      },
+      "original_answer": "Observe the daily traces of ink more meticulously.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 1,
+          "content": "During the process of creation, I found that observing the daily traces of ink more attentively actually alleviated my anxiety about the future.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "3.jpg",
+        "text": "Which image or scene in the conversation does this picture correspond to?"
+      },
+      "original_answer": "A slightly ajar door with light shining through.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 6,
+          "content": "This time, I want to paint a slightly ajar door with light shining through, symbolizing the possibilities within companionship and acceptance.",
+          "image": ""
+        },
+        {
+          "session": "session7",
+          "turn": 8,
+          "content": "I've finished the drawing and I'm sending it to you. This door reminds me of the meditation scene you shared, with light streaming in from the half-open door, warm and serene.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Image→Text: Recall corresponding dialogue imagery based on image information.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "4.jpg",
+        "text": "What feelings did the image evoke in Shen Jingyan?"
+      },
+      "original_answer": "The warmth of weight",
+      "answer_source": "inference",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 11,
+          "content": "I've also learned a lot from you, such as the idea that expression itself is healing. Here’s a photo of Mohen. It was relaxing on the floor today, and as I gently stroked its head, I felt the 'warm weight.'",
+          "image": "4.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text: The image triggers evaluations or emotional descriptions, which falls under causal inference.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is the 'door' drawn by Su Yu'an gradually described from its initial proposal to its completion?"
+      },
+      "original_answer": "From \"draw a slightly open door with light shining through\" (Round 6) to \"it's done, I'll send it to you\" (Round 8), and then to \"the feeling of light shining through is very vibrant\" (Round 9).",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 6,
+          "content": "This time, I want to draw a slightly ajar door with light shining through, symbolizing the possibilities within companionship and acceptance.",
+          "image": ""
+        },
+        {
+          "session": "session7",
+          "turn": 8,
+          "content": "I've finished the drawing and I'm sending it to you. This door reminds me of the meditation scene you shared, with light streaming in from the half-open door, warm and serene.",
+          "image": "3.jpg"
+        },
+        {
+          "session": "session7",
+          "turn": 9,
+          "content": "I see it, the light shining through feels very vibrant.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of entities across different rounds, focusing on changes in the reference chain.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "1.png",
+        "text": "Based on the newly acquired notebook image information, what practice does Su Yu'an suggest using it to record?"
+      },
+      "original_answer": "Mindfulness Practice",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 14,
+          "content": "Yes, just like the cover of this notebook, with a cat against a blue sky, symbolizing tranquility and possibility. I’m sending it to you for reference. Perhaps we can use it to record mindfulness practices, avoiding dogma and maintaining flexibility.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Learn newly acquired multimodal information and apply it to assess online adaptability.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": false
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that Mo Hen has been sleeping more lately but is not in pain. If someone says, 'Mo Hen has been in a lot of pain recently,' does this contradict the content of the dialogue?"
+      },
+      "original_answer": "Yes, contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session7",
+          "turn": 3,
+          "content": "Mohan has been sleeping more lately, but without any pain, which makes me even more grateful for its presence every day.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Present potentially contradictory information to assess the ability to detect contradictions.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Does the conversation mention what color the cover of the commemorative book is?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session7"
+      ],
+      "answer_dialogue": "对话16",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information that has not been mentioned to test the ability to decline answering.",
+      "generated_at": "2026-02-24T11:31:10.075539",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

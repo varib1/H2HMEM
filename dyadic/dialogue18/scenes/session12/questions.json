@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:36:05.953068",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 18",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 18"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "1.jpg",
+        "text": "What kind of discussion did this picture spark?"
+      },
+      "original_answer": "Shelf life and moisture resistance of spice packs.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Shiyan, based on the 'paste recipe' you mentioned earlier, I've designed an improved version. Take a look at this diagram—I've packaged the same dehydrated ingredients into individual small packets and paired them with different natural spice blends.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "This design is quite clever. The individual packaging makes it easy to access, and the idea of spice packets is also good. However, I have to ask, what is the shelf life and moisture resistance of these spice packets? The outdoor environment can be damp and changeable, so they can't fail halfway.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image 1.png displays individual small packages and spice packets, sparking Shiyan's discussion on shelf life and moisture resistance, which falls under image-driven textual causal inference."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which design concept in the dialogue does the problem image correspond to?"
+      },
+      "original_answer": "Portable and easy-to-carry spice containers",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "That's right. Look at this picture, I used similar small containers to portion out spices, making it easier to adjust the amount. I think for most routine outdoor tasks, like your daily exploration or my photography, this improvement can enhance the experience without sacrificing efficiency.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image 2.png shows small containers for portioning spices, directly corresponding to the lightweight and portable design concept mentioned in the conversation."
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.png",
+        "text": "In the conversation, what situation is the plating design shown in the problem image intended to address?"
+      },
+      "original_answer": "Spice packet dampened or omitted",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 14,
+          "content": "In the wild, if the spice packet gets damp or is forgotten, is there a backup plan?",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 15,
+          "content": "Of course. Look at this picture. I used similar ingredients but arranged them carefully and placed them in a natural setting. Even without spices, the visual appeal can make up for it.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "It is necessary to combine image 3.png with the dialogue content to understand that the plating design is intended to address situations where the spice packet becomes damp or is omitted."
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the evolution of the reference to the 'porridge recipe' improvement plan mentioned by Yelu across different rounds?"
+      },
+      "original_answer": "From the \"Improved Plan\" to \"This Plan\" and then to the \"Delicious Upgrade\" experiment",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Shiyan, I've designed an improved plan based on the 'Mushy Recipe' you mentioned earlier.",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 7,
+          "content": "You're right. Look at this picture, I used similar small containers to portion out spices, making it easier to adjust the amounts. I think for most routine outdoor tasks, like your daily exploration or my photography, this improvement can enhance the experience without sacrificing efficiency.",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 19,
+          "content": "Thank you! Thanks to your continuous guidance, from emergency plans to knee injury recovery, I've learned a lot. So, for this 'Delicious Upgrade' experiment, can we consider that we've found some common ground?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity (improved version) across different rounds, focusing on changes in the reference chain."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Check whether the following information contradicts the dialogue: Ye Lu said that the spice packet remains effective under extremely high altitude conditions."
+      },
+      "original_answer": "Contradiction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 4,
+          "content": "However, I have a practical concern: at extremely high altitudes or in extremely cold conditions, people's sense of taste diminishes, and the effectiveness of spices may be limited. Have you considered such scenarios?",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 5,
+          "content": "Ah, I really didn't consider that. My experience is mostly at regular altitudes, like the valley hikes I've done before. At extremely high altitudes or in extreme cold, spices might indeed not be as effective.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Present potentially contradictory information (the spice pack is effective at extremely high altitudes), and check whether the contradiction is recognized (the dialogue suggests that the spice may be ineffective at extremely high altitudes)."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Which specific spice name did Yelu mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话18",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 12,
+          "content": "The three-step method sounds feasible, progressing steadily. As for the types of spice blends, how do you pair them? Avoid specific names, but what is the principle behind it?",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 13,
+          "content": "Based on common taste preferences, such as enhancing freshness, removing fishy odors, or adding aroma, I drew inspiration from the natural properties of ingredients. This approach is similar to the natural therapies used in Session 6's rehabilitation plan—practical and gentle.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue (specific spice names) to assess the ability to refuse answering and avoid hallucinations."
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Image-Driven Discussion": 1,
+      "Cross-modal Retrieval": 1,
+      "Knowledge Resolution": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "medium": 3,
+      "hard": 2,
+      "easy": 1
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:05:12.918676",
+    "session_name": "session1",
+    "dialogue_name": "Dialogue 4",
+    "session_number": 1,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session1",
+    "session_number": 1,
+    "dialogue_name": "Dialogue 4"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What does Gu Linfeng describe his pain sensation as in the conversation?"
+      },
+      "original_answer": "Mainly a feeling of soreness and swelling.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "It's mainly a feeling of soreness and swelling, which sometimes worsens when turning the head or raising the arm, and it has been persisting for several days.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:05:12.917583",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What are the multiple indicators included in the table template mentioned by Ye Zhiwei in the conversation?"
+      },
+      "original_answer": "Date, Time, Pain Location, Pain Index, Computer Work Duration, Key Activity Postures, and Relaxation Activities",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "This is a table template where you can record multiple indicators.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text → Image: Based on the textual information in the conversation (table template description), retrieve the corresponding image (2.png).",
+      "generated_at": "2026-02-24T11:05:12.917583",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Gu Linfeng to send the description of the pain area? Provide the session number and the image file name."
+      },
+      "original_answer": "1.png in session1",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 1,
+          "content": "My neck and shoulders have been really uncomfortable lately. I drew a sketch to mark the painful areas and sent it to you for a look.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png (sketch) prompted Gu Linfeng's description of the pain area.",
+      "generated_at": "2026-02-24T11:05:12.917583",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what was the referential evolution of the record form mentioned by Gu Linfeng from its initial dispatch to the final decision to use it?"
+      },
+      "original_answer": "From 'Table Template' to 'Table' and then to 'This Table'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 5,
+          "content": "This is a table template.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "The table looks quite practical, thank you.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 10,
+          "content": "This table really makes the issue more concrete.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking the evolution of referential expressions for entities (record forms) across different rounds.",
+      "generated_at": "2026-02-24T11:05:12.917583",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the definition of the pain index scale learned from the conversation, if someone is in severe pain, what is their pain index score?"
+      },
+      "original_answer": "10 points",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 7,
+          "content": "I'll send you a more standardized pain rating scale, typically using a 0-10 scale, where 0 is no pain and 10 is the most severe pain.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 8,
+          "content": "The pain level today is approximately at a 4.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learn new information (definition of the Pain Index Scale) and apply it to answer questions (the pain index used by Gu Linfeng).",
+      "generated_at": "2026-02-24T11:05:12.918676",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Gu Linfeng's pain only lasted for 2 hours, so actually, recording it doesn't really make sense. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "It's mainly a feeling of soreness and swelling, which sometimes worsens when turning the head or raising the arm, and it has been persisting for several days.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 4,
+          "content": "You mentioned that it lasts for several days, which helps differentiate between acute or chronic issues.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect the contradiction between new information (the pain only lasts for 2 hours) and existing memory (it lasts for several days), and examine the ability to detect contradictions.",
+      "generated_at": "2026-02-24T14:03:36.976648",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What did Gu Linfeng mention as his profession in the conversation?"
+      },
+      "original_answer": "Architect and musician",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session1"
+      ],
+      "answer_dialogue": "对话4",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session1",
+          "turn": 3,
+          "content": "As an architect, I often work at my desk.",
+          "image": ""
+        },
+        {
+          "session": "session1",
+          "turn": 6,
+          "content": "But as a musician, I'm accustomed to noting down the details of musical scores.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information (occupation) that has already appeared in the conversation to test whether the answer is fabricated; since the answer exists here, it is not refused.",
+      "generated_at": "2026-02-24T11:05:12.918676",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

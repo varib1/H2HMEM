@@ -1,0 +1,572 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-01T17:05:33.153862",
+    "session_name": "session0",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 0,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "cross-session",
+    "question_format": "object_format",
+    "source": "converted_from_cross_session",
+    "converted_at": "2026-04-01T17:05:33.153862"
+  },
+  "session_info": {
+    "session_name": "session0",
+    "session_number": 0,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "During Su Xiaomeng's progress in the game, what heroes and skin styles did Zhou Xingchen recommend?"
+      },
+      "original_answer": "Zhou Xingchen recommended mid-lane T0 or T1 heroes and shared Lan's sci-fi skin and the aesthetic-style skin that Su Xiaomeng likes.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 10,
+          "content": "Zhou Xingchen: [Sent picture: 3.png] Take a look at this, the mid-lane hero tier list. I suggest you try the T0 or T1 heroes—they're simple to play, strong, and easy to pick up.",
+          "image": "1/3.png"
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent a picture: 1.png] Hey, Xiaomeng! Check out the new skin I just got for Lan—this sci-fi design is absolutely awesome!",
+          "image": "3/1.png"
+        },
+        {
+          "session": "3",
+          "turn": 6,
+          "content": "Su Xiaomeng: [Sent picture: 3.png] I really like this kind of aesthetic style. For example, this skin is very delicately designed with a warm atmosphere. I’m sending it to you to take a look.",
+          "image": "3/3.png"
+        }
+      ],
+      "validation_notes": "The question integrates the text recommendations from Session 1 with the images and text descriptions from Session 3, examining cross-session unimodal detail recall.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ001"
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In pet-related activities, what specific tasks were Su Xiaomeng and Zhou Xingchen respectively responsible for?"
+      },
+      "original_answer": "At the pet social event, Su Xiaomeng was responsible for designing event posters, planning the schedule, and preparing risk contingency plans, while Zhou Xingchen handled online promotion and interactive segments. In fan operations, Su Xiaomeng managed community maintenance and user segmentation, whereas Zhou Xingchen was in charge of content creation.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] Xingchen, look at the event poster I designed! The theme is 'Social Butterfly Shiba Inu vs. Aloof Ragdoll' offline meetup, and it's at a pet-friendly café. The color scheme is quite lively, isn't it?",
+          "image": "5/1.png"
+        },
+        {
+          "session": "5",
+          "turn": 3,
+          "content": "Su Xiaomeng: [Sent picture: 2.png] I've sent you the detailed version of the event schedule. Look, I've planned everything from check-in, interactive games to the photo session.",
+          "image": "5/2.png"
+        },
+        {
+          "session": "5",
+          "turn": 5,
+          "content": "Su Xiaomeng: [Sent picture: 3.png] Well, I've prepared a risk contingency plan and sent it for your review. It outlines everything from medical emergencies to handling unexpected situations, all categorized by level.",
+          "image": "5/3.png"
+        },
+        {
+          "session": "5",
+          "turn": 9,
+          "content": "Zhou Xingchen: The materials are all set! Leave the promotion and hype to me. I'll warm up the audience through live streams and community groups, using the boss's social butterfly meme to grab attention.",
+          "image": ""
+        },
+        {
+          "session": "6",
+          "turn": 7,
+          "content": "Zhou Xingchen: [Sending picture: 3.jpg] Great idea! This indoor communication photo is perfect for community content. I'll take charge of creating funny videos and graphic posts, and you handle user maintenance and segmentation. How does that sound?",
+          "image": "6/3.jpg"
+        }
+      ],
+      "validation_notes": "The question integrates the text division information from Session 5 and Session 6, examining cross-session unimodal detail recall.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ002"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "session4/1.png",
+        "text": "How did Su Xiaomeng plan the offline event based on the problem picture?"
+      },
+      "original_answer": "Based on the social butterfly image of the Shiba Inu \"Boss\" in the picture, Su Xiaomeng designed an event poster for the offline meetup titled \"Social Butterfly Shiba Inu vs. Aloof Ragdoll.\" The event will take place at a pet-friendly café and will include interactive games and a photo session.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look at my 'boss'! Today at the park, it grabbed the frisbee and dashed straight over to play with strangers. That head-tilt pose was absolutely perfect—it instantly won the hearts of three young ladies!",
+          "image": "4/1.png"
+        },
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] Xingchen, look at the event poster I designed! The theme is an offline meetup titled 'Social Butterfly Shiba Inu vs. Aloof Ragdoll,' and it's taking place at a pet-friendly café. The color scheme is quite lively, isn't it?",
+          "image": "5/1.png"
+        }
+      ],
+      "validation_notes": "Based on the images from Session 4, retrieve relevant text planning information from Session 5 to establish image-text associations.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ003"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Zhou Xingchen invited Su Xiaomeng to play games together several times. On which occasion did Su Xiaomeng agree?"
+      },
+      "original_answer": "Twice, the second time agreed.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "12",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look quickly! The designer just sent the first draft of the chibi-style Shiba Inu image. Isn’t it super cute? I specifically emphasized highlighting the \"boss\" kind of social butterfly vibe. I feel like this chubby design and the yellow background go really well together. What do you think?",
+          "image": "12/1.png"
+        },
+        {
+          "session": "13",
+          "turn": 5,
+          "content": "Su Xiaomeng: [Sent picture: 3.png] This is the feedback summary. There are quite a few positive reviews—fans say the quality exceeds expectations, the patterns are cute, and the scarf material is soft. However, there are also suggestions for improvement, such as the scarf length being a bit short for large dogs and slight color deviations from the design.",
+          "image": "13/3.png"
+        }
+      ],
+      "validation_notes": "Based on the images from Session 12, retrieve relevant textual feedback information from Session 13 to establish image-text associations.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ004"
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In terms of gaming skills, how were Zhou Xingchen's suggestions updated or supplemented during Su Xiaomeng's learning process from Session 1 to Session 2?"
+      },
+      "original_answer": "In Session 1, Zhou Xingchen suggested that Su Xiaomeng try mid-lane heroes like Diaochan and Zhuge Liang, and shared the hero rankings. In Session 2, Su Xiaomeng improved by watching live streams and studying guides, eventually earning the top mid-lane title. Zhou Xingchen's teaching proved effective, and he invited her to team up for a game.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 10,
+          "content": "Zhou Xingchen: [Sending picture: 3.png] Take a look at this, the mid-lane hero tier list. I suggest you try T0 or T1 heroes, like Diaochan or Zhuge Liang. They're easy to play, strong, and beginner-friendly.",
+          "image": "1/3.png"
+        },
+        {
+          "session": "2",
+          "turn": 2,
+          "content": "Su Xiaomeng: Wow, Xingchen, this record is amazing! I've been watching live streams and guides, and practicing a lot with the techniques you taught me before. I feel like I've improved.",
+          "image": ""
+        },
+        {
+          "session": "2",
+          "turn": 16,
+          "content": "Su Xiaomeng: [Sent picture: 2.png] Xingchen, look at my achievement screenshot! I got the top mid-lane title for the first time, I'm so excited!",
+          "image": "2/2.png"
+        }
+      ],
+      "validation_notes": "The question examines the knowledge update process from Session 1 to Session 2, with Su Xiaomeng's progress supplementing the effectiveness of Zhou Xingchen's suggestions.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ005"
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the development of co-branded products, from the initial creative ideas in Session 11 to the unboxing reviews in Session 13, how are the product's design and feedback revised or optimized?"
+      },
+      "original_answer": "In Session 11, they conceived the idea of a collaborative merchandise line featuring the \"Social Butterfly Shiba Inu & Aloof Ragdoll.\" In Session 12, they designed chibi-style characters and planned ceramic bowls and canvas tote bags. In Session 13, based on user feedback, they discovered that the scarf size was a bit short for large dogs and there were color discrepancies. They plan to adjust the size, communicate with suppliers, and plan the second phase of products.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Knowledge Resolution"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "11",
+          "turn": 4,
+          "content": "Su Xiaomeng: Hmm, these co-branded products really do attract fans, just like the inspiration for our exploration videos we discussed after our last dinner. But, Xingchen, do you think we could do something similar? Like having 'the boss' collaborate with my ragdoll cat to create some merchandise?",
+          "image": ""
+        },
+        {
+          "session": "12",
+          "turn": 11,
+          "content": "Zhou Xingchen: Exactly! From gaming partners to event planning collaborators, and now working together on co-branded products, our collaboration is getting deeper and deeper. I suggest we start with ceramic bowls and canvas bags for the first batch—one for home use and one for on-the-go, covering different scenarios.",
+          "image": ""
+        },
+        {
+          "session": "13",
+          "turn": 5,
+          "content": "Su Xiaomeng: [Sent picture: 3.png] This is the feedback summary. There are quite a few positive reviews—fans say the quality exceeds expectations, the patterns are cute, and the scarf material is soft. However, there are also suggestions for improvement, such as the scarf length being a bit short for large dogs and slight color deviations from the design.",
+          "image": "13/3.png"
+        },
+        {
+          "session": "13",
+          "turn": 7,
+          "content": "Su Xiaomeng: Well, after-sales service is very important. We can refer to the experience of sharing game skins and handle feedback promptly. Regarding the size issue, should we consider adding larger options? Color discrepancies may need further communication with the supplier.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question examines the knowledge update process from Session 11 to Session 13, where user feedback has been incorporated to refine the product design.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ006"
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation information, the correct order for the four events is: pet social butterfly moments, sharing game progress, venting about consecutive game losses, and skin collection."
+      },
+      "original_answer": "Game losing streak rants, gaming progress sharing, skin collections, pet social butterfly moments.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "1",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] (Sent picture) Sigh, Xingchen, look at my record—five losses in a row, I'm about to lose my mind! My teammates either go AFK or feed like crazy. The matchmaking system is just too unfair.",
+          "image": "1/1.png"
+        },
+        {
+          "session": "2",
+          "turn": 16,
+          "content": "Su Xiaomeng: [Sent picture: 2.png] Xingchen, look at my achievement screenshot! I got the top mid-lane title for the first time, I'm so excited!",
+          "image": "2/2.png"
+        },
+        {
+          "session": "3",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent a picture: 1.png] Hey, Xiaomeng! Check out the new skin I just got for Lan—this sci-fi design is absolutely awesome!",
+          "image": "3/1.png"
+        },
+        {
+          "session": "4",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look at my 'boss'! Today at the park, it grabbed the frisbee and dashed straight over to play with strangers. That head-tilt moment was absolutely perfect—it instantly won the hearts of three young ladies!",
+          "image": "4/1.png"
+        },
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] Xingchen, look at the event poster I designed! The theme is 'Social Butterfly Shiba Inu vs. Aloof Ragdoll' offline meetup, and it's at a pet-friendly café. The color scheme is quite lively, isn't it?",
+          "image": "5/1.png"
+        },
+        {
+          "session": "6",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look quickly! The meme of the boss being ignored by the cat at the event has gone viral. So many people came today—the venue is packed!",
+          "image": "6/1.png"
+        },
+        {
+          "session": "7",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent a picture: 1.png] Xiaomeng, look at this! I recently discovered a newly opened script murder mystery shop, and the promotional poster is so atmospheric. It feels perfect for people like us who are always seeking novel experiences!",
+          "image": "7/1.png"
+        }
+      ],
+      "validation_notes": "The problem requires temporal ordering reasoning across multiple sessions to determine the sequence of events before the murder mystery invitation.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ007"
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In pet-related activities, which came first: offline pet social events or co-branded product development?"
+      },
+      "original_answer": "Offline pet social events occur first, followed by the development of co-branded products.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Temporal Reasoning"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] Xingchen, look at the event poster I designed! The theme is 'Social Butterfly Shiba Inu vs. Aloof Ragdoll' offline meetup, and it's taking place at a pet-friendly café. The color scheme is quite lively, isn't it?",
+          "image": "5/1.png"
+        },
+        {
+          "session": "11",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look at this! I just came across a pet brand collaborating with an illustrator on a cat food advertisement. The pattern of the Shiba Inu sticking out its tongue is super popular, and the art style is incredibly cute!",
+          "image": "11/1.png"
+        }
+      ],
+      "validation_notes": "The issue requires cross-session comparison of chronological order, inferring the sequence of events based on session numbers and content.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ008"
+    },
+    {
+      "question_id": "Q009",
+      "question": {
+        "image": "session4/1.png",
+        "text": "The picture of the Shiba Inu named 'Boss' sent by Zhou Xingchen, fetching a frisbee in the park—what connection does it have with the theme of the event poster designed by Su Xiaomeng?"
+      },
+      "original_answer": "The social butterfly behavior of the Chinese Shiba Inu 'Boss' catching a frisbee was one of the inspirations for Su Xiaomeng's event poster theme 'Social Butterfly Shiba Inu vs. Aloof Ragdoll Offline Meetup,' which features the image of a Shiba Inu.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look at my 'boss'! Today at the park, it grabbed the frisbee and dashed straight over to play with strangers. That head tilt in the shot was absolutely perfect—it instantly won over three young ladies!",
+          "image": "1.png"
+        },
+        {
+          "session": "5",
+          "turn": 1,
+          "content": "Su Xiaomeng: [Sent picture: 1.png] Xingchen, look at the event poster I designed! The theme is an offline meetup titled 'Social Butterfly Shiba Inu vs. Aloof Ragdoll,' and it's taking place at a pet-friendly café.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The issue involves cross-session causal inference, where the content of the images in Session 4 drives the theme design of the poster in Session 5.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ009"
+    },
+    {
+      "question_id": "Q010",
+      "question": {
+        "image": "session1/3.png",
+        "text": "What impact did the problematic image have on Su Xiaomeng?"
+      },
+      "original_answer": "After carefully studying the image, Su Xiaomeng's gaming skills improved, earning him the title of top mid-laner.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "2",
+          "turn": 16,
+          "content": "Su Xiaomeng: [Sent picture: 2.png] Xingchen, look at my achievement screenshot! I got the top mid-lane title for the first time, I'm so excited!",
+          "image": "2.png"
+        },
+        {
+          "session": "3",
+          "turn": 15,
+          "content": "Zhou Xingchen: Speaking of which, you've improved so quickly! From complaining about losing streaks last time to now becoming a top-tier mid laner, and your skin collection is so tasteful too.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The issue requires cross-session inference on how the image achievements in Session 2 lead to changes in the textual evaluation in Session 3, reflecting the causal chain.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ010"
+    },
+    {
+      "question_id": "Q011",
+      "question": {
+        "image": "",
+        "text": "In the conversation on February 17th, which picture does Su Xiaomeng refer to when she says \"the mid-lane hero ranking you showed me last time\"? Provide the session number and the image file name."
+      },
+      "original_answer": "3.png in session1",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "4",
+          "turn": 4,
+          "content": "Su Xiaomeng: So adorable! My Ragdoll cat is the complete opposite—aloof and indifferent. It spends all day curled up on a blanket and barely acknowledges me even when I approach.",
+          "image": ""
+        },
+        {
+          "session": "4",
+          "turn": 6,
+          "content": "Su Xiaomeng: [Sent picture: 4.png] Thanks for the compliment! Look, this is my cat. With blue eyes and long fur, it always has this aloof look, which is a stark contrast to the social butterfly that is 'Boss'.",
+          "image": "4.png"
+        },
+        {
+          "session": "12",
+          "turn": 3,
+          "content": "Zhou Xingchen: [Sent picture: 2.png] Don't worry, the Ragdoll cat is here too! Look at this little kitten, with its white body and light brown accents, fluffy fur, and the way it sits quietly—doesn't it perfectly capture that aloof vibe of your Ragdoll?",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the same entity (Ragdoll cat) across sessions, from descriptions of real photos to the design of chibi-style images.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ011"
+    },
+    {
+      "question_id": "Q012",
+      "question": {
+        "image": "session11/1.png",
+        "text": "How did the pet brand co-branded cat food advertisement image sent by Zhou Xingchen in Session 11 influence the development topic of the 'Social Butterfly Shiba Inu & Aloof Ragdoll' co-branded product in Session 12? Trace the evolution of this topic."
+      },
+      "original_answer": "In Session 11, the advertisement image of the co-branded cat food caught Su Xiaomeng's interest. She suggested collaborating with 'Boss' and the Ragdoll cat to create merchandise, which Zhou Xingchen agreed to and began planning. By Session 12, the topic had evolved into specific design sampling and fan voting, ultimately realizing the development of the co-branded product.",
+      "answer_source": "cross_session_converted",
+      "answer_session": [
+        "session0"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "cross-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "11",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Image sent: 1.png] Xiaomeng, look at this! I just came across a pet brand's collaboration with an illustrator for a cat food advertisement. The pattern of the Shiba Inu sticking out its tongue is super popular, and the art style is incredibly cute!",
+          "image": "1.png"
+        },
+        {
+          "session": "11",
+          "turn": 4,
+          "content": "Su Xiaomeng: Hmm, these co-branded products really do attract fans, just like the inspiration for our shop exploration videos we discussed after our last dinner. But, Xingchen, do you think we could also do something similar? For example, having 'the boss' collaborate with my ragdoll cat to create some merchandise?",
+          "image": ""
+        },
+        {
+          "session": "11",
+          "turn": 5,
+          "content": "Zhou Xingchen: Haha, I knew you'd be interested! I was just about to mention it—our super-social Shiba Inu and aloof Ragdoll cat, what a contrast in cuteness! It's bound to go viral.",
+          "image": ""
+        },
+        {
+          "session": "12",
+          "turn": 1,
+          "content": "Zhou Xingchen: [Sent picture: 1.png] Xiaomeng, look! The designer just sent the first draft of the Shiba Inu chibi version. Isn't it super cute?",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The evolution of the issue-tracking joint product topic from the initial inspiration in Session 11 to the concrete implementation in Session 12.",
+      "generated_at": "2026-04-01T17:05:33.153862",
+      "validated": true,
+      "original_question_id": "CSQ012"
+    }
+  ],
+  "summary": {
+    "total_questions": 12,
+    "by_type": {
+      "Unimodal Precise Recall": 2,
+      "Cross-modal Related Retrieval": 2,
+      "Knowledge Resolution": 2,
+      "Temporal Reasoning": 2,
+      "Multimodal Causal Inference": 2,
+      "Reference & Evolution Tracking": 2
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 6,
+      "hard": 3
+    },
+    "converted_from_cross_session": true
+  }
+}

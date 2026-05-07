@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T17:33:49.427319",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 12",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 12"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the shopping app's homepage recommendations mentioned by Shen Zhiwei in the conversation, what percentage is accounted for by body wash?"
+      },
+      "original_answer": "80%",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "I've been looking at vintage dresses for three days straight, and now 80% of my homepage is filled with similar styles.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure text facts from the conversation (percentage).",
+      "generated_at": "2026-03-01T17:33:49.427319",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "According to the basic principles of collaborative filtering and content recommendation mentioned by Cheng Yanqiu in the conversation, what are the steps involved in the basic principles of content recommendation? What is each step?"
+      },
+      "original_answer": "It includes three steps: item feature extraction, user interest modeling, and recommendation generation.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 2,
+          "content": "From a data perspective, the platform uses collaborative filtering and content-based recommendation algorithms to predict your preferences. Let me send you a schematic diagram to illustrate the principle.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "This is the fundamental principle of collaborative filtering and content-based recommendation.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image: Based on the textual information in the conversation (description of algorithm principles), retrieve the corresponding image (2.png).",
+      "generated_at": "2026-03-01T17:33:49.427319",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.jpg",
+        "text": "After Shen Zhiwei sent the problem image, what conclusion did she draw?"
+      },
+      "original_answer": "The algorithm is reinforcing her existing preferences, making it increasingly difficult for her to encounter genuinely \"new\" content.",
+      "answer_source": "both",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Yanqiu, I just took a screenshot of the homepage of the shopping app. Take a look. I've been browsing shower gel for three days straight, and now 80% of the homepage is filled with shower gel recommendations, all with the reason \"based on your browsing history.\" I feel trapped in my own \"aesthetic bubble.\" Is the algorithm reinforcing my existing preferences, making it harder for me to discover truly \"new\" things? This reminds me of our previous discussion about \"predictive anxiety\"—how data-driven approaches can sometimes limit the breadth of experiences.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "The third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is based on image 1.png and Shen Zhiwei's textual response in the first round of dialogue.",
+      "generated_at": "2026-03-01T23:49:53.011282",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is the 'aesthetic bubble' mentioned by Shen Zhiwei referred to and cited?"
+      },
+      "original_answer": "From the 'aesthetic bubble' evolving into the 'filter bubble', and analogized as a bubble surrounded by algorithms.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "I feel trapped in my own 'aesthetic bubble'.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "This leads to the 'filter bubble' effect.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 8,
+          "content": "I'll send you a picture of a 'filter bubble'. This bubble symbolizes algorithmic enclosure.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Track the evolution of entities: from 'aesthetic bubble' to 'filter bubble', and concretize it with image 3.png in the 8th round.",
+      "generated_at": "2026-03-01T17:33:49.427319",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the information learned from the conversation, what are the two algorithms for product recommendations?"
+      },
+      "original_answer": "Collaborative filtering and content-based recommendation algorithms",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 2,
+          "content": "The platform uses collaborative filtering and content-based recommendation algorithms to predict your preferences.",
+          "image": ""
+        },
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Online Adaptation: Based on newly acquired image information (2.png), apply learned knowledge to answer questions.",
+      "generated_at": "2026-03-01T17:33:49.427319",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What is the name of the shopping app that Shen Zhiwei mentioned as her favorite in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话12",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal scenario: Information not present in the question-and-answer dialogue (shopping app name).",
+      "generated_at": "2026-03-01T17:33:49.427319",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

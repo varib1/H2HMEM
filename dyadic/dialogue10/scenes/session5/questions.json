@@ -1,0 +1,226 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:17:50.782138",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 10",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 10"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What color is the fur of Su Mingche's pet dog?"
+      },
+      "original_answer": "Brown",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Qingchuan, while walking Nuanyang today,",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall pure image facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Xia Qingchuan is playing a laser pointer game with his cat Snowball. What is the color of the laser pointer's light?"
+      },
+      "original_answer": "Red",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "When it comes to interaction, I recently tried to aestheticize the process while playing the laser pointer game with Snowball.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event without a causal relationship.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.png",
+        "text": "Based on the dialogue content, what aspect of Xia Qingchuan's obsessive-compulsive disorder does the question image hit?"
+      },
+      "original_answer": "Aesthetic Obsession",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Qingchuan, while walking Nuanyang today, I tried out the concept of 'ritual sense' you mentioned earlier...",
+          "image": "2.png"
+        },
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "Mingche, this photo is absolutely stunning!... It completely hits my aesthetic OCD...",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Inference images drive textual discussions, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is Xia Qingchuan's pet Snowball referred to?"
+      },
+      "original_answer": "From \"Snowball\" to \"it\" and back to \"Snowball\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "Recently, while playing with Snowball using a laser pointer...",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 6,
+          "content": "I also tried to let go of the obsession with \"having to capture epic shots\" and simply enjoyed the liveliness of the snowball.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "Play for only a few minutes at a time, then switch to petting or feeding to help it relax.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for entities across different rounds.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Su Mingche often habitually looks at his phone while walking the dog. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Not scrolling through the phone, just focusing on feeling the rhythm of its exploration...",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What breed is Su Mingche's dog Nuan Yang?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话10",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:17:50.782138",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

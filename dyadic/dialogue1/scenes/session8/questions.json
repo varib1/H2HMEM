@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:22:33.684374",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the running plan mentioned by Zhou Pingfan in the conversation, what does he suggest Lin Chang'an prepare if he is afraid of hurting his knees?"
+      },
+      "original_answer": "Knee pads",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "Zhou Pingfan: If you're worried about hurting your knees, you can also buy a knee brace.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-03-01T12:22:33.684374",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the price of the running shoes that Zhou Pingfan recommended to Lin Chang'an?"
+      },
+      "original_answer": "279 yuan",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "Although running doesn't require any extra expenses, it's best to buy a good pair of running shoes to avoid hurting your feet. I recently bought a nice pair of running shoes and would recommend them to you.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Based on the textual information in the dialogue, retrieve the corresponding images, which are related to the same event without a causal relationship.",
+      "generated_at": "2026-03-01T12:22:33.684374",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.png",
+        "text": "What attitude did Lin Chang'an express towards the movement in the problematic picture?"
+      },
+      "original_answer": "Lin Chang'an finds this sport somewhat challenging but has expressed his determination to persist.",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 13,
+          "content": "Zhou Pingfan: [Sent picture: 3.png] If both of us persist, we might even be able to participate in a marathon.",
+          "image": "3.png"
+        },
+        {
+          "session": "session8",
+          "turn": 14,
+          "content": "Lin Chang'an: A marathon, that's a bit challenging, but I'll persevere, just like taking care of Xingren—taking it step by step.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The question is based on image-driven text for causal inference, inquiring about Lin Chang'an's attitude and conclusion towards the marathon triggered by image 3.png.",
+      "generated_at": "2026-03-01T23:46:46.285298",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the app recommended by Zhou Pingfan for recording exercise distance gradually referred to?"
+      },
+      "original_answer": "From 'the app I recommended to you before' to 'it'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 11,
+          "content": "Zhou Pingfan: The app I recommended to you before can keep records. It's quite comprehensive, just as convenient as the one we used to track almond therapy check-ins.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the different ways of referring to the same entity (an app for recording movement distance) across different rounds (from 'that app' to 'it').",
+      "generated_at": "2026-03-01T12:22:33.684374",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, what equipment might be needed for running? Provide two examples."
+      },
+      "original_answer": "Running shoes, knee pads",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Zhou Pingfan: [Sent picture: 1.png] I've been reading some materials recently, and running really is the most cost-effective exercise. It doesn't require much extra spending and offers tremendous benefits for the body.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Evaluate the model's ability to learn new information during the dialogue (such as the clothing color of the running character in image1.png and the description of running cost-effectiveness in the text) and apply this new knowledge to answer questions.",
+      "generated_at": "2026-03-01T12:22:33.684374",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Assuming Zhou Pingfan said that running requires purchasing expensive professional equipment, does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "Running is truly the most cost-effective exercise, requiring no significant additional expenses.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "Although running doesn't require any extra expenses, it's best to buy a good pair of running shoes to avoid hurting your feet.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The introduction of new information (expensive equipment) that may contradict the question and dialogue, requiring detection of the contradiction and an explanation.",
+      "generated_at": "2026-03-03T12:01:08.033347",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Zhou Pingfan mentioned in the conversation which park they plan to run in?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 18,
+          "content": "Lin Chang'an: Thanks for the reminder, I'll keep that in mind. Shall we meet at the park entrance at 7 a.m. on Saturday?",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 19,
+          "content": "Zhou Pingfan: Alright, it's settled then.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the conversation (specific park name) to assess the ability to decline answering and avoid hallucinations.",
+      "generated_at": "2026-03-01T12:22:33.684374",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

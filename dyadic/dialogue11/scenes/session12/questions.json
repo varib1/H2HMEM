@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T13:46:04.847537",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 11",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 11"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What activities does Chen Lu plan to teach his son at home when the weather is bad?"
+      },
+      "original_answer": "Play chess",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "Chen Lu: Fang Qing, I plan to take my son to free parks or riversides for bike rides when the weather is nice, and I can also go for a run to exercise. When the weather is bad, we’ll stay at home, and I’ll teach him how to play chess or watch an old movie together. Since you nurses have fewer days off, it’s even more important to choose activities that are low-maintenance and easygoing.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-03-01T13:46:04.847537",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Fang Qing mentioned that she summarized activities into outdoor, indoor, and public resource categories. What are the summarized outdoor activities?"
+      },
+      "original_answer": "Park cycling, greenway strolling, lawn picnicking",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 11,
+          "content": "Chen Lu: Thank you, Fang Qing. This chart is very practical! The mention of park cycling in the outdoor category perfectly aligns with my plans.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The problem involves recalling information from images based on textual content (specifically, outdoor activities in the mind map), which aligns with the second type of Cross-modal Related Retrieval.",
+      "generated_at": "2026-03-01T13:49:04.651422",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "Which image prompted Chen Lu to comment in the conversation that outdoor activities align perfectly with his plans? Provide the session number and image file name."
+      },
+      "original_answer": "3.png in session12",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 10,
+          "content": "Fang Qing: [Sent image: 3.png] This image summarizes activities in outdoor, indoor, and public resource categories for your reference.",
+          "image": "3.png"
+        },
+        {
+          "session": "session12",
+          "turn": 11,
+          "content": "Chen Lu: Thank you, Fang Qing. This chart is very practical! The outdoor category mentions park cycling, which aligns perfectly with my plans. The indoor category includes baking, just as you mentioned earlier. The public resources category covers libraries and museums, both of which we both brought up.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "The image drives the textual comments, establishing a causal inference relationship.",
+      "generated_at": "2026-03-01T13:46:04.847537",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is the mind map sent by Fang Qing referred to or cited?"
+      },
+      "original_answer": "From \"this picture\" to \"this diagram\" and then to \"mind map\"",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 10,
+          "content": "Fang Qing: [Sent picture: 3.png] This image summarizes activities for outdoor, indoor, and public resources. You can refer to it.",
+          "image": "3.png"
+        },
+        {
+          "session": "session12",
+          "turn": 11,
+          "content": "Chen Lu: Thank you, Fang Qing. This chart is very practical! The outdoor category mentions park cycling, which aligns perfectly with my plans. The indoor category includes baking, just as you mentioned earlier. The public resources category covers libraries and museums, both of which we both brought up.",
+          "image": "3.png"
+        },
+        {
+          "session": "session12",
+          "turn": 9,
+          "content": "Fang Qing: The museum is a great idea! It's both entertaining and educational. I've compiled some activity ideas and created a mind map, which I'll send to you. It might give you more inspiration.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity (mind map) across different rounds.",
+      "generated_at": "2026-03-01T13:46:04.847537",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Chen Lu mentioned what his son's favorite toy is."
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话11",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-01T13:46:04.847537",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

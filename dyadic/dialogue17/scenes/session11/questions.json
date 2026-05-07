@@ -1,0 +1,250 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:32:01.818204",
+    "session_name": "session11",
+    "dialogue_name": "Dialogue 17",
+    "session_number": 11,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session11",
+    "session_number": 11,
+    "dialogue_name": "Dialogue 17"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Which specific technical issue did Ling Guang mention in the conversation that is similar to the malfunction of the Cybercat chip?"
+      },
+      "original_answer": "Some links in sensor and console wiring have delay issues.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "Look at the wiring of these sensors and consoles—it's highly systematic, but the delays in certain sections remind me of the environmental interference issues we encountered with the Cybercat chip malfunction before.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which experience or scene in the conversation does this image correspond to?"
+      },
+      "original_answer": "The moment when light and shadow transform.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "I just captured that moment of shifting light and shadow! Look at the audience's reaction—they're completely immersed in the emotional resonance of the digital creation.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Retrieve corresponding dialogue content based on image information.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What technical issue did this picture spark a discussion about for Ling Guang?"
+      },
+      "original_answer": "Technical delay",
+      "answer_source": "inference",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 3,
+          "content": "Look at the wiring of these sensors and consoles—it's highly systematic, but the delays in certain sections remind me of the environmental interference issues we encountered with the Cybercat chip malfunction before.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "The image drives the textual discussion, establishing a causal inference relationship.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the dialogue, how is the entity 'digital creation' described from round 1 to round 16?"
+      },
+      "original_answer": "From 'The Moment of Light and Shadow Transformation' (Round 1) to 'The Emotional Resonance of Digital Creations' (Round 1), then to 'Empathizing with Digital Creations' (Round 8), and finally to 'Digital Empathy' (Round 16).",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 1,
+          "content": "I just captured that moment of shifting light and shadow! Look at the audience's reaction—they're completely immersed in the emotional resonance of the digital creation.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 8,
+          "content": "Absolutely correct! This sense of empathy with digital creations reminds me of the cross-indicator characteristic peaks during creative breakthroughs in our health monitoring internal testing.",
+          "image": ""
+        },
+        {
+          "session": "session11",
+          "turn": 16,
+          "content": "Absolutely agree! I'm already brainstorming how to incorporate this 'digital empathy' into the narrative of our AR game.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking the referential evolution of entities across different rounds",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "2.png",
+        "text": "Based on this image and the newly acquired information from the conversation, to what level does Optimus Prime believe that technological aesthetics have expanded in the exhibition?"
+      },
+      "original_answer": "Perceptual level",
+      "answer_source": "both",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 12,
+          "content": "Yes, this exhibition gave me a new understanding of the relationship between technology and art. Technological aesthetics is not just about visual spectacle, but also about emotional connection—just like the seamless interaction you often talk about, which here extends to the perceptual level.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Use the newly learned information from the conversation to answer questions.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Ling Guang believes there is room for optimization in the tracking accuracy of the projector array, but Optimus Prime says the tracking accuracy is flawless. Is this contradictory?"
+      },
+      "original_answer": "Inconsistent",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session11",
+          "turn": 2,
+          "content": "Hmm, I noticed that. However, from an interaction perspective, the tracking accuracy of the projector array still has room for optimization. I took some photos of the setup details on-site.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": false
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which color of lighting did Ling Guang mention was used in the exhibition?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session11"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not present in the conversation should be refused.",
+      "generated_at": "2026-02-24T11:32:01.818204",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 2,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

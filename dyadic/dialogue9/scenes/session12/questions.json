@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:19:15.947757",
+    "session_name": "session12",
+    "dialogue_name": "Dialogue 9",
+    "session_number": 12,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session12",
+    "session_number": 12,
+    "dialogue_name": "Dialogue 9"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Zhao Xiaotang compiled the practical work she had done over the past year into an electronic photo album. What is the title of the electronic photo album?"
+      },
+      "original_answer": "Summary of the 2024 Community Neighborhood Mutual Assistance Project",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Yifan, look at all the practical things we've accomplished together this year! I just compiled a \"Summary of the 2024 Community Neighborly Assistance Projects\" and turned it into a digital photo album. I'm sending it over for you to check out.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:19:15.947757",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the description of the \"thank-you card draft\" mentioned in the conversation, which image corresponds to this content? Provide the session number and image file name."
+      },
+      "original_answer": "4.png in session12",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 14,
+          "content": "Speaking of gratitude, I've designed a draft of a thank-you card and I'm sending it to you for a look. It uses eye-catching colors and simple sections, allowing for handwritten thank-you messages and the inclusion of a QR code linking to a project summary. Much like an emergency contact card, it combines a personal touch with practicality.",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 14,
+          "content": "",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information, both related to the same event (thank-you card design).",
+      "generated_at": "2026-02-24T11:19:15.947757",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "Which event that Li Xiaofan and Zhao Xiaotang did together does the problem picture remind Li Xiaofan of?"
+      },
+      "original_answer": "Stray cats are spayed/neutered and then released back.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "Yifan, look at all the tangible things we've accomplished together this year! I just compiled an electronic photo album titled \"Summary of the 2024 XX Community Neighborhood Mutual Assistance Project\" and sent it to you. This picture shows Big Orange after being neutered and released—still wearing the collar, but now full of energy, often basking in the sun in the neighborhood. Remember the late cold spell in March? That was when its mother was shivering on the concrete with three kittens, and we quickly made foam box shelters. Now it's become a community star—what a remarkable change.",
+          "image": "1.png"
+        },
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "Received! Wow, this photo album is really thoughtfully made, with both pictures and text. I see one photo of a stray cat being released after neutering, still wearing its collar. I remember we were worried about how it would adapt.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text: Image1.png evoked Zhao Xiaotang's reflections and subsequent descriptions.",
+      "generated_at": "2026-02-24T11:19:15.947757",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does the reference to 'Big Orange' evolve from round 1 to round 2?"
+      },
+      "original_answer": "In the first round, Zhao Xiaotang described it as 'the big orange cat was neutered and released back, still wearing its collar.' In the second round, Li Yifan referred to it as 'the big orange cat is now considered a community celebrity cat.'",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 1,
+          "content": "This is Big Orange after being neutered and released, still wearing the collar. Now he's full of energy and often sunbathes in the neighborhood.",
+          "image": ""
+        },
+        {
+          "session": "session12",
+          "turn": 2,
+          "content": "This photo reminds me of the whole process from the emergency cat shelter to TNR. Big Orange is now considered a community celebrity cat.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the entity 'Big Orange' across different rounds.",
+      "generated_at": "2026-02-24T11:19:15.947757",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "The sustainability rating of the second-hand market project is low due to its high costs and unstable demand. Based on the conversation content, does this statement contradict the dialogue? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "both",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": 8,
+          "content": "Second-hand markets and health monitoring have high sustainability ratings due to their low costs and stable demand.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Present contradictory information and ask questions based on it to test whether the model can detect errors.",
+      "generated_at": "2026-03-03T01:59:59.975027",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, did Zhao Xiaotang mention a project called 'Greening and Beautification'?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session12"
+      ],
+      "answer_dialogue": "对话9",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session12",
+          "turn": "all",
+          "content": "The conversation only mentioned stray cat TNR, shared vegetable baskets, second-hand markets, and health monitoring projects, but did not mention the 'greening and beautification' project.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-03T01:59:59.975027",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

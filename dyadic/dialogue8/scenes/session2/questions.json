@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:13:09.383954",
+    "session_name": "session2",
+    "dialogue_name": "Dialogue 8",
+    "session_number": 2,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session2",
+    "session_number": 2,
+    "dialogue_name": "Dialogue 8"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What time was the carefully selected movie screening she mentioned in the conversation by Lin Jianshen?"
+      },
+      "original_answer": "7:00 PM showtime",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 6,
+          "content": "You previously mentioned the ticket purchasing experience and limited budget. Now, after watching the film, do you feel that the narrative depth of the movie justifies your carefully chosen 7 PM screening based on the schedule screenshot I shared?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoiding generic responses.",
+      "generated_at": "2026-02-24T14:12:06.219752",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "Based on the \"pained expression of Zhang Chi after the crash\" mentioned in the conversation, what is the corresponding image? Provide the corresponding session number and image file name."
+      },
+      "original_answer": "3.png in session2",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 5,
+          "content": "For instance, the scene where Zhang Chi cries after his car flips over reflects the difficulty of realizing dreams, creating a tension with success that goes beyond simple inspiration.",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 7,
+          "content": "This still captures Zhang Chi's pained expression after the car crash, with the yellow jacket and dim background intensifying the emotional impact.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event, not involving causal inference.",
+      "generated_at": "2026-02-24T11:13:09.383954",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, how does Gu Zhizhou evaluate the problematic image?"
+      },
+      "original_answer": "This scene is indeed very striking and really catches the eye.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "This scene is indeed stunning and very eye-catching. In racing culture, this kind of wild dash often symbolizes breakthrough and freedom, and the film handles it with great emotional impact here. 😊 Compared to the movie information screenshot I shared during our last discussion, which had high ratings but also significant controversy, it seems now that this visual impact might be one of the sources of the controversy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "The image drives the textual response, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:13:09.383954",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, how is the problem image referred to or cited?"
+      },
+      "original_answer": "This still, this frame",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Gu Zhizhou, I just finished watching \"Pegasus 2.\" The scene in this still where the race car speeds through the wilderness, kicking up dust and exuding a strong sense of speed, left a deep impression on me. I remember the outdoor conversation poster you shared last time (1.png), with its down-to-earth atmosphere, which creates an interesting contrast with the speed and passion here. What do you think about the handling of the key plot points in the middle part of the film? Especially in terms of thematic expression.",
+          "image": "1.png"
+        },
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "This scene is indeed stunning and very eye-catching. In racing culture, this kind of wild dash often symbolizes breakthrough and freedom, and the film handles it with great emotional impact here. 😊 Compared to the movie information screenshot I shared during our last discussion, which had high ratings but also significant controversy, it seems now that this visual impact might be one of the sources of the controversy.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referring expressions for the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:13:09.383954",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "According to the dialogue, what are the three acts included in the classic three-act structure?"
+      },
+      "original_answer": "Beginning, climax, ending",
+      "answer_source": "both",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 4,
+          "content": "This phenomenon is quite interesting. I’d like to share a narrative structure analysis diagram that illustrates the classic three-act structure. In *Pegasus 2*, the handling of the relationship between character development and thematic expression—from the inciting incident to the climax—is quite typical, yet there are still standout details. This reminds me of the platform list screenshot I shared last time. Different platforms have their own characteristics, and film narratives are similar: the framework is classic, but the execution details determine the viewing experience.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Use the newly acquired multimodal information (images and text) to answer questions, testing online adaptability.",
+      "generated_at": "2026-02-24T11:13:09.383954",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, which film's interlude did Lin Jianshen mention her evaluation of?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话8",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:13:09.383954",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

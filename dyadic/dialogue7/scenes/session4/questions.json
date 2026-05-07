@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:13:29.831916",
+    "session_name": "session4",
+    "dialogue_name": "Dialogue 7",
+    "session_number": 4,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session4",
+    "session_number": 4,
+    "dialogue_name": "Dialogue 7"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Shen Qingyin mentioned the impact her Labrador Retriever 'Ping An' had on her during times of high work pressure."
+      },
+      "original_answer": "Effectively reduce your anxiety level.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Shen Qingyin: During the discussion of the annual health data in Session 1 last time, I mentioned that work stress can affect sleep quality. 'Ping An' has indeed been effective in reducing my anxiety index, especially during periods of high work pressure.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, recalling pure textual facts from the conversation.",
+      "generated_at": "2026-02-24T11:13:29.829893",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "In the conversation, how does Song Weian refer to the problematic image?"
+      },
+      "original_answer": "Pet Impact Scale",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 4,
+          "content": "Song Weian: [Sending image: 2.png] I'm sending you a pet impact scale for reference. This line chart shows the scoring trends of pets across different factors, such as social interaction and emotional stability.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Text→Image, recalling corresponding images based on textual information from the conversation.",
+      "generated_at": "2026-02-24T11:13:29.829893",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the picture that prompted Shen Qingyin to share how \"peace\" can lower her anxiety index, what color is the flower held by the dog?"
+      },
+      "original_answer": "Yellow",
+      "answer_source": "inference",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 1,
+          "content": "Shen Qingyin: [Sends picture: 1.png] Wei An, this is my Labrador named 'Ping An'. During Session 1 when we discussed annual health data, I mentioned that work stress affects sleep quality, and 'Ping An' really helps lower my anxiety levels, especially during times of high work pressure.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text, image1.png triggers the description of Shen Qingyin's shared anxiety index decreasing.",
+      "generated_at": "2026-02-24T11:13:29.829893",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "3.png",
+        "text": "In the dialogue, how are the problem images referred to and cited?"
+      },
+      "original_answer": "Before sending, the image was referred to as a health record; after sending, it was referred to as an example of a health record, this table, this example.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 6,
+          "content": "Completely agree. Prevention is better than cure. I suggest creating a health record for 'Ping An'.",
+          "image": "2.png"
+        },
+        {
+          "session": "session4",
+          "turn": 8,
+          "content": "I'll send you an example of a health record. This form",
+          "image": "3.png"
+        },
+        {
+          "session": "session4",
+          "turn": 9,
+          "content": "This example is very detailed.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Tracking the referential evolution of entities across different rounds",
+      "generated_at": "2026-02-24T11:13:29.829893",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, if we want to establish a health record for pets, what dimensions should be included in the record?"
+      },
+      "original_answer": "Including basic information, vaccination records, deworming records, annual physical examinations, medical history, and daily monitoring logs.",
+      "answer_source": "both",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 8,
+          "content": "I'll send you an example of a health record. This form has a clear structure, including basic information, vaccination, and deworming records.",
+          "image": "3.png"
+        },
+        {
+          "session": "session4",
+          "turn": 10,
+          "content": "Yes, needed. The previous file example wasn't sent in full. This is the latter part of the file, including annual physical exams, medical history, and daily monitoring logs.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Learn new information (Pet Impact Scale) and apply existing knowledge (Childhood Asthma Management Plan) to answer questions.",
+      "generated_at": "2026-02-24T11:13:29.831916",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "When Shen Qingyin established a health record for 'Ping An', only the amount of exercise was recorded. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session4",
+          "turn": 11,
+          "content": "Shen Qingyin: Understood, just like when we discussed the asthma management plan in Session 2, we focused on operability and cost-effectiveness trade-offs. I will record 'Ping An's' diet and excretion as part of daily health monitoring.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information (only recording exercise volume) and existing memories (recording dietary and excretion conditions).",
+      "generated_at": "2026-02-24T11:13:29.831916",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What variety of 'Ping An' did Shen Qingyin mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session4"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Questions about information not present (such as the variety of 'Ping An') should be declined.",
+      "generated_at": "2026-02-24T11:13:29.831916",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "session_id": "food_1_01",
+  "session_title": "Evocation of Seasonal Memories",
+  "theme": "饮食-春之青团",
+  "generated_at": "2026-02-06T18:58:11.779591",
+  "dialogue": [
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "1.png",
+        "text": "Every time this season comes around, I have to have a bite."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Seeing these green rice cakes reminds me of the taste from my childhood when my grandmother made them. She always said that the mugwort should be picked before Qingming Festival to be tender, and that unique aroma from blanching it in limewater is rarely smelled nowadays."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Yes, that rustic charm of handmade items is something machines can't replicate. I've studied the green rice cakes in the Jiangnan region, and the fillings and methods vary greatly from place to place. For example, southern Jiangsu prefers sweet bean paste, while Zhejiang often uses pickled vegetables."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "In my memory, it was sweet filling. Grandma would use homemade red bean paste and add a bit of osmanthus. You’re right—the unique regional charm has now become blurred."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "2.png",
+        "text": "Look at this, some cultural differences I've compiled. In the Shanghai area, people prefer using shepherd's purse for savory fillings, while southern Jiangsu places more emphasis on the color and shape of green rice balls."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "This is so interesting! The warmth of paper always makes people slow down and read carefully. I always feel that these traditional foods carry individual narratives, just like the historical continuity you mentioned earlier."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Exactly, each bite is a slice of time. I'm wondering, should we do something to preserve this tangible memory?"
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Why don't we try making it ourselves? I have a collection of old recipes that I can dig out for reference. The hands-on process might help us rediscover some of the aesthetics of life."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Good idea. I can go ask the elders at home; they still remember some old methods, like how to keep the green rice cakes vibrant and green."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "3.png",
+        "text": "I found a production flowchart. Look at these steps, from processing the mugwort to wrapping the filling, everything is drawn in great detail. We can try following it."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "This picture is so clear, it reminds me of the scenes from my childhood when I watched the elders busy at work. Perhaps a slower pace of life should start with these small things."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Yes, being as artistically sensitive as I am, I'm always moved by such handmade details. Let's set a time—how about a week from now? I can prepare some materials."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Alright, one week later. I'll bring some old photos—memories of Qingtuan—maybe they'll give us more inspiration."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Great! Looking forward to seeing those photos. Let the tradition of preservation begin with this bite of green rice cake."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Alright, see you then. Remember to pick tender mugwort—the kind before Qingming is best."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Absolutely! I'll go to the market and pick carefully. This shared reminiscence makes seasonal food even more flavorful."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Yes, history continues on the tip of the tongue. A week later, let's explore the flavors together."
+      }
+    },
+    {
+      "role": "Lin Shuying",
+      "content": {
+        "image": "",
+        "text": "Okay, let's talk in detail then. Goodbye, Huaian."
+      }
+    },
+    {
+      "role": "Xu Huaian",
+      "content": {
+        "image": "",
+        "text": "Goodbye, Shuying."
+      }
+    }
+  ],
+  "timeline_date": "2024-03-20"
+}

@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:14:51.682245",
+    "session_name": "session10",
+    "dialogue_name": "Dialogue 7",
+    "session_number": 10,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session10",
+    "session_number": 10,
+    "dialogue_name": "Dialogue 7"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Shen Qingyin mentioned what illness her son has."
+      },
+      "original_answer": "Asthma",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 3,
+          "content": "The child has a history of asthma, and these factors need to be incorporated into the risk assessment, just as we did when designing the asthma management plan previously.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Recalling pure textual facts from the conversation (health history).",
+      "generated_at": "2026-02-24T11:14:51.682245",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "4.png",
+        "text": "Has Song Weian used the item in the question image? If so, what are its characteristics?"
+      },
+      "original_answer": "Used, plant-based ingredients, low irritation, suitable for children.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 8,
+          "content": "I've used this mosquito repellent spray. It's made with plant-based ingredients, has low irritation, and is suitable for children. Let me send you a picture.",
+          "image": "4.png"
+        }
+      ],
+      "validation_notes": "Text → Image: Based on the textual information from the conversation (recommendation of mosquito repellent spray), retrieve the corresponding image (4.png).",
+      "generated_at": "2026-02-24T11:14:51.682245",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What behavior did the problematic image trigger in Shen Qingyin?"
+      },
+      "original_answer": "Propose the idea of taking a short trip with my son during the National Day holiday.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 1,
+          "content": "Wei An, I'm thinking of taking my son on a short trip during the National Day holiday to relax. I just saw this scenic picture and thought it would be a great fit. From a health perspective, is there anything we should be mindful of?",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png (landscape image) prompted Shen Qingyin to propose the idea of traveling and initiated the subsequent conversation.",
+      "generated_at": "2026-02-24T11:14:51.682245",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "2.png",
+        "text": "In the conversation, how is the problem image referred to or cited?"
+      },
+      "original_answer": "Preliminary list, list",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 5,
+          "content": "I have compiled a preliminary list, incorporating perspectives from environmental health and emergency medical care, and I am sending it to you for review.",
+          "image": "2.png"
+        },
+        {
+          "session": "session10",
+          "turn": 6,
+          "content": "The list is comprehensive, but some details could be optimized.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking Evolution: Image 2.png is referred to from \"Preliminary List\" to \"List\".",
+      "generated_at": "2026-02-24T11:14:51.682245",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation content, answer why it is necessary to purchase anti-mite products?"
+      },
+      "original_answer": "It reduces allergens, aligning with the core value of prevention being better than cure.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session10",
+          "turn": 10,
+          "content": "It reduces allergens, aligning with the core value that prevention is better than cure.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Use the newly acquired multimodal information (images and text) to answer questions.",
+      "generated_at": "2026-02-24T14:14:16.866568",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Shen Qingyin mentioned which color of mosquito repellent spray her son likes?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session10"
+      ],
+      "answer_dialogue": "对话7",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refusal Scenario: Refuse to answer questions about information not present in the conversation (such as the son's preference for the color of mosquito repellent spray).",
+      "generated_at": "2026-02-24T11:14:51.682245",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-01T12:22:47.348247",
+    "session_name": "session9",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 9,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session9",
+    "session_number": 9,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "Lin Chang'an mentioned what care almonds require in terms of recuperation?"
+      },
+      "original_answer": "Take medication on time and observe reactions.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 6,
+          "content": "Lin Chang'an: This is indeed a worry-free solution, but while caregiving is addressed, what about convalescence? Xingren requires more meticulous care, such as taking medication on time and monitoring reactions.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-03-01T12:22:47.348247",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "What is the name of the pet-sitting platform recommended by Zhou Pingfan to Lin Chang'an?"
+      },
+      "original_answer": "备用皮带",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 9,
+          "content": "Zhou Pingfan: [Sent picture: 2.png] Don't worry, this platform is specifically designed to connect pet owners with verified sitters, so it's very safe.",
+          "image": "2.png"
+        },
+        {
+          "session": "session9",
+          "turn": 10,
+          "content": "Lin Chang'an: Oh, it looks quite professional. What types of services do they offer?",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text→Image, recalling corresponding images based on conversational text information, both related to the same event.",
+      "generated_at": "2026-03-01T12:22:47.348247",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "Why did Zhou Pingfan send the problematic image? Please recall the preceding reasons."
+      },
+      "original_answer": "Because Lin Chang'an inquired about where to find a pet sitter and concerns about safety, Zhou Pingfan sent this picture to recommend a platform.",
+      "answer_source": "both",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 8,
+          "content": "Lin Chang'an: Pet sitter? Where can I find one? Is it safe? I'm a bit worried, especially since Xingren is still in recovery.",
+          "image": ""
+        },
+        {
+          "session": "session9",
+          "turn": 9,
+          "content": "Zhou Pingfan: [Sent picture: 2.png] Don't worry, this platform is specifically designed to connect pet owners with verified sitters, so it's very safe.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "The second type in Multimodal (Text-Image) Causal Inference: Given an image, ask why someone sent it, recalling the preceding cause? The sending of image2.png is a response to Lin Chang'an's 8th round question, with the answer based on dialogue causal inference.",
+      "generated_at": "2026-03-01T23:46:52.407143",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does Zhou Pingfan gradually describe the smart device solution?"
+      },
+      "original_answer": "From automatic feeders to smarter solutions, and then to specific devices (webcams, air purifiers)",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 2,
+          "content": "Zhou Pingfan: Don't worry, Chang'an. I remember you used an automatic feeder before. Now, you can try a smarter solution.",
+          "image": ""
+        },
+        {
+          "session": "session9",
+          "turn": 3,
+          "content": "Zhou Pingfan: [Sending picture: 1.png] Look at this, smart devices can help you remotely monitor Xingren.",
+          "image": "1.png"
+        },
+        {
+          "session": "session9",
+          "turn": 5,
+          "content": "Zhou Pingfan: Yes, you've used an automatic feeder before. The network camera allows you to check Almond's condition anytime, and the air purifier can improve the environment and reduce allergens.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Tracking the evolution and changes in reference chains of intelligent device solutions in multi-turn dialogues.",
+      "generated_at": "2026-03-01T12:22:47.348247",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation, which platform can pet owners use to find a verified pet sitter? Provide the name of the platform."
+      },
+      "original_answer": "备用皮带",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session9",
+          "turn": 9,
+          "content": "This platform is specifically designed to connect pet owners with verified pet sitters.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "The question is based on the information in the image and requires the application of new knowledge (platform name) learned from the conversation.",
+      "generated_at": "2026-03-03T12:01:03.586406",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Lin Chang'an mentioned what variety of almonds?"
+      },
+      "original_answer": "The variety information of almonds was not mentioned in the conversation.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session9"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-01T12:22:47.348247",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 6,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

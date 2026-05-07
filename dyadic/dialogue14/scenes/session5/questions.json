@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:25:47.485067",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 14",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 14"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the name of the programming-themed cute pet GIF account collected by Lu Chenguang?"
+      },
+      "original_answer": "CodeCat",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "I previously bookmarked several cute pet GIF accounts with programming themes, such as \"CodeCat.\"",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts, avoid generic responses.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "",
+        "text": "In the picture corresponding to the \"Cat Senior\" healing package, what is the color of the cat?"
+      },
+      "original_answer": "Orange",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 7,
+          "content": "Senior Tortoiseshell is in a good mood today, allowing us to pet her, and even competing with another little black cat for food. See, even their mealtime has such a sense of ceremony.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image-to-Text Retrieval: Recalling corresponding text events based on images.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "4.jpg",
+        "text": "What reflections did the problematic image evoke in Lin Xingwan?"
+      },
+      "original_answer": "Life always finds a way.",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 13,
+          "content": "When it comes to balance, look at this picture—how happily this little dog runs in its wheelchair! Life always finds a way. I think pet topics can truly serve as an emotional bond during intense study sessions.",
+          "image": "4.jpg"
+        }
+      ],
+      "validation_notes": "Causal inference of text driven by images, image 4.png triggered Lin Xingwan's reflections.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.jpg",
+        "text": "How is the object in the question image referred to in the conversation?"
+      },
+      "original_answer": "Cat Senior, Orange Throne",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Here's a \"Cat Senior\" healing package for you.",
+          "image": "1.jpg"
+        },
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "This orange cat is lying down in its usual spot again.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 9,
+          "content": "Orange Cat is the \"Lazy Module\".",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the same image entity across different rounds, from \"Cat Senior\" to \"Orange Throne.\"",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "If you want to open source a piece of code to involve more people, which websites can you put the code on?"
+      },
+      "original_answer": "GitHub",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "This reminds me of the state of being 200% over the caffeine limit in session 1. Now, there's the Cat Senior Combo, which is much healthier than coffee.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Utilize the newly acquired multimodal information (image 3.png and text response) to answer the question, testing online adaptation capabilities.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": false
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Lin Xingwan's school's animal protection club has successfully found adoptions for all stray cats. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 9,
+          "content": "I heard that the school's animal protection club wants to have them neutered and find them adoptive homes, but the publicity efforts are insufficient, and many people are unaware of it.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect contradictions between newly input information and existing memories; the conversation only mentions \"wanting\" to do it and insufficient promotion, not that it has been successfully done.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Lin Xingwan mentioned how many pets she has?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话14",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "For information not mentioned in the question-and-answer dialogue, responses should be refused to avoid hallucinations.",
+      "generated_at": "2026-02-24T11:25:47.485067",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 2,
+      "hard": 2
+    }
+  }
+}

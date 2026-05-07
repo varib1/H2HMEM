@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:27:22.261603",
+    "session_name": "session8",
+    "dialogue_name": "Dialogue 15",
+    "session_number": 8,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session8",
+    "session_number": 8,
+    "dialogue_name": "Dialogue 15"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What are the two specific measurement indicators for code review efficiency mentioned by Han Shuli in the conversation?"
+      },
+      "original_answer": "Accuracy and response time",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 3,
+          "content": "Accuracy can be measured through code error detection tasks, while response time records the duration required to complete the review.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.jpg",
+        "text": "Which device in the conversation corresponds to the problem image?"
+      },
+      "original_answer": "Continuous Glucose Monitoring Device",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "I have sent pictures of the continuous glucose monitoring device. In the preliminary trial, I used a similar device to collect glucose curves, which indicated that changes in dietary patterns might affect blood sugar stability.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image → Text: Recall device descriptions in conversations based on image information.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "1.png",
+        "text": "What hypothesis did the problem picture trigger in Han's mathematical reasoning?"
+      },
+      "original_answer": "16:8 Intermittent Fasting Enhances Code Review Efficiency",
+      "answer_source": "both",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 1,
+          "content": "I propose a hypothesis: Adopting a 16:8 intermittent fasting regimen may enhance afternoon code review efficiency more effectively than following a conventional three-meal pattern.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: The image prompts the formulation of hypotheses, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "2.jpg",
+        "text": "What physiological indicator changes did the problematic image cause in the Korean mathematics and science discussion?"
+      },
+      "original_answer": "Blood glucose curve and changes in dietary patterns",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 5,
+          "content": "I have sent a picture of the continuous glucose monitoring device. In the pilot study, I used a similar device to collect glucose curves, which indicated that changes in dietary patterns might affect blood glucose stability.",
+          "image": "2.jpg"
+        }
+      ],
+      "validation_notes": "Image-driven text: The image triggers subsequent textual descriptions, focusing on causal inference.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the discussion about experimental design in the conversation, from round 7 to round 9, how did Han Shuli and Lin Cedu gradually determine the experimental conditions?"
+      },
+      "original_answer": "From discussing whether to use a multiple baseline design or a randomized switching design, to deciding on the randomized switching design, and designing two conditions: A (16:8 intermittent fasting) and B (regular three meals a day), with random assignment of order, each condition lasting two weeks, and a washout period in between.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 7,
+          "content": "Now discussing the experimental design: Do you prefer a multiple baseline design or a randomized switching design?",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 8,
+          "content": "Given that this is an N-of-1 trial, a randomized switching design may be more efficient.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 9,
+          "content": "I agree with random switching. We can design two conditions: A (16:8 fasting) and B (regular three meals a day), randomly assign the order, implement each condition for two weeks, with a washout period in between.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of entities across different rounds, focusing on changes in the reference chain.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the HRV measurement information learned from the conversation, when should the HRV sensor take measurements?"
+      },
+      "original_answer": "At rest in the morning",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 10,
+          "content": "Based on the guidelines from Session 4, we should establish a data collection protocol: HRV should be measured during morning rest.",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Learn newly acquired multimodal information and apply this new knowledge to answer questions, testing online adaptability.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "The dialogue mentions that the trial period totals eight weeks, but Han Shuli said in the 15th round to run a one-week baseline period first. Is this contradictory?"
+      },
+      "original_answer": "Not contradictory, because the one-week baseline period is part of the total eight-week cycle, used to confirm the stability of the measurement protocol.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 13,
+          "content": "The trial period totals eight weeks, including a baseline period and two condition cycles.",
+          "image": ""
+        },
+        {
+          "session": "session8",
+          "turn": 15,
+          "content": "I will first run a one-week baseline period to confirm that all measurement protocols are stable, and then initiate the randomized conditions.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect whether there is a contradiction between newly input information and existing memory, assessing contradiction detection capability.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "Which specific sleep monitoring device did Han Soo-ri mention in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session8"
+      ],
+      "answer_dialogue": "对话15",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session8",
+          "turn": 6,
+          "content": "Sleep data should be continuously recorded through wearable devices to avoid subjective bias.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
+      "generated_at": "2026-02-24T11:27:22.261603",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 8,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 3,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:24:31.838519",
+    "session_name": "session13",
+    "dialogue_name": "Dialogue 13",
+    "session_number": 13,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session13",
+    "session_number": 13,
+    "dialogue_name": "Dialogue 13"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how many families did Lin Shu mention have signed up for the trial run of the pet companion program?"
+      },
+      "original_answer": "Three families",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 3,
+          "content": "As mentioned in our annual review, the Pet Partner Program has already seen three families sign up for the trial run, and today marks its official launch.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation (number of households).",
+      "generated_at": "2026-02-24T11:24:31.838519",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which scene description in the dialogue does the problem image correspond to?"
+      },
+      "original_answer": "Playing the guitar, the dog listens quietly.",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 7,
+          "content": "Ms. Zhou, look at this photo. It was taken near the end of the event. Someone was playing the guitar, and the dog was quietly listening nearby. The atmosphere was especially warm and cozy.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image→Text: Based on the image information (2.png), retrieve the corresponding text description (playing the guitar, the dog listens quietly).",
+      "generated_at": "2026-02-24T11:24:31.838519",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "3.jpg",
+        "text": "How are problematic images referred to or described in the conversation?"
+      },
+      "original_answer": "Tutorial diagram for dog leash training, this image",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 11,
+          "content": "Teacher Zhou, I found a tutorial diagram for dog leash training and I'm sending it to you to take a look.",
+          "image": "3.jpg"
+        },
+        {
+          "session": "session13",
+          "turn": 12,
+          "content": "This picture is very practical!",
+          "image": "3.jpg"
+        }
+      ],
+      "validation_notes": "Track the referential evolution of the entity (3.png) across different rounds: from 'a tutorial diagram for dog leash training' to 'this image'.",
+      "generated_at": "2026-02-24T11:24:31.838519",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "1.png",
+        "text": "What comment did the problematic image provoke from Lin Shu?"
+      },
+      "original_answer": "The atmosphere of the event was harmonious.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 1,
+          "content": "Teacher Zhou, today's Pet Partner Experience Day has concluded successfully! I'm sending you a photo from the event—the atmosphere was particularly warm and harmonious.",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Image-driven text: 1.png (on-site event photo) sparked Lin Shu's comment (the event atmosphere was harmonious).",
+      "generated_at": "2026-02-24T11:24:31.838519",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what specific name of a pet did Lin Shu mention?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session13"
+      ],
+      "answer_dialogue": "对话13",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session13",
+          "turn": 1,
+          "content": "In the complete dialogue, Lin Shu did not mention any specific names of pets, only referring to 'An An' (the pet of Zhou Mingyuan's family) and the general terms 'cats and dogs'.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Refusal scenario: When asked about information not present in the conversation (such as the specific name of the pet mentioned by Lin Shu), the response should be declined to avoid generating hallucinations.",
+      "generated_at": "2026-02-24T11:24:31.838519",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 5,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Reference & Evolution Tracking": 1,
+      "Multimodal Causal Inference": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

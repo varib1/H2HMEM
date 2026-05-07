@@ -1,0 +1,263 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:09:04.429936",
+    "session_name": "session3",
+    "dialogue_name": "Dialogue 1",
+    "session_number": 3,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session3",
+    "session_number": 3,
+    "dialogue_name": "Dialogue 1"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What tool did Ajie use to tenderize the meat when attempting to recreate the viral pork chop?"
+      },
+      "original_answer": "Back of the knife",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 13,
+          "content": "D_AhJie: @C_SuQian I used the back of the knife to pat it, no wonder it's uneven, help...",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
+      "generated_at": "2026-03-21T04:53:07.541569",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "img3.jpg",
+        "text": "What does A_LinSen use the tools in the picture for?"
+      },
+      "original_answer": "A_LinSen mentioned that this tool (meat tenderizer) is used to pound the meat to make it more tender and easier to absorb flavors.",
+      "answer_source": "both",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 10,
+          "content": "A_LinSen: [Image sent: img3.jpg] This is the meat tenderizer I use. After pounding, it becomes easier for the meat to absorb flavors.",
+          "image": "img3.jpg"
+        }
+      ],
+      "validation_notes": "Image Information Recall Problem: Based on image content and dialogue text, inquire about the information described in the image. The answer is directly derived from the dialogue text and is related to the image content.",
+      "generated_at": "2026-03-23T10:09:04.429799",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "",
+        "text": "Which image caused B_Kiki to comment \"The cheese all leaked into the pot\" in the conversation? Provide the session number and image file name."
+      },
+      "original_answer": "img5.jpg in session3",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 21,
+          "content": "B_Kiki: [Sent picture: img5.jpg] Look at this mess, everyone! The cheese leaked all over the pot, I can't stop laughing hahaha~ Ajay, is there something wrong with your sealing?",
+          "image": "img5.jpg"
+        }
+      ],
+      "validation_notes": "The causal inference problem of image-driven text, where the image img5.jpg (showing a cheese leak in a pot) directly triggers B_Kiki's textual comment. Focus on the causal driving relationship, distinguishing it from cross-modal interactions.",
+      "generated_at": "2026-03-23T10:09:04.429834",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how did the topic of \"oil-absorbing paper\" evolve from round 9 to round 39?"
+      },
+      "original_answer": "The topic of oil-absorbing paper evolved from E_DrWu mentioning in round 9, \"Your oil-absorbing paper is almost unable to hold up,\" to the suggestion in round 25, \"First lay oil-absorbing paper at the bottom of the pot,\" and then to D_AhJie's response in round 39, \"I have prepared oil-absorbing paper to minimize grease.\" This progression reflects a shift from identifying the problem to adopting the suggestion.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 9,
+          "content": "E_DrWu: @D_AhJie This is the difference in technique. Besides, your oil-absorbing paper is almost at its limit.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 25,
+          "content": "E_DrWu: @D_AhJie Is your pan absorbing too much oil? Cheese leakage at high temperatures can cause excessive oil absorption. It's recommended to line the bottom of the pan with oil-absorbent paper to reduce oil waste.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 39,
+          "content": "D_AhJie: @E_DrWu No problem, I've prepared blotting paper to minimize oil as much as possible.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Cross-round reference tracking problem, tracking the evolution and reference chain changes of the \"oil-absorbing paper\" entity in multi-turn dialogues, from problem description to suggested implementation.",
+      "generated_at": "2026-03-23T10:09:04.429850",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "Based on the conversation information, what key steps should Ajie pay attention to if he wants to improve the sealing?"
+      },
+      "original_answer": "Ajie should be careful to seal the edges slowly, ensuring complete coverage, and use egg wash for sealing.",
+      "answer_source": "both",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 23,
+          "content": "C_SuQian: [Send picture: img6.jpg] @D_AhJie I found a screenshot of the sealing steps for your reference. When sealing the edges, do it slowly to ensure complete coverage.",
+          "image": "img6.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 22,
+          "content": "A_LinSen: @B_Kiki The main reason for cheese leakage is often an improper seal. Press the edges of the pork chop firmly, and using egg wash to seal them works even better.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Learning during testing, examining the model's ability to learn and apply new knowledge based on newly acquired multimodal information (image img6.jpg and dialogue text). The answer integrates image-related suggestions and key information from the dialogue.",
+      "generated_at": "2026-03-23T10:09:04.429888",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "E_DrWu encourages eating more fried food. Is this contradictory to the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 27,
+          "content": "E_DrWu: That's the problem! Look at the transparency of this oil-absorbing paper—there's too much grease. Eating just one piece of cheese pork chop might exceed the recommended daily fat intake.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 63,
+          "content": "E_DrWu: @B_Kiki This is the oil issue I've been emphasizing; the calorie intake from fried foods really needs to be controlled.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Detect the conflict between new input information (encouraging eating more) and existing memory (emphasizing control).",
+      "generated_at": "2026-03-21T05:27:15.953987",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, did anyone mention using a microwave to make pork chops?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "inference",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话1",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Refuse to answer questions about information (microwave) not mentioned in the conversation, testing the model's ability to avoid hallucinations and decline to answer. The answer is inferred based on the dialogue content, which does not mention this information.",
+      "generated_at": "2026-03-23T10:09:04.429905",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 4,
+      "medium": 2,
+      "hard": 1
+    }
+  }
+}

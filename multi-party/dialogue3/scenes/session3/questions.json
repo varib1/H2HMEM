@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-23T10:11:22.229416",
+    "session_name": "session3",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 3,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session3",
+    "session_number": 3,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What is the limited edition number of the statue that Alex reserved?"
+      },
+      "original_answer": "007/500",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 13,
+          "content": "The limited edition number is 007/500. It is indeed somewhat reduced in size, but that's where the value of a limited edition lies.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall the plain text facts from the conversation, specifically the limited edition number.",
+      "generated_at": "2026-03-23T10:11:22.229240",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "img15.jpg",
+        "text": "At what age did Ajie acquire the collectible shown in the problem picture?"
+      },
+      "original_answer": "At the age of twenty-two",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 56,
+          "content": "Pineapple: [Sending image: img12.jpg] Check out the prices on Xianyu, Alex, you really scored a deal!",
+          "image": "img12"
+        }
+      ],
+      "notes": "文本（菠萝的话）指向了图片（img12），问题要求召回图片中的核心信息（平台和商品），属于文本→图片的跨模态检索。"
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "img14.jpg",
+        "text": "How does Pineapple evaluate the problem image?"
+      },
+      "original_answer": "The design of the inner sleeve of the disc looks very collectible.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 37,
+          "content": "Take another look at the painting on this belt. Does it seem a bit color-bleeding?",
+          "image": "img8.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 38,
+          "content": "I've said it before, the color boundary of the belt isn't very clear, which is a minor flaw.",
+          "image": "img8.jpg"
+        }
+      ],
+      "validation_notes": "It is inferred that the image (img8.jpg) drives the text (Pineapple's comment on belt painting), indicating a causal driving relationship.",
+      "generated_at": "2026-03-23T10:11:22.229296",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how does the statue of Alex go from being initially described as 'the big shipment has arrived' to later being referred to in terms of its collectible value?"
+      },
+      "original_answer": "From 'mass-produced goods' to 'limited edition statues', and then to 'collectibles' and 'investment items', emphasizing the limited edition number 007/500 and overall value.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 1,
+          "content": "The bulk shipment has arrived!",
+          "image": "img1.jpg"
+        },
+        {
+          "session": "session3",
+          "turn": 13,
+          "content": "The limited edition number is 007/500. It is indeed a bit smaller, but that's where the value of a limited edition lies.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 31,
+          "content": "It seems this statue is not just a display piece, but also an investment.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of references to the statue entity across multiple rounds of dialogue, from the initial description to emphasizing its collection value.",
+      "generated_at": "2026-03-23T10:11:22.229312",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Based on the maintenance knowledge shared by Alex in the conversation, what are the three key points to pay attention to when maintaining figurines?"
+      },
+      "original_answer": "Avoid light (use UV-protective glass), control humidity (keep humidity below 60%, use desiccants), and remove dust (clean with a soft brush, avoid using wet cloths).",
+      "answer_source": "both",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 45,
+          "content": "@老孟 There are three main points to note: first, avoid light exposure, as UV lights are the number one enemy—I use UV-protective glass for all my display cabinets; second, control humidity, as moisture levels above 60% can cause the paint surface to bubble—I keep desiccants in my cabinets; third, dust regularly using a soft brush, and never wipe with a damp cloth.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Assess whether the user can extract and restate the three key points of figure maintenance shared by Alex from the conversation, which pertains to basic information extraction and memory skills.",
+      "generated_at": "2026-03-24T00:00:00.000000",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Pineapple believes that the paint job on the statue he ordered is flawless. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session3",
+          "turn": 9,
+          "content": "The paint on this belt has overflowed; it doesn't feel like a great prize.",
+          "image": ""
+        },
+        {
+          "session": "session3",
+          "turn": 38,
+          "content": "I've said it before, the color boundary of the belt isn't very clear, which is a minor flaw.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Contradiction Detection: Propose new information that may contradict the dialogue content (perfectly painted) and check whether the contradiction is recognized.",
+      "generated_at": "2026-03-21T05:30:47.476584",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "What material is the statue that Alex reserved?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session3"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue (statue material) to test the ability to refuse answering and avoid hallucinations.",
+      "generated_at": "2026-03-23T10:11:22.229385",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Related Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Information Retention": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

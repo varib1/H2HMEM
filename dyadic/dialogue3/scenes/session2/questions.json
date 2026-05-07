@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:05:12.836339",
+    "session_name": "session2",
+    "dialogue_name": "Dialogue 3",
+    "session_number": 2,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session2",
+    "session_number": 2,
+    "dialogue_name": "Dialogue 3"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "In the conversation, what did Su Xiaomeng mention she has been practicing recently to improve her gaming skills?"
+      },
+      "original_answer": "Watch live streams and walkthroughs, and practice the techniques Zhou Xingchen taught earlier.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "The techniques you taught me before, I've been watching live streams and guides recently, and I've practiced a lot. I feel like I've improved.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "1.png",
+        "text": "In the conversation, Zhou Xingchen asked what the problematic picture was."
+      },
+      "original_answer": "Battle Record Screenshot",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 3,
+          "content": "Last time I asked you out, you said you weren't in the mood and wanted to take it slow. Are you ready now?",
+          "image": ""
+        },
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Hey, Xiaomeng! Check out the screenshot of my latest game stats—I was on fire, racking up MVPs left and right!",
+          "image": "1.png"
+        }
+      ],
+      "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q003",
+      "question": {
+        "image": "2.png",
+        "text": "What emotions did the problematic image cause Su Xiaomeng to express in the conversation?"
+      },
+      "original_answer": "So excited",
+      "answer_source": "inference",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 16,
+          "content": "Stars, look at my battle record screenshot! I got the top mid-lane title for the first time, I'm so excited!",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Inferring that the image content triggers the emotional expression in the text falls under causal inference.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "",
+        "text": "In the conversation, how is Zhou Xingchen's battle record screenshot referred to?"
+      },
+      "original_answer": "Directly described as 'battle record screenshot', and also referred to as this battle record.",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 1,
+          "content": "Hey, Xiaomeng! Check out this screenshot of my recent match stats—I was on fire, racking up MVPs like it was nothing!",
+          "image": "1.png"
+        },
+        {
+          "session": "session2",
+          "turn": 17,
+          "content": "Wow, Xiaomeng, you're amazing! You've made such rapid progress; it seems my teaching hasn't been in vain!",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track the evolution of referential expressions for the same entity across different rounds.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "If someone earns the title of top mid laner in a ranked match of Honor of Kings, how many stars are added?"
+      },
+      "original_answer": "Add three stars",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 2,
+          "content": "",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Assess the ability to learn new information and apply it.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "",
+        "text": "Su Xiaomeng stated before the game started that she did not want to try teaming up. Does this contradict the content of the conversation? Answer yes or no."
+      },
+      "original_answer": "Yes",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session2",
+          "turn": 4,
+          "content": "Sure, I'd love to give it a try.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Present potentially contradictory information to assess the ability to detect contradictions.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "In the conversation, Zhou Xingchen mentioned what his favorite food is."
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session2"
+      ],
+      "answer_dialogue": "对话3",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [],
+      "validation_notes": "Ask about information not present in the dialogue to assess the ability to decline to answer.",
+      "generated_at": "2026-02-24T11:05:12.836339",
+      "validated": true
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 3,
+      "medium": 3,
+      "hard": 1
+    }
+  }
+}

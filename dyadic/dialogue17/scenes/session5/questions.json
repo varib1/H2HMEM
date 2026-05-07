@@ -1,0 +1,262 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-24T11:30:28.839084",
+    "session_name": "session5",
+    "dialogue_name": "Dialogue 17",
+    "session_number": 5,
+    "model": "deepseek-chat",
+    "version": "1.0",
+    "question_type": "intra-session",
+    "question_format": "object_format"
+  },
+  "session_info": {
+    "session_name": "session5",
+    "session_number": 5,
+    "dialogue_name": "Dialogue 17"
+  },
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": {
+        "image": "",
+        "text": "What specific types of data does the 'biological data stream' mentioned by Optimus Prime in the conversation include?"
+      },
+      "original_answer": "Blood sugar, heart rate variability, simulated electroencephalogram",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Unimodal Precise Recall"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Look at this flowchart; it integrates data on blood glucose, heart rate variability, simulated EEG, and task performance.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Text recall, recalling pure textual facts from the conversation."
+    },
+    {
+      "question_id": "Q002",
+      "question": {
+        "image": "2.png",
+        "text": "Which device or setting in the conversation does this image correspond to?"
+      },
+      "original_answer": "Standard EEG cap setup",
+      "answer_source": "image_description",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Recall",
+        "subsub_type": "Cross-modal Related Retrieval"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "Look at this picture, it shows a standard EEG cap setup.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Image → Text, retrieving textual descriptions from conversations based on image information"
+    },
+    {
+      "question_id": "Q004",
+      "question": {
+        "image": "3.png",
+        "text": "What exclamation or evaluation did this picture evoke from Optimus Prime?"
+      },
+      "original_answer": "Custom layers can indeed make analysis more precise.",
+      "answer_source": "inference",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Multimodal Causal Inference"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Great idea! Custom layers can indeed make the analysis more precise. What excites me is",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Image-driven text, inferring that the image led to the emergence of the text."
+    },
+    {
+      "question_id": "Q005",
+      "question": {
+        "image": "",
+        "text": "What are the different names mentioned for the 'Cyber Cat' case in the conversation?"
+      },
+      "original_answer": "Cybercat Chip, Cybercat Case, Cybercat Solution, Cybercat Design Solution, Cybercat Chip Malfunction",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Reasoning",
+        "subsub_type": "Reference & Evolution Tracking"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 2,
+          "content": "Just like when we adjusted the signal mapping while handling the Cybercat chip before.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "We can learn from the A/B testing method used in the Cyber Cat case.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 6,
+          "content": "Just like the comfort monitoring in the CyberCat solution.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 7,
+          "content": "Just like the plan we designed for CyberCat.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 9,
+          "content": "Just like the warning system for a cyber cat's chip malfunction.",
+          "image": ""
+        }
+      ],
+      "validation_notes": "Track different referring expressions for the same entity across different rounds."
+    },
+    {
+      "question_id": "Q006",
+      "question": {
+        "image": "1.jpg",
+        "text": "How does Ling Guang suggest optimizing the data analysis interface in this image?"
+      },
+      "original_answer": "Add custom layer functionality",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Test-Time Learning (TTL)"
+      },
+      "difficulty": "medium",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 8,
+          "content": "We can optimize it by adding a custom layer feature. For example, researchers can drag and drop data sources to dynamically adjust the display.",
+          "image": "1.jpg"
+        }
+      ],
+      "validation_notes": "Learn the newly acquired multimodal information (image1.jpg), and apply this new knowledge to answer the question."
+    },
+    {
+      "question_id": "Q007",
+      "question": {
+        "image": "",
+        "text": "Is the 'blood glucose data visualization' mentioned in the conversation consistent with the data type in image 3.png?"
+      },
+      "original_answer": "Consistent",
+      "answer_source": "both",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Conflict Detection (CD)"
+      },
+      "difficulty": "hard",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 3,
+          "content": "Just like the blood sugar data visualization you shared earlier, those minor fluctuations might correspond to a state of flow.",
+          "image": ""
+        },
+        {
+          "session": "session5",
+          "turn": 1,
+          "content": "Look at this flowchart; it integrates data on blood glucose, heart rate variability, simulated EEG, and task performance.",
+          "image": "3.png"
+        }
+      ],
+      "validation_notes": "Detect whether there is a contradiction between newly input information and existing memory, and verify consistency."
+    },
+    {
+      "question_id": "Q008",
+      "question": {
+        "image": "",
+        "text": "What is the color of the EEG cap mentioned in the conversation?"
+      },
+      "original_answer": "Not mentioned",
+      "answer_source": "conversation_text",
+      "answer_session": [
+        "session5"
+      ],
+      "answer_dialogue": "对话17",
+      "question_type": {
+        "main_type": "intra-session",
+        "sub_type": "Memory Application",
+        "subsub_type": "Answer Refusal (AR)"
+      },
+      "difficulty": "easy",
+      "supporting_evidence": [
+        {
+          "session": "session5",
+          "turn": 4,
+          "content": "My lab has more advanced EEG monitoring equipment that can be accessed for this project. Look at this diagram—it shows the standard EEG cap setup.",
+          "image": "2.png"
+        }
+      ],
+      "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations."
+    }
+  ],
+  "summary": {
+    "total_questions": 7,
+    "by_type": {
+      "Unimodal Precise Recall": 1,
+      "Cross-modal Retrieval": 1,
+      "Multimodal Causal Inference": 1,
+      "Reference & Evolution Tracking": 1,
+      "Test-Time Learning (TTL)": 1,
+      "Conflict Detection (CD)": 1,
+      "Answer Refusal (AR)": 1
+    },
+    "by_difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 2
+    }
+  }
+}

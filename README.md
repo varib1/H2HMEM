@@ -123,7 +123,7 @@ If you wish to participate in the leaderboard, after running inference, you need
 
 We provide a JSON template file that defines the required submission format:
 
-- `leaderboard/prediction_template.tex` - Template for submission format
+- `leaderboard/prediction_template.txt` - Template for submission format
 
 Please follow this template exactly when preparing your prediction files. The template specifies the required field structure, data types, and naming conventions that the leaderboard evaluation pipeline expects.
 

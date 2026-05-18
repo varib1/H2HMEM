@@ -54,7 +54,6 @@ pip install -r requirements.txt
 
 This repository supports both **text-based** and **multimodal** memory methods.
 
----
 
 ### 📝 Text-based Methods
 
@@ -104,13 +103,13 @@ bash ./evaluate_metrics/Lexical_metrics/run_Lexical_metrics.sh
 bash ./evaluate_metrics/LLM-as-judge/run_LLM_as_judge.sh
 ```
 
----
-
 ### 📌 Notes
 
 - Text-based methods require an additional caption generation stage.
 - Multimodal methods directly consume image-text inputs.
 - All evaluation scripts automatically save outputs to their corresponding result directories.
+  
+---
 
 ## 🏆 Leaderboard Submission
 

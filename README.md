@@ -125,7 +125,7 @@ We provide a JSON template file that defines the required submission format:
 
 - `leaderboard/prediction_template.txt` - Template for submission format
 
-Please follow this template exactly when preparing your prediction files. The template specifies the required field structure, data types, and naming conventions that the leaderboard evaluation pipeline expects.
+Please follow this template exactly when preparing your prediction files.
 
 Your final submission should include two JSON files formatted according to the template:
 

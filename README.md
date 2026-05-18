@@ -153,7 +153,7 @@ These files follow the required leaderboard submission format.
 
 4. Submit your results.
 
-Your submission needs to be reviewed by an administrator before it appears on the public leaderboard.
+   -Your submission needs to be reviewed by an administrator before it appears on the public leaderboard.
 
 ### 📌 Submission Notes
 

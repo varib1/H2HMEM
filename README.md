@@ -117,26 +117,23 @@ We provide an online leaderboard for evaluating memory methods on **H2HMem**:
 🌐 **Leaderboard Website:**  
 [H2HMem Leaderboard](https://h2hmemleaderboard1.vercel.app/)
 
-After running inference, you need to convert your generated predictions into the official leaderboard submission format and upload the resulting JSON files to the leaderboard website.
+If you wish to participate in the leaderboard, after running inference, you need to format your predictions according to our submission template before uploading to the leaderboard website.
 
-### 📦 Step 1 — Generate Prediction Files
+### Submission Template
 
-After inference, use the provided scripts to generate the official submission files:
+We provide a JSON template file that defines the required submission format:
 
-```bash
-bash ./leaderboard/generate_submission.sh
-```
+- `leaderboard/templates/prediction_template.json` - Template for submission format
 
-This script will generate two files:
+Please follow this template exactly when preparing your prediction files. The template specifies the required field structure, data types, and naming conventions that the leaderboard evaluation pipeline expects.
+
+Your final submission should include two JSON files formatted according to the template:
 
 ```text
 prediction_dyadic.json
 prediction_multi_party.json
 ```
-
-These files follow the required leaderboard submission format.
-
-### 📤 Step 2 — Submit to Leaderboard
+### Submit to Leaderboard
 
 1. Open the leaderboard website:
 

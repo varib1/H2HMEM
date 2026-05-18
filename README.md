@@ -106,7 +106,7 @@ bash ./evaluate_metrics/LLM-as-judge/run_LLM_as_judge.sh
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 
 - Text-based methods require an additional caption generation stage.
 - Multimodal methods directly consume image-text inputs.
@@ -163,7 +163,7 @@ After submission, your method will automatically appear on the public leaderboar
 
 ---
 
-## 📌 Submission Notes
+### 📌 Submission Notes
 
 - Please ensure the prediction files strictly follow the provided JSON format.
 - Both dyadic and multi-party prediction files are required for complete evaluation.

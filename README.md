@@ -159,7 +159,6 @@ Your submission needs to be reviewed by an administrator before it appears on th
 
 - Please ensure the prediction files strictly follow the provided JSON format.
 - Both dyadic and multi-party prediction files are required for complete evaluation.
-- The leaderboard evaluates submissions using the official H2HMem evaluation pipeline.
 - We recommend preserving original model outputs before post-processing for reproducibility.
 
 

@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,253 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the balance that Ling Guang mentioned in the dialogue regarding the health monitoring internal testing?"
       },
       "original_answer": "Balancing Data Privacy and Usability",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Remember during the internal testing of health monitoring, we discussed the balance between data privacy and ease of use; it's similar here.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Recall pure textual facts from the conversation, avoiding generic responses."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which concept in the conversation does this image correspond to?"
       },
       "original_answer": "Dynamic Blockchain Digital Watermark",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 2,
-          "content": "I immediately thought of a countermeasure—dynamic blockchain digital watermarking.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": null,
-          "content": "Image 2 Description: A conceptual flowchart illustrating dynamic watermark recognition, the anti-Deepfake digital watermark system, and application scenarios.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image → Text: Recall corresponding dialogue concepts based on image information"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What reaction did the picture provoke from Optimus Prime?"
       },
       "original_answer": "Dynamic Blockchain Digital Watermarking Scheme",
-      "answer_source": "both",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Just saw this news, forwarding it to you. Deepfake technology misuse, fake speech video causes chaos.",
-          "image": "1.png"
-        },
-        {
-          "session": "session13",
-          "turn": 2,
-          "content": "Received. The visual impact is really strong... I immediately thought of a countermeasure—dynamic blockchain digital watermarking.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Requires inferring causal relationships by combining image and dialogue information."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Concept Map, Application Scenarios Section",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Your concept map is technically interesting.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 9,
-          "content": "In the application scenarios section of your concept map, media and judiciary are mentioned.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the Evolution of Image References in Conversations"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "Based on the newly learned concept of 'digital birth certificate' from the conversation, how might the flowchart in the image be extended?"
       },
       "original_answer": "Add a node for generating and modifying the record chain.",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "From a science fiction perspective, will the future require a 'digital birth certificate' that records a complete chain of generation and modifications?",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 10,
-          "content": "Digital birth certificates can integrate biometric or behavioral data.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": null,
-          "content": "Image 2 Description: A flowchart illustrating dynamic watermark recognition, the anti-Deepfake digital watermark system, and its application scenarios.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Inferring Possible Extensions of Image Flowcharts by Applying New Learning Concepts"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Detect contradiction: Ling Guang said in round 3, 'Ordinary user verification might be too complex,' but Optimus Prime said in round 14, 'The authentication process can be designed as an interactive experience to enhance trust rather than complicate it.' Are these two statements contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Your concept diagram is technically interesting, with flowcharts illustrating dynamic watermark recognition and system applications, but it might be too complex for average users to verify.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 14,
-          "content": "Digital Native Mindset: The authentication process can be designed as an interactive experience to enhance trust rather than complicate it.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detect potentially contradictory information in the dialogue and verify consistency."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which specific Deepfake technology production tool did Ling Guang mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": null,
-          "content": "The conversation only mentions the misuse of Deepfake technology and fake speech videos, without mentioning specific tools.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: If the information is not present in the text, the question should be refused to avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 3
-    }
-  }
+  ]
 }

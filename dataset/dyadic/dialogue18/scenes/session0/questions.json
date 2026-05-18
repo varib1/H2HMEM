@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.150372"
@@ -18,481 +17,224 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What caused the old injury to Shi Yan's left knee as described in Session 5, and what specific impact did he mention the recurrence of the old injury had on his work efficiency in Session 6?"
       },
       "original_answer": "The old injury in the left knee is caused by cartilage wear from a mountain climbing fall many years ago. After the recurrence of the old injury, the pain worsens when going up or down slopes, leading to reduced work efficiency and requiring much slower movement.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 3,
-          "content": "Well, years ago, after a mountain climbing injury, I was diagnosed with cartilage wear.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 5,
-          "content": "After my old injury flared up, the pain was severe when going up and down slopes, greatly reducing my efficiency, just as described in Session 5.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts regarding health topics from two different conversations.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What was Ye Lu's main objective for planning to shoot in the undeveloped valley during Session 1, and what specific content did she share in her photography works after safely returning in Session 4?"
       },
       "original_answer": "The main goal is to photograph alpine azaleas and mountain streams with waterfalls. After safely returning, the shared works will include magnificent panoramic views of the valley, hidden waterfalls, and rare wildflowers.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "I've been researching an undeveloped valley lately and plan to go there in spring to photograph alpine azaleas and stream waterfalls.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 7,
-          "content": "Let me send you a panoramic view of the valley first. This hike was absolutely breathtaking.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 15,
-          "content": "There are also a few photos of wildflowers and waterfalls, which I'll send you later.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts regarding the shooting plans for two different sessions.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session2/1.jpg",
         "text": "In Session 2, Ye Lu sent this equipment photo. What specific improvement suggestions did Shi Yan propose based on this image in Session 2, and how was the effectiveness of this suggestion verified in Session 4?"
       },
       "original_answer": "Shiyan suggested replacing the static rope with a dynamic one and increasing the length to 30 meters to enhance safety redundancy. In Session 4, Yelu used the upgraded rope for assistance in the waterfall area and found it very effective.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 6,
-          "content": "The image shows that the rope type is static, which may not be flexible enough for simple descents, and the 20-meter length might be insufficient in complex terrain. I recommend switching to a dynamic rope and increasing the length to 30 meters to add safety redundancy.",
-          "image": "1.png"
-        },
-        {
-          "session": "4",
-          "turn": 13,
-          "content": "The waterfall area was more slippery than expected. I used a rope for assistance, and the upgraded model you recommended worked really well.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 2, retrieve relevant textual information from Sessions 2 and 4 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "session8/1.jpg",
         "text": "In Session 8, Ye Lu sent this photo of lightning. What key information did Shi Yan inquire about based on this picture in Session 8, and how did he use this information in Session 9 to help locate the lightning?"
       },
       "original_answer": "Shiyan inquired whether Lightning was wearing a collar and if there was a nameplate or contact information on it. In Session 9, while scanning from a high vantage point with a telephoto lens, Yelu spotted the crevice where Lightning was hiding by the reflection from the collar.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 2,
-          "content": "Does the lightning have a collar on? Is there a tag or contact information on it?",
-          "image": "1.png"
-        },
-        {
-          "session": "9",
-          "turn": 3,
-          "content": "I climbed to the highest point and repeatedly scanned the area with a telephoto lens, eventually spotting the reflection of the collar in a wind-sheltered crevice.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 8, retrieve relevant textual information from Sessions 8 and 9 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, what specific risk points did Shi Yan mention during the preliminary assessment of the risks in the undeveloped valley, and how were the emergency response plans formulated in Session 3 updated or supplemented to address these risk points?"
       },
       "original_answer": "In Session 1, Shi Yan identified scree slopes and stream crossings as risk points, highlighting the danger of streams swelling in spring. In Session 3, the emergency response plan established procedures for dealing with minor injuries, getting lost, sudden weather changes, and serious injuries, along with a scheduled communication plan, supplemented by specific response measures.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 14,
-          "content": "Based on the image, I have preliminarily identified several risk points: the scree slope and the stream intersection.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 6,
-          "content": "Spring snowmelt or rainfall can cause water levels to rise sharply, so avoid low-lying areas while hiking.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "I've drafted an emergency plan and sent it to you for review. Based on our previous discussions about the route and equipment, I've considered different risk levels, including response procedures for minor injuries, getting lost, sudden weather changes, and serious injuries.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "The plan also includes a scheduled communication protocol with the rear contact person, twice daily in the morning and evening, to ensure we remain in touch.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect how Session 3 revises and supplements the risk information from Session 1, reflecting knowledge updates.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 5, what experience did Ye Lu primarily base her initial knee injury rehabilitation advice on, and how were these recommendations concretized and validated in Sessions 6 and 7 to form a more systematic rehabilitation plan?"
       },
       "original_answer": "In Session 5, Ye Lu's rehabilitation suggestions were primarily based on her previous experience in recovering from shoulder and neck strain. In Session 6, she shared photos of her rehabilitative hikes and diagrams of physical therapist-recommended movements, detailing stretching and strengthening exercises. In Session 7, Shi Yan reported that consistent use of trekking poles and stretching had reduced daily soreness, validating the effectiveness of the plan.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 4,
-          "content": "I understand, just like the time I carried photography equipment over a long distance, which caused strain in my shoulders and neck. Later, I improved a lot through specific stretching and strengthening exercises.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 2,
-          "content": "Shiyan, I just posted a photo of myself hiking on a forest trail. Look, I'm using two trekking poles, walking slowly and gently, choosing flat routes and avoiding steep slopes.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 6,
-          "content": "Okay, I'll send a diagram of rehabilitation exercises. There are nine movements here, suitable for doing at the camp, such as wall sits and hamstring stretches.",
-          "image": ""
-        },
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "Ye Lu, following your previous advice, I've been consistently using trekking poles and doing stretches for over a month now. This photo was taken last week on the ridge line—the poles really made a big difference, and my usual soreness has lessened quite a bit.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The detection and rehabilitation recommendations evolve from the preliminary experience in Session 5 to the specification and validation process in Sessions 6 and 7, reflecting knowledge updates and consistency maintenance.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Based on the information from Sessions 1, 4, and 8, what is the chronological order of the three events: Ye Lu's undeveloped valley hiking and photography plan, the safe return sharing, and the lightning-induced separation incident?"
       },
       "original_answer": "The sequence is as follows: first, plan an undeveloped valley hiking and photography session in Session 1; then, safely return and share the work in Session 4; finally, the lightning and getting lost incident occurs in Session 8.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "I've been researching an undeveloped valley recently and plan to go there in spring to photograph alpine azaleas and stream waterfalls.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 7,
-          "content": "Shiyan, I'm back safe and sound! Let me send you a panoramic view of the valley first. This hike was absolutely breathtaking.",
-          "image": ""
-        },
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Shiyan, emergency! My dog Lightning chased a marmot into the rolling terrain while we were shooting on the plateau meadow and has been missing for over two hours.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on event descriptions across multiple sessions, infer the chronological order, involving cross-session temporal reasoning.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In Session 2, Shi Yan suggested Ye Lu add a Personal Locator Beacon (PLB) as a safety redundancy. In Session 3, they established a scheduled communication plan. In Session 4, during her actual hike, Ye Lu encountered getting lost and a thunderstorm. Based on these sessions, what is the chronological order of Ye Lu's responses to these challenges during her hike?"
       },
       "original_answer": "The chronological order is as follows: First, in Session 2, Shi Yan suggested adding PLB. Then, in Session 3, a scheduled communication plan was established. Following that, in Session 4, Ye Lu encountered getting lost first (at the bend of the stream) while hiking, and later encountered a thunderstorm (a brief thunderstorm).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 8,
-          "content": "Strongly recommend adding a PLB. Satellite phones may fail in areas with poor signal, while a PLB can directly send distress signals to rescue centers.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "The plan also includes a scheduled communication protocol with the rear contact, twice daily in the morning and evening, to ensure we remain in touch.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 9,
-          "content": "Generally went according to plan, but there was a slight detour midway—at a bend in the stream, the map markings were a bit unclear. I corrected it using a compass and contour map, which took an extra half hour.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 11,
-          "content": "There was a brief thunderstorm that came suddenly. I immediately followed the emergency plan and retreated to a safe area, waiting until the rain stopped before continuing.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on suggestions, plans, and actual events from multiple sessions, infer the chronological order and sequence of events, involving cross-session time comparison and sequencing.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "When discussing knee injury rehabilitation, Ye Lu advised Shi Yan to avoid certain movements during the acute phase when there is redness and swelling, and mentioned how this aligns with the principles of emergency response plans from which conversation?"
       },
       "original_answer": "Avoid deep squats or high-impact movements, which aligns with the principle of identifying risk points in advance as outlined in the emergency plan for Session 3.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 8,
-          "content": "During the acute phase with redness and swelling, avoid deep squats or high-impact movements. You can start with gentle stretching and then intensify the exercises once the inflammation subsides. This aligns with the emergency plan in Session 3—identifying risk points in advance.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Shi Yan drafted an emergency plan, taking into account different risk levels, including response procedures for minor injuries, getting lost, sudden weather changes, and severe injuries.",
-          "image": "session3/1.png"
-        }
-      ],
       "validation_notes": "The issue involves the rehabilitation recommendations from Session 6 and the emergency plan from Session 3, requiring cross-session causal inference to link rehabilitation actions with safety principles.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "In Session 12, Ye Lu designed independent packaging and spice packs for Shi Yan's recipes. She mentioned that this optimization approach is similar to the equipment optimization method from which previous session?"
       },
       "original_answer": "Similar to the independent packaging and backup design approach used when optimizing equipment in Session 2.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "12",
-          "turn": 3,
-          "content": "The spice packet uses a sealed small bag with a desiccant inside, expected to last for six months to a year. Moisture resistance has been tested by simulating mildly humid conditions, and the results are acceptable. Just as we discussed during equipment optimization, safety redundancy is crucial, so I’ve also incorporated a backup design for this.",
-          "image": "session12/1.png"
-        },
-        {
-          "session": "2",
-          "turn": 5,
-          "content": "Ye Lu sent photos of the equipment, including the main rope in the blue backpack and the backup gear in the green backpack, reflecting the concepts of equipment optimization and backup planning.",
-          "image": "session2/1.png"
-        }
-      ],
       "validation_notes": "The issue requires cross-session inference to determine the causal relationship between the dietary optimization in Session 12 and the equipment optimization in Session 2 in terms of safety redundancy design.",
       "generated_at": "2026-04-01T17:05:33.150372",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "session8/1.jpg",
         "text": "In Session 8, Ye Lu sent a photo of Lightning for emergency assistance. In Session 9, after Lightning was found, how did she describe Lightning's condition and hiding environment?"
       },
       "original_answer": "In Session 9, Ye Lu described Lightning as tired but unharmed, hiding in a wind-sheltered crevice, appearing alert and possibly cold and scared.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Ye Lu sent a photo of lightning, describing how it chased a marmot into the undulating terrain and then disappeared.",
-          "image": "session8/1.jpg"
-        },
-        {
-          "session": "9",
-          "turn": 3,
-          "content": "Ye Lu described Lightning lying next to her backpack, looking exhausted but safe and sound.",
-          "image": ""
-        },
-        {
-          "session": "9",
-          "turn": 5,
-          "content": "Ye Lu sent a photo of Lightning hiding, describing it curled up in a rock crevice, looking very alert, possibly both cold and scared.",
-          "image": "session9/2.png"
-        }
-      ],
       "validation_notes": "Track the state evolution of the same entity (Lightning) from Session 8 to Session 9, describing its transition from being lost to being found.",
       "generated_at": "2026-04-01T17:05:33.151419",
       "validated": true,
       "original_question_id": "CSQ011"
     }
-  ],
-  "summary": {
-    "total_questions": 11,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 7
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

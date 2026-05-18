@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,158 +15,89 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the purpose of Lin Xingwan sharing her feelings when the game fails?"
       },
       "original_answer": "Alleviate real-life stress by using games as an emotional outlet.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "From a communication perspective, this humorous failure-sharing alleviates my real-life stress, making the game feel like an emotional outlet.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall textual facts from the conversation, avoid the original dialogue, and focus on key information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the game that Lin Xingwan played on May 10th, did the game character wear a hat? Answer yes or no."
       },
       "original_answer": "No",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "The cozy setting in your screenshot, combined with the interactive gameplay, perfectly captures our 'live commentary' process.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve corresponding dialogue content based on image information."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "After seeing the problem picture, what suggestion did Lu Chenguang provide to Lin Xingwan?"
       },
       "original_answer": "Jump half a second earlier next time to avoid twisting in the air.",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Morning Light, look at this! I just jumped over a spike platform in the game, and my character twisted comically in mid-air before falling straight into a deep pit! Ahhh, my hands slipped again!",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: The image sparked exclamations in the conversation."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "What weapon did Lin Xingwan use in the game?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Questions about information not present in the conversation should be refused to avoid hallucinations."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Lin Xingwan did not share any feelings upon losing the game. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Ahhh, I slipped again!",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "From a communication perspective, this humorous failure-sharing alleviates my real-life stress, making the game feel like an emotional outlet.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Detect contradictions between new input information and conversation memory."
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Answer Refusal (AR)": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 1,
-      "hard": 1
-    }
-  }
+  ]
 }

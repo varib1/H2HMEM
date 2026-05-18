@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,226 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What does the 'wormhole' metaphor mentioned by Shen Jingyan in the conversation refer to?"
       },
       "original_answer": "The natural flow of emotions",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "No need to resist. Imagine them drifting by like clouds, while you are the sky, quietly observing. Just as when I restore ancient texts, facing wormholes, I don't eliminate them but understand them as part of history, making peace with them.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall specific metaphorical content based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.jpg",
         "text": "What emotions or states are the problem images used to convey in the conversation?"
       },
       "original_answer": "Peace",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "Just like this old cat, it simply sleeps, not worrying about tomorrow. Tranquility gives birth to wisdom; when you relax, wisdom naturally emerges. This photo is for you, to remind you of the beauty of slowing down.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the emotions conveyed in the conversation based on image information."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What emotional description did the problematic image evoke in Su Yu'an?"
       },
       "original_answer": "Emotions are more chaotic.",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Jingyan, I tried the meditation you suggested last time, but my mind felt like countless little people having a meeting, and my emotions became even more chaotic. This is a doodle I just drew—still mostly blue, but with some lighter blue strokes added, making it feel even more disordered.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: The image (doodle) triggers the text (emotional description), indicating a causal inference relationship."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the concept of 'mindfulness' referred to and how does it evolve across different rounds?"
       },
       "original_answer": "From 'Sitting in Stillness' (Round 1) to 'Calming the Mind' (Round 7), and then to 'Stillness Generates Wisdom' (Round 12).",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Jingyan, I tried the meditation you suggested last time, but my mind felt like a meeting of countless little people, and my emotions became even more chaotic.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "You mean combining meditation with creation? For example, first sitting quietly to observe emotions, then painting them out? This sounds like a new form of healing.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "Just like this old cat, it simply sleeps without worrying about tomorrow. Tranquility fosters wisdom; when you relax, wisdom naturally emerges.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same concept (mindfulness) across multiple rounds of dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.jpg",
         "text": "In the dialogue, what is the state of the old cat in the problem picture used as a metaphor for?"
       },
       "original_answer": "The Beauty of Slowing Down",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "Just like this old cat, it simply sleeps, not worrying about tomorrow. Tranquility gives rise to wisdom; when you relax, wisdom naturally emerges. This photo is for you, a reminder of the beauty of slowing down.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (images) and apply it to answer questions, testing online adaptability."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Does the combination of 'quieting the mind' and 'creation' mentioned in the conversation align with Shen Jingyan's suggestions?"
       },
       "original_answer": "Consistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Yes. Just like this photo, sitting in stillness is not emptiness, but a space of containment. You can first create inner tranquility, and then let creativity flow naturally.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 11,
-          "content": "Perhaps I can try sitting quietly for five minutes each day, then doodling freely without judging the outcome.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the consistency between newly input information (Su Yu'an's plan) and existing memories (Shen Jingyan's suggestion), with no contradictions."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What specific breathing technique is mentioned in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Information not present in the question (specific breathing techniques) should be refused to avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

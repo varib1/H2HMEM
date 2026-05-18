@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,232 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what did Yelu mention as the fundamental reason for the lightning's disappearance?"
       },
       "original_answer": "Chasing rabbits",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 11,
-          "content": "At that moment, I was photographing wildflowers in the meadow when Lightning suddenly dashed off to chase a rabbit, and I didn't manage to hold onto the leash in time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Recall specific details based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which scene description in the conversation does this image correspond to?"
       },
       "original_answer": "Photo while hiding",
-      "answer_source": "image_description",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "I took a photo of it while it was hiding. Look, it's curled up inside, looking very alert, probably both cold and scared.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve corresponding dialogue descriptions based on image information."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation or question did the image evoke from Shi Yan?"
       },
       "original_answer": "The condition is still okay.",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 2,
-          "content": "I've seen the photo, it looks fine. You sound a bit choked up; take a moment to calm down first.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: The content of the image sparked exclamations or questions in the conversation."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how does Lightning's state evolve from being discovered to being soothed?"
       },
       "original_answer": "Alert and trembling→Exhausted and lying down→Much quieter",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "It curled up inside, appearing very alert, likely both cold and scared.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "When I found it, it was still trembling a little.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "It lay beside my backpack, looking exhausted but safe and sound.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 9,
-          "content": "It's much quieter now.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Track the evolution of state in a conversation."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "The photo of holding after finding it",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 9,
-          "content": "This is a photo of me holding it after I found it; it's much calmer now.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the Referential Methods of Images in Conversations."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the lightning's collar is made of reflective material, but does the image description indicate that the collar has reflective features?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 14,
-          "content": "The reflective collar on Lightning was a great help.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 15,
-          "content": "The collar is made of reflective material.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Image: Detecting contradictions between text and image descriptions."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "When the lightning was discovered, what plants were near the crevice where it was hiding?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue to assess the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 3
-    }
-  }
+  ]
 }

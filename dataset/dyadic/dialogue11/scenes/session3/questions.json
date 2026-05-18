@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,150 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the photo Chen Lu took while resting at the terminal station, what color is the dog?"
       },
       "original_answer": "Light yellow",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Round 1 Chen Lu: [Sent picture: 1.png] Fang Qing, look at this photo I took while resting at the terminal station.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall the color of the dog in image1.png. This is an image information recall, and the answer is derived from the image description.",
       "generated_at": "2026-02-24T11:21:20.474754",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "The promotional image titled \"Tips for Caring for Stray Animals\" sent by Fang Qing on April 5th, how many suggestions are provided in the image?"
       },
       "original_answer": "5 pieces",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 12,
-          "content": "Fang Qing sent the image 3.png and described it as a promotional poster for 'Tips on Caring for Stray Animals,' but did not mention how many suggestions there are.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The task is based on the images mentioned in the conversation, recalling information from images not mentioned in the dialogue, which aligns with the requirements of Cross-modal Related Retrieval for retrieving information from images based on textual content. The answers are derived from image descriptions.",
       "generated_at": "2026-03-01T12:35:50.374163",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What is the purpose of Fang Qing sending the problem image?"
       },
       "original_answer": "Fang Qing's aim is to provide a reference approach: placing a food and water bowl that is not easily removed in a hidden corner to address the issue of environmental mess when feeding stray animals.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "Chen Lu: You're right, safety first. But the station is always crowded, and I'm worried that feeding might dirty the environment, causing trouble like the disinfection and deodorizing we discussed last time.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "Fang Qing: [Sent picture: 2.jpg] You can refer to this method: Place a food bowl and water bowl that are not easily cleaned up in a hidden corner. This is what I took earlier, a water basin placed near a bus stop, which does not obstruct passage.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The question is based on image-driven text causal inference, inquiring about the antecedent reasons for Fang Qing sending the picture.",
       "generated_at": "2026-02-28T23:50:06.722905",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the promotional image \"Tips for Caring for Stray Animals\" sent by Fang Qing referred to or cited?"
       },
       "original_answer": "Promotional graphic for 'Tips for Caring for Stray Animals,' which Chen Lu refers to as 'this chart.'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 12,
-          "content": "Round 12 Fang Qing: [Sending image: 3.png] Yes, this is 'Tips for Caring for Stray Animals,' a promotional graphic I made.",
-          "image": "3.png"
-        },
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "Round 13 Chen Lu: Strong execution! This chart is clear and practical, just like a hypoglycemia management chart.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the image entity (3.png) across different rounds, from specific names to the pronoun 'this chart'.",
       "generated_at": "2026-02-24T11:21:20.474754",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

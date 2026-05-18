@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Shen Qingyan mentioned what method she is accustomed to using to record nursing plans?"
       },
       "original_answer": "Pen and paper notes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "But I'm more accustomed to using pen and paper to take notes; it feels more in control.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding the recollection of vague responses.",
       "generated_at": "2026-03-01T12:20:21.246453",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "On April 5th, Shen Qingyan took Chen Pi to the hospital for medication injections. How many bottles of medicine did the doctor administer to Chen Pi?"
       },
       "original_answer": "2 bottles",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "I recommend using this to-do list app; it has a clear interface and is great for managing daily tasks.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information; the two are related due to the same event (developing a care plan) and do not have a causal relationship.",
       "generated_at": "2026-03-01T12:20:21.246453",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "Why did Lu Zhixing send the problematic picture?"
       },
       "original_answer": "To recommend a to-do list app for helping Shen Qingyan plan a week's worth of care tasks.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "I recommend using this to-do list app; it has a clear interface and is suitable for managing daily tasks. We can start by planning a week's worth of care tasks, such as administering medication and monitoring conditions.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The issue type is text response image, inquiring about the prerequisite reason for Lu Zhixing sending the image.",
       "generated_at": "2026-03-01T23:45:23.192914",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is the weekly schedule template drafted by Lu Zhixing referred to or cited?"
       },
       "original_answer": "From \"Weekly Schedule Template\" to \"This Table\" and then to \"Schedule\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "I have drafted a weekly schedule template, divided into morning and afternoon tasks, along with follow-up appointment reminders.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "Great, this table is very clear.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "I will carefully fill out this schedule and make it a shared record for all of us.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same entity (weekly schedule) across different rounds.",
       "generated_at": "2026-03-01T12:20:21.246453",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Shen Qingyan said that Chen Pi needs daily injections of medication. Does this contradict the dialogue content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Zhixing, I brought Chenpi to the hospital for a medication injection. Here are the medicine bottle and syringe prescribed by the doctor.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "Administer medication in the morning, and observe appetite and mental state in the afternoon.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (daily drug injections) and existing memories (only one injection mentioned and morning medication administration).",
       "generated_at": "2026-03-01T12:20:21.247979",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Not mentioned"
       },
       "original_answer": "The dialogue does not mention Chen Pi's favorite toy.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-03-01T12:20:21.247979",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

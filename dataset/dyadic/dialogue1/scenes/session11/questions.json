@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,199 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Zhou Pingfan's annual health report shows what his average daily step count is?"
       },
       "original_answer": "7,800 steps",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "The annual health report is out. I just took a look and found something quite interesting. The impact of sleep deprivation on decision-making quality is quite evident in the data, especially in the days leading up to project deadlines.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-03-01T12:23:38.307184",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Lin Chang'an stated, what behavior of his is related to the data improvement in the problematic images?"
       },
       "original_answer": "Maintain a regular schedule and exercise regularly.",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "Look here, my health data report shows an improvement in sleep quality, which is closely related to my regular routine and consistent exercise.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event without a causal relationship.",
       "generated_at": "2026-03-01T12:23:38.307184",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What conclusion did Zhou Pingfan draw based on the problematic picture?"
       },
       "original_answer": "The impact of sleep deprivation on physical health is evident in the data.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "The annual health report is out. I just took a look and found something quite interesting. The impact of sleep deprivation on physical health is quite evident in the data.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is directly derived from the first round of dialogue, where the image drives the textual conclusion.",
       "generated_at": "2026-03-01T23:47:21.854506",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how was Lin Chang'an's health report referenced from its initial mention to the specific sharing of data?"
       },
       "original_answer": "Initially mentioned by Lin Chang'an as \"mine just arrived too,\" later specifically shared as \"look here, my data shows.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "Wow, it was generated so quickly? I just received mine too and was about to share it with you.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "Look here, my data shows that strength training three times a week is effective in improving HRV baseline, but when work stress is high, sleep quality significantly declines. This is quite evident when compared to the data from the period when Xingren was sick.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same entity across different rounds.",
       "generated_at": "2026-03-01T12:23:38.307184",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "If a person wants to improve sleep quality, based on Lin Chang'an's experience in the conversation, which approach might be ineffective?"
       },
       "original_answer": "Drink warm milk before bed.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 6,
-          "content": "Lin Chang'an: Yes, and I've noticed some pseudoscientific habits, such as drinking hot milk before bed. Data doesn't show any improvement; on the contrary, it may increase the frequency of nighttime awakenings.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the new knowledge learned from the conversation (drinking hot milk before bed is ineffective), apply this knowledge to answer ineffective methods for improving sleep quality.",
       "generated_at": "2026-03-03T12:02:21.075753",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Did Zhou Pingfan mention his weight change data in the annual health report?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:23:38.307184",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 1,
-      "hard": 1
-    }
-  }
+  ]
 }

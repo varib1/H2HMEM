@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,269 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what did Baizhi mention about the trend of compositional changes recorded in her hand-drawn notes?"
       },
       "original_answer": "The first half is mostly closed and symmetrical, while the latter half gradually opens up and becomes imbalanced.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 4,
-          "content": "I find the changes in composition quite interesting: the first half mostly features closed and symmetrical forms, while the latter half gradually becomes more open and unbalanced.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precise Recall]: Extract the notes on Angelica dahurica directly from the conversation, ensuring the information is accurate and error-free."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the color histogram analysis mentioned in the conversation?"
       },
       "original_answer": "2.png in session12",
-      "answer_source": "image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Just finished organizing my viewing notes, I captured a few key scenes and performed a color histogram analysis. Sending them to you for a look—this color coding system perfectly confirms my earlier hypothesis.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image]: Locate the corresponding image based on descriptions in the dialogue to ensure accurate cross-modal retrieval."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What kind of comment did this picture elicit from Gu Yanci?"
       },
       "original_answer": "Show-off skills, visual exploitation",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "Looking at this color palette and composition, I feel it's a show of skill—form over substance, much like the visual exploitation criticized in discussions about pet ethics.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Cause to Effect]: The image prompted Gu Yanci's evaluation, requiring causal reasoning based on visual details."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "Which picture led to Gu Yanci's comments on 'showing off skills' and 'visual exploitation'?"
       },
       "original_answer": "1.png in session12",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "Sending you a scene screenshot. Look at this color palette and composition—I think it's showing off technique, where form overshadows content, much like the visual exploitation criticized in discussions about pet ethics.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Finding the Cause from the Effect]: Identify the image that triggered Gu Yanci's evaluation based on his comments, ensuring a clear causal relationship."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "My notes, systematic changes in composition, breaking the rhythm, hand-drawn notes.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 4,
-          "content": "[Send image: 3.png] These are my notes, capturing narrative hints with keywords and sketches.",
-          "image": "3.png"
-        },
-        {
-          "session": "session12",
-          "turn": 5,
-          "content": "Wait, let me check your notes... I actually didn't notice this systematic change in composition! It's like a hidden visual grammar.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 10,
-          "content": "In my notes, I wrote that it \"breaks the rhythm and amplifies the emotions.\"",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 14,
-          "content": "Your hand-drawn notes make up for the limitations of my tools... but next time, remember to keep the lighting even, not as chaotic as during the initial curation selection.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-Round Tracking]: Track the evolution of image references across different rounds to ensure accurate designation."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.png",
         "text": "If a new image shows a color histogram highly concentrated in cool tones, what might this suggest?"
       },
       "original_answer": "The protagonist's mental state is calm or repressed.",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "Look, the saturation and brightness of the dominant color change entirely in sync with the protagonist's psychological state.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[TTL]: Apply the color analysis method learned from the dialogue to infer the psychological implications of the new image."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the notes on Angelica dahurica record 'the first half is closed and symmetrical, the second half open and imbalanced,' but Gu Yanci says, 'I actually didn't notice.' Is this contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 4,
-          "content": "I find the changes in composition quite interesting: the first half mostly features closed and symmetrical arrangements, while the latter half gradually becomes more open and imbalanced.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 5,
-          "content": "Wait, let me take a look at your notes... I actually didn't notice this systematic change in composition!",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Verify the consistency of information in the dialogue to ensure accurate understanding."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, did Gu Yanci mention using specific software tools for color analysis?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Just finished organizing my viewing notes, I captured several key scenes and conducted a color histogram analysis.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Refuse to answer]: The specific software tools were not mentioned in the conversation, ensuring the rejection of hallucinated information."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 2,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

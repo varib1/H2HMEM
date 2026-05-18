@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,266 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what temperature did Dawei mention for the blizzard warning?"
       },
       "original_answer": "-31 degrees",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 11,
-          "content": "Blizzard warning, temperature -31 degrees, flights may indeed be delayed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
       "generated_at": "2026-03-21T05:36:00.548783",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the brand of Mia's camera bag?"
       },
       "original_answer": "下田",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 11,
-          "content": "Dawei: Blizzard warning, temperature -20 degrees, flights might indeed be delayed.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "The image and text are related to the same event (weather warning), enabling bidirectional cross-modal retrieval.",
       "generated_at": "2026-03-23T10:14:52.968127",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "img3.jpg",
         "text": "How can a beginner evaluate problem images?"
       },
       "original_answer": "Neat as a supermarket shelf, truly well-organized.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "Xiaobai: [Sends picture: img2.jpg] My suitcase is a bit messy, how can I fit everything in?",
-          "image": "img2.jpg"
-        },
-        {
-          "session": "session5",
-          "turn": 26,
-          "content": "Xiao Bai: Now I'm starting to worry about my luggage. How can I fit everything in?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal Inference: The image (img2) drives the subsequent textual emotional expression.",
       "generated_at": "2026-03-23T10:14:52.968145",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the dialogue, how does the reference to Xiao Bai's gloves evolve from the initial mention to the subsequent search?"
       },
       "original_answer": "From \"the other one of this glove\" to \"my glove\" and then to \"Xiao Bai's glove.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 31,
-          "content": "Xiao Bai: [Sending picture: img7.jpg] Everyone, help me find the other one of this glove!",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "session5",
-          "turn": 57,
-          "content": "Xiao Bai: Good idea, but right now I just want to find my gloves...",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 70,
-          "content": "Vicky: Everyone, be careful. We will definitely find Xiao Bai's gloves.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the changes in the reference chain of the entity (glove) across multiple rounds of dialogue.",
       "generated_at": "2026-03-23T10:14:52.968161",
       "validated": true
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "Based on the knowledge about deicing operations learned from the conversation, what is the main reason for flight delays during heavy snow conditions?"
       },
       "original_answer": "1) Icy runways prevent aircraft from taking off and landing safely (due to increased braking distance); 2) Ice accumulation on the wings affects the aircraft's lift, posing a threat to flight safety; 3) De-icing operations themselves are time-consuming, requiring 20-30 minutes per aircraft, and long queues of flights can lead to significant delays.",
-      "answer_source": "inference",
       "answer_session": [
         "S5-5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "S5-5",
-          "turn": 11,
-          "content": "Dawei: Blizzard warning, temperature -31 degrees, flights might indeed be delayed.",
-          "image": ""
-        },
-        {
-          "session": "S5-5",
-          "turn": 19,
-          "content": "Dawei: [Send picture: img5.jpg] Look at this weather forecast, there's a blizzard warning, flights might be delayed.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "S5-5",
-          "turn": 20,
-          "content": "Dawei: @Old Zhang, the snow is so heavy that it's doubtful whether the plane can take off. A delay is probably unavoidable.",
-          "image": ""
-        },
-        {
-          "session": "S5-5",
-          "turn": 21,
-          "content": "Dawei: In this kind of blizzard weather, planes have to undergo de-icing operations before takeoff. If the runway is icy, the plane can't brake properly; if the wings are icy, it affects lift. De-icing a single plane takes about 20 to 30 minutes, and with so many planes in line, we'll definitely have to wait a long time.",
-          "image": ""
-        },
-        {
-          "session": "S5-5",
-          "turn": 52,
-          "content": "Dawei: [Sending picture: img12.jpg] Everyone, look at the blizzard outside the window. The snow is so heavy that it's even questionable whether planes can take off.",
-          "image": "img12.jpg"
-        }
-      ],
       "validation_notes": "Assess online adaptability: Require the application of newly learned general knowledge related to 'deicing operations' in the dialogue to understand the multiple reasons for flight delays during blizzard weather.",
       "generated_at": "2026-03-26T00:00:00.000000",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The suitcase of Fat Tiger is empty when he sets off on his journey. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 23,
-          "content": "Butaemon: [Sends picture: img6.jpg] But I brought a lot of snacks, everyone can share.",
-          "image": "img6.jpg"
-        }
-      ],
       "validation_notes": "Detect the contradiction between the new input information (the suitcase is empty) and the existing memory (bringing snacks).",
       "generated_at": "2026-03-23T10:14:52.968217",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation on December 25th, what travel destination did everyone discuss?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "none",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information that has not been presented to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-03-23T10:14:52.968234",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

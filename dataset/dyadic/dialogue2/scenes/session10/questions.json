@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,224 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation between the two, who suggested buying the neck massager?"
       },
       "original_answer": "Lu Zhixing",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "You might consider buying a neck massager, as physical relaxation can help alleviate symptoms. Would you like me to help you look at the options?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
       "generated_at": "2026-03-01T12:23:44.796011",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What was the price of the first neck massager sent by Lu Zhixing?"
       },
       "original_answer": "199 yuan",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "This design fits snugly around the shoulders and neck, offers multiple wearing styles, and is suitable for everyday use.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Image, based on the textual information in the conversation (Option A was just posted by Shen Qingyan), retrieve the corresponding image (2.png).",
       "generated_at": "2026-03-01T12:23:44.796011",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "After Shen Qingyan sent the problem image, what conclusion did Lu Zhixing draw based on it?"
       },
       "original_answer": "Lu Zhixing believes that the product in the picture has a strong technological feel but may be complicated to operate, and suggests that Shen Qingyan consider simpler and more user-friendly options.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 15,
-          "content": "Shen Qingyan: [Sent picture: 3.png] I looked at another model. This white ring design is very simple, but there are too many parameters—it’s making my head spin.",
-          "image": "3.png"
-        },
-        {
-          "session": "session10",
-          "turn": 16,
-          "content": "Lu Zhixing: Don't be intimidated by the parameters. The core is the experience: Model A is suitable for deep relief, Model B is lightweight, and Model C (the one you just shared) has a strong technological feel but may be complicated to operate. Think about your weekly schedule—you need something simple and easy to use.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The problem type is the third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is based on the analytical conclusion derived from the image 3.png by Lu Zhixing.",
       "generated_at": "2026-03-01T23:47:08.053290",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "In the conversation, how does Lu Zhixing gradually refer to the problem image?"
       },
       "original_answer": "From \"the one you just posted\" to \"Model A\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 11,
-          "content": "Shen Qingyan: [Sent picture: 2.png] I found another one. This mechanical claw design seems more tech-savvy, but I don’t quite understand its temperature control system.",
-          "image": "2.png"
-        },
-        {
-          "session": "session10",
-          "turn": 12,
-          "content": "Lu Zhixing: From a systems thinking perspective, Model A (the one you just shared) has a massage mode that is more ergonomic, making it suitable for prolonged relaxation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking the referential evolution of the entity (2.png) across different rounds: After Shen Qingyan sent it, Lu Zhixing referred to it in the next round as \"the one you just sent\" and named it \"Model A.\"",
       "generated_at": "2026-03-01T12:23:44.796011",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Shen Qingyan's final decision on the neck massager is Model A. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 13,
-          "content": "Shen Qingyan: I see. What about the heating function? I'm a bit afraid of the cold, so the warmth like in the movie \"Little Forest\" is very important to me.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 14,
-          "content": "Lu Zhixing: Model A offers more precise temperature control, capable of simulating gradual heating, similar to the warmth of your favorite tomato and egg noodles. Model B provides basic heat therapy, but it's sufficient for daily use.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 19,
-          "content": "Shen Qingyan: Thank you for your analysis! Just like interpreting the health data of Chen Pi, you always help me clarify my thoughts. I’ve decided to go with option A.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: The question implies that Model A may not have a heating function, but the dialogue explicitly mentions that Model A has a precise temperature-controlled heating function. No contradiction is identified.",
       "generated_at": "2026-03-01T12:23:44.796011",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What health monitoring device did Shen Qingyan mention using?"
       },
       "original_answer": "Health bracelet",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 2,
-          "content": "Lu Zhixing: It sounds like muscle tension from prolonged desk work. When you monitored with your fitness tracker before, was your sleep quality also affected?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal scenario: The information asked in the question (Shen Qingyan previously used a health bracelet) has appeared in the conversation, so it should not be refused.",
       "generated_at": "2026-03-01T12:23:44.796011",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,150 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the psychological term for using shopping to alleviate negative emotions as mentioned in the conversation?"
       },
       "original_answer": "Retail therapy",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "Qingchuan, thank you for your honesty. This kind of impulse is actually quite common. In psychology, there's a term called 'retail therapy,' which refers to alleviating negative emotions through shopping.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:19:16.059868",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'buffer process after contract signing' mentioned in the conversation, locate the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "1.png in session11",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "For example, this diagram illustrates the buffer process after the contract is signed.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information, where both are related to the same event.",
       "generated_at": "2026-02-24T11:19:16.059868",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "After seeing the problem picture, what course of action did Xia Qingchuan come up with?"
       },
       "original_answer": "Transform consumption from an impulsive act into a conscious form of self-care.",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session11",
-          "turn": 9,
-          "content": "That's a great idea! Turning consumption from an impulsive act into a conscious form of self-care.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: Inferring that the image sparked subsequent textual discussion.",
       "generated_at": "2026-02-24T11:19:16.059868",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the concept of a 'cooling-off period' evolve from 'contract signing' to 'impulse buying'?"
       },
       "original_answer": "The buffer process from contract signing is borrowed as the '24-hour cooling-off period' for shopping impulses.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "For example, this diagram illustrates the buffer process after the contract is signed, providing a cooling-off period for impulsive shopping.",
-          "image": "1.png"
-        },
-        {
-          "session": "session11",
-          "turn": 5,
-          "content": "Set a '24-hour cooling-off period'?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of entities (the concept of a cooling-off period) across different rounds.",
       "generated_at": "2026-02-24T11:19:16.059868",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,106 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "3.png",
         "text": "What exclamation or evaluation did this picture evoke from Gu Yanci?"
       },
       "original_answer": "The light is a bit dim, but this is the real moment.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "The one-week challenge is over, and as promised, I’m sharing the original photo. This is from the first day—the cat was daydreaming by the window. I resisted the urge to adjust the angle. The lighting is a bit dim, but this is the real moment.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Finding the Cause from the Result]: Image 3.png triggered Gu Yanci's comments on light and authentic moments."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the 'two cats interacting on the grass, in the moment of jumping' mentioned in the conversation?"
       },
       "original_answer": "2.png in session9",
-      "answer_source": "image_description",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 10,
-          "content": "Look at this one, two cats interacting on the grass, captured in a moment of leaping.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 10,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image Retrieval]: Recall corresponding images based on textual information in the conversation."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Send image1.png, your photo, composition awareness.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "[Send image: 1.png] Send image 1.png",
-          "image": "1.png"
-        },
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "In your photo, the cat sits quietly, with the collar bell clearly visible.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 6,
-          "content": "I admit to having a sense of composition.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Forced Tracking]: Tracking the evolution of referential expressions for image entities across different rounds"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In which image is the concept of 'aesthetic refinement' mentioned by Bai Zhi in the conversation reflected?"
       },
       "original_answer": "2.png in session9",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 10,
-          "content": "I didn't interfere with them while taking the shot, but chose this angle to capture the dynamics and emotion.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 11,
-          "content": "The motion is beautiful, but with a blurred background and composition emphasizing interaction—this is still 'design'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Learning Application]: Learn newly acquired multimodal information (aesthetic refinement concepts) and apply it to answer questions."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "The conversation mentions that the photo of Angelica dahurica has 'ample light,' but is there any contradictory information in the image description?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "In your photo, the cat sits quietly, with the collar bell clearly visible and ample lighting.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detecting whether there is a contradiction between the newly input information and existing memory. There is no contradiction here."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What breed is Gu Yanci's cat?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refuse to Answer]: Information not present in the question dialogue should be refused."
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Multimodal Causal Inference": 1,
-      "Cross-modal Retrieval": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "medium": 3,
-      "hard": 2,
-      "easy": 1
-    }
-  }
+  ]
 }

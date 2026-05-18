@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,206 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the incidence of Labrador Retriever joint dysplasia mentioned by Shen Qingyin in the conversation?"
       },
       "original_answer": "25%",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "The incidence of hip dysplasia is 25%.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T14:12:44.226007",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the incidence rates of common diseases in Labrador Retrievers mentioned in the conversation, which image displays this data? Provide the session number and image file name."
       },
       "original_answer": "2.png in session5",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "This is the chart I compiled on the incidence rates of common diseases in Labrador Retrievers. Look, the incidence of joint dysplasia is 25%, skin diseases 35%, and ear infections 45%.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where the two are related due to the same event, not through causal inference.",
       "generated_at": "2026-02-24T11:13:29.136541",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "The problematic image led to what Shen Qingyin inquired about in the conversation?"
       },
       "original_answer": "Is the exclusion of liability reasonable and are there high-probability risk points?",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Weian, I've researched several pet insurance policies, and here's a screenshot of the terms from one of them. I've highlighted the key clauses. From a medical standpoint, are these exclusions reasonable? Which ones are high-probability risk points?",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Inferring that images drive textual content, with a focus on causal inference.",
       "generated_at": "2026-02-24T11:13:29.136541",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In the conversation, how are the problem images referred to and cited?"
       },
       "original_answer": "'My compiled table', 'table', 'this evaluation'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 8,
-          "content": "Weian, this is the table I've compiled, assessing out-of-pocket costs and insurance reimbursements for scenarios such as joint surgery, dermatological condition recurrence, and ear infections.",
-          "image": "3.png"
-        },
-        {
-          "session": "session5",
-          "turn": 9,
-          "content": "The table is very detailed, reflecting your meticulous and thorough style. This evaluation makes the insurance decision-making process more secure.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:13:29.136541",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation content, answer whether Labrador Retrievers are at risk of obesity. If so, what is the risk?"
       },
       "original_answer": "Yes, 40%",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "This is the chart I compiled on the incidence rates of common diseases in Labrador Retrievers. Look, the incidence of joint dysplasia is 25%, skin diseases 35%, and ear infections 45%.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Assess the ability to learn and apply newly acquired multimodal information.",
       "generated_at": "2026-02-24T11:13:29.136541",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The incidence of skin diseases in Labrador Retrievers is 50%. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "Skin diseases 35%",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories.",
       "generated_at": "2026-02-24T14:12:44.226007",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

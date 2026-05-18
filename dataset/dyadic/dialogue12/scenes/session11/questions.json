@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,175 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the consumption phenomenon mentioned by Shen Zhiwei in the conversation, what kind of brand premium is often emphasized as being very high?"
       },
       "original_answer": "Brands that emphasize 'handmade' and 'niche'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Yanqiu, recently I've been pondering a consumer phenomenon: brands that emphasize \"handmade\" or \"niche\" often command a high premium.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-01T17:33:55.682876",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the conversation, Cheng Yanqiu sent a visualization chart of product review keyword statistics. What are the product attribute keywords included?"
       },
       "original_answer": "Design, Material, Price",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "I have preliminarily designed an analytical framework, which is a visualization chart for keyword statistics in product reviews, divided into product attribute keywords and narrative keywords.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, reflecting the relevant relationships.",
       "generated_at": "2026-03-01T17:33:55.682876",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Shen Zhiwei's reflection on 'whether data can reveal the gap between narrative and reality'? Provide the session number and image file name."
       },
       "original_answer": "2.jpg in session12",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 7,
-          "content": "I found some examples of user reviews, like this one mentioning 'being moved by the brand's craftsmanship spirit,' but the actual jewelry designs shown are quite ordinary. This makes me wonder: can data reveal such gaps between narrative and reality?",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image 2.jpg (User Review Example) directly triggered Shen Zhiwei's contemplation, reflecting causal inference.",
       "generated_at": "2026-03-01T17:33:55.682876",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is the 'analytical framework' mentioned by Cheng Yanqiu referred to or cited?"
       },
       "original_answer": "Initially described as a 'visualization chart for product review keyword statistics'; later referred to as a 'project', involving the crawling of reviews and analysis of keyword distribution.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "I have initially designed an analytical framework, which is a visualization chart for keyword statistics in product reviews, divided into product attribute keywords and narrative keywords.",
-          "image": "3.png"
-        },
-        {
-          "session": "session11",
-          "turn": 12,
-          "content": "We can design a project: crawl reviews of multiple brands, analyze keyword distribution and sentiment correlations, and then you interpret it from a narrative perspective to form a review article.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the reference from specific charts to 'projects' within the 'analytical framework'.",
       "generated_at": "2026-03-01T17:33:55.682876",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, which specific brand name did Shen Zhiwei mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Yanqiu, recently I've been pondering a consumer phenomenon: brands that emphasize \"handmade\" or \"niche\" often command a significant price premium.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Questions about information not present (specific brand names) should be declined.",
       "generated_at": "2026-03-01T17:33:55.682876",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 1,
-      "hard": 1
-    }
-  }
+  ]
 }

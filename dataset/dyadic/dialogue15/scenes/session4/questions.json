@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,193 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Han Shuli suggested in the conversation which platform to upload the guide and code to?"
       },
       "original_answer": "GitHub",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 11,
-          "content": "It is recommended that we establish a GitHub repository, upload the guidelines and code, and set up the Fork option.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which experience or feature design in the dialogue does the problem image correspond to?"
       },
       "original_answer": "Interactive visualization page",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 10,
-          "content": "This is a more detailed design of the interactive page, including the data input area and the behavioral radar chart.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve relevant textual descriptions based on image information.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What suggestions or actions did the problematic image prompt from Han Soo-ri?"
       },
       "original_answer": "Open source project",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "What do you think about open-sourcing this project on GitHub? Just like how we shared data before.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: Image information triggers suggestions in the text.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "How are the problem images referred to or cited in the conversation?"
       },
       "original_answer": "GitHub Pages",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "Look at this GitHub page, the Fork button makes it easy for the community to contribute.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Track the evolution of image names across different rounds.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "Based on the interactive page design in the problem image, what analysis might the pet owner's input of an age of 2 years be used for?"
       },
       "original_answer": "Stress Assessment",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 10,
-          "content": "Pet owners can input noise data similar to what we previously collected to automatically generate reports.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Answer questions using newly learned multimodal information.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": false
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Which specific breed of pet did Han Shuli mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information that has not been mentioned to test the ability to decline to answer.",
       "generated_at": "2026-02-24T11:26:30.465631",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 1,
-      "hard": 3
-    }
-  }
+  ]
 }

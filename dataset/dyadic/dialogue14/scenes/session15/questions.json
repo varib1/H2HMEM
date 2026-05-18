@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,205 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Lin Xingwan mentioned that when she and her boyfriend are outside, what are they planning to do online?"
       },
       "original_answer": "Play a round of the game \"Peacekeeper Elite\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 3,
-          "content": "I'm ready to connect, my boyfriend is waiting beside me, but we can play one round first.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which holiday activity in the conversation does the problem picture correspond to?"
       },
       "original_answer": "New Year's Eve",
-      "answer_source": "image_description",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 7,
-          "content": "Wow, that sounds amazing! I just received a New Year's message here, let me share it with you. By the way, shall we meet in the game? We can find a mountaintop to set off fireworks; a virtual New Year's celebration can be quite meaningful too.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: Recall corresponding holiday activities based on image information.",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": false
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What exclamation did the problematic picture evoke from Lu Chenguang?"
       },
       "original_answer": "The colors and shapes are quite dazzling.",
-      "answer_source": "both",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 10,
-          "content": "[Send image: 1.jpg] Haha, I've also set one off over here, sending you a picture of fireworks. The colors and shapes are quite dazzling, and the code rendering is pretty good. This year, from health projects to public welfare development, we've really been through a lot.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: The image evoked a sigh from Lu Chenguang.",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "How are the problem images referenced in the conversation?"
       },
       "original_answer": "Game promotional image, \"Game for Peace\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Hey, Lu Chenguang! Happy New Year's Eve! My boyfriend and I are out, but I suddenly thought of you. How about we start an online game together to ring in the New Year? Consider it our anniversary team-building for the 'Field Research' project! I’ll send you a promotional image of the game to see if you’re interested.",
-          "image": "2.png"
-        },
-        {
-          "session": "session15",
-          "turn": 2,
-          "content": "Haha, Lin Xingwan, happy New Year! Of course, I’d love to. I was just wondering how to pass the time. The picture you sent is from *Peace Elite*, right? I remember we analyzed its mechanics during our previous game collaboration—it’s perfect for a quick match.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of entities across different rounds.",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Lu Chenguang said he spent New Year's Eve alone in the dormitory. Does this contradict the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 2,
-          "content": "Haha, Lin Xingwan, Happy New Year! Of course I do, I was just wondering how to pass the time.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 18,
-          "content": "Same here! So, let's call it a day for now? You go spend time with your boyfriend, and I'll tidy up a bit and then rest. Let's do another 'field research' together next year!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between the newly input information (Lu Chenguang celebrating alone in the dormitory) and the existing memory (he was bored and looking for ways to pass the time, with no clear indication of being in the dormitory).",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "How many cats did Lin Xingwan mention she has in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Information not present in the question should not be answered to avoid hallucinations.",
       "generated_at": "2026-02-24T11:28:04.710489",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 1,
-      "hard": 2
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T09:19:07.512072"
@@ -18,176 +17,64 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the initial discussion of the travel plan, how did everyone resolve the disputes and decide on the destination? Considering the subsequent itinerary arrangements, explain how the final decision-making basis shifted from budget voting to the implementation of specific travel plans?"
       },
       "original_answer": "In the first round of discussion, the group resolved the dispute through a vote (4:2) and ultimately decided to go to Changbai Mountain. By the third round of discussion, Lao Zhang had updated the itinerary, and everyone confirmed the specific homestay and travel arrangements. The decision-making basis shifted from the initial budget vote to the implementation of concrete travel feasibility factors, such as chartered vehicle costs and restaurant reservations, as well as accommodation details like the homestay environment.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 56,
-          "content": "Lao Zhang: [Sent picture: img12.jpg] The voting result is 4:2, so let's proceed as planned.",
-          "image": "img12"
-        },
-        {
-          "session": "3",
-          "turn": 58,
-          "content": "Lao Zhang: [Sent picture: img13.jpg] Everyone, please take a look at this updated itinerary and see if there are any areas that need to be revised.",
-          "image": "img13"
-        }
-      ],
       "validation_notes": "It is necessary to integrate the voting decisions from the first round with the itinerary confirmation from the third round, reflecting the recall of unimodal textual information from planning to execution.",
       "generated_at": "2026-04-01T09:19:07.512116",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Regarding accommodation options, which one was ultimately chosen between the Hotel in Figure 9 discussed in Session 1 and the homestay discussed in Session 3? How did the new information revise the initial considerations?"
       },
       "original_answer": "We ultimately chose a homestay. New information revised our initial considerations, as Session 3 mentioned that the homestay is affordable, has a snowman downstairs, a swing in the yard suitable for photos, and convenient nearby restaurants, while the luxury hotel (as shown in Figure 9) lacks restaurants in the vicinity.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 8,
-          "content": "Vicky: @小白 Japan is indeed expensive, but if you stay at the hotel in Figure 9, the view is amazing.",
-          "image": "img9.jpg"
-        },
-        {
-          "session": "1",
-          "turn": 43,
-          "content": "Lao Zhang: Alright, since everyone is interested in the hotel in Figure 9, we can look into how to adjust the budget to make this plan work.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 6,
-          "content": "Xiao Bai: @Vicky There's a cute snowman downstairs at the homestay. I think staying here is pretty nice too.",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "3",
-          "turn": 10,
-          "content": "Mia: @David The swing in the courtyard of the homestay looks perfect for taking photos, very photogenic.",
-          "image": "img11.jpg"
-        },
-        {
-          "session": "3",
-          "turn": 20,
-          "content": "Dawei: [Sending picture: img6.jpg] The restaurant density near the hotel is almost zero, so it's not very convenient to stay there.",
-          "image": "img6.jpg"
-        },
-        {
-          "session": "3",
-          "turn": 23,
-          "content": "Lao Zhang: Then let's continue staying at the homestay. It's cost-effective, and meals are convenient too.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Problem detection involves tracking the knowledge update from the interest in Hotel 9 in Session 1 to the selection of a homestay in Session 3, focusing on information changes and consistency maintenance.",
       "generated_at": "2026-04-01T09:19:07.512139",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Based on all conversations, from discussing travel destinations to the final departure, what is the sequence of events?"
       },
       "original_answer": "The sequence is: 1. Discuss the destination in Session 1 and decide to go to Changbai Mountain; 2. Purchase equipment in Session 2; 3. Plan the specific route and accommodation in Session 3; 4. Work pressure increases as departure approaches in Session 4; 5. Pack luggage, check documents, and gather at the airport for departure in Session 5.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 14,
-          "content": "Lao Zhang: Alright, then it's decided—we're going to Changbai Mountain. The flight tickets are already booked!",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Xiao Bai: [Sends picture: img1.jpg] Everyone, can you help me see if this box is still usable?",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Lao Zhang: [Sent picture: img1.jpg] This is the guide I found. Let's take a look at the overall itinerary.",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "4",
-          "turn": 14,
-          "content": "Lao Zhang: Everyone, keep it up. Just 15 more days until we can relax.",
-          "image": ""
-        },
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Lao Zhang: [Sending picture: img1.jpg] Everyone, take a look. I have all the documents here. Can you confirm?",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "5",
-          "turn": 62,
-          "content": "Dawei: [Sent picture: img13.jpg] Finally boarded. Look at this wing view, the visibility still isn't great.",
-          "image": "img13.jpg"
-        }
-      ],
       "validation_notes": "The task requires ordering across session times, inferring the chronological order of events based on the core anchors and dialogue content of each session.",
       "generated_at": "2026-04-01T09:19:07.512159",
       "validated": true,
       "original_question_id": "CSQ004"
     }
-  ],
-  "summary": {
-    "total_questions": 3,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Knowledge Resolution": 1,
-      "Temporal Reasoning": 1
-    },
-    "by_difficulty": {
-      "medium": 2,
-      "hard": 1
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

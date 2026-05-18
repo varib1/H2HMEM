@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,279 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "How effective is the chip signal remapping calibration demo that Ling Guang completed in the lab?"
       },
       "original_answer": "Good effect",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Optimus Prime, I just completed a demo for signal remapping calibration similar to a chip in the lab, and the results are promising.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding recollection of the original dialogue or generic responses.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which system solution in the conversation does this image correspond to?"
       },
       "original_answer": "AR Visual Feedback System",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "I have compiled a comparative document summarizing the advantages and disadvantages of the protective signal remapping calibration and the AR visual feedback system.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text: Retrieve corresponding dialogue content based on image information.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the picture evoke from Optimus Prime?"
       },
       "original_answer": "This scene is so cool!",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Wow, this scene is really cool! But I'm more inclined to directly upgrade to the new system I designed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image → Text: The image sparked exclamations in the conversation.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Traditional veterinary examination",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 11,
-          "content": "Well said. This image reminds us that traditional veterinary check-ups are also important.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the Referential Methods of Images in Conversations.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'new system' mentioned by Optimus Prime referred to or evolved across different rounds?"
       },
       "original_answer": "From 'My Newly Designed System' (Round 2) to 'AR Visual Feedback System' (Round 6) and then to 'AR Feedback System' (Round 8)",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "But I'm more inclined to directly upgrade to the new system I designed.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "I have compiled a comparative document summarizing the advantages and disadvantages of the protective signal remapping calibration and the AR visual feedback system.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "Agreed. We can proceed step by step: first, use your demo method to calibrate the chip, and then test the effectiveness of my AR feedback system in low-load mode.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the different ways of referring to the same entity (new system) across different rounds, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the comparative document, what are the main advantages of the new system compared to the conservative approach?"
       },
       "original_answer": "Rich interactive experience",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "You see, although the new system carries higher risks, it offers a more interactive experience.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Assess the ability to examine new information in online learning (comparing document content) and apply it, integrating both text and image information.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Ling Guang suggested a conservative calibration in the conversation, but Optimus Prime said the new system carries no risk at all. Is there a contradiction?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "Based on historical data, the chip's anti-interference issue hasn't been fully resolved yet. I suggest starting with conservative calibration to ensure basic stability, then gradually introducing your new system.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "You see, although the new system carries higher risks, it offers a more interactive experience.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between the newly input information (Optimus Prime says the new system has no risk at all) and existing memories (acknowledging higher risks in the conversation).",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which specific chip model did Ling Guang mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Optimus Prime, I just completed a demo for signal remapping calibration similar to a chip in the lab, and the results are promising.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the dialogue (specific chip model) to test the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:29:46.505905",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 2,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

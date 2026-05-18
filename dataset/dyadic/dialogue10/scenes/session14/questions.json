@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,218 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Su Mingche, what are your core values as expressed in the conversation?"
       },
       "original_answer": "'Growth', 'Authenticity', 'Peace', 'Connection', 'Awareness', 'Boundaries', 'Health', 'Empathy', 'Depth', 'Flexibility'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 3,
-          "content": "My core values include 'Growth', 'Authenticity', 'Peace', 'Connection', 'Awareness', 'Boundaries', 'Health', 'Empathy', 'Depth', and 'Flexibility'. Next, we need to pair these values with specific adjustment activities to give direction both fuel and brakes. This is similar to what we discussed in Session 5 about mindful dog walking, turning daily interactions into conscious rituals.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts from the conversation.",
       "generated_at": "2026-02-24T11:20:03.438220",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'ALERTING & VAGAL TONE' tool diagram mentioned in the conversation, which image corresponds to this description? Provide the session number and image file name."
       },
       "original_answer": "1.png in session14",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "This is the tool diagram for \"ALERTING & VAGAL TONE\".",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the 'ALERTING & VAGAL TONE' tool diagram mentioned in the conversation, recall the corresponding image 1.png.",
       "generated_at": "2026-02-24T11:20:03.438220",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture prompted Xia Qingchuan to reveal his Top 10 Values Words? Provide the session number and the picture file name."
       },
       "original_answer": "2.jpg",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session14",
-          "turn": 2,
-          "content": "My Top 10 Values Words... 'Aesthetic Sense' definitely ranks first, followed by 'Expression', 'Connection', 'Sense of Ritual', 'Creativity', 'Depth', 'Care', 'Balance', 'Growth', and 'Authenticity'. These words remind me of Session 7, where, when designing a nourishing dietary ritual, I transformed 'Visual Priority' into inner nourishment.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text",
       "generated_at": "2026-02-24T11:20:03.439232",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.jpg",
         "text": "In the dialogue, what was the problem image initially referred to as, and how was it referred to later in the discussion?"
       },
       "original_answer": "Originally known as the \"Explore Your Values\" tool chart, it was later referred to as the 'Values Compass'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "This is the \"Exploring Your Values\" tool chart I mentioned earlier. We can start by clarifying our respective 'value compasses'.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session14",
-          "turn": 3,
-          "content": "Next, we need to pair these values with specific regulatory activities, so that the direction has both fuel and brakes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The transformation of Image 2.png from the 'Exploring Your Values' tool diagram to the reference of 'Value Compass'.",
       "generated_at": "2026-02-24T11:20:03.439232",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Xia Qingchuan's Top 10 Values Words, \"aesthetic sense\" ranks second. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "both",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "For example, my 'aesthetic sense' value corresponds to the Alerting fuel of 'exploring the textures of new fabrics and colors'.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 10,
-          "content": "I have compiled a table that pairs our core values with corresponding activities.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Contradiction Detection: Check whether the activities mentioned in the dialogue text are consistent with the content of the table in image 3.png, ensuring there are no contradictions.",
       "generated_at": "2026-02-24T11:20:03.439232",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What is the Vagal Tone activity that matches the 'creativity' value of Xia Qingchuan?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 2,
-          "content": "My Top 10 Values... 'Aesthetic Sense' definitely ranks first, followed by 'Expression', 'Connection', 'Sense of Ritual', 'Creativity', 'Depth', 'Care', 'Balance', 'Growth', and 'Authenticity'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal scenario: Information not present in the question dialogue (Vagal Tone activity matching the value of 'creativity') should be declined to answer.",
       "generated_at": "2026-02-24T11:20:03.439232",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 1,
-      "hard": 2
-    }
-  }
+  ]
 }

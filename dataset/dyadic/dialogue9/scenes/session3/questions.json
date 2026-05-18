@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Based on the conversation, what is the approximate total cost in yuan for spaying/neutering, vaccinations, and post-operative anti-inflammatory treatment for a single cat?"
       },
       "original_answer": "150 yuan",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "The total cost for spaying/neutering, vaccination, and post-operative anti-inflammatory treatment for a single cat is approximately 150 yuan.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation (cost details).",
       "generated_at": "2026-02-24T11:16:50.054932",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'Stray Cat Spay/Neuter Fund Donation Chain' mentioned in the conversation, which image shows this content? Provide the session number and image file name."
       },
       "original_answer": "2.png in session3",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "The donation chain in the community group has already started.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Based on the textual information in the conversation (donation chain), retrieve the corresponding image (2.png).",
       "generated_at": "2026-02-24T11:16:50.054932",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "Who proposed and formulated the content in the problem image?"
       },
       "original_answer": "Li Yifan",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "I have the same idea. We could try to establish a \"Civilized Management Convention for Stray Animals in the Community,\" which would include provisions such as designated feeding areas, support for sterilization, and opposition to animal abuse. This would allow for systematic management, preventing emergencies like the sudden cold snap in early March and reducing uncontrolled breeding.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "I've already drafted one. What do you think of this announcement style? The content is based on your previous experience with community activities, emphasizing practicality and a human touch. It also incorporates the practical needs we've identified through our journey from cat shelters to TNR.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Image1.png (showing a mother cat being trapped) triggered Zhao Xiaotang's textual description.",
       "generated_at": "2026-02-24T11:16:50.054932",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In the conversation, how is the problem image referred to or cited?"
       },
       "original_answer": "This announcement template is very comprehensive in content.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "I've already drafted one. What do you think of this announcement style? The content is based on your previous experience with community activities, emphasizing practicality and a human touch.",
-          "image": "3.png"
-        },
-        {
-          "session": "session3",
-          "turn": 11,
-          "content": "Wow, that was done so quickly! The content is very comprehensive.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: Old Towels Referenced in Different Rounds (from March collection to postoperative use).",
       "generated_at": "2026-02-24T11:16:50.054932",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the content of the convention drafted by Li Yifan in the conversation, what characteristics should a designated feeding point have if the community decides to establish one?"
       },
       "original_answer": "The content of the convention emphasizes practicality and human warmth, with specific features including designated locations, ease of management, and prevention of disorderly feeding.",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "I've drafted one. What do you think of this announcement style? The content is based on your previous experience with community activities, emphasizing practicality and a human touch.",
-          "image": "3.png"
-        },
-        {
-          "session": "session3",
-          "turn": 11,
-          "content": "The content is very comprehensive, covering fixed feeding points and neutering support.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question is based on the newly emerged convention information (images and text) in the dialogue, assessing the ability to learn and apply multimodal information.",
       "generated_at": "2026-03-03T01:56:23.831424",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what is the name of Zhao Xiaotang's family pet dog that she mentioned?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (such as the pet dog's name), the response should be declined to avoid generating hallucinations.",
       "generated_at": "2026-02-27T17:02:31.351813",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

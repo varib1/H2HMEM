@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Chen Lu went to the driver's cafeteria on June 25th. What equipment is located under the kitchen exhaust hood?"
       },
       "original_answer": "Large oven or stove",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Image 1 (File name: 1.png): Detailed description: ...Below the range hood is a large oven or stove...",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The problem recalls specific object information from the image description and locates the image by describing part of its content.",
       "generated_at": "2026-02-28T23:28:01.460591",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on Fang Qing's mention in the conversation that 'there is obvious oil stain under the range hood, which indeed requires attention,' locate the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "1.png in session5",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Fang Qing: Master Chen, I've seen the photos you sent. The grease stains under the range hood are quite noticeable, so we really need to pay attention to that.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The problem involves recalling images based on textual content, which aligns with the first type of Cross-modal Related Retrieval.",
       "generated_at": "2026-03-01T12:36:18.184797",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "Why did Chen Lu send the problematic image?"
       },
       "original_answer": "Want to share with Fang Qing the situation of the buffet counter at another cafeteria, comparing it with the previous driver's cafeteria.",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "At another cafeteria's buffet counter, I took this photo. It looks clean, but I heard they use cheap frozen meat and repeatedly reuse the oil for frying. Our drivers go there for convenience and affordability, but we have our doubts.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "This reminds me of our previous discussion about the cost of the health corner, where you mentioned that 'the cost isn't high, but maintenance is required.' Choosing a cafeteria also involves balancing affordability and safety.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The question is based on image-driven text for causal inference, inquiring about the antecedent reasons and motivations for Chen Lu sending the image.",
       "generated_at": "2026-02-28T23:50:44.432239",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'Health Corner Concept' mentioned by Chen Lu referred to and how does it evolve within the dialogue?"
       },
       "original_answer": "In the third round, Chen Lu mentioned the 'Health Corner Concept,' referred to it as the 'previous Health Corner Concept' in the eleventh round, and in the fifteenth round, mentioned 'promoting it like the Health Corner Concept,' indicating a reference case that evolved from a concept to being actively promoted.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "Your earlier idea about a health corner, I think it would be very helpful if it could be extended to the cafeteria.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 11,
-          "content": "Just like the last health corner concept, you shared example pictures with a guidebook and a first aid kit. The scene in the sunlight feels reassuring, and positive examples are more motivating.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 15,
-          "content": "Your guide to avoiding pitfalls, I will compile and then report it to the company, and promote it like the health corner initiative.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the reference and evolution of the topic 'Health Corner Concept' across multiple rounds of dialogue, focusing on changes in the chain of reference.",
       "generated_at": "2026-02-24T11:22:07.029642",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "If Chen Lu sees that the utensils in a new cafeteria are not disinfected, what should he do?"
       },
       "original_answer": "Chen Lu should avoid this cafeteria because Fang Qing's guide to avoiding pitfalls when eating out suggests 'checking the utensils for disinfection, with disposable or high-temperature sterilized ones being preferable.'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 8,
-          "content": "I've compiled a few tips for avoiding pitfalls when dining out: first, check the tableware—disposable or high-temperature sterilized options are better; second, avoid places with obvious grease stains, like the one in the photo; third, choose restaurants with high customer traffic, as their ingredients tend to be fresher.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply newly acquired knowledge (Dining Out Pitfall Guide) to answer hypothetical questions, demonstrating online adaptability.",
       "generated_at": "2026-02-24T11:22:07.029642",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Chen Lu has never taken photos of animals. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "Fang Qing: I remember you took a photo of a yellow dog in April. Community care extends from people to the environment, with hygiene as the foundation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Introduce new information that contradicts the dialogue content (Chen Lu has never taken photos of animals) to test whether the model can identify the error.",
       "generated_at": "2026-03-08T16:38:49.274937",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, Chen Lu mentioned which cafeteria is his favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not mentioned in the conversation (favorite cafeteria) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:22:07.029642",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "medium": 2,
-      "easy": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

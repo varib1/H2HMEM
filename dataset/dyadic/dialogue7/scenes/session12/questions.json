@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,192 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What item came in handy after Shen Qingyin's son got a minor scrape during the trip?"
       },
       "original_answer": "First aid kit",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "The first aid kit proved its worth on the very first day—our son had a minor scrape, and we promptly treated it, preventing any risk of infection.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding the recollection of vague responses.",
       "generated_at": "2026-02-24T11:15:07.937443",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the tranquil environment mentioned in the conversation, which image is related to this? Provide the session number and image file name."
       },
       "original_answer": "2.png in session12",
-      "answer_source": "image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 5,
-          "content": "Send a local scenic image (2.png). The tranquil environment here also makes me reflect—systematic management is not only for risk mitigation but also for enhancing the overall experience.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Based on the textual information in the conversation, recall the corresponding images, as they are related to the same event (a tranquil environment).",
       "generated_at": "2026-02-24T11:15:07.937443",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image triggered Shen Qingyin's discussion on how joyful experiences reduce stress responses? Provide the session number and image file name."
       },
       "original_answer": "3.png in session12",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "Agreed. Additionally, sharing a picture of an amusement ride (3.png), my son was so happy playing the spinning swing for the first time, which reminds me—joyful experiences themselves can reduce stress responses. Perhaps we should more systematically incorporate psychological factors into risk management.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Inferring that the image (3.png) led to the emergence of the text (discussion about joyful experiences) is a causal inference.",
       "generated_at": "2026-02-24T11:15:07.937443",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation, what role does positive emotion play?"
       },
       "original_answer": "Positive emotions can boost immunity and reduce the risk of chronic disease flare-ups.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 12,
-          "content": "Positive emotions can indeed boost immunity and reduce the risk of chronic disease flare-ups.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Examine and learn the newly acquired multimodal information (image2.png and corresponding text) and apply this knowledge to answer the question.",
       "generated_at": "2026-02-24T11:15:07.940034",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Shen Qingyin's son experienced an acute asthma attack during the trip. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "No acute exacerbations, peak flow meter readings have consistently remained above 85%.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Check the consistency of the problem information with the dialogue content, ensuring there are no contradictions.",
       "generated_at": "2026-02-24T11:15:07.940034",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What color of new coat did Shen Qingyin buy for her son during the trip?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "none",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:15:07.940034",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3
-    }
-  }
+  ]
 }

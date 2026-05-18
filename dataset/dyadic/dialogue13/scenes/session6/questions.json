@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,218 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What two methods did Lin Shu suggest in the conversation for sharing the cost of the community dinner?"
       },
       "original_answer": "Each family brings a signature dish to share at the table, and the costs are split equally among everyone.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Lin Shu: Mr. Zhou, the Mid-Autumn Festival is approaching. I was thinking, could our community use the activity room to host a 'Neighborhood Potluck'? Each family could bring a signature dish, and we could share a meal together.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "Lin Shu: That's great! With everyone participating, the kids are sure to love it. Regarding the cost, I suggest going Dutch—splitting the bill is fairer for everyone.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, including specific suggestions.",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "What kitchen layout suggestion in the conversation does the problem picture correspond to?"
       },
       "original_answer": "Shared Kitchen Layout",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 6,
-          "content": "Zhou Mingyuan: [Sending picture: 2.jpg] Safety comes first. Look at this picture of kitchen equipment—it's professional and tidy. We can use it as a reference to plan the layout and usage guidelines for the shared kitchen.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Recall corresponding dialogue content based on image information.",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "Which activity is the issue image progress schedule primarily used for?"
       },
       "original_answer": "Mid-Autumn Family Banquet",
-      "answer_source": "both",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 13,
-          "content": "Lin Shu: [Sent picture: 4.png] Well said! I've created this implementation schedule. As you can see, it outlines the core content and division of responsibilities from preparation and promotion to execution. Key safety points are also covered, such as signing responsibility agreements and maintaining cleanliness. We can follow this to move forward, starting by focusing on the Mid-Autumn family banquet.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "The answer can only be derived by combining both the image (schedule) and the text ('focus on the Mid-Autumn family feast first').",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What kind of evaluation did the problematic image lead Zhou Mingyuan to make?"
       },
       "original_answer": "Safety comes first.",
-      "answer_source": "inference",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 6,
-          "content": "Zhou Mingyuan: [Sent picture: 2.jpg] Safety comes first. Look at this picture of kitchen equipment—it's professional and tidy. We can use it as a reference to plan the layout and usage guidelines for the shared kitchen.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The image drives the textual evaluation, establishing a causal inference relationship.",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'Pet Partner Program Activity Rules Table' referred to?"
       },
       "original_answer": "'Pet Companion Program Activity Rules Table', 'Pet Companion Rules Table', 'Pet Companion Program'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "Lin Shu: We have experience in this area. Just like when we formulated the activity rules for the 'Pet Partners' program, we clearly outlined safety accompaniment and responsibility division to avoid confusion.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 7,
-          "content": "Lin Shu: Yes, this issue can be broken down further. I recall that in the 'Pet Partner' program, we created a set of rules, which worked well. The shared kitchen could follow a similar approach by establishing a reservation system and a duty roster.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 10,
-          "content": "Zhou Mingyuan: This actually aligns closely with the original intention behind our promotion of the 'Pet Companion' program—not every family can keep a pet, but they can experience love and responsibility through community sharing.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same entity across different rounds.",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What is the name of Zhou Mingyuan's Golden Retriever mentioned in the conversation?"
       },
       "original_answer": "An'an",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 16,
-          "content": "Zhou Mingyuan: By the way, can my 'An'an' (Golden Retriever) join in the fun? He's a 'regular' at community events—he's even featured in the promotional materials for the Pet Partner Program.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information.",
       "generated_at": "2026-02-24T11:22:26.158911",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Knowledge Resolution": 1,
-      "Multimodal Causal Inference": 1,
-      "Entity Reference Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

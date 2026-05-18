@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Approximately how much is the TNR sterilization cost mentioned by Fang Qing in the conversation?"
       },
       "original_answer": "200-300 yuan each",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "The cost includes trapping, spaying/neutering, vaccination, and release, approximately 200-300 yuan per cat, depending on the organization.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:21:57.278418",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "What group is the screenshot of the problem image from?"
       },
       "original_answer": "Stray Animal Rescue Mutual Aid Group",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "Fang Qing: [Sent picture: 3.jpg] I just asked in the stray animal rescue mutual aid group, here's the screenshot. It's about 200-300 yuan per animal, depending on the organization.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall information from the image based on the text content, meeting the requirements of the second type.",
       "generated_at": "2026-03-01T12:36:13.439164",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the picture that led Fang Qing to worry that the stray cat might be pregnant, what color is the stray cat's fur?"
       },
       "original_answer": "White",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Chen Lu, look at this stray cat I often feed. Its belly seems a bit rounder, and I'm worried it might be pregnant.",
-          "image": "1.png"
-        },
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "Hmm, looking at the photo, there does seem to be some change. If another litter is born, the kittens might struggle to survive, and it would also increase the burden on the community. What do you plan to do?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inference: Images drive textual discussions, focusing on causality rather than direct correlations.",
       "generated_at": "2026-02-24T11:21:57.278418",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is the concept of 'limited responsibility, boundless love' mentioned by Fang Qing referenced and evolved across different rounds?"
       },
       "original_answer": "In the third round, Fang Qing mentioned upgrading from individual feeding to scientific management, and in the fourteenth round, Chen Lu cited this principle to advance the project.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "This actually continues our previous concept of 'limited responsibility, boundless love,' evolving from individual feeding to scientific management.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 14,
-          "content": "I recall that during the last incident involving the yellow dog, you mentioned 'responsibility is limited, but compassion is boundless.' This time, let's proceed under this principle.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the citation and evolution of the same idea across different rounds, focusing on changes in the chain of reference.",
       "generated_at": "2026-02-24T11:21:57.278418",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue content and combined with the information from the image, what benefits can TNR bring?"
       },
       "original_answer": "Control quantity, improve animal health, and reduce nuisance to residents.",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "I've looked up some information. TNR can control the population, improve animal health, and reduce disturbances to residents. It's a one-time investment that provides long-term peace of mind.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "This image briefly introduces its benefits.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The dialogue incorporates images to introduce the benefits of TNR, assessing the ability to learn and apply multimodal information.",
       "generated_at": "2026-03-08T16:38:32.688931",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the TNR cost is 500-600 yuan per cat. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "The cost includes trapping, spaying/neutering, vaccination, and release, approximately 200-300 yuan per cat, depending on the organization.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Present fee information that contradicts the dialogue content to test the ability to detect contradictions.",
       "generated_at": "2026-03-08T16:38:32.688931",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Fang Qing mentioned in the conversation that she has several pet cats?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:21:57.279697",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

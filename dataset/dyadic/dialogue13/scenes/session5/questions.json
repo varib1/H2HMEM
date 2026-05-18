@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,229 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What specific breakfast recipe did Zhou Mingyuan mention in the conversation?"
       },
       "original_answer": "Whole wheat bread with fried eggs and lettuce, ready in five minutes.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "For example, I often make a breakfast of 'whole wheat bread with fried eggs and lettuce, ready in five minutes,' which is both simple and nutritious.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which activity or experience in the conversation does the problem picture correspond to?"
       },
       "original_answer": "Make dumplings",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Xiaobao really enjoys it. He loves beating eggs and making dumplings the most. Even though his dumplings are a bit misshapen, he has a great time every time.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text Retrieval, identifying corresponding dialogue activities based on image content.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What suggestion did the problematic image prompt from Zhou Mingyuan?"
       },
       "original_answer": "Cut the fruit on the weekend and eat it directly in the morning.",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "For example, you can cut fruit with your child on the weekend, like the fruit platter in this photo, and store it in the refrigerator. Then, simply take it out to eat in the morning. This saves time and involves your child in the process.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: Image1.png prompted Zhou Mingyuan's suggestion.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What exclamation or comment did the problem picture elicit from Zhou Mingyuan?"
       },
       "original_answer": "Letting children help prepare food makes them enjoy their meals more and teaches them to value and share.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Lin Shu, over the weekend, I made simple sandwiches with the kids. Involving them in food preparation made the meal more enjoyable for them, and they also learned to appreciate and share. Look at this photo—the little one is spreading jam.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: Image 2.png triggered Zhou Mingyuan's comment.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "4.png",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "Creative Ideas for Children's Breakfast",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 12,
-          "content": "I happen to have this creative idea for children's breakfast, listing 32 options. It can be shared in the community group to spark discussion.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Track the reference and evolution of image4.png in the conversation.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The dialogue mentions that Zhou Mingyuan's children are twins. Is this consistent with the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "This reminds me of the photos I previously shared of my daughters and 'An An' on the grass.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 14,
-          "content": "This is similar to when your child was sick before, and you mentioned that twins can infect each other, leading to a shortage of hands. Community support can help alleviate the pressure.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories (daughters).",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, Zhou Mingyuan mentioned the age of his child."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse to answer.",
       "generated_at": "2026-02-24T11:22:20.281790",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Textual Conflict Detection": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 3
-    }
-  }
+  ]
 }

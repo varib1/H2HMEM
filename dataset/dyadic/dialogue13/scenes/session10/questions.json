@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,212 +15,106 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What specific sections does the community cultural festival mentioned by Lin Shu in the conversation include?"
       },
       "original_answer": "Parent-child sports competition, upcycling craft workshop, community historical photo exhibition, local intangible cultural heritage experiences (such as paper-cutting and dough figurine making), and a resident-organized evening gala.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "How about we collaborate with the school and the community to organize a small-scale 'Community Culture Festival' next spring? It could include several sections: a parent-child sports competition, a DIY workshop for upcycling old items, an exhibition of historical photos of the community, local intangible cultural heritage experiences (such as paper-cutting and dough figurine making), and an evening gala performed by residents themselves.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall the plain text facts from the conversation, with answers derived from the first round of Lin Shu's statement."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.png",
         "text": "Which experience or scene in the dialogue does the problem picture correspond to?"
       },
       "original_answer": "Warm and harmonious neighborhood interaction atmosphere",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Yes, I want to create exactly this kind of warm and harmonious neighborhood interaction. Look, these are some reference images I found, showcasing community activities—people cooking, dining, and dancing together, just like the shared kitchen and neighborhood feasts we envisioned earlier.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image→Text: Retrieve corresponding dialogue descriptions based on image information, where the image and text describe different aspects of the same event."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "Which character in the conversation exclaimed or commented on the issue picture?"
       },
       "original_answer": "Zhou Mingyuan",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Yes, I want to create exactly this kind of warm and harmonious neighborhood interaction. Look, these are some reference images I found, showcasing community activities where people cook, dine, and dance together, just like the shared kitchen and neighborhood feasts we envisioned earlier.",
-          "image": "1.png"
-        },
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "The atmosphere in the picture is truly enviable! Here's a suggestion: I'll take the initiative and volunteer to be in charge of contacting school resources.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Infer the driving relationship between the image content and the text content, where image1.png led to Zhou Mingyuan's evaluation."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How are problem images referenced or cited in the conversation?"
       },
       "original_answer": "Volunteer Registration Form",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 13,
-          "content": "I happen to have prepared a volunteer registration form titled 'Event Volunteer Sign-Up Sheet'. We can use it to collect information and assign tasks, such as venue setup, event guidance, and organizing old photos.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: Track the references and evolution of images in conversations, focusing on the descriptive methods across different rounds."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Zhou Mingyuan believes that parent-child sports competitions should be designed as highly competitive events, emphasizing winning and losing. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "How about we organize a small 'Community Culture Festival' next spring, in collaboration with the school and the community?",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "Our community has the potential to receive support from the local government, and I will work to secure the budget. Additionally, regarding the division of responsibilities, I suggest that, aside from school resources, you take charge of the detailed planning for sports events and craft workshops. I will handle venue arrangements, connections with intangible cultural heritage, and mobilizing residents. With everyone working together, this cultural festival is sure to become a flagship project for community development.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "You could try this: Let's start with a trial approach like the Mid-Autumn family banquet and create a timeline. There are still a few months until next spring, so we can prepare in stages. For example, we could launch the old photo collection next month while also contacting schools to arrange student works.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Detect whether there is a contradiction between the newly input information (budget bid failure) and existing memory (cultural festival hosting plan)."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, which specific intangible cultural heritage inheritor did Lin Shu mention would be invited to the cultural festival?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Then I'll be responsible for overall coordination, venue arrangements, and contacting external intangible cultural heritage inheritors.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "I handle the venue, intangible cultural heritage connections, and resident mobilization.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue (specific intangible cultural heritage inheritors) to assess the ability to decline answering."
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

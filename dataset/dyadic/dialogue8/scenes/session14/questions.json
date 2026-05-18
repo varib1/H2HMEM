@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,162 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Jianshen mentioned her screen usage statistics from the past 7 days, which showed that she had set a rule for herself to read high-quality sources for how many hours each day?"
       },
       "original_answer": "2 hours",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "I set a rule for myself to read only two hours of high-quality sources each day, but in reality, I'm drowning in a sea of information.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid recalling generic responses.",
       "generated_at": "2026-02-24T11:16:08.100344",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the textual information in the conversation, which image shows the application interface used by Gu Zhizhou to manage information intake? Provide the session number and image file name."
       },
       "original_answer": "2.png in session14",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 2,
-          "content": "I've designated every Sunday as my 'Low Information Input Day', using this 'Information Diet List' app to manage it.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event, not involving causal inference.",
       "generated_at": "2026-02-24T11:16:08.100344",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What action of Gu Zhizhou made Lin Jianshen think of the problematic picture?"
       },
       "original_answer": "Gu Zhizhou designated every Sunday as his \"Low Information Input Day.\"",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "Your approach reminds me of this. Detachment isn't about completely disconnecting, but about establishing boundaries. The three questions on this sticky note are what I ask myself before writing, to help filter out irrelevant information.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Images drive the emergence of textual content, focusing on causal inference.",
       "generated_at": "2026-02-24T11:16:08.100344",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Gu Zhizhou designated every Saturday as his \"Low Information Input Day.\" Does this contradict the conversation content? Answer yes or no. If it is contradictory, then which day of the week should it be?"
       },
       "original_answer": "Yes, it should be Sunday.",
-      "answer_source": "both",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 2,
-          "content": "In cross-border work, I've found that excessive connectivity can actually undermine deep thinking. I've designated every Sunday as my 'low information input day,' using this 'information diet list' app to manage it.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Detect the consistency between newly input information and existing memories to avoid contradictions.",
       "generated_at": "2026-02-24T11:16:08.100344",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lin Jianshen mentioned in the conversation what her favorite color is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:16:08.100344",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

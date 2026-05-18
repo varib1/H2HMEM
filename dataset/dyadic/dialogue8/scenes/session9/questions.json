@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,230 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When describing the architecture of Registan Square, which style of arches and mosaic decorations did Gu Zhizhou mention?"
       },
       "original_answer": "Islamic style",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "From another perspective, these Islamic-style arches and mosaic decorations remind me of the analysis you previously mentioned about the convergence of civilizations.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:14:44.295851",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the description of the market photo mentioned in the conversation, which file name does this image correspond to? Provide the session number and the image file name."
       },
       "original_answer": "2.png in session9",
-      "answer_source": "image_description",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Took another photo of the market! It looks so lively—I’ve never seen such a market in real life before, with its densely packed stalls and a wide variety of goods. It reminds me of the localization strategies in cross-border market experiences.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where the two are related due to the same event, not through causal inference.",
       "generated_at": "2026-02-24T11:14:44.295851",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What response did the problematic image elicit from Lin Jianshen?"
       },
       "original_answer": "This architectural style has become a local characteristic.",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "Teacher Lin, I've just arrived at Registan Square in Samarkand and I see buildings with the same architectural style you shared with me before I came! From another perspective, these Islamic-style arches and mosaic decorations remind me of the analysis you mentioned earlier about the convergence of civilizations.",
-          "image": "1.png"
-        },
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "In Uzbek culture, the use of these geometric patterns and colors reminds me of the ceremonial aspect of Kyoto cuisine—both emphasize a profound connection between visual aesthetics and cultural depth.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring the causal relationship between images and text, where image 1 triggers subsequent associations.",
       "generated_at": "2026-02-24T11:14:44.295851",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "In the dialogue, how are the problem images referred to and cited?"
       },
       "original_answer": "\"Photos of the market\", \"This kind of market\", \"It\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Took another photo of the market! It looks so lively—I’ve never seen such a market in real life before, with its dense stalls and a dazzling array of goods. It reminds me of the localization strategies in cross-border market experiences.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "From another perspective, the disappearance of such markets may also be linked to local changes under globalization. Just like the challenges of pet migration in Session 6, this reflects adaptation and loss in the flow of culture.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 8,
-          "content": "Indeed, it reflects the cultural and political issues inherent in the process of modernization. This market model often relies on a society of acquaintances and a manual economy, making it difficult to sustain when large-scale production and digital platforms emerge.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same entity across different rounds to form a reference chain.",
       "generated_at": "2026-02-24T11:14:44.295851",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, what might blue symbolize?"
       },
       "original_answer": "Sacred or serene",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 12,
-          "content": "In comparative literature, colors are often analyzed as symbolic systems. For example, blue may symbolize divinity or tranquility, while green represents life, which is related to religious imagery in Islamic culture.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply newly learned color symbol knowledge in conversation to answer questions, assessing online adaptability.",
       "generated_at": "2026-02-24T11:14:44.296865",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the bazaars in Uzbekistan have completely disappeared under globalization. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Took another photo of the market! It looks so lively—I’ve never seen such a market in real life before, with its dense stalls and a wide variety of goods. It reminds me of the localization strategies in cross-border market experiences.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 6,
-          "content": "This type of market was quite common in China during the 1980s and 1990s, but with the development of reform and opening-up, it gradually became obsolete. It reflects the transformation from traditional economic models to modern consumer society, much like the dialectical relationship between idealism and the dilemmas of reality discussed in the film from Session 2.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "From another perspective, the disappearance of such markets may also be linked to local changes under globalization. Just like the challenges of pet migration in Session 6, this reflects adaptation and loss in the flow of culture.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new information (\"completely disappeared\") and existing memories (the market exists and discussions about its changes).",
       "generated_at": "2026-02-24T14:14:04.827742",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

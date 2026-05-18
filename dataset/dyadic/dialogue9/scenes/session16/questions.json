@@ -6,7 +6,6 @@
     "session_number": 16,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,173 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which high-frequency needs will the 'Resident Talent Pool' plan mentioned by Zhao Xiaotang in the conversation start with?"
       },
       "original_answer": "Repair small appliances, haircuts, tutoring children with homework",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 3,
-          "content": "But this time, we need to be more pragmatic, starting with high-frequency needs such as repairing small household appliances, haircuts, and tutoring children's homework, to cover the core needs of residents.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recall specific facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:20:31.429158",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the registration form design mentioned by Li Yifan in the conversation, what fields does the form include?"
       },
       "original_answer": "The form includes fields such as name, specialty, available service time, and service scope.",
-      "answer_source": "image_description",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 6,
-          "content": "I just drafted a registration form interface and sent it to you for a look.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information, both related to the same event (registration form design).",
       "generated_at": "2026-02-24T11:20:31.429158",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Zhao Xiaotang believes which picture connects her and Li Yifan's efforts? Provide the session number and picture file name."
       },
       "original_answer": "3.png in session16",
-      "answer_source": "inference",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 16,
-          "content": "I just drew a blueprint sketch and sent it to you for a look.",
-          "image": "3.png"
-        },
-        {
-          "session": "session16",
-          "turn": 17,
-          "content": "Fantastic! This blueprint ties together all our efforts—from the secondhand market, health monitoring, care cards, policy interpretation, and risk prevention, to the New Year's celebration, procurement plans, and cat shelter upgrades. Now, with the addition of the talent pool, it truly forms a mutual aid network with both depth and breadth.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: 3.png (blueprint schematic) sparked Zhao Xiaotang's ideas about project linkage in subsequent rounds, which is causal inference.",
       "generated_at": "2026-02-24T11:20:31.429158",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the knowledge learned from the conversation, what privacy protection measures can be designed for the online registration process? (It is necessary to learn from the content of the conversation and make appropriate adjustments.)"
       },
       "original_answer": "Only authorized core personnel are allowed to view sensitive information; regular users can only see available service items and scope.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 4,
-          "content": "Set up a privacy protection module to authorize only core community coordinators to view sensitive information. I am responsible for organizing and maintaining the backend data.",
-          "image": "2.png"
-        },
-        {
-          "session": "session16",
-          "turn": 10,
-          "content": "Privacy protection must be thorough, allowing only key coordinators like you and me to view complete information, while ordinary residents can only see the available services and their scope.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (the registration form interface in image 2.png) and apply it to answer privacy protection measures based on this.",
       "generated_at": "2026-02-24T11:20:31.429158",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, which specific date did Zhao Xiaotang mention as the launch time for the 'Talent Pool'?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "For information not mentioned in the conversation (such as the specific launch date), the response should be declined to avoid generating hallucinations.",
       "generated_at": "2026-02-24T11:20:31.429158",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,254 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What condition did Da Liu's old running shoes develop that made him want to replace them?"
       },
       "original_answer": "Excessive wear",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 36,
-          "content": "Da Liu: [Sent picture: img9.jpg] Finally chose the discounted item, payment successful.",
-          "image": "img9.jpg"
-        }
-      ],
       "validation_notes": "Recall the transaction amount details in the image, which falls under image information retrieval.",
       "generated_at": "2026-03-23T10:08:51.132623",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the brand of the luxury collaboration sneakers recommended by Ricky, and how much do they cost?"
       },
       "original_answer": "Nike, 1499 yuan",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 17,
-          "content": "Ricky: [Sends picture: img4.jpg] Check out my shoe wall, it's practically an art exhibition.",
-          "image": "img4.jpg"
-        }
-      ],
       "validation_notes": "Retrieving corresponding images based on the text \"shoe wall\" belongs to cross-modal retrieval from text to images.",
       "generated_at": "2026-03-23T10:08:51.132639",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "img6.jpg",
         "text": "Xiao Pi wonders whether the item on the left or the one on the right in the problem picture appears whiter."
       },
       "original_answer": "Left",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Da Liu: [Sends picture: img1.jpg] Everyone, take a look at my old running shoes. The wear is quite severe. Should I replace them?",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 58,
-          "content": "Coach Zhang: @Big Liu Yes, I noticed the wear pattern from the picture you posted. I recommend considering changing your shoes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that the image img1.jpg leads to Coach Zhang's judgment of eversion in the textual response constitutes a causal inference driven by the image.",
       "generated_at": "2026-03-23T10:08:51.132644",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did Da Liu's foot type issue evolve from 'excessive pronation' to 'outward turning'?"
       },
       "original_answer": "Coach Zhang initially judged it as excessive internal rotation in the second round, later corrected it to eversion in the 16th round, and confirmed in the 58th round that the wear pattern observed in the images was eversion.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "Coach Zhang: @Big Liu, it looks like you have severe overpronation and may need better support.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 16,
-          "content": "Coach Zhang: @Big Liu, looking at Figure 1, it really looks more like an outward flip. Maybe I was mistaken before.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 58,
-          "content": "Coach Zhang: @Big Liu Yes, I noticed the wear pattern from the picture you posted. I recommend considering changing your shoes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the issue of Liu's foot shape across different rounds, from excessive pronation to eversion.",
       "generated_at": "2026-03-23T10:08:51.132649",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation content, can repair glue be used to fix running shoes? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 63,
-          "content": "Coach Zhang: [Sent picture: img14.jpg] @Everyone The correct way to tie shoelaces is important, especially for running gear.",
-          "image": "img14.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 64,
-          "content": "Da Liu: @Coach Zhang It seems I need to learn the correct way to tie my shoelaces.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply the newly acquired image information (shoe-tying method) to answer the question, assessing online learning ability.",
       "generated_at": "2026-03-23T10:08:51.132663",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The wear on Da Liu's old running shoes is due to overpronation. Does this contradict the conversation information? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "Coach Zhang: @Big Liu, it looks like you have severe overpronation and might need better support.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 16,
-          "content": "Coach Zhang: @Big Liu, looking at Figure 1, it really looks more like an outward flip. Maybe I was mistaken before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new information (internal rotation) and conversational memory (external rotation).",
       "generated_at": "2026-03-23T10:08:51.132668",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what brand of running shoes did Da Liu mention as his favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (Liu's favorite brand) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-23T10:08:51.132673",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

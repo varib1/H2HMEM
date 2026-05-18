@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,260 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When Lin Xingwan was promoting the campus stray animal adoption platform, what did the backend data indicate as the primary source of visits?"
       },
       "original_answer": "Moments and Campus Forum",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "The backend shows that the main visits come from Moments and campus forums.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.png",
         "text": "How is the problem image described in the conversation?"
       },
       "original_answer": "Cozy, a puppy lying on the backpack, a cat resting on the book.",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 2,
-          "content": "That promotional illustration of yours is so heartwarming, with the puppy lying on the backpack and the cat resting on the book.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image → Text: Retrieving Descriptions from Conversations Based on Images",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "Which function or interface in the dialogue does the problem image correspond to?"
       },
       "original_answer": "Server logs and statistics interface",
-      "answer_source": "both",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "The dark theme on the left is for real-time monitoring, while the light theme on the right is for data summary.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image → Text: Function Description Based on Image Recall in Conversations",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "What thoughts did the problematic picture provoke in Lin Xingwan?"
       },
       "original_answer": "Reaffirmed the significance of my project.",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 9,
-          "content": "Look at this! I found pictures of successful cases from animal rescue organizations and wanted to share them with you. This makes me even more convinced of the significance of our project.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Image-driven text, causal inference",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'Compassion Points' system mentioned?"
       },
       "original_answer": "Design a 'Love Points' system to encourage action.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 6,
-          "content": "Design a 'Love Points' system to encourage action.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Tracking the evolution of entities and their reference chains across different rounds",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "1.png",
         "text": "Combined with this image, what is Lin Xingwan's main purpose in choosing it?"
       },
       "original_answer": "Attract attention",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 3,
-          "content": "I specifically chose this picture to attract more classmates' attention.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image→Text: Learn new information and apply it, adapt online",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Lin Xingwan mentioned that backend data shows the PV has already exceeded a hundred, but Lu Chenguang pointed out in the fourth round that there is a bug with form submissions. Does this seem contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 3,
-          "content": "Backend data shows that the page views have exceeded one hundred.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "Currently, the form submission is smooth and free of bugs.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detecting contradictions between newly input information and existing memories",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What is Lin Xingwan's favorite animal mentioned in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Asking about information not present, testing refusal-to-answer capability.",
       "generated_at": "2026-02-24T11:27:59.747417",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 2,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

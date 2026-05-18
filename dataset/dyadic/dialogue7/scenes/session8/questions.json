@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,249 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which specific allergen source did Shen Qingyin mention in the conversation that might affect the redundancy requirement for CADR values?"
       },
       "original_answer": "Pet hair",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 13,
-          "content": "Weian, based on these parameters, do you think the CADR value needs additional redundancy? For example, considering that there may occasionally be pet hair in the room, although Ping An provides good emotional support as mentioned in Session 3, it might increase allergens.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the horizontal comparison table mentioned in the conversation, how many products are compared in the image?"
       },
       "original_answer": "6 products",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "Here is a comparative table based on publicly available data. Please note that we are focusing on parameters, not specific brands. You can refer to metrics such as CADR, HEPA grade, noise, and energy consumption, similar to how we only discussed risk stratification and cost-effectiveness when you shared the actuarial table in Session 1.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event (sending a horizontal comparison table), not causally.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image's transmission led to Shen Qingyin's comment in the conversation that models with high CADR values often have slightly higher noise levels? Provide the session number and image file name."
       },
       "original_answer": "3.png in session8",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "Here is a comparative table based on publicly available data. Please note that we are focusing on parameters and not discussing specific brands. You can refer to metrics such as CADR, HEPA grade, noise, and energy consumption, similar to how we only focused on risk stratification and cost-effectiveness when you shared the actuarial table in Session 1.",
-          "image": "3.png"
-        },
-        {
-          "session": "session8",
-          "turn": 9,
-          "content": "Thank you. From the table, models with higher CADR values tend to have slightly higher noise levels, which requires a trade-off. This is similar to what we discussed in Session 7 about label reading, where we balanced health benefits (low added sugar) and children's acceptance (taste).",
-          "image": ""
-        }
-      ],
       "validation_notes": "The sending of image3.png (horizontal comparison table) directly triggered Shen Qingyin's comments on the trade-off between CADR and noise in the 9th round, which is a causal inference of text driven by images.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "In a conversation, how are the images in questions referred to and cited?"
       },
       "original_answer": "Initially, the requirement list for the room air purifier, followed by your list, and finally the table.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 1,
-          "content": "Weian, I've compiled a list of requirements for the air purifier in our son's room and sent it to you for review. Based on our previous discussions about asthma management, particularly the environmental control module outlined in the \"Children's Asthma Home Management Pathway\" designed in Session 2, I want to ensure this upgrade more precisely supports his health.",
-          "image": "1.png"
-        },
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "Received. Your list is very systematic.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 3,
-          "content": "Let me reorganize the table.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential changes of entities in the requirement list images.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "If you want to choose a model with a long filter life and easy replacement, which principle mentioned in the conversation does this align with?"
       },
       "original_answer": "Operability Principle",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 12,
-          "content": "Song Weian: Yes, systematic management includes maintenance costs. It is recommended to choose models with long filter lifespans and easy replacement to reduce operational burdens. This aligns with the emphasis on operability when establishing health records in Session 3, avoiding abandonment of implementation due to complexity.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Need to learn new information (filter lifespan from image 3.png and actionable suggestions from the conversation) and apply it to answer the question.",
       "generated_at": "2026-02-24T14:13:45.357341",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "If the CADR value should be at least 5 times the room area, does this contradict the conversation content? Answer yes or no."
       },
       "original_answer": "No",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "Received. Your checklist is very systematic and reflects our consistent risk management mindset. From a medical perspective, I suggest adding two key parameters: the CADR value should be at least five times the room area, and confirming that the HEPA filter is H13 or higher. This ensures that the purification efficiency matches the actual needs, just as we emphasized evidence-based approaches over intuition when discussing dietary plans in Session 6.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Check for consistency between new information and existing memories to confirm there are no contradictions.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what brand of air purifier did Shen Qingyin mention is her son's favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "Sending you a horizontal comparison table, compiled based on public data. Note that we focus on parameters, not specific brands.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (specific brand) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:14:24.238708",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

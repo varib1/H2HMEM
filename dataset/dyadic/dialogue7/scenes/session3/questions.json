@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,206 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "After Shen Qingyin's son's asthma symptoms were relieved, what was the PEF value one hour later?"
       },
       "original_answer": "85%",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "Subsequent monitoring showed that the PEF value steadily recovered, reaching 85% after one hour and remaining above 90% thereafter.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the cost comparison mentioned in the conversation, how much money is saved as shown in the image depicting the cost difference between home treatment and emergency room treatment?"
       },
       "original_answer": "743 yuan",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "Wei An, I calculated the cost of handling this at home compared to going to the emergency room. Sending you the comparison chart—it saved about 2 hours and 500 yuan, which aligns with my actuarial mindset, emphasizing cost-effectiveness.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information; the two are related due to the same event, with no causal relationship.",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What discussion did the problematic image spark regarding Shen Qingyin?"
       },
       "original_answer": "Cost-effectiveness",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "Wei An, I've calculated the cost of this home treatment compared to going to the emergency room. Sending you the comparison chart—it saved about 2 hours and 500 yuan, which aligns with my actuarial mindset, emphasizing cost-effectiveness.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The image drives the textual discussion, focusing on causal inference.",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "In the conversation, how are the problem images referred to or cited?"
       },
       "original_answer": "Initially described as 'This is the record of my son's PEF value drop yesterday,' it was later abbreviated to 'picture.'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Weian, here is the record from yesterday when my son's PEF value dropped. The peak flow meter reading showed a decrease to 70% of his personal best.",
-          "image": "1.png"
-        },
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Qingyin, I've received the image. The data is very clear, and the PEF value of 70% indeed triggers the green zone threshold we discussed last time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Has Shen Qingyin's son's PEF value dropped to 50%? Does this contradict the conversation information? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "The peak flow meter reading shows a drop to 70% of the personal best.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between new input information (50%) and existing memory (70%).",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What color inhaler did Shen Qingyin's son use during an asthma attack?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "I immediately had him use the spare inhaler—remember how you reminded me in Session 2 to check the storage location and expiration date? I went through the checklist to ensure it was usable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (inhaler color) to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:12:46.077296",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,205 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Qin Shuo mentioned that by adjusting his daily routine, he increased a certain score by what percentage?"
       },
       "original_answer": "15%",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qin Shuo: Wanqing, check out the weekly data from my new fitness tracker! After adjusting my routine for a week, my recovery rate has skyrocketed, and I feel completely refreshed.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Qin Shuo: Haha, you were so efficient when you helped me with the travel plans before, and now it's time for health data. I feel like the HRV monitoring on this fitness tracker is particularly accurate—I've compared it with the medical-grade equipment I used before. Just like how you used data-driven insights to help me choose the Imarno Hostel back then, I'm now using data to guide my daily routine.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The core anchor mentions Qin Shuo 'showing off' that he improved a certain score by 15% by adjusting his schedule, but the specific number 15% does not directly appear in the dialogue and needs to be extracted from the anchor information.",
       "generated_at": "2026-02-24T11:10:09.785034",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to Qin Shuo's description in the conversation, what health indicators does his newly acquired fitness band display?"
       },
       "original_answer": "HRV, Recovery Rate, Sleep Score",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, check out the weekly data from my new fitness tracker! After adjusting my routine for a week, my recovery rate has skyrocketed, and I feel completely refreshed.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Qin Shuo: I feel the HRV monitoring of this wristband is particularly accurate; I've compared it with the medical-grade equipment I used before.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The answer must extract indicators such as HRV, recovery rate, and sleep score from the image, testing memory and understanding of the image content, and avoid directly providing the original image.",
       "generated_at": "2026-02-24T11:10:09.785034",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image led Qin Shuo to comment in the conversation, \"I feel this bracelet's HRV monitoring is particularly accurate\"? Provide the session number and the image file name."
       },
       "original_answer": "1.png in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qin Shuo: [Sending picture: 1.png] Wanqing, check out the weekly data from my new health tracker!",
-          "image": "1.png"
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Qin Shuo: I feel the HRV monitoring of this wristband is particularly accurate; I've compared it with the medical-grade equipment I used before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring the causal relationship between images and text: After Qin Shuo sent 1.png, he later commented in the conversation that HRV monitoring is accurate.",
       "generated_at": "2026-02-24T11:10:09.785034",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "In the conversation, how is the question image referred to or cited by both parties?"
       },
       "original_answer": "Weekly data from the newly acquired health bracelet, your algorithm performance, health data.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, check out the weekly data from my new fitness tracker! After adjusting my routine for a week, my recovery rate has skyrocketed. I feel completely refreshed.",
-          "image": "1.png"
-        },
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "Oh? The data enthusiast is back online. Let me see how your algorithm performs. I remember last time in Tokyo, you were just as excited sharing photos of temples and traffic issues. Now you've gone from travel data to health data.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Qin Shuo: Haha, you were so efficient when you helped me with the travel plans before, and now it's time for health data. I feel like the HRV monitoring on this fitness tracker is particularly accurate—I've compared it with the medical-grade equipment I used before. Just like how you used data-driven insights to help me choose the Imarno Hostel back then, now I'm also using data to guide my daily routine.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of topics in multi-turn conversations, from proposing ideas to concrete plans.",
       "generated_at": "2026-02-24T11:10:09.785034",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What brand is Qin Shuo's health bracelet?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qin Shuo: [Sending picture: 1.png] Wanqing, check out the weekly data from my new health tracker!",
-          "image": "1.png"
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Qin Shuo: I feel the HRV monitoring of this wristband is particularly accurate; I've compared it with the medical-grade equipment I used before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:10:09.785034",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 1,
-      "hard": 2
-    }
-  }
+  ]
 }

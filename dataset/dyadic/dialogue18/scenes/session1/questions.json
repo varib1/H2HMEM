@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,239 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Among the geological risks mentioned by Shiyan, which one is based on observations from aerial photographs?"
       },
       "original_answer": "Scree slope",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 4,
-          "content": "The valley on the left side of the image has a steep orientation, and I suspect there might be a scree slope.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text Recall: Recall specific observations from the conversation based on the images, avoiding generic responses.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.webp",
         "text": "Which terrain feature in the dialogue corresponds to the image in question?"
       },
       "original_answer": "Contour map",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "I also found this contour map, which can show the terrain more clearly.",
-          "image": "2.webp"
-        }
-      ],
       "validation_notes": "Image → Text: Recall corresponding dialogue content based on image information, both related to the same event (terrain assessment).",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "What suggestion did the problematic image prompt from Shi Yan?"
       },
       "original_answer": "Requires teamwork",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 12,
-          "content": "The picture shows you using trekking poles, which is good. However, undeveloped valleys pose higher risks and require teamwork.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: Image 3 triggered Shi Yan's suggestion on team collaboration, which is a causal inference.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is Ye Lu's 'equipment list' referred to?"
       },
       "original_answer": "Equipment List, Detailed Equipment List, Equipment List and More Detailed Map",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 7,
-          "content": "You previously emphasized safety first, so what emergency equipment should I prepare?",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "First, provide your detailed equipment list, including communication devices, first aid kits, and spare clothing.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 15,
-          "content": "I will provide the equipment list and a more detailed map as soon as possible, and then we can discuss further.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the entity 'Equipment List' across different rounds.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.webp",
         "text": "Based on the analysis of the contour map, which areas should Yelu avoid?"
       },
       "original_answer": "Low-lying area",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "Spring snowmelt or rainfall can cause water levels to rise sharply, so avoid low-lying areas when hiking.",
-          "image": "2.webp"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn Shi Yan's analysis of Image 2 (risk areas) and apply this knowledge to answer questions.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Ye Lu plans to shoot in mid-March. Shi Yan points out that there may be seasonal stream surges at that time. Is this contradictory to the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 3,
-          "content": "I would like to go in mid-April when the azaleas are in full bloom, and plan to stay for about two or three days.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 4,
-          "content": "There may be a seasonal stream surge in mid-April, with a relatively high risk.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Identify potential contradictions between the Yelu Plan and the Shiyan Risk Warning.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "The conversation did not mention what Ye Lu's favorite hiking gear is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "none",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Responding to information not present in the conversation ('favorite hiking gear') to avoid hallucinations.",
       "generated_at": "2026-02-24T11:33:41.268810",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Text-Image": 1,
-      "Text": 3
-    },
-    "by_difficulty": {
-      "medium": 4,
-      "hard": 3,
-      "easy": 1
-    }
-  }
+  ]
 }

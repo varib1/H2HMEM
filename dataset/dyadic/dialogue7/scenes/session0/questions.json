@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.172049"
@@ -18,543 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Shen Qingyin mentioned which disease she is most concerned about regarding her son, and in the subsequent conversation, what management plan did Song Wei'an organize for it?"
       },
       "original_answer": "Shen Qingyin mentioned that she is most concerned about her son's asthma, and Song Wei'an compiled a draft of the \"Family Management Pathway for Childhood Asthma.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 10,
-          "content": "Shen Qingyin: The risk during childhood is relatively low, but specific diseases such as asthma should not be overlooked. In fact, what I am most concerned about is managing my son's asthma risk—as a health manager, I deeply understand the importance of combining early intervention with financial security.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Song Wei'an: [Sending picture: 1.png] Qingyin, based on our previous discussion about the annual health data, I have compiled a draft of the \"Family Management Pathway for Childhood Asthma\" and am sending it to you for review.",
-          "image": "session2/1.png"
-        }
-      ],
       "validation_notes": "Recall plain text facts, involving details from two different sessions.",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In Session 6, Shen Qingyin shared images about allergen warnings and recommendations for anti-inflammatory foods, and in Session 7, she sent close-up shots of the nutritional information table for children's yogurt. Based on these two discussions, what types of risk factors does Shen Qingyin focus on when purchasing children's food?"
       },
       "original_answer": "When purchasing children's food, Shen Qingyin focuses on three key risk factors: added sugar content, trans fats, and allergen information. In the image from Session 6, she pays attention to allergen warnings (such as nuts, seafood, etc.); in Session 7, she circles the added sugar, trans fats, and allergen information on the yogurt label and inquires about the risk levels of these ingredients.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 5,
-          "content": "Shen Qingyin: [Sends image: 3.png] I've sent you the picture. Look, nuts and seafood are listed as allergens on the left, while anti-inflammatory foods on the right include deep-sea fish and whole grains. This suggests we need to balance benefits and risks.",
-          "image": "session6/3.png"
-        },
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sent image: 1.png] Wei An, I'm at the supermarket shopping and saw this children's yogurt. The nutrition label highlights added sugar, trans fats, and allergen information. Based on the dietary principles we discussed earlier, what percentage of a child's daily intake does this represent? What is the risk level?",
-          "image": "session7/1.png"
-        }
-      ],
       "validation_notes": "Integrate the concerns regarding food risk factors from Session 6 and Session 7.",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session2/4.png",
         "text": "Is the problem picture truly effective for Shen Qingyin's subsequent handling of her son's sudden asthma attack?"
       },
       "original_answer": "Effective, symptoms were relieved within 30 minutes.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Shen Qingyin: I immediately had him use the backup inhaler while adjusting the room environment, closing the windows to prevent pollen from entering. The medication time was recorded on a sticky note, and environmental adjustments were carried out simultaneously. The contingency plan was effective, with symptoms alleviating within 30 minutes, thereby avoiding an emergency room visit.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 12,
-          "content": "Shen Qingyin: [Sends picture: 4.png] Wei An, I've compiled an emergency flowchart and sent it to you for confirmation. It is based on your suggestions and my actuarial analysis, highlighting risk management and cost-effectiveness. For example, the flowchart guides how to assess the urgency of a situation to reduce unnecessary medical expenses.",
-          "image": "session2/4.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In Session 4, Song Wei'an suggested creating a health record for \"Ping An\" and sent an example picture of the health record. In Session 5, which picture did Shen Qingyin send that was created to assess the insurance needs of \"Ping An\"?"
       },
       "original_answer": "In Session 5, the cost-benefit analysis table image (session5/3.png) sent by Shen Qingyin was created to evaluate the insurance needs for \"Ping An.\" This table assesses out-of-pocket expenses and insurance reimbursements for high-incidence disease scenarios in Labrador Retrievers, such as joint surgery, skin disease recurrence, and ear infections. It aligns with the goal established in Session 4 of creating a health profile for Ping An and focusing on their health risks.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 6,
-          "content": "Song Wei'an: Completely agree. Prevention is better than cure. I suggest creating a health record for 'Ping'an,' which should include not only medical records but also daily behaviors, appetite, and exercise levels—just like the asthma management plan we set up for our son.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 8,
-          "content": "Song Weian: [Sending image: 3.png] I'm sending you an example of a health record. This form has a clear structure, including basic information, vaccination, and deworming records. We can adjust it based on Ping An's situation.",
-          "image": "session4/3.png"
-        },
-        {
-          "session": "5",
-          "turn": 8,
-          "content": "Shen Qingyin: [Sends image: 3.png] Wei An, this is the table I organized, evaluating out-of-pocket costs and insurance reimbursements for scenarios such as joint surgery, skin disease recurrence, and ear infections. Based on probabilistic thinking, I calculated the expected returns to help assess the 'cost-effectiveness' of insurance products.",
-          "image": "session5/3.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Shen Qingyin shared actuarial tables (2.png) based on large-scale population data to assess health risks. In Session 5, how do they apply similar actuarial methods to evaluate pet insurance?"
       },
       "original_answer": "In Session 5, they applied actuarial methods to evaluate pet insurance by organizing charts of disease incidence rates, calculating out-of-pocket expenses and insurance payouts under different scenarios, and assessing expected benefits and cost-effectiveness.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 4,
-          "content": "Shen Qingyin: [Sends image: 2.png] Perfect timing. I’m sharing an actuarial table based on large-scale population data, covering major health risks and expected medical expenses across different age groups. This can help you assess risks from a probabilistic perspective—for example, the lipid trends you mentioned might correspond to chronic disease risks in specific age ranges.",
-          "image": "session1/2.png"
-        },
-        {
-          "session": "5",
-          "turn": 3,
-          "content": "Song Wei'an: [Sending picture: 2.png] This is a chart I compiled on the incidence rates of common diseases in Labrador Retrievers. As you can see, the incidence of joint dysplasia is 25%, skin diseases 35%, and ear infections 45%. These data are based on evidence-based research and align with the principle that prevention is better than cure.",
-          "image": "session5/2.png"
-        },
-        {
-          "session": "5",
-          "turn": 8,
-          "content": "Shen Qingyin: [Sends image: 3.png] Wei An, this is the table I organized, evaluating out-of-pocket costs and insurance reimbursements for scenarios such as joint surgery, skin disease recurrence, and ear infections. Based on probabilistic thinking, I calculated the expected returns to help assess the 'cost-effectiveness' of insurance products.",
-          "image": "session5/3.png"
-        }
-      ],
       "validation_notes": "Detect the process of knowledge updating, extending from health risk assessment to pet insurance assessment, involving the application of actuarial methods.",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 2, Song Wei'an sent the draft of the \"Family Management Pathway for Childhood Asthma\" (1.png). In Session 3, how did Shen Qingyin provide feedback and optimize this plan based on actual events?"
       },
       "original_answer": "In Session 3, based on the incident of her son's PEF value dropping, Shen Qingyin handled and recorded the situation according to the plan, verified the effectiveness of the plan, and suggested optimizing it by adding an environmental warning system, updating the insurance recommendation section, and creating an emergency response timeline chart for review and summary.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Song Wei'an: [Sending picture: 1.png] Qingyin, based on our previous discussion about the annual health data, I've compiled a draft of the \"Family Management Pathway for Childhood Asthma\" and am sending it to you for review.",
-          "image": "session2/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sending picture: 1.png] Wei'an, this is the record from yesterday when my son's PEF value dropped. The peak flow meter reading showed it had fallen to 70% of his personal best, and I handled it according to the plan we designed earlier.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Shen Qingyin: I immediately had him use the backup inhaler while adjusting the room environment, closing the windows to prevent pollen from entering. The medication time was recorded on a sticky note, and environmental adjustments were carried out simultaneously. The contingency plan was effective, with symptoms alleviating within 30 minutes, thereby avoiding an emergency room visit.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 7,
-          "content": "Shen Qingyin: The most effective approach is rapid identification and medication. Based on the data review from Session 1, we set clear thresholds, and this time we acted immediately upon triggering, avoiding delays. However, I'm wondering if we can identify triggering factors earlier, such as by monitoring pollen levels in advance.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 11,
-          "content": "Shen Qingyin: Yes, based on this incident, I suggest updating the insurance recommendation section. As discussed in Session 1, we should incorporate successful family handling cases into the risk assessment model to enhance autonomous decision-making.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Optimization of detection plans and the process of knowledge updating, with management plans being revised based on feedback from actual events.",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Shen Qingyin experienced the following events: A. Shared the annual health data actuarial table, B. Successfully managed her son's asthma symptoms, C. Evaluated pet insurance terms, D. Created a travel first aid kit checklist. Please determine whether the following statement is correct: Event B occurred before Event A."
       },
       "original_answer": "Incorrect. Event A occurred before Event B.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Song Wei'an: [Sent image: 1.png] Qingyin, this is a screenshot of the 2023 family health data dashboard I just finished organizing. I make it a habit to review it annually, tracking key indicators in a systematic way...",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Shen Qingyin: [Send picture: 1.png] Wei'an, this is the record from yesterday when my son's PEF value dropped. The peak flow meter reading showed it had fallen to 70% of his personal best, and I handled it according to the plan we designed earlier.",
-          "image": "session3/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Song Weian experienced the following events: A. Suggested establishing health records for pet safety, B. Shared evidence-based data on the Mediterranean diet, C. Recommended key parameters for air purifiers, D. Recommended mosquito repellent sprays and mite removal products. Please determine whether the following statement is correct: Event C occurred before Event D, and Event A occurred after Event B."
       },
       "original_answer": "The first part is correct; event C occurs before event D. The second part is incorrect; event A occurs before event B, not after.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 6,
-          "content": "Song Wei'an: Completely agree. Prevention is better than cure. I suggest creating a health record for 'Ping'an', which should include not only medical records but also daily behaviors, appetite, and exercise levels.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Song Wei'an: [Sent a picture: 1.png] Qingyin, I've just compiled some evidence-based data on the Mediterranean diet and sent you the picture. The data shows that adhering to this dietary pattern can significantly reduce the risk of cardiovascular diseases by about 30%...",
-          "image": "session6/1.png"
-        },
-        {
-          "session": "8",
-          "turn": 2,
-          "content": "Song Wei'an: Received. Your checklist is very systematic, reflecting our consistent risk management mindset. From a medical perspective, I suggest adding two key parameters: the CADR value should be at least five times the room area, and confirming that the HEPA filter is H13 grade or higher.",
-          "image": ""
-        },
-        {
-          "session": "10",
-          "turn": 8,
-          "content": "Song Wei'an: [Sending picture: 4.png] I've used this mosquito repellent spray. It's made from plant-based ingredients, has low irritation, and is suitable for children. Sending you a picture to take a look.",
-          "image": "session10/4.png"
-        },
-        {
-          "session": "10",
-          "turn": 10,
-          "content": "Song Weian: [Sent picture: 3.png] Regarding the accommodation environment, this mite removal product is quite good; I often bring it with me on business trips. Sending a picture for reference.",
-          "image": "session10/3.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "session2/1.png",
         "text": "What impact did the problematic image have on Shen Qingyin's emergency response?"
       },
       "original_answer": "Emergency response steps were provided for Shen Qingyin. When her son's PEF value dropped, following the instructions of this plan helped alleviate the symptoms within 30 minutes, thereby avoiding an emergency room visit.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Song Wei'an: [Sending image: 1.png] Qingyin, based on our previous discussion about the annual health data, I've compiled a draft of the \"Family Management Pathway for Childhood Asthma\" and am sending it to you for review. It covers environmental control, symptom monitoring, medication adherence, and acute episode response procedures, aiming to provide a systematic management approach for your son.",
-          "image": "session2/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sending picture: 1.png] Wei'an, this is the record from yesterday when my son's PEF value dropped. The peak flow meter reading showed it had fallen to 70% of his personal best, and I handled it according to the plan we designed earlier.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Shen Qingyin: I immediately had him use the backup inhaler while adjusting the room environment, closing the windows to prevent pollen from entering. The medication time was recorded on a sticky note, and environmental adjustments were carried out simultaneously. The contingency plan was effective, with symptoms alleviating within 30 minutes, thereby avoiding an emergency room visit.",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "Why does Shen Qingyin pay special attention to the added sugars, trans fats, and allergen information in the nutrition facts table when purchasing children's yogurt?"
       },
       "original_answer": "Because Song Weian had previously shared evidence-based data and dietary guideline images on the Mediterranean diet with her, the two began to pay attention to the impact of dietary management on health, particularly the importance of an anti-inflammatory diet for children with asthma.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Song Wei'an: [Sent picture: 1.png] Qingyin, I've just compiled some evidence-based data on the Mediterranean diet and sent you the picture. The data shows that adhering to this dietary pattern can significantly reduce the risk of cardiovascular disease by about 30%, the risk of diabetes by about 25%, and also help improve cognitive function.",
-          "image": "session6/1.png"
-        },
-        {
-          "session": "6",
-          "turn": 3,
-          "content": "Song Weian: [Sending picture: 2.png] Of course, I’ll send you a dietary guide image based on the principles of the Mediterranean diet. The core idea is to emphasize food variety and frequency, such as ensuring the consumption of deep-sea fish 2-3 times per week and replacing at least half of refined staple foods with whole grains. These principles are supported by extensive research for their anti-inflammatory and antioxidant effects.",
-          "image": "session6/2.png"
-        },
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sent image: 1.png] Wei An, I'm shopping at the supermarket and came across this children's yogurt. The nutrition label highlights added sugars, trans fats, and allergen information. Based on the dietary principles we discussed earlier, what percentage of a child's daily intake do these amounts represent? What is the risk level?",
-          "image": "session7/1.png"
-        }
-      ],
       "validation_notes": "Causal Inference: The discussion on the Mediterranean diet in Session 6 led to a focus on nutritional content during purchases in Session 7.",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "session2/4.png",
         "text": "In Session 3 and Session 10, how are the problem images referenced and evolved?"
       },
       "original_answer": "In Session 3, Shen Qingyin successfully managed her son's asthma symptoms by following the emergency flowchart, validating its effectiveness. In Session 10, during a discussion on travel health risks, Song Wei'an mentioned, \"Remember the emergency drill in Session 3? The experience of handling the drop in PEF value is highly valuable for reference,\" applying the lessons from the emergency flowchart to emergency preparedness in travel scenarios.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 12,
-          "content": "Shen Qingyin: [Sending image: 4.png] Wei An, I've compiled an emergency flowchart and sent it to you for confirmation. It's based on your suggestions and my actuarial analysis, highlighting risk management and cost-effectiveness.",
-          "image": "session2/4.png"
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Shen Qingyin: I immediately had him use the backup inhaler and adjusted the room environment. The contingency plan was effective, and the symptoms were alleviated within 30 minutes, avoiding an emergency room visit.",
-          "image": ""
-        },
-        {
-          "session": "10",
-          "turn": 4,
-          "content": "Song Wei'an: Exactly, prevention is better than cure. From the perspective of pediatric emergency care, we need to consider: Should the threshold for recognizing acute episodes be adjusted? Are the backup medications sufficient? What about the nearby medical resources? Remember the emergency drill in Session 3? The experience of handling the drop in PEF value is quite valuable for reference.",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "Shen Qingyin sent a photo of the Labrador named \"Ping An\" in Session 4. How is the entity \"Ping An\" referenced and discussed in Session 5 and Session 12?"
       },
       "original_answer": "In Session 5, \"Ping An\" was the subject of insurance evaluation. Shen Qingyin studied the pet insurance policy terms, while Song Wei'an provided data on common diseases in Labrador Retrievers. Together, they worked to configure suitable insurance for \"Ping An.\" In Session 12, after the trip, Shen Qingyin mentioned, \"This kind of environment has a positive impact on mental health, just as discussed in Session 4 regarding the pet 'Ping An,'\" linking the emotional support role of Ping An to the psychological experiences during the trip.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sends picture: 1.png] Wei An, this is my Labrador named 'Ping An'. It really helps lower my anxiety levels, especially when work stress is high.",
-          "image": "session4/1.png"
-        },
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Shen Qingyin: [Sends picture: 1.png] Wei An, I've researched several pet insurance options. This is a screenshot of one policy's terms, and I've highlighted the key clauses.",
-          "image": "session5/1.png"
-        },
-        {
-          "session": "5",
-          "turn": 3,
-          "content": "Song Weian: [Sending picture: 2.png] This is the chart I compiled on the incidence rates of common diseases in Labrador Retrievers. Look, the incidence of joint dysplasia is 25%, skin diseases 35%, and ear infections 45%.",
-          "image": "session5/2.png"
-        },
-        {
-          "session": "12",
-          "turn": 6,
-          "content": "Song Weian: The scenery is indeed tranquil, and such an environment has a positive impact on mental health, as mentioned in Session 4 when discussing the pet 'Ping An'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.172049",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 6,
-      "medium": 5,
-      "hard": 1
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

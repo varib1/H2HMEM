@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When discussing \"Blade Runner 2049,\" Gu Linfeng mentioned that the depth of the architectural corridor, combined with the low ceiling, emphasizes what?"
       },
       "original_answer": "The insignificance and loneliness of the character.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "Look at the depth of this corridor, combined with the low ceiling, which emphasizes the character's insignificance and sense of loneliness.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding recollection of the original response wording.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "How does Gu Linfeng describe the problematic image in the dialogue?"
       },
       "original_answer": "The pink building with a deep blue roof, combined with symmetrical composition, creates a fairy-tale-like atmosphere.",
-      "answer_source": "image_description",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "Now, look at this screenshot from *The Grand Budapest Hotel*. The pink building and the dark blue roof, combined with the symmetrical composition, create a fairy-tale-like atmosphere.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where the two are related due to the same event, not through causal inference.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "The problematic image sparked a discussion among Ye Zhiwei about what?"
       },
       "original_answer": "Discussion on whether 'clear visual focus enhances the audience's sense of warmth'",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 10,
-          "content": "Lin Feng, look at this screenshot filled with scenes of pink gift boxes. The neatly stacked boxes against the wooden arched background remind me of the user interface design you emphasized during our shopping research—clear visual focus. Could this enhance the audience's sense of warmth?",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The image (3.png) drives the discussion in the text (10th round of dialogue), which is a causal inference relationship.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how has the evolution of the 'way architecture participates in narrative' mentioned by Gu Linfeng progressed?"
       },
       "original_answer": "From emphasizing depth perception, low ceilings, and the use of color, to discussing proportions, materials, and visual ergonomics, the exploration gradually deepens into how architecture influences emotions and narratives through visual elements.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "Look at the depth of this corridor, combined with the low ceiling, which emphasizes the character's insignificance and sense of loneliness.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Yellow here not only conveys a sense of technology but also carries a hint of warning, suggesting that beneath the glossy surface of this futuristic world lies hidden dangers.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "The pink building with a dark blue roof, combined with symmetrical composition, creates a fairy-tale-like atmosphere.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 9,
-          "content": "The proportions and materials of the architecture also reinforce this point—the rectangular structure and layered design, much like the ergonomics we emphasized when designing the workbench, are both aesthetically pleasing and practical.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and the chain of reference changes of the topic 'architecture participates in narrative' across multiple rounds of dialogue.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the knowledge of the emotion wheel learned from the conversation, if a scene in a movie uses cool tones, what emotion might it map to?"
       },
       "original_answer": "Alienation",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 12,
-          "content": "In films, do visual elements also 'mirror' a similar emotional spectrum? For instance, do cool tones correspond to detachment, while warm tones correspond to coziness?",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Apply the newly learned knowledge of the emotion wheel (from the 12th round of conversation and 4.png) to answer the question, assessing online adaptability.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The architecture of \"The Grand Budapest Hotel\" is described as 'dark blue buildings and dark blue roofs.' Does this contradict the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "The pink building with a dark blue roof, combined with symmetrical composition, creates a fairy-tale-like atmosphere.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 0,
-          "content": "Image 2 description: The roof is dark blue.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Check the consistency between newly input information (descriptions in the question) and existing memories (dialogue and image descriptions) to verify there are no contradictions.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, which movie did Gu Linfeng mention uses green as the main color tone to create the atmosphere?"
       },
       "original_answer": "No information about movies using green as the main color scheme was mentioned in the conversation.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (a movie with a green color scheme) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:06:44.209841",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

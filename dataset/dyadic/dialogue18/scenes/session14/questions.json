@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,309 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is Ye Lu's budget range?"
       },
       "original_answer": "2000-3000 yuan",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 12,
-          "content": "The budget is around 2000 to 3000 yuan. It shouldn't be too expensive, but the quality must be reliable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation (budget range).",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.webp",
         "text": "What exclamation did the picture evoke from Ye Lu?"
       },
       "original_answer": "My shoulders are aching badly.",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Shiyan, I've been sorting through the footage from our last highland shoot recently and came across a rather frustrating issue. Take a look at this photo—my shoulders were aching badly, and accessing equipment after long treks was particularly inconvenient. I almost missed several great shots because of it.",
-          "image": "3.webp"
-        }
-      ],
       "validation_notes": "Image-driven text: 3.webp triggered Ye Lu's lament about shoulder soreness.",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Equipment is tidy, ordinary hiking backpack.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "[Send image: 1.png]",
-          "image": "1.png"
-        },
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "The core issue is here: ordinary hiking backpacks aren't designed with the density and shape of photography equipment in mind. You see, even though the gear is neatly packed, the combination of the inner case and equipment creates an uneven weight distribution, which naturally puts more strain on the shoulders and lower back during long treks. Moreover, accessing the gear is inevitably slow, making it difficult to capture moments instantly, as you mentioned earlier.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Tracking the referential changes of images in conversation: from sending images to descriptions of neatly arranged equipment and ordinary hiking backpacks.",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "Which experience or location in the conversation does this image correspond to?"
       },
       "original_answer": "Commonly Used List",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "[Send image: 2.jpg] This is my go-to list: a DSLR camera with two lenses, a drone, a tripod, spare batteries, memory cards, and a lightweight meal kit as discussed in the previous session.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the corresponding dialogue content (common list) based on the image content (2.jpg displays the equipment list).",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, Ye Lu's backpack issue evolves from 'shoulder pain' to 'defining needs,' tracking the referential changes of this entity across different rounds."
       },
       "original_answer": "Round 1: Severe shoulder pain (problem description) → Round 6: The backpack is completely imbalanced between 'minimalism' and 'experience' (problem analysis) → Round 18: The root cause is that ordinary backpacks are unsuitable for high-density photography equipment. The priorities are comfort first, accessibility second, and protection third (requirement definition).",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "My shoulders are aching badly, and it's particularly inconvenient to access equipment after a long trek. I've almost missed several wonderful moments because of it.",
-          "image": "3.webp"
-        },
-        {
-          "session": "session14",
-          "turn": 6,
-          "content": "Yes, exactly! Especially when quickly grabbing the camera, I have to take off my backpack and rummage through it, which is such a hassle. Do you remember the balance we discussed during the 'Delicious Upgrade' conversation? Right now, the backpack is completely out of balance between 'minimalism' and 'experience'.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 18,
-          "content": "Modularity sounds good, like the idea of independent packaging when we optimize recipes. Let me summarize: The root of the problem is that ordinary bags are not suitable for high-density photography equipment. The priorities are comfort first, accessibility second, and protection third, with a budget of 2000-3000. Consider a carrying system plus accessories. That makes it much clearer!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The Referential Chain Changes of the Knapsack Problem from Symptom Description to Problem Analysis and Then to Requirement Definition.",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.jpg",
         "text": "Based on the newly acquired image information, among the equipment Ye Lu most frequently carries, which one is an auxiliary tool for shooting?"
       },
       "original_answer": "Tripod",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "[Send image: 2.jpg] This is my go-to list: a DSLR camera with two lenses, a drone, a tripod, spare batteries, memory cards, and a lightweight meal kit as discussed in the previous session.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn new image information (2.jpg displays the equipment list) and apply this knowledge to answer questions (the tripod is an auxiliary tool).",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Detecting Contradiction: Ye Lu said her budget 'cannot be too expensive,' but Shi Yan suggested a 'professional outdoor photography bag.' Could this be contradictory?"
       },
       "original_answer": "Yes, there may be a contradiction, as professional outdoor photography bags could exceed the budget of 2000-3000 yuan. However, in the conversation, Shi Yan also suggested a more flexible alternative of a \"carrying system plus specialized photography accessories.\" Moreover, Ye Lu later accepted the modular approach, so the contradiction was resolved within the dialogue.",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 9,
-          "content": "My initial suggestion is two directions: professional outdoor photography backpacks, or a carrying system with specialized photography accessories.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 10,
-          "content": "I've looked into professional camera bags, but some are too heavy. The idea of a harness system with attachments sounds more flexible, similar to how we optimize our gear. However, I need to consider the budget and prioritize features. What do you think?",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 12,
-          "content": "The budget is around 2000 to 3000 yuan. It shouldn't be too expensive, but the quality must be reliable.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 18,
-          "content": "Modularity sounds good, like the idea of independent packaging when we optimize recipes. So let me summarize: the root of the problem is that ordinary bags are not suitable for high-density photography equipment. The priorities are comfort first, accessibility second, and protection third, with a budget of 2000-3000. Consider the carrying system plus accessories. That makes it much clearer!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Identify potentially conflicting information (budget constraints vs. professional package recommendations) and assess whether contradictions are recognized and resolved in the dialogue.",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What color is Yelu's backpack?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Shiyan, I've been sorting through the footage from our last highland shoot recently and came across a rather frustrating issue. Take a look at this photo—my shoulders were aching badly, and accessing equipment after long treks was particularly inconvenient. I almost missed several great shots because of it.",
-          "image": "3.webp"
-        },
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "[Send image: 1.png]",
-          "image": "1.png"
-        },
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "[Send image: 2.jpg] This is my go-to list: a DSLR camera with two lenses, a drone, a tripod, spare batteries, memory cards, and a lightweight meal pack as discussed in the previous session.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Refusal scenario: Avoid answering information not present in the conversation (backpack color) to prevent hallucinations.",
       "generated_at": "2026-02-24T11:36:55.647952",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 2,
-      "Cross-modal Retrieval": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

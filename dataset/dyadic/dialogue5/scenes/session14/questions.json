@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,218 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Xu Huaian mentioned the news about the demolition and renovation of the old street. What kind of mood did he express regarding this?"
       },
       "original_answer": "Mixed emotions, feeling powerless.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Just saw the news—the old street in our neighborhood is going to be demolished and redeveloped. Hearing something like this always stirs up mixed feelings. The process of disappearance never stops—it reminds me of the old objects we talked about before, from Grandpa’s brass lock to the indigo-dyed tea mat, and even the woven baskets and fabric patterns in *A Lifelong Journey*. Each one carries a slice of time. Now, the entire street is about to change, and the feeling of memories being uprooted is even more unsettling than the loss of a single object.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall textual facts from the conversation, avoid vague responses, and focus on specific descriptions of emotions.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "How many individuals participated in the memory collection activity mentioned in the conversation?"
       },
       "original_answer": "5 people participated.",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 6,
-          "content": "This is a scene from last week's event, where we all sat together, sharing details that are on the verge of fading away.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where the images and text describe different aspects of the same event without a causal relationship.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What mood does the problematic picture cause Xu Huaian to express in the conversation?"
       },
       "original_answer": "Mixed feelings about the demolition of the old street.",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "[Send picture: 1.png] I just saw the news that the old street in our area is going to be demolished and redeveloped. Hearing such news always brings mixed feelings.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Causal Inference: Images drive the emotional expression in the text, focusing on the driving relationship between images and text.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is the 'memory collection' activity mentioned by Xu Huaian described?"
       },
       "original_answer": "From residents spontaneously organizing to record old stories and photographs, to the specific description of last week's event scene, where everyone gathered to share stories about the street corner.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "In our neighborhood, residents have spontaneously organized a 'memory collection' activity to record old stories and photographs.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 6,
-          "content": "This is a scene from last week's event, where everyone gathered around, sharing details that are on the verge of disappearing.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of the same entity (memory collection activities) across different rounds.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information from the conversation, what kind of activities can be adopted to preserve things that are about to disappear?"
       },
       "original_answer": "Organize memory collection activities, establish memory archives, and host weekend memory corners to record and share the details and stories that are on the verge of disappearing.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "In our neighborhood, residents have spontaneously organized a 'memory collection' activity to record old stories and photographs.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "",
-          "image": "3.png"
-        },
-        {
-          "session": "session14",
-          "turn": 14,
-          "content": "Speaking of which, we could set up a weekend memory corner at the bookstore. Meet at ten, take our time organizing, and chat over tea in the afternoon. Bring the online resonance (from the green rice balls in Session 1 to the current news) into the real world.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Assess the ability to learn new information and apply it, and answer questions based on descriptions in the conversation.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what is the name of the pet dog that Xu Huaian mentioned he owns?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 13,
-          "content": "Old Tea has been in a stable condition lately (you asked about it in Session 13, and it's doing fine), and I also have more energy to participate in such matters.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (pet dog) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:12:00.513659",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

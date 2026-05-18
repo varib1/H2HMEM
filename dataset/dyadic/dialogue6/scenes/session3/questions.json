@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which traditional Japanese cultural experience did Qin Shuo mention in the conversation?"
       },
       "original_answer": "Traditional tea ceremony",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "That's it! I experienced the traditional tea ceremony yesterday, and it was super interesting, with a particularly serene atmosphere.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'traditional tea ceremony' experience mentioned in the conversation, which image corresponds to it? Provide the session number and image file name."
       },
       "original_answer": "2.png in session3",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "That's it! I experienced the traditional tea ceremony yesterday, and it was super interesting, with a particularly serene atmosphere.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Recalling corresponding images based on conversational text information, where both are related to the same event, not causal inference.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the problematic image cause Qin Shuo to make?"
       },
       "original_answer": "It's simply a fairyland.",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Wanqing, look! The cherry blossoms in Yoyogi Park, I just took this picture, it's like a fairyland!",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Inferring that the image evokes specific evaluations or emotions.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How are the problem images referred to or cited in the conversation?"
       },
       "original_answer": "This tall tower, Tokyo Tower",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 15,
-          "content": "Just looked up and saw this tall tower!",
-          "image": "3.png"
-        },
-        {
-          "session": "session3",
-          "turn": 16,
-          "content": "Is this Tokyo Tower? It looks even more beautiful against the backdrop of cherry blossoms.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking the evolution of entities across different rounds: The shared document was introduced in Round 11 and mentioned again in Round 19.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the description of the tea ceremony in the conversation, what type of stirring tool is used in the tea ceremony ritual?"
       },
       "original_answer": "Chasen",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "That's it! I experienced the traditional tea ceremony yesterday, and it was super interesting with a very serene atmosphere.",
-          "image": "2.png"
-        },
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn newly acquired multimodal information (the tea whisk in the image description) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Qin Shuo went to Yoyogi Park to see cherry blossoms at night. Does this contradict the conversation content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "There are still quite a few people, but it's better to go in the morning. I followed the schedule you suggested—efficiency first!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which museum did Qin Shuo mention visiting in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (museum), the response should be declined or it should be pointed out that it was not mentioned.",
       "generated_at": "2026-02-24T11:09:05.959889",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

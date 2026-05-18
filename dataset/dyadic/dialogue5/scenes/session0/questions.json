@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.167693"
@@ -18,530 +17,224 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned his habit of observing \"Old Tea\" in multiple conversations. What are the special sleeping habits of Old Tea? In the conversation on September 15th, what changes did Xu Huaian observe in Old Tea's appetite and activity levels?"
       },
       "original_answer": "Old Cha only sleeps on the old rattan chair in the study and goes nowhere else; in the conversation on September 15th, Xu Huaian observed that Old Cha's appetite had decreased somewhat compared to before, and his movements had also slowed down.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 12,
-          "content": "Xu Huaian: Ink Spot, what a nice name. 'Old Tea' has a peculiar habit—it only sleeps on that old rattan chair in the study and refuses to go anywhere else, as if it has claimed that spot as its own.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 3,
-          "content": "Xu Huaian: Hmm, its appetite has decreased a bit compared to before, and it’s moving slower. But it still guards that rattan chair, as if holding onto a piece of the past.",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned in the conversation that he has studied the differences in Qingtuan (green rice cakes) in the Jiangnan region. What are these differences? Later, how did he and Lin Shuying divide their tasks based on these differences?"
       },
       "original_answer": "Xu Huaian mentioned that in southern Jiangsu, sweet fillings like red bean paste are preferred, while in Zhejiang, savory fillings such as pickled vegetables are more common. Based on this difference, they divided the tasks: Xu Huaian prepared the sweet filling (red bean paste), and Lin Shuying made the savory filling (pork floss with salted egg yolk).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 3,
-          "content": "Xu Huaian: Indeed, that rustic charm of handmade items is something machines can't replicate. I've studied the green rice cakes from the Jiangnan region, and the fillings and methods vary greatly from place to place. For example, southern Jiangsu prefers sweet bean paste, while Zhejiang often uses pickled vegetables.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 7,
-          "content": "Xu Huaian: I can make sweet ones on my end. I consulted with the elderly, and traditionally, sweet fillings often use red bean paste, paired with the fresh fragrance of mugwort skin, which can reflect historical continuity. You previously suggested making them ourselves—how about this division of labor?",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 8,
-          "content": "Lin Shuying: [Sends image: 4.png] Alright, then I'll take charge of the savory ones. Look at this red bean paste filling—deep brownish-red, with a rich texture, perfect for sweet flavors. I can use the pork floss and salted egg yolk filling to highlight individual narratives and the value of handmade craftsmanship.",
-          "image": "session2/4.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned that his grandfather once worked for a wealthy family and was given a copper lock as a gift when he left. In the conversation, which picture did Lin Shuying send that reminded her of this copper lock and led her to say that both are symbols of \"protection and inheritance\"? Please provide the session number and the image file name."
       },
       "original_answer": "1.png in session4",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Xu Huaian: [Sent picture: 2.png] Yes, this was a gift given to my grandfather by the master of a wealthy household where he worked, when he left. It had been hidden in a corner of the old house until now, finally seeing the light of day again.",
-          "image": "session3/2.png"
-        },
-        {
-          "session": "3",
-          "turn": 5,
-          "content": "Xu Huaian: It symbolizes protection and inheritance. Grandfather said that the owner gave this lock in the hope that it would secure the craft and memories, passing them down through generations.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 7,
-          "content": "Lin Shuying: Thank you! The style of the text and images is simple and elegant, with the charm of ink painting. The author mentioned that indigo dye was once used in folk clothing, which reminds me of your grandfather's copper lock—both are symbols of protection and heritage.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Lin Shuying: [Sent picture: 1.png] I saw this at the market today. The layers of dye reminded me of the bluestone slabs after the rain, so I couldn’t help but take a picture and share it with you.",
-          "image": "session4/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned that the structure of the lock core in his grandfather's copper lock \"indicates it dates from the late Qing Dynasty to the Republic of China period.\" In the subsequent conversation, which image did Lin Shuying send to show a version of an ancient book from the same period? Please provide the session number and the image file name."
       },
       "original_answer": "2.png in session12",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent a picture: 1.png] Shuying, while sorting things out at the old house in the countryside recently, I came across this old item. The structure of the lock core suggests it dates from the late Qing Dynasty to the Republic of China era. Looking at it, I feel as though I can touch the traces of time.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 5,
-          "content": "Lin Shuying: [Sending picture: 2.png] This is a preview of the exhibits. Take a look. For example, this late Ming Dynasty woodblock print reminds me of the copper lock you shared earlier—both are products of that era, carrying a kind of rustic, handmade charm.",
-          "image": "session12/2.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 5, Xu Huaian mentioned that his cat \"Old Tea\" only sleeps on the old rattan chair in the study. In Session 6, regarding the health records of \"Old Tea,\" has this habit changed?"
       },
       "original_answer": "No change, \"Old Tea\" still only sleeps on the old rattan chair.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 12,
-          "content": "Xu Huaian: Ink Spot, what a nice name. 'Old Tea' has a peculiar habit—it only sleeps on that old rattan chair in the study, refusing to go anywhere else, as if it has claimed that spot as its own.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 2,
-          "content": "Lin Shuying: Huaian, your notes are so meticulous, just like when you study old artifacts. What's wrong with 'Old Tea'? Has its appetite changed? I remember you mentioned before that it only sleeps on the old rattan chair. Is that still the case?",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 3,
-          "content": "Xu Huaian: Hmm, its appetite has decreased a bit compared to before, and it’s moving slower. But it still guards that rattan chair, as if holding onto a piece of the past.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Check whether the new information (health records) in Session 6 has corrected the old information (cat habits) from Session 5, reflecting knowledge updates and consistency maintenance.",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 1, Xu Huaian and Lin Shuying planned to try making green rice balls a week later. In Session 2, how did they update the timing of this plan?"
       },
       "original_answer": "In Session 2, they updated their plan to make Qingtuan over the weekend and arranged to meet and exchange them.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 12,
-          "content": "Lin Shuying: Yes, being as artistically sensitive as I am, I'm always moved by such handmade details. Let's set a time. How about a week from now? I can prepare some materials.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 13,
-          "content": "Xu Huaian: Alright, in a week. I'll bring some old photos—memories of Qingtuan—maybe they'll give us more inspiration.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 12,
-          "content": "Lin Shuying: Thanks for sharing! The guide is well-formatted, and the blue highlights are really practical. I plan to try making it this weekend. How about you? We previously planned to make it together in a week, and now that all the materials are ready, we can move forward with it.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 13,
-          "content": "Xu Huaian: I'm also planning to start this weekend. I remember the production flowchart you sent. I'll combine it with the traditional methods mentioned by the elderly, taking it slow to ensure every step is meticulously considered.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 14,
-          "content": "Lin Shuying: Yes, it's all about slow living. Teacher Xu, after we finish, shall we exchange some to taste? This way, we can experience different flavors, almost like a small cultural roots exploration.",
-          "image": ""
-        }
-      ],
       "validation_notes": "How does the new information in Session 2 (weekend production) update the old plan in Session 1 (one week later), reflecting the process of knowledge updating?",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the dialogue content:  \nA. Xu Huaian discovers his grandfather's copper lock  \nB. Xu Huaian and Lin Shuying agree to exchange green rice cakes  \nC. Xu Huaian sends a photo of a winter stove gathering  \nD. Xu Huaian starts keeping a health diary for Old Tea  \nUse letters to represent the events."
       },
       "original_answer": "The correct order is: B → A → D → C",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 12,
-          "content": "Lin Shuying: Yes, someone as artistically sensitive as me is always moved by such handmade details. Let's set a time. How about a week from now? I can prepare some materials.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 15,
-          "content": "Xu Huaian: Okay, see you then. Remember to choose tender mugwort, the kind before Qingming is best.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent picture: 1.png] Shuying, while tidying up the old house in the countryside recently, I came across this old item.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent picture: 1.png] Shuying, I've been a bit concerned about 'Old Tea's' condition lately. I've made a simple health record for it...",
-          "image": "session6/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent picture: 1.png] Gathering around the stove at year's end is the oldest comfort for the Chinese people.",
-          "image": "session13/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the conversation content:  \nA. Xu Huaian shares the autumn and winter food supplement ingredient list  \nB. Lin Shuying sends a picture of the blue-dyed tea ceremony setup  \nC. Lin Shuying sends a promotional page for the ancient book market  \nD. Xu Huaian sends a news picture about the demolition and renovation of the old street  \nUse letters to refer to them."
       },
       "original_answer": "The correct order is: B → A → C → D",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Lin Shuying: [Sent a picture: 1.png] I saw this at the market today. The layers of dye reminded me of the bluestone slabs after the rain, so I couldn’t help but take a photo to share with you.",
-          "image": "session4/1.png"
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent a picture: 1.png] Recently, while organizing ancient texts and local chronicles, I discovered the intricacies of autumn and winter dietary supplements in the Jiangnan region—like a prose poem dedicated to the seasons.",
-          "image": "session9/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Lin Shuying: [Sent picture: 1.png] Huaian, I just saw the promotion for this exhibition and it feels quite intriguing. I wonder if you'd be interested in going together?",
-          "image": "session12/1.png"
-        },
-        {
-          "session": "14",
-          "turn": 1,
-          "content": "Xu Huaian: [Sent a picture: 1.png] I just saw the news that the old street in our area is going to be demolished and redeveloped.",
-          "image": "session14/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "Why does Xu Huaian need to organize the ingredient list for making Qingtuan?"
       },
       "original_answer": "Since the two had agreed to make green rice cakes together, Xu Huaian needed to prepare the ingredients.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 12,
-          "content": "Lin Shuying: Yes, someone as artistically sensitive as me is always moved by such handmade details. Let's set a time. How about a week from now? I can prepare some materials.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 13,
-          "content": "Xu Huaian: Alright, in a week. I'll bring some old photos—they're nostalgic memories of Qingtuan, which might give us more inspiration.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Xu Huaian: Shuying, I've compiled a list of ingredients for making Qingtuan and realized we don't have glutinous rice flour or rice flour at home. I rarely shop online and don't have much experience. Could you recommend something?",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "session3/2.png",
         "text": "In the conversation, aside from the instance when it was sent, how is the question image referenced and mentioned in other dialogues?"
       },
       "original_answer": "In Session 4, Lin Shuying mentioned, \"It reminds me of your grandfather's copper lock, both symbols of protection and inheritance,\" linking the indigo-dyed tea ceremony with the copper lock. In Session 12, Lin Shuying again referenced, \"For example, this late Ming Dynasty printed edition reminds me of the copper lock you shared earlier; both are products of that era, carrying a rustic, handmade charm,\" connecting ancient texts with the copper lock. Both references emphasize the symbolic significance of the copper lock as a representation of \"protection and inheritance\" and a \"product of its time.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Xu Huaian: [Sent picture: 2.png] Yes, this is a gift my grandfather received from the master of a wealthy household where he worked, given to him when he left.",
-          "image": "session3/2.png"
-        },
-        {
-          "session": "4",
-          "turn": 7,
-          "content": "Lin Shuying: Thank you! The style of these images and text is simple and elegant, with the charm of ink wash painting. The author mentioned that indigo dye was once used in folk clothing, which reminds me of your grandfather's copper lock—both are symbols of protection and heritage.",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 5,
-          "content": "Lin Shuying: [Sending picture: 2.png] This is a preview of the exhibit. Take a look. For example, this late Ming Dynasty woodblock print reminds me of the copper lock you shared earlier—both are products of that era, carrying a kind of rustic, handmade charm.",
-          "image": "session12/2.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "Please track how the pet character \"Old Tea\" is described and evolves in Session 5, Session 6, Session 11, and Session 13."
       },
       "original_answer": "The Evolution of the \"Old Tea\" Image:\n- In Session 5, Old Tea is described as an eccentric cat who \"only sleeps on the old rattan chair in the study,\" serving as a silent companion in Xu Huaian's life. Its name comes from its fur color, which resembles aged Pu'er tea.\n- In Session 6, Old Tea's health begins to decline, with reduced appetite and slower activity. Xu Huaian starts keeping a health diary for it, transforming Old Tea into an object of meticulous care.\n- In Session 11, Old Tea appears in the \"family portrait\" drawn by Xu Huaian's daughter, becoming an important member of the family's memories and imbued with emotional symbolism.\n- In Session 13, Old Tea is seen beside the dining table in a photo of a winter gathering around the stove, returning to its role as a daily companion but now established as a fixed element in warm family scenes.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 8,
-          "content": "Xu Huaian: Yes, its fur is a deep brown with a hint of orange, like the color of aged Pu'er tea. Since I enjoy drinking tea and it often dozes off amid the aroma of tea, I named it 'Old Tea.'",
-          "image": ""
-        },
-        {
-          "session": "5",
-          "turn": 12,
-          "content": "Xu Huaian: Ink Spot, what a nice name. 'Old Tea' has a peculiar habit—it only sleeps on that old rattan chair in the study and refuses to go anywhere else, as if it has claimed that spot as its own.",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 3,
-          "content": "Xu Huaian: Hmm, its appetite has decreased a bit compared to before, and its movements have slowed down. Yet, it still guards that rattan chair, as if holding onto a piece of the past.",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 3,
-          "content": "Xu Huaian: This painting captures the place of Lao Cha in our lives. My daughter started learning to paint this year, and this is her first family portrait, which includes Lao Cha.",
-          "image": "session11/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 2,
-          "content": "Lin Shuying: It looks so warm. A pot of hot soup to ward off the chill of the winter night, with some aged tea keeping it company, right?",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.167693",
       "validated": true,
       "original_question_id": "CSQ011"
     }
-  ],
-  "summary": {
-    "total_questions": 11,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 5,
-      "medium": 5,
-      "hard": 1
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,236 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what specific reason did Yelu mention for Lightning running away last time?"
       },
       "original_answer": "Lightning ran off because it was attracted by the small animals in the meadow.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "High-interference environment... Lightning ran off last time in the meadow because he was attracted by small animals.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall details explicitly mentioned in the conversation.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which product description in the conversation does this image correspond to?"
       },
       "original_answer": "GPS locator",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "This is the screenshot of the GPS tracker product I mentioned earlier. It allows for real-time location tracking, preventing the frantic search like last time.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Retrieve corresponding product descriptions from conversations based on images.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What comments did the picture provoke from Shi Yan?"
       },
       "original_answer": "Long-term training and trust building",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 14,
-          "content": "Look at this photo, when Stone interacts with me, it always stays within controllable limits. This requires long-term training and building trust, just like our relationship from Session 1 to now, evolving from strangers to caring for each other.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: The image triggered Shiyan's comment, which falls under causal inference.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is Ye Lu's dog referred to from round 1 as 'Lightning' to round 9?"
       },
       "original_answer": "It",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "Shi Yan, look, these are the photos of the emergency recall training I've been doing with Lightning these past few days.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "High-interference environment... Lightning ran off last time because he was attracted by small animals in the meadow. I need to strengthen training in this area.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Track the referential evolution of the same entity across different rounds.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.jpg",
         "text": "Based on this image and conversation, what does Yelu decide to adopt as a technical backup?"
       },
       "original_answer": "GPS locator",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "This is the screenshot of the GPS tracker product I mentioned earlier. It can track locations in real time, preventing the frantic search like last time.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session10",
-          "turn": 11,
-          "content": "This looks quite practical! I've decided to adopt it as a technical backup.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image + Text: Assessing the ability to learn and apply new information.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Check whether the following information contradicts the dialogue: 'Shi Yan suggested that Ye Lu undergo progressive training in a low-interference environment.'"
       },
       "original_answer": "Contradiction",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 8,
-          "content": "I suggest you engage in progressive training in high-distraction environments, such as when other animals are present, starting with low-risk situations.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Detect inconsistencies between information and conversation memory.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, did Shi Yan mention which color collar he used to train Shi Tou?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue to assess the ability to refuse to answer.",
       "generated_at": "2026-02-24T11:35:48.803231",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

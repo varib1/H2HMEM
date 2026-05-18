@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,209 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Xingwan mentioned that \"the review article about the digital art exhibition also made it to the list.\" Which picture corresponds to this? Provide the session number and the image file name."
       },
       "original_answer": "2.png in session11",
-      "answer_source": "conversation_text/image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "This is the list of the top ten most-read articles on my public account this year, ranging from coverage of the welcome party to planning for the cultural festival. It feels like I've been dealing with words and events all year long. Look, the review article on the digital art exhibition also made the list—that's the one from when we went to the '纹以载道' exhibition, and you were explaining particle systems and sensor latency to me at the time.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the textual information in the conversation (the review article of the digital art exhibition made the list), retrieve the corresponding image (2.png displays the list of the top ten most-read articles on the official account for the year).",
       "generated_at": "2026-02-24T11:27:17.595521",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which item or activity in the conversation does the problem picture correspond to?"
       },
       "original_answer": "GitHub Coding and WeChat Official Account Operation",
-      "answer_source": "image_description/conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 6,
-          "content": "Look, on the left are my GitHub codes and project achievements, ranging from health dashboards and campus cat catalogs to information aggregators and public opinion heat maps; on the right are your public accounts and campus activities, from social supervision of health projects and game field research to retrospectives of digital art exhibitions and animal protection advocacy.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text: Identify the corresponding dialogue content (GitHub coding and public account operation) based on the information in image 3.png.",
       "generated_at": "2026-02-24T11:27:17.595521",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "What exclamation or comment did the problematic picture evoke from Lu Chenguang?"
       },
       "original_answer": "Amazing! Your reading stats are really impressive.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "Wow, that's amazing! Your reading data is really impressive, especially that article about stray animals on campus. Is it related to the cat guide project we discussed earlier?",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image-driven text: 2.png (List of the top ten most-read articles of the year on the official account) sparked Lu Chenguang's exclamation and the subsequent conversation.",
       "generated_at": "2026-02-24T11:27:17.595521",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "How are problem images referenced or cited in the conversation?"
       },
       "original_answer": "GitHub contribution chart, with densely packed commit records.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Xingwan, as the end of the semester approaches, I've just finished organizing the GitHub contribution chart for this academic year. Here it is for you to take a look.",
-          "image": "1.png"
-        },
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "Wow, Chen Guang, your submission records are so dense, truly a tech maniac!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: Image1.png went from being sent directly to being described as 'submission records densely packed'.",
       "generated_at": "2026-02-24T11:27:17.595521",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Lu Chenguang stayed up all night writing scripts to monitor Git commit times for the health dashboard project in April. Does this contradict the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "There are two distinct coding peaks in March and October—the March peak corresponds exactly to the time we launched the health dashboard project. Remember when I stayed up all night writing scripts to monitor Git commit times? The October peak likely aligns with the development phase of the public opinion analysis heatmap and the information aggregator demo.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction detection: Information that may appear contradictory is presented (both March and October have peaks), but it has been explained in the conversation that the October peak corresponds to other projects, so there is no contradiction.",
       "generated_at": "2026-02-24T11:27:17.597405",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In this conversation, did Lu Chenguang mention a project he participated in called 'Campus Food Map'?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Information not present in the question (campus food map) should be declined to answer to avoid hallucinations.",
       "generated_at": "2026-02-24T11:27:17.597405",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Text-Image": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "medium": 3,
-      "hard": 1,
-      "easy": 2
-    }
-  }
+  ]
 }

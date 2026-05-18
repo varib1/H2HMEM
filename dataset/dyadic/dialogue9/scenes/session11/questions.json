@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,193 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What preventive measures against scams targeting the elderly did Li Yifan propose?"
       },
       "original_answer": "Design a simple 'On-site Service Personnel Verification Process' notice and post it at the entrance of each building unit.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "I think we can design a simple notice for a 'Home Service Personnel Verification Process' and print it out to post at the entrance of each building unit.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:19:12.969910",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Zhao Xiaotang believes the key point of the problem picture's function is what?"
       },
       "original_answer": "Establish a simple verification step that is easy for the elderly to remember and use.",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "That's a great idea! The key is to establish a simple verification step that is easy for the elderly to remember and use.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "I've drafted a process and sent it to you for review.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information; the two are related due to the same event, with no causal relationship.",
       "generated_at": "2026-02-24T11:19:12.969910",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.png",
         "text": "Who proposed the idea for the problem image, and who organized the solutions presented in it?"
       },
       "original_answer": "The proposal of ideas and the organization of the plan were both done by Zhao Xiaofan.",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 9,
-          "content": "By the way, should we also have an emergency plan? Just like last time during the health monitoring, we prepared an emergency supplies list.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 11,
-          "content": "I've organized a plan table. Take a look—with clear division of responsibilities, everyone can execute without confusion.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Inferring that images drive the emergence of textual content, with a focus on causal inference.",
       "generated_at": "2026-02-24T11:19:12.969910",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, what rounds of evolution did the notice of the 'On-site Service Personnel Verification Process' go through from its proposal to its specific design?"
       },
       "original_answer": "In the second round, propose the design notice; in the fourth round, draft and send images to illustrate the specific process.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "I suggest designing a notice for the 'Home Service Personnel Verification Process' and posting it at the entrance of each building unit.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "[Send image: 2.png] I've drafted a process for you to review. It includes three steps: 1. Check if the person holds a temporary access pass issued by the property management; 2. Call the property management front desk to verify; 3. Avoid opening the door alone when there are no young adults at home.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of the same entity across different rounds.",
       "generated_at": "2026-02-24T11:19:12.969910",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Li Yifan suggested using a red color scheme for the verification process notice in the conversation. Is this contradictory to the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 4,
-          "content": "I just drew a sketch, take a look. The process includes three steps: 1. Check if you have a temporary access pass issued by the property management; 2. Call the property management front desk for verification; 3. Avoid opening the door alone when there are no young people at home. Blue and white color scheme, simple and clear.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (in red color scheme) and existing memories (in blue and white color scheme).",
       "generated_at": "2026-02-27T17:07:29.464479",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

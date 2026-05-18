@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What previous experiences did Baizhi refer to in the initial draft?"
       },
       "original_answer": "Experience in Restaurant Critique and Curatorial Frameworks",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "This is the first draft. Drawing on previous experiences with restaurant critiques and curatorial frameworks, I aim to emphasize the importance of respecting biological nature.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precision Recall]: Extract the experiences mentioned by Baizhi directly from the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the 'Blossom' sense of flow mentioned in the conversation?"
       },
       "original_answer": "2.png in session10",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 8,
-          "content": "Drawing inspiration from the soft gradient of this image, I plan to use organic shapes and gentle colors, capturing the flowing essence reminiscent of 'Blossom'.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image]: Find the corresponding image based on visual features described in the conversation."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the picture evoke from Bai Zhi?"
       },
       "original_answer": "more heartwarming",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Look, like in this picture, the natural interaction of pets has more warmth than overly staged photos.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Cause Leads to Effect]: The image sparked Bai Zhi's lament over the state of nature."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture inspired Gu Yanci to propose the design idea of using organic shapes and soft colors?"
       },
       "original_answer": "2.png in session10",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 8,
-          "content": "Referencing the soft gradient of this image, I plan to use organic shapes and soft colors, capturing the flowing essence of 'Blossom'.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Finding the Cause from the Effect]: The visual characteristics of the image inspired the design concept."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How did the initial draft copy of Angelica dahurica evolve into 'We believe... be vigilant...'?"
       },
       "original_answer": "Gu Yanci suggested using more explicit critical terms; Bai Zhi was concerned that it might be too sharp and proposed using \"encouragement\" to guide change; ultimately, a compromise was reached by starting with \"We believe...\" and using \"be vigilant against...\" to highlight poor practices.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "Well, the idea conveyed by the image is good, but the copy is too mild. 'Encourage trying'? That sounds like pandering to the audience. We should use words like 'should be avoided' or 'opposed' to clearly criticize those visual exploitation practices.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "I understand your design ethics, but being too sharp might cause resistance. Remember when we collaborated on the restaurant article, you eventually softened your approach by using case studies instead of pure criticism. Here, using 'encouragement' can better guide change and reflect the poetry of everyday life.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Poetry in daily life must not come at the expense of principles. Visual order requires clear boundaries; otherwise, initiatives risk becoming mere decoration. However, your mention of collaboration reminds me of the compromise we reached after debating in Session 3. Perhaps a middle ground is possible: begin by stating the philosophy with \"We believe...,\" and then use \"Be vigilant against...\" to highlight poor practices.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-Round Tracking]: Tracking the evolution of copy across multiple rounds of dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the manifesto style of this image, how does Gu Yanci plan to adjust to be more pet-centric?"
       },
       "original_answer": "More pet-centric",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 14,
-          "content": "[Send image: 3.png] Refer to this declaration style, but make it more pet-centric. Discussion is inevitable, as it involves design ethics.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Learning Application]: Learn from images and apply them to new designs."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Bai Zhi said, 'The framework you used for your previous curation was very systematic.' Does this contradict Gu Yanci's mention in the conversation about 'avoiding the clutter like your initial selection of objects in Session 5'?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 7,
-          "content": "This is great! It maintains a critical perspective while still being warm. What about the visual design? The framework you used for previous curations was very systematic, but this time it's an advocacy text, so it's important to avoid a preachy tone.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 8,
-          "content": "Drawing inspiration from the soft gradient of this image, I plan to use organic shapes and gentle colors, capturing the flowing essence of 'Blossom'. However, the core message must stand out clearly, avoiding the clutter seen in your initial selections from Session 5.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Analyze potential contradictory information in the dialogue."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the dialogue, which specific breed of pet did Baizhi mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to answer]: The specific breed of pet was not mentioned in the conversation."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

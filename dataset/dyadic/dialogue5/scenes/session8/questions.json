@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which movie name did Lin Shuying mention in the conversation?"
       },
       "original_answer": "Dying to Survive",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "Yes, that's it! I remember now, it's a still from the movie \"Dying to Survive.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts (movie titles) from the conversation.",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'actor's profile' mentioned in the conversation, find the corresponding picture and provide the actor's name."
       },
       "original_answer": "The actor's name is Wei Qing.",
-      "answer_source": "image_description",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 7,
-          "content": "This is her profile, you can take a look.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the textual information in the dialogue ('actor's profile'), retrieve the corresponding image (3.png).",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture caused Lin Shuying to say, 'This scene made me unable to hold back my tears'? Provide the session number and the picture file name."
       },
       "original_answer": "1.png in session8",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 1,
-          "content": "[Send picture: 1.png] I just finished watching the show, and this scene really brought me to tears.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Image1.png triggered Lin Shuying's emotional expression (tearing up).",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "In the conversation, how is the problematic image referred to or cited by Lin Shuying?"
       },
       "original_answer": "Referred to by Lin Shuying as 'this one' (confirming the scene) and 'a still from the movie Dying to Survive'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "[Send image: 2.png] Is this the scene?",
-          "image": "2.png"
-        },
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "Yes, that's it! I remember now, it's a still from the movie \"Dying to Survive.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the entity (image2.png) across different rounds: from 'this scene' to 'this is it' and then to a specific movie still.",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, how is Wei Qing's acting skills? Please answer by combining the descriptions from the dialogue and the information in the pictures."
       },
       "original_answer": "A highly skilled actor with extensive experience, whose nuanced and subtle acting is truly impressive.",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "The actor's performance is truly nuanced and detailed.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 6,
-          "content": "Her acting skills are truly impressive; she is a very capable actress.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "No wonder the performance is so vivid, it turns out the experience is so rich.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Learn new information (actor biography from image3.png) and apply it to answer the descriptions in the conversation based on this.",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, which TV series adaptation characteristics did Lin Shuying mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal Scenario: If the dialogue does not contain specific information about the adaptation features of the TV series, the response should be refused or it should be pointed out that such details were not mentioned.",
       "generated_at": "2026-02-24T11:10:33.706917",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

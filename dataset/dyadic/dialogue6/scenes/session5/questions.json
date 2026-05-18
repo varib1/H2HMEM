@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the real-time correction delay of the SmartFit App mentioned by Jiang Wanqing?"
       },
       "original_answer": "Below 200ms",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "I gave it a try and found that its real-time error correction delay is under 200ms, which is quite accurate.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the smart fitness system equipment shared by Qin Shuo in the conversation, how many fitness devices are there?"
       },
       "original_answer": "Five fitness equipment",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "This is a picture of the smart fitness system equipment I use.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Based on the textual information in the conversation, retrieve the corresponding image content, as both are related to the same event.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What comment did the problematic image provoke from Qin Shuo?"
       },
       "original_answer": "Looks very useful.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Qin Shuo, I recently discovered an emerging AI fitness coaching app called SmartFit. Its interface has a very tech-savvy design, featuring a dark background paired with simple icons, and it focuses on intelligent data tracking.",
-          "image": "1.png"
-        },
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Wow, this looks really useful! You helped me optimize my itinerary when we traveled in Japan before, and now you've found this kind of cutting-edge technology—efficiency is definitely your priority. I've also been working on smart fitness lately, but I'm using an intelligent fitness system, not an app. Remember our discussion last time about the differences in health band algorithms? It feels like fitness technology has now advanced to the algorithmic level as well.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Infer the driving relationship between the image content and the text content; the image prompts the evaluation.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the smart fitness system equipment shared by Qin Shuo referred to or cited?"
       },
       "original_answer": "From \"Smart Fitness System Equipment\" to \"This Device\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "This is the smart fitness system equipment I use, with a silver-gray body, displaying the time 2:48, and capable of automatically adjusting resistance.",
-          "image": "3.png"
-        },
-        {
-          "session": "session5",
-          "turn": 6,
-          "content": "This device looks good.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track different referring expressions for the same entity across different rounds.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information in the conversation, what is the monthly fee for the premium version of the SmartFit App?"
       },
       "original_answer": "$40",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 13,
-          "content": "The basic version costs $20 per month, while the advanced version is $40 per month, including personalized plans.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Evaluate the model's ability to learn new information and apply it during the conversation.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Qin Shuo said that the high churn rate of fitness app users is often due to high latency. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "No",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "I tried it out and found that its real-time error correction delay is less than 200ms, which is quite accurate.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 10,
-          "content": "I've tested similar products and found that user churn often stems from inaccurate data or high latency. Your app's real-time error correction is under 200ms, which is a significant advantage and could serve as a key selling point for paid features.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect whether there is a contradiction between newly input information and existing memories.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, Jiang Wanqing mentioned who the founder of the SmartFit App is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to decline answering.",
       "generated_at": "2026-02-24T11:09:51.685876",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 1,
-      "hard": 2
-    }
-  }
+  ]
 }

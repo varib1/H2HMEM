@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,156 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the name of Shen Zhiwei's cat? What color are its eyes?"
       },
       "original_answer": "Mortis; the eyes are blue.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Yanqiu, I was just writing a piece about urban loneliness, and the pressure was immense. But Metis was quietly curled up beside my hand, emitting a soothing purr.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T17:31:24.096908",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "The health monitoring data sent by Cheng Yanqiu to Shen Zhiwei on July 10 shows that the heart rate is how many bpm?"
       },
       "original_answer": "111bpm",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 6,
-          "content": "You can refer to the health monitoring data I previously shared.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event.",
       "generated_at": "2026-03-01T17:31:24.096908",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "What was the purpose of Cheng Yanqiu sending the problem image? Please infer the preceding cause based on the conversation content."
       },
       "original_answer": "To demonstrate the health monitoring data interface, in response to Shen Zhiwei's question about how to obtain physiological data, and to suggest using wearable devices or smartphone cameras for facial expression analysis to capture emotional changes.",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "The idea of 'self-experimentation' is both bizarre and fascinating, truly typical of your way of thinking. But how do we obtain physiological data? I'm not a lab rat.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 6,
-          "content": "You can refer to the health monitoring data I shared earlier. If you have wearable devices, such as a heart rate wristband, you can record HRV. Alternatively, you can use a smartphone camera for facial expression analysis, as shown in this interface—though it may be rudimentary, it can capture emotional changes.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "The question type is image-driven text, asking why Cheng Yanqiu sent the image, and it requires recalling the reason from the previous conversation.",
       "generated_at": "2026-03-01T23:48:29.431645",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how does Cheng Yanqiu's description of the experimental design evolve from round 2 to round 11?"
       },
       "original_answer": "From measuring changes in heart rate variability, to proposing A/B testing for recording stress levels and physiological data, and further integrating facial expression analysis and narrative exploration mechanisms.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Measure the changes in the owner's heart rate variability before and after interacting with their pet.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "Design a simple A/B test: Write for one hour with a cat present and one hour without a cat, recording self-reported stress levels and possible physiological data.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 10,
-          "content": "Integrating your narrative, explore the mechanism of the 'emotional regulator'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of experimental design topics in multi-turn dialogues.",
       "generated_at": "2026-03-01T17:31:24.096908",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

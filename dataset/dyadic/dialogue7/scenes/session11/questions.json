@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,218 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What two additional drugs did Shen Qingyin mention were added to Song Weian's list during the conversation?"
       },
       "original_answer": "Anti-allergy medications and children-specific fever reducers",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "From your list, I noticed you've added anti-allergy medication and children-specific fever reducers, which is indeed important, especially considering the asthma management plan we discussed in Session 2 and the allergen risks we covered in Session 6.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the name of the insurance policy that Song Wei'an believes is most suitable for Shen Qingyin?"
       },
       "original_answer": "ZhongAn Self-Drive Travel Insurance",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "Of course, I have sent you an insurance comparison table. This type of insurance is quite suitable for you.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event (insurance discussion) but not causally linked.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Shen Qingyin to ask Song Weian if the first aid kit list needed to be supplemented? Provide the session number and image file name."
       },
       "original_answer": "1.png in session11",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Wei An, based on our discussion in the last Session 10 about travel health risks, particularly the environmental monitoring and emergency procedures you mentioned, I've compiled a first aid kit checklist and sent it to you for review. This continues the systematic approach we've been following since the annual data review in Session 1. Do you think there's anything that needs to be added?",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image1.png triggered Shen Qingyin's inquiry, which is a causal inference relationship.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the context of the conversation, does the term \"first aid kit checklist\" refer only to a list? If not, please explain why."
       },
       "original_answer": "No, because after Shen Qingyin sent a first aid kit list, Song Wei'an sent a different first aid kit list as a supplement.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Weian, based on our discussion in the last Session 10 about travel health risks, particularly the environmental monitoring and emergency procedures you mentioned, I've compiled a first aid kit checklist and sent it to you for review.",
-          "image": "1.png"
-        },
-        {
-          "session": "session11",
-          "turn": 2,
-          "content": "Qingyin, your list is very comprehensive, reflecting your consistent attention to detail and thoroughness, just like when designing the asthma management plan in Session 2. I have also prepared one and sent it to you for reference.",
-          "image": "2.png"
-        },
-        {
-          "session": "session11",
-          "turn": 14,
-          "content": "Exactly, this reflects the value of our long-term collaboration. The first aid kit checklist can be finalized by integrating mosquito repellent items and insurance information into a comprehensive document.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and reference chain of the first aid kit list entity in multi-turn dialogues.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what can be used from the first aid kit to disinfect a wound if you get cut in the wilderness?"
       },
       "original_answer": "Iodophor disinfectant solution",
-      "answer_source": "both",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Learn new information (insurance forms and conversation discussions) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which specific childhood disease management plan did Shen Qingyin mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "From your list, I noticed you've added anti-allergy medication and children-specific fever reducers, which is indeed important, especially considering the asthma management plan we discussed in Session 2 and the allergen risks we covered in Session 6.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 5,
-          "content": "Good suggestion, I will take it into account. Additionally, after comparing, I noticed that your list places more emphasis on preventive items, such as disinfectant wipes and thermometers, which aligns with your core value of prevention over treatment—much like the daily monitoring you emphasized when establishing a health record for Ping An in Session 3. Mine, on the other hand, focuses more on emergency response tools. Perhaps we need to combine them to form a comprehensive plan, similar to the childhood asthma management pathway discussed in Session 2.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Questions about information not mentioned in the conversation (such as specific names of childhood disease management plans) should be declined or pointed out as not having been mentioned.",
       "generated_at": "2026-02-24T11:15:16.849707",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

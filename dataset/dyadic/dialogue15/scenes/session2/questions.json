@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,234 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the A/B test mentioned by Han Shuli in the conversation, what measures were taken for the experimental group and the control group respectively?"
       },
       "original_answer": "The experimental group had soundproof windows installed, while the control group remained unchanged.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "After the installation of soundproof windows in the experimental group, there was a decreasing trend in the frequency of anxiety behaviors, but analysis of variance indicated that the between-group differences were not significant.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoiding generic responses.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which experimental variable or phenomenon in the dialogue does the problem image correspond to?"
       },
       "original_answer": "Unknown high-frequency noise",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Yes, I shared the spectrum analysis chart. It shows recent occurrences of unknown high-frequency noise within the auditory sensitivity range of cats, with intensity fluctuating over time. This could be a new variable of environmental stress.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Recall conversation content based on image information.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Which experimental results in the conversation were prompted by the problem image?"
       },
       "original_answer": "The frequency of anxious behaviors decreased, but the difference was not significant.",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "I have shared the preliminary results of the A/B test, which is a summary chart of the variance analysis. After replacing the soundproof windows in the experimental group, there was a decreasing trend in the frequency of anxious behaviors, but the variance analysis indicated that the differences between the groups were not significant.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: The image sparked a discussion about the experimental results in the conversation.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "What experimental requirements did the problem image lead Han Shuli to propose?"
       },
       "original_answer": "Quantitatively measure noise levels",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Yes, I shared the spectrum analysis chart. It shows recent occurrences of unknown high-frequency noise within the auditory sensitivity range of cats, with intensity fluctuating over time. This could be a new variable of environmental stress.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "High-frequency noise? That explains why the soundproof windows have limited effectiveness. We need to quantitatively measure the noise levels and use a decibel meter to obtain precise data.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal inference, images drive text responses.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.jpg",
         "text": "How are problem images referenced or cited in the conversation?"
       },
       "original_answer": "Product image of a sound level meter.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "I shared a product image of a sound level meter. The device offers high precision and is suitable for long-term monitoring. We can set up measurement protocols, such as sampling once per hour, to cover the entire day.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "If the noise level increases significantly at night, what potential effects might it have on pet behavior?"
       },
       "original_answer": "Increased anxiety behavior",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Recent detection of unknown high-frequency noise within the auditory sensitivity range of cats, with intensity fluctuating over time. This may represent a new variable in environmental stress.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 9,
-          "content": "Yes, from the first session, I monitored the anxiety indicators of the Border Collie. If noise is the key variable, we should see a correlation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply newly learned information for reasoning to assess online adaptability.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What is the pet breed mentioned in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information that has not appeared to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:25:59.983442",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 3,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

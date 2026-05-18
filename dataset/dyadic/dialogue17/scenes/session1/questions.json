@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,260 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "How long has Optimus Prime mentioned the chip implantation for Cybercat?"
       },
       "original_answer": "It's been almost a year.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 3,
-          "content": "The chip is NeuroSync Pro, and it has been implanted for almost a year.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which system upgrade information in the conversation does this image correspond to?"
       },
       "original_answer": "Smart home system",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Yes, I upgraded my smart home system last week and introduced a new wireless protocol. Here is the network structure diagram, which might be relevant.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve system upgrade information from conversations based on image content.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What concerns did this picture raise for Optimus Prime?"
       },
       "original_answer": "First failure",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 1,
-          "content": "Ling Guang, I just received a health alert for Cyber Cat. The neural signal reception rate has dropped significantly, and the activity heat map shows abnormal avoidance behavior. I'm a bit worried—this is the first malfunction since its chip was implanted.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text: The image triggers concerns in the conversation, with a causal inference relationship present.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "Did this picture cause a slight delay in Optimus Prime's reaction to the cat?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 13,
-          "content": "The physical connection appears normal, with no signs of looseness. Could it be that a software update introduced a bug? I recall that after the last update, the cat's response was a bit delayed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text-driven images: The delays mentioned in the conversation have no direct causal relationship with the images.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Network structure diagram",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Yes, I upgraded my smart home system last week and introduced a new wireless protocol. Here is the network structure diagram, which might be relevant.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Tracking image designation: The image is referred to as a network structure diagram in the conversation.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the dialogue information, what functions might the central control screen in the picture be responsible for?"
       },
       "original_answer": "Connect and control each device",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Yes, I upgraded my smart home system last week and introduced a new wireless protocol. Here is the network topology diagram, which might be relevant.",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 0,
-          "content": "Image 3 Description: Core Equipment (Center): Central Control Panel: Touch-sensitive panel with multiple application icons displayed on the screen, located at the center of the image, responsible for connecting and controlling various devices.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn new information about upgrading smart home systems during conversations and apply it to understand the functions of the central control screen in images.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that after the software rollback, the signal reception rate is close to normal levels. However, if the signal reception rate remains very low, does this contradict the content of the dialogue?"
       },
       "original_answer": "Yes, contradiction",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 17,
-          "content": "Software rollback completed, signal reception rate has significantly improved, approaching normal levels.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content (signal reception rate remains low) and detect whether contradictions are recognized.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What breed is Optimus Prime's cyber cat?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Information not present in the question (cyber cat breed), testing whether to refuse to answer to avoid hallucinations.",
       "generated_at": "2026-02-24T11:29:44.530671",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

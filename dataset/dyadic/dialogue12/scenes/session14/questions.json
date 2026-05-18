@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,162 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Cheng Yanqiu mentioned which pre-trained model they plan to use for sentiment analysis?"
       },
       "original_answer": "BERT Architecture",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "The sentiment analysis model employs a pre-trained BERT architecture.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-03-01T17:35:02.960676",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the title of the research proposal outline sent by Cheng Yanqiu on December 28th, which explores the relationship between social psychological factors and health?"
       },
       "original_answer": "Research Proposal on Integrating Electronic Medical Record Texts with Physiological Data to Explore the Association Between \"Psychosocial Factors\" and Health",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Zhiwei, based on our previous discussions, I have drafted an outline for the research proposal. The core focus is to explore the connection between psychosocial factors and health.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval: Finding relevant images based on textual information, where both are related to the same event.",
       "generated_at": "2026-03-01T17:35:02.960676",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "After Shen Zhiwei sent the problem image, what was Cheng Yanqiu's evaluation of this picture?"
       },
       "original_answer": "Cheng Yanqiu praised this analogy as ingenious, believing that the philosophical foundation of \"Ao Jin Medicine\" could enrich their theoretical framework.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 10,
-          "content": "Shen Zhiwei: [Sends picture: 3.jpg] Speaking of output, I was just flipping through the book \"Ao Jin Medicine,\" which emphasizes a holistic view of health. I attached a sticky note, thinking our project could draw inspiration from this concept—not just focusing on data metrics but also paying attention to the context of life. It’s like the data art exhibition in Session 13, transforming cold data into a narrative with warmth.",
-          "image": "3.jpg"
-        },
-        {
-          "session": "session14",
-          "turn": 11,
-          "content": "Cheng Yanqiu: That's a brilliant analogy! The philosophical foundation of \"Aojin Medicine\" can enrich our theoretical framework. The idea on the sticky note reminds me that in Session 6, when we discussed public opinion data, you emphasized using narratives to fill in the blind spots of the data. Similarly, here, we need stories to understand the \"why\" behind the data.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, inquire about someone's evaluation of a specific image. Here, we are asking for Cheng Yanqiu's evaluation of image 3.jpg.",
       "generated_at": "2026-03-01T23:50:44.760123",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the project codename 'Project Hermes' gradually introduced and confirmed?"
       },
       "original_answer": "Shen Zhiwei proposed the name in the 6th round, and Cheng Yanqiu confirmed and liked this code name in the 7th round, with subsequent rounds continuing to reference it.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 6,
-          "content": "I sketched a whiteboard diagram and named this project 'Project Hermes'.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 7,
-          "content": "Project Hermes, I like this codename!",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 16,
-          "content": "Then we will officially initiate the 'Hermes Project'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and reference chain of entities across different rounds.",
       "generated_at": "2026-03-01T17:35:02.960676",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

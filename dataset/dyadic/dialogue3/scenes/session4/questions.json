@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,243 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Su Xiaomeng mentioned what are the personality traits of her Ragdoll cat?"
       },
       "original_answer": "Aloof, quiet and elegant, indifferent.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "My Ragdoll cat is the complete opposite—aloof to the extreme. It spends all day curled up on a blanket and barely acknowledges me even when I approach.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "I also quite like its quiet and elegant temperament.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoiding generic responses.",
       "generated_at": "2026-02-24T11:05:52.872820",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is \"Boss\"? What breed is it?"
       },
       "original_answer": "Dog, Shiba Inu",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval, which involves finding corresponding images based on textual descriptions, with both being related to the same event.",
       "generated_at": "2026-02-24T11:05:52.872820",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What thoughts did the problematic image provoke in Zhou Xingchen?"
       },
       "original_answer": "Open a social media account for the 'boss'.",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Look at this one, the way it's grinning at the camera—it's practically born to be an internet sensation! I suddenly have an idea: let's create a social media account for it.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image-driven text: The dog's grin in 3.png led Zhou Xingchen to propose the idea of opening an account.",
       "generated_at": "2026-02-24T11:05:52.872820",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, what are the terms Zhou Xingchen uses to refer to his dog?"
       },
       "original_answer": "'Boss' and 'it'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Look at my 'boss'! Today at the park, it's carrying a frisbee in its mouth.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 17,
-          "content": "Turn 'Boss' into an internet-famous dog.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track references to the same entity ('the boss') across different rounds.",
       "generated_at": "2026-02-24T11:05:52.872820",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation, what types of activities could we organize for an offline pet event?"
       },
       "original_answer": "Park Frisbee Gathering or Pet-Themed Photo Shoot",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Right! We could organize a Frisbee meetup in the park or a pet-themed photoshoot, just like how I plan advertising campaigns—taking fun to the next level! This reminds me of how I analyze gaming trends and recommend heroes to you. Now, we can apply that creative planning to 'Boss' and craft its 'internet-famous' content!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn new information (image 4.png and text description) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:05:52.874839",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Zhou Xingchen said that the 'boss' only plays frisbee with one person in the park. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "It dashed straight towards the strangers with the frisbee in its mouth, and that adorable head tilt in the shot was absolutely perfect—instantly winning over the hearts of three young ladies!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new input information (only playing with one person) and existing memories (capturing three young ladies).",
       "generated_at": "2026-02-24T11:05:52.874839",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Su Xiaomeng mentioned what breed her cat is?"
       },
       "original_answer": "Ragdoll",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "My Ragdoll cat is the complete opposite.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information that has already appeared to test the ability to refuse answering (but here the answer exists, so it should be answerable in practice). Note: This type of question is typically used for information that has not appeared, but one is generated as per the request. In actual scenarios, if the information has not appeared, the response should be refused.",
       "generated_at": "2026-02-24T11:05:52.874839",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

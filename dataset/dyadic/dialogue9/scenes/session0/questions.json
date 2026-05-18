@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.178028"
@@ -18,506 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On March 8th, Zhao Xiaotang created a simple foam box cat shelter for the stray cat \"Big Orange,\" and later on December 30th, she planned to upgrade the cat shelter. What were the main materials used for these two cat shelter constructions?"
       },
       "original_answer": "The simple foam box cat shelter made on March 8 primarily used foam boxes, old towels, and waterproof cloth. On December 30, there are plans to upgrade the cat shelter by using waterproof wood for the outer shell, filling the interior with foam boards, and collecting old clothes and blankets for insulation.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 4,
-          "content": "Li Yifan: [Sending picture: 3.png] Hmm, I'll send you a reference picture. The main body should be made from a food foam box, with dimensions around 40cm long × 30cm wide × 35cm high. The tools needed are a utility knife and tape. Besides the foam box, the materials required are an old towel and waterproof cloth.",
-          "image": "session1/3.png"
-        },
-        {
-          "session": "15",
-          "turn": 6,
-          "content": "Li Yifan: [Image sent: 2.png] Sending you a picture. This is the foam material and old clothing examples I want to use. If the foam box is damaged, it can be replaced or reinforced. However, I recommend the advanced option: design a modular winter cat house, using waterproof wood for the shell, filled with foam boards inside, and with a top that can be opened for easy cleaning.",
-          "image": "session15/2.png"
-        }
-      ],
       "validation_notes": "Integrate the material information for cat bed making from Session 1 and Session 15.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What steps are illustrated in the TNR project infographic mentioned by Li Yifan in the conversation? How are these steps specifically implemented afterward?"
       },
       "original_answer": "The TNR infographic illustrates the steps of Trap, Neuter, and Return. Implementation details: Big Orange was successfully trapped and is ready to be taken to the hospital for neutering surgery. Zhao Xiaotang initiated a crowdfunding campaign in the community group to support the expenses. After postoperative recovery, Big Orange will be returned to its original location.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "Li Yifan: [Sent picture: 2.jpeg] TNR is the internationally recognized and most humane long-term management method. I'm sending you an infographic that outlines the steps and benefits of trapping, neutering, and returning. It effectively controls the population and prevents more kittens from suffering.",
-          "image": "2.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sent picture: 1.png] Yifan, great news! Big Orange has been successfully trapped and is now in the carrier, ready to be taken to the hospital. Look at this photo—the vet is examining him, and he seems to be in good condition.",
-          "image": "1.png"
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Zhao Xiaotang: [Sent picture: 2.png] The cost control is pretty good! I initiated a crowdfunding campaign in the community group. This is a screenshot of the donation chain, and we've already raised 900 yuan, which is enough to spay or neuter two or three cats.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The question integrates the textual information from Session 2 (TNR steps) and the visual information from Session 3 (trapping and crowdfunding) to assess accurate recall of details across sessions.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session2/1.png",
         "text": "Which reference image was used to create the object in this picture? Provide the session number and the image file name."
       },
       "original_answer": "3.png in session1",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 4,
-          "content": "Li Yifan: [Sent picture: 3.png] Well, I'll send you a reference picture. The main body should be made from a food foam box, with dimensions around 40cm long × 30cm wide × 35cm high. The tools needed are a utility knife and tape. Besides the foam box, the materials also include an old towel and waterproof cloth. Make the entrance a bit smaller to prevent cold air from rushing in.",
-          "image": "3.png"
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sent picture: 1.png] Li Yifan, look! Big Orange and the four kittens are all settled. The inside of the foam box is lined with thermal aluminum foil, and there are ventilation holes on the top. The mother cat is already willing to take the kittens inside. Your design really works!",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The issue spans across Session 1 and 2, with a design approach that links the images from Session 2 to the textual descriptions in Session 1.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "session4/3.png",
         "text": "Which of the pictures of the finished product corresponds to the hand-drawn sketch in the problem image? Provide the session number and the image file name."
       },
       "original_answer": "1.png in session5",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 6,
-          "content": "Li Yifan: [Image sent: 3.png] Don't worry, I can find some old wooden boards to DIY and make the most of them. This is my hand-drawn sketch—a four-tier shelf with mesh on each layer for ventilation and moisture prevention. What do you think?",
-          "image": "session4/3.png"
-        },
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Li Yifan: [Sent picture: 1.png] Xiaotang, the shared food shelf is finished. It has a four-tier design, with barriers on each level to prevent things from falling out. I applied wood wax oil, so it should last through this summer. I made it over the weekend using scrap wood and waterproof paint. What do you think?",
-          "image": "session5/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Zhao Xiaotang mentioned that 'Big Orange' gave birth to kittens in a corner of the neighborhood, facing the threat of a late spring cold snap. In Session 15, she noted that a cold wave was approaching and expressed concern about the insufficient warmth of stray cat shelters. From Session 1 to Session 15, how did the plan for stray cat shelters transition from emergency measures to long-term optimization?"
       },
       "original_answer": "From Session 1 to Session 15, the plan for the stray cat shelter evolved from emergency foam box shelters (low-cost, temporary warmth) to a long-term optimized modular winter cat house (waterproof wooden shell, internal foam panels, detachable for cleaning), reflecting a knowledge update from emergency relief to sustainable care.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 4,
-          "content": "Li Yifan: [Sends picture: 3.png] Hmm, I'll send you a reference image. The main structure should be made from a food foam box, with dimensions around 40cm long × 30cm wide × 35cm high. The tools needed are a utility knife and tape. Besides the foam box, the materials required are an old towel and waterproof cloth. Make the entrance a bit smaller to prevent cold air from rushing in.",
-          "image": "3.png"
-        },
-        {
-          "session": "15",
-          "turn": 6,
-          "content": "Li Yifan: [Image sent: 2.png] Sending you a picture. This is the foam material and old clothing examples I want to use. If the foam box is damaged, it can be replaced or reinforced. However, I recommend the advanced solution: design a modular winter cat house, using waterproof wood for the shell, filled with foam boards inside, and with a top that can be opened for easy cleaning.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The issue spans across Session 1 and 15, detecting knowledge updates, evolving from temporary solutions to long-term optimization plans.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 8, Zhao Xiaotang mentioned that Grandpa Wang has hypertension and needs monitoring; in Session 9, based on the success of the blood pressure monitor plan, she wanted to further create an 'emergency contact card.' From Session 8 to Session 9, how did the health monitoring plan expand from basic monitoring to emergency preparedness?"
       },
       "original_answer": "From Session 8 to Session 9, the health monitoring plan expanded from basic monitoring (using a blood pressure monitor and paper record forms) to emergency preparedness (creating an 'Emergency Contact Card' containing children's phone numbers, medical information, and a QR code linking to electronic records), enhancing contact and record support in emergency situations.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 4,
-          "content": "Li Yifan: Yes, technology should be democratized. I suggest designing a minimalist 'Blood Pressure Monitoring Log' printed on paper, including fields for date, time, systolic pressure, diastolic pressure, and heart rate. Elderly individuals can fill it out themselves after measuring, or volunteers can assist. Regular summaries should be compiled, with abnormal data highlighted in red for attention. This approach is simple, intuitive, and convenient for remote viewing.",
-          "image": ""
-        },
-        {
-          "session": "9",
-          "turn": 4,
-          "content": "Li Yifan: Hmm, key information should be organized into sections, not crammed together. I suggest listing: children's phone numbers (multiple), community grid worker or your phone number, nearest hospital phone number, blood type, major medical history, commonly used medications, and allergy history. This way, emergency responders can see everything at a glance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The issue spans Sessions 8 and 9, detecting knowledge updates, extending from monitoring to emergency preparedness.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the dialogue content:  \nA. Zhao Xiaotang plans a \"Secondhand Goods Exchange Market\" and invites Li Yifan to serve as a repair consultant.  \nB. Zhao Xiaotang discovers the stray cat \"Big Orange\" giving birth in the community and urgently seeks help to make a temporary cat shelter.  \nC. Zhao Xiaotang successfully takes \"Big Orange\" to the vet for neutering and initiates a crowdfunding campaign in the community.  \nD. Zhao Xiaotang proposes a \"Shared Vegetable Basket\" initiative in the community to address the issue of residents having surplus vegetables."
       },
       "original_answer": "B → C → D → A",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sent picture: 1.png] Li Yifan, urgent help needed! I just found 'Big Orange' giving birth in the corner of the neighborhood. The kittens' eyes aren't open yet, and they're huddled together shivering...",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sent picture: 1.png] Yifan, good news! Big Orange has been successfully trapped and is now in the carrier, ready to be taken to the hospital.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sends picture: 1.png] Yifan, look at the tomatoes on Aunt Zhang's balcony... I'm wondering if we could set up a 'shared vegetable basket' downstairs...",
-          "image": "session4/1.png"
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sent picture: 1.png] Yifan, I just cleaned up the community activity room... I want to organize a 'Second-hand Goods Exchange Market' in the community...",
-          "image": "session6/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the dialogue content:  \nA. Zhao Xiaotang prepares for the community New Year's party, coordinating the venue and programs.  \nB. Zhao Xiaotang discusses elderly canteen support policies in the community group and conducts needs research.  \nC. Zhao Xiaotang creates \"Emergency Contact Cards\" to help the elderly deal with unexpected situations.  \nD. Zhao Xiaotang designs a blood pressure monitoring plan for elderly residents living alone in the community and organizes volunteer training."
       },
       "original_answer": "D → C → B → A",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Zhao Xiaotang: Yifan, there's something in the community that's been worrying me lately. Grandpa Wang, the elderly gentleman who lives alone, has high blood pressure and needs regular monitoring...",
-          "image": ""
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Zhao Xiaotang: Yifan, the blood pressure monitor plan last time worked quite well. Grandpa Wang and the others found it very convenient to use. But I've been thinking, just monitoring isn't enough... I want to create an 'emergency contact card' for the elderly living alone in the community...",
-          "image": ""
-        },
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Zhao Xiaotang: [Sending picture: 1.png] Yifan, look at this news quickly! The local government has issued supportive policies encouraging communities to establish elderly canteens...",
-          "image": "session10/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Zhao Xiaotang: Yifan, for the community New Year's party, you're more skilled with the 'technical tasks' like venue setup and sound equipment. Could you help take a look?",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "Why did Zhao Xiaotang and others initiate a small donation chain for a \"Stray Cat Spay/Neuter Fund\" in the community group and trap female cats to send them to the hospital for spaying? Please explain the reasons based on the information from Session 2."
       },
       "original_answer": "Because Li Yifan introduced the TNR (Trap-Neuter-Return) program to Zhao Xiaotang and sent an infographic to educate her about it. Zhao Xiaotang learned that this is an effective and humane method for controlling the stray cat population and understood the importance of neutering. As a result, she initiated a donation chain and carried out the neutering efforts.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "Li Yifan: I've done some research, and TNR (Trap-Neuter-Return) is the internationally recognized, most humane long-term management method. Let me send you a picture to show you.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 5,
-          "content": "Li Yifan: [Sent picture: 2.jpeg] These are the steps and benefits of TNR, which can humanely control the stray cat population.",
-          "image": "2.jpeg"
-        },
-        {
-          "session": "3",
-          "turn": 7,
-          "content": "Zhao Xiaotang: Thanks to the TNR infographic you shared earlier, the neighbors immediately understood its importance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session causality: The introduction and charts of TNR in Session 2 led to the crowdfunding and sterilization actions in Session 3.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "Why did Zhao Xiaotang propose the establishment of a \"Resident Talent Pool\" in Session 16? Please explain the reasons based on the information from Session 7."
       },
       "original_answer": "During the second-hand market event in Session 7, Li Yifan's repair stall was a huge hit. He successfully helped residents fix items like electric kettles and toy cars, revealing a strong demand for repair services in the community. This success made Zhao Xiaotang realize that there are many other skilled individuals in the community, such as Aunt Zhang who can cut hair and Teacher Liu who excels at calligraphy. By registering these talented residents into a database, neighborhood mutual aid could expand from point-to-point assistance into a systematic network covering the entire community. Therefore, in Session 16, she proposed the plan to establish a \"Resident Talent Database.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "7",
-          "turn": 2,
-          "content": "Li Yifan: I see, it's indeed quite heartwarming. My repair stall is also getting busy. I just helped an aunt fix her electric kettle, and she was so happy that she kept praising how practical it is.",
-          "image": ""
-        },
-        {
-          "session": "7",
-          "turn": 4,
-          "content": "Li Yifan: I brought a screwdriver, a multimeter, and soldering wire. With these basic tools, handling minor repairs is no problem. I just taught a dad how to remove rust from the battery contacts of a toy car, and he seemed quite interested.",
-          "image": ""
-        },
-        {
-          "session": "16",
-          "turn": 3,
-          "content": "Zhao Xiaotang: I was thinking, could our community set up a 'resident talent database'? You know how to do repairs, Aunt Zhang can cut hair, Teacher Liu is good at calligraphy... We could register everyone's skills. Then, whenever someone needs help, neighbors can assist each other, so we don’t always have to spend money hiring outsiders.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session causality: The successful experience of the repair stall in Session 7 led to the proposal of the talent pool plan in Session 16.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "In the conversation on May 10th, Zhao Xiaotang said, \"Just like the last time we DIYed a cat bed, using foam boxes and old clothes for the transformation.\" Please find the design drawing corresponding to the \"last DIY cat bed\" she mentioned, and provide the session number and image file name."
       },
       "original_answer": "3.png in Session 1",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 6,
-          "content": "Li Yifan: [Image sent: 3.png] I've sent you the sketch. These are the steps for making an insulated cat shelter using a food foam box. First, cut an entrance large enough for the mother cat to enter and exit...",
-          "image": "3.png"
-        },
-        {
-          "session": "3",
-          "turn": 5,
-          "content": "Zhao Xiaotang: After the surgery, I plan to place the cat on my balcony. I've already prepared a warm nest, just like the DIY cat bed last time, made from a foam box and old clothes. I'm still using the foam box insulation method you taught me in pet_1_01.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking \"Last DIY Cat House\" refers to the image 3.png from Session 1.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "In the conversation on December 18th, Zhao Xiaotang said, \"You taught him how to use the blood pressure monitor at that time.\" Please find the example image corresponding to her statement \"taught him how to use the blood pressure monitor\"? Provide the session number and image file name."
       },
       "original_answer": "3.png in Session 8",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 14,
-          "content": "Li Yifan: [Sending image: 3.png] Sending you an example image to show how to use the blood pressure monitor correctly.",
-          "image": "3.png"
-        },
-        {
-          "session": "12",
-          "turn": 3,
-          "content": "Zhao Xiaotang: Yes, now it's full of energy and often strolls around the neighborhood. And this one, it's Grandpa Wang's first blood pressure record form that he filled out by himself. You taught him how to use the blood pressure monitor back then, and he learned it very seriously.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking \"Teach him how to use the blood pressure monitor\" refers to the image 3.png in Session 8.",
       "generated_at": "2026-04-01T17:05:33.178028",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 7,
-      "medium": 5
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

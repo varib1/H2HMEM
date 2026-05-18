@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Approximately how many people did Su Xiaomeng suggest for the dinner gathering in the conversation?"
       },
       "original_answer": "5-6 people",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 8,
-          "content": "The participants include our core organizers, approximately 5-6 people.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text factual information, with the answer clearly stated in the conversation.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What are the dishes sold at the Chinese-style themed restaurant referred to by Zhou Xingchen in the conversation?"
       },
       "original_answer": "Sichuan Cuisine Specialty Cultural Hot Pot",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "Look, this Chinese-style themed restaurant has such a vibe with its decor, and the lighting design is absolutely stunning.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Retrieve corresponding images based on text descriptions, with the text and images being related to the same event (recommending restaurants).",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "What kind of evaluation and concerns did the problematic image provoke from Su Xiaomeng?"
       },
       "original_answer": "Su Xiaomeng commented that the restaurant environment in the picture is beautiful, but also expressed concerns about the budget.",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "Look, this Chinese-themed restaurant has such a vibe with its decorations, and the lighting design is absolutely stunning. It’s just like the aesthetic style of the game skins we had before—you’re definitely going to love it.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The image (2.png) directly triggered the analogy description of the game skin style in the text, indicating a causal driving relationship.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did the initially proposed dining location by Zhou Xingchen evolve?"
       },
       "original_answer": "From initially deciding on a trendy themed restaurant (Chinese-themed restaurant) to considering everyone's tastes and budget, we ultimately settled on a Cantonese restaurant.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 2,
-          "content": "But voting is such a hassle, let's just decide. I've bookmarked a trendy themed restaurant.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "Look, this Chinese-style themed restaurant.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "That Southeast Asian fusion restaurant has good ratings, with its blended dishes likely to satisfy a variety of tastes.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 16,
-          "content": "Then it's settled: next Saturday evening, at the Cantonese restaurant.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the dining location entity across different rounds, from proposal to final decision.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "According to the rules of the number-guessing game in the conversation, if you are the host of the number-guessing game and the number you have in mind is 58, how should you respond when someone says 60?"
       },
       "original_answer": "Bigger",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 11,
-          "content": "",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "It is necessary to learn the voting options in the image and the budget information in the dialogue to infer Su Xiaomeng's inclination.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Zhou Xingchen said the per capita budget for the meal is very high. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 7,
-          "content": "No problem, I've checked. The per capita cost is moderate, and it offers great value for money.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Present potentially contradictory information (the budget is expensive) to detect supporting or contradictory evidence in the conversation.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which specific pet breed did Su Xiaomeng mention as the theme for the gathering in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (specific pet breed) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:06:49.910719",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

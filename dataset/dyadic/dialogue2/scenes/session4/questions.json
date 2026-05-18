@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the picture of corn silk porridge sent by Lu Zhixing on April 10th, what functions does the corn silk porridge shown in the picture have?"
       },
       "original_answer": "Spring dampness removal, strengthening the spleen and nourishing the kidneys",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qing Yan, I see you've been working hard taking care of Chen Pi lately, so I've prepared some nourishing food for you. I'll bring it over to you in a little while.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall pure image facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T12:21:32.222810",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the recipe for tomato and egg noodles that Lu Zhixing shared with Shen Qingyan, what ingredients are included in the ingredient list?"
       },
       "original_answer": "Tomato, noodles, eggs, scallion, garlic",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "Additionally, tomato and egg noodles are also great for a quick energy boost. Here is a picture of the recipe—it's simple to make and uses easily accessible ingredients. Sending it to you for reference.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Based on the textual information in the conversation, retrieve the corresponding images, which are related to the same event without a causal relationship.",
       "generated_at": "2026-03-01T12:21:32.222810",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "In the conversation between the two, what did Shen Qingyan associate with after seeing the problem picture?"
       },
       "original_answer": "Shen Qingyan recalled how her mother used to jot down recipes when she was a child, and she thought this sense of passing things down felt truly wonderful.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "Handwritten? That's so thoughtful. It reminds me of how my mom used to write down recipes when I was a child. This sense of tradition feels really nice.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The problem type is the first scenario in Multimodal (Text-Image) Causal Inference: given an image, asking what behavior (here, behavior refers to association) of a person in the dialogue is caused by the image. The answer is directly derived from the dialogue text, with no ambiguity.",
       "generated_at": "2026-03-01T23:45:57.575809",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how many recipe pictures did Lu Zhixing send? What are the foods respectively?"
       },
       "original_answer": "There are three dishes: Corn and Big Mustache Porridge, Red Bean Rice Cake Soup, and Tomato Egg Noodles.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "Handwritten? That's so thoughtful. It reminds me of how my mom used to write down recipes when I was little.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 10,
-          "content": "Oh, this is so cute! Chen Pi would definitely be curious if he saw it. Red bean rice cake soup... it sounds so nostalgic, reminding me of warm winter days.",
-          "image": "3.png"
-        },
-        {
-          "session": "session4",
-          "turn": 14,
-          "content": "Tomato and egg noodles... a classic home-cooked dish that always brings comfort.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Track the evolution of descriptions of recipe image entities in multi-turn dialogues, focusing on reference chains and emotional changes.",
       "generated_at": "2026-03-01T12:21:32.222810",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation (including the images), what ingredients are needed to prepare corn silk rice porridge?"
       },
       "original_answer": "Corn silk 90g, red dates 45g, carrots 135g, and an appropriate amount of rice.",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "I've organized the recipes and sent them to you for a look.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "Corn silk, red dates, carrots... these ingredients are all very common.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question is based on newly acquired information (recipe ingredients) from the image, requiring the application of this knowledge to answer, in line with the TTL type.",
       "generated_at": "2026-03-03T01:52:54.280382",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the recipe for red bean rice cake soup sent by Lu Zhixing in the conversation, it says 'the rice cakes are shaped like rabbits.' Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Here's another recipe for red bean rice cake soup, and the cat-shaped rice cakes are absolutely adorable.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The problem presents contradictory information (in the shape of a rabbit), then asks questions based on the contradiction, requiring error detection, which aligns with the CD type.",
       "generated_at": "2026-03-03T01:52:54.280382",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which brand of rice cooker did Lu Zhixing recommend in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Qing Yan, I see you've been working hard taking care of Chen Pi lately, so I made some corn silk and rice porridge—simple and nourishing. Here's a photo; it feels just right for you in your current state.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (rice cooker brand) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:21:32.222810",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,249 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On July 10th, had Lin Chang'an already purchased the prednisolone needed to treat his own cat?"
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What color was the Elizabethan collar that Zhou Pingfan's friend used at home?"
       },
       "original_answer": "White",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "My friend's cat has used this Elizabethan collar, and the feedback is that the material is comfortable and doesn't hinder the cat's movement.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the textual information in the conversation (description of the Elizabethan collar), retrieve the corresponding image (3.png displays the pet protective collar).",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "What is the purpose of Lin Chang'an sending the problem image?"
       },
       "original_answer": "To inquire about Zhou Pingfan's opinion on Royal Canin Hypoallergenic Prescription Diet, in order to help choose suitable cat food for Xingren.",
-      "answer_source": "both",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 8,
-          "content": "This is the introduction to the Royal Canin hypoallergenic prescription diet. What do you think?",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "The second scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask why someone sent it, recalling the preceding cause?",
       "generated_at": "2026-03-01T23:46:06.099976",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the dialogue, how has the entity 'checklist' evolved?"
       },
       "original_answer": "Lin Chang'an sent a picture and inquired about recommendations for online pet pharmacies; later, Lin Chang'an expanded the list and asked for recommendations on care supplies.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "I've made a list, but I'm not quite sure where to buy from reliably. Do you have any recommended online pet pharmacies?",
-          "image": "1.png"
-        },
-        {
-          "session": "session6",
-          "turn": 4,
-          "content": "Aside from medication, do you have any recommendations for care supplies like Elizabethan collars?",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 16,
-          "content": "I plan to place an order for the items on the list today. I'll buy the medicine from the recommended store, and I'll compare the collar and cat food before making a decision.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The 'list' started as a medication list, expanded to include nursing supplies and cat food, and ultimately evolved into specific purchasing decisions.",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "What is the name of the nursing product worn to prevent cats from scratching wounds and affected areas when they are sick?"
       },
       "original_answer": "Elizabethan collar",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 4,
-          "content": "Thank you! This list is very practical; I was just wondering how to choose. Besides medications, do you have any recommendations for care supplies like Elizabethan collars to prevent scratching wounds and affected areas?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Examining the model's ability to learn new information during the conversation (Zhou Pingfan sends image 2.png and mentions the JD store ranking) and apply this knowledge to answer questions.",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lin Chang'an mentioned in the conversation that when he previously took Almond to see a doctor, he noted that pet hospital fees are high and online channels are more convenient. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 2,
-          "content": "I remember last time when I took Xingren to the vet, you mentioned that pet hospital fees are high, and online channels might be more convenient.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: There is a contradiction between the information in the question (mentioned by Lin Changan) and the dialogue content (mentioned by Zhou Pingfan). Check whether it is identified.",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, which specific pet pharmacy name did Zhou Pingfan recommend?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "Found a JD store ranking list, and the top-rated ones have good reviews. You can take a look for reference.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Refusal scenario: Information not present in the question (specific pharmacy name), testing whether to refuse to answer to avoid hallucinations.",
       "generated_at": "2026-03-01T12:21:41.522422",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

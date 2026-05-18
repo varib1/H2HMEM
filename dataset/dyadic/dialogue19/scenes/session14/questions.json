@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,222 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What are the two physical discomfort symptoms that Gu Yanci mentioned experiencing recently in the conversation?"
       },
       "original_answer": "Blurred vision and severe neck and shoulder pain.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Gu Yanci: The pursuit of aesthetics is physically destroying me. Look at this chaotic workstation, blurred vision, and severe neck and shoulder pain—it’s the perfect depiction of occupational hazards.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Text Recall]: Accurately recall pure textual facts (physical symptoms) from the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the description in the conversation that mentions 'the monitor angle is clearly too high and the color cards are scattered'?"
       },
       "original_answer": "2.png in session14",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "Angelica dahurica: [Send image: 2.png] Look at this photo—the monitor angle is clearly too high, the color cards are scattered, and there is a lack of systematic organization.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image Retrieval]: Recalling corresponding images based on conversational text information, both related to the same event (work environment issues)."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture directly triggered Gu Yanci's complaint about 'the pursuit of aesthetics is physically destroying me'?"
       },
       "original_answer": "1.png in session14",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Gu Yanci: [Sent picture: 1.png] My pursuit of aesthetics is physically destroying me. Look at this chaotic workstation, blurred vision, and severe neck and shoulder pain—it’s the perfect depiction of occupational hazards.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Image-driven text]: Image 1 directly leads to Gu Yanci's complaint text, indicating a causal driving relationship."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is the description 'chaotic workbench' concretized? Please track the evolution of its reference."
       },
       "original_answer": "From the 'chaotic workstation' specifically referring to the environmental issues of 'the monitor angle being noticeably too high, color cards scattered, and lacking systematic organization'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Gu Yanci: [Sent picture: 1.png] My pursuit of aesthetics is physically destroying me. Look at this chaotic workstation...",
-          "image": "1.png"
-        },
-        {
-          "session": "session14",
-          "turn": 8,
-          "content": "Angelica dahurica: [Send image: 2.png] Look at this photo—the monitor angle is clearly too high, color cards are scattered, and there’s a lack of systematic organization. This isn’t just an environmental issue...",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Cross-Round Tracking]: Track the evolution of referential expressions for work environment issue entities across different rounds, from general descriptions to specific details."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the new information from the monitor angle adjustment but the color calibrator running brightly in picture 3, what issue in his work habits did Gu Yanci reflect on?"
       },
       "original_answer": "Always striving for precision, yet forgetting about balance.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 13,
-          "content": "Gu Yanci: [Sent picture: 3.png] Take a look at this. The monitor angle has been slightly adjusted, but the color calibrator is still running at high brightness. I’m always chasing precision but forget about balance, just like how we discuss the boundary between inspiration and plagiarism in visual inspiration transformation.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[TTL]: Examine and learn the new information in Picture 3 (monitor adjusted but calibrator highlighted) and apply it. Gu Yanci thus reflects on issues with work habits."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Detect contradiction: Gu Yanci claimed in the conversation that he 'never carefully adjusted' the seat height and monitor angle, but Image 3 shows that the monitor angle has been adjusted. Is this contradictory?"
       },
       "original_answer": "Contradiction",
-      "answer_source": "both",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 5,
-          "content": "Gu Yanci: Never adjusted it carefully. A comfortable posture isn't conducive to seeing the details on the screen...",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 13,
-          "content": "Gu Yanci: [Sent picture: 3.png] Take a look at this, after slightly adjusting the monitor angle...",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detecting the contradiction between the text memory (Gu Yanci said it was never adjusted) and the image information (Image 3 shows it has been adjusted)."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Gu Yanci mentioned in the conversation which brand of monitor he uses?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: Information not present in the question dialogue (monitor brand), testing refusal ability to avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

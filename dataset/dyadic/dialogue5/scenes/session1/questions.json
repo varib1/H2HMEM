@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,261 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Lin Shuying mentioned that when making green rice cakes, how early should the mugwort be picked to ensure it is tender?"
       },
       "original_answer": "Before Qingming",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 2,
-          "content": "She always says that mugwort should be picked before Qingming Festival to be tender.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the \"organized folk custom differences\" mentioned in the conversation, what differences are referred to in the dialogue? (Hint: Combine with the information from the image.)"
       },
       "original_answer": "Production process and appearance, regional characteristics of the filling",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Some folk custom differences I've compiled",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image, recalling corresponding images based on conversational text information, where both are related to the same event, not causal inference.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture caused Xu Huaian to say, 'Every year at this time, I have to take a bite'? Provide the session number and the picture file name."
       },
       "original_answer": "1.png in session1",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 1,
-          "content": "Every year at this time, I have to take a bite.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text, causal inference, the image leads to the emergence of the text.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In a conversation, how are images of questions referred to or cited within the dialogue?"
       },
       "original_answer": "Create a flowchart, this diagram, these manual details.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "I found a production flowchart. Look at these steps, from processing the mugwort to wrapping the filling, everything is drawn in great detail. We can try following it.",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "This picture is so clear, it reminds me of the scenes from my childhood when I watched the elders busy at work. Perhaps a slower pace of life should start with these small things.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 12,
-          "content": "I think these handmade details are something we can hardly appreciate nowadays. Just looking at the picture, I can imagine that busy yet warm atmosphere.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the entity 'traditional food' across different rounds, from the specific green dumpling to an abstract symbol.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What filling might a Shanghainese prefer for Qingtuan?"
       },
       "original_answer": "Salty fillings, especially those made with kalimeris indica.",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "In the Shanghai area, people enjoy using shepherd's purse as a savory filling.",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 3,
-          "content": "I have studied the green rice cakes in the Jiangnan region, where the fillings and preparation methods vary significantly from place to place.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn new information (savory fillings in the Shanghai area from image 2.png) and apply it to infer that Xu Huaian may prefer savory fillings based on their research interests.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Some say that the fillings of Qingtuan are all sweet. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 4,
-          "content": "In my memory, it was sweet filling.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "In the Shanghai area, people enjoy using shepherd's purse as a savory filling.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between the newly input information ('all are sweet') and the existing memory (savory fillings exist).",
       "generated_at": "2026-02-24T14:07:51.078083",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned what materials are used to keep the green rice cake vibrant green?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 9,
-          "content": "For example, how to keep the green rice balls vibrant and green.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Questions about information not present (specific materials) should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:09:08.302736",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

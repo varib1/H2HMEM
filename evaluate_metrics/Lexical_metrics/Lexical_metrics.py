@@ -72,6 +72,10 @@ class QuestionEvaluationResult:
     success: bool = True
     error_message: str = ""
 
+    def __post_init__(self):
+        if self.supporting_evidence is None:
+            self.supporting_evidence = []
+
     def to_dict(self) -> Dict[str, Any]:
         result = {}
         for key, value in asdict(self).items():
@@ -87,7 +91,8 @@ class QuestionEvaluationResult:
 class EnglishTextProcessor:
     """英文文本处理器"""
     
-    # 预定义的9种问题类别（与中文映射一致，但显示名称用英文）
+    # 预定义的9种问题类别（更新为新的 sub_type 结构）
+    # 注意：这些类别现在对应的是 question_type 中的 sub_type 字段
     CATEGORIES = [
         "Unimodal Precise Recall",
         "Cross-modal Related Retrieval",
@@ -95,13 +100,21 @@ class EnglishTextProcessor:
         "Temporal Reasoning",
         "Multimodal Causal Inference",
         "Cross-turn Reference Tracking",
-        "Test-Time Learning (TTL)",
-        "Conflict Detection (CD)",
-        "Answer Refusal (AR)"
+        "Test-Time Learning",
+        "Conflict Detection",
+        "Answer Refusal"
     ]
     
-    # 类别显示名称（英文即可，也可保留原样）
+    # 类别显示名称
     CATEGORY_DISPLAY_NAMES = {cat: cat for cat in CATEGORIES}
+    
+    # 旧类别名称到新类别的映射（向后兼容）
+    LEGACY_CATEGORY_MAPPING = {
+        "Test-Time Learning (TTL)": "Test-Time Learning",
+        "Conflict Detection (CD)": "Conflict Detection",
+        "Answer Refusal (AR)": "Answer Refusal",
+        "Reference & Evolution Tracking": "Cross-turn Reference Tracking"
+    }
 
     def __init__(self, use_stopwords: bool = True, stopwords_file: str = None):
         self.use_stopwords = use_stopwords
@@ -160,6 +173,14 @@ class EnglishTextProcessor:
         text = re.sub(r'[^a-z0-9\s]', '', text)
         # 移除多余空格
         return re.sub(r'\s+', ' ', text).strip()
+    
+    def map_category(self, category: str) -> str:
+        """将类别名称映射到标准格式"""
+        if category in self.CATEGORIES:
+            return category
+        if category in self.LEGACY_CATEGORY_MAPPING:
+            return self.LEGACY_CATEGORY_MAPPING[category]
+        return category
 
 
 class EvaluationMetricsCalculator:
@@ -222,6 +243,7 @@ class MethodAggregatedEvaluator:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.categories = EnglishTextProcessor.CATEGORIES
         self.category_display = EnglishTextProcessor.CATEGORY_DISPLAY_NAMES
+        self.text_processor = EnglishTextProcessor()
         self.method_results = defaultdict(lambda: {
             'metadata': {}, 'results': [],
             'dialogue_stats': defaultdict(lambda: {'count': 0, 'sessions': set()}),
@@ -232,12 +254,20 @@ class MethodAggregatedEvaluator:
         base = Path(base_path)
         if not base.exists():
             raise FileNotFoundError(f"路径不存在: {base_path}")
-        dialogues = sorted(base.glob("对话*"))
+        
+        # 支持 dialogue 和 dialogue1 两种命名格式
+        dialogue_patterns = ["dialogue*", "对话*"]
+        dialogues = []
+        for pattern_name in dialogue_patterns:
+            dialogues.extend(sorted(base.glob(pattern_name)))
+        dialogues = sorted(set(dialogues))  # 去重
+        
         logger.info(f"找到 {len(dialogues)} 个对话文件夹")
         for dialogue in dialogues:
             logger.info(f"\n处理对话: {dialogue.name}")
             scenes = dialogue / "scenes"
             if not scenes.exists():
+                logger.warning(f"  scenes 目录不存在: {scenes}")
                 continue
             sessions = [d for d in scenes.iterdir() if d.is_dir() and d.name.startswith('session')]
             logger.info(f"  找到 {len(sessions)} 个session")
@@ -279,9 +309,25 @@ class MethodAggregatedEvaluator:
                 item.get('system_answer', '').strip(),
                 item.get('original_answer', '').strip()
             )
+            
+            # 获取 question_type，适配新的结构
             qtype = item.get('question_type', {})
             if isinstance(qtype, str):
-                qtype = {'main_type': qtype}
+                qtype = {'main_type': qtype, 'sub_type': ''}
+            elif isinstance(qtype, dict):
+                # 确保有 main_type 和 sub_type
+                if 'main_type' not in qtype:
+                    qtype['main_type'] = ''
+                if 'sub_type' not in qtype:
+                    qtype['sub_type'] = ''
+            
+            # 获取 category：优先使用 item 中的 category，否则从 question_type 的 sub_type 获取
+            category = item.get('category', '')
+            if not category:
+                category = qtype.get('sub_type', 'unknown')
+            # 映射类别名称
+            category = self.text_processor.map_category(category)
+            
             return QuestionEvaluationResult(
                 sample_id=item.get('sample_id', ''),
                 session_id=session,
@@ -289,7 +335,7 @@ class MethodAggregatedEvaluator:
                 question_id=item.get('question_id', ''),
                 question_text=item.get('question_text', ''),
                 question_image=item.get('question_image', ''),
-                category=item.get('category', qtype.get('subsub_type', 'unknown')),
+                category=category,
                 difficulty=item.get('difficulty', 'medium'),
                 question_type=qtype,
                 original_answer=item.get('original_answer', ''),
@@ -488,9 +534,9 @@ class MethodAggregatedEvaluator:
 
 def main():
     parser = argparse.ArgumentParser(description="Multimodal Memory Evaluation - P, R, F1, BLEU-1 (English)")
-    parser.add_argument("--base_path", required=True, help="Root path containing '对话*' folders")
+    parser.add_argument("--base_path", required=True, help="Root path containing 'dialogue*' or '对话*' folders")
     parser.add_argument("--output_dir", required=True, help="Output directory")
-    parser.add_argument("--pattern", required=True, help="Result file pattern")
+    parser.add_argument("--pattern", default="results_*.json", help="Result file pattern (default: results_*.json)")
     parser.add_argument("--stopwords_file", help="Custom stopwords file (optional)")
     parser.add_argument("--verbose", action="store_true", help="Verbose logging")
     args = parser.parse_args()

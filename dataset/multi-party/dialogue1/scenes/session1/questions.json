@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,279 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what specific health concerns did Dr. Wu raise about the sausage on the pizza?"
       },
       "original_answer": "The sodium content in the sausage exceeds the standard.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 7,
-          "content": "E_DrWu: @B_Kiki This pizza isn't exactly healthy; the sodium content in the sausage is over the limit.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-23T10:08:59.330749",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "img7.jpg",
         "text": "Based on the dialogue content, what does Su Qian call the food in the question's picture?"
       },
       "original_answer": "Preserved Vegetable Rice Soup",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 20,
-          "content": "A_LinSen: [Sent picture: img5.jpg] This is actually the Maillard reaction, and 60 degrees is just right.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "Recall important textual information from the dialogue based on the image content, avoiding the original response language, and focus on relevant relationships rather than causality.",
       "generated_at": "2026-03-23T10:08:59.330784",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image led Dr. Wu to warn Ajay that charred food may cause cancer? Provide the session number and image file name."
       },
       "original_answer": "img4.jpg in session1",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 15,
-          "content": "D_AhJie: [Sent picture: img4.jpg] This time's fried egg, help...",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 16,
-          "content": "E_DrWu: @阿杰 Your egg is severely burnt; it might be carcinogenic.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring the causal relationship between the image and the text, img4.jpg shows a charred fried egg, which directly triggers Dr. Wu's warning.",
       "generated_at": "2026-03-23T10:08:59.330803",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did A Jie's kitchen equipment issue evolve from the coating peeling off the pot bottom to the damage of the stove knobs?"
       },
       "original_answer": "Ajie first showed a picture of the pot's coating peeling off (img8.jpg), then displayed an image of the damaged stove knob (img9.jpg), and discussed replacing the equipment in the subsequent conversation.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 34,
-          "content": "D_AhJie: [Sent image: img8.jpg] The coating on my pot has peeled off, help...",
-          "image": "img8.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 39,
-          "content": "D_AhJie: [Sent image: img9.jpg] The stove knob is broken too, need some comfort.",
-          "image": "img9.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 66,
-          "content": "D_AhJie: Guys, I get it now. It looks like I really need to change my pot and stove.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the kitchen equipment issue with A-Jie across multiple rounds of conversation, from the pot to the stove, ultimately deciding to replace the equipment.",
       "generated_at": "2026-03-23T10:08:59.330819",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "img6.jpg",
         "text": "Based on Lin Sen's explanation of this image in the conversation, what key skills should Ajie learn if he wants to improve his cooking?"
       },
       "original_answer": "Slow cooking helps retain the juices and tenderness of the meat.",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 24,
-          "content": "B_Kiki: [Sending image: img6.jpg] Charge! Is this Old Lin's secret weapon?",
-          "image": "img6.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 26,
-          "content": "D_AhJie: @OldLin, boss, please guide me. Is this temperature the key?",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 27,
-          "content": "A_LinSen: @阿杰 Yes, slow cooking can preserve the juiciness and tenderness of the meat.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply newly acquired knowledge from images and conversations (slow cooking techniques) to answer questions, assessing online adaptability.",
       "generated_at": "2026-03-23T10:08:59.330857",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "When Lin Sen was demonstrating the strawberry plating, he mentioned the issue of sugar content. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 51,
-          "content": "A_LinSen: [Sent picture: img12.jpg] I'll show off too, how about this strawberry plating?",
-          "image": "img12.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 52,
-          "content": "C_SuQian: @A_LinSen The plating is truly artistic, and the lighting is fantastic—soothing and full of healing vibes.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 54,
-          "content": "E_DrWu: @A_LinSen These strawberries are good, but they're high in sugar, so it's best to eat them in moderation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the consistency between new information (Dr. Wu mentioned sugar) and existing memory (Lin Sen did not mention sugar), with no contradictions.",
       "generated_at": "2026-03-23T10:08:59.330875",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Sen mentioned what his favorite coffee brand is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 57,
-          "content": "A_LinSen: [Image sent: img13.jpg] This is actually the Maillard reaction... Everyone, take a look at my pour-over coffee setup this time.",
-          "image": "img13.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 60,
-          "content": "E_DrWu: @A_LinSen Your equipment is quite impressive, but how well do you control the acidity of the coffee?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (coffee brand) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-23T10:08:59.330890",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,243 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which practice in art therapy did Su Yu'an mention in the conversation?"
       },
       "original_answer": "In art therapy, papers with different textures are often chosen.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 5,
-          "content": "In art therapy, I often choose drawing papers with different textures; the materials themselves speak.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'transparency effect when sunlight passes through' mentioned in the conversation, find the corresponding image."
       },
       "original_answer": "2.png in session15",
-      "answer_source": "image_description",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 3,
-          "content": "And this piece of paper drying in the sun, with the light shining through it, reminds me of the feeling of 'quietly accompanying the flow of light' in a memorial album.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, as both are related to the same event.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.png",
         "text": "What exclamation or evaluation did the picture evoke from Shen Jingyan?"
       },
       "original_answer": "'Temperature' and 'Matching' Repair Objects",
-      "answer_source": "inference",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 7,
-          "content": "This piece of paper drying in the sun, with its warm tones, softens my heart. Unlike industrial products that are uniformly neat, it carries a certain 'warmth' that reminds me of the 'drinkable meditation practice' from that tea experience.",
-          "image": "4.png"
-        },
-        {
-          "session": "session15",
-          "turn": 8,
-          "content": "The word 'temperature' is well chosen. When selecting paper, I always feel it is 'matching' the object being restored, like humble undergarments. This connects to the 'sensory diary' we discussed—where touch awakens the inner self.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that images drive textual evaluations, with a focus on causal inference.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "The texture of this bamboo screen for papermaking, with its interwoven warp and weft of bamboo strips.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Jingyan, I just finished organizing the photos from the paper mill. The texture of this bamboo screen used for papermaking reminds me of the 'dialogue with paper' technique you shared earlier.",
-          "image": "1.png"
-        },
-        {
-          "session": "session15",
-          "turn": 2,
-          "content": "Well, the interweaving of the bamboo curtain's warp and weft is like the breath of fibers in ancient book restoration. You captured it with great delicacy.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the reference and evolution of the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.png",
         "text": "Based on the newly acquired information from the conversation, what memory does Shen Jingyan believe that air-drying preserves in the paper?"
       },
       "original_answer": "Water Memory",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "Yes, air-drying allows the paper to retain its moisture memory, unlike the haste of machine drying. This reminds me of our conversation about 'the value of slowness.'",
-          "image": ""
-        }
-      ],
       "validation_notes": "Assess the ability to learn new information and apply it, and respond based on the dialogue content.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Detect contradiction: The dialogue mentions that 'machine-made paper is flawless,' but Shen Jingyan also says that 'the subtle differences in handmade paper are the basis for restoration.' Is this contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 6,
-          "content": "Machine-made paper is flawless, yet it lacks a 'soul'. The subtle nuances of handmade paper form the very foundation for 'dialogue' with ancient texts during restoration, much like the 'embrace of imperfection' you mentioned earlier.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Check information consistency to avoid contradictions.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What type of animal is 'Old Cat Ink Stain' mentioned in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 11,
-          "content": "Just as the old cat, Ink Stain, taught us to 'cherish but not cling.' Is the beauty of material imperfection a form of acceptance of life's stages?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present (animal species) to assess refusal ability and avoid hallucinations.",
       "generated_at": "2026-02-24T11:33:03.291852",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

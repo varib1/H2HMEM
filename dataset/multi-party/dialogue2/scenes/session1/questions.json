@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,272 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what characteristics does Ricky mention about his newly purchased carbon plate running shoes?"
       },
       "original_answer": "The elasticity is so great that it's difficult for him to control.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 39,
-          "content": "Ricky: @Iron Sister, yes, these are newly purchased carbon plate running shoes. The rebound is so strong that I find them a bit hard to control.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-23T10:08:56.232215",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "On May 10th, what was the maximum value of Coach Zhang's heart rate curve in bpm?"
       },
       "original_answer": "158",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 33,
-          "content": "Da Liu: [Sent picture: img8.jpg] I've only run 2 kilometers, and I'm already unbearably hot.",
-          "image": "img8.jpg"
-        }
-      ],
       "validation_notes": "Text→Image, recalling corresponding image information based on textual information from the conversation, both related to the same event.",
       "generated_at": "2026-03-23T10:08:56.232251",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image caused Ricky to express concern about an excessively high heart rate and the need to reduce intensity in the conversation? Provide the session number and image file name."
       },
       "original_answer": "img9.jpg in session1",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 36,
-          "content": "Ricky: [Sends picture: img9.jpg] Look at my heart rate, this isn't good.",
-          "image": "img9.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 37,
-          "content": "Coach Zhang: @Ricky, a heart rate of 180 is too high; you need to lower the intensity.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text, causal inference, the image triggered subsequent textual evaluations and concerns.",
       "generated_at": "2026-03-23T10:08:56.232270",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did Da Liu's running schedule evolve from the initial state to the final decision?"
       },
       "original_answer": "From initially suffering heatstroke easily when running at noon, to being advised to adjust the time, and finally deciding to try to get up early for running to avoid the midday heat.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "Coach Zhang: @Big Liu, running at noon is easy to get heatstroke. Just look at the sunlight angle in picture 7 to know.",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "Da Liu: @Coach Zhang Yes, I will adjust the time.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 26,
-          "content": "Da Liu: It seems I need to adjust my schedule to avoid the midday heat as much as possible.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 30,
-          "content": "Da Liu: I'll make adjustments and try to get up early for a run, maybe catch the sunrise while I'm at it.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and changes in the reference chain of the entity (Da Liu's running schedule) across multiple rounds of dialogue.",
       "generated_at": "2026-03-23T10:08:56.232287",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the running advice from Coach Zhang learned in the conversation, how should one effectively run for fitness?"
       },
       "original_answer": "Keep your heart rate within the aerobic zone, control the pace, and avoid excessive intensity.",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 61,
-          "content": "Peach: [Sent picture: img13.jpg] Check out my brunch today, how is it?",
-          "image": "img13.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 62,
-          "content": "Iron Sister: @Peach Wow, your brunch looks really exquisite! It seems so full of energy.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 63,
-          "content": "Xiaopi: @Peach This looks so healthy, I need to learn from your eating habits.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online adaptation, learning newly acquired multimodal information (images and text) and applying it to answer questions.",
       "generated_at": "2026-03-23T10:08:56.232326",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the dialogue, Instructor Zhang suggested that Da Liu run at noon to enhance endurance. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "Coach Zhang: @Big Liu, running at noon is easy to cause heatstroke. Just look at the sunlight angle in Figure 7 to know.",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 23,
-          "content": "Coach Zhang: [Sends picture: img5.jpg] There's a special arrangement for you in this plan, so be sure to avoid running during high-temperature periods.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "session1",
-          "turn": 32,
-          "content": "Coach Zhang: @Iron Sister, running in this kind of weather really makes it easy to get heatstroke. Da Liu, you need to pay attention to your schedule.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction detection, propose new information that may contradict the dialogue content, and detect whether contradictions are identified.",
       "generated_at": "2026-03-23T10:08:56.232343",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what brand of running shoes did Iron Sister mention as her favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Do not answer questions about information not present in the conversation to avoid hallucinations.",
       "generated_at": "2026-03-23T10:08:56.232358",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

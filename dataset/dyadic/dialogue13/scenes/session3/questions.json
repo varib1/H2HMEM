@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,174 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Zhou Mingyuan mentioned that after the children got a dog, what specific tasks do they compete to do every day?"
       },
       "original_answer": "Feeding and walking the dog",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "The daughters now compete every day to feed and walk the dog.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:21:31.232071",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the scene in the conversation where the daughters rest after playing with 'An An', provide the session number and image file name."
       },
       "original_answer": "1.png in session3",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "I'll start by sharing a photo I took earlier. It shows my daughters resting after playing with 'An An' until they were tired.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, as both are related to the same event.",
       "generated_at": "2026-02-24T11:21:31.232071",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What exclamation did the problematic image evoke from Lin Shu?"
       },
       "original_answer": "The scene is so heartwarming.",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Director Lin, I just sent a photo showing the girls interacting with 'An An' on the lawn in the residential area.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Wow, I saw the photo, the scene is so heartwarming!",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Inferring that images drive textual responses, focusing on causal inference.",
       "generated_at": "2026-02-24T11:21:31.232071",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "4.png",
         "text": "How are problem images referred to or cited in the conversation?"
       },
       "original_answer": "Table, the table is very practical.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 16,
-          "content": "I have compiled a table summarizing common issues in pet care and training.",
-          "image": "4.png"
-        },
-        {
-          "session": "session3",
-          "turn": 17,
-          "content": "The table is very practical!",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same entity across different rounds.",
       "generated_at": "2026-02-24T11:21:31.232071",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Zhou Mingyuan mentioned which instrument the children learned after getting a dog?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess refusal-to-answer capability.",
       "generated_at": "2026-02-24T11:21:31.233262",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

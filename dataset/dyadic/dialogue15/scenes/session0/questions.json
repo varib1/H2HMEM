@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.138338"
@@ -18,458 +17,224 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On January 15th, what unusual behaviors did Lin Cedu's cat exhibit? On March 20th, after the noise reduction equipment was installed, what were the cat's food intake and playtime respectively?"
       },
       "original_answer": "On January 15th, the abnormalities observed in the cat included a 20% decrease in activity levels, a significant increase in the variance of sleep duration, and disrupted daily routines. After the installation of noise reduction equipment on March 20th, the cat's daily food intake changed to 220g, and its daily playtime increased to 85 minutes.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Lin Measure: Compared to the historical baseline, activity levels have decreased by 20%, which is statistically significant.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "Lin Measure: The variance in my cat's sleep duration has significantly increased, with disrupted sleep patterns, resembling an irregular pattern.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Lin Measure: [Image sent: 3.png] This is a control chart of the cat's core behavioral indicators, including food intake and play duration.",
-          "image": "session3/3.png"
-        }
-      ],
       "validation_notes": "Recall the abnormal description from Session 1 and the specific numerical values from Session 3.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the 5-kilometer running data comparison on March 1st, who had a higher cadence? In the post-marathon analysis on November 3rd, whose race strategy execution was more perfect?"
       },
       "original_answer": "In the data comparison on March 1st, Lin Cedu's step frequency was higher. In the post-race analysis on November 3rd, Lin Cedu's strategy execution was more perfect (actual pace closely followed the predicted pace).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Lin Measure: [Send image: 1.png] I just organized the data comparison chart for our recent 5km runs and am sending it to you for a look.",
-          "image": "session11/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 9,
-          "content": "Forest Measure: Checking. My actual pace (solid blue line) closely follows the prediction (dashed blue line), executing the strategy perfectly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall descriptions of the performance of the Lin measure in two different sessions.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "On January 15, Lin Cedu stated that the cat's \"sleep duration variance significantly increased, and its routine was disrupted.\" In that session, which image from a spectral analysis perspective shows the environmental factors that may have caused this issue? Provide the session number and image file name. What is the frequency of the abnormal noise shown in that image?"
       },
       "original_answer": "2.png in session2 (spectrum analysis chart). The image shows abnormal high-frequency noise at approximately 55kHz, occurring between the 3rd and 8th seconds, with an intensity of about 65dB.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "Lin's Measure: The variance in my cat's sleep duration has significantly increased, with disrupted sleep patterns, resembling an irregular mode.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "Forest Measurement: [Image sent: 2.png] Yes, I shared the spectrum analysis chart. It shows recent occurrences of unknown high-frequency noise within the auditory sensitivity range of cats, with intensity fluctuating over time.",
-          "image": "session2/2.png"
-        }
-      ],
       "validation_notes": "Text (Session 1) → Image (Session 2): Phenomenon Description and Cause Analysis of the Same Issue",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the pet behavior mutation incident, how was the initially suspected dietary change variable in Session 1 updated or revised in Session 2?"
       },
       "original_answer": "In Session 1, dietary changes were suspected to be the key variable (Han Shuli switched to a new brand of dog food). However, in Session 2, through A/B testing and spectral analysis, high-frequency noise was identified as a more critical environmental stress variable, and the impact of dietary changes was reassessed.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 10,
-          "content": "Han Shuli: Yes, last week we switched to a new brand of dog food, and the ingredient list shows a change in protein sources. This could be a confounding variable.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "Lin Measure: Yes, I shared the spectrum analysis chart. It shows that unknown high-frequency noise has recently appeared within the auditory sensitivity range of cats, with its intensity fluctuating over time. This could be a new variable of environmental stress.",
-          "image": "session2/2.png"
-        },
-        {
-          "session": "2",
-          "turn": 15,
-          "content": "Han Shuli: Efficient collaboration. From individual observations to joint research, we have progressed rapidly. Noise has been identified as a suspected primary variable, and the next step is stress response modeling.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Issue detection: Knowledge updates from Session 1 to Session 2, from dietary changes to corrections of noise variables.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the diet-cognitive performance trial, how does the hypothesis proposed in Session 8 differ from the final conclusion in Session 10?"
       },
       "original_answer": "In Session 8, the hypothesis was that intermittent fasting (16:8) improves afternoon code review efficiency more than three regular meals; in Session 10, the conclusion was that fasting has a slight positive but not significant effect on code accuracy (p=0.08), but significantly enhances subjective ratings of afternoon energy levels, suggesting personalized application.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Han Shuli: I have sent a comparison table of intermittent fasting plans. Based on our previous collaboration from pet behavior to health management, I propose a hypothesis: adopting a 16:8 intermittent fasting schedule may improve afternoon code review efficiency more effectively than following a conventional three-meal pattern.",
-          "image": "session8/1.png"
-        },
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Hansuli: Lin Measure, I have just completed the summary chart for the final statistical analysis report of the diet-cognitive performance N-of-1 trial. The results indicate that fasting has a slight positive effect on code accuracy, though not significant, but it significantly improves subjective afternoon energy ratings.",
-          "image": "session10/1.png"
-        }
-      ],
       "validation_notes": "Issue detection: Knowledge updates from Session 8 to Session 10, including the revision and refinement of hypotheses and conclusions.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the incident of sudden changes in pet behavior patterns, what is the correct chronological order of the following four events from identifying the issue to producing knowledge outcomes?  \nA. Design A/B tests and analyze variance, discussing variable control and hypothesis testing.  \nB. Establish a standardized data collection protocol after noise reduction intervention and quantify the effects.  \nC. Discover anomalies in the heatmap of Siamese cat activity trajectories and note that the anxiety indicators of Border Collies exceed the threshold.  \nD. Organize LaTeX documentation, open-source the guide on GitHub, and design an interactive visualization page."
       },
       "original_answer": "C -> A -> B -> D",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Lin Ce sent a heat map of his Siamese cat's activity over the past week to Han Shuli, pointing out a statistically significant anomaly (a 20% decrease in activity). Han Shuli responded that his Border Collie's data also showed abnormalities.",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Han Shuli shared the preliminary results of the A/B test (ANOVA summary chart), and Lin Cedu suggested that weather might be a potential confounding variable. Both parties focused on variable control and hypothesis testing.",
-          "image": "session2/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Lin Cedu sent a comparative control chart of the core behavioral indicators of cats before and after the installation of active noise-canceling devices. Both parties calculated the intervention effect size and NNT, and established a standardized data collection protocol.",
-          "image": "session3/3.png"
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Han Shu sent the initial version of the collaboratively written guide (typeset in LaTeX), which includes a data collection template. Lin Ce designed a prototype for an interactive visualization page and initialized the GitHub repository.",
-          "image": "session4/1.png"
-        }
-      ],
       "validation_notes": "Assess the user's ability to sequence the timeline of pet behavior projects, from baseline anomaly detection and A/B testing to intervention quantification and knowledge output.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the sport-half marathon training program, from establishing a baseline of ability to post-race analysis, what is the correct chronological order of the following four events?  \nA. Generate a pre-race pacing strategy heatmap based on course elevation and weather, and compare actual versus predicted data after the race.  \nB. Use a reinforcement learning model to dynamically adjust the training intensity for the next 4 weeks based on 8 weeks of training data.  \nC. Import Garmin watch data, compare cadence and heart rate zones for a 5K run, and set a half marathon goal.  \nD. Write an automated script to collect data and discuss how to assess recovery metrics by measuring HRV."
       },
       "original_answer": "C -> D -> B -> A",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Lin Cedu sent a comparison chart of a 5-kilometer run data (from a Garmin watch), including pace, heart rate zones, cadence, and other metrics. Both parties have set a half marathon completion goal and established monitoring indicators such as TRIMP and ACWR.",
-          "image": "session11/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Han Shuli trained a reinforcement learning model based on training data from the past 8 weeks, which generated a recommended curve for adjusting training intensity over the next 4 weeks, suggesting the addition of a recovery week.",
-          "image": "session12/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lin Ce sent a heat map of the pacing strategy generated based on the weather forecast and the track elevation map. After the race, Han Shuli sent a comparative analysis chart of actual vs. predicted pacing.",
-          "image": "session13/1.png"
-        }
-      ],
       "validation_notes": "Assess the user's ability to sequence the timeline of a half-marathon training program, from baseline testing and script writing to model dynamic adjustments and pre-race strategy execution.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the neck and shoulder pain management program, which specific physiological issue, as revealed in the chart presented during the initial phase of the project, did Han Soo-ri's finalized optimal intervention plan of 'adjustable desk + timed reminders' primarily aim to address?"
       },
       "original_answer": "This plan is primarily designed to address the issue of maintaining poor posture (excessive forward tilt) for extended periods, as revealed by the \"Cervical Forward Tilt Angle Time Series Chart.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Han Shuli sent a time-series graph of the cervical forward tilt angle collected over a week using a posture sensor, showing a significant increase in the forward tilt angle during the afternoon period, along with the scoring trend from the pain self-assessment scale (VAS).",
-          "image": "session5/2.png"
-        },
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "Han Shuli sent a visualization of the multivariate analysis of variance (MANOVA) results and generated an optimal intervention combination recommendation chart based on the decision tree model, confirming that a height-adjustable desk + timed reminders is the optimal solution.",
-          "image": "session7/1.png"
-        }
-      ],
       "validation_notes": "Assess whether the user can establish a causal link between the decisions in Session 7 and the visual data from Session 5.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "In the sports-half marathon training program, Han Shuli decided to introduce a 'reinforcement learning model' to dynamically adjust the training intensity. This decision was primarily made to address the specific training risks revealed by which chart?"
       },
       "original_answer": "This decision was primarily made to address the risks revealed by the previous 'ACWR (Acute Chronic Workload Ratio) Monitoring Indicator Chart.' The chart showed excessive fluctuations in training load (i.e., the risk of the 'ratchet effect'), which directly led to the model's determination that reinforcement learning is needed to optimize subsequent intensity allocation to avoid injuries.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Lin Cedu sent a comparison chart of data from a 5-kilometer run and specifically pointed out the ACWR (Acute Chronic Workload Ratio) monitoring indicator chart, which shows a recent surge in workload, indicating a potential risk of injury.",
-          "image": "session11/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "To address the aforementioned issue of load fluctuations, Han Shuli introduced a reinforcement learning model. Trained on data from the past eight weeks, it generated a recommended curve for adjusting training intensity over the next four weeks, aiming to smooth the load and enhance performance.",
-          "image": "session12/1.png"
-        }
-      ],
       "validation_notes": "The fundamental reason for implementing specific algorithmic interventions (reinforcement learning) in Session 12 is to assess whether users can identify visual risk signals (abnormal ACWR) in Session 11.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "session3/1.png",
         "text": "The device in this image is discussed in subsequent sessions for standardized protocols. In which session was it initially introduced, and how was it described?"
       },
       "original_answer": "Initially introduced in Session 3, it is described as an active noise-canceling device, similar to a standing household appliance, capable of effectively reducing environmental noise.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 13,
-          "content": "Lin measured and sent a picture to showcase the active noise-canceling device, describing it as similar to a vertical household appliance that effectively reduces environmental noise.",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "4",
-          "turn": 2,
-          "content": "During the review of the guidelines, Lin suggested strengthening the section on measurement equipment calibration, citing the use of sound level meters in Session 2, but noted that the equipment references also include noise reduction devices.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same device (noise reduction device) from its introduction in Session 3 to the protocol discussion in Session 4.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "session8/1.png",
         "text": "What experiment was this intermittent fasting schedule table used for in subsequent sessions, and how was it personalized?"
       },
       "original_answer": "For a diet-cognitive performance N-of-1 trial, the personalized application involves fasting on the day before a period requiring high-intensity concentration.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Han Shuli sent a comparison table of intermittent fasting plans and proposed a hypothesis: adopting a 16:8 intermittent fasting schedule may improve afternoon code review efficiency more effectively than following a conventional three-meal pattern.",
-          "image": "session8/1.png"
-        },
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Han Shu sent the final statistical analysis report, which shows that fasting has a slight positive but not significant effect on code accuracy, but significantly improves subjective energy ratings in the afternoon. It is recommended to implement fasting on the day before tasks requiring high-intensity focus.",
-          "image": "session10/1.png"
-        }
-      ],
       "validation_notes": "The evolution of the topic from the trial definition of the intermittent fasting protocol in Session 8 to its personalized application in Session 10.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ011"
     }
-  ],
-  "summary": {
-    "total_questions": 11,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 1,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 6,
-      "hard": 2
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

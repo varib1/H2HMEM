@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,205 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation, what is the specific image description of the \"reference picture for the Ragdoll cat design\" mentioned by Su Xiaomeng?"
       },
       "original_answer": "Lying on a gray blanket, the atmosphere is super quiet.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "I asked the designer to refer to the photo you sent earlier—the one with the quiet atmosphere, lying on the gray blanket.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall factual information from the text and avoid vague responses.",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.png",
         "text": "Based on the conversation content, what image of the Shiba Inu is depicted in the question's picture?"
       },
       "original_answer": "Chibi-style character",
-      "answer_source": "image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "The designer just sent over the initial draft of the Shiba Inu chibi-style character. Isn't it super cute? I specifically emphasized highlighting the 'boss' vibe with that outgoing, social butterfly personality.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval, finding corresponding images based on descriptions.",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What did the problem picture remind Zhou Xingchen of?"
       },
       "original_answer": "Co-branded cat food advertisement featuring a Shiba Inu sticking out its tongue design.",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "First, take a look at this Shiba Inu avatar design. It would work well on scarves or small accessories. The cute smile and little tongue are sure to attract fans—it reminds me of that co-branded cat food advertisement I came across earlier, featuring a Shiba Inu sticking out its tongue.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Causal Inference for Image-Driven Text",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the dialogue, how does Zhou Xingchen gradually describe the application scenarios of the Chibi Shiba Inu character from the initial draft to the sample images?"
       },
       "original_answer": "From the initial draft emphasizing a social butterfly vibe, to the sample images suggesting use on scarves or small accessories, and then to the everyday use of ceramic bowls and canvas bags.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "The designer just sent the initial draft of the Shiba Inu chibi-style character. Isn't it super cute? I specifically emphasized highlighting the 'boss' vibe with that social butterfly energy.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "First, take a look at this Shiba Inu avatar design; it would work well on scarves or small accessories.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "Look at the design of this ceramic bowl again. The patterns of dogs and cats are printed on the bowl, making it very practical for daily use.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and reference chain of entities across different rounds.",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the discussion about the practicality of canvas bags in the conversation, what are the suitable usage scenarios for canvas bags?"
       },
       "original_answer": "Daily commuting or shopping",
-      "answer_source": "both",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 10,
-          "content": "Canvas bags are highly practical and can be used for daily commuting or shopping.",
-          "image": "5.png"
-        }
-      ],
       "validation_notes": "Learn new information (canvas bag design) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In this conversation, which pet's line art design did Zhou Xingchen mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Asking about information not present (such as other types of pets) to assess the ability to decline answering.",
       "generated_at": "2026-02-24T11:07:32.563913",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, which technology trend did Zhou Pingfan mention he knows more about?"
       },
       "original_answer": "Quantum computing",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Zhou Pingfan: Well, when it comes to trends, I know quite a bit about quantum computing. Although it's not ranked first, it has great potential.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T12:23:32.613796",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What are the top three in the 2025 Top Ten Technology Trends report sent by Zhou Pingfan in the conversation?"
       },
       "original_answer": "Accelerated construction of 5G base stations",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Lin Chang'an: [Sending image: 2.png] Look at this chart. The scale of the AI industry has grown remarkably in recent years. Our advertising industry is discussing how to apply AI to improve efficiency.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the dialogue text information, as both are related to the same event (growth in the AI industry scale).",
       "generated_at": "2026-03-01T12:23:32.613796",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What is the purpose of Zhou Pingfan sending the problem image?"
       },
       "original_answer": "To demonstrate the rapid growth in the number of scientific research papers and patents on quantum computing, in support of his view that quantum computing holds great potential.",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Zhou Pingfan: Well, when it comes to trends, I know quite a bit about quantum computing. Although it's not ranked first, it has great potential.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 7,
-          "content": "Zhou Pingfan: [Sent image: 3.png] Look at this chart—both the number of research papers and patents are growing rapidly, indicating that the industry is accelerating its development.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The question type is 'Text Response to Image' in Multimodal (Text-Image) Causal Inference, inquiring about the antecedent cause for sending the image.",
       "generated_at": "2026-03-01T23:47:21.099661",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how does Lin Chang'an gradually refer to the tool previously recommended by Zhou Pingfan?"
       },
       "original_answer": "From \"the tools you recommended\" to \"the smart devices you previously recommended to help me take care of almonds\" and then to \"those health tools you mentioned.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Lin Chang'an: That makes sense. I can plan some in-depth reports, just like the tools you recommended when we discussed health before. It's always good to be prepared in advance.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "Lin Chang'an: It sounds a bit like you previously recommended smart devices to help me take care of Xingren, all to improve efficiency.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 12,
-          "content": "Lin Chang'an: I feel the same way. As a client manager, if you don't understand a bit of technology, it's hard to even chat with clients. Like last time we had dinner, you mentioned those health tools, and I found it really beneficial.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same entity (the tool recommended by Zhou Pingfan) across different rounds to form a reference chain.",
       "generated_at": "2026-03-01T12:23:32.613796",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the newly learned information from the conversation, what long-term impacts might quantum computing have in various fields?"
       },
       "original_answer": "Encryption and Drug Development",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "Zhou Pingfan: [Sent image: 4.png] This is a recent breakthrough; the device has become more stable. In the long run, it could transform fields like encryption and drug development, much like automation has made things easier and more efficient for us.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Ability to examine new information from online learning (descriptions of the impact of quantum computing in Image 4 and the dialogue) and apply it.",
       "generated_at": "2026-03-01T12:23:32.613796",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, did Zhou Pingfan mention his views on blockchain technology?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (blockchain technology) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:23:32.613796",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

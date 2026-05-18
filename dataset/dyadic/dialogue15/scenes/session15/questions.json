@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,164 +15,89 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Han Shuli mentioned updating the decision matrix based on the rental test results and sent the 3D rendering of the final selected components. What is the filename of this image?"
       },
       "original_answer": "1.png",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Based on the rental test results, I have updated the decision matrix and ultimately selected this configuration. This is a 3D rendering of the components. The water cooling system ensures thermal efficiency, aligning with the optimal weighted score we previously discussed.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "What exclamation or discussion did the problematic picture provoke from Han Soo-ri?"
       },
       "original_answer": "Overall improvement is significant.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 7,
-          "content": "[Send image: 3.png] Just completed. This is the performance improvement percentage dashboard, based on a standardized test suite. The overall improvement is significant, and at the specific task level, it validates our prioritization of requirements.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image → Text: The image sparked a discussion in the conversation."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.jpg",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "Photos during the setup, saw the photos.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 5,
-          "content": "The assembly process is proceeding as planned. This is a photo taken during the setup. I followed standardized protocols to ensure precise connections for each component, avoiding subjective deviations.",
-          "image": "4.jpg"
-        },
-        {
-          "session": "session15",
-          "turn": 6,
-          "content": "I've seen the photos, and the assembly details are very precise. This systematic approach, from the experimental design in Session 6 to the current implementation, truly reflects a data-driven mindset. After the workstation was up and running, did you execute the test suite?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the average noise level of the workstation at full load is 55 decibels, but when quantifying the impact of noise on pets in Session 2, Lin set the threshold at 50 decibels. Is this contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 3,
-          "content": "In terms of noise, measurements were taken using a decibel meter, with an average of 55 decibels at full load, which is below our set threshold of 60 decibels.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "This reminds me of how we quantified the impact of noise on pets in Session 2. Now, applying this to hardware, error awareness is crucial. Is the assembly going smoothly?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between newly input information (hypothetical 50-decibel threshold) and existing memory (60-decibel threshold)."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Han Shuli mentioned in the conversation what his favorite computer game is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Cross-session Conflict Detection": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "medium": 2,
-      "hard": 2,
-      "easy": 1
-    }
-  }
+  ]
 }

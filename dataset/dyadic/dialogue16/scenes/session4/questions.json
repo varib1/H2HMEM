@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,247 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "During which period of medical texts restoration was Shen Jingyan moved by the concept of \"peace of mind, freedom from all ailments\"?"
       },
       "original_answer": "Ming Dynasty",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Recently, while restoring a medical book from the Ming Dynasty, I was deeply moved by the concept that \"a peaceful mind ensures freedom from all ailments.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Directly recall the time information explicitly mentioned in the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the 'mind map' mentioned in the conversation? Provide the session number and the image file name."
       },
       "original_answer": "2.png",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 8,
-          "content": "I've drawn a mind map and outlined the initial structure of the 'Mindfulness Mini-Guide'.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Recall corresponding images based on the dialogue content."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "After this image sparked Su Yu'an's discussion on 'mind mapping', what suggestion did Shen Jingyan put forward?"
       },
       "original_answer": "Simplify into image cards and open-ended prompts.",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 8,
-          "content": "I've drawn a mind map and outlined the initial structure for the 'Mindfulness Mini-Guide'.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "This image is quite inspiring, Yu An. It reminds me of your previous watercolor series, with that sense of 'breathing space in the blank areas.' Perhaps we can simplify it: you create a set of guiding imagery cards, and I'll pair them with brief, open-ended prompts.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Infer the changes in dialogue content triggered by the image, assessing causal reasoning ability."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How has the concept of 'A Little Guide to Inner Peace' evolved throughout the conversation?"
       },
       "original_answer": "From the conception of cooperation to the establishment of an open framework, and then to the concretization of image cards and guiding phrases.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "Let's collaborate on a simple 'Mindfulness Guide,' combining your breathing guidance with my visualization exercises.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "Perhaps we could design an open framework instead of fixed steps, allowing users to explore on their own?",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Perhaps we can simplify: you draw a set of guiding imagery cards, and I'll pair them with brief, open-ended prompts.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Tracking the evolution of the same topic across multiple rounds of dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.jpg",
         "text": "Based on this mindfulness card image, what does Shen Jingyan suggest their version should focus more on?"
       },
       "original_answer": "More rustic, conveying a sense of tranquility, with fewer words and greater reliance on imagery.",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 14,
-          "content": "I found some reference images for mindfulness cards. Look, they use colors and simple text to guide attention, but I think ours can be more open, with less text and more reliance on imagery.",
-          "image": "3.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 15,
-          "content": "These cards are quite inspiring, but our version could be more rustic, like the pages of ancient books, conveying a sense of tranquility.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Assessing the model's ability to learn and apply new information."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did Su Yu'an ever oppose the concept of 'slow is fast'?"
       },
       "original_answer": "No",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "Perhaps we could design an open framework instead of fixed steps, allowing users to explore on their own?",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "This framework maintains a sense of 'going with the flow,' allowing individuals to explore on their own rather than being constrained by steps. It reminds me of your journey from emotional turmoil to mindful restoration—slow is fast.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Detect whether there are statements that contradict the core concepts."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Did Shen Jingyan mention having restored any medical texts from the Song Dynasty?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Recently, while restoring a medical book from the Ming Dynasty, I was deeply moved by the concept that \"a peaceful mind ensures freedom from all illnesses.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue to test the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

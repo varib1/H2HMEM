@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,217 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Zhou Xingchen mentioned what title Su Xiaomeng obtained after progressing from a losing streak in the game?"
       },
       "original_answer": "Top Mid Laner Title",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "Remember? You went from a losing streak to earning the title of top mid-laner, improving incredibly fast!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "In the conversation, what level of script is the script in the question image?"
       },
       "original_answer": "Beginner Level",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "This shop has special scripts for beginners, which are simple and easy to understand. I'll send them to you.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 4,
-          "content": "Look, these boxed scripts are prepared for beginners, with a variety of themes ranging from ancient to modern. Just pick one you like.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event (novice script), not causally.",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "Why did Zhou Xingchen send a problematic image? What impact does the information in the problematic image have on the conversation?"
       },
       "original_answer": "Because Su Xiaomeng expressed concern about the price, Zhou Xingchen sent a picture of the price list to provide specific information. The price details in the image prompted Su Xiaomeng's response regarding price acceptance.",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 9,
-          "content": "[Send image: 3.png] This is the price list from the shop. Overall, it's within a reasonable range and much cheaper than our previous game skin collections, haha!",
-          "image": "3.png"
-        },
-        {
-          "session": "session7",
-          "turn": 10,
-          "content": "The price is acceptable to me, especially since it's a novel experience.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The image (price list) drives the response of the text (price acceptance), which is causal inference.",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "In the conversation, how is the problem image referred to or cited?"
       },
       "original_answer": "Originally called a 'propaganda poster', it was later referred to as 'this poster' in Su Xiaomeng's response.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Xiaomeng, look at this! I recently found a newly opened script murder shop, and the promotional poster is super atmospheric.",
-          "image": "1.png"
-        },
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "Wow, this poster is designed so mysteriously, kind of like the eye-catching vibe we had when planning the pet event before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same image entity across different rounds (from 'promotional poster' to 'this poster').",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the script genre table in the image, what type of script would a person who enjoys shipping couples choose?"
       },
       "original_answer": "CP doujinshi",
-      "answer_source": "both",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 7,
-          "content": "I prefer something more harmonious and less tense. Emotional themes sound good; can they facilitate communication like our pet activities do?",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 12,
-          "content": "Look, this table provides a detailed introduction to script categories and their characteristics, helping you get started quickly.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Need to learn new information (table in the image) and apply it, combining the dialogue to answer Su Xiaomeng's preferences.",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What specific address of the script murder shop did Zhou Xingchen mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:06:37.851808",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

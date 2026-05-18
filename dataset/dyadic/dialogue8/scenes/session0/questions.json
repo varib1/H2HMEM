@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.175185"
@@ -18,501 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which ticketing platform did Gu Zhizhou recommend to Lin Jianshen? Later, after watching the movie, Lin Jianshen expressed a deeper understanding of the film's narrative depth and thanked Gu Zhizhou for what kind of help?"
       },
       "original_answer": "Gu Zhizhou recommended the Maoyan app as a ticket purchasing platform. Later, Lin Jianshen thanked Gu Zhizhou for sharing his previous ticket-buying experience, which allowed her to watch the movie smoothly.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 7,
-          "content": "Gu Zhizhou: In Country X's culture, the Cat's Eye app is quite popular, and I used it to buy tickets. In terms of price, there's a significant difference depending on the time slot, with evening shows usually being more affordable. 😊",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 13,
-          "content": "Lin Jianshen: Yes, thank you for sharing your previous ticket-buying experience, which allowed me to watch the movie smoothly. This discussion has given me a deeper understanding of the narrative layers of the film, especially the dialectical relationship between ideals and reality.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Integrate the ticketing platform information from Session 1 with the gratitude content from Session 2.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which platforms are included in Gu Zhizhou's shared list of ticket purchasing platforms? Among the movies starring Shen Teng that he recommended, which one involves a sci-fi comedy theme?"
       },
       "original_answer": "Ticketing platforms include Maoyan, Taopiaopiao, Wanda Film App, Dadi Ticketing, and low-price mini-programs; the recommended sci-fi comedy film is \"Moon Man.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "I'll send a screenshot of the platform list. Different platforms offer varying subsidy levels, such as Maoyan and Taopiaopiao.",
-          "image": "3.png"
-        },
-        {
-          "session": "3",
-          "turn": 12,
-          "content": "Recommend \"Moon Man.\" It's a sci-fi comedy starring Shen Teng, exploring themes of solitude and rescue.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall textual facts and integrate details from both conversations.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session9/1.png",
         "text": "Gu Zhizhou sent this picture in Session 9. In Session 8, which text did Lin Jianshen use to describe this architectural style?"
       },
       "original_answer": "In Session 8, Lin Jianshen said, \"Just like this unique building, which blends multiple cultures, it serves as a typical local example. Its geometric patterns and mosaic decorations can serve as a starting point for observing cultural hybridization.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent picture: 1.png] Teacher Lin, I just arrived at Registan Square in Samarkand and saw buildings with the same architectural style as the ones you shared with me before I came!",
-          "image": "session9/1.png"
-        },
-        {
-          "session": "8",
-          "turn": 12,
-          "content": "Lin Jianshen: [Sent picture: 3.png] Just like this unique architecture, which blends multiple cultures, it serves as a typical local example. Its geometric patterns and mosaic decorations can serve as a starting point for you to observe cultural hybridization.",
-          "image": "session8/3.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Have both Gu Zhizhou and Lin Jianshen watched \"Pegasus 2\"? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "These Islamic-style arches and mosaic decorations",
-          "image": "1.png"
-        },
-        {
-          "session": "8",
-          "turn": 8,
-          "content": "Architecture as text, its decoration incorporates various elements such as Persian, Islamic, and Mongolian, reflecting the dynamic process of cultural politics.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 9, retrieve relevant text analysis from Session 8 to establish cross-session image-text associations.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, which ticketing platforms did Gu Zhizhou mention when sharing his experience of purchasing tickets for \"Pegasus 2\"? In Session 3, after Lin Jianshen watched the first movie, what new understanding did he gain about the second one?"
       },
       "original_answer": "Ticketing platforms include Maoyan and Taopiaopiao; after Lin Jianshen watched the first film, he felt that some of the confusion in the second film was resolved in the first one, reflecting the narrative coherence of the film series.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "I'll send a screenshot of the platform list. Different platforms offer varying subsidy levels, such as Maoyan and Taopiaopiao.",
-          "image": "3.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "I recently rewatched the first part of \"Pegasus\" and felt that some of the questions I had about the second part were answered in the first one.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 2,
-          "content": "Without watching the first part, there might indeed be some confusion in the second part, such as character motivations and background setup. This phenomenon is quite interesting, reflecting the narrative continuity of a film series.",
-          "image": ""
-        }
-      ],
       "validation_notes": "New information from Session 3 (watching the first movie) supplements the understanding of the film from Session 1, demonstrating the process of knowledge updating.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 5, when Lin Jianshen discusses kaiseki cuisine, what challenges does he mention regarding its modernization? In Session 11, how does Gu Zhizhou connect this challenge to consumer culture while deconstructing lifestyle brands?"
       },
       "original_answer": "In the process of modernization, shojin ryori faces the challenge of being reconstructed as a tourist commodity, leading to the alienation of tradition. In Session 11, Gu Zhizhou linked similar challenges to consumer culture, pointing out that brands extract cultural symbols into marketable signs, such as packaging 'anti-consumerism' as a product, which may exacerbate anxiety rather than alleviate it.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 6,
-          "content": "The transformation of shojin ryori from religious vegetarian fare into a tourist commodity reflects the alienation of tradition within modernity.",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 2,
-          "content": "This 'anti-consumerism' packaging reminds me of the dietary identity narratives we discussed in Session 5—both extract cultural elements into marketable symbols.",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 8,
-          "content": "Purchasing 'anti-consumerism' items to combat consumerism is itself a paradox. Just as diet serves as a tool for identity construction in Session 5, consumption here becomes a performance of identity.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The information in Session 11 extends the dietary challenge from Session 5 into a broader context of consumer culture, demonstrating knowledge updating and deepening.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the dialogue content:\nA. Gu Zhizhou dines at a Kyoto restaurant and shares photos.\nB. Gu Zhizhou shares his experience of purchasing tickets for \"Pegasus 2.\"\nC. Gu Zhizhou shares his travel experiences in Uzbekistan.\nD. Gu Zhizhou handles pet relocation documents."
       },
       "original_answer": "B → A → D → C",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent a picture: 1.png] Hi, Lin Jianshen! I just watched the movie \"Pegasus 2\"...",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent picture: 1.png] Just took this photo at a century-old ryotei in Kyoto.",
-          "image": "session4/1.png"
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent a picture: 1.png] Just finished organizing the documents, ready to take my cat to Germany.",
-          "image": "session6/1.png"
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent picture: 1.png] Teacher Lin, I just arrived at Registan Square in Samarkand...",
-          "image": "session9/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Please arrange the following events in chronological order based on the dialogue content:\nA. Lin Jianshen initiates the annual cultural keyword selection in Session 13.\nB. Lin Jianshen analyzes the cultural politics of kaiseki cuisine in Session 5.\nC. Lin Jianshen recommends Uzbek cultural books to Gu Zhizhou in Session 8.\nD. Lin Jianshen discusses the narrative depth of \"Pegasus 2\" with Gu Zhizhou in Session 2."
       },
       "original_answer": "D → B → C → A",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lin Jianshen: [Sent picture: 1.png] Gu Zhizhou, I just finished watching \"Pegasus 2\"...",
-          "image": "session2/1.png"
-        },
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Lin Jianshen: [Sent picture: 1.png] Just finished reading an academic article about food culture...",
-          "image": "session5/1.png"
-        },
-        {
-          "session": "8",
-          "turn": 6,
-          "content": "Lin Jianshen: [Sent picture: 2.png] These materials can help you understand the underlying logic of the local culture...",
-          "image": "session8/2.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lin Jianshen: [Sent picture: 1.png] I just finished organizing the nomination list for the annual cultural keywords...",
-          "image": "session13/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "session2/1.png",
         "text": "After Gu Zhizhou recommended this film to Lin Jianshen, what impact did it have on Lin Jianshen's subsequent actions?"
       },
       "original_answer": "This prompted Lin Jianshen to watch both the first and second parts of \"Pegasus\" and led him to hope that Gu Zhizhou would recommend more movies starring Shen Teng.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 5,
-          "content": "Lin Jianshen: I agree with its appeal, but I would like to add that the film delves deeper into the dialectical relationship between \"idealism and the dilemmas of reality\" through more nuanced textual exploration.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Gu Zhizhou: Just took this photo at a century-old ryotei in Kyoto. The white sand and black stones of the karesansui garden, the scroll on the wall inscribed with 'Wa Kei Sei Jaku' (Harmony, Respect, Purity, and Tranquility), and the chef's focused profile—every detail exudes a profound sense of ritual. From another perspective, this silent exchange reminds me of the depth of textual analysis you mentioned when we discussed *Pegasus 2*.",
-          "image": "session4/1.png"
-        }
-      ],
       "validation_notes": "The issue needs to integrate the concepts of text mining from Session 2 and the descriptions of ritualistic elements from Session 4, reflecting cross-session causal connections.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "session8/3.png",
         "text": "What impact did Lin Jianshen sending the problem image in Session 8 have on Gu Zhizhou's behavior in Session 9?"
       },
       "original_answer": "The picture gave Gu Zhizhou a specific observation target during his travels. In Session 9, after arriving at Registan Square in Samarkand, Gu Zhizhou immediately took a photo and shared it, saying, \"I saw buildings with the same architectural style as the ones you shared with me before I came.\" This indicates that the image directly guided his on-site observation and documentation.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 12,
-          "content": "Lin Jianshen: [Sent picture: 3.png] Just like this unique architecture, which blends multiple cultures, it serves as a typical local example. Its geometric patterns and mosaic decorations can serve as a starting point for you to observe cultural hybridization.",
-          "image": "session8/3.png"
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Gu Zhizhou: [Sent picture: 1.png] Teacher Lin, I just arrived at Registan Square in Samarkand and saw buildings with the same architectural style as the ones you shared with me before I came!",
-          "image": "session9/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "In multiple sessions, Gu Zhizhou's cat is described as an emotional anchor. Please indicate its different referential ways in Session 6 and Session 7."
       },
       "original_answer": "In Session 6, it was referred to as a 'companion' or 'part of the administrative campaign,' and in Session 7, it was described as a 'mobile home'—a core element or emotional anchor.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Gu Zhizhou: I've just finished organizing the documents and am preparing to take my cat to Germany. When we talked about food culture in Kyoto, I already felt that the complexity of cross-border mobility is everywhere. Now even pets have become part of the \"administrative battle.\" Look at this pile of paperwork—every move feels like being a single parent traveling with a minor child.",
-          "image": "session6/1.png"
-        },
-        {
-          "session": "7",
-          "turn": 3,
-          "content": "Lin Jianshen: I've put together a theoretical analysis diagram that might explain your feelings. For someone as highly mobile as you, this cat serves as the core element of a 'mobile home.'",
-          "image": "session7/2.png"
-        }
-      ],
       "validation_notes": "Tracking the evolution of references to the same entity (cat) across sessions, from administrative burden to emotional anchor.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "How does Gu Zhizhou refer to the cultural characteristics of Uzbekistan in Session 8 and Session 9?"
       },
       "original_answer": "In Session 8, it is referred to as the 'Crossroads of Civilizations' or 'Cultural Hybridity,' while in Session 9, it is called the 'Confluence of Civilizations' or 'Cultural Integration.'",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Gu Zhizhou: After that dining experience in Kyoto, I've become more sensitive to the phenomenon of cultural blending. I want to take this business trip as an opportunity to do some cultural exploration. As a 'crossroads of civilizations,' this place should have a lot worth delving into.",
-          "image": "session8/1.png"
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "Gu Zhizhou: Teacher Lin, I just arrived at Registan Square in Samarkand and saw buildings with the same architectural style you shared with me before I came! From another perspective, these Islamic-style arches and mosaic decorations remind me of the analysis you mentioned earlier about the convergence of civilizations.",
-          "image": "session9/1.png"
-        }
-      ],
       "validation_notes": "Tracking the evolution of references to the same topic (Uzbekistan culture) across conversations, from abstract concepts to specific observations.",
       "generated_at": "2026-04-01T17:05:33.175185",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 7,
-      "hard": 2,
-      "medium": 3
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

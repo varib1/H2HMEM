@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,215 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What caused the knee problem mentioned by Shi Yan in the conversation?"
       },
       "original_answer": "Cartilage wear",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "Well, I was diagnosed many years ago after a mountain climbing injury, and they said it was cartilage wear.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall specific details based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which topic in the conversation does this image correspond to?"
       },
       "original_answer": "Lightweight equipment",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 8,
-          "content": "Check this out. I've compiled some lightweight gear ideas that might help reduce your load, just like how we optimized our hiking gear before.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the corresponding conversation topic based on image information."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What exclamation or question did the image evoke from Shiyan?"
       },
       "original_answer": "Old knee injury recurred.",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Ye Lu, after the recent load-bearing survey, my old knee injury has flared up again, and it hurts a lot when going up and down slopes. This was taken at the camp today, and it's a bit red and swollen.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Infer causal relationships by combining image and dialogue information."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "Mountain view",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 16,
-          "content": "Look, this is the mountain view I captured last time. My knees were fine then, but the strain in my shoulders and neck made me realize the importance of recovery.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the evolution of image references in conversations."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "According to the conversation, how should Shi Yan deal with knee pain?"
       },
       "original_answer": "Cold compress and using hiking poles.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 14,
-          "content": "During the acute phase, you can apply cold compresses and rest as shown in your picture. In daily life, use trekking poles to share the load, just as we emphasize during valley hikes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Use newly acquired information from the conversation to answer questions."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Shiyan's knee injury was caused by the first injury during the most recent survey. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "After the recent weighted survey, my old injury in my left knee flared up again, causing severe pain when going up and down slopes.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "It was diagnosed many years ago after a mountain climbing injury, indicating cartilage wear.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detect contradictions between new input information and existing memories."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did Shi Yan mention the issue of his old knee injury during the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue to test the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Text Consistency": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

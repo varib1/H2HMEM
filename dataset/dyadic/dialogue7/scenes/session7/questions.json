@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,205 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What health issue did Shen Qingyin mention about her son in the conversation?"
       },
       "original_answer": "Asthma",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "I remember you mentioned in Session 6 that high sugar might exacerbate inflammation, which is important for my son's asthma management.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Based on the dialogue content, what principle is the summary in the question image based on?"
       },
       "original_answer": "Based on the principles of health and nutrition",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "I am sending a consumption advice image that summarizes recommended and cautious purchase categories based on health and nutrition principles.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event without a causal relationship.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the image that led Song Weian to discuss the high added sugar content and potential risks of trans fats in the conversation, how many grams of white sugar are added to the product shown?"
       },
       "original_answer": "9.8 grams",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Weian, I'm at the supermarket shopping and saw this children's yogurt. The nutrition label highlights added sugars, trans fats, and allergen information.",
-          "image": "1.png"
-        },
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "Qingyin, received the picture. The added sugar content is relatively high, making it unsuitable as a regular snack, especially considering your son's risk of asthma, as high sugar intake may exacerbate inflammation—this directly relates to the anti-inflammatory diet principles we discussed in Session 6. Although trans fats are labeled as zero, the ingredient list includes partially hydrogenated vegetable oil, which is a potential allergen and requires caution, similar to what was mentioned in the allergen warning picture you shared last time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that images drive the emergence of textual content, with a focus on causal inference.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In the dialogue, what does Shen Qingyin use to refer to the problem picture?"
       },
       "original_answer": "This is an analysis table image.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 13,
-          "content": "This is an analysis table image.",
-          "image": "3.png"
-        },
-        {
-          "session": "session7",
-          "turn": 14,
-          "content": "The analysis is very comprehensive, Qingyin. From a data-driven perspective, the 8% increase is within an acceptable range, especially considering the long-term health benefits. I suggest incorporating this table into the family health management plan as a purchasing guide, structured similarly to the asthma management roadmap in Session 2, or made as easy to track as the pet health records in Session 3.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same entity across different rounds.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the content of the conversation, for a healthy diet, should one buy whole wheat bread or white bread?"
       },
       "original_answer": "Whole wheat bread",
-      "answer_source": "both",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "For instance, whole wheat bread is preferable to white bread, and fresh fish is better than processed meat products—this directly aligns with the core recommendations in Session 6 of the dietary guidelines.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Examine and learn the newly acquired multimodal information (Image 2 and dialogue text) and apply this knowledge to answer the question.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, Shen Qingyin mentioned what her daughter's favorite snack is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话7",
+      "answer_dialogue": "dialogue7",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:14:11.585762",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,263 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What was the painting theme mentioned by Su Yu'an in the workshop?"
       },
       "original_answer": "A Memory of an Apple Slice",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Su Yu'an: Jingyan, the tea recipe you shared last time gave me inspiration. I tried 'mindful eating with drawing' at the workshop, and this is a participant's drawing titled 'Memory of a Slice of Apple'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Directly recall the painting themes explicitly mentioned in the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which experience or activity in the conversation does the problem picture correspond to?"
       },
       "original_answer": "Sensory Diary",
-      "answer_source": "both",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "Shen Jingyan: Exactly. I started keeping a simple sensory journal, jotting down just a glimpse of light and shadow, a particular scent—like the fragrance of old paper I smelled while restoring it this morning. (Sending image 2.jpg)",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: It is necessary to infer its connection with the 'Sensory Diary' from image 2.jpg (restoration scene)."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Combined with the problem image, what details of the apple did the participants primarily focus on while drawing?"
       },
       "original_answer": "Texture and odor",
-      "answer_source": "both",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Su Yu'an: Yes, participants reported that while drawing, their attention naturally focused on the texture and scent of the apple, which in turn calmed their emotions.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text + Image: Need to combine image 1.png (showing apples and drawing tools) with the dialogue content to infer the answer."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Su Yu'an to propose the 'Sensory Awakening' module? Provide the session number and image file name."
       },
       "original_answer": "3.jpg in session13",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 9,
-          "content": "Su Yu'an: [Sent picture: 3.jpg] Of course! I was just about to suggest adding a 'Sensory Awakening' module. For example, using simple exercises to guide people to pay attention to subtle sensations in daily life.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Text→Image: It is necessary to infer the causal relationship between image 3.jpg and the 'Sensory Awakening' proposal."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How did 'Sensory Diary' evolve from Shen Jingyan's personal practice into a collaborative project?"
       },
       "original_answer": "Shen Jingyan mentioned the sensory diary in the 4th round, Su Yu'an proposed adding a mindfulness guide in the 9th round, and the collaboration was ultimately deepened in the 16th round.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "Shen Jingyan: Exactly. I started keeping a simple sensory journal, jotting down just a glimpse of light, a particular scent—like the fragrance of old paper I smelled during restoration this morning.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 9,
-          "content": "Su Yu'an: [Sent picture: 3.jpg] Of course! I was just about to suggest adding a 'Sensory Awakening' module. For example, using simple exercises to guide people to pay attention to subtle sensations in daily life.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 16,
-          "content": "Su Yu'an: That's great! I can create some imagery cards to go along with it, like small illustrations of light and shadow or scents, and you can pair them with open-ended prompts. This continues our collaborative theme of \"mutual nourishment,\" and from tea drinks to sensory journals, the path is becoming clearer and clearer.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-round Tracking: It is necessary to outline the multi-round evolution of the 'Sensory Diary' from individual practice to collaborative projects."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.jpg",
         "text": "Combining this image, what core concept does Shen Jingyan's practice of writing a sensory diary during restoration embody?"
       },
       "original_answer": "Harmony between humans and nature",
-      "answer_source": "both",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "Shen Jingyan: Exactly. I started keeping a simple sensory journal, jotting down just a flicker of light, a particular scent—like the fragrance of old paper I smelled during restoration this morning. It brings me closer to that sense of 'harmony between objects and self,' much like when I'm restoring ancient texts.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image + Text: It is necessary to extract the core concept of 'harmony between humans and nature' from image 2.jpg and the dialogue."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions 'mindful eating with drawing,' but image 1.png shows an apple sketch and a watercolor palette. Is this contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Su Yu'an: Jingyan, the tea recipe you shared last time gave me inspiration. I tried 'mindful eating with drawing' at the workshop, and this is what the participants drew—'A Memory of an Apple Slice'.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text + Image: Detecting potential contradictions, actually consistent, examining the ability to integrate multimodal information."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Does the conversation mention which type of tea Shen Jingyan likes to drink?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text → Refusal to answer: No relevant information mentioned in the conversation, testing the model's ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Knowledge Resolution": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

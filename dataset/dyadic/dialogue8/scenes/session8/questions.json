@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,236 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What did Gu Zhizhou mention he often does in multinational corporations during the conversation?"
       },
       "original_answer": "Regularly conduct cultural difference analysis tables",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "In multinational corporations, I often create cultural difference analysis charts, but field exploration always brings new discoveries.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Jianshen recommends books to Gu Zhizhou for understanding the deeper logic of local culture. What are the titles of these books?"
       },
       "original_answer": "\"History of Civilizations of Central Asia\", \"The Silk Roads: A New History of the World\", \"Uzbekistan: Architecture and Culture\"",
-      "answer_source": "image_description",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 6,
-          "content": "[Send image: 2.png] These books can help you understand the deeper logic of local culture, offering more inspiration than travel guides.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, as both are related to the book recommendation event.",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "How does Gu Zhizhou evaluate the problematic images?"
       },
       "original_answer": "Astonishing",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 12,
-          "content": "Just like this unique building, which blends multiple cultures, it is a typical example of the local area.",
-          "image": "3.png"
-        },
-        {
-          "session": "session8",
-          "turn": 13,
-          "content": "Wow, this building is so beautiful! 😍 In Uzbek culture, this kind of fusion might be more prominent than in Kyoto's cuisine.",
-          "image": ""
-        }
-      ],
       "validation_notes": "It is inferred that the images drive the emotional expression in the text, indicating a causal relationship.",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In a conversation, how is the question image referred to or cited?"
       },
       "original_answer": "First described as 'this special building', it was later referred to by Gu Zhizhou as 'this building'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 12,
-          "content": "Just like this unique building, which blends multiple cultures, it's a typical example of the local area.",
-          "image": "3.png"
-        },
-        {
-          "session": "session8",
-          "turn": 13,
-          "content": "Wow, this building is so beautiful! 😍 In Uzbek culture, this kind of fusion might be more prominent than in Kyoto's cuisine.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, could you recommend a book for understanding Central Asian civilization?"
       },
       "original_answer": "\"History of Civilizations of Central Asia\" or \"The Silk Roads: A New History of the World\" or \"Uzbekistan: Architecture and Culture\"",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 6,
-          "content": "[Send image: 2.png] These materials can help you understand the underlying logic of the local culture, offering more insight than a typical travel guide.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Ability to explore and learn new information (book recommendations) and apply it (travel observation plan).",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Gu Zhizhou has never been to Japan. Does this contradict the dialogue content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 1,
-          "content": "After that dining experience in Kyoto, I became more sensitive to the phenomenon of cultural blending.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories.",
       "generated_at": "2026-02-24T14:13:48.972219",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What was the name of the museum that Gu Zhizhou mentioned he plans to visit in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:14:39.229677",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

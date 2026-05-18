@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.169653"
@@ -18,489 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the temple photos shared by Qin Shuo during his travels, what is the color of the plaque? In his health band weekly report, which indicator's score improved after he adjusted his routine?"
       },
       "original_answer": "The plaque has a green background with golden-yellow border decorations; adjusting the daily routine has improved the recovery rate score.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 3,
-          "content": "Qin Shuo sent picture2.png, the plaque in the picture description has a green background with golden-yellow border decoration.",
-          "image": "2.png"
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Qin Shuo shared the weekly report data of the health bracelet, mentioning that the recovery rate soared after adjusting the daily routine.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The question integrates image details from Session 2 and textual facts from Session 4, requiring cross-session recall of unimodal information.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the color of the trophy Jiang Wanqing won in the badminton competition? In the discussion about pet smart hardware, what did she mention about the replacement cost of the smart litter box bags?"
       },
       "original_answer": "The trophy features a golden main body with a black base; the high replacement cost of the waste bags for the smart cat litter box is a significant drawback.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 3,
-          "content": "Jiang Wanqing sent image 2.png, the trophy features a golden main body with a black base.",
-          "image": "2.png"
-        },
-        {
-          "session": "9",
-          "turn": 8,
-          "content": "Jiang Wanqing mentioned that the replacement cost of garbage bags for smart cat litter boxes is a significant drawback.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "The question integrates image details from Session 8 and textual facts from Session 9, requiring cross-session recall of unimodal information.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session1/2.png",
         "text": "Among the attractions in this picture, which place did Jiang Wanqing visit first?"
       },
       "original_answer": "Yoyogi Park",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Qin Shuo sent image1.png, indicating that the temple is very crowded.",
-          "image": "1.png"
-        },
-        {
-          "session": "3",
-          "turn": 2,
-          "content": "Jiang Wanqing replied to Qin Shuo's cherry blossom photo, saying, 'The pink flower path blends perfectly with the modern architecture, making me want to fly over and see it right away.'",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Based on the images from Session 2, recall the relevant textual descriptions from Session 3 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "On August 20th, after Jiang Wanqing agreed to be Qin Shuo's badminton training partner, what was the final result Qin Shuo achieved?"
       },
       "original_answer": "Won third place",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Jiang Wanqing sent image1.png, displaying the SmartFit App poster.",
-          "image": "1.png"
-        },
-        {
-          "session": "4",
-          "turn": 13,
-          "content": "Qin Shuo said, 'The app design is too complicated, not as intuitive as yours.'",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the image from Session 5, recall the relevant textual information from Session 4 to establish an image-text association.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, what was the initial state of Qin Shuo's travel plan? In Session 3, how does he describe the final state of the travel plan?"
       },
       "original_answer": "In Session 1, Qin Shuo's travel plans were a complete mess, with a cluttered desk and a checklist that was constantly revised; by Session 3, he described how the trip evolved from chaotic planning to sharing beautiful scenery, marking an upgrade in the relationship.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Qin Shuo said, 'I made a last-minute decision to go to Japan to see the cherry blossoms, but the plan turned into a complete mess, and my desk is as chaotic as a battlefield.'",
-          "image": "1.png"
-        },
-        {
-          "session": "3",
-          "turn": 21,
-          "content": "Qin Shuo said, 'Wanqing, thanks to you for this trip, from the chaotic planning to sharing the beautiful scenery, our relationship has definitely leveled up!'",
-          "image": ""
-        }
-      ],
       "validation_notes": "The problem illustrates the knowledge update process from chaotic to optimized travel planning, requiring cross-session information integration.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 4, Qin Shuo and Jiang Wanqing mentioned algorithmic differences when comparing health band data. In Session 5, how did they apply this comparison to the discussion of the AI fitness app?"
       },
       "original_answer": "In Session 4, they compared the algorithmic differences of health wristbands; in Session 5, they applied this comparison to the course subscription pricing strategies and user retention rate analysis of AI fitness apps.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 4,
-          "content": "Jiang Wanqing mentioned that there are significant differences in pressure monitoring algorithms across different devices.",
-          "image": "2.png"
-        },
-        {
-          "session": "5",
-          "turn": 5,
-          "content": "Jiang Wanqing said, 'From a data-driven perspective, the key to user retention might be personalized recommendations, just like when we compared algorithm differences by sharing health band data earlier.'",
-          "image": ""
-        }
-      ],
       "validation_notes": "The issue demonstrates the expansion and updating of knowledge from comparing health band algorithms to analyzing AI fitness apps, requiring cross-session integration of information.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Qin Shuo experienced the following events: A. Made a spontaneous decision to go to Japan to see cherry blossoms, B. Shared health band data, C. Invited Jiang Wanqing to be a badminton training partner, D. Won third place in a badminton competition. Please determine whether the following statement is true: Event B occurred after Event C."
       },
       "original_answer": "Incorrect. Event B (sharing health band data) occurs in Session 4, while Event C (inviting a badminton coach) occurs in Session 8. Therefore, B happens before C, not after.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, check out the weekly data from my new health tracker! After adjusting my routine for a week, my recovery rate has skyrocketed. I feel completely refreshed.",
-          "image": "session4/1.png"
-        },
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent picture: 1.png] Wanqing, I just saw this badminton open poster and it looks quite interesting! It promotes fitness for everyone and has incentives, so I'm a bit tempted to join.",
-          "image": "session8/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Jiang Wanqing experienced the following events: A. Shared an AI fitness app poster, B. Shared a chart on the pet consumption market size, C. Shared a picture of a badminton trophy. Please determine whether the following statement is correct: Event C occurred before Event A."
       },
       "original_answer": "Correct. Event C (sharing the picture of the badminton trophy) occurred in Session 8, where Jiang Wanqing mentioned that it was a trophy she had won \"three years ago.\" Event A (sharing the AI fitness app poster) took place in Session 5. Therefore, the time of Event C (three years ago) is earlier than that of Event A.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 3,
-          "content": "Jiang Wanqing: [Sends picture: 2.png] Look, this is the trophy I won from a competition I participated in before.",
-          "image": "session8/2.png"
-        },
-        {
-          "session": "8",
-          "turn": 5,
-          "content": "Jiang Wanqing: About three years ago, I participated in a local amateur badminton championship. At that time, work wasn't as busy as it is now, so I had time for systematic training.",
-          "image": ""
-        },
-        {
-          "session": "5",
-          "turn": 1,
-          "content": "Jiang Wanqing: [Sent a picture: 1.png] Qin Shuo, I recently discovered an emerging AI fitness coaching app called SmartFit. Its interface design has a very tech-savvy feel...",
-          "image": "session5/1.png"
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "session1/5.png",
         "text": "What is his experiential evaluation of the objects in the problem picture?"
       },
       "original_answer": "He described the homestay as \"Awesome! Great aesthetics and high value for money.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 14,
-          "content": "Jiang Wanqing: Based on the data, I recommend the Immano Hostel. It balances location, facilities, and cost-effectiveness, aligning with the principle of precise consumption.",
-          "image": ""
-        },
-        {
-          "session": "1",
-          "turn": 15,
-          "content": "Qin Shuo: That makes sense! I always want to try all the options, which actually slows down the progress. I'll listen to you and choose Imano.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 11,
-          "content": "Qin Shuo: Absolutely fantastic! Your aesthetic sense is spot on, just as you analyzed—great value for money. I've also updated the photos in the shared document.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Integrate the homestay selection from Session 1 with the experience evaluation from Session 3.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "session1/2.png",
         "text": "What impact did this picture have on Qin Shuo's choice of travel destination?"
       },
       "original_answer": "Helped Qin Shuo plan the itinerary, which directly enabled him to find Yoyogi Park and take photos of cherry blossoms. He said, \"Thanks to the travel map you shared earlier, which recommended this place.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 6,
-          "content": "Jiang Wanqing: [Sent image: 2.png] This cartoon map might be helpful for you. It marks the attractions and transportation, making everything clear at a glance.",
-          "image": "session1/2.png"
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, look quickly! The cherry blossoms in Yoyogi Park, I just took this photo—it's simply a fairyland!",
-          "image": "session3/1.png"
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "Qin Shuo: Thanks to the travel map you shared earlier, which recommended this place, otherwise I might have missed such a wonderful spot. Long live the freedom of information!",
-          "image": ""
-        }
-      ],
       "validation_notes": "",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "session1/5.png",
         "text": "How is the hostel in the question image referred to in the subsequent conversation?"
       },
       "original_answer": "In the subsequent conversation, the Imano Hostel in this picture is referred to as \"Imano Hostel,\" described as an accommodation choice with \"aesthetic appeal\" and \"high cost-effectiveness.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 13,
-          "content": "Qin Shuo: [Sent picture: 5.png] This is the Imano Hostel in Tokyo, which has good reviews and complete facilities, but the price is slightly higher.",
-          "image": "5.png"
-        },
-        {
-          "session": "2",
-          "turn": 9,
-          "content": "Qin Shuo: Awesome! Great taste, just as you said, it's cost-effective. Thanks for the recommendation, otherwise I might still be hesitating.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 11,
-          "content": "Qin Shuo: Awesome! Great taste. Just as you analyzed, it offers high value for money. I've also updated the photos in the shared document.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same entity (Imano Hostel) across different conversations.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "In the conversation on October 15th, when Qin Shuo said, \"Remember the photo I posted of my cat playing with the smart cat toy?\", which picture is he referring to? Provide the session number and the image file name."
       },
       "original_answer": "1.png in session9",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent picture: 1.png] Wanqing, I just saw this badminton open poster and it looks quite interesting! It's promoting fitness for everyone, and there are incentives too. I'm a bit tempted to join.",
-          "image": "1.png"
-        },
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Qin Shuo: [Sent a picture: 1.png] Wanqing, look at this! I just got back from the badminton competition and won third place! I definitely wouldn't have gotten the award without your help.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same event (badminton match) across different conversations.",
       "generated_at": "2026-04-01T17:05:33.169653",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "medium": 6,
-      "easy": 5,
-      "hard": 1
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

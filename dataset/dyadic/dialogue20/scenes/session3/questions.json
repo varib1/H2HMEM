@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,256 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the community shared New Year's Eve dinner event, what adjustments were made to reduce competitive pressure?"
       },
       "original_answer": "Adjusted award categories",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "Yes, thanks to your previous suggestions, such as adjusting award categories and reducing competitive pressure.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Text Recall]: Recall pure textual facts from the conversation, avoiding vague responses."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "The 'flower-shaped steamed bun, adorned with red dates in the center' mentioned in the conversation corresponds to which picture?"
       },
       "original_answer": "3.png in session3",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "This is a flower-shaped steamed bun made by an aunt in the community, adorned with red dates in the center. She said it symbolizes reunion and sweetness. I think it’s very creative, blending tradition with novelty.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Text→Image]: Recall corresponding images based on dialogue text information, where both are related to the same event, not causal inference."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "What kind of exclamation did this picture evoke for the New Year?"
       },
       "original_answer": "It feels especially heartwarming.",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "Look, this is her making dumplings, her little hands pinching tightly. Watching her focused expression warms my heart.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Image-driven text]: Causal inference, the image triggers emotional expression."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "Which activity mentioned in the conversation does this picture illustrate?"
       },
       "original_answer": "Make dumplings",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "Look, this is her making dumplings, her little hands pinching tightly. Watching her focused expression warms my heart.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The activity shown in the image is mentioned in the conversation and needs to be matched accordingly."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the dumplings made by the New Year's daughter referred to in different rounds?"
       },
       "original_answer": "'My daughter making dumplings', 'This plate of dumplings', 'The dumpling wrapper reveals the color of the filling'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "By the way, I also took photos of my daughter making dumplings—she was so focused!",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "Take this plate of dumplings, for example. My daughter helped make them. Though they may not be perfectly shaped, they're filled with love.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "Look, the color of the filling shows through the dumpling wrapper. The golden part is what she learned to pan-fry, saying she wanted to recreate 'the taste of home.'",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Coreference Tracking]: Track the evolution of entity references across different rounds, focusing on changes in the coreference chain."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "5.png",
         "text": "What role does the barbecue in the picture play in the event?"
       },
       "original_answer": "Tabletop Focus, Fostering Neighborhood Connections",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "It's this piece of roasted meat, with its golden-brown crust and tender, juicy flesh, that became the centerpiece of the dining table. But more importantly, the act of sharing it brought the neighbors closer together.",
-          "image": "5.png"
-        }
-      ],
       "validation_notes": "[Learning Application]: Learn newly acquired multimodal information (images and text) and apply this knowledge to answer questions, testing online adaptability."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the community shared New Year's Eve dinner event is held indoors, but image 1.png shows an outdoor scene. Is this contradictory?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "The community shared New Year's Eve dinner event has concluded successfully. Here are some photos from the scene. The long table was filled with dishes brought by each family, creating a particularly warm and uncrowded atmosphere. Everyone thoroughly enjoyed the process.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Propose new information that may contradict the dialogue content (assuming an outdoor scenario), detect whether contradictions are identified, and assess contradiction detection capabilities."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What prize did Hesui win in the event?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer Ability]: Asking about information not present in the conversation to assess the ability to refuse to answer and avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 2,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 2
-    }
-  }
+  ]
 }

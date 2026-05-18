@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Zhou Xingchen mentioned how long he had been saving up vouchers to buy a new skin."
       },
       "original_answer": "Almost a month",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "It's been almost a month since we last teamed up to play games. I've been saving up points all this time and finally got this skin.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts (time details) from the conversation.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "How did Zhou Xingchen describe the problematic image?"
       },
       "original_answer": "So dreamy, with green long hair and floral elements.",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "This skin showcase is so dreamy, with its green long hair and floral elements. It feels like a perfect fit for a meticulous player like you!",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text→Image: Recall corresponding images based on dialogue text descriptions, both related to the same skin.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "What emotional expression did the problematic image evoke in Su Xiaomeng?"
       },
       "original_answer": "Playing makes the mood much better.",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "Its skill effects are also beautiful, with petal-like patterns. I'll send a screenshot; playing it really lifts my mood.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Image-driven text: 4.png (a screenshot of a petal-shaped skill effect) directly triggered Su Xiaomeng's emotional expression.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, Zhou Xingchen's skin, initially described as 'my newly acquired skin', is later referred to by Su Xiaomeng as what?"
       },
       "original_answer": "This skin",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Check out my new skin I just got. Lan's sci-fi design is absolutely stunning!",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Wow, this skin showcase is so cool! The golden armor and futuristic design make me think the effects must be dazzling, right? It reminds me of the hero power screenshots you shared before—you always have a thing for this kind of flashy style.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Entity Evolution: Zhou Xingchen's skin is referred to as 'my newly acquired skin' in different rounds, and then called 'this skin' by Su Xiaomeng.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the images Su Xiaomeng showed in the conversation and the style she mentioned, what type of game character design might she prefer?"
       },
       "original_answer": "Ethereal, dreamy, elegant style",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "I really like this kind of aesthetic style. For example, this skin is designed very exquisitely and has a warm atmosphere. I’ll send it to you to take a look.",
-          "image": "3.png"
-        },
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "So you really do like this elegant type.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Learning new information (Image 3.png showcases an aesthetic style, with the dialogue mentioning 'aesthetic' and 'elegant'), inferring Su Xiaomeng's preferences.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, which hero did Zhou Xingchen mention as his favorite?"
       },
       "original_answer": "Not mentioned.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: The conversation only mentions Lan's skin and the hero Lan, but does not explicitly state that Lan is Zhou Xingchen's 'favorite hero.' The response should be declined to avoid hallucination.",
       "generated_at": "2026-02-24T11:05:14.686404",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

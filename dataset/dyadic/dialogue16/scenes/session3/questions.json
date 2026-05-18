@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,259 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Su Yu'an mentioned that since Shen Jingyan guided her in seated meditation observation last time, she has started trying to meditate for how long before each therapeutic session?"
       },
       "original_answer": "Five minutes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "Since you last guided me to sit quietly and observe, I've started trying to center myself for five minutes before each therapy session.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:29:40.143365",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "4.jpg",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "Calligraphy practice",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "I enter a state of dialogue with the paper. Just like in this calligraphy practice, the tip of the brush gently touches the surface, feeling its texture and resilience.",
-          "image": "4.jpg"
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations.",
       "generated_at": "2026-02-24T11:29:40.143365",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What exclamation did the problematic picture evoke from Shen Jingyan?"
       },
       "original_answer": "The sense of breathing in blank space",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Yuan, this painting gives me a sense of breathing space in its blankness, just as you once said—stillness is not emptiness, but rather a capacity to hold.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The image sparked exclamations in the conversation, indicating a causal relationship.",
       "generated_at": "2026-02-24T11:29:40.143365",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "Which experience in the conversation does the problem image correspond to?"
       },
       "original_answer": "Warm tranquility",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "I drew the steam rising from this teacup to convey a sense of warm tranquility.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The image is associated with the experience in the conversation.",
       "generated_at": "2026-02-24T11:29:40.143365",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "What moment is the problem image described as in the conversation?"
       },
       "original_answer": "Quiet moments",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "This sleeping golden retriever captures another quiet moment I observed.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations.",
       "generated_at": "2026-02-24T11:29:40.143365",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Does the mindset of reconciling with wormholes mentioned in the conversation relate to mindfulness?"
       },
       "original_answer": "Yes, quieting the mind allows emotions to flow naturally.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "Follow rather than control... This reminds me of art therapy, where we encourage clients to let their creations flow naturally instead of striving for perfection. The mindset you previously shared about making peace with wormholes is similar, isn't it?",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "Yes, slow is fast. When I'm not rushing to fix every tear, but patiently observing, the paper tells me what it needs. It's like allowing emotions to pass by like clouds.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Infer the relationship between meditation and mindset based on the dialogue content.",
       "generated_at": "2026-02-24T11:29:40.144337",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The conversation mentions that Su Yu'an's previously sent emotional doodles have shifted towards a more subdued expression, but Shen Jingyan said in round 10 that this is a positive change. Is this contradictory?"
       },
       "original_answer": "Not contradictory, because the shift of emotional doodles towards a more gentle expression is a positive transformation, and the two are consistent.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "The emotional doodles you previously sent have now shifted towards a more gentle expression, which is a positive change.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect whether there is a contradiction between the newly input information and existing memories. Here, the information is consistent, with no contradictions.",
       "generated_at": "2026-02-24T11:29:40.144337",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, Su Yu'an mentioned what her favorite color is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "For information not mentioned in the question-and-answer dialogue, responses should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:29:40.144337",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Reference & Evolution Tracking": 2,
-      "Multimodal Causal Inference": 2,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "How many layers does the shared food shelf designed by Li Yifan have?"
       },
       "original_answer": "Four-layer design",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Xiaotang, the shared food shelf is ready. It has a four-tier design, with barriers on each level to prevent things from falling off. It's coated with wood wax oil, so it should last through this summer.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the online shared spreadsheet mentioned in the conversation, what does the header include?"
       },
       "original_answer": "Including date, items placed, quantity, person placing (room number optional), person/time of removal",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "I also created an online shared spreadsheet and sent you the link. The headers include date, items placed, quantity, person who placed them, and person/time of removal, making it easy to keep track.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, both of which are related to the same event (online shared spreadsheet) without a causal relationship.",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What kind of comment did the problematic picture provoke from Zhao Xiaotang?"
       },
       "original_answer": "This shelf looks quite sturdy. You're really good with your hands, getting it done so quickly.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Xiaotang, the shared food shelf is ready. It has a four-tier design, with barriers on each level to prevent items from falling off. I've applied wood wax oil to it, so it should last through this summer. What do you think—is it suitable to place it at the entrance of the building unit? This design follows the same principles as the previous DIY cat bed and mood tracker shelf (you remember the hand-drawn shelf design I shared, right?), both of which prioritize using recycled materials and focusing on practicality.",
-          "image": "1.png"
-        },
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Wow, Yifan, this shelf looks really sturdy! You're so handy, you got it done so quickly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The image drives the textual content (design rationale explanation), with a focus on causal inference.",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the location of the shared food shelf gradually described?"
       },
       "original_answer": "Find a corner near the entrance of the building unit to settle in, specifically to the right side of the entrance, sheltered from the wind and sun.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Wow, Yifan, this shelf looks really sturdy! You're so handy, you got it done so quickly. I'll go find a spot by the entrance of the building unit to set it up and print out the instructions to put next to it.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 8,
-          "content": "Alright! I've already set up the shelf in the right corner at the entrance of the building unit, sheltered from the wind and sun. The instructions are also posted, clear and straightforward. The response in the group chat has been positive—Aunt Zhang mentioned she'll put some tomatoes and cucumbers there this afternoon.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking the evolution of entities across different rounds: The location of the shared food shelf evolved from \"finding a corner at the entrance of the building\" to \"the right corner at the entrance of the building, sheltered from wind and sun.\"",
       "generated_at": "2026-02-27T13:53:48.910005",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the usage of the online shared spreadsheet learned from the conversation, how should the entry be recorded in the spreadsheet if Uncle Wang puts in 2 apples today?"
       },
       "original_answer": "Date today, item placed: apple, quantity: 2, placed by: Uncle Wang.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "I also created an online shared spreadsheet and sent you the link. The headers include date, items placed, quantity, person who placed them, and person/time of removal, making it easy to keep track.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 10,
-          "content": "In the table, I see the first entry: date today, item placed is green vegetables, quantity 1 bag, placed by Aunt Zhang.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ability to examine and learn new information (table headers and sample records) and apply it.",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The shared food shelf has a three-tier design. Does this contradict the conversation content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Xiaotang, the shared food shelf is ready. It has a four-tier design, with barriers on each level to prevent things from falling off. It's coated with wood wax oil, so it should last through this summer.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (three-layer design) and existing memories (four-layer design).",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What color paint did Li Yifan use when making the shared food shelf?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present (paint color) to assess refusal ability and avoid hallucinations.",
       "generated_at": "2026-02-24T11:17:41.186206",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

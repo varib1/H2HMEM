@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,187 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation on June 5th, Lin Chang'an mentioned that she has trouble sleeping well every day. According to her health report, what is her daily sleep duration?"
       },
       "original_answer": "4 hours and 20 minutes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Yeah, not only do I stay up late, but my sleep quality is also poor. I'll send you a sleep report. I don't sleep well every day, and sitting for long periods has caused shoulder discomfort and dry eyes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T12:21:28.035896",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "The computer usage duration report sent by Zhou Pingfan on June 5 shows that Zhou Pingfan's average daily computer usage time for the week is?"
       },
       "original_answer": "9 hours and 15 minutes",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Yeah, not only do I stay up late, but my sleep quality is also poor. I'll send you a sleep report. I don't sleep well every day, and sitting for long periods has caused shoulder discomfort and dry eyes.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event, not involving causal inference.",
       "generated_at": "2026-03-01T12:21:28.035896",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image caused Lin Chang'an to lament that work made him very tired and sparked the subsequent discussion about health awareness? Provide the session number and image file name."
       },
       "original_answer": "1.png in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Sigh, just finished a project and stayed up so late again. Sending you a picture to see—this coffee has already gone cold, and the time on the screen is really draining.",
-          "image": "1.png"
-        },
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "I understand, I often work late into the night too. Last time you mentioned the almonds, I remember you were busy with work. Now, seeing this picture, I understand even more.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Inferring that images drive text content, focusing on causal inference rather than direct correlation.",
       "generated_at": "2026-03-01T12:21:28.035896",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how does the reference to health topics evolve from 'poor sleep quality' to 'awakening of health awareness'?"
       },
       "original_answer": "First, Lin Chang'an mentioned issues with poor sleep quality and prolonged sitting. Later, he concluded that although there is no specific plan yet, at least awareness has been awakened.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Yeah, not only do I stay up late, but my sleep quality is also poor. I'll send you a sleep report. I don't sleep well every day, and sitting for long periods has caused shoulder discomfort and dry eyes.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 15,
-          "content": "Completely agree. So, we've reached a consensus in this conversation: we need to pay attention to health. Although there's no specific plan yet, at least awareness has been awakened.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of the same topic across different rounds.",
       "generated_at": "2026-03-01T12:21:28.035896",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Lin Chang'an said in the conversation that he never stays up late. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "Sigh, just finished a project and stayed up so late again.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "Yes, not only staying up late, but also having poor sleep quality.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Introduce new information that may contradict the conversation to test whether the model can identify errors.",
       "generated_at": "2026-03-03T12:00:07.569582",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

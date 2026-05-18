@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.164806"
@@ -18,477 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What was the pain score initially recorded by Gu Linfeng, and to what level did the peak pain score decrease in his subsequent chart records?"
       },
       "original_answer": "At the initial recording, Gu Linfeng's pain level was rated at 4; the peak pain level has decreased from 7 to around 4.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 8,
-          "content": "Gu Linfeng: Alright, I'll give it a try. Today's pain level is around 4 out of 10, mainly in the C7 area. I worked on the computer for 6 hours, mostly in a forward-leaning posture while drawing. I did some stretching for relaxation, but the effect wasn't very noticeable.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 8,
-          "content": "Gu Linfeng: Yes, I am still using the record sheet you provided. Over the past week, the frequency of pain has decreased from 3-4 times a day to 1-2 times, and the intensity has also lessened, with the peak dropping from a score of 7 to around 4.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from different conversations regarding changes in the pain index.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "When the two first discussed the differences between cats and dogs, what did they think the differences were? Who is the author of the book \"The Lovely Cat and Dog Illustrated Guide,\" which Gu Linfeng shared to explain the differences between cats and dogs?"
       },
       "original_answer": "Dogs are driven by exploration, while cats are driven by play; the author of \"The Adorable Cat and Dog Guide\" shared by Gu Linfeng is Tadaaki Imaizumi.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Ye Zhiwei: [Sending picture: 1.png] Gu Linfeng, look at this! My Border Collie completed a complex command today, and I'm so proud. It used the process of elimination to find the correct sequence, and the reward feedback after completing the task was very timely.",
-          "image": ""
-        },
-        {
-          "session": "5",
-          "turn": 3,
-          "content": "Gu Linfeng: [Sent picture: 2.png] The author is an animal behaviorist and illustrator, with an introduction on the title page. See, this comic style reminds me of the picture we shared when discussing the exploratory drive of cats and dogs.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from different conversations, involving discussions on pet behavior and information about book authors.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session3/1.jpg",
         "text": "What scheme was used to modify the object in the problem image?"
       },
       "original_answer": "Ergonomic adjustments, targeted muscle activation/stretching exercises, and intermittent rest reminders.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 3,
-          "content": "Ye Zhiwei: [Sent picture: 2.png] I created a simple line chart. The data shows that your pain peaks after three consecutive hours of work, suggesting that prolonged static posture may be the main trigger.",
-          "image": "session2/2.png"
-        },
-        {
-          "session": "5",
-          "turn": 4,
-          "content": "Ye Zhiwei: Understood. The spirit of empiricism tells me that such visual materials can aid in understanding behavioral differences. The line chart of pain data you sent earlier operates on a similar principle, right?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 2, recall the relevant textual information from Session 5 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In which book discussed in the subsequent communication was the theory about the differences in cat and dog behavior, which the two discussed on May 20th, theoretically confirmed? Provide the book title."
       },
       "original_answer": "Cute Cat and Dog Guide",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Ye Zhiwei: [Sends image: 1.png] Lin Feng, I just finished watching \"Interstellar,\" and I was really impressed by the visualization of the black hole. This is a screenshot from the movie. From your non-professional perspective, does the presentation here help you understand the core concept?",
-          "image": "session8/1.png"
-        },
-        {
-          "session": "9",
-          "turn": 2,
-          "content": "Gu Linfeng: Wow, this image is absolutely stunning! From a visual storytelling perspective, the distorted halo and dynamic curves create a mysterious and dangerous atmosphere, allowing me to intuitively feel the immense gravitational pull of a black hole. Just like when we discussed pet behavior earlier, images can instantly convey the core message. Do you think this artistic approach is effective?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 8, recall the relevant textual descriptions from Session 9 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Gu Linfeng initially described his shoulder and neck pain as a sore and distending sensation. By Session 3, through tool creation and effect evaluation, how did his pain data change, and how does this reflect the updating of knowledge?"
       },
       "original_answer": "In Session 1, Gu Linfeng described the shoulder and neck pain as a sore and distending sensation. By Session 3, the frequency of pain had decreased from 3-4 times per day to 1-2 times, with reduced intensity, and the peak pain level dropped from around 7 to approximately 4. This demonstrates an improvement in the pain condition through the intervention plan and tool development, with knowledge evolving from initial diagnosis to effective management.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 3,
-          "content": "Gu Linfeng: It's mainly a sore and swollen feeling, which sometimes worsens when I turn my head or raise my hand. It has been going on for several days. As an architect, I often work at a desk, and my posture might not be correct.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 8,
-          "content": "Gu Linfeng: Yes, I am still using the record sheet you provided. Over the past week, the frequency of pain has decreased from 3-4 times a day to 1-2 times, and the intensity has also lessened, with the peak dropping from a score of 7 to around 4.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detection information updated, from the pain description in Session 1 to the improvement data in Session 3, reflecting knowledge revision and supplementation.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 6, Gu Linfeng struggled with the choice of studio monitors, initially focusing on technical specifications. In Session 7, through comparative reviews and a decision matrix, how did he and Ye Zhiwei ultimately adjust their selection criteria?"
       },
       "original_answer": "In Session 6, Gu Linfeng was preoccupied with the technical specifications of the studio monitors. In Session 7, through comparative evaluations and a decision matrix, they adjusted their selection criteria to place greater emphasis on practical user experience, customer reviews, and cost-effectiveness. Ultimately, they leaned toward the second kitchen scale (TANITA).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "Gu Linfeng: [Sent picture: 1.png] Zhiwei, I've been struggling to choose studio monitors lately. This is a screenshot comparing the technical specs of two high-end models. Look, this brand has a smoother low-frequency attenuation curve, but the other one has a wider frequency response range. As an architect and musician, I need accurate sound reproduction, but there are so many parameters that it's a bit overwhelming. You were so systematic when you helped me analyze health data before—could you give me a layperson's but rigorous perspective?",
-          "image": ""
-        },
-        {
-          "session": "7",
-          "turn": 12,
-          "content": "Gu Linfeng: So, we can create a simple decision matrix: assign weights to stability, precision, price, and user experience, and quantify them like in your table. The first model excels in stability but is more expensive, while the second one offers a better balance. I lean toward the second model because it aligns more with the philosophy of \"slow and steady wins the race,\" offering higher cost-effectiveness.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detecting knowledge updates, from the focus on purely technical parameters in Session 6 to the comprehensive decision matrix in Session 7, reflects the revision and optimization of selection criteria.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Based on the conversation information, from the initiation of the sourdough experiment to the tasting of the results, please infer the chronological order of the three steps: feeding regimen cultivation, finished product baking, and pH measurement."
       },
       "original_answer": "First is the cultivation of feeding plans, followed by pH measurement, and finally, the baking of the finished product.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Ye Zhiwei: [Sending image: 1.png] Lin Feng, I just read a paper on the effects of different lactic acid bacteria fermented sourdough on bread quality and flavor. It reminded me of our previous discussion on systematic thinking in health management. Perhaps we could conduct a kitchen experiment to compare the activity of lactic acid bacteria starters and the resulting flavors under different feeding regimens.",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Gu Linfeng: [Sent picture: 1.png] Zhiwei, the yeast culture is progressing well on my end. I just took a close-up shot. Look, the volume of the yeast liquid has increased by 50%, indicating active gas production. The bubble structure is very stable, somewhat reminiscent of the sense of rhythm we discussed earlier when talking about music theory.",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Gu Linfeng: [Sent picture: 1.png] Zhiwei, I've compiled the cross-sectional observation records from this sourdough experiment and am sending them to you. Compared to the starter culture plan we discussed earlier, the differences in pore characteristics are quite noticeable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session temporal reasoning, inferring the sequence of events based on information from multiple sessions.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Based on the conversation information, please provide the correct chronological order of the four discussions: the discussion about behavioral differences between cats and dogs, the discussion about shoulder and neck issues, the discussion about New Year's travel plans, and the discussion about movies."
       },
       "original_answer": "First, there will be a discussion on shoulder and neck issues, followed by a discussion on the behavioral differences between cats and dogs. After that, there will be a discussion about movies, and finally, a discussion on New Year's travel plans.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 8,
-          "content": "Gu Linfeng: Alright, I'll give it a try. Today's pain level is around 4 out of 10, mainly in the C7 area. I worked on the computer for 6 hours, mostly in a forward-leaning posture while drawing. I did some stretching for relaxation, but the effect wasn't very noticeable.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Gu Linfeng: [Sent picture: 1.png] Ye Zhiwei, this is the pain data I've recorded recently, organized according to your previous suggestions. Could you help me analyze it?",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 8,
-          "content": "Gu Linfeng: Yes, I’m still using the record sheet you provided. Over the past week, the frequency of pain has decreased from 3–4 times a day to 1–2 times, and the intensity has also lessened, with the peak dropping from a score of 7 to around 4.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session time comparison involves comparing state changes at different time points based on information from multiple sessions.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "session2/1.png",
         "text": "Which image served as the template for recording the data in this picture? Provide the session number and image file name."
       },
       "original_answer": "2.png in session1",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 3,
-          "content": "Ye Zhiwei: [Sent image: 2.png] I made a simple line chart. The data shows that your pain peaks after three consecutive hours of work, suggesting that prolonged fixed postures may be the main trigger.",
-          "image": "2.png"
-        },
-        {
-          "session": "3",
-          "turn": 8,
-          "content": "Gu Linfeng: Yes, I’m still using the record sheet you provided. Over the past week, the frequency of pain has decreased from 3–4 times a day to 1–2 times, and the intensity has also lessened, with the peak dropping from a score of 7 to around 4.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session inference is required to determine the causal relationship between image content and subsequent health improvements.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "Why does Gu Linfeng want to improve his workstation?"
       },
       "original_answer": "Because Gu Linfeng was experiencing shoulder and neck issues, which were related to his frequent desk work, he hoped to improve his workstation to enhance his posture and alleviate the shoulder and neck problems.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Ye Zhiwei: [Sent picture: 1.png] Lin Feng, I just read a paper on the effects of different lactic acid bacteria fermented sourdough on bread quality and flavor. It reminded me of our previous discussion on systematic thinking in health management. Perhaps we could conduct a kitchen experiment to compare the activity of lactic acid bacteria starters and the resulting flavors under different feeding regimens.",
-          "image": "1.png"
-        },
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Gu Linfeng: [Sent picture: 1.png] Zhiwei, the yeast culture is progressing well on my end. I just took a close-up shot. Look, the volume of the yeast liquid has increased by 50%, indicating active gas production. The bubble structure is very stable, somewhat reminiscent of the sense of rhythm we discussed earlier when talking about music theory.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Cross-session inference of image information is needed to drive subsequent experimental design and implementation.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "session8/2.png",
         "text": "In the conversation on November 5th, how did Gu Linfeng refer to this picture?"
       },
       "original_answer": "When we last discussed \"Interstellar,\" you sent that screenshot of the black hole.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Ye Zhiwei: [Sending picture: 1.png] Gu Linfeng, look at this! My Border Collie completed a complex command today, and I'm so proud. It used the process of elimination to find the correct sequence, and the reward feedback after completing the task was very timely.",
-          "image": "1.png"
-        },
-        {
-          "session": "14",
-          "turn": 5,
-          "content": "Ye Zhiwei: Good idea, this continues our collaborative verification approach. I'll go search for the first one now, hoping it will be as precise and reliable as a Border Collie executing commands.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Need to track the referencing and analogical evolution of the same image entity across different sessions.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "In the conversation on December 8th, Gu Linfeng referenced the \"Comparison Table of Feeding Plans Designed During the Previous Project Initiation.\" Find this image? Provide the session number and the image question name."
       },
       "original_answer": "3.png in session10",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 5,
-          "content": "Gu Linfeng: [Sent image: 3.png] This is a price screenshot of the BX5 D3, which is significantly cheaper than the BX8. Hearing you say that, I'm leaning toward the BX5 now. After all, my studio space is limited, and just like a cat exploring hidden holes, sometimes smaller tools can be more precise.",
-          "image": "3.png"
-        },
-        {
-          "session": "7",
-          "turn": 10,
-          "content": "Gu Linfeng: Yes, I remember you guided me to focus on the listening experience rather than pure technicalities. Regarding the kitchen scale, is your core need precise measurement of ingredients for experiments or cooking? This will influence the choice.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session tracking of descriptions and applicability discussions for the same product is required.",
       "generated_at": "2026-04-01T17:05:33.164806",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 8,
-      "hard": 3
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

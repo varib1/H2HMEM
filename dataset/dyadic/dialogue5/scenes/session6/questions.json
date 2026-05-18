@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,199 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What observation items are included in the health records established by Xu Huaian for the old tea?"
       },
       "original_answer": "Date, Weather, Food Intake, Activity, Remarks",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "I've made a simple health record for it, just like we discussed when making Qingtuan, noting down all the details. Look, here are the observations from the past few days. It reminds me of the 'meticulous and refined' attitude you mentioned when we first talked about Qingtuan, now applied to documenting the daily life of 'Old Tea'.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall the specific items of health records mentioned in the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In Lin Shuying's experience of caring for 'Mo Dian', what medication administration techniques were mentioned?"
       },
       "original_answer": "Hide the pill in a cat treat to make it easier for the cat to accept.",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 4,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The text mentions medication administration techniques, and picture 2 shows a cat licking a treat stick that contains hidden pills, both related to the same event.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the picture that evoked Xu Huaian's association with the attitude of 'meticulous scrutiny,' how many days of health records are there?"
       },
       "original_answer": "Three days",
-      "answer_source": "inference",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "I've made a simple health record for it, just like we discussed when making Qingtuan, noting down all the details. Look, here are the observations from the past few days. It reminds me of the 'meticulous and refined' attitude you mentioned when we first talked about Qingtuan, now applied to documenting the daily life of 'Old Tea'.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image 1 (Health Record) directly leads Xu Huaian to associate it with an 'elaborate and meticulous' attitude, which is a causal inference.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how does Xu Huaian gradually describe the changes in Lao Cha's appetite?"
       },
       "original_answer": "From \"eating a bit less than before\" to \"appetite has slightly recovered.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "Well, the appetite has decreased a bit compared to before, and the activity has slowed down as well.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 15,
-          "content": "I've added today's observations to the record: appetite has slightly improved, and activity is slow but steady.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the topic of food intake across different rounds, from reduction to slight recovery.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what subtle changes in cats should be paid attention to in daily care?"
       },
       "original_answer": "Food intake, activity level, water consumption, behavior, litter box, etc.",
-      "answer_source": "both",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 10,
-          "content": "Look at this infographic; it reminds us to pay attention to subtle changes in cats and take timely action.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Examine and learn the new information in picture 4 (infographic content) and apply it to answer.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "How many photos did Xu Huaian take of the old tea?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:09:51.198408",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T09:19:07.508046"
@@ -18,165 +17,64 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In his weight loss plan, what problem did Da Liu initially encounter while running, and what tool did he use later during his recovery process to alleviate the pain?"
       },
       "original_answer": "Initially, Liu experienced discomfort from running during the high-temperature midday hours. Later, he suffered from knee swelling and injury, and used the fascia gun and massage head recommended by Ricky to alleviate the pain.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 33,
-          "content": "Da Liu: [Sent picture: img8.jpg] I've only run 2 kilometers, and I'm already unbearably hot.",
-          "image": "img8.jpg"
-        },
-        {
-          "session": "1",
-          "turn": 70,
-          "content": "Da Liu: @Coach Zhang, I will adjust my running schedule and no longer run at noon.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Da Liu: [Sent picture: img1.jpg] Everyone, please take a look. My right knee is badly swollen.",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "3",
-          "turn": 14,
-          "content": "Da Liu: [Sends picture: img4.jpg] Everyone, here are the fascia gun and massage heads recommended by Ricky.",
-          "image": "img4.jpg"
-        }
-      ],
       "validation_notes": "The issue integrates information about Da Liu's running time adjustment from Session 1 and knee injury along with the use of a fascia gun from Session 3, requiring cross-session recall of text and image details.",
       "generated_at": "2026-04-01T09:19:07.508088",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Regarding the issue of Da Liu's foot shape, what was Coach Zhang's initial assessment in Session 2, and how did he later revise this judgment?"
       },
       "original_answer": "In Session 2, Coach Zhang initially judged that Big Liu had severe overpronation (Round 2), but later revised it in Round 16 to be more like supination, based on the wear pattern shown in Figure 1 (img1.jpg).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 2,
-          "content": "Coach Zhang: @Big Liu, it looks like you have severe overpronation and might need better support.",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 15,
-          "content": "Da Liu: @Coach Zhang, you said I overpronate? But looking at the wear on my old shoes, it seems like supination?",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 16,
-          "content": "Coach Zhang: @Big Liu, looking at Figure 1, it really looks more like an outward flip. Maybe I was mistaken before.",
-          "image": "img1.jpg"
-        }
-      ],
       "validation_notes": "In Session 2 of the problem detection, Coach Zhang's updated assessment of Big Liu's foot type, shifting from overpronation to supination based on photographic evidence, demonstrates the process of knowledge updating.",
       "generated_at": "2026-04-01T09:19:07.508109",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Based on all conversations, what changes occurred in Da Liu's running time and knee condition from the start of his fat loss plan to the final offline running meetup? Please describe in chronological order."
       },
       "original_answer": "First, in Session 1, Da Liu initially experienced discomfort from running at noon and later adjusted to running in the morning. Then, in Session 3, he suffered a knee swelling injury from running and underwent rehabilitation. Finally, in Session 5, he participated in an offline running meet-up while wearing a knee brace, indicating progress in his recovery.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 33,
-          "content": "Da Liu: [Sent picture: img8.jpg] I've only run 2 kilometers, and I'm already unbearably hot.",
-          "image": "img8.jpg"
-        },
-        {
-          "session": "1",
-          "turn": 70,
-          "content": "Da Liu: @Coach Zhang, I will adjust my running schedule and no longer run at noon.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Da Liu: [Sent picture: img1.jpg] Everyone, please take a look. My right knee is badly swollen.",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "5",
-          "turn": 5,
-          "content": "Xiao Pi: [Sending picture: img5.jpg] Haha, thank you! But Da Liu's knee pads look very professional.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "5",
-          "turn": 7,
-          "content": "Dr. Wu: @Big Liu, it's important to be mindful when using knee pads to ensure they don't interfere with your recovery.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The problem requires cross-session temporal reasoning across Sessions 1, 3, and 5 to compare the changes in Liu's running time and knee condition, necessitating the integration of information from multiple sessions.",
       "generated_at": "2026-04-01T09:19:07.508142",
       "validated": true,
       "original_question_id": "CSQ004"
     }
-  ],
-  "summary": {
-    "total_questions": 3,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Knowledge Resolution": 1,
-      "Temporal Reasoning": 1
-    },
-    "by_difficulty": {
-      "medium": 1,
-      "easy": 1,
-      "hard": 1
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

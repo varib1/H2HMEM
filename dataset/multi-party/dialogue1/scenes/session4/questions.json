@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,273 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation on March 1st, what is the name of the restaurant shown in the picture sent by B_Kiki?"
       },
       "original_answer": "Sichuan Flavor Eatery",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "B_Kiki: [Sent image: img1.jpg] Family, this restaurant's sign is absolutely amazing!",
-          "image": "img1.jpg"
-        }
-      ],
       "validation_notes": "Text recall, retrieving pure textual facts (restaurant names) from the conversation.",
       "generated_at": "2026-03-21T04:54:49.599473",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "img12.jpg",
         "text": "What does D_AhJie feel like doing when digging out things in the picture?"
       },
       "original_answer": "Digging soil",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 51,
-          "content": "D_AhJie: [Sent picture: img12.jpg] When I scoop the tiramisu, why does it feel like I'm digging dirt...",
-          "image": "img12.jpg"
-        }
-      ],
       "validation_notes": "Image → Text, based on the image content (digging tiramisu), recall important textual information from the conversation (feels like digging soil).",
       "generated_at": "2026-03-21T04:54:49.599547",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image caused B_Kiki to complain in the conversation that A Jie's photography skills resemble a crime scene? Provide the session number and image file name."
       },
       "original_answer": "img6.jpg in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 24,
-          "content": "D_AhJie: [Sent picture: img6.jpg] How did I do taking a picture of this appetizer?",
-          "image": "img6.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 25,
-          "content": "B_Kiki: @D_AhJie Your photo looks like a crime scene, the flash is too harsh!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text, inferring that the image (img6) triggered textual commentary (critique).",
       "generated_at": "2026-03-21T04:54:49.599595",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did the entity Tiramisu evolve from being described as 'potted Tiramisu' to 'crime scene'?"
       },
       "original_answer": "Initially described as a potted tiramisu, it later felt like digging soil when A-Jie was excavating it, and both Kiki and A-Jie referred to it as a crime scene.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 49,
-          "content": "A_LinSen: @C_SuQian Actually, the potted tiramisu is...",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 51,
-          "content": "D_AhJie: [Sent picture: img12.jpg] When I scoop the tiramisu, why does it feel like I'm digging soil...",
-          "image": "img12.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 52,
-          "content": "B_Kiki: @D_AhJie Haha, Ah Jie's tiramisu... the crime scene is now live.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 60,
-          "content": "D_AhJie: @B_Kiki I think it's the crime scene...",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to tiramisu across different rounds, from potted plants to crime scenes.",
       "generated_at": "2026-03-23T10:10:14.873771",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the information in the conversation, what are the processing sources of trans fatty acids?"
       },
       "original_answer": "Hydrogenated vegetable oil, refined vegetable oil, high-temperature cooking",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 43,
-          "content": "B_Kiki: [Sends image: img10.jpg] Can anyone relate? The search results for trans fats are really...",
-          "image": "img10.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 44,
-          "content": "E_DrWu: @B_Kiki After seeing this, I think you should eat less sugar. The calorie content of onion rings is too high.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Use the newly acquired multimodal information (image content) to answer questions, testing online adaptability.",
       "generated_at": "2026-03-23T10:10:14.873809",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Most people think onion rings can be eaten a bit more. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 39,
-          "content": "B_Kiki: [Sent image: img9.jpg] What's the deal with the 15% service fee? Seeking an explanation.",
-          "image": "img9.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 55,
-          "content": "E_DrWu: @A_LinSen A 15% service charge on the bill...",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect conflicts between newly input information (service fee 20%) and existing memory (service fee 15%).",
       "generated_at": "2026-03-23T10:10:14.873826",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, everyone discussed what the signature color of the restaurant is."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "B_Kiki: [Sent image: img1.jpg] Family, this restaurant's sign is absolutely amazing!",
-          "image": "img1.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "D_AhJie: @B_Kiki The signboard looks so much like a nightclub style, haha.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Asking about information not present in the conversation (such as the color of a sign) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-23T10:10:14.873841",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

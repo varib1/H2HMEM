@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,272 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "2.png",
         "text": "Which item mentioned in the conversation does this picture show?"
       },
       "original_answer": "Like sticker",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "That's it! I bought some like stickers with thumbs-up patterns in different colors, and I plan to have participants give each other likes during the event to encourage interaction and recognition.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image]: Identify the item mentioned in the conversation as a like sticker through image 2.png, requiring cross-modal retrieval.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the traditional festive gift mentioned in the conversation?"
       },
       "original_answer": "3.png in session2",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "These are some of the gifts, such as these couplets, the character \"Fu,\" and red envelopes, which are traditionally festive and can enhance the holiday atmosphere.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Text-to-Image Search]: Identify the corresponding image as 3.png in session2 based on the description in the dialogue (traditional festive gift).",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "6.png",
         "text": "What suggestion did the picture evoke from Ji Shi'an?"
       },
       "original_answer": "Add Dragon Year Doll",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 11,
-          "content": "For example, a cartoon dragon doll like this, with its bright colors and smiling face, can attract children and make the activity more inclusive for different age groups.",
-          "image": "6.png"
-        }
-      ],
       "validation_notes": "[Cause Leads to Effect]: The doll shown in image6.png prompted Ji Shi'an to suggest adding a Year of the Dragon doll to attract children.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture prompted Ji Shi'an to suggest adding award categories?"
       },
       "original_answer": "1.png in session2",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Shi An, I've put together a detailed process checklist for the \"Neighborhood New Year's Eve Dinner\" event we discussed last time, and I'd like to hear your thoughts on it.",
-          "image": "1.png"
-        },
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "However, I noticed that there is only one award set in the list. Isn't that a bit too few?",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Finding the Cause from the Result]: Image1.png (Activity Process Checklist) prompted Ji Shi'an to propose adding award categories in the text.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did Ji Shi'an's reference to the activity process list evolve from 'this list' to 'the activity process'?"
       },
       "original_answer": "'This list', 'Event schedule'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "Happy New Year, your list is truly comprehensive, and it's clear that a lot of thought went into it. The activities are well-arranged...",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 15,
-          "content": "Great, this effectively highlights the value of key time points while also taking emotional well-being into account. The other parts are excellent as well, with a clear activity flow...",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Evolution of Reference]: Track the evolution of how the same entity (activity process list) is referred to across different rounds.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "5.png",
         "text": "What is the tulip night light in the picture described as?"
       },
       "original_answer": "Home Decorations",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 9,
-          "content": "And this tulip night light, warm and gentle, is perfect as a home decoration.",
-          "image": "5.png"
-        }
-      ],
       "validation_notes": "[Application of New Knowledge]: Tests the model's ability to learn new information (description of image 5.png) during the conversation and apply it.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "He Sui mentioned that he added a relaxation session at the end of the event, but did the conversation mention whether this session was intended to prevent post-holiday syndrome?"
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 14,
-          "content": "Yes, thanks to your reminder. I remember you mentioned preventing post-holiday syndrome before, so this time I added a relaxation session at the end of the event to help everyone transition smoothly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Consistency Check]: Detects the consistency between newly input information (problem statement) and existing memory (dialogue content).",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "He mentioned in the conversation which colors of like stickers he prepared."
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "I bought some like stickers, with thumbs-up patterns in different colors...",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Refuse to answer]: Information not present in the question (specific color); the answer should indicate that the information is not specified.",
       "generated_at": "2026-03-01T12:24:54.001857",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Cross-modal Retrieval": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

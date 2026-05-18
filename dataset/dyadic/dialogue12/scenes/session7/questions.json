@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,143 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Shen Zhiwei mentioned that in the character arc diagram she drew for the protagonist, which subjectively defined dimensions are included on the vertical axis?"
       },
       "original_answer": "Moral Pressure Value, Emotional Openness, Action Efficacy",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shen Zhiwei: [Sends image: 2.png] Yanqiu, while watching \"Yao-Chinese Folktales\" recently, I tried to 'quantify' the narrative in a non-data-driven way. I created this 'character arc chart' for the protagonist, with the horizontal axis representing time and the vertical axis representing several subjectively defined dimensions. I assigned scores to each node and connected them to form a curve. Although the scores are subjective, this process forced me to precisely define and track the trajectory of the character's development.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question is based on the plain text facts in the dialogue, accurately recalling unimodal detailed information and avoiding vague responses.",
       "generated_at": "2026-03-01T17:32:49.171532",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Cheng Yanqiu's description outlines the 'character arc diagram' for the protagonist of \"Yao-Chinese Folktales,\" where the vertical axis represents subjectively defined dimensions. How many dimensions are included, and what are they?"
       },
       "original_answer": "Three dimensions: namely, moral pressure value, emotional openness, and action efficacy.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Yanqiu, while watching \"Yao-Chinese Folktales\" recently, I attempted to 'quantify' the narrative in a non-data-driven way. I drew this 'character arc chart' for the protagonist.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The task involves retrieving the corresponding image (1.png) based on the textual information from the dialogue, demonstrating precise memory of text-image alignment, which falls under cross-modal retrieval from text to image.",
       "generated_at": "2026-03-01T17:32:49.171532",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "After Shen Zhiwei sent the question image, what was Cheng Yanqiu's evaluation of this image?"
       },
       "original_answer": "Cheng Yanqiu commented that this image is the embryonic form of 'structured narrative analysis'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "Cheng Yanqiu: Zhihui, this is fantastic! It's practically the embryonic form of 'structured narrative analysis.' Let me take a look at this diagram—your attempt reminds me of our previous discussions on quantifying soft variables, like the sense of loneliness you mentioned in Session 2.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask what someone thinks of a certain picture. The answer is directly from Cheng Yanqiu's response in the second round of the dialogue.",
       "generated_at": "2026-03-01T23:49:07.658252",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "In the dialogue, what was the problem picture initially called by Cheng Yanqiu?"
       },
       "original_answer": "Character Arc Diagram",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shen Zhiwei: [Sends image: 2.png] Yanqiu, while watching \"Yao-Chinese Folktales\" recently, I attempted to 'quantify' the narrative in a non-data-driven way. I created this 'character arc chart' for the protagonist, with the horizontal axis representing time and the vertical axis representing several subjectively defined dimensions, such as 'moral pressure value,' 'emotional openness,' and 'action efficacy.' I assigned scores to each node and connected them to form curves. Although the scores are subjective, this process forced me to precisely define and track the trajectory of the character's development.",
-          "image": "2.png"
-        },
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "Cheng Yanqiu: Zhihui, this is fantastic! It's practically the embryonic form of 'structured narrative analysis.' Let me take a look at this diagram—your attempt reminds me of our previous discussions on quantifying soft variables, like the sense of loneliness you mentioned in Session 2.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the image entity (2.png) in the conversation, from Shen Zhiwei's \"character arc diagram\" to Cheng Yanqiu's \"this image,\" demonstrating cross-turn reference tracking.",
       "generated_at": "2026-03-01T17:32:49.171532",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 1
-    }
-  }
+  ]
 }

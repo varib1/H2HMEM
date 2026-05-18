@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the kitchen scale comparison table mentioned by Ye Zhiwei in the conversation, which dimension did she assign the highest weight to?"
       },
       "original_answer": "Stability",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "I set the stability weight the highest.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the user feedback mentioned in the conversation, which emphasizes high precision and easy cleaning, and notes that the stability is good but the price is slightly higher, what is the price of that kitchen scale?"
       },
       "original_answer": "159 yuan",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 8,
-          "content": "This TANITA scale features a stainless steel weighing platform and an attractive price, though users have noted that the interface is somewhat complex.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall the corresponding image (3.png) based on the text information, as both are related to the same event.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image triggered Gu Linfeng's analogy regarding music equipment and the balance between performance and cost? Please provide the session number and the image file name."
       },
       "original_answer": "3.png in session7",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 8,
-          "content": "In comparison, the first model is more akin to ergonomic adjustments in our health management, focusing on details; the second model resembles music equipment, balancing performance and cost.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Inferring the content of the image (3.png) triggers an analogy in the text, which falls under causal inference.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how do Ye Zhiwei and Gu Linfeng gradually refer to the kitchen scale they ultimately choose?"
       },
       "original_answer": "This scale, the second scale, the TANITA scale.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 8,
-          "content": "This TANITA scale features a stainless steel weighing platform and an attractive price.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 12,
-          "content": "I prefer the second option.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 17,
-          "content": "Alright, let's go with the TANITA scale then.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the TANITA scale across different rounds, from specific descriptions to the final decision.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, if a kitchen scale uses a strain gauge sensor, has an accuracy of 0.1g, high stability, but fewer functions, according to the decision-making method established in the conversation, which usage scenario might this scale be more suitable for?"
       },
       "original_answer": "Cooking and occasional science experiments require high precision but not extreme, with stability being the most important.",
-      "answer_source": "both",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 11,
-          "content": "Primarily for cooking and occasional science experiments, requiring high precision but not extreme. Stability is the most important.",
-          "image": "1.png"
-        },
-        {
-          "session": "session7",
-          "turn": 12,
-          "content": "We can create a simple decision matrix: assign weights to stability, accuracy, price, and user experience.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply the decision-making methods learned in the dialogue (such as weight allocation and scenario consideration) to answer new questions.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Xiangshan EK813 ranks 5th in the comparison table. Does this contradict the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 0,
-          "content": "Core Anchor: Ye Zhiwei sends a screenshot of a self-made Excel spreadsheet, providing a horizontal comparison of five kitchen scales.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Ye Zhiwei mentioned in the conversation what color her Border Collie is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "Just like in the picture I shared last time, my Border Collie placed the frisbee precisely on the mat.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (Border Collie color) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:06:35.567356",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

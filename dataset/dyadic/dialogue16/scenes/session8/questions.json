@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,250 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the restoration concept mentioned by Shen Jingyan in the conversation?"
       },
       "original_answer": "Restore to its original state",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "For me, restoration is not about 'restoring to new,' but about 'restoring to old'—allowing the wear and tear of time to become part of the scripture itself.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Recall specific repair concepts based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which repair concept in the conversation does this image correspond to?"
       },
       "original_answer": "Restore to its original state",
-      "answer_source": "image_description",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "This photo captures a scene from when I was restoring a Buddhist scripture from the Song Dynasty. For me, restoration is not about \"restoring it to new,\" but rather \"restoring it to old\"—allowing the wear and tear of time to become part of the scripture itself.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the repair concept from the dialogue based on the image content."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What reflections did the picture evoke in Shen Jingyan?"
       },
       "original_answer": "Stillness gives rise to wisdom.",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "The state of 'spending a lifetime to truly understand one sound' is indeed deeply moving. Just as we previously discussed 'stillness cultivates wisdom,' time here is not consumed but rather allowed to settle and accumulate.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: The image sparked a reflection in the conversation about \"stillness cultivates wisdom.\""
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture sparked Su Yu'an's discussion on the similarities between art therapy and restoration work?"
       },
       "original_answer": "2.png",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "[Send image: 2.jpg] This photo captures a moment when I was restoring a Buddhist scripture from the Song Dynasty. For me, restoration is not about \"restoring to new\" but rather \"restoring to old\"—allowing the wear and tear of time to become part of the scripture itself.",
-          "image": "2.png"
-        },
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "Wow, that resonates so much! In art therapy, we don't 'eliminate trauma' either; instead, we help clients integrate their traumatic experiences into their life stories. It's just like how you guided me to accept my emotions before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Image: The dialogue content triggers causal inferences about the image."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.jpg",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "In this photo, during the restoration of ancient texts, wormholes are not considered flaws.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "[Send picture: 2.jpg] This photo captures the scene of me restoring a Buddhist scripture from the Song Dynasty.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "Just as wormholes are not flaws but part of history when restoring ancient texts, in art therapy, trauma is not a stain to be erased.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the evolution of image references in conversations."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.jpg",
         "text": "How does Shen Jingyan apply the concept of 'dialogue' to the book board in this picture?"
       },
       "original_answer": "Dialogue with paper, dialogue with time.",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 10,
-          "content": "This photo of the book board reminds me that restoration is not just a technique, but a form of dialogue. A dialogue with the paper, a dialogue with time, allowing old objects to radiate a new breath of life.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Apply newly learned concepts from the conversation to describe the image content."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Check whether the following information contradicts the conversation: Su Yu'an believes that the restoration work should be 'restored to new condition'."
       },
       "original_answer": "Contradiction",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "For me, restoration is not about 'restoring to new,' but about 'restoring to old'—allowing the wear and tear of time to become part of the scripture itself.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detecting the consistency between information and dialogue content."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What is the name of the old craftsman in the documentary?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information not present in the dialogue to assess refusal-to-answer capability."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

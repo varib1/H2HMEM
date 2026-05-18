@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,249 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What comment did Gu Yanci add when forwarding the article?"
       },
       "original_answer": "Design is communication; if communication fails, the design fails.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "Got it. When I forwarded it, I added a comment: \"Design is communication, and failed communication means failed design.\" Do you think the core idea is expressed accurately enough?",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precise Recall]: The question requires recalling the comment content explicitly mentioned in the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the 'comparison between blueprint and reality' mentioned in the conversation?"
       },
       "original_answer": "2.png in session4",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Yes, this image shows the contrast between the blueprint and reality. But I think some readers might be more focused on the narrative aspects, like the small details in the dining experience.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Cross-modal related retrieval]: It is necessary to find the corresponding image based on the descriptions mentioned in the conversation."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the picture evoke from Bai Zhi?"
       },
       "original_answer": "Quite impactful",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "The article is published, I'll forward it to you. This composite image blends our perspectives, and I think it's quite impactful.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: The picture triggered a specific exclamation from someone in the conversation."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture prompted Gu Yanci's comment that 'design failure is failure, and narrative cannot be used as an excuse'?"
       },
       "original_answer": "2.png in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Yes, this image shows the contrast between the blueprint and reality. But I think some readers might be more interested in the narrative aspects, like the small details in the dining experience.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 8,
-          "content": "Temperature? Design failure is a failure; it can't be excused with narratives. However, the restaurant officially messaged us, saying they will consider the suggestions. That's a positive sign.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Causal Inference]: The image triggered a specific comment from someone in the conversation."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, which picture does 'this picture' refer to in different rounds?"
       },
       "original_answer": "2.png in session4, 3.png in session4",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Yes, this image shows the contrast between the blueprint and reality. But I think some readers might be more interested in the narrative aspects, like the small details in the dining experience.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "Yes, this image displays a chat interface, similar to our previous discussion. In reader feedback, some have mentioned this point, believing that we have identified a key flaw.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Cross-turn Reference Tracking]: Tracking the evolution of the same reference across different turns."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "What exclamation did the picture evoke from Bai Zhi?"
       },
       "original_answer": "Pointed out the key defects",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "Yes, this image shows the chat interface, similar to our previous discussion. In the reader feedback, some mentioned this point, believing that we have identified the key flaw.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: The picture triggered a specific exclamation from someone in the conversation."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did Gu Yanci express satisfaction with the restaurant's traffic flow design in the conversation?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "Nitpicking? They just don't understand the importance of visual order. The flow design of the restaurant, like the grid analysis diagram I posted earlier, is so chaotic it's suffocating.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detect information that may contradict the dialogue content."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which color of tableware did Baizhi mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refuse to answer]: Information not present in the question dialogue should be refused."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 3,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

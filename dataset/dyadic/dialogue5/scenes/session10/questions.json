@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,198 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Lin Shuying mentioned what activity she recently tried to combat the restlessness of the outside world?"
       },
       "original_answer": "Calligraphy",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 13,
-          "content": "Recently, I've been trying my hand at calligraphy. Focusing on the lifting, pressing, and turning of the brushstrokes truly helps counteract the restlessness of the outside world.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:11:07.163220",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What varieties of flowers are included in Lin Shuying's flower arrangement?"
       },
       "original_answer": "Chinese bellflower, multi-headed chrysanthemum, ocean star rose",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "At the end of the year, the bookstore is busy with inventory, new books being shelved, and old books being organized, leaving everyone in a whirlwind of activity. Just now, I arranged this bouquet of flowers, and only at this moment can my breathing slow down.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event, not causally.",
       "generated_at": "2026-02-24T11:11:07.163220",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture reminded Lin Shuying of the research into the era details when discussing \"A Lifelong Journey\"? Provide the session number and the image file name."
       },
       "original_answer": "3.png in session10",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "This photo reminds me of our previous discussion about \"A Lifelong Journey,\" where you delved into the details of that era—the atmosphere and nuances of the old neighborhood also carry a similar sense of historical depth.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that the image (flower arrangement photo) drives the text (caption) is a causal inference.",
       "generated_at": "2026-02-24T11:11:07.163220",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation on December 1st, after the topic of 'Qingtuan' was mentioned in round 3, in which round was it brought up again and linked to 'division of labor and cooperation'?"
       },
       "original_answer": "Round 11",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Yes, just like when we were making green rice balls before, focusing on the handmade process kept worries from creeping in.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 11,
-          "content": "This reminds me of the division of labor when we made green rice cakes, where I was responsible for the savory filling and you handled the sweet one. Now, even though we each engage in our own mindfulness activities, sharing them has become a kind of spiritual \"exchange of tastes.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and references of the 'Qingtuan' topic across different rounds.",
       "generated_at": "2026-02-24T11:11:07.163220",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lin Shuying never organizes old books. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Sometimes, I organize old books in the corner of a bookstore, and touching the texture of the pages can also calm my heart.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between new input information ('never organize old books') and existing memory (5th round of dialogue) to verify consistency.",
       "generated_at": "2026-02-24T14:10:18.961065",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Lin Shuying mentioned in the conversation how many cats she has raised?"
       },
       "original_answer": "The dialogue does not mention the specific number of cats Lin Shuying owns.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Information not mentioned in the conversation (number of cats owned) should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:11:07.163220",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3
-    }
-  }
+  ]
 }

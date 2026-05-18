@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,246 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Shu mentioned that her son wants to keep a dog, but what specific difficulties does the family face?"
       },
       "original_answer": "She and her husband are too busy with work and also have financial concerns.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "My son keeps talking about wanting a dog, but both his dad and I are too busy with work and have some financial concerns.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoiding generic responses.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which experience or activity in the conversation does the problem picture correspond to?"
       },
       "original_answer": "Outdoor activities",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "This is a photo of my twins and our dog playing outdoors. The sunshine is lovely, and the children are having a great time.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Identify the corresponding dialogue content based on the image scene.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What exclamation or comment did the problem picture evoke from Lin Shu?"
       },
       "original_answer": "Visual presentation is crucial.",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "I've created a preliminary promotional image that showcases scenes of children interacting with pets, including Golden Retrievers and Corgis, and also mentions the possibility of connecting with elderly individuals living alone. What do you think of this direction? Just like last time (April 5th) when we designed the community health corner poster, visual presentation is crucial.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Causal inference of text driven by images, where the images prompt discussions on visual presentation.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "A family walking the dog, adults taking children and the dog for a walk.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Especially that photo of the family walking the dog (3.png) captures the warmth of everyday life.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 12,
-          "content": "This is a photo of an adult taking a child and a dog for a walk, casual and relaxed.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for images across different rounds.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what safety measures should be prioritized if the community plans to organize outdoor activities?"
       },
       "original_answer": "Parental accompaniment, public area, fixed time, consent form",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 2,
-          "content": "Participating in activities with parental supervision allows children to experience responsibility while fostering neighborhood relationships. Most importantly, safety comes first.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 4,
-          "content": "It's important to establish clear rules, such as requiring parental accompaniment and fixed schedules.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "The activity rules must emphasize safety, such as requiring both parents to sign a consent form for pairing up, and ensuring that activities are conducted in public areas with adult supervision throughout.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (image scenes) and apply the knowledge of safety rules in conversations.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The conversation mentions that Lin Shu's son wants to raise a Corgi, but the Corgi shown in image 1.png is brown and white. Does this contradict the dialogue?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "My son keeps talking about wanting to get a dog.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "I've created a preliminary promotional image showcasing scenes of children interacting with pets, including Golden Retrievers and Corgis.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (assuming Lin Shu's son wants to raise a Corgi) and existing memories, as the breed was not specified in the actual conversation.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what is the name of Lin Shu's pet that she mentioned?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:22:16.904621",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Memory Application": 3
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

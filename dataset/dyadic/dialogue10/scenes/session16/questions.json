@@ -6,7 +6,6 @@
     "session_number": 16,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,98 +15,61 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the color of the fur of Xia Qingchuan's cat, Snowball?"
       },
       "original_answer": "White",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 1,
-          "content": "The quietness that Snowball taught me, which is not about performance, might just be the antidote to that sense of loneliness.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:20:41.017592",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the conversation, what was the color of Su Mingche's pants in the photo with his family's warm sun on January 1st?"
       },
       "original_answer": "Blue",
-      "answer_source": "image_description",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 4,
-          "content": "Completely agree. Look, this is a photo of me and my Sunshine taken today.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where the two are related due to the same event, not causal inference.",
       "generated_at": "2026-02-24T11:20:41.017592",
       "validated": true
     },
     {
-      "question_id": "004",
       "question": {
         "image": "",
         "text": "What is the name of the other pet that Xia Qingchuan mentioned she has in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:20:41.017592",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 3,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3
-    }
-  }
+  ]
 }

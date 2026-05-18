@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,274 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "How much extra distance does the alternative route suggested by Shi Yan add?"
       },
       "original_answer": "About one kilometer",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "It's about a kilometer longer, but the slope is gentler and the risk is lower.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall specific factual information from the text, avoiding lengthy quotations from the original dialogue.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.jpg",
         "text": "In the dialogue, what type of rope is suggested to replace the one in the picture?"
       },
       "original_answer": "Dynamic rope",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "The image shows that the rope type is static, which may not be flexible enough for simple descents... I recommend switching to a dynamic rope, increasing the length to 30 meters to add safety redundancy.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall Shi Yan's suggestions in the conversation based on the type of rope in the image.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.jpg",
         "text": "Which device suggestion in the conversation does this picture correspond to?"
       },
       "original_answer": "Personal Locator Beacon (PLB)",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "It is strongly recommended to add a PLB. Satellite phones may fail in areas with poor signal, while a PLB can directly send distress signals to rescue centers. Here is a reference image of the relevant equipment; the model is not important, the key is its functionality.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Derive device recommendations by combining the image (3.png) and dialogue information.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpg",
         "text": "What kind of evaluation did this picture trigger from Shi Yan?"
       },
       "original_answer": "The use of ropes is not standardized enough.",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "Yes, I brought the rope. Here's a photo of the gear. See, the main rope is in the blue backpack, and the spare equipment is in the green one. It's about 20 meters long. Will that be enough?",
-          "image": "1.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "The image shows that the rope type is static, which may not be flexible enough for simple descents... I noticed in the hiking photo you sent earlier that the rope usage was not standardized.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Inferring that the image (1.png) drives the text (Shiyan's evaluation), reflecting a causal inference relationship.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How does Yelu's rope length change during the conversation?"
       },
       "original_answer": "Increased from 20 meters to 30 meters",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "It's about 20 meters long. Is that enough?",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "I suggest switching to a dynamic rope, increasing the length to 30 meters to add safety redundancy.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Track the evolution of rope length across different rounds, focusing on changes in the chain of reference.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.png",
         "text": "What should be considered when planning the route marked in this image to avoid risks?"
       },
       "original_answer": "Avoid the scree slope.",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "However, I noticed there is a safer alternative route here. Although it might miss some of the rhododendron areas you mentioned, it can avoid that scree slope and is more reliable when the streams swell in spring.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "You mentioned earlier that you lack geological knowledge, so this time I'll share more field observation techniques.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image → Text: Assessing the model's ability to learn new information (field observation techniques shared by Shi Yan) and apply it to answer questions (considerations when planning routes).",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "When Ye Lu went hiking in the undeveloped valley for photography, she did not bring a satellite phone. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "Additionally, I have brought the satellite phone, but not the personal locator beacon (PLB). Do you think it's necessary?",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Strongly recommend adding a PLB. Satellite phones may fail in areas with poor signal, whereas a PLB can directly send distress signals to rescue centers.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Detect whether there is a contradiction between the newly input information (Shi Yan's words) and the existing memory (Ye Lu brought a satellite phone), and verify consistency.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What model of drone did Yelu mention she plans to bring in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text → Text: Ask about information not present in the dialogue (drone model) to test refusal-to-answer capability and avoid hallucinations.",
       "generated_at": "2026-02-24T11:33:41.976410",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 4,
-      "Text→Text": 3
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "After Lin Chang'an took his pet 'Almond' to the hospital, what specific issue did the doctor diagnose?"
       },
       "original_answer": "Mild allergy",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "It's a mild allergy, and the doctor said it might be related to allergens, such as dust mites in the environment or certain foods.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, with answers explicitly derived from round 3.",
       "generated_at": "2026-03-01T12:21:30.039680",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What are the dimensions included in the treatment plan prescribed by the doctor for Lin Chang'an's cat, and what are they respectively?"
       },
       "original_answer": "Three dimensions: namely, medication therapy, medicated bath therapy, and environmental and lifestyle adjustments.",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "Well, this is the plan given by the doctor. I'll send it to you for a look.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event (treatment planning) without a causal relationship.",
       "generated_at": "2026-03-01T12:21:30.039680",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "In the conversation between the two, why did Zhou Ping'an send the problematic picture?"
       },
       "original_answer": "To provide a reference check-in sheet to help Lin Chang'an systematically record the treatment process of almonds, enabling effortless and efficient planning.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 10,
-          "content": "Zhou Pingfan: You're welcome. Friends help each other out. I suggest making a plan to systematize the treatment process, which will save both effort and worry.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 11,
-          "content": "Lin Chang'an: Great idea! The automated solution you mentioned earlier will come in handy this time.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 12,
-          "content": "Zhou Pingfan: [Sent picture: 2.png] Yes, I made a reference check-in sheet and sent it to you. It can record the degree of itching, medication usage, etc.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The second scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask why someone sent it, recalling the preceding cause? The answer is based on causal inference from the conversation, involving multiple rounds of dialogue.",
       "generated_at": "2026-03-01T23:46:12.984337",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'Reference Check-in Table' image sent by Zhou Pingfan referred to or cited?"
       },
       "original_answer": "From the 'Reference Check-in Table' to 'This Table' and then to 'Table'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 12,
-          "content": "Yes, I made a reference tracking sheet and sent it to you. It can record the degree of itching, medication usage, and so on.",
-          "image": "2.png"
-        },
-        {
-          "session": "session5",
-          "turn": 13,
-          "content": "Wow, this table is really practical! It looks like the style of the computer usage report you shared before—simple and clear.",
-          "image": "2.png"
-        },
-        {
-          "session": "session5",
-          "turn": 14,
-          "content": "Well, I'm used to managing things with tables; it's efficient. You can adjust the content based on the doctor's plan.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the referential evolution of the image entity (2.png) across multiple rounds of dialogue to form a reference chain.",
       "generated_at": "2026-03-01T12:21:30.039680",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Chang'an's cat is taken to the vet due to illness. Based on the knowledge learned, if a cat has a skin disease, does the treatment require targeted adjustments to the environment and lifestyle? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "Lin Chang'an: [Sending picture: 1.png] Hmm, this is the treatment plan given by the doctor. I'm sending it to you for a look.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The question is not necessarily related to the dialogue content, but requires the use of knowledge from the images that appear in the dialogue to answer.",
       "generated_at": "2026-03-03T12:00:14.803601",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lin Chang'an said the doctor diagnosed 'Xingren' with a severe allergy. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "It's a mild allergy, and the doctor said it might be related to allergens, such as dust mites in the environment or certain foods.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Present conflicting information (severe allergy), detect whether the contradiction with the conversation (mild allergy) is recognized.",
       "generated_at": "2026-03-01T12:21:30.039680",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "How much did Lin Chang'an spend on treating his own almonds?"
       },
       "original_answer": "The specific amount of expenditure was not mentioned in the conversation, so it cannot be answered.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "medium",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (specific drug names) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:21:30.040737",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

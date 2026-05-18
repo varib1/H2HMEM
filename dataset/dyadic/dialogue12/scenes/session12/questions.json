@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,112 +15,61 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the dialogue, what does the red line represent in the dual-axis analysis chart of topic discussion density sent by Cheng Yanqiu to Shen Zhiwei?"
       },
       "original_answer": "Narrative/Meaning-Driven",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T17:34:02.417986",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Why did Cheng Yanqiu send a question image at the beginning of the conversation?"
       },
       "original_answer": "To present his analysis charts based on dialogue records and propose reviewing the year from the perspective of thought collisions, rather than focusing on specific events.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Cheng Yanqiu: [Sending picture: 1.png] Zhiwei, I recently organized our conversation records from this past year and created a simple analysis chart. Look, this is a dual-axis chart based on a timeline. I thought, rather than reviewing specific events, it might be more meaningful to reflect on the year from the perspective of our intellectual exchanges.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The question type is 'Text Response to Image' in Multimodal (Text-Image) Causal Inference, inquiring about the antecedent cause for sending the image. The answer is inferred from the first round of dialogue, with no ambiguity.",
       "generated_at": "2026-03-01T23:50:03.342392",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, the chart was initially described by Cheng Yanqiu as a 'simple analysis chart', and later, what did Shen Zhiwei refer to it as?"
       },
       "original_answer": "Annual Thought Collision Map",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Zhiwei, I recently organized our conversation records from this past year and created a simple analysis chart.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 18,
-          "content": "Great idea! This annual mind map of brainstorming not only reviews the past but also guides the future.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same entity (chart) across different rounds.",
       "generated_at": "2026-03-01T17:34:02.417986",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 3,
-    "by_type": {
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2
-    }
-  }
+  ]
 }

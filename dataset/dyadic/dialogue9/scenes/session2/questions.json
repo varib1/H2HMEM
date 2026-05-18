@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation, when Zhao Xiaotang made the proposal in the community group, what similar method from last time was mentioned for sharing the costs?"
       },
       "original_answer": "Small-scale crowdfunding",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 17,
-          "content": "For cost sharing, we can set up a small crowdfunding campaign, transparent and open, just like the principle of making the most of resources and avoiding waste last time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:16:57.357502",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the 'organized table' mentioned in the conversation, locate the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "3.png in session2",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "The table is ready, I'll send it to you.",
-          "image": "3.png"
-        },
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "[Send image: 3.png] This is a comparison table for the stray animal sterilization program, including costs, appointment procedures, and post-operative care. You can refer to it.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event (table creation).",
       "generated_at": "2026-02-24T11:16:57.357502",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpeg",
         "text": "Why did Li Yifan send the problematic picture?"
       },
       "original_answer": "Because Zhao Xiaotang was worried that the female kitten would go into heat again soon, Li Yifan sent a picture offering a solution.",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "Yeah, we used a foam box as an emergency solution this time, but the mother cat will go into heat again soon.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "I've looked into it, and TNR (Trap-Neuter-Return) is the internationally recognized, most humane long-term management method, which aligns perfectly with the \"follow-up sterilization arrangements\" we discussed last time. Let me send you a picture to show you.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "This outlines the steps and benefits of TNR, which humanely controls the stray cat population. Compared to the temporary cat shelters we built last time, this is the fundamental solution to the breeding issue.",
-          "image": "2.jpeg"
-        }
-      ],
       "validation_notes": "Inferring that the image drives the expression of worry in the text is a causal inference.",
       "generated_at": "2026-02-24T11:16:57.357502",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.jpeg",
         "text": "In a conversation, how are the problem images referred to or cited?"
       },
       "original_answer": "\"This is the procedure and advantages of TNR,\" \"this\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "This outlines the steps and benefits of TNR, which humanely controls the stray cat population. Just like the cat house design I sent you last time, this also uses clear illustrations to explain the plan.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "This looks quite scientific!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same entity (last DIY cat bed) across different rounds.",
       "generated_at": "2026-02-24T11:16:57.357502",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In TNR (Trap-Neuter-Return), what do T, N, and R stand for in English?"
       },
       "original_answer": "TRAP, NEUTER, RETURN",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "After some research, I found that TNR (Trap-Neuter-Return) is the internationally recognized and most humane long-term management method.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Evaluate the model's ability to learn new information during the dialogue process (TNR steps) and apply this knowledge to answer questions (Zhao Xiaotang's concerns).",
       "generated_at": "2026-02-27T17:02:25.102038",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Li Yifan suggested using a metal box to make a cat bed in the conversation because it is more durable. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Yifan, the cat nest is all set up, and the mother cat and kittens have already gone inside! It's the one you guided me to make remotely using a foam box last time. I followed your suggestion and lined the inside of the foam box with thermal aluminum foil, and I also made ventilation holes at the top. It looks quite practical.",
-          "image": ""
-        }
-      ],
       "validation_notes": "New information that contradicts the question and the dialogue content (metal box vs. foam box), can the detection model identify the error?",
       "generated_at": "2026-03-03T01:56:26.661604",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Zhao Xiaotang mentioned what color of proposal she plans to post in the community group chat?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue (the color of the proposal), to assess the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-27T17:02:25.102038",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

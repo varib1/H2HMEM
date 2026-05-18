@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,161 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What color is the watch band that Shen Qingyan purchased?"
       },
       "original_answer": "Light pink",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "Zhixing, I bought the fitness tracker you recommended earlier—the Huawei one with the light pink strap.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts (colors) from the conversation.",
       "generated_at": "2026-03-01T12:22:41.048606",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the conversation, the sleep report sent by Shen Qingyan on June 18th shows how many times of awakening?"
       },
       "original_answer": "4.3 times",
-      "answer_source": "image_description",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "This is the sleep report. The average total sleep time is 5.8 hours, but the proportion of deep sleep fluctuates significantly.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on textual information (sleep report) from the conversation.",
       "generated_at": "2026-03-01T12:22:41.048606",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image prompted Shen Qingyan to inquire about the meaning of HRV data? Provide the session number and image file name."
       },
       "original_answer": "2.png in session9",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 3,
-          "content": "[Send image: 2.png] This is the sleep report. The average total sleep time is 5.8 hours, but the proportion of deep sleep fluctuates significantly.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 13,
-          "content": "But what does HRV data mean? It's mentioned in the report, but I have no idea at all.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: The content in the sleep report image (2.png) (which may include HRV data) prompted Shen Qingyan to inquire about the meaning of HRV.",
       "generated_at": "2026-03-01T12:22:41.048606",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, what did Shen Qingyan initially refer to by 'data,' and how did it later evolve into more specific indicators?"
       },
       "original_answer": "Originally, it referred to an overview of health data from the past week (such as sleep, activity, recovery, etc.), and later evolved to focus on sleep metrics and HRV data.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "I've compiled the data from the past week and wanted to show it to you, but there are some parts I'm not quite clear about.",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 12,
-          "content": "Don't worry, data isn't a burden—it's a tool. We can focus on one or two metrics. For example, start by paying attention to sleep: record your pre-bedtime activities each night, compare them with your deep sleep data, and find your \"optimal bedtime ritual.\"",
-          "image": ""
-        },
-        {
-          "session": "session9",
-          "turn": 13,
-          "content": "But what does HRV data mean? It's mentioned in the report, but I have no idea.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The entity 'data' has evolved from a general reference to health data to specific metrics (sleep, HRV).",
       "generated_at": "2026-03-01T12:22:41.048606",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2
-    }
-  }
+  ]
 }

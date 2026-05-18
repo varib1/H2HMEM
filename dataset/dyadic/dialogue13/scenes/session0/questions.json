@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.136594"
@@ -18,507 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On March 15th, Zhou Mingyuan's child fell ill. On April 5th, they discussed setting up a health corner. What were the symptoms of the child's illness mentioned on March 5th, and what common childhood illnesses were planned to be displayed in the health corner on April 5th?"
       },
       "original_answer": "On March 15th, the child exhibited symptoms of fever and cough. On April 5th, the key points of care for common childhood illnesses to be presented in the Health Corner plan include fever and cough.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Zhou Mingyuan: ...Both kids have caught it and are resting at home. ...Any tips for relieving coughs and making them feel more comfortable?",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "Lin Shu: [Sent picture: 1.png] Look, this section highlights the key points for nursing common childhood illnesses...",
-          "image": "session2/1.png"
-        }
-      ],
       "validation_notes": "The task requires retrieving the highly correlated information points of 'symptoms' and 'disease types' from two separate conversations.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "On May 20th, Zhou Mingyuan shared the changes in his child after getting a dog. On July 10th, they discussed the \"Pet Partners\" program. Please recall: what specific behaviors did the child learn after getting a dog, as mentioned on May 20th? And on July 10th, which groups of people is the \"Pet Partners\" program primarily aimed at?"
       },
       "original_answer": "On May 20th, after the child got a dog, they learned to feed and walk the pet, and became more patient and responsible. On July 10th, the 'Pet Partners' program is primarily aimed at children who want to interact with pets but are temporarily unable to keep one, as well as families that already have pets.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Zhou Mingyuan: ...Now they compete every day to feed and walk the dog. 'An An' has also become their best emotional listener.",
-          "image": ""
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "Lin Shu: ...allows children like her son, who wish to interact with pets but are temporarily unable to keep one, to \"pair up\" with families in the community who already have pets...",
-          "image": ""
-        }
-      ],
       "validation_notes": "The issue separately retrieves 'child's behavior' from Session3 and 'target audience of the plan' from Session4, with both pieces of information being independent and clear.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session12/3.png",
         "text": "At what point in time was the final display board for the community facility, as shown in the problem image, first proposed? Provide the date, month and day."
       },
       "original_answer": "April 5th",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lin Shu: Our community center could set up a health information corner, regularly updating key points for caring for common childhood illnesses, nearby hospital departments, and clinic hours...",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 3,
-          "content": "Lin Shu: [Sent picture: 3.png] This is a photo of the exhibition board content, using a combination of cartoon illustrations and text...",
-          "image": "session12/3.png"
-        }
-      ],
       "validation_notes": "The problem uses images as clues (target session), requiring a backtrack to the source session (text) that describes the conception of the entity.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "On July 10th, Zhou Mingyuan and Lin Shu discussed detailed safety rules for the \"Pet Partners\" program. Please specify which subsequently sent picture directly shows the scene of the program's first landing event. Provide the session number and the picture file name."
       },
       "original_answer": "1.png in session13",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 7,
-          "content": "Lin Shu: ...The activity rules must emphasize safety, such as requiring both parents to sign a consent form for pairing up, and ensuring that activities are accompanied by adults in public areas at all times.",
-          "image": ""
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lin Shu: [Sent picture: 1.png] Teacher Zhou, today's Pet Partner Experience Day event has concluded successfully!...",
-          "image": "session13/1.png"
-        }
-      ],
       "validation_notes": "The problem uses the text discussion of the source session as a clue, requiring the location of the target session image that describes the subsequent stages of the event.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Zhou Mingyuan mentioned the initial experiences of home care when a child falls ill. How were these experiences updated or refined into a more systematic health support program during the annual project review in Session 11?"
       },
       "original_answer": "In Session 1, Zhou Mingyuan and Lin Shu exchanged family care experiences for children's illnesses, such as physical cooling and hydration, offering scattered advice. During the annual project review in Session 11, these initial experiences were updated and refined into a systematic Health Corner Initiative. The core concept includes establishing campus/community health corners, promoting health knowledge, cultivating healthy lifestyle habits, and leveraging resources from families, schools, and communities to advance health education. The current progress shows that preliminary support has been secured from the local community, and the initiative is gradually moving from conception to implementation, reflecting an evolution from scattered mutual assistance to systematic support.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 2,
-          "content": "Lin Shu: Teacher Zhou, I've seen the photos. The room looks cozy but indeed a bit messy. For children, proper care during illness is crucial. In our community, we share experiences, and you could try these methods: use lukewarm water for physical cooling through sponge baths, honey lemon water to ease coughing, and a humidifier to keep the air moist. The most important thing is to encourage drinking plenty of water. I use a sippy cup combined with storytelling to guide Xiao Bao.",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 5,
-          "content": "Zhou Mingyuan: You could try this: Based on this initial draft, we can further clarify the current status of each idea. I've sent this summary table image, which includes the project name, core content, progress status, and more. Take a look and see if there are any areas that need to be added or adjusted.",
-          "image": "session11/3.png"
-        }
-      ],
       "validation_notes": "The update process of the initial knowledge from Session 1 in Session 11 involves knowledge correction.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 3, how were Lin Shu's concerns about keeping pets (such as time and financial burden) alleviated or updated after the Pet Partner Experience Day event in Session 13?"
       },
       "original_answer": "In Session 3, Lin Shu expressed concerns about keeping pets, including a busy work schedule leaving no time to accompany and train pets, as well as the financial burden. After the Pet Partner Experience Day event in Session 13, these concerns were alleviated. The event allowed children to pair up with families who already had pets to participate in activities such as walking dogs and feeding them, all under parental supervision, without the need to own a pet themselves. This reduced the time commitment and financial burden. In the third round of Session 13, Lin Shu mentioned that other participating families responded positively. Families with pets felt they gained extra help and playmates, while families without pets fulfilled their children’s wishes, reflecting an update in knowledge.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 4,
-          "content": "Lin Shu: I'm actually quite tempted, but I have quite a few concerns. With a busy work schedule, I worry about not having enough time to accompany and train a pet, and owning a pet would also add to the financial burden. Some pet owners in our community have shared similar concerns.",
-          "image": ""
-        },
-        {
-          "session": "13",
-          "turn": 3,
-          "content": "Lin Shu: Yes, our community has such activities, and everyone is very happy. My little Bao is especially excited and keeps asking when we can come again next time. The other participating families have also responded very well. Families with pets feel they have gained helpers and playmates, while families without pets have fulfilled their children's wishes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The concerns identified in Session 3 were updated with mitigation in Session 13, involving knowledge correction.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Based on the interaction between Zhou Mingyuan's twin daughters and the 'Pet Partner' program, please arrange the following events in chronological order: 1. The twins interact with An'an on the community lawn; 2. The community holds a Pet Partner Experience Day event; 3. The twins build a castle out of cardboard."
       },
       "original_answer": "1 -> 3 -> 2",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Zhou Mingyuan sent a photo: his twin daughters interacting with the puppy 'An An' on the grass under the shade of trees in the residential area... He wrote: 'Since getting the dog, the two children have clearly become more patient and responsible...'",
-          "image": "session3/2.png"
-        },
-        {
-          "session": "9",
-          "turn": 7,
-          "content": "Zhou Mingyuan: [Sending picture: 4.png] Yes, creativity knows no bounds with old materials. I'm sending a photo of a castle my daughters made out of cardboard—they were completely immersed when acting out fairy tales.",
-          "image": "session9/4.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lin Shu: [Sent picture: 1.png] Teacher Zhou, today's Pet Partner Experience Day event has concluded successfully! ... Several other families with pets also brought their cats and dogs to participate, creating a harmonious atmosphere on site.",
-          "image": "session13/1.png"
-        }
-      ],
       "validation_notes": "Event 1 occurs in Session 3, Event 3 occurs in Session 9, and Event 2 occurs in Session 13.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Please organize the timeline for the evolution of the community's \"Neighborhood Family Feast\" project and arrange the following three key nodes in chronological order:  \nA. New Year's Day Neighborhood Warm Meal Tasting Event;  \nB. Community Culture Festival Preparation Meeting;  \nC. Class Food Education Sharing and Menu Design."
       },
       "original_answer": "C -> B -> A",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "5",
-          "turn": 9,
-          "content": "Zhou Mingyuan: ...We could try this: invite community health volunteers to the class to conduct health knowledge sharing activities...",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 4,
-          "content": "Zhou Mingyuan: ...I can organize the children in the class to design menus and create invitation cards (drawing/handcraft) for the \"family banquet,\" integrating community activities with school education.",
-          "image": ""
-        },
-        {
-          "session": "15",
-          "turn": 1,
-          "content": "Lin Shu: [Sent picture: 1.png] ...I've sent you the photos from the New Year's Day 'Neighborhood Warm Meal' tasting event. The table is filled with dishes like braised pork, steamed fish...",
-          "image": "session15/1.png"
-        },
-        {
-          "session": "10",
-          "turn": 7,
-          "content": "Lin Shu: [Sent picture: 2.png] ...I've drafted a preliminary activity plan table... The parent-child sports competition can be designed as a relay race...",
-          "image": "session10/2.png"
-        },
-        {
-          "session": "14",
-          "turn": 1,
-          "content": "Lin Shu: [Send Picture: 1.png] Mingyuan, I've just finished organizing the core work progress chart for the meeting. Sending it over for you to review. ...",
-          "image": "session14/1.png"
-        }
-      ],
       "validation_notes": "Event C (Food Education and Menu Design) is an early concept for the Neighborhood Home Banquet (Session 5/6). Event A (Warm Meal Tasting) is a small-scale practice (Session 15). Event B (Cultural Festival Preparation) involves integrating the home banquet into a larger cultural festival plan (Session 10/14), which occurs later than the tasting event.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "When planning the community culture festival, Lin Shu decided to set up a \"Pet-Friendly Showcase Area.\" Based on the photos and feedback from the previous \"Pet Partners\" experience day event, please analyze which specific scene from which session and which photo directly influenced the design decision for this area? Only provide the session number and the image file name."
       },
       "original_answer": "1.png in session13",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "10",
-          "turn": 7,
-          "content": "Lin Shu: ...For example, the Health Assistant can be responsible for the first aid stations during the cultural festival, and the Pet Partner Program can organize a pet-friendly exhibition area.",
-          "image": ""
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lin Shu: [Sent picture: 1.png] Teacher Zhou, today's Pet Partner Experience Day event has concluded successfully! ... There were booths, pets, and participants on-site, creating a relaxed and warm atmosphere.",
-          "image": "session13/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 2,
-          "content": "Zhou Mingyuan: ...I saw a golden retriever patiently following a child's slow steps, and a little girl grooming a cat under her parent's guidance. These interactions were all safe and orderly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal Chain: Session 13 images demonstrate the success of the experience day and specific interactive formats -> Session 10 decides to establish a dedicated pet-friendly exhibition area in the cultural festival.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "When preparing for the 'Neighborhood Family Feast,' Zhou Mingyuan emphasized the importance of 'serving chopsticks and spoons' and 'communicating the menu in advance.' Based on the previous image of 'Health Little Butler' and the feedback from the 'New Year's Warm Meal,' please explain which two images correspond to the inspiration for these specific measures? Only provide the session number and image file name."
       },
       "original_answer": "1. Inspiration for serving chopsticks and spoons: 4.png in session12.  \n2. Inspiration for pre-communicating the menu: 1.png in session15.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 5,
-          "content": "Zhou Mingyuan: ...The important thing is to clarify the division of responsibilities, such as who is in charge of procurement and who oversees cleaning, to avoid chaos.",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 8,
-          "content": "Lin Shu: ...The training content can focus on illustrated guides for common illnesses... allowing the children to engage in hands-on activities, such as simulating handwashing steps.",
-          "image": "session12/4.png"
-        },
-        {
-          "session": "15",
-          "turn": 1,
-          "content": "Lin Shu: [Sent picture: 1.png] ...The table is set with dishes like braised pork, steamed fish, and sautéed three vegetables—very homely...",
-          "image": "session15/1.png"
-        },
-        {
-          "session": "15",
-          "turn": 5,
-          "content": "Lin Shu: ...Next time, you could send out a menu survey in advance...",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal Chain: Health education in Session 12 images -> Session 6 proposes serving chopsticks and spoons; Abundant but repetitive dishes in Session 15 images -> Session 6 suggests communicating the menu in advance.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "Zhou Mingyuan presented a design sketch of a \"Health Assistant Badge\" on December 25th. Please track what physical object this design sketch turned into in the conversation on December 28th, and identify the term referring to this object in the conversation text from December 28th."
       },
       "original_answer": "The design sketch turned into 'homemade badges' worn by children in the conversation on December 28th. In the text of the conversation on December 28th, Zhou Mingyuan referred to the physical object as 'homemade badges' and mentioned that the children 'wore homemade badges on duty.'",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "11",
-          "turn": 1,
-          "content": "Zhou Mingyuan: [Sent picture: 1.png] ...This is a draft of the \"Health Little Butler\" badge designed by the children...",
-          "image": "session11/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Zhou Mingyuan: [Sent picture: 1.png] ...shows the children wearing self-made badges on duty.",
-          "image": "session12/1.png"
-        }
-      ],
       "validation_notes": "Reference Tracking: Session 11 Image (Sketch) -> Session 12 Image (Physical Object) + Session 12 Text (Referent: Self-made Badge).",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "session7/3.png",
         "text": "This children's book group purchase poster was displayed in Session 7. Later, in which session did Zhou Mingyuan mention that parents responded positively to it?"
       },
       "original_answer": "Session 16",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "7",
-          "turn": 4,
-          "content": "Lin Shu: [Sent picture: 3.png] Look, this is the promotional poster for the group purchase of children's books, a collaboration between our community and the publishing house. The background features blue skies and white clouds, full of vitality.",
-          "image": "3.png"
-        },
-        {
-          "session": "16",
-          "turn": 11,
-          "content": "Zhou Mingyuan: [Send picture: 2.png] Sending you an interesting picture—books stacked into a 'character,' symbolizing the combination of academia and festivals. This reminds me that the experience of purchasing school supplies can be integrated into the community resource corner. The group-buying channel for teaching materials you shared earlier received positive feedback from parents.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-to-Text Retrieval: Based on image 3.png from Session7, recall relevant text mentions from Session16.",
       "generated_at": "2026-04-01T17:05:33.136594",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 3,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 6,
-      "hard": 2
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

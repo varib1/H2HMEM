@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What type of test does the Cybercat chip failure test mentioned by Ling Guang belong to?"
       },
       "original_answer": "A/B testing",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "Ling Guang: Received, Optimus Prime. I quickly reviewed the competition requirements, and the technical specifications emphasize innovative interaction and immersive experience. Drawing from our previous project experience, such as the A/B testing for the Cybercat chip malfunction and the internal testing for health monitoring, I think we can integrate BCI focus control with AR world-building.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Accurately recall pure textual facts from the conversation (test type).",
       "generated_at": "2026-02-24T11:31:13.317255",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which concept or scene in the conversation does this image correspond to?"
       },
       "original_answer": "Cyber City AR Scene",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "Optimus Prime: Yes! I sketched this concept art, imagining players exploring a cyber city in an AR environment, where the architectural style can change dynamically.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Recall corresponding dialogue concepts based on image content (Cyber City AR scene).",
       "generated_at": "2026-02-24T11:31:13.317255",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What creative ideas did this picture inspire in Optimus Prime?"
       },
       "original_answer": "Shape the world with consciousness.",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "Optimus Prime: [Sending image: 2.jpg] Yes! I drew this concept sketch, imagining players exploring a cyber city in an AR environment, where the architectural style can dynamically change.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "Optimus Prime: Wow, shaping the world with consciousness? That's an amazing idea! I immediately think of visual representation—the architectural style gradually shifts between 'Ordered Cyber' and 'Chaotic Ruins' based on the level of focus.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-Driven Text: Image 2.jpg (Cyber City AR Scene Sketch) sparked subsequent evaluations and creative ideas from Optimus Prime (shaping the world with consciousness).",
       "generated_at": "2026-02-24T11:31:13.317255",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Competition Notice, Cyber City AR Scene Sketch",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Optimus Prime: [Sending picture: 1.png] Ling Guang, I just saw this competition announcement and it feels perfect for us! Look, the Future Interactive Game Design Competition aligns perfectly with our previous discussions on brain-computer interfaces and AR technology. I've forwarded it to you, along with my initial sketch of a cyber city AR scene.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Tracking Entity Evolution: Image1.png evolves from 'Competition Notice' and 'Sketch' into the foundation of the game concept, being continuously referenced across different rounds.",
       "generated_at": "2026-02-24T11:31:13.317255",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.jpg",
         "text": "Based on this image and conversation, what architectural style tends to emerge during periods of low concentration?"
       },
       "original_answer": "Chaotic Ruins",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "Optimus Prime: Wow, shaping the world with consciousness? That's an amazing idea! I immediately thought of visual representation—the architectural style gradually shifts between 'Ordered Cyber' and 'Chaotic Ruins' based on the level of focus.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "Optimus Prime: [Sending image: 2.jpg] Yes! I drew this concept sketch, imagining players exploring a cyber city in an AR environment, where the architectural style can change dynamically.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learning new information (Image 2.jpg shows dynamic architectural styles, and the conversation mentions controlling gradients based on focus levels). Apply this knowledge to infer the architectural style when focus is low.",
       "generated_at": "2026-02-24T11:31:13.319659",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did Ling Guang mention using VR technology to achieve the game in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 4,
-          "content": "Ling Guang: From a technical perspective, I suggest that the core gameplay involves players controlling the \"growth\" or \"decay\" of virtual buildings in the AR environment by adjusting their own attention levels. BCI is used to monitor focus.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "Ling Guang: [Sent image: 3.jpg] Technically feasible. I've sent the component diagram of the lab's BCI prototype; we can simplify the implementation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction detection: The question information (VR technology) contradicts the dialogue content (only involving AR and BCI), inconsistency detected.",
       "generated_at": "2026-02-24T11:31:13.319659",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what did Optimus Prime mention as his favorite color?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: The question information (Optimus Prime's favorite color) has never appeared in the conversation and should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:31:13.319659",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

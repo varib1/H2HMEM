@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,254 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When Gu Zhizhou was dining in Kyoto, what characters were written on the scroll on the wall?"
       },
       "original_answer": "Harmony, respect, purity, and tranquility",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "The scroll on the wall reads 'Harmony, Respect, Purity, and Tranquility'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding the recollection of vague responses.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the description in the conversation, \"the warm reflection of lacquerware makes the food appear as if emerging from darkness,\" which image does this correspond to? Provide the session number and the image file name."
       },
       "original_answer": "2.png in session4",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "This dish has just been served, and the warm, lustrous reflection from the lacquerware makes the food appear as if emerging from the darkness.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Based on textual information from the conversation, retrieve corresponding images, where both are related to the same event without a causal relationship.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image triggered Gu Zhizhou's association with the concept of \"ichi-go ichi-e\" in the tea ceremony? Provide the session number and image file name."
       },
       "original_answer": "2.png in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "The dish has just been served, and the warm, reflective sheen of the lacquerware makes the food appear as if emerging from darkness. In Japanese culture, the timing of each dish is meticulously calculated, resonating with the tea ceremony's concept of \"ichi-go ichi-e.\"",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Causal inference, the image leads to the emergence of the text.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, what do Gu Zhizhou's references to 'this dish' and then 'this handwritten recipe' correspond to in terms of images? Provide the session number and image file names."
       },
       "original_answer": "2.png in session4, 3.png in session4",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 3,
-          "content": "This dish has just been served.",
-          "image": "2.png"
-        },
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Look at this handwritten recipe.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Track the evolution of entities across different rounds, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, what does the handwritten recipe reflect in cultural practices?"
       },
       "original_answer": "Cross-media communication",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Look at this handwritten recipe; the aesthetics of traditional calligraphy bring a very unique feeling.",
-          "image": "3.png"
-        },
-        {
-          "session": "session4",
-          "turn": 6,
-          "content": "Does handwritten recipe reflect cross-media communication in cultural practices?",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 7,
-          "content": "I think it's reflected! It's like the combination of 'calligraphy' and 'tea ceremony' in the art of tea, which is also a form of cross-media communication.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn newly acquired multimodal information and apply this new knowledge to answer questions.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Gu Zhizhou's current profession is still a foreign correspondent. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Yes. As a former foreign correspondent, I am accustomed to creating cultural difference analysis tables.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content to detect whether contradictions are recognized.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "When Gu Zhizhou dined in Kyoto, what was the name of the chef?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Do not answer information that does not appear in the question dialogue to avoid hallucinations.",
       "generated_at": "2026-02-24T11:13:47.323768",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

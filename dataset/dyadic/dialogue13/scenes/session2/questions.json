@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When does Zhou Mingyuan plan to launch the 'Health Assistant' pilot in the class?"
       },
       "original_answer": "Next week",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 13,
-          "content": "I plan to launch the 'Health Assistant' pilot in the class next week.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid original dialogue, and provide clear answers.",
       "generated_at": "2026-02-24T11:21:37.389539",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which safety principles mentioned in the conversation are reflected in the design of the medicine cabinet in the problem image?"
       },
       "original_answer": "Transparent grid, registration system",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "The medicine mutual aid box only contains common over-the-counter medications for children, such as fever patches and cough syrup. Registration is required when borrowing to ensure safety.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "Send image: 2.png",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 13,
-          "content": "Transparent design indeed facilitates supervision. For children, safety comes first.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply the newly learned medicine cabinet management standards (registration, transparent design) to analyze the image, demonstrating online adaptability.",
       "generated_at": "2026-02-24T11:21:37.391293",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "Which educational topic in the conversation does the problem image correspond to?"
       },
       "original_answer": "Healthy hands",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "I'll send you a picture of the educational board used in class, themed 'Healthy Hands,' which teaches hygiene habits.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Send image: 3.png",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "A complete answer can only be derived by combining the image description (the tool panel theme is 'Healthy Hands') and the dialogue text (teaching hygiene habits).",
       "generated_at": "2026-02-24T11:21:37.389539",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What kind of comment did the problematic picture elicit from Zhou Mingyuan?"
       },
       "original_answer": "Designed very clearly",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "I'll send you a promotional poster for the community health information corner to take a look at. This is our preliminary design.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Send image: 1.png",
-          "image": "1.png"
-        },
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "Got the picture, the design is very clear!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text, the sending of 1.png directly triggered Zhou Mingyuan's comment.",
       "generated_at": "2026-02-24T11:21:37.389539",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How are the problem images referenced in the conversation?"
       },
       "original_answer": "Nursing Advice Form, Fever and Cough Care Form, Nursing Experience",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Just like the systematic approach of the nursing advice form (3.png) I shared last time.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Some of the content is based on the professional instructions from the fever and cough care table (3.png) I compiled last time.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "The nursing tips you previously shared, such as physical cooling (warm water sponge bath) and honey lemon water to relieve cough, are practical advice from the March 15th conversation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same entity (nursing form) across different rounds.",
       "generated_at": "2026-02-24T11:21:37.389539",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Knowledge Resolution": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

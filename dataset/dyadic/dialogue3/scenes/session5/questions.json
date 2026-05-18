@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,261 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Su Xiaomeng mentioned the location of the offline meetup for 'Social Butterfly Shiba Inu vs. Aloof Ragdoll'."
       },
       "original_answer": "Pet-friendly cafe",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Xingchen, look at the event poster I designed! The theme is \"Social Butterfly Shiba Inu vs. Aloof Ragdoll\" offline meetup, and it's taking place at a pet-friendly café.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts (event locations) from the conversation, avoiding vague or general responses.",
       "generated_at": "2026-02-24T11:05:55.968833",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "What is the content of the question image about?"
       },
       "original_answer": "Risk contingency plan",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "Well, I've prepared a risk contingency plan. Let me send it to you for a look.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information (risk plans), as they are related to the same event, not through causal inference.",
       "generated_at": "2026-02-24T11:05:55.968833",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What kind of psychological response did the problematic image trigger in Zhou Xingchen?"
       },
       "original_answer": "Concerns about the risks of offline activities",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        },
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "The process is quite comprehensive, but offline events come with significant risks. For instance, issues like pets fighting, allergies, or venue safety—have you considered these?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that the image (1.png displays an event poster) drives the text (Zhou Xingchen's risk concerns), focusing on causal inference.",
       "generated_at": "2026-02-24T11:05:55.968833",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is the image of the 'Material Preparation List' sent by Su Xiaomeng referred to or cited?"
       },
       "original_answer": "'List', 'Material Preparation Form', 'This Material Preparation'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "By the way, I've almost finished preparing the materials. I'll send you the list for a look.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 8,
-          "content": "This is the supplies preparation list, covering everything from safety equipment to promotional materials.",
-          "image": "4.png"
-        },
-        {
-          "session": "session5",
-          "turn": 9,
-          "content": "The material preparation is very thorough! Leave the promotion and hype to me. I'll warm things up in the live streams and community groups, using the boss's social butterfly antics to grab attention. Just like the previous game skin sharing, we'll create some fun topics and turn the boss's head-tilting moment while catching the frisbee into a teaser trailer!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same image entity (4.png) across different rounds (Bill of Materials → Material Preparation Table).",
       "generated_at": "2026-02-24T11:05:55.968833",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "By studying the pet risk response plan in the dialogue, please answer: What stress reactions might pets have, and how should they be addressed?"
       },
       "original_answer": "Hide, catch your breath; immediately cease activity, move the pet to a rest area, provide comfort, and seek veterinary assistance if necessary.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "",
-          "image": "3.png"
-        },
-        {
-          "session": "session5",
-          "turn": 6,
-          "content": "The plan is quite comprehensive, but I think we could add one more point: set up a pet rest area to prevent overexcitement.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (risk plan for 3.png) and apply this knowledge to respond to Zhou Xingchen's supplementary suggestions.",
       "generated_at": "2026-02-24T11:05:55.968833",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The pet offline meetup event is held in the park. Does this contradict the conversation content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Xingchen, look at the event poster I designed! The theme is \"Social Butterfly Shiba Inu vs. Aloof Ragdoll\" offline meetup, and it's taking place at a pet-friendly café.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between new input information (activity in the park) and existing memories (pet-friendly cafe).",
       "generated_at": "2026-02-24T11:05:55.970106",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which pet's allergy issue did Su Xiaomeng mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "The process is quite comprehensive, but offline events come with significant risks. Have you considered issues like pets fighting, allergies, or venue safety?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Questions about information not present in the conversation (specific pet allergy issues) should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:05:55.970106",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

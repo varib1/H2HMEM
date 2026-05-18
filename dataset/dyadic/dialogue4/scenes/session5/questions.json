@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,243 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Gu Linfeng mentioned in the conversation, what is the title of the book he has been reading recently?"
       },
       "original_answer": "\"Adorable Cat and Dog Encyclopedia\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Ye Zhiwei, I've been reading this book called \"The Lovely Cat and Dog Illustrated Guide\" lately. It explains the differences between cat and dog behaviors through illustrations, and it's quite interesting.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text factual information, avoiding vague responses.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Based on the conversation content, answer which page of the book the image in the question shows."
       },
       "original_answer": "The title page of the book",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "The author is an animal behaviorist and illustrator, with an introduction on the title page. Look, this comic style reminds me of the image we shared when discussing the exploratory drive of cats and dogs. Remember the drawing I posted of a cat peeking out from its bed? That attention to detail shares a similar artistic flair with the illustrations in this book.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall relevant text based on image information; the two are related due to the same event (comparison of cat and dog exploration drives), not a causal relationship.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "The problem picture prompted Gu Linfeng to ponder about what?"
       },
       "original_answer": "Reflections on Whether Cats Prefer Vertical Spaces or Horizontal Passages",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "Here, it discusses dogs hunting in packs versus cats hunting alone, analogous to ensemble music versus solo performances. This inspires me to ponder: In tool-making, do cats prefer vertical spaces or horizontal pathways?",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "The content of the image (dogs hunting in packs vs. cats hunting alone) directly triggered the subsequent textual reflection (the issue of cats' spatial preferences), representing a causal inference driven by the image.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is \"The Adorable Cat and Dog Encyclopedia\" referred to across different rounds?"
       },
       "original_answer": "\"This Lovely Cat and Dog Encyclopedia\", \"this book\", \"it\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Ye Zhiwei, I've been reading this book called \"The Adorable Cat and Dog Illustrated Guide\" lately. It explains the differences between cat and dog behaviors through illustrations, and it's quite interesting.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "Exactly! This book also analyzes from an evolutionary perspective, such as the journey from the small ancient cat to the modern cat.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 16,
-          "content": "It seems to offer us a theoretical framework, much like how that earlier literature on upper cross syndrome provided support for understanding shoulder and neck issues.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same entity (a book) across different rounds, from the specific book title to the generic 'this book' and then to the pronoun 'it'.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, are the ancestors of cats and dogs the same animal? If so, please answer: What is this animal called?"
       },
       "original_answer": "Yes, this animal is called a miacis.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 5,
-          "content": "Exactly! This book also analyzes from an evolutionary perspective, such as the journey from the small ancient cat to the modern cat.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Examine and learn the newly acquired textual information (the ancestors of cats and dogs are small ancient cats) and apply this new knowledge to answer questions.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Some say 'cats are social animals.' Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "Here, it discusses dogs hunting in packs versus cats hunting alone, analogous to ensemble music versus solo performance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new input information (cats are social animals) and existing memory (cats are solitary hunters).",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, did Gu Linfeng mention whether the author of this book is male or female?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "The author is an animal behaviorist and illustrator, with an introduction on the title page.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the dialogue (author's gender) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:05:57.004432",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

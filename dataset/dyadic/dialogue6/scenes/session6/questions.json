@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,211 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Qin Shuo mentioned that after adjusting his weekly meal prep time, how many hours does he need now?"
       },
       "original_answer": "3 hours",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "Based on the data from our previous health competition, I adjusted my intake, and now meal prepping only takes 3 hours per week, saving me an hour compared to before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recollect factual text details (time specifics) from the conversation.",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In Qin Shuo's handwritten weekly nutrition estimation and meal preparation time chart, what is the calorie count in the nutrition estimation?"
       },
       "original_answer": "Approximately 450 kcal",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "I've handwritten a weekly nutrition estimate and meal prep time chart, sending it over for you to take a look.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Based on textual information (handwritten notes) from the conversation, retrieve the corresponding image (2.png).",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "What response did the problematic image elicit from Jiang Wanqing?"
       },
       "original_answer": "Time management has improved.",
-      "answer_source": "inference",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 4,
-          "content": "Time management has improved.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image-driven text: 1.png (a picture of Qin Shuo's healthy meal) prompted Jiang Wanqing's response about improving efficiency.",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is Qin Shuo's healthy meal picture referred to or described?"
       },
       "original_answer": "Initially described as \"this combination of chicken breast, brown rice, and vegetables,\" it was later referred to by Jiang Wanqing as \"this meal.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "This combination of chicken breast, brown rice, and vegetables provides enough protein for my entire day, and the preparation time has been significantly optimized compared to my last trip.",
-          "image": "1.png"
-        },
-        {
-          "session": "session6",
-          "turn": 2,
-          "content": "Have you calculated the ratio of carbohydrates to fats in this meal?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Entity Evolution: From Concrete Description (Round 1) to Implicit Integration as Part of the System (Round 16).",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "After optimization, Qin Shuo's meal preparation time is 4 hours. Does this contradict the conversation content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "Based on the data from our previous health competition, I adjusted my intake, and now meal prepping only takes 3 hours per week, saving 1 hour compared to before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Propose potentially contradictory information (4 hours), and detect whether contradictions with the dialogue content are identified (3 hours).",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what did Jiang Wanqing mention as her favorite fitness equipment?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "medium",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not mentioned in the conversation (Jiang Wanqing's favorite fitness equipment), the response should be declined.",
       "generated_at": "2026-02-24T11:09:54.723872",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

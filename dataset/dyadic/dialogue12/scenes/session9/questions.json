@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,212 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the in-depth reporting topic proposed by Shen Zhiwei?"
       },
       "original_answer": "Hangzhou Youth Living Conditions",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "I want to do an in-depth report on the theme of 'Living Conditions of Young People in Hangzhou'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve the pure textual facts from the conversation, specifically the topic of collaboration.",
       "generated_at": "2026-03-01T17:32:42.778436",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the monthly transaction data for Hangzhou commercial residential properties sent by Cheng Yanqiu, what is the number of units sold?"
       },
       "original_answer": "3,794 sets",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "Look at this chart, it shows the monthly transaction data of commercial residential properties in Hangzhou. This can serve as the macro background.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the text information in the conversation (rent-to-income ratio data), retrieve the corresponding image (2.png).",
       "generated_at": "2026-03-01T17:32:42.778436",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "After Cheng Yanqiu sent the problem image, how did Shen Zhiwei evaluate it?"
       },
       "original_answer": "This chart provides a solid data framework.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "Cheng Yanqiu: [Sent picture: 1.png] I've sent this chart, which shows the monthly transaction data of commercial residential properties in Hangzhou. This can serve as a macro background. The data can help us see whether their choices are exceptions or part of a general trend. For example, by analyzing the transaction rankings across different regions, we can identify hotspots where young people are gathering.",
-          "image": "1.png"
-        },
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Shen Zhiwei: Excellent! This chart provides a solid data framework. So, how do we weave the narrative into it? For example, we could use a data map to mark the locations of several interviewees and overlay it with various indicators from those areas. Alternatively, we could use a narrative to introduce a data phenomenon, such as 'the rising rate of shared housing,' and then delve deeper with more data and stories.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask what someone's evaluation of a certain image is? The answer is directly from Shen Zhiwei's evaluation in the 5th round of the dialogue.",
       "generated_at": "2026-03-01T23:49:21.563573",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "In the conversation, how is the problem image referred to or cited?"
       },
       "original_answer": "First described as \"showing the monthly transaction data of commercial residential properties in Hangzhou,\" it was later referred to by Shen Zhiwei as \"this chart,\" who remarked that it \"provides a solid data framework.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "Look at this chart, it shows the monthly transaction data of commercial residential properties in Hangzhou.",
-          "image": "1.png"
-        },
-        {
-          "session": "session9",
-          "turn": 5,
-          "content": "Great! This chart provides an excellent data framework.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Tracking the referential expressions of entities across different rounds: from \"chart\" to \"this chart\".",
       "generated_at": "2026-03-01T17:32:42.778436",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information learned from the conversation, please answer: If someone wants to buy a house in Hangzhou in 2024 with an acceptable price of around 7,000 yuan per square meter, can they buy a house in the West Lake District?"
       },
       "original_answer": "Cannot",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 4,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learning new information (data from image2.png and correlations in the conversation) to apply in answering questions.",
       "generated_at": "2026-03-01T17:32:42.778436",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What specific recording equipment does Shen Zhiwei plan to use in the interview?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 13,
-          "content": "In terms of resources, I can schedule interviews over the next month to gather 5-10 in-depth stories.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (type of recording device), the response should be declined.",
       "generated_at": "2026-03-01T17:32:42.778436",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

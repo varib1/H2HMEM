@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,162 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the article from The New York Times sent by Su Mingche to Xia Qingchuan, which psychological phenomenon is discussed as an epidemic?"
       },
       "original_answer": "Loneliness",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "Yes, and this kind of stimulation might only address the symptoms, not the root cause. I just sent you a New York Times article discussing loneliness as an epidemic.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Recall plain text facts (pet names) from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:20:14.775085",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the title of the New York Times article that Su Mingche sent to Xia Qingchuan? (Note: It should be in English.)"
       },
       "original_answer": "如果孤独是一种流行病，我们该如何应对？",
-      "answer_source": "image_description",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "I just sent you an article from The New York Times discussing loneliness as an epidemic.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Retrieve corresponding images based on textual information (article titles), where both are related to the same topic (discussing loneliness), not in a causal relationship.",
       "generated_at": "2026-02-24T11:20:14.775085",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Xia Qingchuan's thought, \"I can share more of this internalization process in my content, rather than just showing the results\"? Provide the session number and image file name."
       },
       "original_answer": "3.png in session15",
-      "answer_source": "inference",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 7,
-          "content": "I'm sending you a social media comparison chart. It was originally created to analyze the yacht business, but I think it reveals how platforms promote standardized displays.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "It is inferred that the image (2.png) drives the textual discussion (social media comparison table), which is a causal inference rather than a direct correlation.",
       "generated_at": "2026-02-24T11:20:14.775085",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how does the topic of 'aesthetics' evolve from being an 'external display' to an 'internalized tool'?"
       },
       "original_answer": "Initially, discussions on aesthetics might heighten anxiety (for instance, when a sense of ritual becomes complicit). Later, through reflection, the focus shifted to internalizing aesthetics as a tool for self-care (such as emotional aesthetic albums and nurturing rituals), ultimately affirming the use of aesthetics to foster genuine connections.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Does the 'sense of ceremony' and 'aesthetics' we pursue sometimes become complicit in this anxiety?",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 6,
-          "content": "We have been exploring how to internalize aesthetics. For example, the 'Emotional Aesthetics' album you shared earlier.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 9,
-          "content": "Perhaps in content creation, I should also design similar 'nurturing' rituals to avoid being constrained by external standards.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 12,
-          "content": "Aesthetics is not a yardstick for comparison, but a tool for self-awareness.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referential changes of the 'aesthetics' topic in multi-turn dialogues (from complicity to internalized tool).",
       "generated_at": "2026-02-24T11:20:14.775085",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,234 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the dialogue, what statistic does Han Shuli suggest calculating to standardize the effect size of the intervention?"
       },
       "original_answer": "Cohen's d",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "I suggest calculating the effect size, such as Cohen's d, to standardize the magnitude of the effect.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which experience or location in the conversation does the problem image correspond to?"
       },
       "original_answer": "Cat Behavior Indicator Control Chart",
-      "answer_source": "image_description",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Han Shuli, I have just completed the data collection after the installation of the active noise-canceling device. Here is the control chart for the cat's core behavioral indicators, including food intake and play duration.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the corresponding experience or location in the conversation based on the image.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "4.png",
         "text": "What exclamation or question did the problem picture lead Han Soo-ri to make?"
       },
       "original_answer": "HRV parameters improvement",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "This is a comparison chart before and after the intervention, showing improvements in HRV parameters and reduced fluctuations.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Image-driven text: 4.png sparked Hansuli's comment on HRV improvement.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "How are problem images referenced or cited in the conversation?"
       },
       "original_answer": "Pictures of my dog's condition after the intervention.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 18,
-          "content": "This is a picture of my dog's condition after the intervention, showing that it is more relaxed.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the topic of 'standardized data collection protocols' evolve?"
       },
       "original_answer": "The discussion has evolved from thresholds and baselines to specifically include measurement tools, sampling frequency, indicator definitions, and environmental variable recording.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "The threshold can be set at ±2 standard deviations from the historical mean, similar to the upper limit of a control chart. Additionally, to facilitate future community sharing, we need to standardize the data collection protocol.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 10,
-          "content": "The agreement should include measurement tools (such as decibel meters, activity trackers), sampling frequency (e.g., multiple times per day), definition of indicators (e.g., food intake measured in grams), and recording of environmental variables (such as temperature, noise levels).",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and specification of the entity 'Standardized Data Collection Protocol' across different rounds.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "1.png",
         "text": "Based on the problem image and the description of the Lin measure in the conversation, what is the main function of the active noise-cancelling device?"
       },
       "original_answer": "Reduce environmental noise",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "This is a picture of the active noise-cancelling device I use. It resembles a standing household appliance and effectively reduces ambient noise.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn new information (1.png and description) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "After noise reduction intervention, the cat behavior indicator of the forest measure 'completely exceeds the historical range.' Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "From the control chart, the process appears to be under control, with the indicators returning to the historical mean range after intervention.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Present information that may contradict the dialogue content to assess recognition ability.",
       "generated_at": "2026-02-24T11:25:54.230364",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 3,
-      "Reference & Evolution Tracking": 2,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

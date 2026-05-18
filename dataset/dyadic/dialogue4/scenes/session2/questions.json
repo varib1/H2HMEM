@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the pain data recorded by Gu Linfeng, after how many consecutive hours of work does the pain peak occur?"
       },
       "original_answer": "3 hours",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "The data shows that your pain peaks after three consecutive hours of work.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:05:11.336944",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.png",
         "text": "According to the dialogue, what content does the problem image record?"
       },
       "original_answer": "Gu Linfeng's pain data over the past week.",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "This is the pain data I recorded based on the form template you sent last time.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event (recording pain data).",
       "generated_at": "2026-02-24T11:05:11.336944",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which picture triggered Ye Zhiwei's discussion on Upper Cross Syndrome? Please provide the session number and the filename of the picture."
       },
       "original_answer": "3.png in session2",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "This study on Upper Cross Syndrome supports strengthening the deep neck flexors to balance posture. You can start by learning about it, as it helps in understanding the root cause of the issue.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The image (3.png) drives the text (discussion about upper cross syndrome), which is causal inference.",
       "generated_at": "2026-02-24T11:05:11.336944",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "In a conversation, how is the question image referred to within the dialogue?"
       },
       "original_answer": "Recorded pain data, based on the data, these data, from the previous round of data collection, your data",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "This is the pain data I recorded based on the form template you sent last time.",
-          "image": "1.png"
-        },
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "Based on your data, there is a clear correlation trend between the pain index and the duration of computer work.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "The data suggests that maintaining the same posture for extended periods may be the primary cause of your increased pain.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "The previous round of data collection indicated that your pain peaked after three consecutive hours of work, which may be due to accumulated muscle fatigue.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 13,
-          "content": "Based on your data, it is recommended to take a 5-10 minute break every 45 minutes of work to stretch your neck and shoulders.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same entity (the 'head-down drawing' posture) across different rounds.",
       "generated_at": "2026-02-24T11:05:11.336944",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation, what should be done to break the cycle of poor posture?"
       },
       "original_answer": "Take a 5-10 minute break every 45 minutes of work to stretch your neck and shoulders.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 13,
-          "content": "Based on your data, it is recommended to take a 5-10 minute break every 45 minutes of work to stretch your neck and shoulders.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Learn new information (trends in line charts) and apply it to answer questions (rest intervals).",
       "generated_at": "2026-02-24T11:05:11.339473",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Gu Linfeng mentioned that the pain is mainly around C5. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "Remember last time you mentioned the pain was mainly around C7.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories.",
       "generated_at": "2026-02-24T14:03:32.868399",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Which specific musical instrument did Gu Linfeng mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Whenever I draw or play the piano for a long time, my neck becomes particularly stiff.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Do not answer questions about information that has not been provided (specific instruments), and avoid generating hallucinations.",
       "generated_at": "2026-02-24T11:05:11.339473",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

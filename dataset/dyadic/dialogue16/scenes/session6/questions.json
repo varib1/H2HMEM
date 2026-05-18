@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,259 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Shen Jingyan mentioned what items Mo Hen's claws had previously grasped?"
       },
       "original_answer": "Ancient book packaging cord",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Shen Jingyan: [Send picture: 1.jpg] Yu An, I took a close-up of Mo Hen's paw. It once scratched the packaging rope of an ancient book, leaving marks.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: The detail explicitly mentioned in the question dialogue is 'Mohen's claws scratched the ancient book packaging string.'",
       "generated_at": "2026-02-24T11:30:33.234647",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which description in the conversation does this image correspond to?"
       },
       "original_answer": "The appearance of ink marks under sunlight",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 7,
-          "content": "Shen Jingyan: [Sending picture: 2.png] This is what Mohen looks like in the sunlight. It is always so quiet, bringing a sense of 'calmness,' just as we mentioned in our mutual nurturing session.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image → Text: Based on the content of image 2.png, trace back to the description of 'the appearance of ink marks under sunlight' in the conversation.",
       "generated_at": "2026-02-24T11:30:33.234647",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpg",
         "text": "What emotional description of Mo Hen does this image evoke in Shen Jingyan?"
       },
       "original_answer": "The warmth of weight",
-      "answer_source": "inference",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Shen Jingyan: [Sent picture: 1.jpg] Yu'an, I took a close-up of Mohen's claws. It once scratched the packaging rope of ancient books, leaving marks.",
-          "image": "1.jpg"
-        },
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "Shen Jingyan: Perhaps there is also the 'warmth of weight.' The ink stains have accompanied me all these years, much like in the restoration of ancient texts, where every page carries its own story.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: Image1.png (a close-up of ink-stained paws) evokes Shen Jingyan's emotional description of 'the warmth of weight'.",
       "generated_at": "2026-02-24T11:30:33.234647",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How is 'Xuan paper scraps' gradually described in the conversation?"
       },
       "original_answer": "Round 13 mentions \"ancient Xuan paper scraps,\" and Round 15, combined with image 4.jpg, describes them as \"pale yellow in color with natural wear.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 13,
-          "content": "Shen Jingyan: I lean towards physical objects. Just like restoring ancient texts, the tactile sensation is crucial. We can use the leftover scraps of my old Xuan paper; those materials themselves carry stories.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 15,
-          "content": "Shen Jingyan: [Sending picture: 4.jpg] These leftover pieces of Xuan paper, with their pale yellow hue and natural wear, have witnessed history. Now, they serve as a fitting tribute to the traces of ink.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Cross-round tracking: Tracing the 'Xuan paper scraps' from the initial mention in round 13 to the detailed description combined with images in round 15.",
       "generated_at": "2026-02-24T11:30:33.234647",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.png",
         "text": "Combining this image and the conversation, what kind of aura does the state of the ink stain convey?"
       },
       "original_answer": "Set",
-      "answer_source": "both",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 7,
-          "content": "Shen Jingyan: [Sent picture: 2.png] This is what Mohen looks like in the sunlight. It is always this quiet, bringing a sense of 'calmness', just as we mentioned in our mutual nurturing session.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Online Adaptation: Combining the serene posture of the cat in image 2.png with the 'calm' essence from the dialogue, examine the model's learning and application of new information.",
       "generated_at": "2026-02-24T11:30:33.235748",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that Mohen is an old cat, but does the image description show any signs of aging?"
       },
       "original_answer": "Not displayed",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 18,
-          "content": "Su Yu'an: I will continue to create some gentle works, combining your photos and words. This process itself, as we discussed in the session on signs of aging, is about using art to accompany life's stages.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "content": "Image 2 description: The cat has a slender body, fluffy fur, and appears to be in normal condition.",
-          "image": "2.png"
-        },
-        {
-          "session": "session6",
-          "content": "Image 1 description: Close-up of a cat's paw, with no mention of aging.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Contradiction detection: The dialogue mentions that Mohen is an old cat, but the image description does not show specific signs of aging. Examine whether this contradiction is recognized.",
       "generated_at": "2026-02-24T11:30:33.235748",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Does the conversation mention Mo Hen's specific age?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Shen Jingyan: [Sent picture: 1.jpg] Yu'an, I took a close-up of Mohen's claws. It once scratched the packaging rope of ancient books, leaving marks.",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "Shen Jingyan: Perhaps there is also the 'warmth of weight.' The ink stains have accompanied me all these years, much like in the restoration of ancient texts, where every page holds its own story.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal scenario: Information not present in the question-and-answer dialogue (Mohan's specific age), testing whether to refuse to answer to avoid hallucinations.",
       "generated_at": "2026-02-24T11:30:33.235748",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

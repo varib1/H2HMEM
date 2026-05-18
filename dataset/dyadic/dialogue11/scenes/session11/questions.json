@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,173 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When the two of them recalled the events of the year on December 20th, did they mention Fang Qing's group purchase of apples?"
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 5,
-          "content": "When you shared that group purchase of apples, my wife was so delighted. She said they were sweet, cheap, and saved her the trouble of going to the supermarket.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall type, recalling specific factual information from the conversation, but the brand name is not explicitly mentioned in the dialogue, testing precise memory of details.",
       "generated_at": "2026-03-01T13:46:01.593018",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Regarding the sticky notes mentioned by Fang Qing in the conversation, are there any in pink?"
       },
       "original_answer": "Have",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 9,
-          "content": "Sent it over. This is what I just posted, some phrases aren't fully written yet, like 'providing routes...', perfect for adding more.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval Type: Recalling corresponding images based on conversational text information, where both are related to the same event.",
       "generated_at": "2026-03-01T13:46:01.593018",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "Why did Fang Qing send a problematic picture?"
       },
       "original_answer": "To show off the sticky note she just put up.",
-      "answer_source": "both",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 7,
-          "content": "Chen Lu: It seems we have quite a few of these 'little favors' to handle. How about organizing them and putting up a sticky note as a reminder?",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "Fang Qing: Good idea! I have some sticky notes here; we can write them down. Wait a moment, I'll take a photo and send it to you.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 9,
-          "content": "Fang Qing: [Sent picture: 1.png] Sent it over. This is what I just posted. Some phrases are not yet completed, such as 'providing routes...', which can be supplemented.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The issue is based on image-driven textual causal inference, inquiring about the antecedent reasons for sending images, involving proposals and responses in the conversation.",
       "generated_at": "2026-03-01T13:50:20.181012",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Chen Lu never mentioned the topic of disinfectant. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "For example, when you tell me which brand of disinfectant has a mild smell, it's very practical. I recommended it to my colleagues in the fleet, and everyone responded positively.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction detection type, the proposed new information is in clear contradiction with the dialogue content.",
       "generated_at": "2026-03-01T13:46:01.593018",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "How many times did Chen Lu mention specific scores regarding the child's exam results in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Asking for information not present in the dialogue to assess the ability to avoid hallucinations.",
       "generated_at": "2026-03-01T13:46:01.593018",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "medium": 1,
-      "easy": 4
-    }
-  }
+  ]
 }

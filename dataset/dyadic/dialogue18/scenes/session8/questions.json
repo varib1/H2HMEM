@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,188 +15,106 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Is there a nameplate on Lightning's collar?"
       },
       "original_answer": "Have",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 3,
-          "content": "Wearing a black collar with my phone tag.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve collar details based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which terrain description in the dialogue does this picture correspond to?"
       },
       "original_answer": "Open meadow with fences in the distance.",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "This is the surrounding environment of the final location: an open meadow with fences in the distance, but the undulating terrain may conceal low-lying areas.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Combining visual details from images with dialogue text for terrain recall."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What is the animal in the picture called in the conversation?"
       },
       "original_answer": "Lightning",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 1,
-          "content": "Shiyan, emergency! My dog Lightning chased a marmot into the rolling terrain while we were shooting on the plateau meadow and has been missing for over two hours. This is his photo. I'm going crazy with worry.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Tracking the evolution of animal names in conversations within images."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.jpg",
         "text": "What suggestion did the image evoke from Shiyan?"
       },
       "original_answer": "Scanning from the high ground system",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 14,
-          "content": "Stay calm, observation is key. I'll send a picture to illustrate: scan systematically from high ground, paying attention to shadows and vegetation clusters.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: The content of the image led to Shiyan's suggestion."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Is there a river at the last location where the lightning appeared?"
       },
       "original_answer": "No obvious rivers",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 5,
-          "content": "There are no obvious rivers, but I've heard there are seasonal streams nearby.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Contradiction Detection: Verify contradictions between terrain descriptions and assumptions in the dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "What name is engraved on Lightning's collar?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 3,
-          "content": "Wearing a black collar with my phone tag.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text refusal to answer: The name on the collar was not mentioned in the conversation."
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Reference & Evolution Tracking": 1,
-      "Multimodal Causal Inference": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,168 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation, which two abstract words in the high-frequency word cloud are mentioned by Cheng Yanqiu as having an unusually high frequency of occurrence?"
       },
       "original_answer": "Fate and Choice",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "However, the unusually high frequency of the abstract words 'fate' and 'choice' in the word cloud may suggest that the audience is discussing moral dimensions.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-01T17:31:27.467632",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Shen Zhiwei forwarded a user's comment on \"Yao-Chinese Folktales.\" What is the username of this user?"
       },
       "original_answer": "Xiao Gen",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Look at this poster; the flames and the forest symbolize conflict and choice.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text→Image, recalling corresponding images based on conversational text information, where both are related to the same event without a causal relationship.",
       "generated_at": "2026-03-01T17:31:27.467632",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In the dialogue, how are the problem images referred to or described across different rounds?"
       },
       "original_answer": "Trend Chart, Sentiment Trend Over Time Chart, High-Frequency Words Over Time Chart",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "This trend chart shows...",
-          "image": "3.png"
-        },
-        {
-          "session": "session6",
-          "turn": 7,
-          "content": "High-frequency vocabulary change over time chart shows...",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same image entity across different rounds.",
       "generated_at": "2026-03-01T17:31:27.467632",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the dialogue, the negative emotions in \"Yao-Chinese Folktales\" that Cheng Yanqiu watched began to decline after the fifth episode. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "This trend chart shows that the purple curve, representing the proportion of negative emotions, rises significantly after the eighth episode.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information and existing memories.",
       "generated_at": "2026-03-01T17:31:27.468648",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Cheng Yanqiu mentioned in the conversation how many Weibo comment data he had previously crawled?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话12",
+      "answer_dialogue": "dialogue12",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-01T17:31:27.468648",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

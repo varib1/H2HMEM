@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On March 8th, Lin Chang'an mentioned that he had wanted to try a certain cuisine for a long time."
       },
       "original_answer": "Sichuan cuisine",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "I've been wanting to try Sichuan cuisine for a long time, and the price seems quite reasonable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieving pure textual facts from the conversation.",
       "generated_at": "2026-03-01T12:20:26.582964",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "When the two were discussing meeting for a meal, what was the name of the Sichuan restaurant that Zhou Pingfan found?"
       },
       "original_answer": "Shu Xiang Affection",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Oh, Sichuan cuisine? I've been wanting to try it for a long time, and the price does seem quite reasonable.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text → Image, recalling corresponding images based on textual information (restaurant names) from the conversation.",
       "generated_at": "2026-03-01T12:20:26.582964",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "The question image sent is the one sent by Zhou Ping'an. After this image was sent, what conclusion did Lin Chang'an draw based on the content of the image?"
       },
       "original_answer": "The price does seem appropriate.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "[Send image: 2.png] This is their menu. Look, they have classic dishes like boiled fish and mapo tofu, and the prices are quite reasonable.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Oh, Sichuan cuisine? I've been wanting to try it for a long time, and the price does seem reasonable. How is the atmosphere inside? I don't really like places that are too noisy or chaotic.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image. The answer combines price judgments prompted by the image and environmental inquiries, requiring inference.",
       "generated_at": "2026-03-01T23:45:34.892106",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "In the conversation, how is the image of the question being sent referred to by Lin Chang'an?"
       },
       "original_answer": "Shu Xiang Affection",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "[Send image: 2.png] This is their menu. Look, they have classic dishes like boiled fish and mapo tofu, and the prices are quite reasonable.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Oh, Sichuan cuisine? I've been wanting to try it for a long time, and the price seems quite reasonable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential expressions of the entity (image2.png) across different rounds, from \"this image\" to \"Shu Xiang Qing\".",
       "generated_at": "2026-03-01T12:20:26.582964",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the information learned from the conversation, do dishes like boiled fish in chili oil and mapo tofu belong to Sichuan cuisine?"
       },
       "original_answer": "Belongs to",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "This is their menu. Look, they have classic dishes like boiled fish and mapo tofu, and the prices are quite reasonable.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Apply the newly acquired multimodal information (image 3.png and dialogue description) to answer the question.",
       "generated_at": "2026-03-01T12:20:26.582964",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lin Chang'an said the environment at the Naga Sichuan Restaurant they discussed on March 8 was very noisy. Does this contradict the conversation information? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Lin Chang'an: Oh, Sichuan cuisine? I've been wanting to try Sichuan food for a long time, and the price does seem reasonable. How's the atmosphere in the restaurant? I don't really like places that are particularly noisy or chaotic.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 9,
-          "content": "Zhou Pingfan: I haven't been there yet, but according to the reviews, the atmosphere is quite peaceful. When you shared the almond photos earlier, you mentioned that you appreciate a sense of dignity and balance. This place should meet your expectations.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Introduce new information (noisy environment) that may contradict the dialogue to test whether the model can recognize the contradiction.",
       "generated_at": "2026-03-03T11:54:32.245877",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what type of sushi did Zhou Pingfan mention as his favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话1",
+      "answer_dialogue": "dialogue1",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer.",
       "generated_at": "2026-03-01T12:20:26.582964",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Lu Chenguang mentioned that his current computer experiences lag when processing data visualization for which project?"
       },
       "original_answer": "Health Dashboard Project",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "I remember when we were working on the health dashboard project, I used this old computer. Sometimes it would lag even when processing data visualizations.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:27:57.927247",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.png",
         "text": "Which experience or suggestion in the conversation does the problem image correspond to?"
       },
       "original_answer": "Choice of Professional Attire",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "Look at this picture. When I choose professional attire, I also focus on balance: the suit needs to be professional, but the shoes must be comfortable, suitable for long periods of standing during interviews.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image→Text: Retrieve relevant suggestions from the conversation based on the image content.",
       "generated_at": "2026-02-24T11:27:57.927247",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpg",
         "text": "What discussion did the problematic image spark in the conversation?"
       },
       "original_answer": "Discussion on Screen Size Portability and Programming Suitability",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Xingwan, I got the internship offer! Now I'm torn about whether to upgrade my laptop. Look at this picture—I'm comparing screen sizes. The 13-inch is portable, but the 15-inch is better for coding, while the 17-inch is too heavy.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: Image 1 triggers a textual discussion about screen size, with a causal inference relationship present.",
       "generated_at": "2026-02-24T11:27:57.927247",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How is the '15-inch, large memory' computer mentioned by Lu Chenguang gradually described and referred to in the conversation?"
       },
       "original_answer": "Round 1: Compare screen sizes (13-inch, 15-inch, 17-inch); Round 3: Detailed comparison of graphics cards and memory; Round 15: Clearly select a configuration with a 15-inch screen, large memory, and a mid-range graphics card.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Look at this picture, I'm comparing screen sizes. The 13-inch is portable, but the 15-inch is better for programming, while the 17-inch is too heavy.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "I've done a detailed comparison. For instance, this graphics card is suitable for machine learning, but it's three thousand more expensive. The amount of RAM directly determines how many IDEs you can run simultaneously without lag.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 15,
-          "content": "I've decided to buy the 15-inch model with ample memory and a mid-range but sufficient graphics card.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of entities across different rounds.",
       "generated_at": "2026-02-24T11:27:57.927247",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what other tools might Lu Chenguang need to consider in his internship preparation?"
       },
       "original_answer": "Professional attire, voice recorder, stabilizer",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 10,
-          "content": "Don't be afraid to miss out! This productivity tools list inspired me: investment should focus on core needs.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (Image 4) and apply this new knowledge to answer questions, testing online adaptability.",
       "generated_at": "2026-02-24T11:27:57.928243",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Lu Chenguang's current computer runs smoothly and never lags. Is this contradictory to the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "The current computer struggles with large projects, and the compilation time is too long.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 5,
-          "content": "The new computer might allow me to participate in company projects more efficiently.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the conflict between newly input information (the current computer runs smoothly) and existing memory (the current computer struggles).",
       "generated_at": "2026-02-24T11:27:57.928243",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which phone model does Lu Chenguang plan to purchase according to the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (purchasing a mobile phone) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:27:57.928243",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,283 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, what did Bai Zhi mention that Gu Yanci used to criticize her for?"
       },
       "original_answer": "Too much emphasis on visuals",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 3,
-          "content": "You always used to criticize me for being too focused on visuals, so this time I specifically wanted to hear your 'visual audit'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precision Recall]: Recall pure textual facts from the conversation, avoiding the recollection of vague responses.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the menu font design mentioned in the conversation?"
       },
       "original_answer": "4.png in session1",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 12,
-          "content": "However, I'm more concerned about the font on the menu—you've shared similar issues before. If the readability is poor, then the design has failed.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 13,
-          "content": "Yes, I just found the menu. It's in a retro hand-drawn style with highly decorative fonts, but it might have sacrificed some clarity.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "[Cross-modal related retrieval]: Retrieving corresponding images based on textual information, where both are related to the same event (menu font evaluation) without a causal relationship.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.jpg",
         "text": "What kind of comment did this picture elicit from Gu Yanci?"
       },
       "original_answer": "The way the black surface of the metal table reflects light disrupts the overall sense of harmony.",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 2,
-          "content": "However, the black surface of the metal table reflects light in a somewhat harsh manner, disrupting the overall sense of harmony.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "[Causal Inference]: It is necessary to combine both textual information (Gu Yanci's evaluation) and visual information (showing a metal table) to answer the question, as not all information is directly included in the query.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What concerns did the image raise for Bai Zhi?"
       },
       "original_answer": "This strong stylization may overshadow the taste of the food.",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 9,
-          "content": "Look at the presentation of their dishes—molecular gastronomy style, with very artistic color combinations. But I think such a strong stylization might overshadow the taste of the food.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: The image (dish presentation) triggers the text (concern), focusing on causal inference.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Details of Tableware, Cross-Media Dialogue",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "I also took photos of the details of their tableware.",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 7,
-          "content": "As a visual content curator, I appreciate this cross-media dialogue—concrete, metal, and ceramics, each telling a story.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Cross-Round Tracking]: Track the evolution of referring expressions for the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "4.png",
         "text": "Based on the views on design ethics learned from the conversation regarding Gu Yanci, does he believe that the font design of the menu aligns with this perspective?"
       },
       "original_answer": "Does not comply, because the font has poor readability, which is a design failure.",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "The design ethics of this restaurant are questionable.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 12,
-          "content": "If readability is poor, then the design has failed.",
-          "image": "4.png"
-        },
-        {
-          "session": "session1",
-          "turn": 14,
-          "content": "The font choice 'sacrifices readability in the pursuit of being overly avant-garde.'",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "[TTL]: Apply newly learned information (Gu Yanci's design ethics perspective) to answer questions, assessing online adaptability.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "2.png",
         "text": "Bai Zhi mentioned that the asymmetrical design of the tableware might overshadow the main focus, but did Gu Yanci mention any issues with the practicality of the tableware in the conversation?"
       },
       "original_answer": "Yes, Gu Yanci mentioned that the stacking method might be prone to slipping, which reduces its practicality.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "But I feel the asymmetrical design seems a bit forced. You mentioned before that form should serve the content—could this be overshadowing the main focus?",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "Although the stacking method is visually appealing, its practicality may be compromised—it's prone to slipping, isn't it?",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detecting consistency between new input information (Bai Zhi's concerns) and existing memory (Gu Yanci's practicality evaluation), no contradictions.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What style of music in the restaurant did Baizhi mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: Information not present in the question dialogue, testing the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:33:50.251855",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

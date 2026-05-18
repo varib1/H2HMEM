@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,276 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What are the main pieces of mountaineering equipment that Hesui mentioned in the conversation that he was not prepared with?"
       },
       "original_answer": "Shoes and walking stick",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "I noticed that your unprepared hiking gear mainly includes shoes and trekking poles, both of which are indeed crucial as they directly impact safety and comfort.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recall pure textual facts from the conversation, avoiding vague responses. The answer is derived from Ji Shi'an's direct statement in Round 4, ensuring accuracy and clarity.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the trail running shoes mentioned in the conversation?"
       },
       "original_answer": "2.png in session10",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "I recommend this pair of trail running shoes. They perform well in terms of slip resistance, durability, and shock absorption, making them suitable for beginners. Look at this picture—they are designed to be lightweight, which helps reduce the burden during hiking.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the textual information in the conversation (recommendation of trail running shoes), retrieve the corresponding image (2.png). The image and text are related to the same event (shoe recommendation) without a causal relationship.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What kind of exclamation did this picture evoke for the New Year?"
       },
       "original_answer": "These leather boots look more sturdy.",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 8,
-          "content": "Then take a look at these brown leather boots. The mid-top design offers better ankle protection, and the material is more durable. This picture showcases their comfort and functionality.",
-          "image": "3.png"
-        },
-        {
-          "session": "session10",
-          "turn": 9,
-          "content": "These leather boots look more stable, suitable for a beginner like me. Moreover, their traditional design reminds me of the approach we took when planning the New Year's Eve dinner—blending nostalgia with innovation, making it both practical and ceremonial.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: 3.png (image of brown leather boots) sparked He Sui's exclamation about the robustness of leather boots in the 9th round. This is causal inference, where the image leads to the textual response.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture caused the concern about the shoe's support during the New Year celebration?"
       },
       "original_answer": "2.png in session10",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "I recommend this pair of trail running shoes. They perform well in terms of slip resistance, durability, and shock absorption, making them suitable for beginners. Look at this picture—the design is quite lightweight, which helps reduce the burden during hiking.",
-          "image": "2.png"
-        },
-        {
-          "session": "session10",
-          "turn": 7,
-          "content": "It does look very practical! However, I'm a bit concerned about its support, especially since hiking conditions can vary so much. As we discussed earlier regarding rhythmic balance, it needs to adapt to different environments.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: 2.png (a picture of trail running shoes) sparked concerns about support in the seventh round of the New Year celebration. This is a causal inference, where the image leads to the textual response.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "4.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "\"Pioneer\" hiking pole, this model, it",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 12,
-          "content": "I recommend this 'Pioneer' hiking pole, emphasizing its portability and upgraded materials. Look at this picture—it's designed to be lightweight and easy to adjust, helping you maintain balance and reduce physical exertion during hikes.",
-          "image": "4.png"
-        },
-        {
-          "session": "session10",
-          "turn": 13,
-          "content": "Portability is indeed appealing, but I'm wondering about its durability. After all, mountaineering equipment needs to withstand rigorous tests. Just as we emphasized in our collaboration guide, tools must be reliable to foster genuine connections.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The entity 'Pioneer' trekking pole is initially referred to by its full name in the 12th round, then simplified to 'it' in the 13th round, demonstrating changes in the reference chain.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "5.png",
         "text": "Based on the information about the 'CAMEL' aluminum alloy trekking pole in the image, how does Hesui evaluate its pros and cons in the conversation?"
       },
       "original_answer": "More solid, suitable for safety and durability in mountain climbing, but slightly heavier.",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 14,
-          "content": "You're right, durability is important. Then take a look at this 'CAMEL' aluminum alloy trekking pole. This picture shows that it is made of sturdy material and comes with complete accessories, suitable for various terrains. It might be a bit heavier, but it's more cost-effective in the long run.",
-          "image": "5.png"
-        },
-        {
-          "session": "session10",
-          "turn": 15,
-          "content": "This aluminum alloy one looks more solid. Although it's a bit heavier, considering the safety and durability for hiking, I think it's more suitable to choose it. It's like opting for a more stable approach when recovering from professional burnout.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Based on newly acquired image information (5.png shows the 'CAMEL' trekking pole), New Year applies it in the 15th round of learning and evaluates its pros and cons (solid but slightly heavy).",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "If someone says that He Sui ultimately chose trail running shoes as hiking shoes, is this consistent with the content of the conversation?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "Then let's settle on these leather boots. They strike a balance between safety and comfort, much like how we handled the Yuanbao incident—focusing on details and adaptability.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: New information (choosing trail running shoes) contradicts the dialogue content (choosing leather boots), detecting and identifying inconsistencies.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, Hesui mentioned which color of hiking backpack he plans to buy?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (e.g., the color of a hiking backpack), the response should be declined to avoid generating hallucinations.",
       "generated_at": "2026-03-01T12:28:13.066815",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 4,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

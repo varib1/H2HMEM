@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,186 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Zhao Xiaotang mentioned in the conversation that on November 10th, she posted a message in the community group to see how many elderly people had needs. How did she describe the group's response?"
       },
       "original_answer": "The group's response has been quite enthusiastic.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 7,
-          "content": "I've already posted a message in the community group to see how many elderly people have needs. The response in the group has been quite enthusiastic, with several seniors mentioning that cooking is inconvenient for them and expressing a desire for a cafeteria.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:19:00.925874",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the \"Policy Points and Questions List\" table mentioned by Li Yifan in the conversation, what is the total initial investment cost provided?"
       },
       "original_answer": "250,000 yuan",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "I've compiled a 'Policy Highlights and Questions Checklist' and sent it to you for review. Key points such as applicant qualifications, subsidy standards, venue requirements, and food safety regulations are all listed. The subsidy is calculated based on the number of meals served, but the initial investment is substantial.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where both are related to the same event (organizing tables) but not causally linked.",
       "generated_at": "2026-02-24T11:19:00.925874",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What action did the problematic image prompt Zhao Xiaotang to take?"
       },
       "original_answer": "Testing public opinion and inquiring about needs in the community group.",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        },
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "Yes, you've always been good at analyzing policies. I've already started gauging public opinion in the community group to see how many elderly people have needs and whether there are any enthusiastic residents or retired chefs willing to participate. Just like with the second-hand market last time, we need to do some groundwork first.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Images drive the evaluation and emotional expression in the text, which is causal inference.",
       "generated_at": "2026-02-24T11:19:00.925874",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, Li Yifan repeatedly mentions 'like when we previously did the TNR project comparison table.' Please track how this entity is referred to and cited throughout the dialogue."
       },
       "original_answer": "'Just like the TNR project comparison table and food sharing table you made before'; 'Your cost analysis for the TNR project was so clear'; 'Just like when you analyzed the cost-effectiveness of different hospitals for TNR before'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 2,
-          "content": "Just like when we created the TNR project comparison table and the food sharing table before, we need to extract the key information.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 3,
-          "content": "You analyzed the costs so clearly during the TNR project before, so we're counting on you this time too!",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 14,
-          "content": "Just like analyzing the cost-effectiveness of TNR across different hospitals or planning the division of labor for a second-hand market, it's all about data-driven optimization.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the different ways of referring to the same entity (TNR Project Comparison Table) across different rounds.",
       "generated_at": "2026-02-24T11:19:00.925874",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, what did Zhao Xiaotang mention as her favorite color?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:19:00.925874",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

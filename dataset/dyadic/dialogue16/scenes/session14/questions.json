@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,181 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Where does Shen Jingyan plan to go to purchase antique-style handmade Xuan paper?"
       },
       "original_answer": "A suburban paper mill passed down through generations.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 3,
-          "content": "There is a paper mill in the suburbs that has been passed down through several generations, and I plan to go there for a visit.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, without involving image information.",
       "generated_at": "2026-02-24T11:32:42.196417",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.jpg",
         "text": "Which description in the conversation does this image correspond to?"
       },
       "original_answer": "The rough fibrous surface of handmade paper",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 7,
-          "content": "Look at this picture, this rough fibrous surface is the base of handmade paper.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve corresponding dialogue descriptions based on image information.",
       "generated_at": "2026-02-24T11:32:42.196417",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What exclamation did this picture provoke in the conversation?"
       },
       "original_answer": "The sunset scenery on the map is so beautiful.",
-      "answer_source": "both",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 11,
-          "content": "This is the map of Zhifang Town. Let's go there this weekend. Look, there are many green areas, and the environment is very peaceful, perfect for taking our time to choose.",
-          "image": "3.png"
-        },
-        {
-          "session": "session14",
-          "turn": 12,
-          "content": "The sunset scenery on the map is so beautiful! It reminds me of the 'Quietly Accompanying the Flow of Time' you shared.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: It is inferred that the image (3.png) drives the text (exclamation), indicating a causal inference relationship.",
       "generated_at": "2026-02-24T11:32:42.196417",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpg",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Sample paper, light yellow in color, with very fine fibers.",
-      "answer_source": "inference",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "Yu'an, I've been preparing for an important restoration project recently and need to purchase a batch of antique-style handmade Xuan paper. This is a sample roll—it's light yellow in color with very fine fibers.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Track the referential evolution of the image entity (1.png) in the conversation.",
       "generated_at": "2026-02-24T11:32:42.196417",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, what is the color of the paper mentioned by Shen Jingyan?"
       },
       "original_answer": "No specific color name mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "This is one of the sample volumes, pale yellow in color, with very fine fibers.",
-          "image": ""
-        },
-        {
-          "session": "session14",
-          "turn": 9,
-          "content": "Yes, the color should be naturally aged, not chemically dyed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (specific color names such as \"beige\" or \"ivory white\") to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:32:42.196417",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

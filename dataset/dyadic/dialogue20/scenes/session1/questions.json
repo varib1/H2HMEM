@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,284 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the theme of the New Year's Eve planning event 'Neighborhood Shared New Year's Eve Dinner'?"
       },
       "original_answer": "Share a dish, warm a home.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 1,
-          "content": "Shi An, I've been planning a 'Neighborhood Shared New Year's Eve Dinner' event recently. Here's the proposal, with the theme being 'Share a Dish, Warm a Home.'",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Accurately recall pure textual facts (activity themes) from the conversation.",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the 'family secret recipe' dish mentioned in the conversation?"
       },
       "original_answer": "2.png in session1",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Look at this picture, someone has prepared a crispy dish that symbolizes prosperity in the new year. It looks tempting, but what's more important is the story behind it—the maker says it's a family secret recipe, made every year.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text→Image: Based on the textual information in the conversation (family secret recipe), retrieve the corresponding image (2.png from session1).",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What exclamation or question did the image evoke in Ji Shi'an?"
       },
       "original_answer": "Great to see young people getting involved!",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 9,
-          "content": "This is a sweet and sour dish, where the blend of sweet and tangy flavors represents the myriad tastes of life. It was created by a young person who aims to recreate the flavors of childhood using modern techniques, bridging the gap between tradition and modernity.",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "It's great to see young people getting involved! This can help bridge the generational gap. However, the burden of the Spring Festival and the New Year's Eve dinner often stems from overly high expectations—do you think such activities can alleviate this pressure?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: Image 3.png (Sweet and Sour Dish) sparked Ji Shi'an's lament about youth participation (Round 10).",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture prompted Ji Shi'an's comment on 'preventing post-holiday syndrome'?"
       },
       "original_answer": "5.png in session1",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 17,
-          "content": "This last dish is fish with vegetables, symbolizing abundance year after year. It was prepared by a busy professional who said this dish helps him rediscover the warmth of family and alleviates the anticipation of post-holiday blues.",
-          "image": "5.png"
-        },
-        {
-          "session": "session1",
-          "turn": 18,
-          "content": "This directly relates to my area of expertise! Preventing post-holiday syndrome by fostering a sense of belonging in advance—your event design inadvertently incorporates elements of psychological well-being.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: Image 5.png (Fish and Vegetables) triggered Ji Shi'an's comment on preventing post-holiday syndrome (Round 18).",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "4.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "This pastry, a family heirloom craft, carries the weight of generational anxiety.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 13,
-          "content": "Look at this pastry, shaped like a flower, symbolizing beauty and good fortune. The maker is an elderly woman who says this is a family tradition passed down through generations. She hopes to pass it on to younger people through this event to prevent the craft from being lost.",
-          "image": "4.png"
-        },
-        {
-          "session": "session1",
-          "turn": 14,
-          "content": "Inheritance anxiety is a common psychological issue. The event provides a platform for expression, which can help alleviate this anxiety.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to the entity 'pastry' across different rounds: from concrete descriptions to abstract concepts (inheritance anxiety).",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "1.png",
         "text": "Based on the newly learned information from the conversation, what specifically is the 'interactive segment' that is not explicitly mentioned in the activity plan images?"
       },
       "original_answer": "Share the story behind the dish",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "I've designed some interactive segments, such as sharing stories about the dishes, to help everyone focus on emotions rather than perfection.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn new information from conversations (interactive sessions involve sharing stories about dishes) and apply this knowledge to answer questions.",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the event aims to 'create a healthy festive rhythm,' yet He Sui also describes it as an embodiment of 'festival frenzy.' Is this contradictory?"
       },
       "original_answer": "Not contradictory",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "You previously mentioned rhythmic balance, and this activity is designed to create a healthy festive rhythm.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "By sharing collectively, individual pressure is reduced. I designed some interactive activities, such as sharing stories about the dishes, to help everyone focus on emotions rather than perfection.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 0,
-          "content": "New Year's Personality Traits: Warm and attentive, strong organizational skills, nostalgic yet innovative, with a hint of 'festival enthusiasm'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Present superficially contradictory information (healthy rhythm vs. festive frenzy), detect and explain consistency.",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which beverage was mentioned in the conversation as being prepared for the event?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal Scenario: When asked about information not present in the conversation (e.g., beverages), refuse to answer or point out that it was not mentioned.",
       "generated_at": "2026-03-01T12:24:51.101676",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 3
-    }
-  }
+  ]
 }

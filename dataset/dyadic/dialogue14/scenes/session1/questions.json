@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,230 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What programming language did Lu Chenguang mention he plans to use in the conversation?"
       },
       "original_answer": "Python",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "Okay, I'll start writing the script now. First, I'll work on Git commit time monitoring using Python and the Git API, and set up threshold alerts. The posture tool will be added later, which will require camera permissions.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What health reminder scripts has Lin Xingwan compiled?"
       },
       "original_answer": "Git Commit Time Monitoring Auto-Lock Tool, Smart Cervical Reminder Tool, Keyboard Keystroke Frequency Detection Rest Reminder Script",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "Of course, I'm a social expert and know how to keep people engaged. For health goals, we can set them as reducing caffeine dependence and improving cervical spine health, using data to track progress.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "Look, I've organized some ideas. Redefine health issues as interesting projects that require technical solutions, so you'll be motivated.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Recall corresponding dialogue health goals based on image content.",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "What exclamation did the problematic picture evoke from Lu Chenguang?"
       },
       "original_answer": "Describing problems with data is exactly what I like.",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 16,
-          "content": "[Send image: 3.png] This is a more detailed plan table, including specific indicators for health goals, such as daily caffeine limits and cervical spine activity time. Technological tools help achieve functions and improve efficiency.",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 17,
-          "content": "Excellent! Describing problems with data is exactly what I like. Terminal red alerts, caffeine overdose—all of these can be monitored and reminded through scripts.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Inferring textual responses triggered by image content.",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'geek-friendly' health intervention plan proposed by Lin Xingwan referred to and how does it evolve across different rounds?"
       },
       "original_answer": "Initially proposed in the 4th round as a 'geek-friendly' health intervention, the idea was presented via image 2.png in the 8th round, described as 'this project' in the 12th round, and referred to as a 'geek-friendly' health program in the 20th round.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 4,
-          "content": "Perfect! How about we create a 'geek-friendly' health intervention plan? For example, you could write a script to monitor your Git commit times and automatically lock the screen if it's past 1 a.m.?",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "Look, I've organized some ideas. Redefine health issues as interesting projects that require technical solutions, so you'll be motivated.",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 12,
-          "content": "Don't rush, take your time. Remember to balance your studies and life—I don't want you pulling all-nighters for this project again. We can sync up on progress every week, just like a little team.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 20,
-          "content": "You're welcome! Stay curious, and let's work together to get this 'geek-friendly' health plan up and running. We'll check in next week to make sure you're not on the verge of a breakdown.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same entity (health intervention program) across different rounds.",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation content, can small script software be written using Python and Git API? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "Look, I've organized some ideas. Redefine health issues as interesting projects that require technical solutions, so you'll be motivated.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (content of image2.png) and apply it to answer questions, testing online adaptability.",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": false
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Lu Chenguang plans to set the project label as 'Health Intervention v2.0'. Is this contradictory to the conversation content? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 15,
-          "content": "Great idea, open source sharing is my core value. I'll first submit the initial version of the code to GitHub, with the tag set as 'Health Intervention v1.0'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (v2.0) and existing memory (v1.0).",
       "generated_at": "2026-02-24T11:25:05.611443",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

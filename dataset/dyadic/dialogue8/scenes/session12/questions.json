@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,237 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What was the initial reason Lin Jianshen liked this fusion design?"
       },
       "original_answer": "Offers a sense of aesthetic freshness.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 13,
-          "content": "I initially liked this fusion design because it offered a fresh aesthetic appeal.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the mention of \"landscape painting\" in the conversation, is there any text on the painting?"
       },
       "original_answer": "Yes",
-      "answer_source": "image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 6,
-          "content": "Share a landscape painting image",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval, finding corresponding images based on text descriptions.",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.png",
         "text": "Why did Lin Jianshen send a problematic picture?"
       },
       "original_answer": "Because Gu Zhizhou shared a landscape painting photo, it reminded her of that image.",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "This landscape painting is truly breathtaking! The interplay of solid and void in the brushwork and the profound depth of its artistic conception embody the essence of traditional art. It reminds me of the blue-and-white porcelain I once saw—I’ll send you a picture. This aesthetic beauty, when combined with the simplicity of product design, creates an intriguing contrast.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image-driven causal inference for images.",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In a conversation, how are the images in questions referred to or cited?"
       },
       "original_answer": "A landscape painting image, this painting, this landscape painting",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 6,
-          "content": "Share a landscape painting image. I have some understanding of traditional Chinese art, and the brushwork charm and spatial composition in this painting",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "This landscape painting is truly breathtaking! The interplay of solid and void in the brushwork and the profound depth of its artistic conception embody the essence of traditional art.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking the referential evolution of entities across different rounds",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the newly acquired knowledge of blue and white porcelain, what characteristics of traditional art does blue and white porcelain embody?"
       },
       "original_answer": "It combines the refinement of craftsmanship with the fluidity of ink wash, embodying the unity of 'technique' and 'spirit'.",
-      "answer_source": "both",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "The blue and white patterns in the porcelain images exhibit both the delicacy of craftsmanship and the fluidity of ink painting. This prompts me to reflect: How can contemporary design inherit this unity of 'technique' and 'spirit'?",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Learn new information and apply it to answer questions.",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "If the landscape painting Gu Zhizhou sent to Lin Jianshen has no text on it, does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Detect contradictions between new information and memory",
       "generated_at": "2026-02-24T14:14:52.589915",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which specific traditional craft did Lin Jianshen mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Incorporate traditional Chinese elements such as Chinese characters, ink wash painting, and traditional craftsmanship.",
-          "image": ""
-        }
-      ],
       "validation_notes": "When asked about information that has not been disclosed, specific process names should be refused.",
       "generated_at": "2026-02-24T11:15:26.298683",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

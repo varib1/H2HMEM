@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,235 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What health issue did Zhao Xiaotang mention about Grandpa Wang?"
       },
       "original_answer": "High blood pressure",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 3,
-          "content": "For example, Grandpa Wang, who has high blood pressure, needs to monitor it regularly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts from the conversation (health issues).",
       "generated_at": "2026-02-27T17:05:38.301957",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the blood pressure monitor brand and price mentioned by Li Yifan in the conversation, find the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "1.png in session8",
-      "answer_source": "image_description",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 8,
-          "content": "Li Yifan: Based on my experience in researching hospital information, I recommend a few brands, such as Omron or Yuwell's arm-type models, priced between 200-300 yuan. They are highly accurate and durable.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "Li Yifan: [Sending picture: 1.png] I'm sending you a picture to take a look. This is an example of a blood pressure monitor I found, simple and easy to use.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The task involves retrieving corresponding images based on textual information. Image1.png displays a blood pressure monitor, which is related to the brand and price mentioned in the text, representing different aspects of the same event.",
       "generated_at": "2026-02-24T11:18:32.800854",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "Why did Li Yifan recommend problematic images? Please provide the reason for sending the problematic images."
       },
       "original_answer": "The reason was that Zhao Xiaotang hoped Li Yifan could recommend a blood pressure monitor.",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 9,
-          "content": "Got the picture! This table looks really neat and lists all the necessary information. You're always so efficient, just like when you designed the poster last time. What about the blood pressure monitor? Any recommendations?",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 10,
-          "content": "This is one I used before, with good quality and a reasonable price. I'll send you a photo for reference, including the blood pressure monitor, cuff, and disinfection supplies. It's easy to operate overall and suitable for the elderly.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The issue focuses on causal inference, specifically the cause of sending a particular image.",
       "generated_at": "2026-02-24T11:18:32.800854",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the blood pressure monitoring record form gradually described from its initial mention to its final design?"
       },
       "original_answer": "Initially, Li Yifan proposed designing a minimalist 'Blood Pressure Monitoring Record Form' (Round 4), then sent an example diagram (Round 10), and finally discussed privacy protection (Round 12), forming a complete plan.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "Li Yifan: For record-keeping, I can design a minimalist 'Blood Pressure Monitoring Log' to be printed on paper, including date, time, systolic pressure, diastolic pressure, and heart rate.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 10,
-          "content": "Li Yifan: [Sent image: 2.png] This is an example diagram of a record sheet. The table design is very simple, with only the necessary fields.",
-          "image": "2.png"
-        },
-        {
-          "session": "session8",
-          "turn": 12,
-          "content": "Li Yifan: Good question. The record sheet only includes the serial number, not the full name. The data is anonymized after aggregation.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the entity \"Blood Pressure Monitoring Record Form\" in multi-turn dialogues, from proposal and examples to refinement.",
       "generated_at": "2026-02-24T11:18:32.800854",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "If the community plans to promote a health monitoring program for elderly individuals living alone, based on the suggestions from Zhao Xiaotang and Li Yifan in the conversation, what factors should be prioritized to ensure the program is effective and low-cost?"
       },
       "original_answer": "Shared equipment (such as blood pressure monitors), paper record forms, simple training, pilot promotion, volunteer assistance.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "From the perspective of maximizing resource utilization, we can consider sharing equipment. The community could purchase one or two reliable arm-type electronic blood pressure monitors and place them at the guardhouse or with you, allowing elderly residents in need to register for borrowing. After use, they should be returned and disinfected. This approach not only saves costs but also benefits multiple individuals.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 6,
-          "content": "I can design a minimalist 'Blood Pressure Monitoring Log' to be printed on paper, including columns for date, time, systolic pressure, diastolic pressure, and heart rate. After measuring, the elderly can fill it out themselves, or volunteers can assist. Regular summaries will be compiled, with abnormal data highlighted in red for clear and immediate visibility.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 14,
-          "content": "I'll send you an example picture showing how to use the blood pressure monitor correctly. We can organize a small training session, similar to the skill-sharing session last time, where I or a volunteer can demonstrate to ensure the elderly master the basic operations.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 16,
-          "content": "From an efficiency optimization perspective, we can start with a pilot program, such as beginning with Grandpa Wang, and then expand it after gathering feedback.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Apply the knowledge of health monitoring solutions learned in the conversation to answer the priority considerations for promotion, requiring the integration of information from multiple rounds of dialogue.",
       "generated_at": "2026-03-03T01:58:55.196939",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the dialogue, what are the names of Grandpa Wang's children in Zhao Xiaotang's community?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Information not present in the question-and-answer dialogue should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:18:32.800854",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,215 +15,106 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "1.png",
         "text": "What exclamation or question did this picture evoke from Optimus Prime?"
       },
       "original_answer": "The user might find it cumbersome.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 9,
-          "content": "There are definitely challenges, such as users possibly finding it cumbersome. But I want to attract them visually—just like this AI-generated unicorn image.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Causal Inference Driven by Images and Text"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which training topic in the conversation does this image correspond to?"
       },
       "original_answer": "Digital Literacy and Ethics",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "I am preparing to conduct a 'Digital Literacy and Ethics' training within the company.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text Correlation, Training Topic Related to Image 2.png"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "How is the 'transparent layer' mentioned by Optimus Prime referred to in the dialogue?"
       },
       "original_answer": "Transparent layer of the generation process, transparent layer, the prototype of a digital birth certificate.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Experimentally add a 'Transparent Layer for Generation Process' link.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 3,
-          "content": "This transparent layer will display the model, seed, and key prompts.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 10,
-          "content": "The transparent layer could potentially serve as the prototype for a 'digital certificate of origin'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the same entity across different rounds"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "What basic method categories for identifying deepfakes are included in Ling Guang's training outline?"
       },
       "original_answer": "Visual cues, audio cues, verification tools",
-      "answer_source": "both",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "I have joined the identification of basic methods.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 0,
-          "content": "Image 2.png Description: This is an infographic about \"Basic Methods for Identifying Deepfakes,\" designed to introduce approaches such as visual cues, audio cues, and verification tools.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "It requires combining both text and image information to answer."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Ling Guang said her training focuses on enhancing media education, but in the conversation, Ke Bowen questioned whether these methods can address the root cause. Is there a contradiction here? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 4,
-          "content": "Focus on enhancing media education.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 5,
-          "content": "Can these methods address the root cause?",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 6,
-          "content": "I agree, this is more of a temporary fix.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the consistency between newly input information and existing memory."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the dialogue, what specific solution did Optimus Prime mention he plans to develop in collaboration with Ling Guang?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 15,
-          "content": "We can collaborate to develop more comprehensive solutions.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information that has not appeared to test the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Memory Reasoning": 2,
-      "Memory Recall": 2,
-      "Memory Application": 3
-    },
-    "by_difficulty": {
-      "medium": 3,
-      "easy": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

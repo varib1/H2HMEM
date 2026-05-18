@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, which traditional weaving technique did Xu Huaian mention was used for the edging process of the woven basket?"
       },
       "original_answer": "Eight-Character Braiding Method",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "The edging of the basket is crafted using the traditional figure-eight weaving technique.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on Lin Shuying's description of the fabric pattern in the conversation, which image shows this white leaf pattern on a dark blue background? Provide the session number and image file name."
       },
       "original_answer": "3.png in session7",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "Look at this close-up of the fabric pattern. White leaf-like motifs on a deep blue background.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on textual information, with both being related to the same event.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the picture that sparked Xu Huaian's comment on the director's meticulous attention to detail, what is the name of the director provided?"
       },
       "original_answer": "Li Lu",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Just finished watching \"A Lifelong Journey.\" This poster reminds me of our previous discussion about old objects and the warmth of handmade crafts. The director really put a lot of effort into the details.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Inferring that the image triggered subsequent textual commentary.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the woven basket referred to or mentioned?"
       },
       "original_answer": "'Basket weaving', part of 'these material traces'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "Look at this close-up of the woven basket.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "This woven basket is more than just a prop in the play.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 7,
-          "content": "These objects—woven baskets, wooden spool winders, and this type of fabric—are all microcosms of domestic life from that era.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 9,
-          "content": "Amidst the changes of time, these material traces have become bridges connecting the past and the present.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of entities across different rounds, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the newly learned knowledge from the conversation, on which household items was this fabric pattern commonly used in the 1970s, as shown in the question image?"
       },
       "original_answer": "Often used on curtains or tablecloths.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "This pattern was very popular in the 1970s, symbolizing nature and hope. It was often used on curtains or tablecloths, adding a touch of aesthetics to simple homes.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Assess online adaptability: Learn new information and apply it to answer questions.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The yarn count of the woven basket in the dialogue is finer and the colors are vibrant. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 3,
-          "content": "The yarn count is relatively coarse, and the color is on the darker side.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Present potentially contradictory information to assess recognition ability.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what movie did Xu Huaian mention as his favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Avoid answering questions about information that has not been provided to prevent hallucinations.",
       "generated_at": "2026-02-24T11:10:24.057689",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

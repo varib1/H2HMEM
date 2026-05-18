@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,180 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Based on the conversation, what item did Li Yifan help the aunt repair on August 5th?"
       },
       "original_answer": "Electric kettle",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "I have a screwdriver, a multimeter, and soldering wire with me. The basic tools are all set. I just fixed an electric kettle—the thermostat was broken, and it only needed a simple replacement.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-02-24T11:18:16.560911",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Among the plush toys photographed by Zhao Xiaotang, are there any cat toys? If not, what toys are there?"
       },
       "original_answer": "No, there is a teddy bear toy.",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Yifan, look how lively it is here! I took a photo—these plush toys are especially popular, and the kids are all gathered around them. It seems our previous survey on idle items was spot-on; toys are indeed one of the most popular categories for exchange.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall corresponding images based on textual information, where the two are related due to the same event, not a causal relationship.",
       "generated_at": "2026-02-24T11:18:16.560911",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture prompted Li Yifan's comment that hands-on sharing is more intuitive than theoretical discussion? Provide the session number and the picture file name."
       },
       "original_answer": "2.png in session7",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "Here's a photo of me during a repair session, focusing on fixing a circuit board. This kind of hands-on demonstration is much more effective than just talking about theory.",
-          "image": "2.png"
-        },
-        {
-          "session": "session7",
-          "turn": 4,
-          "content": "This hands-on sharing is much more intuitive than our previous discussion about 'skill sharing' in the planning phase.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Infer the causal relationship between images and text, rather than direct correlation.",
       "generated_at": "2026-02-27T17:05:44.890802",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Are screwdrivers and multimeters considered maintenance tools?"
       },
       "original_answer": "Belongs to",
-      "answer_source": "both",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 4,
-          "content": "Li Yifan: I've brought a screwdriver, a multimeter, and soldering wire. With these basic tools, handling these minor repairs won't be a problem.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 6,
-          "content": "Li Yifan: [Sending picture: 2.png] Sending you a photo of me during a repair, focusing on fixing the circuit board.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The question integrates the tool information learned from the dialogue and the description of the image, requiring the application of new knowledge to answer, testing multimodal adaptation.",
       "generated_at": "2026-03-03T01:58:54.936973",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The repair booth was set up only at the end of the 'Community Sharing Market' event. Does this contradict the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话9",
+      "answer_dialogue": "dialogue9",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Yifan, our market is open! Your repair stall has become a popular check-in spot!",
-          "image": ""
-        }
-      ],
       "validation_notes": "The dialogue indicates that the repair stall was set up and became a popular check-in spot when the event opened, which contradicts the claim that it was \"only set up at the end of the event.\"",
       "generated_at": "2026-02-24T11:18:16.560911",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3
-    }
-  }
+  ]
 }

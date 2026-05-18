@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.153862"
@@ -18,578 +17,244 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "When planning the neighborhood shared New Year's Eve dinner event, what specific dish names did Hesui mention, and who made these dishes or what do they represent?"
       },
       "original_answer": "The dishes include Crispy Pork Belly (made with a family secret recipe), Sweet and Sour Pork Ribs (young people recreating childhood flavors with modern techniques), Flower-Shaped Steamed Buns (crafted using ancestral skills passed down by elders), and Peacock Tail Fish (a dish that helps working professionals rediscover the warmth of home).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "New Year Greetings: [Sending image: 2.png] Look at this picture, someone has prepared a crispy dish, symbolizing a prosperous new year. It looks tempting, but more importantly, there's a story behind it—the maker says it's a family secret recipe, made every year.",
-          "image": "2.png"
-        },
-        {
-          "session": "1",
-          "turn": 9,
-          "content": "New Year's Greetings: [Image: 3.png] This is a sweet and sour dish, where the blend of flavors symbolizes the diverse experiences of life. It was created by a young person who aims to recreate the taste of childhood using modern techniques, bridging tradition and the contemporary.",
-          "image": "3.png"
-        },
-        {
-          "session": "1",
-          "turn": 13,
-          "content": "New Year Greetings: [Image sent: 4.png] Look at this pastry, shaped like a flower, symbolizing beauty and good fortune. The maker is an elderly person who says this is a family tradition passed down through generations. She hopes to pass it on to younger people through events to prevent it from being lost.",
-          "image": "4.png"
-        },
-        {
-          "session": "1",
-          "turn": 17,
-          "content": "New Year's Greetings: [Image: 5.png] This last dish is a fish dish, symbolizing abundance year after year. The creator is a busy professional who says this dish helps him rediscover the warmth of family and alleviates the anticipation of post-holiday syndrome.",
-          "image": "5.png"
-        },
-        {
-          "session": "3",
-          "turn": 7,
-          "content": "New Year Greetings: [Image sent: 3.png] This is a flower-shaped steamed bun made by an aunt in the community, adorned with red dates in the center. She said it symbolizes reunion and sweetness. I think it's very creative, both traditional and innovative.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The issue integrates dish details from Session 1 and Session 3, requiring cross-session recall of textual information.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the discussion of annual tech products, which brands did Hesui and Ji Shi'an mention, along with their reasons for being on the list or their features?"
       },
       "original_answer": "Brands include iFLYTEK (AI learning devices, defining new categories, intelligent education), Xiaomi (smart home devices, high cost-performance ratio, ecosystem popularization), Huawei (foldable screen phones, independent innovation, high-end positioning), SHOKZ (bone conduction headphones, excelling in niche markets), Nut Projector and XREAL (AR/VR and projection technology, future entertainment).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "11",
-          "turn": 3,
-          "content": "New Year Greetings: [Sending image: 2.png] Let me send you a picture to take a look. iFLYTEK's products, like this AI learning device, I think its strength lies in defining a new category, making smart educational devices more precise.",
-          "image": "2.png"
-        },
-        {
-          "session": "11",
-          "turn": 6,
-          "content": "Ji Shi'an: [Sending image: 3.png] Yes, I have used several Xiaomi products myself, such as smart home devices. Here's a picture for you—these products perform well in terms of user experience and offer great value for money.",
-          "image": "3.png"
-        },
-        {
-          "session": "11",
-          "turn": 9,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 11,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "11",
-          "turn": 13,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 9,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question integrates discussions on technological products from Session 11 and Session 12, requiring cross-session recall of textual details.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "session2/2.png",
         "text": "In Session 2, Hesui sent a picture of a like sticker. In Session 6, Ji Shi'an mentioned a similar concept to help Hesui alleviate professional burnout. What is this concept?"
       },
       "original_answer": "In Session 6, Ji Shi'an suggested He Sui try meditation or yoga and recommended a meditation app, whose community feature is similar to like stickers, promoting interaction and connection.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 3,
-          "content": "New Year's Greetings: [Send image: 2.png] This is it! I bought some like stickers with thumbs-up patterns in different colors, planning to let participants give each other likes during the event to encourage interaction and recognition.",
-          "image": "2.png"
-        },
-        {
-          "session": "6",
-          "turn": 6,
-          "content": "Ji Shi'an: [Sent picture: 3.png] Try this method, meditation or yoga, which is suitable for nurturing your current state.",
-          "image": "3.png"
-        },
-        {
-          "session": "6",
-          "turn": 9,
-          "content": "New Year Greetings: [Image sent: 4.png] This meditation app offers courses and community interaction, much like our previous neighborhood activities, which can help foster connections.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Based on the images from Session 2, retrieve relevant text from Session 6 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "session9/2.png",
         "text": "In Session 9, Ji Shi'an sent a picture of the Golden Hall. In Session 10, when He Sui was discussing mountaineering equipment, he mentioned a similar design concept. What is this concept?"
       },
       "original_answer": "When selecting the brown leather boots in Session 10, He Sui mentioned that their traditional design reminded him of the approach to planning the New Year's Eve dinner, which blends nostalgia with innovation—both practical and ceremonial.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "9",
-          "turn": 6,
-          "content": "Ji Shi'an: [Sends picture: 2.png] Look, this is the golden temple at the mountain peak, surrounded by mountains, with blue skies and white clouds. It's magnificent.",
-          "image": "2.png"
-        },
-        {
-          "session": "10",
-          "turn": 9,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "Based on the images from Session 9, retrieve relevant text from Session 10 to establish image-text associations.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Hesui mentioned that the neighborhood New Year's Eve dinner activity aims to alleviate personal stress, but in Session 6, he himself experienced professional burnout. In Sessions 7 and 8, how did he update his understanding of 'sense of ritual' to balance this stress?"
       },
       "original_answer": "In Sessions 7 and 8, He Sui expanded the sense of \"ritual\" from external activities to \"self-ritual\" by participating in activities such as yoga, cycling, and skiing. This emphasized self-care and rhythm balance, thereby alleviating professional burnout and shifting the focus more toward internal health rather than external performance.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 11,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "New Year's Greetings: [Image: 1.png] Shi An, I've been feeling particularly exhausted lately. Here's the list of all the community events I've planned from the Lunar New Year to the Lantern Festival. Take a look.",
-          "image": "1.png"
-        },
-        {
-          "session": "7",
-          "turn": 6,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "7",
-          "turn": 15,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "8",
-          "turn": 5,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "Examine the knowledge update process from Session 1 to Session 6, and then to Sessions 7 and 8, focusing on the evolution of the understanding of 'sense of ritual'.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 4, Hesui was flustered by Yuanbao's noise-induced stress, but in Session 10, he appeared calmer while selecting mountaineering equipment. In Sessions 5 and 9, what experiences helped him update his approach to dealing with new challenges?"
       },
       "original_answer": "In Session 5, the experience of collaboratively creating the \"Friendly New Year's Eve Dinner Guide\" introduced the 'toolbox' mindset, emphasizing practicality and adaptability. In Session 9, the mountain climbing plan highlighted the importance of advance preparation and balanced pacing. These experiences helped him make more stable equipment choices in Session 10, with a focus on details and safety.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "New Year's Greetings: [Send picture: 1.png] Shi An, help me quickly! Yuan Bao has been extremely frightened since New Year's Eve, trembling all over. I'll send you a photo to see.",
-          "image": "1.png"
-        },
-        {
-          "session": "5",
-          "turn": 7,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "9",
-          "turn": 12,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "10",
-          "turn": 10,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the knowledge update from the panic in Session 4 to the calmness in Session 10, incorporating the experiences from Sessions 5 and 9.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Based on all conversations, arrange the following events in chronological order: A. Neighborhood New Year's Eve dinner event held B. He Sui experiences professional burnout C. He Sui starts yoga and cycling exercises D. He Sui and Ji Shi'an plan mountain climbing E. Yuanbao experiences noise stress."
       },
       "original_answer": "In chronological order: A. Neighborhood New Year's Eve dinner event held (Session 3, during the Spring Festival) → E. Yuanbao experiences noise-induced stress (Session 4, after New Year's Eve) → B. Hesui suffers from professional burnout (Session 6, from the lunar month to after the Lantern Festival) → C. Hesui starts yoga and cycling (Session 7, after burnout) → D. Hesui and Ji Shi'an plan a mountain hike (Session 9, before National Day).",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "New Year Greetings: [Send picture: 1.png] Shi An, look quickly! The community shared New Year's Eve dinner event has concluded successfully. Here's a photo from the scene—the long table is filled with dishes brought by each family. The atmosphere is especially warm and cozy, without being crowded. Everyone really enjoyed the experience.",
-          "image": "1.png"
-        },
-        {
-          "session": "4",
-          "turn": 1,
-          "content": "New Year's Greetings: [Send image: 1.png] Shi An, help me quickly! Yuanbao has been extremely frightened since New Year's Eve, trembling all over. I'll send you a photo to see.",
-          "image": "1.png"
-        },
-        {
-          "session": "6",
-          "turn": 1,
-          "content": "New Year's Greetings: [Send image: 1.png] Shi An, I've been feeling particularly exhausted lately. This is the list of all the community events I've planned from the Lunar New Year to the Lantern Festival. Take a look.",
-          "image": "1.png"
-        },
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "New Year's Greetings: [Send Image: 1.png] Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, this is a group photo from our community yoga class—twice a week, and it feels incredibly relaxing.",
-          "image": "1.png"
-        },
-        {
-          "session": "9",
-          "turn": 1,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session reasoning of event temporal order is required, based on session content and contextual temporal cues.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Compare He Sui's mindset when planning event awards in Session 2 with his mindset when discussing the success of the game \"Black Myth: Wukong\" in Session 12, and point out how the evolution over time reflects changes in his views on \"competition\" and \"innovation.\""
       },
       "original_answer": "In Session 2, the New Year celebration initially featured only one award category. Following Ji Shi'an's suggestion, additional categories were introduced to alleviate competitive pressure, emphasizing sharing over competition. In Session 12, he praised the game for balancing innovation and tradition in both technology and content, defining a new genre without merely chasing traffic. This reflects his evolution from avoiding competition to focusing on high-quality innovation and balance.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 4,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 6,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 9,
-          "content": "",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 15,
-          "content": "",
-          "image": ""
-        }
-      ],
       "validation_notes": "Cross-session comparison of mindset changes at different time points for temporal reasoning.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "While planning the neighborhood New Year's Eve dinner event, He Sui adopted Ji Shi'an's suggestion to adjust the award settings in order to reduce the competitive pressure on participants. In which conversation was this suggestion initially proposed, and what was the specific suggestion?"
       },
       "original_answer": "The suggestion was initially raised in Session 2, where Ji Shi'an proposed adding award categories such as \"Best Neighborhood Interaction Award\" and \"Creative Dish Award\" to recognize the contributions of more participants and alleviate the competitive pressure associated with a single award.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 6,
-          "content": "Ji Shi'an: Yes, we could consider adding award categories, such as 'Best Neighborhood Interaction Award' and 'Creative Dish Award.' This would help cover the contributions of more participants, reduce the competitive pressure from having only a single award, and better align with the concepts of emotional well-being and genuine connection.",
-          "image": ""
-        },
-        {
-          "session": "3",
-          "turn": 3,
-          "content": "New Year's Greetings: Yes, thanks to your previous suggestions, such as adjusting award categories and reducing competitive pressure. This event focuses more on genuine connections rather than just superficial excitement.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal Inference: The recommendations (text) from Session 2 influenced the activity practices (text) in Session 3, reflecting a cross-session driving relationship.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "In Session 8, Ji Shi'an shared the reason why he started exercising, which was directly influenced by what experience He Sui shared in which session?"
       },
       "original_answer": "Ji Shi'an began exercising directly influenced by He Sui's experience shared in Session 7, which focused on improving professional burnout and rebuilding personal rituals through physical activity.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "New Year's Greetings: [Send image: 1.png] Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, this is a group photo from our community yoga group—we meet twice a week, and it feels incredibly relaxing.",
-          "image": "session7/1.png"
-        },
-        {
-          "session": "8",
-          "turn": 2,
-          "content": "Ji Shi'an: [Sent picture: 1.png] Absolutely, hahaha. Seeing your health improve after exercising, I couldn't help but start working out too. This is the seaside yoga I've been trying recently—it feels incredibly relaxing.",
-          "image": "session8/1.png"
-        }
-      ],
       "validation_notes": "Causal Inference: The images and text from Session 7 (New Year's exercise improvement) are the direct cause of Ji Shi'an starting exercise (images and text) in Session 8, tracking influences across sessions.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "When discussing pet stress, Hesui mentioned that \"Yuanbao's\" fear made him reflect on whether pet-friendly elements should be included in holiday planning. This echoes a similar element added in a previous conversation to attract children. What specific element was it?"
       },
       "original_answer": "This echoes the dragon year doll element added in Session 2 to attract children. Ji Shi'an suggested adding the dragon year doll to enhance family engagement and include different age groups.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 10,
-          "content": "Ji Shi'an: I suggest adding some dragon-themed dolls for the Year of the Dragon. Children would enjoy them more, and it would enhance family engagement.",
-          "image": "session2/6.png"
-        },
-        {
-          "session": "4",
-          "turn": 16,
-          "content": "New Year Reflection: This experience has made me ponder whether pet-friendly elements should be incorporated into festival planning, much like how the Year of the Dragon dolls were added to attract children before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Referential Evolution: The \"Dragon Year Doll\" (images and text) from Session 2 is referenced in Session 4 as an analogy for \"pet-friendly elements\" in the New Year celebration, tracing the evolution of the same creative concept across different sessions.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ011"
     },
     {
-      "question_id": "Q012",
       "question": {
         "image": "",
         "text": "In Session 10, when Hesui was selecting mountaineering boots, he mentioned that their traditional design reminded him of the approach to planning the New Year's Eve dinner, which blends nostalgia with innovation. Which session's New Year's Eve dinner planning does this refer to? How exactly is the blend of nostalgia and innovation reflected?"
       },
       "original_answer": "This refers to the planning of the neighborhood shared New Year's Eve dinner in Session 1. It is reflected in the following aspects: traditionally, the event emphasizes nostalgic elements such as family secret recipes and ancestral craftsmanship; innovatively, it is designed as each person bringing a dish to share, with young people recreating childhood flavors using modern techniques.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 5,
-          "content": "New Year's Greetings: [Sending image: 2.png] Look at this picture, someone has prepared a crispy dish, symbolizing a prosperous new year. It looks tempting, but more importantly, there's a story behind it—the maker says it's a family secret recipe, made every year.",
-          "image": "session1/2.png"
-        },
-        {
-          "session": "1",
-          "turn": 9,
-          "content": "New Year's Greetings: [Image: 3.png] This is a sweet and sour dish, where the blend of flavors represents the myriad tastes of life. It was created by a young person who aimed to recreate the flavors of childhood using modern techniques, bridging tradition and the present.",
-          "image": "session1/3.png"
-        },
-        {
-          "session": "10",
-          "turn": 9,
-          "content": "New Year's Greetings: These leather boots look more stable, suitable for a beginner like me. Moreover, their traditional design reminds me of our approach to planning the New Year's Eve dinner, which blends nostalgia with innovation—both practical and ceremonial.",
-          "image": "session10/3.png"
-        }
-      ],
       "validation_notes": "Topic Evolution: The theme of \"Nostalgia and Innovation\" from the New Year's Eve dinner planning (text and images) in Session 1 is revisited and analogized in the selection of mountaineering equipment (text) in Session 10, tracking the cross-session referencing of core concepts.",
       "generated_at": "2026-04-01T17:05:33.153862",
       "validated": true,
       "original_question_id": "CSQ012"
     }
-  ],
-  "summary": {
-    "total_questions": 12,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 2
-    },
-    "by_difficulty": {
-      "medium": 8,
-      "hard": 4
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

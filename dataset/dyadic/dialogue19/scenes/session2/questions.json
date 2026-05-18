@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,256 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the dialogue, which food's play of light and shadow texture did Baizhi mention resembles narrating a tale about fire and time?"
       },
       "original_answer": "Steak",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Just finished organizing the photos, so here’s one of my favorite close-ups first. The texture of the steak under this light and shadow is like a narrative about fire and time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precision Recall]: Recall specific food names mentioned in the conversation, avoiding vague responses."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the visual representation of the service process mentioned in the conversation?"
       },
       "original_answer": "2.png in session2",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "I'm actually more focused on the visual presentation of the service process. Look at this one—the uniform details are fairly neat, but the angle of the notebook placement disrupts the overall composition. It’s a typical case of lacking design awareness beneath a professional facade.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-Modal Related Retrieval]: Recalling corresponding images based on textual information, where both are related to the same event (visual presentation of service processes)."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the picture evoke from Bai Zhi?"
       },
       "original_answer": "It's as if narrating a tale of fire and time.",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Just finished organizing the photos, so here’s one of my favorite close-ups first. The texture of the steak under this lighting is like a narrative about fire and time.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: The image (steak texture) triggers the text (Baizhi's exclamation), indicating a causal driving relationship."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.png",
         "text": "What kind of evaluation did this picture elicit from Gu Yanci?"
       },
       "original_answer": "Anger",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 11,
-          "content": "When it comes to the feel in hand, this side profile of you intently looking at the menu is quite interesting. The refracted light from the glass falls on the notebook, creating a subtle sense of temporal and spatial overlap—though the person in question is probably too busy being frustrated by the poor layout to notice, right?",
-          "image": "4.png"
-        },
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "To be precise, it's anger. What's the point of all those visual effects if even the basic information isn't conveyed properly? This reminds me of the design ethics issue we discussed last time: visual democratization shouldn't just be a slogan.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Causal Inference]: The image (Gu Yanci's focused profile looking at the menu) triggers the text (angry evaluation of the menu layout), indicating a causal driving relationship."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How does Baizhi describe the evolution of her views on the restaurant experience in the conversation?"
       },
       "original_answer": "From 'Five-Sense Theater' to 'The Value of Visual Narrative', and then to 'Perfection and Imperfection Coexisting'.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "You're always so sharp. But I have to say, the entire dining experience was indeed like a choreographed 'five-senses drama,' though the pacing felt a bit forced, lacking a bit of the natural flow of poetry.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 9,
-          "content": "But visual storytelling itself holds value. As you previously criticized the initial photos of the restaurant, form should serve content—shouldn't 'content' here include the human experience?",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 15,
-          "content": "But you just praised the use of negative space in the tableware. Isn't this contradiction precisely the complexity of the on-site experience? The coexistence of perfection and flaws actually makes the narrative more authentic.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-round Tracking]: Track the evolution of Angelica's views on the restaurant experience across multiple rounds of dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "What questions about aesthetics and user experience does Angelica raise in this instructional image?"
       },
       "original_answer": "Does ultimate aesthetics always come at the expense of user experience?",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 7,
-          "content": "But does ultimate aesthetics always come at the expense of user experience? Like the composition techniques emphasized in this instructional image, if we only pursue visual perfection, could it turn food into cold display items?",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[TTL]: Study and learn new image information (teaching images) and apply it to extract relevant textual questions."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did Gu Yanci ever praise the restaurant's menu layout in the conversation?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Deliberate? That menu layout is a complete disaster. Let me send you a screenshot analysis—the hierarchy of the drinks menu is so chaotic it makes you wonder if the designer ever learned the basics of grid systems.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detecting the contradiction between the question information (praising menu layout) and the dialogue content (criticizing menu layout)."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which animal did Baizhi mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话19",
+      "answer_dialogue": "dialogue19",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: The question involves information (animals) not present in the conversation, testing the ability to refuse to answer and avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

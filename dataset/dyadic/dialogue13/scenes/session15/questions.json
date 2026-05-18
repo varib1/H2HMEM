@@ -6,7 +6,6 @@
     "session_number": 15,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,229 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Lin Shu mentioned that next time, a menu survey form could be sent out in advance to avoid what situation?"
       },
       "original_answer": "Some dishes are repeated.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 5,
-          "content": "I noticed that although the dishes were plentiful, a few of them were repeated. Next time, we could send out a menu survey in advance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which activity scene in the conversation does the problem picture correspond to?"
       },
       "original_answer": "The children sat around the small table, eating by themselves.",
-      "answer_source": "image_description",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 7,
-          "content": "Teacher Zhou, look at this picture of the children sitting around the small table eating by themselves. The atmosphere is very serene.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Recall the corresponding dialogue scene based on image information.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "What exclamation did the problematic image evoke from Zhou Mingyuan?"
       },
       "original_answer": "The atmosphere is really great.",
-      "answer_source": "both",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 1,
-          "content": "Teacher Zhou, I've sent you the photos from the New Year's 'Neighborhood Warm Meal' tasting event. The table was filled with home-style dishes like braised pork, steamed fish, and sautéed three vegetables. Everyone gathered around, and the atmosphere was particularly warm and cozy.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image-driven text: Image 1 sparked a discussion about a warm atmosphere.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "How are the problem images referred to in the conversation?"
       },
       "original_answer": "Feedback Form",
-      "answer_source": "inference",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 13,
-          "content": "Teacher Zhou, I have compiled a feedback form titled 'Feedback and Experience Summary Form for the New Year's Day Neighborhood Warm Meal Tasting Event,' which includes points such as menu communication, preparation of serving chopsticks, seating arrangements, and cleaning duties.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image Tracking: Tracing the Evolution of Image References in Conversations.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the topic of 'cleaning division of labor' evolve from 'post-meal cleaning division' to 'establishing a cleaning duty roster'?"
       },
       "original_answer": "Lin Shu first mentioned that the division of labor for post-meal cleaning needs to be clear, just like the flea market activity; then Zhou Mingyuan suggested creating a simple cleaning duty roster, with each family responsible for a portion.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 9,
-          "content": "The division of labor for post-meal cleanup should also be clearly defined, just like during the flea market activity, where everyone takes turns to avoid confusion.",
-          "image": ""
-        },
-        {
-          "session": "session15",
-          "turn": 10,
-          "content": "You could try this: create a simple cleaning duty roster, with each family responsible for a part of it.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The Evolution of the Cleanup Division Topic Across Different Rounds, from General Division to Specific Duty Rosters.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The tasting event organized by Lin Shu's community did not provide any serving chopsticks. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session15",
-          "turn": 6,
-          "content": "This time we improvised by using serving chopsticks, but for future events, we should prepare them in advance to ensure safety.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction Detection: Propose information that may contradict the dialogue content and detect whether contradictions are recognized.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "At the tasting event, which dish did Lin Shu prepare?"
       },
       "original_answer": "The dialogue does not mention which dish Lin Shu made.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session15"
       ],
-      "answer_dialogue": "对话13",
+      "answer_dialogue": "dialogue13",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: Do not answer information that does not appear in the question dialogue to avoid hallucinations.",
       "generated_at": "2026-02-24T11:24:36.146871",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 2,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

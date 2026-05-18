@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,288 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On what data does the Korean mathematical training reinforcement learning model base its identification of significant fluctuations in training load?"
       },
       "original_answer": "Completion rate, subjective fatigue perception RPE, and ACWR data",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "Yes, the model, based on completion rate, RPE, and ACWR data, has identified significant fluctuations in our training load and recommends increasing recovery to reduce the risk of injury.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "3.jpg",
         "text": "Which application interface in the conversation does the problem image correspond to?"
       },
       "original_answer": "Weather App Interface",
-      "answer_source": "image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 6,
-          "content": "This is the weather app interface, displaying various weather conditions.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image → Text: Retrieve corresponding dialogue content based on image information.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Which suggestion in the conversation about the training plan was prompted by the problem image?"
       },
       "original_answer": "Increase recovery to reduce the risk of injury",
-      "answer_source": "both",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "This is the suggested curve output by the model, showing the training intensity adjustments for the next four weeks.",
-          "image": "1.png"
-        },
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "Yes, the model, based on completion rate, RPE, and ACWR data, has identified significant fluctuations in our training load and recommends increasing recovery to reduce the risk of injury.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: The image sparked a discussion of suggestions in the conversation.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.jpg",
         "text": "Which discussion in the conversation about the impact of environment variables was triggered by the problematic image?"
       },
       "original_answer": "Environment variables affect outdoor sports.",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 12,
-          "content": "This is an outdoor sports scenario, reminding us of the impact of environmental variables. After integrating weather data, the model can suggest more suitable running times, such as avoiding hot and humid weather.",
-          "image": "4.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: The image sparked the subsequent textual discussion.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the training plan suggested by the model evolve from its initial mention to its final adoption?"
       },
       "original_answer": "From generating suggested curve graphs based on model outputs, to updating the model by incorporating weather variables, and then updating the shared training calendar, it was ultimately adopted as an AI-optimized personalized plan.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Based on our training data from the past 8 weeks, I have trained a reinforcement learning model to optimize the training plan. This is the recommended curve generated by the model, showing the adjustments in training intensity for the next 4 weeks.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 7,
-          "content": "I will update the model to include weather variables.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 9,
-          "content": "I have updated the shared training calendar based on the model. It is recommended to adopt an AI-optimized personalized plan for the next 4 weeks, reducing high-intensity training days and adding recovery weeks.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 16,
-          "content": "I adopt this AI-optimized personalized training plan.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of entities across different rounds, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.jpg",
         "text": "Based on the problem image, what types of weather data are suggested to be integrated in the dialogue to optimize the model?"
       },
       "original_answer": "Temperature, humidity, air quality index",
-      "answer_source": "both",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 5,
-          "content": "We can further optimize the model by using weather variables, such as temperature and humidity, as inputs.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 6,
-          "content": "This is the weather app interface, displaying various weather conditions. We can integrate real-time weather data.",
-          "image": "3.jpg"
-        },
-        {
-          "session": "session12",
-          "turn": 14,
-          "content": "We can also include more environmental variables, such as the Air Quality Index.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn newly acquired multimodal information (the weather app interface in the image) and apply this new knowledge to answer questions.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": false
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that the model suggests adding recovery weeks, but Lin Ce said the model suggests fewer recovery weeks. Is this correct?"
       },
       "original_answer": "Incorrect, the measure by Lin suggests that the model recommends more recovery weeks.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 2,
-          "content": "The model suggests more recovery weeks, which is interesting.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (assuming the Lin measure suggests fewer recovery weeks) and existing memories.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Han Shuli mentioned in the conversation what his favorite brand of running shoes is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:28:11.605966",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 4,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

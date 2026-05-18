@@ -6,7 +6,6 @@
     "session_number": 0,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "cross-session",
     "question_format": "object_format",
     "source": "converted_from_cross_session",
     "converted_at": "2026-04-01T17:05:33.138338"
@@ -18,446 +17,224 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On March 1st, Lu Chenguang said he felt unwell due to what reason? On December 25th, how many hours did his sleep duration increase from and to?"
       },
       "original_answer": "On March 1st, due to staying up all night working on algorithms, I felt a rapid heartbeat and stiffness in my neck. On December 25th, my sleep duration improved from 4.8 hours to 6.2 hours.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Lu Chenguang: Stayed up all night again... My heart is beating a bit fast, and my neck feels stiff.",
-          "image": ""
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Lu Chenguang: From 4.8 hours at the beginning of the year to 6.2 hours at the end of the year.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Both pieces of information are from the dialogue text.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ001"
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which two two-player games did Lin Xingwan plan to experience in the May 1st proposal? On New Year's Eve on December 31st, which game did they actually play?"
       },
       "original_answer": "The plan in the proposal was to experience \"It Takes Two\" and \"Overcooked,\" but on New Year's Eve, we actually played \"Peacekeeper Elite.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 6,
-          "content": "Lu Chenguang: \"It Takes Two\" is the top choice... and also \"Overcooked.\"",
-          "image": ""
-        },
-        {
-          "session": "15",
-          "turn": 2,
-          "content": "Lu Chenguang: The picture you sent is from \"Game for Peace,\" right?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall game name",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ002"
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "The screenshot of the health dashboard sent by Lu Chenguang on March 20 shows that his sedentary time was 10.5 hours. In which subsequent session and which picture demonstrates his health improvement results one year later? Provide the session number and the image file name."
       },
       "original_answer": "1.png in Session 12",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lu Chenguang: [Sent picture: 1.png] Look at this screenshot, the sedentary warning lights are all lit up in a row.",
-          "image": "1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Lu Chenguang: [Sent picture: 1.png] From 4.8 hours at the beginning of the year to 6.2 hours at the end of the year, the frequency of sedentary alerts decreased by 40%.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Based on the textual description from Session 2 (sedentary for 10.5 hours), retrieve images from Session 12 that demonstrate improvement outcomes.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ003"
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Lin Xingwan planned an online video consultation session for the campus stray animal project on September 10th. When the project was finally launched, Lin Xingwan posted a promotional image. What animals were in the picture?"
       },
       "original_answer": "There is a brown puppy lying on a blue backpack, and a white cat resting on a red book.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 9,
-          "content": "Lin Xingwan: I have organized an online consultation session, similar to a video conference format.",
-          "image": ""
-        },
-        {
-          "session": "14",
-          "turn": 1,
-          "content": "Lin Xingwan: [Sent picture: 1.png] Our 'product' is now live!",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The question text describes the events of Session 6, and the answer is derived from the image content of Session 14.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ004"
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In Session 1, Lu Chenguang described his health crisis after staying up all night programming, mentioning a fast heartbeat and a stiff neck. How are his health indicators updated in the annual report of Session 12? What does this reflect in terms of knowledge revision?"
       },
       "original_answer": "In the annual report for Session 12, Lu Chenguang's average sleep time increased from 4.8 hours at the beginning of the year to 6.2 hours by the end of the year, and the frequency of sedentary alerts decreased by 40%. This reflects an improvement in his health habits through the health dashboard project and social supervision, with his knowledge transitioning from a state of crisis to one of active improvement.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "I pulled another all-nighter last night to finish that algorithm. The red text on the terminal looked like it was sounding an alarm. My caffeine intake is 200% over the limit today, my neck feels rusted stiff, and my heart is beating a bit too fast. This can’t go on, but I really don’t have time to go to the hospital.",
-          "image": "1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Mr. Lin, take a look at this! I've pulled the data from the health dashboard for the past year and compiled an annual report. The blue curve represents sleep duration, showing an overall upward trend from 4.8 hours at the beginning of the year to 6.2 hours by the end. The red bar chart indicates sedentary alerts, which have significantly decreased in the fourth quarter, with a frequency drop of 40%. Thanks to your supervision, the first phase of the 'Health Project' has largely met its KPIs!",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "The question examines cross-session knowledge updates, from the health crisis in Session 1 to the improvement report in Session 12, reflecting memory revision and consistency maintenance.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ005"
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In Session 3, Lin Xingwan proposed experiencing \"It Takes Two\" and \"Overcooked\" for a social and cultural observation of gaming. In the New Year's Eve gaming session of Session 15, what games did they actually play? How did this update the previous plan?"
       },
       "original_answer": "During the New Year's Eve gaming session in Session 15, they actually played \"Peace Elite.\" This updated the previous plan, shifting from cooperative games to tactical battle royale games for the New Year's Eve activities, reflecting flexible adjustments and situational adaptation.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Knowledge Resolution"
+        "main_type": "Memory Recall",
+        "sub_type": "Knowledge Resolution"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "3",
-          "turn": 1,
-          "content": "Morning Light, I've just finished outlining the proposal for 'Observations on Social Gaming Culture in Campus Life.' I'm sending it over for you to review. This time, I want to explore how non-verbal collaboration builds默契 in games—like how players coordinate through actions and rhythm, not just chat.",
-          "image": "1.png"
-        },
-        {
-          "session": "15",
-          "turn": 2,
-          "content": "Haha, Lin Xingwan, Happy New Year! Of course, I’d love to. I was just wondering how to pass the time. The picture you sent is from *Peace Elite*, right? I remember we analyzed its mechanics during our previous gaming collaboration—it’s perfect for a quick round.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The question examines knowledge updates across sessions, from the planned game in Session 3 to the actual game in Session 15, reflecting memory adjustments and changes in context.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ006"
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Please arrange the following four key events in chronological order based on the timeline: A. Lu Chenguang receives a job offer and discusses buying a new computer; B. The two engage in an online New Year's Eve game; C. Lu Chenguang presents an annual report showing an improvement in sleep time from 4.8 hours to 6.2 hours; D. The two discuss the campus hot topic of dormitory adjustment policies."
       },
       "original_answer": "The correct chronological order is D -> C -> A -> B.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "8",
-          "turn": 1,
-          "content": "Lin Xingwan sent a screenshot regarding the discussion on the dormitory adjustment policy. [Based on the schedule of Session 2, this event occurred between December 10 and January 6.]",
-          "image": "session8/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Lu Chenguang sent the annual data report of the health dashboard, showing that sleep improved from 4.8 hours at the beginning of the year to 6.2 hours at the end of the year. [This is a summary of the previous academic year]",
-          "image": "session12/1.png"
-        },
-        {
-          "session": "13",
-          "turn": 1,
-          "content": "Lu Chenguang mentioned receiving a summer internship offer and is now debating whether to buy a new computer. [Occurs during the new semester or internship season]",
-          "image": "session13/1.png"
-        },
-        {
-          "session": "15",
-          "turn": 1,
-          "content": "Lin Xingwan suggested playing an online game together to celebrate New Year's Eve, counting down to welcome the new year.",
-          "image": "session15/2.png"
-        }
-      ],
       "validation_notes": "It is necessary to use the schedule of Session 2 as a benchmark to infer the relative timing of other events.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ007"
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Please arrange the following three events related to the 'Health Dashboard' in chronological order: X. Lu Chenguang developed a web application for the health data dashboard; Y. Lu Chenguang encountered a terminal error and complained about health issues; Z. The two reviewed the health project and discussed their annual health reports."
       },
       "original_answer": "The correct chronological order is Y -> X -> Z.",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Temporal Reasoning"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Temporal Reasoning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Lu Chenguang sent a screenshot of the terminal error and an empty coffee bag, indicating that he felt unwell after staying up all night and experiencing a rapid heartbeat.",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lu Chenguang sent a screenshot of the health data dashboard, indicating that a local web application has been developed to capture computer usage time, step count, and sleep data.",
-          "image": "session2/1.png"
-        },
-        {
-          "session": "12",
-          "turn": 1,
-          "content": "Lu Chenguang sent the annual data report chart, showing an increase in sleep duration and a decrease in sedentary alerts. He thanked Lin Xingwan for her supervision and indicated that the first-phase KPI has been achieved.",
-          "image": "session12/1.png"
-        }
-      ],
       "validation_notes": "The question directly includes images from Session 1, which need to be sorted in conjunction with the development of subsequent sessions.",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ008"
     },
     {
-      "question_id": "Q009",
       "question": {
         "image": "",
         "text": "On March 1st, Lu Chenguang sent this screenshot of an all-night programming terminal and complained about feeling unwell. In direct response to this health crisis, what was the specific tool he later developed called?"
       },
       "original_answer": "Health Data Dashboard",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "1",
-          "turn": 1,
-          "content": "Lu Chenguang sent the image session1/1.png (terminal red error message, empty coffee bag) and said: 'Another all-nighter... feeling like my heart is beating a bit fast...'. [This is a health crisis event]",
-          "image": "session1/1.png"
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lu Chenguang sent a screenshot of the dashboard, saying: 'I've got that health data dashboard sorted out...'. [This is a direct response to Session 1]",
-          "image": "session2/1.png"
-        }
-      ],
       "validation_notes": "Examine the direct technical outcomes (effects) resulting from the image scenarios (causes).",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ009"
     },
     {
-      "question_id": "Q010",
       "question": {
         "image": "",
         "text": "On October 8th, Lu Chenguang sent this selfie showing a receding hairline and expressed anxiety. Which specific product did this directly lead to the purchase of?"
       },
       "original_answer": "Lu Chenguang purchased the \"Bawang Anti-Hair Loss Shampoo.\"",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "7",
-          "turn": 1,
-          "content": "Lu Chenguang sent a picture session7/1.png (a selfie, pointing at the hairline), saying: 'I've been staying up too much lately, and it seems my hairline is receding...'. [This is the reason]",
-          "image": "session7/1.png"
-        },
-        {
-          "session": "10",
-          "turn": 1,
-          "content": "Lu Chenguang sent a screenshot of the order and said, 'I bought the Bawang Anti-Hair Loss Shampoo you recommended, hoping it can help in an emergency.'",
-          "image": "session10/1.png"
-        }
-      ],
       "validation_notes": "Examine the subsequent shopping behavior (effect) caused by the physical condition in the picture (cause).",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ010"
     },
     {
-      "question_id": "Q011",
       "question": {
         "image": "",
         "text": "Lin Xingwan mentioned on September 10th, \"the screenshot of the health data dashboard you previously sent.\" Could you please specify which image this refers to from the ones previously sent by Lu Chenguang? Provide the session number and the image file name."
       },
       "original_answer": "1.png in session2",
-      "answer_source": "cross_session_converted",
       "answer_session": [
         "session0"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "cross-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "6",
-          "turn": 2,
-          "content": "Lin Xingwan said, 'Based on the screenshot of the health data dashboard you previously sent, I've created a new prototype.' (Text reference).",
-          "image": ""
-        },
-        {
-          "session": "2",
-          "turn": 1,
-          "content": "Lu Chenguang sent the image session2/1.png (a screenshot of the health data dashboard), displaying the monitoring interface for various health indicators. [This is the referenced image entity]",
-          "image": "session2/1.png"
-        }
-      ],
       "validation_notes": "Use the text reference from Session 6 (the previously shared Kanban screenshot) to recall the image from Session 2 (the Kanban screenshot).",
       "generated_at": "2026-04-01T17:05:33.138338",
       "validated": true,
       "original_question_id": "CSQ011"
     }
-  ],
-  "summary": {
-    "total_questions": 11,
-    "by_type": {
-      "Unimodal Precise Recall": 2,
-      "Cross-modal Related Retrieval": 2,
-      "Knowledge Resolution": 2,
-      "Temporal Reasoning": 2,
-      "Multimodal Causal Inference": 2,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 4,
-      "hard": 4
-    },
-    "converted_from_cross_session": true
-  }
+  ]
 }

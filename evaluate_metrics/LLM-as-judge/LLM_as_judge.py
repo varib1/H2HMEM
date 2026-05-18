@@ -184,17 +184,25 @@ class QuestionLLMJudgeResult:
 class LLMJudgeBatchEvaluator:
     """LLM评判器 - 批量评估，每次API调用评估一个session的全部结果"""
     
-    # 问题类别映射
+    # 问题类别映射 - 更新为新的 sub_type 类别名称
     QUESTION_TYPES = {
         "Unimodal Precise Recall": "单模态精确回忆",
         "Cross-modal Related Retrieval": "跨模态相关检索",
         "Knowledge Resolution": "知识维持",
         "Temporal Reasoning": "时间推理",
         "Multimodal Causal Inference": "多模态因果推理",
-        "Reference & Evolution Tracking": "指代与演变追踪",
-        "Test-Time Learning (TTL)": "测试时学习",
-        "Conflict Detection (CD)": "冲突检测",
-        "Answer Refusal (AR)": "答案拒绝"
+        "Cross-turn Reference Tracking": "跨轮次指代追踪",
+        "Test-Time Learning": "测试时学习",
+        "Conflict Detection": "冲突检测",
+        "Answer Refusal": "答案拒绝"
+    }
+    
+    # 旧类别名称到新类别的映射（向后兼容）
+    LEGACY_CATEGORY_MAPPING = {
+        "Test-Time Learning (TTL)": "Test-Time Learning",
+        "Conflict Detection (CD)": "Conflict Detection",
+        "Answer Refusal (AR)": "Answer Refusal",
+        "Reference & Evolution Tracking": "Cross-turn Reference Tracking"
     }
     
     def __init__(self, config: Dict[str, Any]):
@@ -409,6 +417,14 @@ Here are the questions to evaluate:
             logger.debug(f"响应文本: {response_text[:500]}")
             return {}
     
+    def _map_category(self, category: str) -> str:
+        """将类别名称映射到标准格式"""
+        if category in self.QUESTION_TYPES:
+            return category
+        if category in self.LEGACY_CATEGORY_MAPPING:
+            return self.LEGACY_CATEGORY_MAPPING[category]
+        return category
+    
     @tenacity.retry(
         stop=tenacity.stop_after_attempt(3),
         wait=tenacity.wait_exponential(multiplier=1, min=1, max=10),
@@ -525,7 +541,7 @@ Here are the questions to evaluate:
         """从文件路径中提取对话名称"""
         parts = file_path.parts
         for part in parts:
-            if part.startswith('对话'):
+            if part.startswith('dialogue') or part.startswith('对话'):
                 return part
         return "unknown"
     
@@ -579,12 +595,22 @@ Here are the questions to evaluate:
                 system_answer = item.get('system_answer', '').strip()
                 original_answer = item.get('original_answer', '').strip()
                 
+                # 获取类别：适配新的 question_type 结构
+                category = item.get('category', '')
+                if not category:
+                    qtype = item.get('question_type', {})
+                    if isinstance(qtype, dict):
+                        category = qtype.get('sub_type', 'unknown')
+                
+                # 映射类别名称
+                category = self._map_category(category)
+                
                 questions_for_eval.append({
                     'question_id': question_id,
                     'question_text': question_text,
                     'ground_truth': original_answer,
                     'model_output': system_answer,
-                    'category': item.get('category', 'unknown'),
+                    'category': category,
                     'difficulty': item.get('difficulty', 'unknown')
                 })
             
@@ -608,6 +634,14 @@ Here are the questions to evaluate:
             for item in results_list:
                 question_id = item.get('question_id', '')
                 
+                # 获取类别
+                category = item.get('category', '')
+                if not category:
+                    qtype = item.get('question_type', {})
+                    if isinstance(qtype, dict):
+                        category = qtype.get('sub_type', 'unknown')
+                category = self._map_category(category)
+                
                 # 获取LLM评估结果
                 eval_result = eval_results.get(question_id, {})
                 llm_score = eval_result.get('score', 0.0)
@@ -621,7 +655,7 @@ Here are the questions to evaluate:
                     dialogue_name=dialogue_name,
                     question_id=question_id,
                     question_text=item.get('question_text', ''),
-                    category=item.get('category', 'unknown'),
+                    category=category,
                     difficulty=item.get('difficulty', 'unknown'),
                     original_answer=item.get('original_answer', ''),
                     system_answer=item.get('system_answer', ''),
@@ -740,19 +774,27 @@ Here are the questions to evaluate:
         
         output_folder.mkdir(parents=True, exist_ok=True)
         
-        # 查找所有结果文件
+        # 查找所有结果文件 - 支持 dialogue 和 对话 两种命名格式
         result_files = []
         
         # 确定要处理的对话
         if dialogues:
-            dialogue_folders = [base_path / d for d in dialogues]
-        else:
-            # 查找所有对话文件夹
             dialogue_folders = []
-            for i in range(1, 21):
-                dialogue_folder = base_path / f"对话{i}"
-                if dialogue_folder.exists():
-                    dialogue_folders.append(dialogue_folder)
+            for d in dialogues:
+                # 尝试两种命名格式
+                for name in [d, f"dialogue{d.replace('对话', '')}", f"对话{d.replace('dialogue', '')}"]:
+                    folder = base_path / name
+                    if folder.exists():
+                        dialogue_folders.append(folder)
+                        break
+        else:
+            # 查找所有对话文件夹（支持两种命名格式）
+            dialogue_folders = []
+            for pattern_name in ["dialogue*", "对话*"]:
+                for folder in base_path.glob(pattern_name):
+                    if folder.is_dir():
+                        dialogue_folders.append(folder)
+            dialogue_folders = sorted(set(dialogue_folders))
         
         logger.info(f"找到 {len(dialogue_folders)} 个对话文件夹")
         
@@ -773,15 +815,18 @@ Here are the questions to evaluate:
             logger.info(f"  找到 {len(session_folders)} 个session文件夹")
             
             for session_folder in session_folders:
-                # 查找evaluation_results文件夹
-                eval_results_folder = session_folder / "evaluation_results"
+                # 查找 evaluation_results_qwen_3B 或 evaluation_results 文件夹
+                eval_results_folder = session_folder / "evaluation_results_qwen_3B"
                 if not eval_results_folder.exists():
-                    logger.debug(f"    evaluation_results文件夹不存在: {eval_results_folder}")
-                    continue
+                    eval_results_folder = session_folder / "evaluation_results"
+                    if not eval_results_folder.exists():
+                        logger.debug(f"    evaluation_results文件夹不存在: {eval_results_folder}")
+                        continue
                 
                 # 查找符合模式的结果文件
                 for result_file in eval_results_folder.glob(pattern):
                     # 从文件名提取记忆类型
+                    # 文件名格式: results_<memory_type>.json
                     memory_type = result_file.stem.replace("results_", "")
                     
                     # 如果指定了记忆类型，进行过滤
@@ -1035,19 +1080,19 @@ Here are the questions to evaluate:
         # 按类别统计
         report_lines.append("【Statistics by Question Category】")
         report_lines.append("-" * 100)
-        report_lines.append(f"{'Category':<35} {'Count':<8} {'Avg Score':<10}")
+        report_lines.append(f"{'Category':<40} {'Count':<8} {'Avg Score':<10}")
         report_lines.append("-" * 100)
         
         for category, cat_stats in stats['by_category'].items():
             chinese_name = cat_stats['chinese_name']
-            display = f"{chinese_name}/{category}"
-            if len(display) > 34:
-                display = display[:31] + "..."
+            display = f"{chinese_name}({category})"
+            if len(display) > 39:
+                display = display[:36] + "..."
             
             if cat_stats['count'] == 0:
-                report_lines.append(f"{display:<35} {'(none)':<8} {'--':<10}")
+                report_lines.append(f"{display:<40} {'(none)':<8} {'--':<10}")
             else:
-                report_lines.append(f"{display:<35} {cat_stats['count']:<8} {cat_stats['avg_score']:<10.4f}")
+                report_lines.append(f"{display:<40} {cat_stats['count']:<8} {cat_stats['avg_score']:<10.4f}")
         
         report_lines.append("")
         
@@ -1065,11 +1110,11 @@ Here are the questions to evaluate:
         # 按对话统计
         report_lines.append("【Statistics by Dialogue】")
         report_lines.append("-" * 50)
-        report_lines.append(f"{'Dialogue':<10} {'Count':<8} {'Avg Score':<10}")
+        report_lines.append(f"{'Dialogue':<15} {'Count':<8} {'Avg Score':<10}")
         report_lines.append("-" * 50)
         
         for dialogue, dia_stats in stats['by_dialogue'].items():
-            report_lines.append(f"{dialogue:<10} {dia_stats['count']:<8} {dia_stats['avg_score']:<10.4f}")
+            report_lines.append(f"{dialogue:<15} {dia_stats['count']:<8} {dia_stats['avg_score']:<10.4f}")
         
         report_lines.append("")
         
@@ -1309,7 +1354,7 @@ def main():
     parser.add_argument('--sessions', '-s', type=str, nargs='+',
                        help='要评估的session列表，如 session1 session2 (默认: 评估所有)')
     parser.add_argument('--pattern', type=str, default='results_multimodal.json',
-                       help='结果文件的命名模式 (默认: results_*.json)')
+                       help='结果文件的命名模式 (默认: results_multimodal.json)')
     
     # API配置
     parser.add_argument('--api_key', type=str,
@@ -1372,13 +1417,19 @@ def main():
     if args.list_memory_types:
         memory_types = set()
         root_path = Path(args.root_folder)
-        for dialogue in root_path.glob("对话*"):
-            for session in (dialogue / "scenes").glob("session*"):
-                eval_folder = session / "evaluation_results"
-                if eval_folder.exists():
-                    for result_file in eval_folder.glob("results_*.json"):
-                        memory_type = result_file.stem.replace("results_", "")
-                        memory_types.add(memory_type)
+        # 支持 dialogue 和 对话 两种命名格式
+        for dialogue_pattern in ["dialogue*", "对话*"]:
+            for dialogue in root_path.glob(dialogue_pattern):
+                if not dialogue.is_dir():
+                    continue
+                for session in (dialogue / "scenes").glob("session*"):
+                    eval_folder = session / "evaluation_results_qwen_3B"
+                    if not eval_folder.exists():
+                        eval_folder = session / "evaluation_results"
+                    if eval_folder.exists():
+                        for result_file in eval_folder.glob(args.pattern):
+                            memory_type = result_file.stem.replace("results_", "")
+                            memory_types.add(memory_type)
         
         print("\n找到的记忆系统类型:")
         for mt in sorted(memory_types):

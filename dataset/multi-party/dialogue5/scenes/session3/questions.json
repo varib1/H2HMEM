@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,285 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the discussion about route planning, when discussing accommodations, what type of accommodation did Vicky ultimately book?"
       },
       "original_answer": "Homestay",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 13,
-          "content": "Vicky: Alright, I've successfully booked the homestay, so we can start planning the other details.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, such as the type of accommodation booked.",
       "generated_at": "2026-03-23T10:13:48.663532",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to the guide provided by Old Zhang, how much is the ticket per person for the South Slope scenic area of Changbai Mountain?"
       },
       "original_answer": "105 yuan",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 17,
-          "content": "Giant: [Sending picture: img5.jpg] Look at this luxurious hotel bathtub, staying here would be much more comfortable.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve the corresponding image based on the description of the luxury hotel bathtub mentioned in the conversation.",
       "generated_at": "2026-03-23T10:13:48.663569",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Why did they ultimately choose a homestay?"
       },
       "original_answer": "Because the homestay is cheaper and closer to the scenic area, while there are few restaurants around the luxury hotel.",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "Vicky: [Sent picture: img3.jpg] @Old Zhang This bathroom... the squat toilet is really inconvenient.",
-          "image": "img3.jpg"
-        },
-        {
-          "session": "session3",
-          "turn": 16,
-          "content": "Vicky: @Old Zhang, it's cheap, but I'm still worried about the bathroom issue.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: img3.jpg (bathroom image) triggered Vicky's concerns about the accommodation conditions.",
       "generated_at": "2026-03-23T10:13:48.663587",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, from round 6 to round 76, how is the snowman downstairs at the homestay gradually described?"
       },
       "original_answer": "From the 6th round where Xiao Bai mentioned there was a cute snowman downstairs at the homestay, to the 29th round where Lao Zhang sent a picture of the snowman, the 30th round where Xiao Bai said the snowman was too adorable, the 46th round where Xiao Bai mentioned again how cute the snowman was, and the 76th round where Xiao Bai said they were most looking forward to the super cute snowman downstairs.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "Xiao Bai: @Vicky There's a cute snowman downstairs at the homestay. I think staying here is pretty nice too.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 29,
-          "content": "Lao Zhang: [Sent picture: img7.jpg] Everyone, take a look at this snowman. It's really adorable!",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "session3",
-          "turn": 30,
-          "content": "Xiao Bai: @Old Zhang This snowman is so adorable, it feels like living here would be a lot of fun!",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 46,
-          "content": "Xiao Bai: I think the snowman downstairs at the homestay is really cute, and staying here is quite nice.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 76,
-          "content": "Xiao Bai: I'm most looking forward to the snowman downstairs—it's super cute!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking Evolution: The Yeti entity is gradually described across different rounds, progressing from textual mentions to image sharing and then to repeated emphasis.",
       "generated_at": "2026-03-23T10:13:48.663603",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the snow photography tips learned from the conversation, what issues are likely to occur when taking photos of people in the snow with a phone or camera? How should camera settings be adjusted to avoid this problem?"
       },
       "original_answer": "When taking photos in the snow, faces often appear gray. This happens because the strong reflection from the snow causes the camera to automatically reduce the exposure compensation, making faces look dark and gray. Based on the tips learned from the conversation, you should increase the exposure compensation (by one stop) to capture faces that look fair and natural.",
-      "answer_source": "inference",
       "answer_session": [
         "S5-3"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "S5-3",
-          "turn": 45,
-          "content": "Mia: [Sends picture: img11.jpg] Everyone, check out the swing in this yard. It would definitely make for a great photo.",
-          "image": "img11.jpg"
-        },
-        {
-          "session": "S5-3",
-          "turn": 46,
-          "content": "Mia: By the way, there's a little trick for taking photos in the snow: you must increase the exposure by one stop. Because the snow reflects light so strongly, the camera automatically darkens the image, which can make faces look gray. Increasing the exposure will help capture a brighter, clearer complexion.",
-          "image": ""
-        },
-        {
-          "session": "S5-3",
-          "turn": 71,
-          "content": "Xiao Bai: I'm most looking forward to the snowman downstairs—it's super cute!",
-          "image": ""
-        },
-        {
-          "session": "S5-3",
-          "turn": 72,
-          "content": "Xiao Bai: Indeed, I've already started planning which photos to take.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Assess Online Adaptability: Requires applying the newly learned general knowledge from the conversation—'Increase exposure compensation for snow photography to avoid grayish faces'—to analyze common issues in snow portrait photography and provide correct camera settings recommendations.",
       "generated_at": "2026-03-25T00:00:00.000000",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "There are many restaurants near the luxury hotel at the destination they are traveling to. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "Doraemon: @Vicky I noticed there aren't many food options around the luxury hotel. Staying there might mean we'll have to eat instant noodles.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 20,
-          "content": "Dawei: [Sending picture: img6.jpg] The restaurant density near the hotel is almost zero, so staying there isn't very convenient.",
-          "image": "img6.jpg"
-        }
-      ],
       "validation_notes": "Contradiction detection: The new information contradicts the repeated mention in the conversation that there are no restaurants near the luxury hotel.",
       "generated_at": "2026-03-23T10:13:48.663658",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, which restaurant did Gian make a reservation at?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 80,
-          "content": "Fat Tiger: Alright, I'll go ahead and make a reservation at the restaurant, trying to pick one that doesn't have too long of a wait.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal scenario: The conversation only mentions that Fat Tiger is going to make a restaurant reservation but does not specify which restaurant was booked, so the answer should be refused.",
       "generated_at": "2026-03-23T10:13:48.663674",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 1,
-      "hard": 2
-    }
-  }
+  ]
 }

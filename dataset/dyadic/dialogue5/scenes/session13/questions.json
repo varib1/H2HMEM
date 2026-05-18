@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What food did Lin Shuying prepare for the New Year's Eve reading event at the bookstore?"
       },
       "original_answer": "Simple hot drinks and snacks",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "The bookstore is hosting a small New Year's Eve reading session tonight, and I've prepared some simple hot drinks and snacks.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid original dialogue.",
       "generated_at": "2026-02-24T11:11:48.793216",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the description in the conversation, \"the bookstore has soft lighting, low music, and people sitting around reading,\" how many people are in the corresponding picture?"
       },
       "original_answer": "8 people",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "At this moment, the bookstore is bathed in soft lighting, with gentle music playing in the background. People are gathered around, reading quietly and engaging in hushed conversations.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval, Based on Relevance",
       "generated_at": "2026-02-24T11:11:48.795253",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "What comment did the problematic image lead Lin Shuying to make?"
       },
       "original_answer": "The aroma of food mingled with the scent of ink from the books.",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "There's a small New Year's Eve reading event at the bookstore tonight. I've prepared some simple hot drinks and snacks. The aroma of the food mixed with the scent of ink from the books creates a unique atmosphere.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Causal Inference Driven by Images and Text",
       "generated_at": "2026-02-24T11:11:48.795253",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is Xu Huaian's cat referred to?"
       },
       "original_answer": "Old tea, it, old cat",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 2,
-          "content": "Just like the cat and the book by the windowsill before, it always finds the warmest spot.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Yes, it always loves to join in the fun, just like during the making of the green rice balls before.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 7,
-          "content": "Just like your daughter's paintings record the old cat's location.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the cat belonging to the entity Xu Huaian across different rounds.",
       "generated_at": "2026-02-24T11:11:48.795253",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what preparations are needed to host a New Year's Eve recital?"
       },
       "original_answer": "Simple hot drinks and snacks, candles, books",
-      "answer_source": "both",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "There is a small New Year's Eve reading event at the bookstore tonight.",
-          "image": "3.png"
-        },
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Learn new information (image text and dialogue) and apply it.",
       "generated_at": "2026-02-24T11:11:48.795253",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Lin Shuying is hosting a large dance party at the bookstore and has prepared some simple hot drinks and snacks. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 4,
-          "content": "The bookstore is hosting a small New Year's Eve reading session tonight, and I've prepared some simple hot drinks and snacks.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new input information (a large-scale ball) and existing memory (a small New Year's recital).",
       "generated_at": "2026-02-24T14:11:09.179998",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which specific soup name did Xu Huaian mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Gathering around the stove at the end of the year is the oldest comfort for the Chinese people.",
-          "image": ""
-        }
-      ],
       "validation_notes": "If the information being asked about is not present, the response should be declined.",
       "generated_at": "2026-02-24T11:11:48.795253",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

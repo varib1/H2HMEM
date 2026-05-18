@@ -6,7 +6,6 @@
     "session_number": 6,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What color was the dessert takeout packaging box that Xia Qingchuan ordered late at night on August 5th?"
       },
       "original_answer": "White",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Xia Qingchuan sent the image 1.png.",
-          "image": "1.png"
-        },
-        {
-          "session": "session6",
-          "turn": null,
-          "content": "In the description of Image 1, the color of the cake packaging box is white.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Recall image details without relying on text dialogue.",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the Venn diagram describing emotional states sent by Su Mingche to Xia Qingchuan, what is the overlapping area of the three circles?"
       },
       "original_answer": "Atmosphere Investment Value",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 8,
-          "content": "You've brought up a key point. Let me send you a picture—this is a Venn diagram illustrating the drivers of emotional states.",
-          "image": "2.png"
-        },
-        {
-          "session": "session6",
-          "turn": null,
-          "content": "Image 2 depicts a Venn diagram, which is related to the text.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall relevant images based on textual information, as both are related to the same event (discussing Venn diagrams).",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "Why did Su Mingche send a problematic image in the conversation on August 5th?"
       },
       "original_answer": "Because Xia Qingchuan asked Su Mingche what the reason for his emotional eating really was.",
-      "answer_source": "inference",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 7,
-          "content": "But when emotions come, it's so hard to stop. Mingche, what exactly is the reason for this emotional eating?",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 8,
-          "content": "I'll send you a picture to take a look at. It's a Venn diagram describing emotional states. You can think about which area you fall into?",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image 1 triggered Xia Qingchuan's reflection on perfectionist tendencies, indicating a causal driving relationship.",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'Emotional Aesthetics' album mentioned by Xia Qingchuan referred to or cited?"
       },
       "original_answer": "Initially described as feeling empty while organizing an 'emotional aesthetics' album, it was later suggested as a reference for aestheticizing emotional awareness, and finally mentioned by Su Mingche as an example of ongoing practice.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 3,
-          "content": "Xia Qingchuan said, \"I've been organizing the 'Emotional Aesthetics' album all evening... Suddenly feeling a bit empty inside.\"",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 11,
-          "content": "Xia Qingchuan said, 'I can aestheticize emotional awareness too! For example, next time I feel an impulse, I can first take a photo to record my emotional state, just like the 'Emotional Aesthetics' album in Session 3.'",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 18,
-          "content": "Su Mingche said, \"Maintain this awareness; it will help you find a more sustainable balance, just like the ongoing practice of the 'Emotional Aesthetics' album we discussed in Session 3.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the reference and evolution of the topic 'Emotional Aesthetics' photo album across multiple rounds of conversation.",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Is the black packaging of the dessert takeout ordered by Xia Qingchuan late at night contradictory to the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "image_description",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 1,
-          "content": "Xia Qingchuan sent image1.png.",
-          "image": "1.png"
-        },
-        {
-          "session": "session6",
-          "turn": null,
-          "content": "In the description of Image 1, the color of the cake packaging box is white.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Detect contradictions between new input information (black packaging box) and existing memory (white).",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "What are the names of the pets mentioned in the conversation?"
       },
       "original_answer": "Snowball and Warm Sun",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session6"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session6",
-          "turn": 5,
-          "content": "Xia Qingchuan said, 'This reminds me of how Snowball lay on my keyboard during Session 4.'",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 6,
-          "content": "Su Mingche said, \"Like a warm sun intently sniffing the flowers and grass.\"",
-          "image": ""
-        },
-        {
-          "session": "session6",
-          "turn": 20,
-          "content": "Su Mingche said, \"Just like the warm sun and a snowball, we are gentle reflections of each other's emotions.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question asks for the pet's name, but there are two mentioned in the conversation (Snowball and Warm Sun). A complete answer is required, avoiding refusal to respond.",
       "generated_at": "2026-02-24T11:18:01.342094",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

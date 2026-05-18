@@ -6,7 +6,6 @@
     "session_number": 16,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,292 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What are the shortcomings of the carrying system of the old bag mentioned by Yelu in the conversation compared to the new one?"
       },
       "original_answer": "The carrying system of the old backpack is not as good as the new one, with less noticeable support in the waist area, making it less stable while walking.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 3,
-          "content": "The back system is much better than the old bag! It distributes weight to the waist noticeably, making walking much more stable.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "1.webp",
         "text": "How is the zoning principle shown in this image described in the conversation?"
       },
       "original_answer": "The camera is in the side pocket, the spare lens is on top, and the tripod is attached externally.",
-      "answer_source": "image_description",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 1,
-          "content": "I've organized the new bag according to the zoning principles you mentioned earlier. Let me send you a photo to take a look. The side-opening design is indeed convenient—the camera is in the side pocket, the spare lens is at the top, and the tripod is attached externally. This should distribute the weight reasonably, right?",
-          "image": "1.webp"
-        }
-      ],
       "validation_notes": "Text→Image: Retrieve corresponding images based on conversational text information.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "Based on this image, what design features of the backpack helped Ye Lu quickly access her camera during a short hike?"
       },
       "original_answer": "Side opening design, lumbar support",
-      "answer_source": "both",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 9,
-          "content": "Tried it out, sending you a selfie. Walked a small 5-kilometer loop, the lumbar support is really on point, camera access is super quick, took a few long-exposure shots of the stream.",
-          "image": "3.png"
-        },
-        {
-          "session": "session16",
-          "turn": 2,
-          "content": "Side-opening camera access reduces backpack sway, which is crucial on steep slopes or gravel sections, much like the safety redundancy we discussed earlier.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The answer requires combining both text and image information, as the question does not directly contain all the necessary details.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "This picture sparked a discussion between Yelu and others about using a waist bag to store small items. What items are suggested to be placed in the waist bag?"
       },
       "original_answer": "Headlamp, emergency whistle, energy bar, spare batteries, filter",
-      "answer_source": "inference",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 5,
-          "content": "I'll send a previously organized gear chart. If we add a waist pack, which small items would be suitable to move out? For example, headlamp, emergency whistle, energy bars, and so on.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session16",
-          "turn": 6,
-          "content": "Yes, headlamp, emergency whistle, energy bars, and your spare batteries and filters can all go in the waist pack.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Inferring that images drive textual discussions, focusing on causal inference.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how was the issue of 'taking the blame' mentioned by Ye Lu gradually discussed and resolved across different rounds?"
       },
       "original_answer": "The top bag has limited space; it is recommended to use a waist bag. Discuss moving small items out to resolve inconvenience issues.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 3,
-          "content": "However, the top compartment is a bit small, and my commonly used filters and batteries are a bit cramped.",
-          "image": ""
-        },
-        {
-          "session": "session16",
-          "turn": 4,
-          "content": "If the top compartment is small, consider pairing it with a lightweight waist bag or chest bag to store frequently used small items. This not only compensates for the limited space but also maintains the balance of the main bag.",
-          "image": ""
-        },
-        {
-          "session": "session16",
-          "turn": 5,
-          "content": "I'll send a previously organized gear chart. If we add a waist pack, which small items would be suitable to move out? For example, headlamp, emergency whistle, energy bars, and so on.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session16",
-          "turn": 6,
-          "content": "Yes, headlamps, emergency whistles, energy bars, and your spare batteries and filters can all go in the waist pack. This way, the top compartment of your backpack can be freed up for more important items, such as spare clothing or a rain poncho.",
-          "image": ""
-        },
-        {
-          "session": "session16",
-          "turn": 9,
-          "content": "However, the small issue of the top bag is a bit inconvenient when taking things out during breaks.",
-          "image": "3.png"
-        },
-        {
-          "session": "session16",
-          "turn": 10,
-          "content": "After addressing the issue of taking the blame with a waist bag, things should go more smoothly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the continuous operations and evolution of the 'scapegoating' topic across multiple rounds of dialogue, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "1.webp",
         "text": "Based on the leaf-rolling new bag partitioning principle learned from the conversation, in which positions of the backpack are the camera, spare lens, and tripod placed in the picture?"
       },
       "original_answer": "The camera is in the side pocket, the spare lens is on top, and the tripod is attached externally.",
-      "answer_source": "both",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 1,
-          "content": "I've organized the new bag according to the zoning principles you mentioned earlier. Let me send you a photo to take a look. The side-opening design is indeed convenient—the camera is in the side pocket, the spare lens is at the top, and the tripod is attached externally. This should distribute the weight reasonably, right?",
-          "image": "1.webp"
-        }
-      ],
       "validation_notes": "Examine and learn the newly acquired multimodal information (partition principle) and apply this knowledge to answer questions, demonstrating online adaptability.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Ye Lu mentioned in the conversation that the new bag material is water-resistant, easy to wipe, and aligns with the principle of minimal marks. If someone claims that the new bag material is absorbent and difficult to clean, does this contradict the information from the conversation?"
       },
       "original_answer": "Contradiction",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session16",
-          "turn": 11,
-          "content": "The material is water-resistant, easy to wipe clean, and adheres to the principle of leaving minimal marks.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between new input information (difficult to clean when absorbing water) and existing memory (water-resistant and easy to wipe), and verify consistency.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what brand of her new bag did Yelu mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session16"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information (brand) not mentioned in the conversation to assess the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:37:19.138181",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 4,
-      "Conflict Detection (CD)": 3
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

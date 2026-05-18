@@ -6,7 +6,6 @@
     "session_number": 12,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,156 +15,80 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What did Xia Qingchuan mention wanting to do in the conversation on December 8th?"
       },
       "original_answer": "An Annual 'Emotional Aesthetics Map'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 1,
-          "content": "Mingche, I've been sorting through this year's photos and notes lately, and suddenly had an idea: I want to create an annual 'Emotional Aesthetics Map'.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid recalling generic responses.",
       "generated_at": "2026-02-24T11:19:29.367509",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the main title of the chart that Su Mingche sent to Xia Qingchuan, which distinguishes between emotions and feelings?"
       },
       "original_answer": "MOOD WORDS",
-      "answer_source": "conversation_text/image_description",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 12,
-          "content": "When it comes to emotional vocabulary, this chart might be useful. It distinguishes between emotions and feelings, helping you label keywords more accurately.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 12,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval: Based on conversational text information, corresponding images are identified, with both being related to the same event.",
       "generated_at": "2026-02-24T11:19:29.367509",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpg",
         "text": "What is the purpose of the problem image as a visual reference in the conversation?"
       },
       "original_answer": "Xia Qingchuan's timeline to be created.",
-      "answer_source": "inference",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "I want to start from the timeline, just like this flowchart, but with more emotion.",
-          "image": "1.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text, inferring that the image sparked the subsequent textual discussion.",
       "generated_at": "2026-02-24T11:19:29.367509",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the 'photo of a coffee cup at 3 a.m.' mentioned by Xia Qingchuan referred to or cited?"
       },
       "original_answer": "Initially described directly in the third round as a 'photo of a coffee cup at 3 a.m.,' it was later associated in the third and fourth rounds with 'that late night of inspiration explosion' and 'the first time recording emotional fluctuations' from Session 1. By the fourteenth round, it was summarized as part of 'the excitement from Session 1 where you felt like you could go three days without sleep.'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session12"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session12",
-          "turn": 3,
-          "content": "That photo of the coffee cup at 3 a.m., along with your gentle reminders to pay attention to my body's signals—asking if my shoulders were tense or how my sleep had been—now feels like an important starting point.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 4,
-          "content": "Of course I remember, that was the first time you recorded your mood swings.",
-          "image": ""
-        },
-        {
-          "session": "session12",
-          "turn": 14,
-          "content": "From the excitement of \"feeling like you could go three days without sleep\" in Session 1, to the \"sense of falling\" after the project ended in Session 2, and then to starting to create the \"Emotional Aesthetics\" album in Session 3 to find balance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of entities across different rounds, focusing on changes in the reference chain.",
       "generated_at": "2026-02-24T11:19:29.367509",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 4,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1
-    },
-    "by_difficulty": {
-      "easy": 1,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

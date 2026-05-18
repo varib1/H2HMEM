@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,254 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which classic Tokyo attractions did Qin Shuo mention in the conversation?"
       },
       "original_answer": "Tokyo Tower, Senso-ji Temple, Shibuya",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Tokyo Tower, Senso-ji Temple, Shibuya—these are classic attractions, but with limited time, I'm not sure how to plan the itinerary.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the conversation, answer the price of the traditional Japanese guesthouse in Nara mentioned by Qin Shuo. How much is it per person per night?"
       },
       "original_answer": "135 yuan per night",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "Also, this traditional Japanese guesthouse in Nara has a unique style, but it's a bit far from Tokyo.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event without a causal relationship.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture caused Qin Shuo to say \"Wow, this is amazing! The information is clear, much better than my list\"? Provide the specific session number and picture file name."
       },
       "original_answer": "2.png in session1",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "[Send image: 2.png] This cartoon map might be helpful for you, as it clearly marks the attractions and transportation routes, making everything easy to understand at a glance.",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 7,
-          "content": "Wow, this is amazing! The information is so clear, much better than my list. Thank you!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Infer the driving relationship between the image content and the text content, where the image leads to the emergence of the text.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how was the homestay mentioned by Qin Shuo gradually discussed and evolved?"
       },
       "original_answer": "First, mention the newly opened homestay in Asakusa, then bring up the traditional Japanese homestay in Nara, followed by the Tokyo Imano Hostel, and ultimately recommend choosing it.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 9,
-          "content": "I've found three guesthouses. This one is newly opened in Asakusa, and it looks modern and convenient.",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "Also, this traditional Japanese guesthouse in Nara has a unique style, but it's a bit far from Tokyo.",
-          "image": "4.png"
-        },
-        {
-          "session": "session1",
-          "turn": 13,
-          "content": "This is the Imano Hostel in Tokyo, which has good reviews and comprehensive facilities, but the price is slightly higher.",
-          "image": "5.png"
-        },
-        {
-          "session": "session1",
-          "turn": 14,
-          "content": "Based on the data, I recommend the Immano Hostel. It strikes a balance between location, facilities, and cost-effectiveness, aligning with the principle of precise consumption.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and referencing methods of the same entity (homestay) across different rounds.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation, what places can be visited for a trip to Tokyo? Please incorporate the image information from the dialogue."
       },
       "original_answer": "Based on the information from the conversation's images, you can visit places such as Tokyo Tower, Senso-ji Temple, Shibuya, Yoyogi Park, Ueno Park, and Akihabara.",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "[Send image: 2.png] This cartoon map might be helpful for you, as it clearly marks the attractions and transportation routes, making everything easy to understand at a glance.",
-          "image": "2.png"
-        },
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Tokyo Tower, Senso-ji Temple, Shibuya—these are classic attractions, but with limited time, I'm not sure how to plan the itinerary.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Evaluate the model's ability to learn new information (cartoon map) and apply it during the dialogue process.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Qin Shuo's visa was processed on February 5th. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 17,
-          "content": "The flight tickets are sorted, and the visa is being processed. I haven't looked into insurance yet—do you have any recommendations?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect whether there is a contradiction between newly input information and existing memory.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Did Qin Shuo mention in the conversation that he plans to go to Osaka?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话6",
+      "answer_dialogue": "dialogue6",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:09:11.004389",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

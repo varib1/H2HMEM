@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,174 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which keyword did Lin Jianshen nominate in the conversation, mentioning that it serves both as a slogan against globalization and has become a new marketing label?"
       },
       "original_answer": "Locality",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 5,
-          "content": "I nominate 'locality' because it serves both as a slogan against globalization and has become a new marketing label.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:16:00.330961",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "According to Gu Zhizhou's mention in the conversation about seeing a very interesting phenomenon in Tokyo and comparing it with China, find the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "3.png in session12",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "Look, I saw a 'Kyoto Old Shop' sign in Tokyo, juxtaposed with the neon storefront of a Shanghai 'Guochao' brand.",
-          "image": ""
-        },
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall relevant images based on textual information, where the two are related by the same event, not causally.",
       "generated_at": "2026-02-24T11:16:00.330961",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What kind of evaluation did the problematic image provoke from Lin Jianshen?"
       },
       "original_answer": "This comparison is incisive.",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 7,
-          "content": "This comparison is quite insightful! From the perspective of textual sensitivity, it reflects the appropriation of symbols across different cultural contexts. Just as we discussed the challenges of globalization in the analysis of pet migration (Session 6), it’s worth pondering how locality is commodified. I recall you shared photos of stacked pet documents, and the complexity of administrative discipline there forms an interesting contrast with the simplification of cultural symbols in this case.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Infer the causal relationship between images and text, rather than direct associations.",
       "generated_at": "2026-02-24T11:16:00.330961",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "2.png",
         "text": "In the conversation, how is the question image referred to or cited?"
       },
       "original_answer": "\"Mind map\", \"Concrete tools such as your mind map\".",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 2,
-          "content": "What a coincidence, I also made a similar mind map during the flight and just took a photo of it.",
-          "image": "2.png"
-        },
-        {
-          "session": "session13",
-          "turn": 15,
-          "content": "From an academic rigor perspective, this conversation has deepened my understanding of cultural keywords, particularly through the use of tangible tools like your mind map and my notebook, which made abstract concepts more vivid.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the referential evolution of the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:16:00.330961",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In this conversation, what movie did Lin Jianshen mention as her favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T14:15:31.900485",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

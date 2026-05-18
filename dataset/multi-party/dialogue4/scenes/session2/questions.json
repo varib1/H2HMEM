@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,266 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation on October 20th, what was the price of the cake in yuan?"
       },
       "original_answer": "88 yuan",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 12,
-          "content": "The cake on the bill costs 88 yuan per piece, what a rip-off!",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts (prices) from the conversation.",
       "generated_at": "2026-03-23T10:11:24.563064",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the vintage chandelier and velvet sofa mentioned in the conversation, what are the colors of the chandelier and sofa?"
       },
       "original_answer": "White",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "The vintage chandelier and velvet sofa in this shop look really beautiful!",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "",
-          "image": "img2.jpg"
-        }
-      ],
       "validation_notes": "Text → Image: Based on the textual information from the conversation (vintage chandelier and velvet sofa), retrieve the corresponding image (img2.jpg).",
       "generated_at": "2026-03-23T10:11:24.563099",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "img4.jpg",
         "text": "What suggestion did the problematic image prompt from Mia?"
       },
       "original_answer": "I think you could slightly touch up the nasolabial folds in the photo to make it look even better.",
-      "answer_source": "inference",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 15,
-          "content": "That passerby's bag is fake; I noticed it from Figure 9.",
-          "image": "img9.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text: img9.jpg (Figure 9) sparked a discussion about whether the passerby's bag is counterfeit (Round 15).",
       "generated_at": "2026-03-23T10:11:24.563118",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "img4.jpg",
         "text": "In a conversation, how are issues referred to and discussed?"
       },
       "original_answer": "Originally sent by Chloe as a selfie (Round 18), then Mia suggested retouching the nasolabial folds (Round 19), Nina mentioned lighting issues (Round 20), and finally, Mia sent the retouched version after editing (Round 21).",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 18,
-          "content": "Check out my selfie; the lighting really isn't that great.",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 19,
-          "content": "I think you could slightly touch up the nasolabial folds in the photo; it would look even better.",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 20,
-          "content": "I agree, the lighting does make my skin look a bit dull.",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "session2",
-          "turn": 21,
-          "content": "Alright, I've added a filter and adjusted some facial details for you.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "Tracking Evolution: Monitor the reference and discussion evolution of Chloe's selfie image (img4.jpg) across multiple rounds of conversation.",
       "generated_at": "2026-03-23T10:11:24.563135",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the knowledge about photo editing learned from the conversation, what type of filter should be used to improve the effect when taking a selfie in poor indoor lighting?"
       },
       "original_answer": "Warm tone filter",
-      "answer_source": "inference",
       "answer_session": [
         "S4-2"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "S4-2",
-          "turn": 6,
-          "content": "Chloe: [Sent picture: img4.jpg] Check out my selfie, the lighting really isn't that great.",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "S4-2",
-          "turn": 8,
-          "content": "Nina: @Mia I agree, the lighting does make my skin look a bit dull.",
-          "image": ""
-        },
-        {
-          "session": "S4-2",
-          "turn": 9,
-          "content": "Mia: [Sending picture: img5.jpg] Alright, I've added a filter and adjusted some facial details for you. The indoor lighting wasn't great, so I specifically chose a warm-toned filter to make the skin appear more natural and less dull.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "S4-2",
-          "turn": 10,
-          "content": "Una: @Mia Wow, that looks so much better! The skin appears particularly smooth.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Assess online adaptability: Require the application to utilize the newly learned general knowledge that 'warm-toned filters are suitable for use in low indoor lighting' from the dialogue, and provide photo editing suggestions for Chloe's selfie along with an explanation of the reasons.",
       "generated_at": "2026-03-25T00:00:00.000000",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "On October 25th, after everyone was tired from shopping, they went to the library. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 0,
-          "content": "Core Anchor: After a tiring weekend of shopping, everyone headed to a trendy internet-famous coffee shop.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new input information (going to the library) and existing memory (going to the coffee shop).",
       "generated_at": "2026-03-21T05:30:42.326242",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, who mentioned what their favorite movie is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话4",
+      "answer_dialogue": "dialogue4",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (favorite movie), the response should be declined.",
       "generated_at": "2026-03-23T10:11:24.563206",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

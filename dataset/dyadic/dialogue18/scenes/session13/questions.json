@@ -6,7 +6,6 @@
     "session_number": 13,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,228 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the extra meal shared by Shi Yan after the forest survey, what were the mushrooms and wild fruits wrapped in?"
       },
       "original_answer": "Clean leaves",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Mushrooms and wild fruits roasted and wrapped in clean leaves.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Directly recall details explicitly mentioned in the conversation without cross-modal reasoning."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the description 'brewing coffee with a portable stove and pour-over equipment' mentioned in the conversation, find the corresponding picture."
       },
       "original_answer": "3.png in session13",
-      "answer_source": "image_description",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "I brew coffee with a portable stove and pour-over equipment.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Text → Image: Recall the corresponding image based on the activity described in the conversation (making coffee)."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What comment did the image provoke from Shiyan regarding 'experientialism'?"
       },
       "original_answer": "Practicality and enjoyment are well integrated.",
-      "answer_source": "inference",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 6,
-          "content": "I brew coffee with a portable stove and pour-over equipment.",
-          "image": "3.png"
-        },
-        {
-          "session": "session13",
-          "turn": 7,
-          "content": "This reminds me of the 'experientialism' you mentioned when optimizing recipes before. In a snowy mountain environment, hot coffee not only warms the body but also boosts morale, combining practicality and enjoyment perfectly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image→Text: Image3.png (Brewing Coffee) triggered Shiyan's comment on 'Experientialism', requiring causal inference."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "'Extra meal', 'Several common edible plants in the picture', 'Wilderness diet'",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 1,
-          "content": "Share a snack made from locally available ingredients.",
-          "image": "1.png"
-        },
-        {
-          "session": "session13",
-          "turn": 3,
-          "content": "Several common edible plants in the picture",
-          "image": "1.png"
-        },
-        {
-          "session": "session13",
-          "turn": 11,
-          "content": "The same goes for outdoor dining.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: Track the evolution of the naming of image1.png across different rounds, ensuring comprehensive coverage."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information learned from the conversation, what are the key multi-dimensional verification methods Shi Yan uses when identifying edible plants?"
       },
       "original_answer": "Observe morphological characteristics, smell the scent, examine the growth site, and compare with professional guides when necessary.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 9,
-          "content": "The key is multi-dimensional verification: observe morphological characteristics, smell the scent, check the growing location, and compare with professional guides when necessary.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text → Text: Assessing the ability to learn and extract new knowledge (validation methods)."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Ye Lu said Shi Yan's knees were completely fine when descending the steep slope. Is this consistent with the content of the conversation?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session13",
-          "turn": 5,
-          "content": "The rehabilitation plan is working well, with daily aches and pains reduced, but there's still some discomfort when descending steep slopes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detect contradictions between Yelu's hypothesis and Shiyan's actual description."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, what wild fruit did Shiyan mention as his favorite?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session13"
       ],
-      "answer_dialogue": "对话18",
+      "answer_dialogue": "dialogue18",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information not mentioned in the dialogue to test the model's ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

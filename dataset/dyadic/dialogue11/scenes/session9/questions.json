@@ -6,7 +6,6 @@
     "session_number": 9,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation, which bus route did Chen Lu mention was canceled when he forwarded the news link?"
       },
       "original_answer": "Route 102",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "Route 102 is going to be discontinued, and many elderly residents in that old neighborhood are accustomed to taking this bus to the market and hospital.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoiding generic responses.",
       "generated_at": "2026-02-24T11:22:49.233320",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "During the dialogue, Fang Qing compiled a summary of cases regarding the travel difficulties faced by the elderly after the cancellation of Bus Route 102. How many types of cases of elderly travel difficulties are included in the summary? What are the first two?"
       },
       "original_answer": "Four types, the first two suffer from arthritis, making it difficult to walk to the new station; regular medical visits are delayed due to the increased travel distance.",
-      "answer_source": "both",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 8,
-          "content": "Fang Qing: [Sent picture: 2.jpg] I quickly compiled some case summaries and sent them for your review. This is similar to the promotional materials for the previous Health Corner, but with a focus on mobility challenges. For example, some elderly individuals experience increased pain after walking just a few hundred meters due to arthritis, while others with poor eyesight may get lost easily due to unclear signage at new stations.",
-          "image": "2.jpg"
-        },
-        {
-          "session": "session9",
-          "turn": 8,
-          "content": "Image 2 Description: This is a text-based image providing supplementary feedback (case summaries) on the impact of road closures on the mobility of elderly residents. The image details specific difficulties encountered by elderly residents due to transportation adjustments in various cases.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The question is based on the image content mentioned in the conversation, recalling image information that was not elaborated in the dialogue, which aligns with the second type of Cross-modal Related Retrieval.",
       "generated_at": "2026-03-01T12:36:53.097634",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Chen Lu to mention in the conversation that the potential travel difficulties caused by the bus route adjustment need to be prevented in advance? Provide the session number and image file name."
       },
       "original_answer": "1.png in session9",
-      "answer_source": "inference",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "Fang Qing, I just saw the news that the city's bus route optimization and adjustment plan has been announced. I’m forwarding the link to you and also recorded a voice message: Route 102 is going to be canceled. Many elderly people in the old residential areas there are used to taking this bus to the market and the hospital. The newly opened Route 106 runs along the main road, which is faster, but it’s about 700 to 800 meters farther from the neighborhood entrance. For elderly people with mobility issues, this could be quite inconvenient. This reminds me of when we discussed the hypoglycemia incident before, and you always emphasized \"prevention first.\" Now, with the potential travel difficulties this adjustment might bring, shouldn’t we also take preventive measures in advance?",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Inferring the causal relationship between images and text, image1.png triggered a discussion on preventing travel difficulties.",
       "generated_at": "2026-02-24T11:22:49.233320",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the case summary image sent by Fang Qing referred to or cited?"
       },
       "original_answer": "Described as a \"case summary\" in the 8th round, referred to by Chen Lu in the 9th round as \"received the images, the case is very specific and persuasive,\" and mentioned by Fang Qing in the 12th round as \"improving the case.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 8,
-          "content": "I've quickly compiled some case summaries and sent them to you for review.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 9,
-          "content": "Received the images. The case is very specific and persuasive.",
-          "image": "2.png"
-        },
-        {
-          "session": "session9",
-          "turn": 12,
-          "content": "Alright, then I'll refine the case to ensure it's anonymous and highlights the key points.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Track the evolution of references to the same image entity across different rounds.",
       "generated_at": "2026-02-24T11:22:49.233320",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information learned from the conversation, which institutions should the bus company invite to participate in the survey when planning route adjustments to avoid overlooking the needs of special groups?"
       },
       "original_answer": "Community hospital or senior citizens association",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 14,
-          "content": "I also think that in the future, when the company makes adjustments, it could invite community hospitals or senior associations to participate in the research.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question assesses online adaptability based on newly learned suggestions from the conversation.",
       "generated_at": "2026-03-08T16:39:42.726360",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The dialogue mentions that in the bus route adjustment plan, the newly opened Route 106 is about 700 to 800 meters closer to the entrance of the residential area, which is convenient for elderly people with mobility issues. Does this contradict the content of the dialogue? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session9",
-          "turn": 1,
-          "content": "The newly opened Route 106 is indeed fast as it runs along the main road, but it is about 700 to 800 meters farther from the residential area entrance, which is inconvenient for elderly people with mobility issues.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question presents information that contradicts the dialogue content (closer vs. farther), testing the ability to detect contradictions.",
       "generated_at": "2026-03-08T16:39:42.726360",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, which bus route did Chen Lu mention was canceled due to low passenger traffic?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session9"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue (low customer traffic) to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:22:49.234532",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

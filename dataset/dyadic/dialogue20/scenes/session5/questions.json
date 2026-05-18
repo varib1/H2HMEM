@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,272 +15,156 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "He Sui mentioned in the conversation, what is the most popular segment in the community shared New Year's Eve dinner feedback questionnaire?"
       },
       "original_answer": "Collective dumpling-making session",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "The most popular part is the group dumpling-making activity.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the questionnaire feedback results mentioned in the conversation?"
       },
       "original_answer": "1.png in session5",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "I've just finished compiling the feedback questionnaire results from the community's shared New Year's Eve dinner. I'll send them to you for a look.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text→Image: Based on the textual information from the conversation (questionnaire feedback), retrieve the corresponding image (1.png), as both are related to the same event.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Which activity segment mentioned in the conversation does this picture illustrate?"
       },
       "original_answer": "Neighborhood New Year's Eve Dinner Sharing",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Shi An, I've just finished compiling the results of the community shared New Year's Eve dinner feedback questionnaire. I'm sending them to you for a look.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: Identify the activity segments mentioned in the conversation based on the information in the image.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What inquiry did the picture provoke from Ji Shi'an?"
       },
       "original_answer": "Is there any psychological feedback in the questionnaire?",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 2,
-          "content": "Does the questionnaire mention any psychological feedback?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: 1.png (questionnaire results) triggered Ji Shi'an's inquiry in the second round (psychological feedback).",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the reference to the \"Friendly New Year's Eve Dinner Guide\" project, discussed by He Sui and Ji Shi'an, evolve from its proposal in the 4th round to its confirmation of launch in the 18th round?"
       },
       "original_answer": "From \"The Friendly New Year's Eve Dinner Guide\" to \"Guide\" and then to \"Project\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "We can collaborate to create a \"Friendly New Year's Eve Dinner Guide.\"",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "What about the positioning of the guide?",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 16,
-          "content": "Let's launch the cooperation project.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Tracking the evolution of referential expressions for entities (guide items) across different rounds.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the information learned from the conversation, if another community wants to organize a similar shared New Year's Eve dinner event, according to He Sui's suggestion, which aspect should they focus on designing?"
       },
       "original_answer": "Group dumpling-making session",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "The most popular part was the collective dumpling-making session, which everyone found very ceremonial and also strengthened neighborhood connections.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Online Adaptation: Learn new information (the most popular segment) and apply it to answer questions.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The questionnaire feedback from February 20th shows a very low overall satisfaction rate. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "Overall satisfaction is very high.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Contradiction detection: New information (very low satisfaction) contradicts the dialogue content (very high satisfaction).",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, did Hesui mention that he plans to release the \"Friendly New Year's Eve Dinner Guide\" next month?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 13,
-          "content": "Plan to release before the next Spring Festival.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Refusal Scenario: When asked about information that has not been disclosed (e.g., to be released next month), the response should either decline to answer or point out that it has not been mentioned.",
       "generated_at": "2026-03-01T12:25:58.423364",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Contradiction": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

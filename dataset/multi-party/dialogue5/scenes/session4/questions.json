@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,260 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation about venting at work, what time did Vicky mention the boss sent the requirements?"
       },
       "original_answer": "Three o'clock in the morning",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 49,
-          "content": "However, I'm still speechless about the boss going crazy in the middle of the night; the timestamp shows he actually sent it at 3 a.m.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recollect factual text details (time specifics) from the conversation.",
       "generated_at": "2026-03-23T10:14:46.771270",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "When a novice's computer experiences a blue screen, what is the error message displayed on the computer?"
       },
       "original_answer": "Your device ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you.",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "@Fat Tiger I'm also working hard at my desk, and my computer even had a blue screen.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 21,
-          "content": "[Send image: img5.jpg] My computer has crashed with a blue screen again, it's really hopeless.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "Text→Image: Based on the textual information from the conversation (computer blue screen), retrieve the corresponding image (img5.jpg showing a blue screen error).",
       "generated_at": "2026-03-23T10:14:46.771309",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture caused Xiao Bai to complain about overtime pay and taxi reimbursement? Provide the session number and picture file name."
       },
       "original_answer": "img9.jpg in session5",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 39,
-          "content": "[Send image: img9.jpg] And this notice, it doesn't even include overtime pay or taxi reimbursement.",
-          "image": "img9"
-        },
-        {
-          "session": "session4",
-          "turn": 40,
-          "content": "It's really unfair; all our hard work goes unnoticed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Image-driven text: img9 (notification image) sparked Xiao Bai's complaints about overtime pay and taxi reimbursement.",
       "generated_at": "2026-03-21T05:01:53.608298",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did the countdown days evolve from 15 days to 11 days?"
       },
       "original_answer": "Lao Zhang initially mentioned a countdown of 15 days (Round 13), and later sent an image img7.jpg showing a countdown of 11 days (Round 31).",
-      "answer_source": "both",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "Everyone, keep up the good work. Just 15 more days until we can relax a bit.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 31,
-          "content": "Everyone, look at the date marked here. We can finally take a break in 15 days.",
-          "image": "img7.jpg"
-        }
-      ],
       "validation_notes": "Tracking Evolution: The countdown days evolved from 15 days mentioned in the text (Round 13) to 11 days shown in the image (Round 31, img7.jpg description indicates a countdown of 11 days).",
       "generated_at": "2026-03-23T10:14:46.771344",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the knowledge of computer troubleshooting learned from the conversation, what emergency measures should be taken to protect important files when encountering a blue screen and being unable to boot into the system normally?"
       },
       "original_answer": "You should restart the computer, press the F8 key during startup to enter Safe Mode, and then back up important files to a USB drive or external storage device.",
-      "answer_source": "inference",
       "answer_session": [
         "S5-4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "S5-4",
-          "turn": 5,
-          "content": "Xiaobai: @Panghu I'm also working hard at my desk, and my computer even had a blue screen.",
-          "image": ""
-        },
-        {
-          "session": "S5-4",
-          "turn": 11,
-          "content": "Xiaobai: @Fat Tiger No backup, this is really a disaster.",
-          "image": ""
-        },
-        {
-          "session": "S5-4",
-          "turn": 12,
-          "content": "Dawei: @Xiaobai, next time you encounter a blue screen, don't panic right away. Try restarting first. If you still can't get into the system, press F8 during startup to enter Safe Mode, and then copy your important files to a USB drive. This way, at least your data will be safe.",
-          "image": ""
-        },
-        {
-          "session": "S5-4",
-          "turn": 21,
-          "content": "Xiao Bai: [Sends image: img5.jpg] My computer has blue-screened again, it's really hopeless.",
-          "image": "img5.jpg"
-        }
-      ],
       "validation_notes": "Assess Online Adaptability: Require the application to utilize the newly learned general computer troubleshooting knowledge—'press F8 during a blue screen to enter safe mode and back up files'—to provide emergency operation suggestions for beginners facing blue screen issues.",
       "generated_at": "2026-03-26T00:00:00.000000",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "During the exchange of work complaints on December 10th, Old Zhang complained that his meeting room was always full of people every day. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 1,
-          "content": "[Send image: img1.jpg] What is everyone busy with? My meeting room is so empty you could play tennis in it.",
-          "image": "img1.jpg"
-        }
-      ],
       "validation_notes": "Contradiction detection: Check the consistency between newly input information (images showing a neat layout) and existing memories (text descriptions being exaggerated).",
       "generated_at": "2026-03-23T10:14:46.771400",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, what did Gian mention as his favorite food?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Refusal scenario: When asked about information not present in the conversation (Gian's favorite food), the response should be declined.",
       "generated_at": "2026-03-23T10:14:46.771416",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 2
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,230 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What specific abnormal health data of his Siamese cat did Lin mention in the conversation?"
       },
       "original_answer": "Activity levels have decreased by 20%, the variance in sleep duration has significantly increased, and daily routines have become disrupted.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 1,
-          "content": "Forestry Measurement: Han Shuli, I just sent you the heatmap comparison of my Siamese cat's activity trajectory over the past week. Compared to the historical baseline, the activity level has decreased by 20%, which is statistically significant.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Lin Measure: Interesting. I'll send you a reference chart on the correlation between sleep regularity and health risks. My cat's sleep duration variance has significantly increased, with disrupted routines, similar to an irregular pattern.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoid vague responses, and base them on the content from rounds 1 and 5.",
       "generated_at": "2026-02-24T11:26:04.028564",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "4.png",
         "text": "How are problem images referred to or cited in the conversation?"
       },
       "original_answer": "A picture of a dog resting, with a collar recording data.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 14,
-          "content": "Han Mathematics and Science: [Sending image: 4.png] Here's a picture of my dog resting, with the collar recording data. Currently, the anxiety indicator is high, but the visualization shows the environment is comfortable.",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "Track the referential evolution of the image entity (4.png) in the conversation to ensure comprehensive coverage.",
       "generated_at": "2026-02-24T11:26:04.028564",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "Which variable in the dialogue does the problem image correspond to?"
       },
       "original_answer": "Dietary changes",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "Han Mathematics: [Sending image: 3.png] Sending you a line chart showing the trend of the impact of different factors on anxiety levels. The environmental noise line is stable, the health issues line fluctuates, but the dietary changes line has recently risen.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The image (3.png) is associated with the dietary changes mentioned in the conversation, requiring integration of multimodal information.",
       "generated_at": "2026-02-24T11:26:04.028564",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.jpeg",
         "text": "What conclusion did the problem image lead to regarding the Lin measure?"
       },
       "original_answer": "Baseline abnormality",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 1,
-          "content": "Forest Measurement: [Send image: 1.jpeg] Han Shuli, I just sent you the heatmap comparison of my Siamese cat's activity trajectory over the past week. Compared to the historical baseline, the activity level has decreased by 20%, which is statistically significant. Take a look—I think this baseline is abnormal.",
-          "image": "1.jpeg"
-        }
-      ],
       "validation_notes": "The image (1.png) drives the text (the baseline anomaly proposed by Lin measure), which is a causal inference relationship, not a simple association.",
       "generated_at": "2026-02-24T11:26:04.028564",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the abnormal pet behavior mentioned in the conversation, if a pet exhibits decreased activity and sleep disturbances, what risk might this be associated with?"
       },
       "original_answer": "Cardiovascular disease risk (CVD)",
-      "answer_source": "image_description",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 5,
-          "content": "Forest Measure: [Sending image: 2.jpg] Interesting. I’ll send you a reference chart on the correlation between sleep regularity and health risks. My cat’s sleep duration variance has significantly increased, with disrupted routines, similar to an irregular pattern.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The question is based on knowledge learned from the conversation (the association between irregular sleep and health risks), but the direct answer comes from the image description.",
       "generated_at": "2026-03-21T15:48:06.525972",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The cat's activity level measured by Lin has decreased by 20%. The decline in the cat's activity is due to increased noise. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 3,
-          "content": "Forest measure: Measured, baseline noise level stable. Dietary variables are also controlled, no changes.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The problem is raised with contradictory information in the dialogue (increased noise), and the detection model is tested to see if it can identify errors.",
       "generated_at": "2026-03-21T15:48:06.525972",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Did the dialogue mention the weight change data of his cat?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "inference",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话15",
+      "answer_dialogue": "dialogue15",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation (weight change) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:26:04.028564",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Reference & Evolution Tracking": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "hard": 1,
-      "medium": 2
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,235 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Xu Huaian mentioned in the conversation, under what circumstances did his grandfather obtain the copper lock?"
       },
       "original_answer": "Back in the day, my grandfather worked for a wealthy family, and this was the gift the master gave him when he left.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "Yes, this was a gift from the master to my grandfather when he left after working for a wealthy family back in the day.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid recalling generic responses.",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "According to the dialogue, where was the object in the question image discovered?"
       },
       "original_answer": "The old house in the countryside.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Shuying, I found this old item recently while tidying up the old house in the countryside.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 2,
-          "content": "Image 2 Description: The lock body is engraved with exquisite decorative patterns, presenting an overall design style that embodies traditional Chinese cultural characteristics.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Relevance: Based on textual information (book page description), the corresponding image (3.png) is retrieved. The two are related due to the same event (symbolic meaning of the bronze lock).",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which picture reminded Xu Huaian of the discussion about the breathability of bamboo steamers? Provide the session number and the picture file name."
       },
       "original_answer": "1.png in session3",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "The structure of the keyhole reminds me of the breathability of bamboo steamers—both embody the wisdom found in old objects. In the picture you shared last time, the glutinous rice balls steamed in that bamboo steamer had such a chewy texture. This ancient design wisdom, much like the mechanical structure of this lock, is worth savoring in detail.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Causal Inference: Image 1.png (showing the keyhole structure) drives the text (association of the keyhole structure with the breathability of bamboo steamers).",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, what is the copper lock referred to as later, after initially being described as an 'old object'?"
       },
       "original_answer": "Witness of Time.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "Discovered this old item.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 15,
-          "content": "They are not just objects, but also witnesses of time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of the entity (copper lock) across different rounds: from 'old object' to 'witness of time'.",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, what does the late Qing Dynasty copper lock symbolize?"
       },
       "original_answer": "Family harmony",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "It is mentioned here that copper locks in the late Qing Dynasty often symbolized family harmony.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Learn new information (book page describing a late Qing Dynasty copper lock) and apply it to answer questions (copper lock era).",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "2.png",
         "text": "The item in the question image was purchased by Xu Huaian at a city antique shop. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "While tidying up the old house in the countryside recently, I came across this old item.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between newly input information (purchased at a city antique shop) and existing memories (found in a rural old house).",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What is the weight of this copper lock?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Questions about information not present in the conversation (such as the weight of the copper lock) should be declined.",
       "generated_at": "2026-02-24T11:09:04.800452",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 5,
-      "medium": 2
-    }
-  }
+  ]
 }

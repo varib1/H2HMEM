@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which film starring Shen Teng did Lin Jianshen mention he had watched before?"
       },
       "original_answer": "Goodbye Mr. Loser",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 3,
-          "content": "Yes, I've noticed that the movies starring Shen Teng seem to be quite good. I've also watched \"Goodbye Mr. Loser\" before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoiding generic responses.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the name of the first movie recommended by Gu Zhizhou to Lin Jianshen (excluding \"Pegasus\")?"
       },
       "original_answer": "Hello Mr. Billionaire",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "As we previously discussed, such films often innovate within the framework of their genre.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval: Recalling corresponding images (1.png) based on textual information, both are related due to a recommendation event.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image sparked Lin Jianshen's discussion on visual metaphors? Provide the session number and image file name."
       },
       "original_answer": "2.png in session3",
-      "answer_source": "inference",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "[Send image: 2.png] Recommend \"Full River Red\".",
-          "image": "2.png"
-        },
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "The red curtain on this \"Full River Red\" poster reminds me of a visual metaphor. Is it used in the film to reinforce the theme?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Causal Inference: Image 2.png (sent) drove the subsequent textual discussion (visual metaphor).",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.png",
         "text": "In the conversation, is the question image referred to and cited multiple times?"
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "I recommend this one. It explores the conflict between wealth and values, containing social critique beneath its comedic surface, and has comparability with the \"Pegasus\" series. As we discussed earlier, such films often innovate within the framework of their genre.",
-          "image": "1.png"
-        },
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "Thank you for the recommendation. I've heard of it, and the poster design is quite distinctive. From a textual perspective, does it handle the dialectic between ideals and reality like \"Pegasus\" does? I remember you mentioned last time that the film balances the idealistic tendencies of an inspirational story by depicting real-life struggles, such as Zhang Chi's car accident.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 6,
-          "content": "In the comedy genre, yes. This film uses exaggeration to portray the test of money on human nature. From another perspective, both it and \"Pegasus\" touch on themes of personal growth and societal pressure. I’ve shared some cross-cultural comparative materials showing that such themes are quite common in global film and television. This reminds me of our last discussion, where you pointed out, from the perspective of local cultural awareness, that the film incorporates Chinese-style emotional logic.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the referential evolution of entities (posters) across different rounds, from initial sharing to specific descriptions.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the dialogue, please explain the main themes and elements incorporated in Shen Teng's film \"Moon Man.\""
       },
       "original_answer": "Theme of Loneliness and Rescue, Humor and Deep Emotions",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 12,
-          "content": "Recommend \"Moon Man.\" This is a sci-fi comedy starring Shen Teng, exploring themes of loneliness and rescue. It blends humor with deep emotions, showcasing Shen Teng's versatility as an actor.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Learn new information (recommend \"Moon Man\" and its description) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The lead actor in \"Hello Mr. Billionaire\" is Shen Teng. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "No",
-      "answer_source": "both",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 4,
-          "content": "Based on the comedic and inspirational themes of \"Pegasus 2,\" I recommend \"Hello Mr. Billionaire.\" This film explores the conflict between wealth and values, embedding social critique within its comedic framework, making it comparable to the \"Pegasus\" series.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Detect potentially contradictory information that is actually consistent, verifying memory consistency.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which film directed by Stephen Chow did Gu Zhizhou recommend?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话8",
+      "answer_dialogue": "dialogue8",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Questions about information not present in the conversation should be refused to avoid hallucinations.",
       "generated_at": "2026-02-24T11:13:04.895534",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

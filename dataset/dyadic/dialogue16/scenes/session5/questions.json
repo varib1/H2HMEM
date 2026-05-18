@@ -6,7 +6,6 @@
     "session_number": 5,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,236 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is the name of Shen Jingyan's old cat?"
       },
       "original_answer": "Ink Stain",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "It is named Ink Stain because its fur resembles the ink marks found in ancient books.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts (names) from the conversation.",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which experience or location in the conversation does this image correspond to?"
       },
       "original_answer": "The growth of a Golden Retriever.",
-      "answer_source": "image_description",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "This reminds me of my Golden Retriever, who was incredibly mischievous as a puppy but now is as calm and wise as a sage.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Based on the image content (2.png), recall the corresponding dialogue experience (the growth of a Golden Retriever).",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What proposal did the picture lead Su Yu'an to make?"
       },
       "original_answer": "Recording tranquil moments through art.",
-      "answer_source": "inference",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 12,
-          "content": "No, we can follow its rhythm. Look, this is my dog resting under the table; I simply captured its natural posture. Expression is healing, and perhaps this can help you embrace this calm sorrow.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Image-driven text: 3.png (dog resting under the table) sparked Su Yu'an's proposal to use art to capture moments of tranquility.",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "1.jpg",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "It, by the window, ink stains",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "This is how it looks recently, spending most of its time curled up quietly by the window like this.",
-          "image": "1.jpg"
-        },
-        {
-          "session": "session5",
-          "turn": 7,
-          "content": "It is named Ink Stain because its fur resembles the ink marks found in ancient books.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the image (1.png) across different rounds.",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "2.png",
         "text": "Combined with this image, what concept does Su Yu'an intend to convey?"
       },
       "original_answer": "Accept the different stages of life.",
-      "answer_source": "both",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 4,
-          "content": "This reminds me of my golden retriever. He was incredibly mischievous as a puppy, but now he’s as calm and wise as a sage. Every stage has its own charm, doesn’t it? Just like we discussed earlier—embracing imperfections and accepting change.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Learn new information (characteristics and changes of Golden Retrievers), and apply this knowledge to answer questions (expressing acceptance of change).",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Check if the following information contradicts the conversation: Shen Jingyan said that Mo Hen has been eating a lot lately and is very active."
       },
       "original_answer": "Contradiction",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session5",
-          "turn": 3,
-          "content": "Recently, it has been eating very little, and the vet says this is a natural part of the aging process.",
-          "image": ""
-        },
-        {
-          "session": "session5",
-          "turn": 1,
-          "content": "This is how it looks recently, spending most of its time curled up quietly by the window like this.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the contradiction between new input information (eats a lot, active) and existing memories (eats very little, quiet).",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "How old is Mo Hen?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session5"
       ],
-      "answer_dialogue": "对话16",
+      "answer_dialogue": "dialogue16",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Information not mentioned in the question (age) should be refused to answer.",
       "generated_at": "2026-02-24T11:30:24.537187",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

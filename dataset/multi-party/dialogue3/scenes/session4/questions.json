@@ -6,7 +6,6 @@
     "session_number": 4,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,302 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which food did Lao Meng order in Chongqing to recreate the protagonist's experience?"
       },
       "original_answer": "A bowl of noodles",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 11,
-          "content": "Lao Meng: This is where the protagonist eats noodles. I took a photo of the entrance.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 13,
-          "content": "Lao Meng: I ordered the same noodles to recreate the protagonist's experience.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recalling pure textual facts from the conversation, such as event details.",
       "generated_at": "2026-03-21T05:32:37.263742",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the mention of \"photos with celebrities on the wall\" in the conversation, locate the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "img10.jpg in session4",
-      "answer_source": "image_description",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 14,
-          "content": "Pomelo: There are also photos with celebrities on the wall. It's truly a trendy internet-famous shop.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 46,
-          "content": "Lao Meng: [Sending picture: img10.jpg] Look at this wall of celebrity photos, the film crew really did come here!",
-          "image": "img10"
-        }
-      ],
       "validation_notes": "Text→Image: Based on the textual information in the conversation, retrieve the corresponding image, as both are related to the same event.",
       "generated_at": "2026-03-21T04:58:16.321430",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "",
         "text": "Which image led to the discussion about green screens and CGI effects in the conversation? Provide the session number and image file name."
       },
       "original_answer": "img5.jpg in session4",
-      "answer_source": "inference",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 20,
-          "content": "Lao Meng: [Sending picture: img5.jpg] Take a look at this photo from the shooting location; it was all green screens back then.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 21,
-          "content": "Pineapple: @老孟 If you have a green screen, the possibilities for post-production are even greater. Have you seen the final effect?",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 26,
-          "content": "Youzi: CGI indeed makes movies present effects beyond reality, which is really cool.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The image drives the textual discussion, which is a causal inference relationship, distinguishing it from cross-modal interactions.",
       "generated_at": "2026-03-23T10:12:46.808702",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how did the discussion about 'shooting locations' evolve from Hongyadong to slums?"
       },
       "original_answer": "The discussion about 'filming locations' started with Hongyadong, then moved on to slums, followed by a further discussion on the compositional similarities of slums, and finally concluded that filming locations benefit from technology to achieve perfection.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Lao Meng: [Sending picture: img3.jpg] I found a real photo of Hongyadong. Let's compare it with the scene from the movie.",
-          "image": "img3.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 9,
-          "content": "Pomelo: Also, here's a screenshot of the slums from the movie. See how similar it is to the real scene.",
-          "image": ""
-        },
-        {
-          "session": "session4",
-          "turn": 16,
-          "content": "Lao Meng: [Sends picture: img4.jpg] The composition of this slum screenshot from the movie is almost identical to reality. What do you think?",
-          "image": "img4.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 28,
-          "content": "Lao Meng: Thanks to these technologies, the locations we discussed earlier can be presented so perfectly.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution and changes in the reference chain of the 'filming location' topic across multiple rounds of dialogue.",
       "generated_at": "2026-03-23T10:12:46.808719",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the knowledge learned from the conversation, on a movie set, the background is often a large green screen, but the final movie scenes feature stunning visuals. What technology is this achieved through?"
       },
       "original_answer": "This was accomplished using CGI technology.",
-      "answer_source": "inference",
       "answer_session": [
         "S3-4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "S3-4",
-          "turn": 20,
-          "content": "Lao Meng: [Sending picture: img5.jpg] Take a look at this photo from the shooting location. It was all green screens back then.",
-          "image": "img5.jpg"
-        },
-        {
-          "session": "S3-4",
-          "turn": 22,
-          "content": "Pomelo: @Old Meng The difference between the green screen on set and the final film is really huge; CGI is amazing.",
-          "image": ""
-        },
-        {
-          "session": "S3-4",
-          "turn": 23,
-          "content": "Alex: [Send picture: img6.jpg] This is the final shot after the movie's special effects, completely indistinguishable from being shot on a green screen.",
-          "image": "img6.jpg"
-        },
-        {
-          "session": "S3-4",
-          "turn": 25,
-          "content": "Pineapple: It's truly amazing how this technology makes movies more immersive.",
-          "image": ""
-        },
-        {
-          "session": "S3-4",
-          "turn": 26,
-          "content": "Youzi: CGI indeed makes movies present effects beyond reality, which is really cool.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Assess online adaptability: Require the application to use the newly learned knowledge of 'green screen shooting + CGI synthesis' from the dialogue to answer questions about film technology. The questions directly correspond to the knowledge points explicitly discussed in the dialogue.",
       "generated_at": "2026-03-25T00:00:00.000000",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "On August 10th, the filming location they discussed for the movie is in Beijing. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session4",
-          "turn": 5,
-          "content": "Lao Meng: [Sending picture: img3.jpg] I found a real photo of Hongyadong. Let's compare it with the scene from the movie.",
-          "image": "img3.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 31,
-          "content": "Old Meng: [Sending picture: img7.jpg] The entrance of this old hotpot restaurant looks very vintage.",
-          "image": "img7.jpg"
-        },
-        {
-          "session": "session4",
-          "turn": 52,
-          "content": "Pomelo: @Pineapple No wonder it's Chongqing. Every place here has a cyberpunk vibe. You can take amazing photos anywhere.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect contradictions between new information (filming location in Beijing) and conversation memory (filming location in Chongqing), and verify consistency.",
       "generated_at": "2026-03-23T10:12:46.808776",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "When Lao Meng was traveling in Chongqing, which museum did he visit?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session4"
       ],
-      "answer_dialogue": "对话3",
+      "answer_dialogue": "dialogue3",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue (museum) to assess the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-03-23T10:12:46.808792",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Related Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

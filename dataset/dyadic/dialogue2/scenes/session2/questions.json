@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,242 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "On March 20th, Shen Qingyan mentioned how is Chen Pi's mental state?"
       },
       "original_answer": "I've been feeling down all the time.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "Chen Pi has been in low spirits recently, just as we noted last time.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-03-01T12:20:29.954154",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which item in the lab report for Chen Pi shows an elevated level?"
       },
       "original_answer": "f-SAA",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Zhixing, I just got back from the vet. This is Chenpi's test report. The doctor explained a lot, but my mind is all jumbled. Can you help me take a look?",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Based on the textual information in the dialogue (treatment direction table), recall the corresponding image (2.png). The two are related due to the same event, without a causal relationship.",
       "generated_at": "2026-03-01T12:20:29.954154",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "2.png",
         "text": "Why does Lu Zhixing need to help analyze the content of the problem image?"
       },
       "original_answer": "Because Shen Qingyan couldn't understand the pros, cons, and risks of various treatment directions in the table provided by the doctor, she needed Lu Zhixing's help to systematically analyze it in order to make a decision.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 5,
-          "content": "The doctor gave me this form, which lists several options, including conservative treatment and surgical choices, but I can't understand the pros and cons, and it feels like each one carries risks.",
-          "image": "2.png"
-        },
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "Alright, let me take a look. The table is divided into treatment approaches, specific plans, advantages and disadvantages, and risks. Conservative treatments, such as medication, are non-invasive and cost-effective, but their effects may be slower. Surgery, on the other hand, is more thorough but carries higher risks and requires a longer recovery period.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The problem type is image-driven text causal inference, inquiring about the antecedent cause of sending the image.",
       "generated_at": "2026-03-01T23:45:28.672203",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "In the conversation, how is Chen Pi's lab report gradually described?"
       },
       "original_answer": "From the first round where Shen Qingyan sent an image and requested assistance, to the second round where Lu Zhixing interpreted the abnormal indicators, and then to the eighth round where conservative treatment was recommended based on the data.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 1,
-          "content": "Zhixing, I just got back from the vet. This is Chenpi's test report. The doctor explained a lot, but my mind is all over the place. Could you help me take a look?",
-          "image": "1.png"
-        },
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "Qing Yan, don't worry, let me take a look. Hmm, the test results show several abnormal indicators, such as elevated liver enzymes and kidney function values, which could be early signs of a chronic condition.",
-          "image": "1.png"
-        },
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Based on the lab report data, the indicators are abnormal but not at a critical level. I suggest trying conservative treatment first.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Track the evolution and changes in the reference chain of the entity \"化验单\" (lab test report) in multi-turn dialogues.",
       "generated_at": "2026-03-01T12:20:29.954154",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the conversation, what are the advantages of conservative treatment for a sick pet?"
       },
       "original_answer": "The advantages of conservative treatment are its non-invasive nature and lower cost.",
-      "answer_source": "both",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 6,
-          "content": "Lu Zhixing: Alright, let me take a look. The table is divided into treatment approaches, specific plans, advantages and disadvantages, and risks. Conservative treatments, such as medication, are non-invasive and cost-effective, but their effects may be slow. Surgery, on the other hand, is more thorough but carries higher risks and requires a longer recovery period.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The question combines Picture 2 and the dialogue content, requiring the application of new knowledge (table information) and alignment with the TTL type.",
       "generated_at": "2026-03-03T01:51:37.453650",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "The lab report for Chen Pi shows critical indicators, requiring immediate surgery. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 8,
-          "content": "Lu Zhixing: Based on the lab test data, the indicators are abnormal but not yet critical. I suggest trying conservative treatment first. This aligns with logical optimization: starting with low-risk options and monitoring the effects, just like we did with PetPace records before.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The issue arises from potentially contradictory information in the dialogue (indicators critical), requiring error detection, in line with CD type.",
       "generated_at": "2026-03-03T01:51:37.453650",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, Shen Qingyan mentioned how old Chen Pi is?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the dialogue to assess the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:20:29.954154",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

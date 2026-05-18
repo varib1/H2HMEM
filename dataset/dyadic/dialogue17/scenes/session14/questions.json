@@ -6,7 +6,6 @@
     "session_number": 14,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,151 +15,89 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "How is the VeriMark plugin described in the conversation?"
       },
       "original_answer": "Open-source browser extension, automatically generates invisible encrypted markers to record modifications.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "As an open-source browser extension, it can automatically generate invisible encrypted markers for original content, with any modifications leaving a record.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Recall specific descriptions based on dialogue text information."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "2.png",
         "text": "Which topic in the conversation does this image correspond to?"
       },
       "original_answer": "Verifiable Credentials and Decentralized Identity",
-      "answer_source": "image_description",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 4,
-          "content": "This is the abstract of a paper on verifiable credentials and decentralized identity.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Image→Text: Recall corresponding dialogue topics based on image content."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.jpg",
         "text": "How is the image referred to in the conversation?"
       },
       "original_answer": "Infographic, illustrating the trade-offs between trust, privacy, and usability.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 9,
-          "content": "I created this infographic to illustrate the dynamic trade-offs between trust, privacy, and usability.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Image→Text: Tracking the evolution of image references in conversations."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Is the VeriMark plugin mentioned in the conversation closed-source?"
       },
       "original_answer": "No, VeriMark is open source.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session14",
-          "turn": 1,
-          "content": "It serves as an open-source browser extension.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text→Text: Detect contradictions between information and assumptions in the dialogue."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Does the conversation mention that Optimus Prime participated in a project called \"Digital Garden\"?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session14"
       ],
-      "answer_dialogue": "对话17",
+      "answer_dialogue": "dialogue17",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Text→Text: Ask about information that has not appeared, to test the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 1
-    }
-  }
+  ]
 }

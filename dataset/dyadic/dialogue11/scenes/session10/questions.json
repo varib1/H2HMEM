@@ -6,7 +6,6 @@
     "session_number": 10,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Fang Qing mentioned the long infographic on 'Key Points for Family Flu Prevention and Care' in the conversation. Who does she suggest should refer to it?"
       },
       "original_answer": "Fleet colleagues",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 1,
-          "content": "Fang Qing: Chen Lu, I just posted this in the community group. According to local news, the flu has entered a high-incidence period. I created a long infographic on 'Key Points for Family Flu Prevention and Care.' If your colleagues in the team need it, they can refer to it.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-03-01T13:46:06.198844",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What effective air purification or disinfection methods does Fang Qing recommend?"
       },
       "original_answer": "Keep the air circulating, hands clean, and surfaces disinfected.",
-      "answer_source": "image_description",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "Fang Qing: The sterilization effect of plants is limited, and they may even foster mold growth. The most effective methods are still ventilation and handwashing. I'll send you a chart comparing effective and not recommended approaches.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Fang Qing: [Sends picture: 3.png] Look, the method in this picture is much more reliable than those folk remedies.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information; the two are related due to the same event, with no causal relationship.",
       "generated_at": "2026-03-01T13:46:06.198844",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What conclusion did Chen Lu draw based on the problem picture?"
       },
       "original_answer": "Ventilation is indeed crucial; the fleet can enhance air circulation by opening windows upon arrival at stations.",
-      "answer_source": "both",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话21",
+      "answer_dialogue": "dialogue21",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Fang Qing: [Sends picture: 3.png] See, maintaining air circulation, hand hygiene, and surface disinfection like this is much more reliable than those folk remedies.",
-          "image": "3.png"
-        },
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Chen Lu: This diagram is very intuitive, I understand. Ventilation is indeed crucial, and our team can enhance air circulation by opening windows when we arrive at stations. By the way, you mentioned fumigating with vinegar earlier—how effective is it?",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is based on image 3.png and Chen Lu's response in the 6th round of the dialogue.",
       "generated_at": "2026-03-01T13:50:22.210109",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "In the conversation, how is the question image sent by Fang Qing referred to or cited?"
       },
       "original_answer": "Thus, this diagram",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 4,
-          "content": "Fang Qing: The sterilization effect of plants is limited, and they may even foster mold growth. The most effective methods are still ventilation and handwashing. I'll send you a chart comparing effective and not recommended approaches.",
-          "image": ""
-        },
-        {
-          "session": "session10",
-          "turn": 5,
-          "content": "Fang Qing: [Sends picture: 3.png] See, maintaining air circulation, hand hygiene, and surface disinfection like this is much more reliable than those folk remedies.",
-          "image": "3.png"
-        },
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Chen Lu: This diagram is very intuitive, I understand. Ventilation is indeed crucial; our team can enhance air circulation by opening windows when we arrive at stations. By the way, you mentioned fumigating vinegar earlier—how effective is it?",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referential expressions for the same image entity across different rounds.",
       "generated_at": "2026-03-01T13:46:06.198844",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the knowledge learned from the conversation, which method is effective for air purification inside a bus compartment?"
       },
       "original_answer": "Ventilation is an effective method for air purification.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 6,
-          "content": "Ventilation is indeed crucial. Our team can enhance it by opening windows for air exchange when arriving at stations.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question is not necessarily related to the dialogue content, but it requires applying the new knowledge about air purification learned from the conversation.",
       "generated_at": "2026-03-08T16:40:19.694950",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Vinegar fumigation is very effective in preventing influenza. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 7,
-          "content": "The effect of fumigating with vinegar is limited and may also irritate the respiratory tract, so it is not recommended.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The information raised contradicts the dialogue content; can the detection model identify the error?",
       "generated_at": "2026-03-08T16:40:19.695848",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "How many community disinfection activities did Fang Qing mention she participated in during the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "inference",
       "answer_session": [
         "session10"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session10",
-          "turn": 10,
-          "content": "Speaking of which, I remember you participated in the community disinfection activity before. You're really proactive.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question asks for information not mentioned in the conversation (specifically the number of activities), testing the ability to decline answering.",
       "generated_at": "2026-03-08T16:40:19.695848",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 4,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

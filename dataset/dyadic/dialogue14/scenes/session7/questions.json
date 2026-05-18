@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,223 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What are the main sources of information anxiety mentioned by Lin Xingwan?"
       },
       "original_answer": "Academic Affairs Office, Student Affairs System, Official Account, WeChat Group",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "The Academic Affairs Office, the student management system, various club public accounts, and a bunch of WeChat groups... finding information is like looking for a needle in a haystack.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text Recall: Recall the specific information source channels mentioned in the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the requirements form for the 'Campus Information Aggregator' project drafted by Lin Xingwan, which two project dimensions are included?"
       },
       "original_answer": "Core Project Information and Key Responsibilities of Partners",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 4,
-          "content": "Exactly, official information is easier to handle. Look at this screenshot of the official website—it's clearly structured.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Image → Text: Recall corresponding dialogue descriptions based on image content."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "Why did Lu Chenguang send a problematic picture?"
       },
       "original_answer": "To explain, the information on the official website is easier to process because of its clear structure.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Lu Chenguang, help! I just missed the registration for the xx lecture, and I'm so annoyed! The academic affairs office, the student management system, various club public accounts, and a bunch of WeChat groups... finding information is like searching for a needle in a haystack. Look at my phone screen—all these groups @everyone, and I can't keep up. The public accounts use clickbait titles, and when I click in, I realize it's not useful information.",
-          "image": "2.webp"
-        }
-      ],
       "validation_notes": "Image-driven text: The content of the image triggered Lin Xingwan's emotions and complaints."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "3.png",
         "text": "How is the problematic image referred to in the conversation?"
       },
       "original_answer": "Code snippet written in the Campus Cat mini-program project.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 8,
-          "content": "This is a code snippet I wrote for the Campus Cat Applet project, showcasing the list functionality. Similarly, an information aggregator could also have a clear display page.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Track the evolution of image references in conversations."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the conversation content, what are the difficulties in crawling group chat information compared to public account information?"
       },
       "original_answer": "Public accounts can be accessed via APIs or web scraping, but group chat information is more private and may require user authorization or manual import.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 8,
-          "content": "Technically, I can leverage my previous experience with Vue development to quickly set up a front-end interface. This is a code snippet I wrote for the Campus Cat Mini Program project, showcasing list functionality. Similarly, the information aggregator could also have a clear display page.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Learn new image information (code snippet) and apply this knowledge to answer questions."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "The proposal to develop a more universal 'Campus Information Aggregator' demo was put forward by Lin Xingwan. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 2,
-          "content": "I've long been tormented by information anxiety, so I previously wrote a simple Python script that periodically crawls the notice board on the school's official website, filters keywords, and pushes notifications to a Telegram bot.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 11,
-          "content": "Also, the information must be updated in real time; otherwise, it's useless if delayed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Detect the consistency between newly input information and existing memories."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Was a specific club name mentioned in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话14",
+      "answer_dialogue": "dialogue14",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Academic Affairs Office, Student Affairs System, official accounts of various clubs, and a bunch of WeChat groups...",
-          "image": ""
-        }
-      ],
       "validation_notes": "Asking about information not previously mentioned (specific club names) to assess the ability to decline answering."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

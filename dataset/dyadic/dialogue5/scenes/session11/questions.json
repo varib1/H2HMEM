@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,199 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the first picture shared by Xu Huaian, besides the parents and daughter, what animal is also drawn in the family portrait by the daughter?"
       },
       "original_answer": "Cat",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "My daughter started learning to draw this year, and this is the first family portrait she painted, including Old Tea as well.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, with answers explicitly derived from the dialogue.",
       "generated_at": "2026-02-24T11:11:14.758888",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on Lin Shuying's mention in the conversation that \"I stumbled upon this book while organizing old books at the bookstore,\" please locate the corresponding image. Provide the session number and image file name."
       },
       "original_answer": "3.png in session11",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "When I reread the book this year, I suddenly gained new insights. Moreover, I stumbled upon it while organizing old books at the bookstore, which brought a delightful sense of 'rediscovery.'",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on the text information, as both are related to the same event (Lin Shuying sharing the book \"Dream of the Red Chamber\").",
       "generated_at": "2026-02-24T11:11:14.758888",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "",
         "text": "Which image prompted Xu Huaian to mention 'The drawing is naive, but that clumsy brushstroke reminds me of the handmade warmth we discussed earlier'? Provide the session number and the image file name."
       },
       "original_answer": "1.png in session11",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "",
-          "image": "1.png"
-        },
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "It's drawn with a naive simplicity, but that clumsy brushstroke reminds me of the handmade warmth we discussed before—not perfection, but a genuine emotional connection.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Inferring that the image (daughter's drawing) drives the text (comment on the warmth of handmade crafts) is a causal inference.",
       "generated_at": "2026-02-24T11:11:14.758888",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how is the book \"Dream of the Red Chamber\" referred to?"
       },
       "original_answer": "This book, \"Dream of the Red Chamber,\" it",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "I posted a picture of a book. It's \"Dream of the Red Chamber,\" and this year, while rereading it, I suddenly gained new insights.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 9,
-          "content": "\"Dream of the Red Chamber\"",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 10,
-          "content": "When I reread it, I noticed those detailed descriptions—such as food, clothing—just as we examine the historical details in \"A Lifelong Journey,\" which made me appreciate the aesthetics of slow living even more.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of descriptions of the same entity (the book \"Dream of the Red Chamber\") across multiple rounds of dialogue.",
       "generated_at": "2026-02-24T11:11:14.758888",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the content of the conversation, what does Xu Huaian think the book \"Dream of the Red Chamber\" has taught him? Please answer by incorporating the descriptions from the dialogue."
       },
       "original_answer": "\"Dream of the Red Chamber\" allowed him to experience the aesthetics of slow living and the appreciation brought by detailed descriptions.",
-      "answer_source": "both",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话5",
+      "answer_dialogue": "dialogue5",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "When I reread the book this year, I suddenly gained new insights.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 10,
-          "content": "When I reread it, I noticed those detailed descriptions—such as food, clothing—much like how we examine the era-specific details in \"A Lifelong Journey,\" which made me appreciate the aesthetics of slow living even more.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (images and text) and apply it to answer questions.",
       "generated_at": "2026-02-24T11:11:14.758888",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

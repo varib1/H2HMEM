@@ -6,7 +6,6 @@
     "session_number": 1,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,212 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "According to the conversation, what should be done if the situation is severe or persistent in the emergency steps for hypoglycemia as suggested by Fang Qing?"
       },
       "original_answer": "Call 120 immediately.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 2,
-          "content": "The emergency steps are to give sugar or sugary drinks, let her rest, and if the condition is severe or persists, call 120 immediately.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Text recall, retrieve pure textual facts from the conversation, avoiding vague responses.",
       "generated_at": "2026-02-24T11:21:15.025391",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Based on the chart titled \"Simple Steps for Handling Hypoglycemia in the Carriage\" mentioned in the conversation, provide the session number and image file name."
       },
       "original_answer": "2.png in session1",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 6,
-          "content": "I've compiled a chart titled 'Simple Steps for Handling Low Blood Sugar in the Carriage,' divided into three sections: symptoms, handling, and suggestions. You can take a look.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The problem involves recalling image file names based on text content, aligning with the text-to-image type.",
       "generated_at": "2026-02-28T23:57:40.375878",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "3.png",
         "text": "What is Chen Lu's view on the problematic images?"
       },
       "original_answer": "Chen Lu believes that the card design is simple, with the red, yellow, and white color scheme being eye-catching and suitable for the carriage environment.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 10,
-          "content": "Fang Qing: [Sending image: 3.png] I've designed a prototype for a 'Bus Company Emergency Guide' card, covering how to handle low blood sugar, heatstroke, and motion sickness. What do you think?",
-          "image": "3.png"
-        },
-        {
-          "session": "session1",
-          "turn": 11,
-          "content": "Chen Lu: This card design is simple and clean, with a striking red, yellow, and white color scheme that suits the carriage environment. We can start by testing it on a small scale to gather feedback.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The question is based on image 3.png, inquiring about Chen Lu's conclusion. The answer is derived from his evaluation of the image and subsequent suggestions, representing a causal inference driven by image-based text.",
       "generated_at": "2026-02-28T23:50:06.259871",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how does Fang Qing refer to the 'motion sickness advice card' mentioned by Chen Lu in subsequent rounds?"
       },
       "original_answer": "Promote it like you handled the motion sickness incident before.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 9,
-          "content": "Yes, I remember the last motion sickness suggestion card received good feedback.",
-          "image": ""
-        },
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "I suggest creating a simple, illustrated 'Emergency Discomfort Handling Card for Common In-Cabin Situations' and distributing it to all drivers, similar to how you previously promoted the handling of motion sickness incidents.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of entity references across different rounds, from 'motion sickness advice card' to 'handling motion sickness incidents'.",
       "generated_at": "2026-02-24T11:21:15.025391",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Based on the chart \"Simple Steps for Handling Low Blood Sugar in Train Carriages\" introduced by Fang Qing in the conversation, what measures should be taken first if a passenger experiences symptoms such as palpitations and hand tremors?"
       },
       "original_answer": "Give candy or sugary drinks",
-      "answer_source": "both",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 2,
-          "content": "Typical symptoms of hypoglycemia include palpitations, trembling hands, and cold sweats, with lips turning pale in severe cases. The emergency steps are to provide sugar or sugary drinks, allow her to rest, and if the condition is severe or persists, call 120 immediately.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (charts and dialogues) and apply this knowledge to answer questions.",
       "generated_at": "2026-02-24T11:21:15.025391",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "In the conversation, which color of wind oil did Fang Qing mention?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session1"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session1",
-          "turn": 8,
-          "content": "Good idea! You can also add essential balm to deal with heatstroke or motion sickness.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Information not mentioned in the question (the color of essential balm) should not be answered to avoid hallucinations.",
       "generated_at": "2026-02-24T11:21:15.025391",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

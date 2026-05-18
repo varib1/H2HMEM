@@ -6,7 +6,6 @@
     "session_number": 11,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,255 +15,140 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "In the conversation, Hesui mentioned which two technologies are integrated into the iFLYTEK AI Learning Machine?"
       },
       "original_answer": "Speech recognition and personalized learning",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "I think iFLYTEK's products, like this AI learning device, excel in defining a new category and making smart educational tools more precise. You see, it combines speech recognition with personalized learning, which is quite innovative.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precision Recall]: Recall pure text facts from the conversation, avoiding vague responses."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image corresponds to the smart speaker mentioned in the conversation? Provide the session number and image file name."
       },
       "original_answer": "3.png in session11",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 6,
-          "content": "Yes, I have used several Xiaomi products myself, such as smart home devices. Here’s a picture for you. These products offer a good user experience and are cost-effective. Look, this smart speaker, for example, may not have the highest sales, but it represents the trend of smart home adoption, bringing technology closer to everyday life.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Cross-modal related retrieval]: Retrieving corresponding images based on textual information, where the two are related due to the same event, not causal inference."
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "1.png",
         "text": "Which brand mentioned in the conversation does this picture show?"
       },
       "original_answer": "Jingdong",
-      "answer_source": "image_description",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 1,
-          "content": "Shi An, I just saw JD.com released its annual digital products list, and it looks quite interesting. Take a look at this picture—many brands made it onto the list, like iFlytek and Xiaomi. I think this reflects this year's consumer electronics trends, and I'd like to chat with you about it.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Cross-Modal Relevance Retrieval]: Matching the brand displayed in the image with the brand mentioned in the conversation."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.png",
         "text": "What kind of evaluation did this picture trigger regarding iFLYTEK's products during the New Year season?"
       },
       "original_answer": "Innovativeness",
-      "answer_source": "inference",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 3,
-          "content": "I'll send you a picture to show you. iFLYTEK's products, like this AI learning device, I think its strength lies in defining a new category, making smart educational devices more precise. Look, it combines speech recognition and personalized learning, which is quite innovative.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: Inferring that images drive textual evaluations, focusing on causality rather than direct correlation."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the discussion about Xiaomi products evolve from specific products to more abstract concepts?"
       },
       "original_answer": "From smart speakers evolving into an ecosystem chain and market performance, to achieving balance and practicality.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 5,
-          "content": "Yes, just like when we organize events, we don't aim for the liveliest atmosphere but strive to create meaningful value. By the way, do you know much about Xiaomi? It also has many products on the list.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 6,
-          "content": "Yes, I have used several Xiaomi products myself, such as smart home devices. Here’s a picture for you. These products offer a good user experience and are cost-effective. Look, this smart speaker, for example, may not have the highest sales, but it represents the trend of smart home adoption, bringing technology closer to everyday life.",
-          "image": "3.png"
-        },
-        {
-          "session": "session11",
-          "turn": 7,
-          "content": "Xiaomi has indeed been very successful in its ecosystem chain. This reminds me of the equipment we choose for mountain climbing, which must balance functionality and durability. Xiaomi products are quite balanced in terms of technical highlights, such as connectivity and ease of use.",
-          "image": ""
-        },
-        {
-          "session": "session11",
-          "turn": 8,
-          "content": "Exactly, balance is key. Just as we previously discussed the balance of rhythm and emotional well-being, technological products also need to find a balance between innovation and practicality. Xiaomi's market performance reflects the growing consumer demand for high-value smart products.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-Round Tracking]: Track the referential evolution and descriptive changes of the same entity (Xiaomi products) across multiple rounds of dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "Based on the newly learned information about the Xiaomi Smart Speaker from the conversation, what are the main features of this product?"
       },
       "original_answer": "Good value for money",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 6,
-          "content": "Yes, I have used several Xiaomi products myself, such as smart home devices. Here’s a picture for you. These products offer a good user experience and are cost-effective. Look, this smart speaker, for example, may not have the highest sales, but it represents the trend of smart home adoption, bringing technology closer to everyday life.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Online Learning]: The ability to examine new information (description of Xiaomi Smart Speaker) and apply it."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Huawei's foldable screen phones have the highest sales. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session11",
-          "turn": 10,
-          "content": "Huawei may represent the direction of independent innovation and high-end development. Its products, such as foldable screen phones, may not have the highest sales volume, but they define new forms and drive the industry forward.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Contradiction Detection]: Detect contradictions between new input information (highest sales) and existing memory (sales may not be the highest)."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "In the conversation, did Hesui mention Apple products being on the list?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session11"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: The question involves information not present in the conversation (Apple products), testing the ability to refuse answering to avoid hallucinations."
     }
-  ],
-  "summary": {
-    "total_questions": 8,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 3,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Textual Contradiction": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 4,
-      "hard": 1
-    }
-  }
+  ]
 }

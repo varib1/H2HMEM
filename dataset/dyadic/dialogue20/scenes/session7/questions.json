@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,234 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What activity did Hesui mention he recently started practicing to improve his physical and mental state?"
       },
       "original_answer": "Meditation and yoga",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, here's a group photo from our community yoga class—we meet twice a week, and it feels incredibly relaxing.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Precision Recall]: Recall pure text facts from the conversation, avoiding vague responses."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which picture corresponds to the cycling activity mentioned in the conversation?"
       },
       "original_answer": "3.png in session7",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 7,
-          "content": "I've recently taken up cycling, heading out to the suburbs on weekends. It feels incredibly liberating. Look, here's a photo from last week of me riding on a mountain trail.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 7,
-          "content": "",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Cross-modal related retrieval]: Retrieve corresponding images based on textual information, where both are related to the same event without a causal relationship."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What kind of sharing did this picture spark for the New Year celebration?"
       },
       "original_answer": "The Practice of Meditation and Nourishment",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, here's a group photo from our community yoga class—twice a week, and it feels incredibly relaxing.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: Inferring that images drive the occurrence of text content, focusing on causal inference."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How did the New Year's greetings mentioned in the conversation evolve from yoga to skiing?"
       },
       "original_answer": "Start with yoga, then try cycling, and finally give skiing a shot.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, here's a group photo from our community yoga class—twice a week, and it feels incredibly relaxing.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 7,
-          "content": "I've recently taken up cycling, heading out to the suburbs on weekends. It feels incredibly liberating. Look, here's a photo from last week of me riding on a mountain trail.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 11,
-          "content": "I also tried skiing! Even though I'm just a beginner, the feeling of gliding down the snow slope was amazing. Look, here's a photo my friend took for me.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-Round Reference Tracking]: Tracking the evolution of sports activities and changes in reference chains across different rounds."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "4.png",
         "text": "Based on the newly learned skiing information from the conversation, what should He Sui pay attention to while skiing?"
       },
       "original_answer": "Be safe.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 12,
-          "content": "I'm really happy for you, happy New Year! Trying new sports can spark curiosity and avoid monotony. However, be careful when skiing and don't get too carried away like you do when planning events.",
-          "image": ""
-        },
-        {
-          "session": "session7",
-          "turn": 11,
-          "content": "",
-          "image": "4.png"
-        }
-      ],
       "validation_notes": "[Learning at Test Time]: The ability to examine and apply newly acquired multimodal information."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "He Sui mentioned that he has been practicing yoga recently, three times a week. Does this align with the conversation?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Shi An, you previously suggested I try meditation for wellness, and I've actually started practicing it recently! Look, here's a group photo from our community yoga class—twice a week, and it feels incredibly relaxing.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Conflict Detection]: Detects contradictions between newly input information and existing memories."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Did Hesui mention in the conversation that he recently started learning to swim?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: Information not present in the question dialogue, testing the ability to refuse to answer."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

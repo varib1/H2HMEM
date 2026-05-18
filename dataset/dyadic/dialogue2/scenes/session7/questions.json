@@ -6,7 +6,6 @@
     "session_number": 7,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,199 +15,118 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "Which two early works of Hirokazu Kore-eda did Lu Zhixing mention in the conversation?"
       },
       "original_answer": "\"Phantom Light\" and \"Still Walking\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "After watching these two, I also caught up on \"Maborosi\" and \"Still Walking.\"",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts, avoid generic responses.",
       "generated_at": "2026-03-01T12:22:34.202155",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "In the still from \"Summer and Autumn\" sent by Lu Zhixing, what was the subtitle for the scene where the female lead is picking wild fruits alone in the forest?"
       },
       "original_answer": "The sky is split in two by blue sky and dark clouds.",
-      "answer_source": "image_description",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Just finished watching \"Little Forest,\" and your recommendation was spot on. I especially loved the scene in the summer and autumn chapters where the heroine picks wild berries alone in the forest—it was so serene yet full of life. I took a screenshot, right here.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "Text-to-Image Retrieval: Locating images based on textual descriptions, both related to the same event.",
       "generated_at": "2026-03-01T12:22:34.202155",
       "validated": true
     },
     {
-      "question_id": "Q003",
       "question": {
         "image": "3.png",
         "text": "In the conversation, what conclusion did Lu Zhixing draw after the problem picture was sent?"
       },
       "original_answer": "Good content should be harmonious and sustainable, just as depicted in the poster of \"Still Walking.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 9,
-          "content": "Yes, optimization doesn't necessarily mean a fast pace. Look at this poster for \"Still Walking\"—a family taking a walk in the woods, with the scene bathed in natural light. It reminds me that good content should be like this: harmonious and sustainable. Let me share it with you.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "The question is based on image-driven textual causal inference, asking for conclusions drawn from the image.",
       "generated_at": "2026-03-01T23:46:27.243195",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "In the dialogue, what scene was the problem picture initially described as?"
       },
       "original_answer": "Initially described as the scene of the female protagonist picking wild fruits alone in the forest in \"Little Forest.\"",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 1,
-          "content": "Just finished watching \"Little Forest,\" and your recommendation was spot on. I especially loved the scene in the summer and autumn chapters where the heroine picks wild berries alone in the forest—it was so serene yet full of life. I took a screenshot, right here.",
-          "image": "1.png"
-        },
-        {
-          "session": "session7",
-          "turn": 17,
-          "content": "Recording and optimizing may inherently be one and the same. Just like these films, which capture life through imagery while simultaneously enriching our inner world.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of references to image entities in multi-turn dialogues.",
       "generated_at": "2026-03-01T12:22:34.202155",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "Based on the dialogue content, answer: Are \"Maborosi\" and \"Still Walking\" works from director Hirokazu Kore-eda's early or late period?"
       },
       "original_answer": "Early",
-      "answer_source": "inference",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session7",
-          "turn": 5,
-          "content": "I also watched \"Maborosi\" and \"Still Walking\" later, and found that his early works already focused on using imagery to capture the passage of time, much like dynamic ink paintings.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Learn the newly acquired multimodal information (text descriptions and image content) and apply it to answer questions.",
       "generated_at": "2026-03-01T12:22:34.202155",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "In the conversation, who did Lu Zhixing mention as his favorite film director?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session7"
       ],
-      "answer_dialogue": "对话2",
+      "answer_dialogue": "dialogue2",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information not present in the conversation to test the ability to refuse answering and avoid hallucinations.",
       "generated_at": "2026-03-01T12:22:34.202155",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 6,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

@@ -6,7 +6,6 @@
     "session_number": 3,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,187 +15,99 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What is Xia Qingchuan's profession?"
       },
       "original_answer": "Visual Director",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 7,
-          "content": "This is exactly what I want to discuss. As a visual director, I always strive for excellence, but perfectionism tends to make me either overly excited or easily discouraged.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:17:12.643233",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Did Xia Qingchuan have fried eggs in his breakfast on April 15th? Was there milk?"
       },
       "original_answer": "There are fried eggs, but no milk.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 5,
-          "content": "And this breakfast, when the sunlight streams in, I feel my heart is filled.",
-          "image": "3.jpg"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where both are related to the same event, not involving causal inference.",
       "generated_at": "2026-02-24T11:17:12.643233",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "4.jpg",
         "text": "Why did Xia Qingchuan send the problematic picture?"
       },
       "original_answer": "Because Su Mingche suggested that Xia Qingchuan create a personal 'Emotional Aesthetics' photo album, Xia Qingchuan responded by sending pictures, indicating that she had already started doing so.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "Good question. Since you already have a foundation in emotional journaling, I suggest creating a private 'Emotional Aesthetics' album. This album would not only capture highlights but also document those 'quiet' or 'low' moments that are treated with gentleness. Think of it as a visual integration and deepening of Session 1's 'Emotional Journaling' and Session 2's 'Self-Care Menu.'",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "",
-          "image": "4.jpg"
-        }
-      ],
       "validation_notes": "Image-driven text, causal inference rather than direct correlation.",
       "generated_at": "2026-02-24T11:17:12.643233",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the conversation, how did the 'Emotional Aesthetics' album mentioned by Xia Qingchuan evolve from its initial concept to concrete practice?"
       },
       "original_answer": "Initially, Su Mingche proposed creating an 'Emotional Aesthetics' album as a visual integration and deepening of emotional records and self-care menus. Then, Xia Qingchuan shared images of a handmade journal, indicating that she had already begun recording fragments. Finally, Xia Qingchuan agreed that the album should be more visual and planned to refine and share records of low moments.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 8,
-          "content": "I suggest creating a private 'Emotional Aesthetics' album, not only to capture highlights but also to document those 'quiet' or 'low' moments that are treated with tenderness.",
-          "image": ""
-        },
-        {
-          "session": "session3",
-          "turn": 9,
-          "content": "Like this? I've actually started making a handmade journal to record snippets like breakfast and candles. But a photo album sounds more visual and suits me better.",
-          "image": "4.jpg"
-        },
-        {
-          "session": "session3",
-          "turn": 15,
-          "content": "I will continue to refine this 'Emotional Aesthetics' album, making it a part of my daily life. Perhaps next time, I can share some records of low moments and explore how to aestheticize them.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of the same topic and changes in reference chains across multiple rounds of dialogue.",
       "generated_at": "2026-02-24T11:17:12.643233",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Which specific brand of essential oil did Xia Qingchuan mention using in his self-care ritual during the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session3"
       ],
-      "answer_dialogue": "对话10",
+      "answer_dialogue": "dialogue10",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session3",
-          "turn": 1,
-          "content": "This is last night's reading moment; the scent of the candle and essential oils made me feel particularly relaxed.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Ask about information not present in the conversation (specific essential oil brand) to assess the ability to decline answering and avoid hallucinations.",
       "generated_at": "2026-02-24T11:17:12.643233",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 5,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 2,
-      "hard": 1
-    }
-  }
+  ]
 }

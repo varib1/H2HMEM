@@ -6,7 +6,6 @@
     "session_number": 2,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,248 +15,137 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What two specific methods for preventing motion sickness did Fang Qing recommend?"
       },
       "original_answer": "Don't eat too much before traveling; press the Neiguan point (inner side of the wrist) or focus on a fixed point in the distance.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "To prevent motion sickness, you can advise passengers not to eat too much before the ride, press the Neiguan point (on the inner side of the wrist), or focus on a fixed point in the distance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Recall plain text facts from the conversation, avoiding generic responses.",
       "generated_at": "2026-02-24T11:21:21.943944",
       "validated": true
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "What is the name of the disinfectant recommended by Fang Qing to Chen Lu?"
       },
       "original_answer": "84 Disinfectant",
-      "answer_source": "image_description",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "This disinfectant can be used, but ensure proper ventilation during application.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "Recall the corresponding image based on textual information, where the two are related by the same event, not causally.",
       "generated_at": "2026-02-24T11:21:21.943944",
       "validated": true
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "2.jpg",
         "text": "What is the purpose of Fang Qing sending the problem image?"
       },
       "original_answer": "The purpose is to recommend the disinfectant in the picture to Chen Lu.",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "Fang Qing: [Sent picture: 2.jpg] You can use this disinfectant. Ensure proper ventilation when using it.",
-          "image": "2.jpg"
-        }
-      ],
       "validation_notes": "The problem type is the second scenario in Multimodal (Text-Image) Causal Inference: given an image, asking why someone sent the image, recalling the preceding cause? The answer is based on direct explanations in the conversation.",
       "generated_at": "2026-02-28T23:49:56.732494",
       "validated": true
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "In the dialogue, how is the 'Emergency Guide Card' referred to or cited?"
       },
       "original_answer": "Prototype of the \"Public Transport Company Emergency Guide\" card; \"Guide Card\"; \"That Emergency Guide Card\"; \"Emergency Guide Card\".",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "The prototype of the 'Public Transport Company Emergency Guide' card I sent you last time actually includes advice on dealing with motion sickness. The red, yellow, and white color scheme is quite eye-catching, do you remember?",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 3,
-          "content": "Of course I remember the guide card you mentioned. It was designed to be simple and practical, just like the chart you made earlier on \"Simple Steps for Handling Hypoglycemia in the Carriage,\" which clearly outlined symptoms, actions, and recommendations at a glance.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 9,
-          "content": "This reminds me of the emergency guide card you sent me, with its eye-catching red, yellow, and white color scheme that stands out instantly in the train carriage.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 11,
-          "content": "It has been almost a month since our last discussion about the hypoglycemic incident (February 15th). The suggestion I made to the company about updating the first aid kit is still in progress. If we can combine it with the idea of this 'Health Corner,' it might carry more weight.",
-          "image": ""
-        }
-      ],
       "validation_notes": "Track the evolution of referring expressions for the same entity across different rounds.",
       "generated_at": "2026-02-24T11:21:21.943944",
       "validated": true
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "",
         "text": "Fang Qing recommends using 84 disinfectant for disinfection and odor removal, but mentions it has a drawback. If a passenger is sensitive to smells, according to the conversation, which gentler odor removal method can be used instead?"
       },
       "original_answer": "Lemonade or soda water",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "You can use this disinfectant, but ensure proper ventilation when using it. Additionally, you might try lemon water or baking soda water for odor removal, as they are gentler options.",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "The issue combines images and dialogue content, requiring the learning and application of new knowledge to answer alternative deodorization methods.",
       "generated_at": "2026-03-08T16:37:40.352773",
       "validated": true
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Chen Lu suggested using essential balm to prevent motion sickness. Does this contradict the content of the conversation? Answer yes or no."
       },
       "original_answer": "Yes",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session2",
-          "turn": 4,
-          "content": "After that incident, didn't we discuss systematically preparing and suggesting to the bus company to update the contents of the first aid kit? For example, adding individually packaged glucose tablets and essential balm.",
-          "image": ""
-        },
-        {
-          "session": "session2",
-          "turn": 2,
-          "content": "To prevent motion sickness, it is advisable for passengers to avoid eating too much before the journey, press the Neiguan point (on the inner side of the wrist), or focus on a fixed point in the distance.",
-          "image": ""
-        }
-      ],
       "validation_notes": "The issue arises from potentially contradictory information in the conversation (Chen Lu suggests using essential balm to prevent motion sickness), requiring error detection and refutation based on the dialogue content.",
       "generated_at": "2026-03-08T16:37:40.352773",
       "validated": true
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "Which specific motion sickness medication name did Chen Lu mention in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session2"
       ],
-      "answer_dialogue": "对话11",
+      "answer_dialogue": "dialogue11",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "Ask about information that has not appeared to test the ability to refuse to answer and avoid hallucinations.",
       "generated_at": "2026-02-24T11:21:21.943944",
       "validated": true
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 3,
-      "medium": 3,
-      "hard": 1
-    }
-  }
+  ]
 }

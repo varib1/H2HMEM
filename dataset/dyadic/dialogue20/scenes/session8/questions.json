@@ -6,7 +6,6 @@
     "session_number": 8,
     "model": "deepseek-chat",
     "version": "1.0",
-    "question_type": "intra-session",
     "question_format": "object_format"
   },
   "session_info": {
@@ -16,222 +15,123 @@
   },
   "questions": [
     {
-      "question_id": "Q001",
       "question": {
         "image": "",
         "text": "What sport did Ji Shi'an mention in the conversation?"
       },
       "original_answer": "Beach Yoga",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Unimodal Precise Recall"
+        "main_type": "Memory Recall",
+        "sub_type": "Unimodal Precise Recall"
       },
       "difficulty": "easy",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "Seeing how your health has improved after exercising, I couldn't help but start working out too. This is the seaside yoga I've been trying lately, and it feels incredibly relaxing.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Precise Recall]: Extract the specific types of exercise mentioned by Ji Shi'an directly from the conversation."
     },
     {
-      "question_id": "Q002",
       "question": {
         "image": "",
         "text": "Which image is related to the skiing experience mentioned in the conversation?"
       },
       "original_answer": "3.png in session8",
-      "answer_source": "image_description",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Recall",
-        "subsub_type": "Cross-modal Related Retrieval"
+        "main_type": "Memory Recall",
+        "sub_type": "Cross-modal Related Retrieval"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 9,
-          "content": "Yes, just like the summit celebration in this picture, I want to experience that sense of accomplishment.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Cross-modal related retrieval]: Find relevant images based on descriptions of skiing experiences in the conversation."
     },
     {
-      "question_id": "Q004",
       "question": {
         "image": "1.png",
         "text": "What kind of sharing did this picture trigger from Ji Shi'an?"
       },
       "original_answer": "Start exercising",
-      "answer_source": "inference",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Multimodal Causal Inference"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Multimodal Causal Inference"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 2,
-          "content": "Seeing your health improve after exercising has inspired me to start working out too. This is my recent attempt at beach yoga, and it feels incredibly relaxing.",
-          "image": "1.png"
-        }
-      ],
       "validation_notes": "[Causal Inference]: The content of the picture prompted Ji Shi'an to share his workout."
     },
     {
-      "question_id": "Q005",
       "question": {
         "image": "",
         "text": "How does \"New Year's greetings\" refer to the evolution of skiing activities in conversation?"
       },
       "original_answer": "Skiing, a skiing trip",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Reasoning",
-        "subsub_type": "Reference & Evolution Tracking"
+        "main_type": "Memory Reasoning",
+        "sub_type": "Reference & Evolution Tracking"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 7,
-          "content": "I've been wanting to try skiing lately.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 20,
-          "content": "Looking forward to this skiing trip.",
-          "image": ""
-        }
-      ],
       "validation_notes": "[Cross-turn Reference Tracking]: Tracking the reference changes of skiing activities in the dialogue."
     },
     {
-      "question_id": "Q006",
       "question": {
         "image": "3.png",
         "text": "What kind of feelings does this picture evoke regarding the New Year celebration?"
       },
       "original_answer": "Sense of achievement",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Test-Time Learning (TTL)"
+        "main_type": "Memory Application",
+        "sub_type": "Test-Time Learning"
       },
       "difficulty": "medium",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 9,
-          "content": "Yes, just like the summit celebration in this picture, I want to experience that sense of achievement.",
-          "image": "3.png"
-        }
-      ],
       "validation_notes": "[Learning During Testing]: Use image information to describe the feelings of celebrating the New Year while skiing."
     },
     {
-      "question_id": "Q007",
       "question": {
         "image": "",
         "text": "Does Ji Shi'an's cervical spine condition before improvement match the description in the picture?"
       },
       "original_answer": "Inconsistent",
-      "answer_source": "both",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Conflict Detection (CD)"
+        "main_type": "Memory Application",
+        "sub_type": "Conflict Detection"
       },
       "difficulty": "hard",
-      "supporting_evidence": [
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "Yes, my cervical spine condition has improved significantly after exercising.",
-          "image": ""
-        },
-        {
-          "session": "session8",
-          "turn": 4,
-          "content": "",
-          "image": "2.png"
-        }
-      ],
       "validation_notes": "[Conflict Detection]: Detect contradictions between the text and image descriptions."
     },
     {
-      "question_id": "Q008",
       "question": {
         "image": "",
         "text": "What is the sports equipment brand mentioned by Ji Shi'an in the conversation?"
       },
       "original_answer": "Not mentioned",
-      "answer_source": "conversation_text",
       "answer_session": [
         "session8"
       ],
-      "answer_dialogue": "对话20",
+      "answer_dialogue": "dialogue20",
       "question_type": {
-        "main_type": "intra-session",
-        "sub_type": "Memory Application",
-        "subsub_type": "Answer Refusal (AR)"
+        "main_type": "Memory Application",
+        "sub_type": "Answer Refusal"
       },
       "difficulty": "easy",
-      "supporting_evidence": [],
       "validation_notes": "[Refusal to Answer]: The conversation does not mention sports equipment brands, so the question should be declined."
     }
-  ],
-  "summary": {
-    "total_questions": 7,
-    "by_type": {
-      "Unimodal Precise Recall": 1,
-      "Cross-modal Retrieval": 1,
-      "Multimodal Causal Inference": 1,
-      "Reference & Evolution Tracking": 1,
-      "Test-Time Learning (TTL)": 1,
-      "Conflict Detection (CD)": 1,
-      "Answer Refusal (AR)": 1
-    },
-    "by_difficulty": {
-      "easy": 2,
-      "medium": 3,
-      "hard": 2
-    }
-  }
+  ]
 }

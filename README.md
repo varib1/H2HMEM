@@ -73,7 +73,6 @@ bash ./caption/run_caption.sh
 | **Naive RAG** | `bash ./baselines/Naive RAG/evaluate.sh` |
 | **A-MEM** | `bash ./baselines/A-MEM/evaluate.sh` |
 
----
 
 ### 🖼️ Multimodal Methods
 

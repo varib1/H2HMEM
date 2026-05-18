@@ -119,7 +119,7 @@ We provide an online leaderboard for evaluating memory methods on **H2HMem**:
 
 If you wish to participate in the leaderboard, after running inference, you need to format your predictions according to our submission template before uploading to the leaderboard website.
 
-### Submission Template
+### 📦 Submission Template
 
 We provide a JSON template file that defines the required submission format:
 
@@ -133,7 +133,7 @@ Your final submission should include two JSON files formatted according to the t
 prediction_dyadic.json
 prediction_multi_party.json
 ```
-### Submit to Leaderboard
+### 📤Submit to Leaderboard
 
 1. Open the leaderboard website:
 

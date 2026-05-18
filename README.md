@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Usage
+## 🧪 Inference
 
 This repository supports both **text-based** and **multimodal** memory methods.
 
@@ -119,8 +119,6 @@ We provide an online leaderboard for evaluating memory methods on **H2HMem**:
 
 After running inference, you need to convert your generated predictions into the official leaderboard submission format and upload the resulting JSON files to the leaderboard website.
 
----
-
 ### 📦 Step 1 — Generate Prediction Files
 
 After inference, use the provided scripts to generate the official submission files:
@@ -137,8 +135,6 @@ prediction_multi_party.json
 ```
 
 These files follow the required leaderboard submission format.
-
----
 
 ### 📤 Step 2 — Submit to Leaderboard
 
@@ -158,8 +154,6 @@ These files follow the required leaderboard submission format.
 4. Submit your results.
 
 After submission, your method will automatically appear on the public leaderboard.
-
----
 
 ### 📌 Submission Notes
 

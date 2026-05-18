@@ -43,14 +43,20 @@ Template
       "question_image": "",
       "system_answer": "",
       "original_answer": "",
-      "category": ""
+      "question_type": {
+        "main_type": "",
+        "sub_type": ""
+      }
     },
     {
       "question_text": "",
       "question_image": "",
       "system_answer": "",
       "original_answer": "",
-      "category": ""
+      "question_type": {
+        "main_type": "",
+        "sub_type": ""
+      }
     }
     ... more predictions
   ]

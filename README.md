@@ -112,4 +112,62 @@ bash ./evaluate_metrics/LLM-as-judge/run_LLM_as_judge.sh
 - Multimodal methods directly consume image-text inputs.
 - All evaluation scripts automatically save outputs to their corresponding result directories.
 
+## 🏆 Leaderboard Submission
+
+We provide an online leaderboard for evaluating memory methods on **H2HMem**:
+
+🌐 **Leaderboard Website:**  
+[H2HMem Leaderboard](https://h2hmemleaderboard1.vercel.app/)
+
+After running inference, you need to convert your generated predictions into the official leaderboard submission format and upload the resulting JSON files to the leaderboard website.
+
+---
+
+### 📦 Step 1 — Generate Prediction Files
+
+After inference, use the provided scripts to generate the official submission files:
+
+```bash
+bash ./leaderboard/generate_submission.sh
+```
+
+This script will generate two files:
+
+```text
+prediction_dyadic.json
+prediction_multi_party.json
+```
+
+These files follow the required leaderboard submission format.
+
+---
+
+### 📤 Step 2 — Submit to Leaderboard
+
+1. Open the leaderboard website:
+
+   [H2HMem Leaderboard](https://h2hmemleaderboard1.vercel.app/)
+
+2. Upload:
+   - `prediction_dyadic.json`
+   - `prediction_multi_party.json`
+
+3. Fill in:
+   - Method name
+   - Organization / affiliation (optional)
+   - Additional method description (optional)
+
+4. Submit your results.
+
+After submission, your method will automatically appear on the public leaderboard.
+
+---
+
+## 📌 Submission Notes
+
+- Please ensure the prediction files strictly follow the provided JSON format.
+- Both dyadic and multi-party prediction files are required for complete evaluation.
+- The leaderboard evaluates submissions using the official H2HMem evaluation pipeline.
+- We recommend preserving original model outputs before post-processing for reproducibility.
+
 

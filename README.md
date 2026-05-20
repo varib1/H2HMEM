@@ -71,8 +71,8 @@ bash ./caption/run_caption.sh
 
 | Method | Command |
 |:--|:--|
-| **Full (Text)** | `bash ./baselines/Full (Text)/evaluate.sh` |
-| **Naive RAG** | `bash ./baselines/Naive RAG/evaluate.sh` |
+| **Full (Text)** | `bash ./baselines/FullText/evaluate.sh` |
+| **Naive RAG** | `bash ./baselines/Naive_RAG/evaluate.sh` |
 | **A-MEM** | 1. `bash ./baselines/A-MEM/memory_construct.sh` (build memory)<br>2. `bash ./baselines/A-MEM/evaluate.sh` (run evaluation) |
 
 
@@ -82,8 +82,8 @@ Multimodal methods directly process image-text inputs and therefore do **not** r
 
 | Method | Command |
 |:--|:--|
-| **Full (MM)** | `bash ./baselines/Full (MM)/evaluate.sh` |
-| **MuRAG** | `bash ./baselines/MURAG/evaluate.sh` |
+| **Full (MM)** | `bash ./baselines/FullMM/evaluate.sh` |
+| **MuRAG** | `bash ./baselines/MuRAG/evaluate.sh` |
 | **NGM** | `bash ./baselines/NGM/evaluate.sh` |
 
 ---

@@ -5,7 +5,6 @@ retrievers.py
 Memory Retriever Implementations - Includes SimpleEmbeddingRetriever and HybridRetriever
 """
 import os
-os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 import numpy as np
 import pickle

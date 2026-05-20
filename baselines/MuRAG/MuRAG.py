@@ -1,5 +1,4 @@
 import os
-os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 import warnings
 import json
 import logging

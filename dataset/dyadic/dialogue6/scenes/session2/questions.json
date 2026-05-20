@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue6",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text, the image 3.png (traffic rules document) sparked Qin Shuo's questions and subsequent understanding of the pedestrian priority rule.",

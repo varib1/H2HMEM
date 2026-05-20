@@ -4,41 +4,43 @@
 # NGM Memory Evaluator – Batch Processing (Linux/macOS)
 # ======================================================
 
-# --- 配置区（请根据实际情况修改）---
-BASE_DIR=""                # 对话数据根目录
-API_KEY="your-api-key"
-VLM_MODEL=""
-BASE_URL=""
-
-# NGM 参数
-ENCODER_METHOD="GMEEncoder"
-ENCODER_PATH="Alibaba-NLP/gme-Qwen2-VL-7B-Instruct"
-RETRIEVAL_TOPK=5
-SIMILARITY_THRESHOLD=0.7
-TRAVERSAL_STRATEGY="breadth_first"
-MAX_DEPTH=3
-MAX_NODES=5
-
-# 并行设置（本脚本顺序执行，如需并行可自行修改）
-# PYTHON_CMD="python3"
-# ------------------------------------
-
-PYTHON_CMD="python3"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# ==================== Path & Dataset Configuration ====================
+BASE_PATH=""          # Dataset directory (./dataset/dyadic or ./dataset/multi-party)
+START_DIALOGUE=1      # Starting dialogue number (adjust based on the dataset)
+END_DIALOGUE=20       # Ending dialogue number (adjust based on the dataset)
+SCRIPT_DIR=""         # Directory containing NGM.py
 PYTHON_SCRIPT="$SCRIPT_DIR/NGM.py"
+PYTHON_CMD="python3"  # Python command (adjust for virtual environment)
+
+# ==================== API Configuration ====================
+API_KEY=""            # API key for authentication
+BASE_URL=""           # Base URL for the API endpoint
+MODEL=""              # VLM model for evaluation (e.g., gpt-4.1-nano)
+
+# ==================== Encoder Configuration ====================
+ENCODER_METHOD="GMEEncoder"                      # Encoder type: GMEEncoder or CLIPEncoder
+ENCODER_Model="Alibaba-NLP/gme-Qwen2-VL-7B-Instruct"  # Path or name of the encoder model
+
+# ==================== Graph Construction Parameters ====================
+SIMILARITY_THRESHOLD=0.7    # Minimum similarity score for creating edges between memory nodes
+
+# ==================== Graph Traversal Parameters ====================
+RETRIEVAL_TOPK=5            # Number of top semantically similar memories to retrieve as starting nodes
+TRAVERSAL_STRATEGY="breadth_first"  # Graph traversal method: 'breadth_first' or 'depth_first'
+MAX_DEPTH=3                 # Maximum depth to traverse from starting nodes in the graph
+MAX_NODES=5                 # Maximum number of memory nodes to return after graph traversal
+
+# ==================== Runtime Settings ====================
+export TOKENIZERS_PARALLELISM=false  # Disable tokenizer parallelism to avoid multiprocessing issues
+# ================================================================
 
 if [ ! -f "$PYTHON_SCRIPT" ]; then
     echo "Error: $PYTHON_SCRIPT not found!"
     exit 1
 fi
 
-START_DIALOGUE=1
-END_DIALOGUE=20
-
-mkdir -p "$OUTPUT_BASE"
-
 for i in $(seq $START_DIALOGUE $END_DIALOGUE); do
-    CONV_DIR="${BASE_DIR}/dialogue${i}"
+    CONV_DIR="${BASE_PATH}/dialogue${i}"
     
     if [ ! -d "$CONV_DIR" ]; then
         echo "Warning: $CONV_DIR not found, skipping"
@@ -52,10 +54,10 @@ for i in $(seq $START_DIALOGUE $END_DIALOGUE); do
     $PYTHON_CMD "$PYTHON_SCRIPT" \
         --conversations_dir "$CONV_DIR" \
         --api_key "$API_KEY" \
-        --vlm_model "$VLM_MODEL" \
+        --vlm_model "$MODEL" \
         --base_url "$BASE_URL" \
         --encoder_method "$ENCODER_METHOD" \
-        --encoder_path "$ENCODER_PATH" \
+        --encoder_model "$ENCODER_Model" \
         --retrieval_topk $RETRIEVAL_TOPK \
         --similarity_threshold $SIMILARITY_THRESHOLD \
         --traversal_strategy "$TRAVERSAL_STRATEGY" \
@@ -72,5 +74,5 @@ for i in $(seq $START_DIALOGUE $END_DIALOGUE); do
 done
 
 echo "========================================"
-echo "All dialogues processed.
+echo "All dialogues processed."
 echo "========================================"

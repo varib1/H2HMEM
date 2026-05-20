@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask what someone thinks of a certain picture. The answer is directly from Cheng Yanqiu's response in the second round of the dialogue.",

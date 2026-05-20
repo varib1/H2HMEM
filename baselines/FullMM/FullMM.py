@@ -11,26 +11,26 @@ from dataclasses import dataclass, asdict, field
 from collections import defaultdict
 from natsort import natsorted
 
-# 多线程相关导入
+# Multi-threading imports
 import concurrent.futures
 import threading
 from threading import Lock, Semaphore
 from functools import partial
 
-# 图片处理和API相关
+# Image processing and API imports
 import requests
 from PIL import Image
 import base64
 from io import BytesIO
 
-# 设置日志
+# Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
 @dataclass
 class QuestionAnswerPair:
-    """问题-答案对"""
+    """Question-Answer Pair"""
     question_id: str
     session_id: str
     dialogue_name: str
@@ -41,16 +41,15 @@ class QuestionAnswerPair:
     answer_session: List[str]
     question_type: Dict[str, str]
     difficulty: str
-    supporting_evidence: List[Dict]
     image_context: Optional[List[str]] = None
     metadata: Optional[Dict] = None
     category: str = field(init=False)
     
     def __post_init__(self):
         if self.question_type:
-            subsub_type = self.question_type.get("subsub_type", "")
-            if subsub_type:
-                self.category = subsub_type
+            sub_type = self.question_type.get("sub_type", "")
+            if sub_type:
+                self.category = sub_type
             else:
                 sub_type = self.question_type.get("sub_type", "")
                 self.category = sub_type or self.question_type.get("main_type", "general")
@@ -60,7 +59,7 @@ class QuestionAnswerPair:
 
 @dataclass
 class EvaluationResult:
-    """评估结果"""
+    """Evaluation result"""
     sample_id: str
     session_id: str
     dialogue_name: str
@@ -78,7 +77,6 @@ class EvaluationResult:
     vlm_model: str
     processing_time: float
     confidence: Optional[float] = None
-    supporting_evidence: Optional[List[Dict]] = None
     memory_context_summary: Optional[str] = None
     recall_method: str = "full_text"
     success: bool = True
@@ -90,18 +88,18 @@ class EvaluationResult:
     original_image_count: Optional[int] = None
     limited_image_count: Optional[int] = None
     
-    # 新增时间字段
-    context_prepare_time: float = 0.0  # 准备对话上下文时间
-    image_prepare_time: float = 0.0    # 准备图片时间
-    prompt_build_time: float = 0.0     # 构建提示词时间
-    api_call_time: float = 0.0         # API调用时间
+    # Timing fields
+    context_prepare_time: float = 0.0
+    image_prepare_time: float = 0.0
+    prompt_build_time: float = 0.0
+    api_call_time: float = 0.0
 
 
 class TokenCounter:
-    """Token计数器 - 移除锁避免死锁"""
+    """Token counter - lock-free to avoid deadlocks"""
     
     _instance = None
-    _lock = Lock()  # 只在创建单例时使用
+    _lock = Lock()  # Only used for singleton creation
     
     def __new__(cls, *args, **kwargs):
         with cls._lock:
@@ -113,40 +111,37 @@ class TokenCounter:
         if not hasattr(self, 'initialized'):
             self.model_name = model_name
             self.encoding = None
-            # 移除实例锁，因为tiktoken是线程安全的
             
             try:
                 import tiktoken
                 self.encoding = tiktoken.get_encoding(model_name)
-                logger.info(f"成功加载tokenizer: {model_name}")
+                logger.info(f"Successfully loaded tokenizer: {model_name}")
             except ImportError:
-                logger.warning("tiktoken未安装，将使用字符数估算token")
+                logger.warning("tiktoken not installed, will estimate tokens using character count")
             except Exception as e:
-                logger.warning(f"加载tokenizer失败: {e}，将使用估算方法")
+                logger.warning(f"Failed to load tokenizer: {e}, will use estimation")
             
             self.initialized = True
     
     def count_tokens(self, text: str) -> int:
-        """计算token数量 - 无锁，tiktoken本身是线程安全的"""
+        """Count tokens - lock-free, tiktoken is thread-safe"""
         if not text:
             return 0
         
-        # 移除锁，直接使用encoding
         if self.encoding:
             return len(self.encoding.encode(text))
         else:
-            # 估算：中文字符算2个token，其他字符每4个字符1个token
+            # Estimate: Chinese characters count as 2 tokens, other chars as 0.25 tokens per character
             chinese_chars = sum(1 for c in text if '\u4e00' <= c <= '\u9fff')
             other_chars = len(text) - chinese_chars
             estimated_tokens = chinese_chars * 2 + other_chars * 0.25
             return int(estimated_tokens) + 1
     
     def truncate_text(self, text: str, max_tokens: int) -> Tuple[str, int, int]:
-        """截断文本到指定token数"""
+        """Truncate text to specified token limit"""
         if not text:
             return text, 0, 0
         
-        # 移除锁，直接调用count_tokens
         original_tokens = self.count_tokens(text)
         
         if original_tokens <= max_tokens:
@@ -158,15 +153,16 @@ class TokenCounter:
             truncated_text = self.encoding.decode(truncated_tokens)
             return truncated_text, original_tokens, len(truncated_tokens)
         else:
-            # 估算截断
+            # Estimate truncation
             chars_per_token = len(text) / original_tokens
             keep_chars = int(max_tokens * chars_per_token)
             truncated_text = text[:keep_chars] + "... [the conversation memory has been truncated due to token limit]"
             truncated_tokens = self.count_tokens(truncated_text)
             return truncated_text, original_tokens, truncated_tokens
 
+
 class ImageProcessor:
-    """图片处理器 - 线程安全"""
+    """Image processor - thread-safe"""
     
     def __init__(self, cache_enabled: bool = True, max_size: Tuple[int, int] = (1024, 1024), quality: int = 85):
         self.cache_enabled = cache_enabled
@@ -180,16 +176,16 @@ class ImageProcessor:
     def process_image(self, image_path: str, session_id: str = None, filename: str = None,
                       is_question_image: bool = False, question_id: str = None) -> Dict:
         """
-        处理图片，返回包含Base64数据和元信息的字典
+        Process image, return dict with Base64 data and metadata
         
         Args:
-            image_path: 图片路径
-            session_id: 图片所属session
-            filename: 图片文件名
-            is_question_image: 是否为问题图片
-            question_id: 问题ID（如果是问题图片）
+            image_path: Path to image
+            session_id: Session the image belongs to
+            filename: Image filename
+            is_question_image: Whether this is a question image
+            question_id: Question ID (if it's a question image)
         """
-        # 检查缓存
+        # Check cache
         base64_data = None
         with self._cache_lock:
             if self.cache_enabled and image_path in self.image_cache:
@@ -201,7 +197,7 @@ class ImageProcessor:
                 if self.cache_enabled:
                     self.image_cache[image_path] = base64_data
         
-        # 存储元数据
+        # Store metadata
         if session_id and filename:
             with self._metadata_lock:
                 self.image_metadata[image_path] = {
@@ -209,7 +205,7 @@ class ImageProcessor:
                     "filename": filename
                 }
         
-        # 构建返回信息
+        # Build return info
         image_info = {
             "type": "image_url",
             "image_url": {
@@ -217,13 +213,13 @@ class ImageProcessor:
             }
         }
         
-        # 添加标记
+        # Add markers
         if is_question_image:
             image_info["is_question_image"] = True
             if question_id:
                 image_info["question_id"] = question_id
         else:
-            # 上下文图片保留元信息
+            # Keep metadata for context images
             if session_id:
                 image_info["session_id"] = session_id
             if filename:
@@ -233,7 +229,7 @@ class ImageProcessor:
         return image_info
     
     def _image_to_base64(self, image_path: str) -> str:
-        """将图片转换为Base64编码"""
+        """Convert image to Base64 encoding"""
         try:
             with Image.open(image_path) as img:
                 img.thumbnail(self.max_size, Image.Resampling.LANCZOS)
@@ -251,7 +247,7 @@ class ImageProcessor:
                 img.save(buffer, format='JPEG', quality=self.quality)
                 return base64.b64encode(buffer.getvalue()).decode('utf-8')
         except Exception as e:
-            logger.error(f"处理图片 {image_path} 失败: {e}")
+            logger.error(f"Failed to process image {image_path}: {e}")
             raise
     
     def clear_cache(self):
@@ -260,7 +256,7 @@ class ImageProcessor:
 
 
 class FullMMSystem:
-    """多模态全上下文记忆系统 - 存储所有session的对话和图片"""
+    """Multimodal full-context memory system - stores all session dialogues and images"""
     
     def __init__(self, conversations_dir: str):
         self.conversations_dir = conversations_dir
@@ -268,24 +264,24 @@ class FullMMSystem:
         self.all_dialogues = []
         self.session_info = {}
         
-        # 图片相关存储
+        # Image storage
         self.image_paths = {}  # {session_id: {filename: full_path}}
         self.image_session_map = {}  # {filename: session_id}
-        self.dialogue_image_map = []  # 对话中的图片记录
+        self.dialogue_image_map = []  # Image records in dialogues
         self.image_processor = ImageProcessor()
         
-        # 新增：存储时间记录
-        self.storage_time = 0.0      # 总存储时间
-        self.loading_time = 0.0      # 数据加载时间
-        self.image_scan_time = 0.0   # 图片扫描时间
+        # Time recording fields
+        self.storage_time = 0.0
+        self.loading_time = 0.0
+        self.image_scan_time = 0.0
         
     def load_all_conversations(self):
-        """加载整个对话的所有session数据 - 添加时间记录"""
+        """Load all session data from the conversation - with timing"""
         overall_start = time.time()
         
         scenes_dir = os.path.join(self.conversations_dir, "scenes")
         if not os.path.exists(scenes_dir):
-            raise ValueError(f"找不到scenes目录: {scenes_dir}")
+            raise ValueError(f"Scenes directory not found: {scenes_dir}")
         
         session_dirs = natsorted([
             d for d in os.listdir(scenes_dir) 
@@ -293,7 +289,7 @@ class FullMMSystem:
         ])
         all_dialogues = []
         
-        # 1. 数据加载时间
+        # 1. Data loading time
         loading_start = time.time()
         
         for session_dir_name in session_dirs:
@@ -304,7 +300,7 @@ class FullMMSystem:
                 session_id = session_dir_name
                 self.memory_storage[session_id] = session_data
                 
-                # 扫描图片目录
+                # Scan image directory
                 self._scan_image_directory(session_id, session_dir)
                 
                 dialogues = session_data.get("dialogue", [])
@@ -349,30 +345,29 @@ class FullMMSystem:
                 }
         
         self.loading_time = time.time() - loading_start
-        logger.info(f"数据加载耗时: {self.loading_time:.2f}秒")
+        logger.info(f"Data loading time: {self.loading_time:.2f} seconds")
         
-        # 2. 图片扫描时间（已在加载过程中完成，这里记录）
-        self.image_scan_time = 0.0  # 图片扫描已计入loading_time
+        # 2. Image scan time (already included in loading_time)
+        self.image_scan_time = 0.0
         
         self.all_dialogues = all_dialogues
         
-        # 总存储时间
+        # Total storage time
         self.storage_time = time.time() - overall_start
         
-        logger.info(f"已加载 {len(self.memory_storage)} 个session，共 {len(all_dialogues)} 轮对话")
-        logger.info(f"图片总数: {len(self.image_session_map)}")
-        logger.info(f"包含图片的对话: {len(self.dialogue_image_map)} 轮")
-        logger.info(f"记忆存储总耗时: {self.storage_time:.2f}秒 (加载: {self.loading_time:.2f}s)")
+        logger.info(f"Loaded {len(self.memory_storage)} sessions, {len(all_dialogues)} dialogue turns")
+        logger.info(f"Total images: {len(self.image_session_map)}")
+        logger.info(f"Dialogues containing images: {len(self.dialogue_image_map)} turns")
+        logger.info(f"Memory storage total time: {self.storage_time:.2f}s (Loading: {self.loading_time:.2f}s)")
     
     def get_memory_stats(self) -> Dict[str, Any]:
-        """获取记忆系统统计信息 - 添加存储时间"""
+        """Get memory system statistics - with storage time"""
         return {
             "total_sessions": len(self.memory_storage),
             "total_dialogues": len(self.all_dialogues),
             "total_images": len(self.image_session_map),
             "dialogues_with_images": len(self.dialogue_image_map),
             "session_info": self.session_info,
-            # 新增存储时间统计
             "storage_time": self.storage_time,
             "loading_time": self.loading_time,
             "image_scan_time": self.image_scan_time,
@@ -380,7 +375,7 @@ class FullMMSystem:
         }
     
     def _scan_image_directory(self, session_id: str, session_dir: str):
-        """扫描图片目录"""
+        """Scan image directory"""
         image_dir = os.path.join(session_dir, "image")
         if os.path.exists(image_dir):
             self.image_paths[session_id] = {}
@@ -391,7 +386,7 @@ class FullMMSystem:
                     self.image_session_map[img_file] = session_id
     
     def _load_single_session(self, session_dir_name: str, session_dir: str) -> Optional[Dict]:
-        """加载单个session的数据"""
+        """Load single session data"""
         conversation_file = os.path.join(session_dir, "session.json")
         if not os.path.exists(conversation_file):
             return None
@@ -399,22 +394,22 @@ class FullMMSystem:
             with open(conversation_file, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
-            logger.error(f"加载 {conversation_file} 失败: {e}")
+            logger.error(f"Failed to load {conversation_file}: {e}")
             return None
     
     def get_image_path(self, session_id: str, image_filename: str) -> Optional[str]:
-        """获取图片路径"""
+        """Get image path"""
         if session_id in self.image_paths and image_filename in self.image_paths[session_id]:
             return self.image_paths[session_id][image_filename]
         return None
     
     def get_image_session(self, image_filename: str) -> Optional[str]:
-        """获取图片所属session"""
+        """Get session that the image belongs to"""
         return self.image_session_map.get(image_filename)
     
     def get_image_for_api(self, image_filename: str, is_question_image: bool = False, 
                           question_id: str = None) -> Optional[Dict]:
-        """获取处理好的图片数据"""
+        """Get processed image data for API"""
         session_id = question_id
         
         image_path = self.get_image_path(session_id, image_filename)
@@ -422,7 +417,7 @@ class FullMMSystem:
             print(image_path)
             print(session_id)
         if not image_path or not os.path.exists(image_path):
-            logger.warning(f"图片文件不存在: {image_filename}")
+            logger.warning(f"Image file does not exist: {image_filename}")
             return None
         
         return self.image_processor.process_image(
@@ -434,7 +429,7 @@ class FullMMSystem:
         )
     
     def format_dialogue_context(self, max_tokens: Optional[int] = None) -> Tuple[str, int, int, bool]:
-        """格式化对话上下文，支持截断"""
+        """Format dialogue context, with truncation support"""
         context_parts = []
         
         for dialogue in self.all_dialogues:
@@ -444,9 +439,9 @@ class FullMMSystem:
             image = dialogue["image"]
             
             if image:
-                context_parts.append(f"[Session {session_id} 第{dialogue['dialogue_index']}轮 {role}]: [图片: {image}] {text}")
+                context_parts.append(f"[Session {session_id} Turn {dialogue['dialogue_index']} {role}]: [Image: {image}] {text}")
             else:
-                context_parts.append(f"[Session {session_id} 第{dialogue['dialogue_index']}轮 {role}]: {text}")
+                context_parts.append(f"[Session {session_id} Turn {dialogue['dialogue_index']} {role}]: {text}")
         
         full_context = "\n".join(context_parts)
         
@@ -460,7 +455,7 @@ class FullMMSystem:
         return full_context, original_tokens, original_tokens, False
     
     def get_session_context(self, target_session_id: str) -> Dict[str, Any]:
-        """获取完整上下文"""
+        """Get complete context"""
         return {
             "target_session_id": target_session_id,
             "target_session_info": self.session_info.get(target_session_id, {}),
@@ -468,6 +463,7 @@ class FullMMSystem:
             "total_dialogues": len(self.all_dialogues),
             "dialogues": self.all_dialogues
         }
+
 
 class DialoguePromptTemplate:
     """Standardized prompt template for dialogue-based questions"""
@@ -477,7 +473,7 @@ class DialoguePromptTemplate:
 IMPORTANT: 
 1. Provide only the answer without any reasoning process. Give the answer directly in English.
 2. Keep your answer within 100 words. Short and concise answers are acceptable.
-3. Answer in English. This is a strict requirement. Do not answer in any other language.
+3. Answer in English. This is a strict requirement. Do not answer in any other language. If the picture contains other languages, it still needs to be translated into English to answer.
 [Complete Conversation Memory]
 {context}
 
@@ -513,7 +509,7 @@ Please answer based on the above memory content:"""
 
 
 class VLMEvaluator:
-    """VLM评估器 - 多线程版本"""
+    """VLM Evaluator - Multi-threaded version"""
     
     def __init__(self,
                 memory_system: FullMMSystem,
@@ -539,20 +535,15 @@ class VLMEvaluator:
         self.max_images = max_images
         self.max_workers = max_workers
         self.max_api_concurrency = max_api_concurrency
-        
+        self.memory_type = "FullMMSystem"
         self.token_counter = TokenCounter()
         
-        
-        # 线程同步工具
+        # Thread synchronization tools
         self.api_semaphore = Semaphore(max_api_concurrency)
         self.stats_lock = Lock()
         self.file_lock = Lock()
-        
-        # 新增：记录失败的问题文件路径
-        self.failed_json_files = set()
-        self.failed_lock = Lock()
-        
-        # 统计信息 - 添加时间统计字段
+    
+        # Statistics - with timing fields
         self.session_statistics = defaultdict(lambda: {
             "total": 0,
             "successful": 0,
@@ -562,7 +553,6 @@ class VLMEvaluator:
             "by_difficulty": defaultdict(int),
             "truncated_count": 0,
             "images_limited_count": 0,
-            # 新增时间统计字段
             "total_context_prepare_time": 0.0,
             "total_image_prepare_time": 0.0,
             "total_prompt_build_time": 0.0,
@@ -588,20 +578,20 @@ class VLMEvaluator:
         self._test_api_connection()
     
     def _test_api_connection(self):
-        """测试API连接"""
+        """Test API connection"""
         try:
             test_url = f"{self.base_url}/models"
             headers = {"Authorization": f"Bearer {self.api_key}"}
             response = requests.get(test_url, headers=headers, timeout=10)
             if response.status_code == 200:
-                logger.info(f"API连接测试成功")
+                logger.info(f"API connection test successful")
             else:
-                logger.warning(f"API连接测试返回状态码: {response.status_code}")
+                logger.warning(f"API connection test returned status code: {response.status_code}")
         except Exception as e:
-            logger.error(f"API连接测试失败: {e}")
+            logger.error(f"API connection test failed: {e}")
     
     def load_questions(self, conversations_dir: str) -> Dict[str, Dict]:
-        """加载所有session的问题"""
+        """Load questions from all sessions"""
         sessions_questions = {}
         base_dir = Path(conversations_dir)
         
@@ -611,14 +601,14 @@ class VLMEvaluator:
         else:
             dialogue_dirs = [d for d in base_dir.iterdir() if d.is_dir() and d.name.startswith("dialogue")]
             if not dialogue_dirs:
-                raise ValueError(f"找不到对话目录: {base_dir}")
+                raise ValueError(f"Dialogue directory not found: {base_dir}")
             dialogue_name = dialogue_dirs[0].name
             scenes_dir = dialogue_dirs[0] / "scenes"
         
         if not scenes_dir.exists():
-            raise ValueError(f"找不到scenes目录: {scenes_dir}")
+            raise ValueError(f"Scenes directory not found: {scenes_dir}")
         
-        logger.info(f"正在从 {scenes_dir} 加载问题文件...")
+        logger.info(f"Loading question files from {scenes_dir}...")
         
         for session_dir in scenes_dir.iterdir():
             if not session_dir.is_dir():
@@ -631,12 +621,11 @@ class VLMEvaluator:
                 continue
             
             try:
-                # 获取session_id
+                # Get session_id
                 conversation_file = session_dir / "session.json"
                 session_id = session_dir_name
                
-                
-                # 加载问题
+                # Load questions
                 with open(question_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
@@ -655,7 +644,6 @@ class VLMEvaluator:
                         answer_session=q.get("answer_session", []),
                         question_type=q.get("question_type", {}),
                         difficulty=q.get("difficulty", "medium"),
-                        supporting_evidence=q.get("supporting_evidence", []),
                         metadata={
                             "timestamp_description": q.get("timestamp_description", ""),
                             "validation_notes": q.get("validation_notes", ""),
@@ -672,22 +660,22 @@ class VLMEvaluator:
                     "question_file": str(question_file)
                 }
                 
-                logger.info(f"从 {session_id} 加载了 {len(question_pairs)} 个问题")
+                logger.info(f"Loaded {len(question_pairs)} questions from {session_id}")
                 
             except Exception as e:
-                logger.error(f"加载问题文件失败 {question_file}: {e}")
+                logger.error(f"Failed to load question file {question_file}: {e}")
         
-        logger.info(f"总共从 {len(sessions_questions)} 个session加载了问题")
+        logger.info(f"Loaded questions from {len(sessions_questions)} sessions total")
         return sessions_questions
     
     def _prepare_images(self, question_pair: QuestionAnswerPair) -> Tuple[List[Dict], bool, int, int]:
-        """准备所有图片（问题图片 + 上下文图片）"""
+        """Prepare all images (question images + context images)"""
         all_images = []
         question_images_count = 0
         context_images_count = 0
         images_limited = False
         
-        # 1. 准备问题图片
+        # 1. Prepare question images
         if question_pair.question_image:
             if str(question_pair.session_id) == "session0":
                 folder, img_file = question_pair.question_image.split('/', 1)
@@ -699,9 +687,9 @@ class VLMEvaluator:
                 if img_info:
                     all_images.append(img_info)
                     question_images_count += 1
-                    logger.debug(f"添加问题图片: {img_file}")
+                    logger.debug(f"Added question image: {img_file}")
                 else:
-                    logger.warning(f"无法找到问题图片: {img_file}")
+                    logger.warning(f"Cannot find question image: {img_file}")
             else:
                 image_files = [f.strip() for f in question_pair.question_image.split(',') if f.strip()]
                 
@@ -714,25 +702,25 @@ class VLMEvaluator:
                     if img_info:
                         all_images.append(img_info)
                         question_images_count += 1
-                        logger.debug(f"添加问题图片: {img_file}")
+                        logger.debug(f"Added question image: {img_file}")
                     else:
-                        logger.warning(f"无法找到问题图片: {img_file}")
+                        logger.warning(f"Cannot find question image: {img_file}")
         
-        # 2. 准备上下文图片（最多max_images - 问题图片数）
+        # 2. Prepare context images (up to max_images - number of question images)
         remaining_slots = self.max_images - question_images_count if self.max_images else None
         if remaining_slots is None or remaining_slots > 0:
-            # 收集所有上下文图片
+            # Collect all context images
             context_images_set = set()
             for dialogue in self.memory_system.all_dialogues:
                 if dialogue["image"]:
                     context_images_set.add((dialogue["image"], dialogue["session_id"]))
-            # 限制数量
+            # Limit count
             context_images_list = list(context_images_set)
             if remaining_slots and len(context_images_list) > remaining_slots:
                 context_images_list = context_images_list[:remaining_slots]
                 images_limited = True
             
-            # 处理上下文图片
+            # Process context images
             for img_file in context_images_list:
                 img_info = self.memory_system.get_image_for_api(img_file[0], is_question_image=False, question_id=img_file[1])
                 if img_info:
@@ -745,21 +733,21 @@ class VLMEvaluator:
         return all_images, images_limited, original_count, limited_count
     
     def _call_vlm_api(self, prompt: str, images: List[Dict]) -> Dict[str, Any]:
-        """调用VLM API（带并发控制）"""
+        """Call VLM API (with concurrency control)"""
         start_time = time.time()
-        # 获取信号量
+        # Acquire semaphore
         acquired = self.api_semaphore.acquire(timeout=30)
         if not acquired:
-            logger.warning("等待API信号量超时")
+            logger.warning("Timeout waiting for API semaphore")
             return {
-                "answer": "[API调用失败: 等待信号量超时]",
+                "answer": "[API call failed: Semaphore acquisition timeout]",
                 "processing_time": time.time() - start_time,
                 "success": False,
-                "error": "信号量获取超时"
+                "error": "Semaphore acquisition timeout"
             }
         
         try:
-            # 构建消息
+            # Build message
             content_list = [{"type": "text", "text": prompt}]
             content_list.extend(images)
             
@@ -775,14 +763,14 @@ class VLMEvaluator:
                 "Content-Type": "application/json"
             }
             
-            # 重试机制
+            # Retry mechanism
             for attempt in range(self.max_retries):
                 try:
                     response = requests.post(
                         f"{self.base_url}/chat/completions",
                         headers=headers,
                         json=payload,
-                        timeout=self.timeout
+                        timeout=self.timeout,
                     )
                     
                     if response.status_code == 200:
@@ -797,7 +785,7 @@ class VLMEvaluator:
                         time.sleep(2 ** attempt)
                         continue
                     else:
-                        error_msg = f"API返回错误: {response.status_code}"
+                        error_msg = f"API returned error: {response.status_code}"
                         if attempt == self.max_retries - 1:
                             return {
                                 "answer": f"[{error_msg}]",
@@ -810,7 +798,7 @@ class VLMEvaluator:
                 except Exception as e:
                     if attempt == self.max_retries - 1:
                         return {
-                            "answer": f"[API调用异常: {str(e)}]",
+                            "answer": f"[API call exception: {str(e)}]",
                             "processing_time": time.time() - start_time,
                             "success": False,
                             "error": str(e)
@@ -818,7 +806,7 @@ class VLMEvaluator:
                     time.sleep(1)
             
             return {
-                "answer": "[API调用失败]",
+                "answer": "[API call failed]",
                 "processing_time": time.time() - start_time,
                 "success": False
             }
@@ -838,9 +826,9 @@ class VLMEvaluator:
             "Temporal Reasoning": "Reason about temporal relationships and time-based information in the conversation.",
             "Multimodal Causal Reasoning": "Perform causal reasoning using both text and image information from the conversation.",
             "Reference & Evolution Tracking": "Track references and their evolution throughout the conversation.",
-            "Test-Time Learning (TTL)": "Learn and adapt from the conversation context at test time to answer the question.",
-            "Conflict Detection (CD)": "Check whether this information conflicts with the conversation.",
-            "Answer Refusal (AR)": "Determine if the question can be answered based on the conversation."
+            "Test-Time Learning": "Learn and adapt from the conversation context at test time to answer the question.",
+            "Conflict Detection": "Check whether this information conflicts with the conversation.",
+            "Answer Refusal": "Determine if the question can be answered based on the conversation."
         }
         
         # Return instruction based on question type
@@ -876,8 +864,8 @@ class VLMEvaluator:
         """Get format requirement based on question type"""
         
         format_requirements = {
-            "Conflict Detection (CD)": "Response format: Reply strictly with either 'Yes' or 'No' only.",
-            "Answer Refusal (AR)": "Response format: If the information is present in the conversation, provide answer based on that information; if not present, reply with: 'Not mentioned.'",
+            "Conflict Detection": "Response format: Reply strictly with either 'Yes' or 'No' only.",
+            "Answer Refusal": "Response format: If the information is present in the conversation, provide answer based on that information; if not present, reply with: 'Not mentioned.'",
         }
         
         if question_type in format_requirements:
@@ -887,22 +875,22 @@ class VLMEvaluator:
 
     
     def _calculate_confidence(self, prediction: str, reference: str) -> float:
-        """计算置信度"""
+        """Calculate confidence score"""
         if not prediction or prediction.startswith("["):
             return 0.0
         
         prediction = prediction.strip()
         reference = str(reference).strip()
         
-        # 完全匹配
+        # Exact match
         if prediction == reference:
             return 1.0
         
-        # 包含关系
+        # Contains relation
         if reference in prediction or prediction in reference:
             return 0.8
         
-        # 关键词匹配
+        # Keyword matching
         pred_words = set(prediction.lower().split())
         ref_words = set(reference.lower().split())
         if pred_words and ref_words:
@@ -914,29 +902,29 @@ class VLMEvaluator:
     
     def evaluate_single_question(self, question_pair: QuestionAnswerPair, 
                             question_file_path: str = None) -> EvaluationResult:
-        """评估单个问题 - 添加详细时间计算和错误记录"""
+        """Evaluate a single question - with detailed timing and error recording"""
         start_time = time.time()
         
-        # 时间记录变量
+        # Timing variables
         context_prepare_time = 0.0
         image_prepare_time = 0.0
         prompt_build_time = 0.0
         api_call_time = 0.0
         
         try:
-            # 1. 准备对话上下文（记录时间）
+            # 1. Prepare dialogue context (record time)
             context_start = time.time()
             full_context = self.memory_system.get_session_context(question_pair.session_id)
             dialogue_context, orig_tokens, truncated_tokens, was_truncated = \
                 self.memory_system.format_dialogue_context(self.max_context_tokens)
             context_prepare_time = time.time() - context_start
             
-            # 2. 准备图片（记录时间）
+            # 2. Prepare images (record time)
             image_start = time.time()
             images, images_limited, orig_img_count, limited_img_count = self._prepare_images(question_pair)
             image_prepare_time = time.time() - image_start
             
-            # 3. 构建提示词（记录时间）
+            # 3. Build prompt (record time)
             prompt_start = time.time()
             prompt = self._build_prompt(
                 question_pair,
@@ -945,21 +933,21 @@ class VLMEvaluator:
             )
             prompt_build_time = time.time() - prompt_start
             
-            # 4. 调用API（记录时间）
+            # 4. Call API (record time)
             api_start = time.time()
             response = self._call_vlm_api(prompt, images)
             api_call_time = response.get("processing_time", time.time() - api_start)
             
-            # 5. 计算置信度
+            # 5. Calculate confidence
             confidence = self._calculate_confidence(
                 response.get("answer", ""),
                 question_pair.original_answer
             )
             
-            # 总处理时间
+            # Total processing time
             total_processing_time = time.time() - start_time
             
-            # 6. 创建结果
+            # 6. Create result
             result = EvaluationResult(
                 sample_id=f"{question_pair.session_id}_{question_pair.question_id}_{int(time.time())}",
                 session_id=question_pair.session_id,
@@ -978,8 +966,7 @@ class VLMEvaluator:
                 vlm_model=self.model,
                 processing_time=total_processing_time,
                 confidence=confidence,
-                supporting_evidence=question_pair.supporting_evidence,
-                memory_context_summary=f"总对话轮次: {len(self.memory_system.all_dialogues)}",
+                memory_context_summary=f"Total dialogue turns: {len(self.memory_system.all_dialogues)}",
                 success=response.get("success", False),
                 error_message=response.get("error"),
                 truncated=was_truncated,
@@ -988,19 +975,19 @@ class VLMEvaluator:
                 images_limited=images_limited,
                 original_image_count=orig_img_count,
                 limited_image_count=limited_img_count,
-                # 新增时间字段
+                # New timing fields
                 context_prepare_time=context_prepare_time,
                 image_prepare_time=image_prepare_time,
                 prompt_build_time=prompt_build_time,
                 api_call_time=api_call_time
             )
             
-            # 输出详细日志
+            # Output detailed log
             logger.info(f"✓ {question_pair.session_id}/{question_pair.question_id} - "
-                    f"总: {total_processing_time:.2f}s, "
-                    f"上下文: {context_prepare_time:.3f}s, "
-                    f"图片: {image_prepare_time:.3f}s, "
-                    f"提示词: {prompt_build_time:.3f}s, "
+                    f"Total: {total_processing_time:.2f}s, "
+                    f"Context: {context_prepare_time:.3f}s, "
+                    f"Image: {image_prepare_time:.3f}s, "
+                    f"Prompt: {prompt_build_time:.3f}s, "
                     f"API: {api_call_time:.2f}s")
             
             return result
@@ -1008,7 +995,7 @@ class VLMEvaluator:
         except Exception as e:
             total_processing_time = time.time() - start_time
             error_msg = str(e)[:200]
-            logger.error(f"✗ 评估问题 {question_pair.question_id} 失败: {error_msg}")
+            logger.error(f"✗ Failed to evaluate question {question_pair.question_id}: {error_msg}")
             
             return EvaluationResult(
                 sample_id=f"error_{question_pair.question_id}_{int(time.time())}",
@@ -1017,7 +1004,7 @@ class VLMEvaluator:
                 question_id=question_pair.question_id,
                 question_text=question_pair.question_text,
                 question_image=question_pair.question_image,
-                system_answer=f"[处理错误: {error_msg}]",
+                system_answer=f"[Processing error: {error_msg}]",
                 original_answer=question_pair.original_answer,
                 answer_source=question_pair.answer_source,
                 question_type=question_pair.question_type,
@@ -1028,7 +1015,6 @@ class VLMEvaluator:
                 vlm_model=self.model,
                 processing_time=total_processing_time,
                 confidence=0.0,
-                supporting_evidence=question_pair.supporting_evidence,
                 success=False,
                 error_message=error_msg,
                 context_prepare_time=context_prepare_time,
@@ -1039,12 +1025,12 @@ class VLMEvaluator:
     
     def _evaluate_question_wrapper(self, question_pair: QuestionAnswerPair, 
                                question_file_path: str = None) -> Dict:
-        """问题评估包装器（用于线程池）- 传递文件路径"""
+        """Question evaluation wrapper (for thread pool) - pass file path"""
         try:
             result = self.evaluate_single_question(question_pair, question_file_path)
             result_dict = asdict(result)
             
-            # 更新统计
+            # Update statistics
             with self.stats_lock:
                 session_id = question_pair.session_id
                 if result.success:
@@ -1054,7 +1040,7 @@ class VLMEvaluator:
                 
                 self.session_statistics[session_id]["processing_time"] += result.processing_time
                 
-                # 累计时间统计
+                # Accumulate timing statistics
                 self.session_statistics[session_id]["total_context_prepare_time"] += result.context_prepare_time
                 self.session_statistics[session_id]["total_image_prepare_time"] += result.image_prepare_time
                 self.session_statistics[session_id]["total_prompt_build_time"] += result.prompt_build_time
@@ -1071,8 +1057,8 @@ class VLMEvaluator:
             return result_dict
             
         except Exception as e:
-            logger.error(f"包装器执行失败: {e}")
-            # 记录失败的文件路径
+            logger.error(f"Wrapper execution failed: {e}")
+            # Record failed file path
             return {
                 "sample_id": f"error_{question_pair.question_id}",
                 "session_id": question_pair.session_id,
@@ -1083,25 +1069,25 @@ class VLMEvaluator:
     
     def evaluate_session(self, session_id: str, session_data: Dict,
                     max_questions: Optional[int] = None) -> List[Dict]:
-        """并行评估一个session的所有问题 - 传递文件路径"""
+        """Parallel evaluation of all questions in a session - pass file path"""
         questions = session_data["questions"]
         session_path = Path(session_data["session_path"])
-        question_file_path = session_data.get("question_file", "")  # 获取问题文件路径
+        question_file_path = session_data.get("question_file", "")
         
         if max_questions and max_questions < len(questions):
             questions = questions[:max_questions]
         
         total = len(questions)
-        logger.info(f"并行评估 session {session_id} 的 {total} 个问题 (API并发: {self.max_api_concurrency})")
+        logger.info(f"Parallel evaluation of {total} questions in session {session_id} (API concurrency: {self.max_api_concurrency})")
         
-        # 初始化统计
+        # Initialize statistics
         with self.stats_lock:
             self.session_statistics[session_id]["total"] = total
             for q in questions:
                 self.session_statistics[session_id]["by_category"][q.category] += 1
                 self.session_statistics[session_id]["by_difficulty"][q.difficulty] += 1
         
-        # 使用线程池并行处理问题
+        # Use thread pool for parallel question processing
         results = []
         results_lock = Lock()
         
@@ -1120,17 +1106,17 @@ class VLMEvaluator:
                     
                     completed += 1
                     if completed % max(1, total // 10) == 0:
-                        logger.info(f"[{session_id}] 进度: {completed}/{total}")
+                        logger.info(f"[{session_id}] Progress: {completed}/{total}")
                         
                 except Exception as e:
-                    logger.error(f"获取结果失败: {e}")
+                    logger.error(f"Failed to get result: {e}")
         
-        # 保存结果
+        # Save results
         with self.file_lock:
             self._save_session_results(session_id, session_data["session_dir_name"], 
                                     session_path, results)
         
-        # 更新全局统计
+        # Update global statistics
         with self.stats_lock:
             self.global_statistics["total_questions"] += total
             self.global_statistics["successful_questions"] += \
@@ -1138,23 +1124,23 @@ class VLMEvaluator:
             self.global_statistics["failed_questions"] += \
                 self.session_statistics[session_id]["failed"]
         
-        # 输出session时间统计
+        # Output session timing statistics
         session_stats = self.session_statistics[session_id]
         successful = session_stats["successful"]
         if successful > 0:
-            logger.info(f"Session {session_id} 时间统计 - "
-                    f"平均上下文: {session_stats['total_context_prepare_time']/successful:.3f}s, "
-                    f"平均图片: {session_stats['total_image_prepare_time']/successful:.3f}s, "
-                    f"平均提示词: {session_stats['total_prompt_build_time']/successful:.3f}s, "
-                    f"平均API: {session_stats['total_api_call_time']/successful:.2f}s")
+            logger.info(f"Session {session_id} timing statistics - "
+                    f"Avg context: {session_stats['total_context_prepare_time']/successful:.3f}s, "
+                    f"Avg image: {session_stats['total_image_prepare_time']/successful:.3f}s, "
+                    f"Avg prompt: {session_stats['total_prompt_build_time']/successful:.3f}s, "
+                    f"Avg API: {session_stats['total_api_call_time']/successful:.2f}s")
         
-        logger.info(f"Session {session_id} 完成: 成功 {session_stats['successful']}/{total}")
+        logger.info(f"Session {session_id} completed: Successful {session_stats['successful']}/{total}")
         return results
 
     
     def _save_session_results(self, session_id: str, session_dir_name: str,
-                            session_path: Path, results: List[Dict]):
-        """保存session结果"""
+                        session_path: Path, results: List[Dict]):
+        """Save session results"""
         results_dir = session_path / "evaluation_results"
         results_dir.mkdir(exist_ok=True)
         
@@ -1163,6 +1149,7 @@ class VLMEvaluator:
                 "session_id": session_id,
                 "session_dir_name": session_dir_name,
                 "vlm_model": self.model,
+                "memory_type": self.memory_type,
                 "max_context_tokens": self.max_context_tokens,
                 "max_images": self.max_images,
                 "timestamp": datetime.now().isoformat()
@@ -1170,20 +1157,19 @@ class VLMEvaluator:
             "results": results
         }
         
-        filepath = results_dir / "result_FullMM.json"
+        filepath = results_dir / "results_FullMM.json"
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
         
-        logger.debug(f"结果已保存: {filepath}")
+        logger.debug(f"Results saved: {filepath}")
     
-    def evaluate_all_sessions(self, sessions_questions: Dict[str, Dict],
-                        max_questions_per_session: Optional[int] = None):
-        """并行评估所有session - 添加失败记录保存"""
+    def evaluate_all_sessions(self, sessions_questions: Dict[str, Dict]):
         self.global_statistics["start_time"] = time.time()
         self.global_statistics["total_sessions"] = len(sessions_questions)
+        self.global_statistics["memory_type"] = "FullMMSystem"
         
-        logger.info(f"开始并行评估 {len(sessions_questions)} 个session")
-        logger.info(f"Session并行数: {self.max_workers}, API并发: {self.max_api_concurrency}")
+        logger.info(f"Starting parallel evaluation of {len(sessions_questions)} sessions")
+        logger.info(f"Session parallelism: {self.max_workers}, API concurrency: {self.max_api_concurrency}")
         
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_session = {}
@@ -1191,8 +1177,7 @@ class VLMEvaluator:
                 future = executor.submit(
                     self.evaluate_session,
                     session_id,
-                    session_data,
-                    max_questions_per_session
+                    session_data
                 )
                 future_to_session[future] = session_id
             
@@ -1200,39 +1185,33 @@ class VLMEvaluator:
                 session_id = future_to_session[future]
                 try:
                     results = future.result()
-                    logger.info(f"Session {session_id} 处理完成")
+                    logger.info(f"Session {session_id} processing completed")
                 except Exception as e:
-                    logger.error(f"Session {session_id} 处理失败: {e}")
+                    logger.error(f"Session {session_id} processing failed: {e}")
         self.global_statistics["end_time"] = time.time()
         
 
 
 def main():
-    parser = argparse.ArgumentParser(description="多模态记忆评估系统（多线程版）")
+    parser = argparse.ArgumentParser(description="Multimodal Memory Evaluation System (Multi-threaded Version)")
     parser.add_argument("--conversations_dir", type=str, required=True,
-                       help="对话数据目录")
+                       help="Conversation data directory")
     parser.add_argument("--api_key", type=str, required=True,
-                       help="VLM API密钥")
+                       help="VLM API key")
     parser.add_argument("--model", type=str, required=True,
-                       help="VLM模型名称")
+                       help="VLM model name")
     parser.add_argument("--base_url", type=str, required=True,
-                       help="API基础URL")
+                       help="API base URL")
     parser.add_argument("--max_context_tokens", type=int, default=4096,
-                       help="对话内容最大token数")
+                       help="Maximum tokens for dialogue context")
     parser.add_argument("--max_images", type=int, default=None,
-                       help="最大图片数量")
+                       help="Maximum number of images")
     parser.add_argument("--max_workers", type=int, default=3,
-                       help="Session级并行线程数")
+                       help="Number of session-level parallel threads")
     parser.add_argument("--max_api_concurrency", type=int, default=2,
-                       help="API并发数")
-    parser.add_argument("--max_questions_per_session", type=int, default=None,
-                       help="每个session最大问题数")
-    parser.add_argument("--max_sessions", type=int, default=None,
-                       help="最大处理session数")
+                       help="API concurrency count")
     parser.add_argument("--verbose", action="store_true",
-                       help="详细日志")
-    parser.add_argument("--test_mode", action="store_true",
-                       help="测试模式（每个session处理2个问题）")
+                       help="Verbose logging")
     
     args = parser.parse_args()
     
@@ -1240,35 +1219,32 @@ def main():
         logger.setLevel(logging.DEBUG)
     
     print("=" * 70)
-    print("多模态记忆评估系统（多线程版）")
-    print(f"模型: {args.model}")
-    print(f"Session并行: {args.max_workers}, API并发: {args.max_api_concurrency}")
+    print("Multimodal Memory Evaluation System (Multi-threaded Version)")
+    print(f"Memory Type: FullMMSystem") 
+    print(f"Model: {args.model}")
+    print(f"Session Parallelism: {args.max_workers}, API Concurrency: {args.max_api_concurrency}")
     if args.max_context_tokens:
-        print(f"对话截断: {args.max_context_tokens} tokens")
+        print(f"Dialogue Truncation: {args.max_context_tokens} tokens")
     if args.max_images:
-        print(f"图片限制: {args.max_images} 张")
+        print(f"Image Limit: {args.max_images} images")
     print("=" * 70)
     
-    if args.test_mode:
-        args.max_questions_per_session = 2
-        print("测试模式: 每个session处理2个问题")
-    
-    # 1. 初始化记忆系统
-    print("\n[1] 初始化记忆系统...")
+    # 1. Initialize memory system
+    print("\n[1] Initializing memory system...")
     memory_system = FullMMSystem(args.conversations_dir)
     memory_system.load_all_conversations()
 
-    # 输出存储时间统计
-    print(f"\n记忆存储时间统计:")
-    print(f"   总存储时间: {memory_system.storage_time:.2f}秒")
-    print(f"   数据加载: {memory_system.loading_time:.2f}秒")
-    print(f"   总对话轮次: {len(memory_system.all_dialogues)}")
+    # Output storage time statistics
+    print(f"\nMemory Storage Time Statistics:")
+    print(f"   Total storage time: {memory_system.storage_time:.2f} seconds")
+    print(f"   Data loading: {memory_system.loading_time:.2f} seconds")
+    print(f"   Total dialogue turns: {len(memory_system.all_dialogues)}")
     if len(memory_system.all_dialogues) > 0:
-        print(f"   平均每轮对话: {memory_system.storage_time / len(memory_system.all_dialogues):.3f}秒")
-    print(f"   总图片数: {len(memory_system.image_session_map)}")
+        print(f"   Average per dialogue: {memory_system.storage_time / len(memory_system.all_dialogues):.3f} seconds")
+    print(f"   Total images: {len(memory_system.image_session_map)}")
     
-    # 2. 初始化评估器
-    print("\n[2] 初始化评估器...")
+    # 2. Initialize evaluator
+    print("\n[2] Initializing evaluator...")
     evaluator = VLMEvaluator(
         memory_system=memory_system,
         api_key=args.api_key,
@@ -1281,37 +1257,30 @@ def main():
         max_api_concurrency=args.max_api_concurrency
     )
     
-    # 3. 加载问题
-    print("\n[3] 加载问题...")
+    # 3. Load questions
+    print("\n[3] Loading questions...")
     try:
         sessions_questions = evaluator.load_questions(args.conversations_dir)
     except Exception as e:
-        print(f"加载问题失败: {e}")
+        print(f"Failed to load questions: {e}")
         return
     
     if not sessions_questions:
-        print("未找到问题文件")
+        print("No question files found")
         return
     
     total = sum(len(d["questions"]) for d in sessions_questions.values())
-    print(f"从 {len(sessions_questions)} 个session加载了 {total} 个问题")
+    print(f"Loaded {total} questions from {len(sessions_questions)} sessions")
+    sessions_to_process = sessions_questions
     
-    # 限制session数
-    if args.max_sessions and args.max_sessions < len(sessions_questions):
-        sessions_to_process = dict(list(sessions_questions.items())[:args.max_sessions])
-        print(f"限制处理前 {args.max_sessions} 个session")
-    else:
-        sessions_to_process = sessions_questions
-    
-    # 4. 执行评估
-    print("\n[4] 开始并行评估...")
+    # 4. Execute evaluation
+    print("\n[4] Starting parallel evaluation...")
     evaluator.evaluate_all_sessions(
-        sessions_questions=sessions_to_process,
-        max_questions_per_session=args.max_questions_per_session
+        sessions_questions=sessions_to_process
     )
     
-    # 5. 输出结果
-    print("\n[5] 评估完成!")
+    # 5. Output results
+    print("\n[5] Evaluation complete!")
 
 
 if __name__ == "__main__":

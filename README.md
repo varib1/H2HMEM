@@ -25,15 +25,17 @@
 
 ### Task Types
 
-- **UPR** — Unimodal Precise Recall  
-- **CRR** — Cross-modal Related Retrieval  
-- **KR** — Knowledge Resolution  
-- **TR** — Temporal Reasoning  
-- **MCR** — Multimodal Causal Reasoning  
-- **RET** — Reference & Evolution Tracking  
-- **TTL** — Test-Time Learning  
-- **CD** — Conflict Detection  
-- **AR** — Answer Refusal  
+| main_type | sub_type | NASA |
+|-----------|---------------------|------|
+| Memory Recall | Unimodal Precise Recall | UPR |
+| Memory Recall | Cross-modal Related Retrieval | CRR |
+| Memory Recall | Knowledge Resolution | KR |
+| Memory Reasoning | Temporal Reasoning | TR |
+| Memory Reasoning | Multimodal Causal Reasoning | MCR |
+| Memory Reasoning | Reference & Evolution Tracking | RET |
+| Memory Application | Test-Time Learning | TTL |
+| Memory Application | Conflict Detection | CD |
+| Memory Application | Answer Refusal | AR |
 
 ---
 
@@ -71,7 +73,7 @@ bash ./caption/run_caption.sh
 |:--|:--|
 | **Full (Text)** | `bash ./baselines/Full (Text)/evaluate.sh` |
 | **Naive RAG** | `bash ./baselines/Naive RAG/evaluate.sh` |
-| **A-MEM** | `bash ./baselines/A-MEM/evaluate.sh` |
+| **A-MEM** | 1. `bash /home/zhushiping/H2HMEM1/baselines/A-MEM/memory_construct.sh` (build memory)<br>2. `bash ./baselines/A-MEM/evaluate.sh` (run evaluation) |
 
 
 ### 🖼️ Multimodal Methods

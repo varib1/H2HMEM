@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "[Causal Inference]: The answer requires combining both textual and visual information, as the question does not directly contain all the necessary details."
@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Causal Inference]: Inferring the causal relationship between images and text, where the image leads to discussions about anxiety."

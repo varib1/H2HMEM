@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue6",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Infer the driving relationship between the image content and the text content; the image prompts the evaluation.",

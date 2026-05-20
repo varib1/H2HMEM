@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The image sparked a reflection in the conversation about the relationship between technology and humanity.",

@@ -1,4 +1,5 @@
 import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 import json
 import logging
 import torch
@@ -16,15 +17,16 @@ from PIL import Image
 from dataclasses import dataclass, asdict, field
 from transformers import AutoModel, AutoProcessor, CLIPModel, CLIPProcessor
 from natsort import natsorted
-# 设置日志
+
+# Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
-# ==================== 编码器基类 ====================
+# ==================== Encoder Base Class ====================
 
 class BaseMultiModalEncoder:
-    """多模态编码器基类"""
+    """Base class for multimodal encoder"""
     def __init__(self, config):
         self.config = config
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -32,28 +34,28 @@ class BaseMultiModalEncoder:
         self.processor = None
     
     def _load_image(self, image_path_or_url: str) -> Image.Image:
-        """加载图像（由子类实现）"""
+        """Load image (to be implemented by subclass)"""
         raise NotImplementedError
     
     def encode_text(self, text: str, return_type: str = 'numpy') -> Union[np.ndarray, torch.Tensor]:
-        """编码文本（由子类实现）"""
+        """Encode text (to be implemented by subclass)"""
         raise NotImplementedError
     
     def encode_image(self, image_path_or_url: str, return_type: str = 'numpy') -> Union[np.ndarray, torch.Tensor]:
-        """编码图像（由子类实现）"""
+        """Encode image (to be implemented by subclass)"""
         raise NotImplementedError
     
     def encode_multimodal(self, text: Optional[str] = None, image: Optional[Dict] = None, 
                          return_type: str = 'numpy') -> Union[np.ndarray, torch.Tensor]:
-        """编码多模态数据（由子类实现）"""
+        """Encode multimodal data (to be implemented by subclass)"""
         raise NotImplementedError
     
     def __call__(self, obj: Union[str, Dict], return_type: str = 'numpy') -> Union[np.ndarray, torch.Tensor]:
-        """统一调用接口（由子类实现）"""
+        """Unified call interface (to be implemented by subclass)"""
         raise NotImplementedError
 
 
-# ==================== GME编码器实现 ====================
+# ==================== GME Encoder Implementation ====================
 
 class GMEEncoder(BaseMultiModalEncoder):
     """
@@ -63,14 +65,14 @@ class GMEEncoder(BaseMultiModalEncoder):
     def __init__(self, config):
         super().__init__(config)
         
-        model_name = getattr(config, 'path', 'Alibaba-NLP/gme-Qwen2-VL-7B-Instruct')
+        model_name = getattr(config, 'encoder_model', 'Alibaba-NLP/gme-Qwen2-VL-7B-Instruct')
         self.image_base_path = getattr(config, 'image_base_path', '')
-        self.embedding_dim = getattr(config, 'embedding_dim', 4096)  # GME-Qwen2-VL-7B维度
+        self.embedding_dim = getattr(config, 'embedding_dim', 4096)  # GME-Qwen2-VL-7B dimension
         
-        print(f"正在加载GME模型: {model_name}")
-        print(f"使用设备: {self.device}")
+        print(f"Loading GME model: {model_name}")
+        print(f"Using device: {self.device}")
         
-        # 加载GME模型 with trust_remote_code=True
+        # Load GME model with trust_remote_code=True
         self.model = AutoModel.from_pretrained(
             model_name,
             torch_dtype=torch.float16 if self.device.type == 'cuda' else torch.float32,
@@ -79,14 +81,14 @@ class GMEEncoder(BaseMultiModalEncoder):
         )
         self.model.eval()  # Set to evaluation mode
         
-        # 加载处理器
+        # Load processor
         try:
             self.processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
         except:
             self.processor = None
             
-        print(f"GME模型加载成功！")
-        print(f"  嵌入维度: {self.embedding_dim}")
+        print(f"GME model loaded successfully!")
+        print(f"  Embedding dimension: {self.embedding_dim}")
     
     def _load_image(self, image_path_or_url):
         """Load image from local path or URL."""
@@ -208,7 +210,7 @@ class GMEEncoder(BaseMultiModalEncoder):
             raise ValueError(f"Unsupported input type: {type(obj)}")
 
 
-# ==================== CLIP编码器实现（备选） ====================
+# ==================== CLIP Encoder Implementation (Alternative) ====================
 
 class CLIPEncoder(BaseMultiModalEncoder):
     """
@@ -217,19 +219,19 @@ class CLIPEncoder(BaseMultiModalEncoder):
     def __init__(self, config):
         super().__init__(config)
         
-        model_name = getattr(config, 'path', 'openai/clip-vit-base-patch32')
+        model_name = getattr(config, 'encoder_model', 'openai/clip-vit-base-patch32')
         self.image_base_path = getattr(config, 'image_base_path', '')
         self.embedding_dim = getattr(config, 'embedding_dim', 512)
         
-        print(f"正在加载CLIP模型: {model_name}")
-        print(f"使用设备: {self.device}")
+        print(f"Loading CLIP model: {model_name}")
+        print(f"Using device: {self.device}")
         
         self.model = CLIPModel.from_pretrained(model_name).to(self.device)
         self.processor = CLIPProcessor.from_pretrained(model_name)
         self.model.eval()
         
-        print(f"CLIP模型加载成功！")
-        print(f"  嵌入维度: {self.embedding_dim}")
+        print(f"CLIP model loaded successfully!")
+        print(f"  Embedding dimension: {self.embedding_dim}")
     
     def _load_image(self, image_path_or_url):
         """Load image from local path or URL."""
@@ -337,11 +339,11 @@ class CLIPEncoder(BaseMultiModalEncoder):
             raise ValueError(f"Unsupported input type: {type(obj)}")
 
 
-# ==================== 图存储部分 ====================
+# ==================== Graph Storage Section ====================
 
 class GraphStorage:
     """
-    图结构记忆存储
+    Graph structure memory storage
     """
     def __init__(self, config):
         self.config = config
@@ -349,7 +351,7 @@ class GraphStorage:
         self.edge = {}  # source_id -> {target_id -> edge_data}
         self.node_counter = 0
         self.edge_counter = 0
-        self.memory_order_map = []  # 按插入顺序的node_id列表
+        self.memory_order_map = []  # List of node_ids in insertion order
 
     def reset(self):
         self.node = {}
@@ -365,46 +367,46 @@ class GraphStorage:
         return self.get_element_number() == 0
     
     def get_node_id_by_mid(self, mid):
-        """根据记忆索引获取节点ID"""
+        """Get node ID by memory index"""
         if 0 <= mid < len(self.memory_order_map):
             return self.memory_order_map[mid]
         raise IndexError(f"Memory index {mid} out of range")
 
     def get_mid_by_node_id(self, node_id):
-        """根据节点ID获取记忆索引"""
+        """Get memory index by node ID"""
         if node_id in self.node:
             return self.node[node_id].get('mid', -1)
         raise KeyError(f"Node {node_id} not found")
 
     def get_memory_element_by_node_id(self, node_id):
-        """根据节点ID获取记忆元素"""
+        """Get memory element by node ID"""
         return self.node.get(node_id, {})
 
     def get_memory_element_by_mid(self, mid):
-        """根据记忆索引获取记忆元素"""
+        """Get memory element by memory index"""
         node_id = self.get_node_id_by_mid(mid)
         return self.node[node_id]
 
     def get_memory_text_by_node_id(self, node_id):
-        """获取节点文本"""
+        """Get node text"""
         return self.node[node_id].get('text', '')
 
     def get_memory_image_by_node_id(self, node_id):
-        """获取节点图片信息"""
+        """Get node image information"""
         return self.node[node_id].get('image', None)
     
     def get_neighbors(self, node_id):
-        """获取节点的邻居节点ID列表"""
+        """Get neighbor node IDs of the node"""
         if node_id in self.edge:
             return list(self.edge[node_id].keys())
         return []
     
     def get_edges_from(self, node_id):
-        """获取从节点出发的所有边"""
+        """Get all edges starting from the node"""
         return self.edge.get(node_id, {})
     
     def get_edges_to(self, node_id):
-        """获取指向节点的所有边"""
+        """Get all edges pointing to the node"""
         edges_to = {}
         for source, targets in self.edge.items():
             if node_id in targets:
@@ -412,13 +414,13 @@ class GraphStorage:
         return edges_to
     
     def get_node_degree(self, node_id):
-        """获取节点的度数（出度+入度）"""
+        """Get node degree (out-degree + in-degree)"""
         out_degree = len(self.get_neighbors(node_id))
         in_degree = len(self.get_edges_to(node_id))
         return out_degree + in_degree
 
     def add_node(self, obj):
-        """添加节点"""
+        """Add node"""
         if 'text' not in obj and 'image' not in obj:
             raise ValueError("Node must contain at least 'text' or 'image'")
         
@@ -432,7 +434,7 @@ class GraphStorage:
         return self.node_counter - 1
 
     def add_edge(self, s, t, obj):
-        """添加边"""
+        """Add edge"""
         obj['edge_id'] = self.edge_counter
         if s not in self.edge:
             self.edge[s] = {}
@@ -441,21 +443,21 @@ class GraphStorage:
         return self.edge_counter - 1
     
     def display(self):
-        """显示图信息"""
+        """Display graph information"""
         return f"GraphStorage: {self.get_element_number()} nodes, {self.edge_counter} edges"
 
 
-# ==================== 多模态检索部分 ====================
+# ==================== Multimodal Retrieval Section ====================
 
 class MultiModalRetrieval:
     """
-    多模态检索器
+    Multimodal retriever
     """
     def __init__(self, config):
         self.config = config
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
-        # 初始化编码器
+        # Initialize encoder
         encoder_method = getattr(config.encoder, 'method', 'GMEEncoder')
         if encoder_method == 'CLIPEncoder':
             self.encoder = CLIPEncoder(config.encoder)
@@ -464,10 +466,10 @@ class MultiModalRetrieval:
         else:
             raise ValueError(f"Unsupported encoder: {encoder_method}")
         
-        # 存储所有记忆的嵌入向量
+        # Store embedding vectors for all memories
         self.tensorstore = None
         
-        # 存储元数据
+        # Store metadata
         self.memory_metadata = []
     
     def reset(self):
@@ -475,18 +477,18 @@ class MultiModalRetrieval:
         self.memory_metadata = []
     
     def __normalize__(self, embedding):
-        """L2归一化"""
+        """L2 normalization"""
         return torch.nn.functional.normalize(embedding, dim=-1)
     
     def add(self, obj):
         """
-        添加记忆到检索器
+        Add memory to retriever
         
         Args:
-            obj: 记忆对象（文本、图片路径或字典）
+            obj: Memory object (text, image path, or dictionary)
         
         Returns:
-            嵌入向量
+            Embedding vector
         """
         embedding = self.encoder(obj, return_type='tensor')
         
@@ -498,7 +500,7 @@ class MultiModalRetrieval:
         else:
             self.tensorstore = torch.cat([self.tensorstore, embedding], dim=0)
         
-        # 记录元数据
+        # Record metadata
         metadata = {
             'has_text': isinstance(obj, str) or (isinstance(obj, dict) and 'text' in obj),
             'has_image': isinstance(obj, dict) and 'image' in obj
@@ -508,7 +510,7 @@ class MultiModalRetrieval:
         return embedding
     
     def __calculate_scores__(self, query):
-        """计算查询与所有记忆的相似度"""
+        """Calculate similarity between query and all memories"""
         query_embedding = self.encoder(query, return_type='tensor')
         
         if self.config.mode == 'cosine':
@@ -525,16 +527,16 @@ class MultiModalRetrieval:
     
     def __call__(self, query, topk='config', with_score=False, sort=True):
         """
-        检索最相似的记忆
+        Retrieve most similar memories
         
         Args:
-            query: 查询（文本、图片路径或字典）
-            topk: 返回数量
-            with_score: 是否返回分数
-            sort: 是否排序
+            query: Query (text, image path, or dictionary)
+            topk: Number of results to return
+            with_score: Whether to return scores
+            sort: Whether to sort
         
         Returns:
-            记忆索引列表或(分数, 索引)元组
+            List of memory indices or (scores, indices) tuple
         """
         if self.tensorstore is None or self.tensorstore.size(0) == 0:
             return torch.tensor([]) if not with_score else (torch.tensor([]), torch.tensor([]))
@@ -561,25 +563,25 @@ class MultiModalRetrieval:
             return indices
 
 
-# ==================== 存储操作 ====================
+# ==================== Storage Operations ====================
 
-class NGMemorySystemStore:
+class NGMMemorySystemStore:
     """
     Neural Graph Memory Store:
-    将多模态事件存储为图节点，基于关系创建边
+    Store multimodal events as graph nodes, create edges based on relationships
     """
     def __init__(self, config, **kwargs):
         self.config = config
         self.storage = kwargs['storage']
         self.multimodal_retrieval = kwargs['multimodal_retrieval']
         
-        # 图构建参数
+        # Graph construction parameters
         self.similarity_threshold = getattr(config, 'similarity_threshold', 0.7)
         self.max_edges_per_node = getattr(config, 'max_edges_per_node', 5)
         self.temporal_decay_constant = getattr(config, 'temporal_decay_constant', 3600)
         
-        # 添加存储时间统计
-        self.store_times = []  # 记录每次存储的时间
+        # Store timing statistics
+        self.store_times = []  # Record each store operation time
         self.total_store_time = 0.0
         self.num_stores = 0
 
@@ -589,14 +591,14 @@ class NGMemorySystemStore:
         self.num_stores = 0
 
     def __calculate_similarity__(self, embedding1, embedding2):
-        """计算余弦相似度"""
+        """Calculate cosine similarity"""
         emb1_norm = torch.nn.functional.normalize(embedding1, dim=-1)
         emb2_norm = torch.nn.functional.normalize(embedding2, dim=-1)
         return torch.matmul(emb1_norm, emb2_norm.T).item()
     
     def __calculate_temporal_weight__(self, source_node_id, target_node_id):
         """
-        计算时间权重：使用指数衰减，时间越近权重越高
+        Calculate temporal weight: exponential decay, closer time = higher weight
         """
         import numpy as np
         
@@ -621,14 +623,14 @@ class NGMemorySystemStore:
             
             time_diff = abs(target_time - source_time)
             
-            # 指数衰减：np.exp(-time_diff / decay_constant)
+            # Exponential decay: np.exp(-time_diff / decay_constant)
             return np.exp(-time_diff / self.temporal_decay_constant)
         except Exception as e:
-            logger.debug(f"时间权重计算失败: {e}")
+            logger.debug(f"Temporal weight calculation failed: {e}")
             return 1.0
     
     def __create_edges__(self, new_node_id, new_embedding):
-        """为新节点创建边"""
+        """Create edges for the new node"""
         if self.storage.get_element_number() <= 1:
             return
         
@@ -637,7 +639,7 @@ class NGMemorySystemStore:
         if not all_node_ids:
             return
 
-        # 1. 创建时间顺序边（与最近添加的节点）
+        # 1. Create temporal edge (with the most recently added node)
         if len(all_node_ids) > 0:
             last_node_id = all_node_ids[-1]
             temporal_weight = self.__calculate_temporal_weight__(last_node_id, new_node_id)
@@ -652,7 +654,7 @@ class NGMemorySystemStore:
                 }
             )
         
-        # 2. 创建语义相似边
+        # 2. Create semantic similarity edges
         similarities = []
         for node_id in all_node_ids:
             node_mid = self.storage.get_mid_by_node_id(node_id)
@@ -663,7 +665,7 @@ class NGMemorySystemStore:
                 similarity = self.__calculate_similarity__(new_embedding, node_embedding)
                 similarities.append((node_id, similarity))
 
-        # 选择最相似的节点创建边
+        # Select most similar nodes to create edges
         similarities.sort(key=lambda x: x[1], reverse=True)
         for node_id, similarity in similarities[:self.max_edges_per_node]:
             if similarity >= self.similarity_threshold:
@@ -679,38 +681,36 @@ class NGMemorySystemStore:
 
     def __call__(self, observation):
         """
-        存储多模态观察为图节点
+        Store multimodal observation as graph node
         
         Returns:
-            tuple: (node_id, store_time) 节点ID和存储耗时
+            tuple: (node_id, store_time) node ID and store duration
         """
         store_start_time = time.time()
         
-        # 确保有时间戳
+        # Ensure timestamp exists
         if 'timestamp' not in observation:
             observation['timestamp'] = time.time()
         
-        # 添加到图存储
+        # Add to graph storage
         node_id = self.storage.add_node(observation)
         
-        # 编码并添加到多模态检索器
+        # Encode and add to multimodal retriever
         embedding = self.multimodal_retrieval.add(observation)
         
-        # 创建边
+        # Create edges
         self.__create_edges__(node_id, embedding)
         
         store_time = time.time() - store_start_time
         
-        # 记录存储时间
+        # Record store time
         self.store_times.append(store_time)
         self.total_store_time += store_time
         self.num_stores += 1
-        
-        logger.debug(f"已存储节点 {node_id}: {observation.get('text', '')[:50]}..., 耗时: {store_time:.4f}s")
         return node_id, store_time
     
     def get_store_statistics(self):
-        """获取存储时间统计"""
+        """Get storage time statistics"""
         if self.num_stores == 0:
             return {
                 'num_stores': 0,
@@ -727,8 +727,9 @@ class NGMemorySystemStore:
             'min_time': min(self.store_times) if self.store_times else 0.0,
             'max_time': max(self.store_times) if self.store_times else 0.0
         }
+    
     def get_all_store_times(self):
-        """获取所有存储时间记录"""
+        """Get all store time records"""
         return {
             'store_times': self.store_times,
             'total_store_time': self.total_store_time,
@@ -739,26 +740,26 @@ class NGMemorySystemStore:
         }
 
 
-# ==================== 召回操作 ====================
+# ==================== Recall Operations ====================
 
-class NGMemorySystemRecall:
+class NGMMemorySystemRecall:
     """
     Neural Graph Memory Recall:
-    基于查询的图遍历记忆检索
+    Query-based graph traversal memory retrieval
     """
     def __init__(self, config, **kwargs):
         self.config = config
         self.storage = kwargs['storage']
         self.multimodal_retrieval = kwargs['multimodal_retrieval']
         
-        # 图遍历参数
+        # Graph traversal parameters
         self.max_depth = getattr(config, 'max_depth', 3)
         self.max_nodes = getattr(config, 'max_nodes', 10)
         self.traversal_threshold = getattr(config, 'traversal_threshold', 0.5)
         self.traversal_strategy = getattr(config, 'traversal_strategy', 'breadth_first')
         self.initial_candidate_multiplier = getattr(config, 'initial_candidate_multiplier', 2)
         
-        # 检索结果缓存
+        # Retrieval result cache
         self.last_retrieved_ids = []
         self.last_reasoning_paths = {}
         self.last_reasoning_details = {}
@@ -770,7 +771,7 @@ class NGMemorySystemRecall:
 
     def __graph_traversal_depth_first__(self, query_embedding, start_node_ids, visited=None, depth=0):
         """
-        深度优先图遍历
+        Depth-first graph traversal
         """
         if visited is None:
             visited = set()
@@ -786,23 +787,23 @@ class NGMemorySystemRecall:
             
             visited.add(node_id)
 
-            # 获取节点嵌入
+            # Get node embedding
             node_mid = self.storage.get_mid_by_node_id(node_id)
             if node_mid >= self.multimodal_retrieval.tensorstore.size(0):
                 continue
             
             node_embedding = self.multimodal_retrieval.tensorstore[node_mid:node_mid+1]
 
-            # 计算与查询的相似度
+            # Calculate similarity with query
             query_norm = torch.nn.functional.normalize(query_embedding, dim=-1)
             node_norm = torch.nn.functional.normalize(node_embedding, dim=-1)
             similarity = torch.matmul(query_norm, node_norm.T).item()
 
-            # 如果超过阈值，加入候选
+            # Add to candidates if above threshold
             if similarity >= self.traversal_threshold:
                 candidates.append((node_id, similarity))
 
-            # 继续遍历邻居
+            # Continue traversing neighbors
             neighbors = self.storage.get_neighbors(node_id)
             if neighbors:
                 neighbor_candidates = self.__graph_traversal_depth_first__(
@@ -814,11 +815,11 @@ class NGMemorySystemRecall:
     
     def __graph_traversal_breadth_first__(self, query_embedding, initial_node_ids):
         """
-        广度优先图遍历（匹配原始实现）
+        Breadth-first graph traversal (matches original implementation)
         """
         import torch
 
-        # 1. 扩展搜索：添加所有初始节点及其邻居
+        # 1. Expand search: add all initial nodes and their neighbors
         expanded_nodes = set()
         for node_id in initial_node_ids:
             expanded_nodes.add(node_id)
@@ -826,7 +827,7 @@ class NGMemorySystemRecall:
             for neighbor in neighbors:
                 expanded_nodes.add(neighbor)
 
-        # 2. 为所有扩展节点重新计算相似度
+        # 2. Recalculate similarity for all expanded nodes
         final_similarities = []
         for node_id in expanded_nodes:
             try:
@@ -836,12 +837,12 @@ class NGMemorySystemRecall:
                 
                 node_embedding = self.multimodal_retrieval.tensorstore[node_mid:node_mid+1]
 
-                # 计算余弦相似度
+                # Calculate cosine similarity
                 query_norm = torch.nn.functional.normalize(query_embedding, dim=-1)
                 node_norm = torch.nn.functional.normalize(node_embedding, dim=-1)
                 similarity = torch.matmul(query_norm, node_norm.T).item()
                 
-                # 应用度数提升
+                # Apply degree boost
                 node_degree = self.storage.get_node_degree(node_id)
                 degree_boost = 1 + (node_degree * 0.1)
                 boosted_similarity = similarity * degree_boost
@@ -850,13 +851,13 @@ class NGMemorySystemRecall:
             except Exception:
                 continue
 
-        # 3. 按相似度排序
+        # 3. Sort by similarity
         final_similarities.sort(key=lambda x: x[1], reverse=True)
         return final_similarities
     
     def __graph_traversal__(self, query_embedding, start_node_ids, visited=None, depth=0):
         """
-        图遍历入口方法
+        Graph traversal entry method
         """
         if self.traversal_strategy == 'breadth_first':
             return self.__graph_traversal_breadth_first__(query_embedding, start_node_ids)
@@ -865,14 +866,13 @@ class NGMemorySystemRecall:
 
     def __call__(self, query):
         """
-        基于查询的图遍历记忆召回
+        Query-based graph traversal memory recall
         """
         if self.storage.is_empty():
             return []
         
-        logger.debug(f"召回查询: {query if isinstance(query, str) else str(query)[:100]}...")
 
-        # 1. 首先使用嵌入相似度找到最相关的起始节点
+        # 1. First find most relevant starting nodes using embedding similarity
         initial_topk = 3
         if self.traversal_strategy == 'breadth_first':
             initial_topk = min(initial_topk * self.initial_candidate_multiplier, 
@@ -884,12 +884,12 @@ class NGMemorySystemRecall:
         if len(ranking_ids) == 0:
             return []
 
-        # 2. 编码查询
+        # 2. Encode query
         query_embedding = self.multimodal_retrieval.encoder(query, return_type='tensor')
         if self.multimodal_retrieval.config.mode == 'cosine':
             query_embedding = self.multimodal_retrieval.__normalize__(query_embedding)
 
-        # 3. 获取起始节点ID
+        # 3. Get starting node IDs
         start_node_ids = []
         for mid in ranking_ids:
             try:
@@ -897,21 +897,21 @@ class NGMemorySystemRecall:
                 start_node_ids.append(node_id)
             except (KeyError, IndexError):
                 continue
-        # 4. 执行图遍历
+        # 4. Execute graph traversal
         traversal_results = self.__graph_traversal__(query_embedding, start_node_ids)
 
-        # 5. 合并初始检索结果和遍历结果
+        # 5. Merge initial retrieval results and traversal results
         all_candidates = {}
 
         if self.traversal_strategy == 'breadth_first':
-            # 广度优先：直接使用遍历结果
+            # Breadth-first: use traversal results directly
             for node_id, boosted_similarity in traversal_results:
                 all_candidates[node_id] = boosted_similarity
         else:
-            # 深度优先：合并结果并应用度数提升
+            # Depth-first: merge results and apply degree boost
             import torch
             
-            # 添加初始检索结果
+            # Add initial retrieval results
             for mid in ranking_ids:
                 try:
                     node_id = self.storage.get_node_id_by_mid(int(mid))
@@ -923,14 +923,14 @@ class NGMemorySystemRecall:
                         node_norm = torch.nn.functional.normalize(node_embedding, dim=-1)
                         similarity = torch.matmul(query_norm, node_norm.T).item()
                         
-                        # 应用度数提升
+                        # Apply degree boost
                         node_degree = self.storage.get_node_degree(node_id)
                         degree_boost = 1 + (node_degree * 0.1)
                         all_candidates[node_id] = similarity * degree_boost
                 except Exception:
                     all_candidates[node_id] = 1.0
 
-            # 添加遍历结果
+            # Add traversal results
             for node_id, similarity in traversal_results:
                 node_degree = self.storage.get_node_degree(node_id)
                 degree_boost = 1 + (node_degree * 0.1)
@@ -941,14 +941,14 @@ class NGMemorySystemRecall:
                 else:
                     all_candidates[node_id] = max(all_candidates[node_id], boosted_similarity)
 
-        # 6. 排序并选择top-k
+        # 6. Sort and select top-k
         sorted_candidates = sorted(all_candidates.items(), key=lambda x: x[1], reverse=True)
         selected_node_ids = [node_id for node_id, _ in sorted_candidates[:self.max_nodes]]
         
         if not selected_node_ids:
             return []
 
-        # 7. 收集记忆
+        # 7. Collect memories
         memories = []
         retrieved_ids = []
         for node_id in selected_node_ids:
@@ -957,47 +957,47 @@ class NGMemorySystemRecall:
             if 'dialogue_id' in mem:
                 retrieved_ids.append(mem['dialogue_id'])
 
-        # 记录检索结果
+        # Record retrieval results
         self.last_retrieved_ids = retrieved_ids
         
-        logger.debug(f"召回 {len(memories)} 个记忆节点")
+        logger.debug(f"Recalled {len(memories)} memory nodes")
         return memories
 
 
-# ==================== 主NGM内存类 ====================
+# ==================== Main NGM Memory Class ====================
 
-class NGMemorySystem:
+class NGMMemorySystem:
     """
     Neural Graph Memory (NGM)
-    神经图记忆系统
+    Neural Graph Memory System
     
     Reference: Neural Graph Memory: A Structured Approach to Long-Term Memory in Multimodal Agents
     """
     def __init__(self, config):
         self.config = config
         
-        # 图存储
+        # Graph storage
         self.storage = GraphStorage(config.storage)
         
-        # 多模态检索器
+        # Multimodal retriever
         self.multimodal_retrieval = MultiModalRetrieval(config.multimodal_retrieval)
         
-        # 存储操作
-        self.store_op = NGMemorySystemStore(
+        # Storage operations
+        self.store_op = NGMMemorySystemStore(
             config.store,
             storage=self.storage,
             multimodal_retrieval=self.multimodal_retrieval
         )
         
-        # 召回操作
-        self.recall_op = NGMemorySystemRecall(
+        # Recall operations
+        self.recall_op = NGMMemorySystemRecall(
             config.recall,
             storage=self.storage,
             multimodal_retrieval=self.multimodal_retrieval
         )
     
     def reset(self):
-        """重置所有组件"""
+        """Reset all components"""
         self.storage.reset()
         self.multimodal_retrieval.reset()
         self.store_op.reset()
@@ -1005,21 +1005,21 @@ class NGMemorySystem:
 
     def store(self, observation):
         """
-        存储观察（文本、图片或两者）为图节点
+        Store observation (text, image, or both) as graph node
         
         Returns:
-            tuple: (node_id, store_time) 节点ID和存储耗时
+            tuple: (node_id, store_time) node ID and store duration
         """
         return self.store_op(observation)
     
     def recall(self, query):
         """
-        基于查询召回相关记忆
+        Recall relevant memories based on query
         """
         return self.recall_op(query)
     
     def get_graph_statistics(self):
-        """获取图统计信息"""
+        """Get graph statistics"""
         if self.storage.get_element_number() == 0:
             return {
                 'total_nodes': 0,
@@ -1047,14 +1047,14 @@ class NGMemorySystem:
         }
     
     def get_store_statistics(self):
-        """获取存储时间统计"""
+        """Get storage time statistics"""
         return self.store_op.get_store_statistics()
 
 
-# ==================== 配置类 ====================
+# ==================== Configuration Class ====================
 
 class Config:
-    """配置类"""
+    """Configuration class"""
     def __init__(self, **kwargs):
         for key, value in kwargs.items():
             if isinstance(value, dict):
@@ -1063,32 +1063,32 @@ class Config:
                 setattr(self, key, value)
 
 
-# ==================== 对话加载器 ====================
+# ==================== Dialogue Loader ====================
 
 class DialogueLoader:
-    """对话加载器"""
+    """Dialogue loader"""
     
     @staticmethod
     def load_conversations(conversations_dir: str) -> List[Dict]:
-        """加载所有对话"""
+        """Load all conversations"""
         conversations = []
         base_dir = Path(conversations_dir)
         
         scenes_dir = os.path.join(base_dir, "scenes")
         if not os.path.exists(scenes_dir):
-            raise ValueError(f"找不到scenes目录: {scenes_dir}")
+            raise ValueError(f"Scenes directory not found: {scenes_dir}")
             
         session_dirs = natsorted([
             d for d in os.listdir(scenes_dir) 
             if os.path.isdir(os.path.join(scenes_dir, d))
         ])
-        # 遍历所有session
+        # Iterate through all sessions
         for session_dir_name in session_dirs:
             session_dir = os.path.join(scenes_dir, session_dir_name)
             session_dir = Path(session_dir)
             conv_file = os.path.join(session_dir, "session.json")
             if not os.path.exists(conv_file):
-                logger.warning(f"未找到session.json文件: {conv_file}")
+                logger.warning(f"session.json file not found: {conv_file}")
                 continue
             
             try:
@@ -1099,7 +1099,7 @@ class DialogueLoader:
                 dialogues = conv_data.get("dialogue", [])
                 timeline_date = conv_data.get("timeline_date", "")
                 for i, dialogue in enumerate(dialogues):
-                    # 构建观察对象
+                    # Build observation object
                     observation = {
                         'session_id': session_id,
                         'dialogue_id': f"{session_id}_{i}",
@@ -1109,7 +1109,7 @@ class DialogueLoader:
                         'timestamp': dialogue.get('timeline_date', time.time())
                     }
                     
-                    # 处理图片
+                    # Process image
                     image_path = dialogue.get('content', {}).get('image', '')
                     prefix = os.path.join(session_dir, "image")
                     if image_path:
@@ -1120,17 +1120,17 @@ class DialogueLoader:
                     conversations.append(observation)
                     
             except Exception as e:
-                logger.error(f"加载对话失败 {conv_file}: {e}")
+                logger.error(f"Failed to load conversation {conv_file}: {e}")
         
-        logger.info(f"加载了 {len(conversations)} 条对话")
+        logger.info(f"Loaded {len(conversations)} conversations")
         return conversations
 
 
-# ==================== VLM评估器 ====================
+# ==================== VLM Evaluator ====================
 
 @dataclass
 class QuestionAnswerPair:
-    """问题-答案对"""
+    """Question-Answer Pair"""
     question_id: str
     session_id: str
     dialogue_name: str
@@ -1148,15 +1148,15 @@ class QuestionAnswerPair:
     
     def __post_init__(self):
         if self.question_type:
-            subsub_type = self.question_type.get("subsub_type", "")
-            self.category = subsub_type or self.question_type.get("sub_type", "general")
+            sub_type = self.question_type.get("sub_type", "")
+            self.category = sub_type or self.question_type.get("sub_type", "general")
         else:
             self.category = "general"
 
 
 @dataclass
 class EvaluationResult:
-    """评估结果"""
+    """Evaluation result"""
     sample_id: str
     session_id: str
     dialogue_name: str
@@ -1182,10 +1182,11 @@ class EvaluationResult:
     retrieved_nodes: Optional[List[str]] = None
     graph_stats: Optional[Dict] = None
     
-    # 新增时间字段
-    recall_time: float = 0.0        # 召回记忆时间
-    prompt_build_time: float = 0.0  # 构建提示词时间
-    api_call_time: float = 0.0      # API调用时间
+    # New timing fields
+    recall_time: float = 0.0        # Memory recall time
+    prompt_build_time: float = 0.0  # Prompt building time
+    api_call_time: float = 0.0      # API call time
+
 
 class SimpleRetrievalPromptTemplate:
     """Standardized prompt template for simple retrieval-based questions"""
@@ -1198,15 +1199,15 @@ class SimpleRetrievalPromptTemplate:
         "Temporal Reasoning": "Reason about temporal relationships and time-based information in the retrieved conversation memories.",
         "Multimodal Causal Reasoning": "Perform causal reasoning using both text and image information from the retrieved conversation memories.",
         "Reference & Evolution Tracking": "Track references and their evolution throughout the retrieved conversation memories.",
-        "Test-Time Learning (TTL)": "Learn and adapt from the retrieved conversation memories at test time to answer the question.",
-        "Conflict Detection (CD)": "Check whether this information conflicts with the retrieved conversation memories.",
-        "Answer Refusal (AR)": "Determine if the question can be answered based on the retrieved conversation memories."
+        "Test-Time Learning": "Learn and adapt from the retrieved conversation memories at test time to answer the question.",
+        "Conflict Detection": "Check whether this information conflicts with the retrieved conversation memories.",
+        "Answer Refusal": "Determine if the question can be answered based on the retrieved conversation memories."
     }
     
     # Response format requirements
     FORMAT_REQUIREMENTS = {
-        "Conflict Detection (CD)": "Response format: Reply strictly with either 'Yes' or 'No' only.",
-        "Answer Refusal (AR)": "Response format: If the information is present in the retrieved conversation memories, provide answer based on that information; if not present, reply with: 'Not mentioned.'",
+        "Conflict Detection": "Response format: Reply strictly with either 'Yes' or 'No' only.",
+        "Answer Refusal": "Response format: If the information is present in the retrieved conversation memories, provide answer based on that information; if not present, reply with: 'Not mentioned.'",
         "default": "Response format: Provide clear and accurate answers based on the retrieved conversation memories."
     }
     
@@ -1264,19 +1265,20 @@ We need answer: cat name is Almond because..."""
 
 class VLMEvaluator:
     """
-    VLM评估器 - 使用NGM记忆系统
+    VLM Evaluator - using NGM memory system
     """
-    
     def __init__(self, 
-                 memory_system: NGMemorySystem,
-                 api_key: str,
-                 model: str = "",
-                 base_url: str = "",
-                 verbose: bool = False,
-                 max_retries: int = 3,
-                 timeout: int = 60,
-                 test_mode: bool = False,
-                 max_questions_per_session: Optional[int] = None):
+                memory_system: NGMMemorySystem,
+                api_key: str,
+                model: str = "",
+                base_url: str = "",
+                verbose: bool = False,
+                max_retries: int = 3,
+                timeout: int = 60,
+                test_mode: bool = False,
+                retrieval_topk: int = 10,  # New
+                max_context_tokens: int = 4096,  # New
+                max_images: int = 5):  # New
         
         self.memory_system = memory_system
         self.api_key = api_key
@@ -1286,23 +1288,23 @@ class VLMEvaluator:
         self.max_retries = max_retries
         self.timeout = timeout
         self.test_mode = test_mode
-        self.max_questions_per_session = max_questions_per_session
-
-
-        # 新增：记录失败的问题文件路径（使用set自动去重）
-        self.failed_json_files = set()
         
-        # 统计信息
+        # New configuration attributes
+        self.retrieval_topk = retrieval_topk
+        self.max_context_tokens = max_context_tokens
+        self.max_images = max_images
+        
+        # Statistics
         self.session_statistics = defaultdict(lambda: {
             "total": 0, 
             "successful": 0, 
             "failed": 0, 
             "processing_time": 0.0,
-            "total_recall_time": 0.0,      # 新增
-            "total_prompt_build_time": 0.0, # 新增
-            "total_api_call_time": 0.0      # 新增
+            "total_recall_time": 0.0,
+            "total_prompt_build_time": 0.0,
+            "total_api_call_time": 0.0
         })
-    
+        
 
     def load_questions(self, conversations_dir: str) -> Dict[str, Dict]:
         sessions_questions = {}
@@ -1314,14 +1316,14 @@ class VLMEvaluator:
         else:
             dialogue_dirs = [d for d in base_dir.iterdir() if d.is_dir() and d.name.startswith("dialogue")]
             if not dialogue_dirs:
-                raise ValueError(f"找不到对话目录: {base_dir}")
+                raise ValueError(f"Dialogue directory not found: {base_dir}")
             dialogue_name = dialogue_dirs[0].name
             scenes_dir = dialogue_dirs[0] / "scenes"
         
         if not scenes_dir.exists():
-            raise ValueError(f"找不到scenes目录: {scenes_dir}")
+            raise ValueError(f"Scenes directory not found: {scenes_dir}")
         
-        logger.info(f"正在从 {scenes_dir} 加载问题文件...")
+        logger.info(f"Loading question files from {scenes_dir}...")
         
         
         for session_dir in scenes_dir.iterdir():
@@ -1343,55 +1345,54 @@ class VLMEvaluator:
                 questions = data.get("questions", [])
                 question_pairs = []
                 
-                # 图片目录
+                # Image directory
                 image_dir = session_dir / "image"
                 
                 for q in questions:
-                    q_id = q.get("question_id", "")
+                    q_id = q.get("question_id", f"NGM_{len(question_pairs)}")
                     
-                    # 获取问题图片文件名
+                    # Get question image filename
                     question_image_filename = q.get("question", {}).get("image", "")
                     
-                    # 如果问题有图片，构建完整路径并保存到image_context
+                    # If question has image, build full path and save to image_context
                     image_context_list = []
                     if question_image_filename:
                         if str(session_dir) == "session0":
                             fold, img_file = question_image_filename.split("/", 1)
                             full_path = scenes_dir / fold / "image" / img_file
                             image_context_list.append(str(full_path))
-                            logger.debug(f"问题 {q_id} 的图片完整路径: {full_path}")
+
                             qa_pair = QuestionAnswerPair(
                                 question_id=q_id,
                                 session_id=fold,
                                 dialogue_name=dialogue_name,
                                 question_text=q.get("question", {}).get("text", ""),
-                                question_image=question_image_filename,  # 保持原始文件名
+                                question_image=question_image_filename,  # Keep original filename
                                 original_answer=q.get("original_answer", ""),
                                 answer_source=q.get("answer_source", "unknown"),
                                 answer_session=q.get("answer_session", []),
                                 question_type=q.get("question_type", {}),
                                 difficulty=q.get("difficulty", "medium"),
                                 supporting_evidence=q.get("supporting_evidence", []),
-                                image_context=image_context_list  # 这里保存完整路径
+                                image_context=image_context_list  # Save full path here
                             )
                         else:
                             full_path = image_dir / question_image_filename
                             image_context_list.append(str(full_path))
-                            logger.debug(f"问题 {q_id} 的图片完整路径: {full_path}")
                     
                             qa_pair = QuestionAnswerPair(
                                 question_id=q_id,
                                 session_id=session_id,
                                 dialogue_name=dialogue_name,
                                 question_text=q.get("question", {}).get("text", ""),
-                                question_image=question_image_filename,  # 保持原始文件名
+                                question_image=question_image_filename,  # Keep original filename
                                 original_answer=q.get("original_answer", ""),
                                 answer_source=q.get("answer_source", "unknown"),
                                 answer_session=q.get("answer_session", []),
                                 question_type=q.get("question_type", {}),
                                 difficulty=q.get("difficulty", "medium"),
                                 supporting_evidence=q.get("supporting_evidence", []),
-                                image_context=image_context_list  # 这里保存完整路径
+                                image_context=image_context_list  # Save full path here
                             )
                     else:
                         qa_pair = QuestionAnswerPair(
@@ -1399,14 +1400,14 @@ class VLMEvaluator:
                             session_id=session_id,
                             dialogue_name=dialogue_name,
                             question_text=q.get("question", {}).get("text", ""),
-                            question_image="",  # 没有图片
+                            question_image="",  # No image
                             original_answer=q.get("original_answer", ""),
                             answer_source=q.get("answer_source", "unknown"),
                             answer_session=q.get("answer_session", []),
                             question_type=q.get("question_type", {}),
                             difficulty=q.get("difficulty", "medium"),
                             supporting_evidence=q.get("supporting_evidence", []),
-                            image_context=[]  # 没有图片上下文
+                            image_context=[]  # No image context
                         )
                     question_pairs.append(qa_pair)
                 
@@ -1417,53 +1418,53 @@ class VLMEvaluator:
                     "question_file": str(question_file)
                 }
                 
-                logger.info(f"从 {session_id} 加载了 {len(question_pairs)} 个问题")
+                logger.info(f"Loaded {len(question_pairs)} questions from {session_id}")
                 
             except Exception as e:
-                logger.error(f"加载问题文件失败 {question_file}: {e}")
+                logger.error(f"Failed to load question file {question_file}: {e}")
         
-        logger.info(f"总共从 {len(sessions_questions)} 个session加载了问题")
+        logger.info(f"Loaded questions from {len(sessions_questions)} sessions total")
         return sessions_questions
 
     def _format_memory_context(self, memories: List[Dict]) -> str:
         if not memories:
-            return "无可用记忆"
+            return "No available memory"
         
         context_parts = []
-        context_parts.append("【神经图记忆 (NGM) 检索结果】")
-        context_parts.append(f"检索到 {len(memories)} 个相关记忆节点")
+        context_parts.append("[Neural Graph Memory (NGM) Retrieval Results]")
+        context_parts.append(f"Retrieved {len(memories)} relevant memory nodes")
         
-        # 按session分组
+        # Group by session
         sessions = defaultdict(list)
         for mem in memories:
             sessions[mem.get('session_id', 'unknown')].append(mem)
         
         for session_id, session_mems in sessions.items():
-            context_parts.append(f"\n【Session {session_id}】")
+            context_parts.append(f"\n[Session {session_id}]")
             
-            # 按对话索引排序
+            # Sort by dialogue index
             session_mems.sort(key=lambda x: x.get('dialogue_index', 0))
             for mem in session_mems:
                 role = mem.get('role', 'unknown')
                 text = mem.get('text', '')
                 has_image = 'image' in mem
                 
-                line = f"  第{mem.get('dialogue_index', 0)}轮 - {role}: {text}"
+                line = f"  Turn {mem.get('dialogue_index', 0)} - {role}: {text}"
                 if has_image:
-                    line += f"[发送图片:{mem.get('image_name', '')}]"
+                    line += f"[Sent image: {mem.get('image_name', '')}]"
                 
                 context_parts.append(line)
         
         return "\n".join(context_parts)
     
     def _prepare_image_for_api(self, image_path: str) -> str:
-        """准备图片用于API"""
+        """Prepare image for API"""
         try:
             with Image.open(image_path) as img:
-                # 缩放到合适大小
+                # Resize to appropriate size
                 img.thumbnail((1024, 1024), Image.Resampling.LANCZOS)
                 
-                # 转换为RGB
+                # Convert to RGB
                 if img.mode in ('RGBA', 'LA', 'P'):
                     rgb_img = Image.new('RGB', img.size, (255, 255, 255))
                     if img.mode == 'P':
@@ -1473,7 +1474,7 @@ class VLMEvaluator:
                 elif img.mode != 'RGB':
                     img = img.convert('RGB')
                 
-                # 转换为base64
+                # Convert to base64
                 buffer = BytesIO()
                 img.save(buffer, format='JPEG', quality=85)
                 img_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
@@ -1481,11 +1482,11 @@ class VLMEvaluator:
                 return img_base64
                 
         except Exception as e:
-            logger.error(f"处理图片失败 {image_path}: {e}")
+            logger.error(f"Failed to process image {image_path}: {e}")
             raise
     
     def _call_vlm_api(self, prompt: str, images) -> Dict[str, Any]:
-        """调用VLM API"""
+        """Call VLM API"""
         start_time = time.time()
         
         messages = [{
@@ -1493,12 +1494,12 @@ class VLMEvaluator:
             "content": []
         }]
         
-        # 添加文本
+        # Add text
         messages[0]["content"].append({
             "type": "text",
             "text": prompt
         })
-        # 添加图片
+        # Add images
         if images:
             if images['memory_image']:
                 for image in images['memory_image']:
@@ -1514,7 +1515,7 @@ class VLMEvaluator:
                             "marker":"memory_image",
                         })
                     except Exception as e:
-                        logger.error(f"添加图片失败 {image}: {e}")
+                        logger.error(f"Failed to add image {image}: {e}")
             if images["question_image"]:
                 for image in images["question_image"]:  
                     try:
@@ -1527,7 +1528,7 @@ class VLMEvaluator:
                             "marker":"question_image"
                         })
                     except Exception as e:
-                        logger.error(f"添加图片失败 {image}: {e}")
+                        logger.error(f"Failed to add image {image}: {e}")
         payload = {
             "model": self.model,
             "messages": messages,
@@ -1557,18 +1558,18 @@ class VLMEvaluator:
                         "success": True
                     }
                 else:
-                    logger.warning(f"API返回错误码 {response.status_code}: {response.text}")
+                    logger.warning(f"API returned error code {response.status_code}: {response.text}")
                     
             except Exception as e:
-                logger.warning(f"API调用失败 (尝试 {attempt+1}): {e}")
+                logger.warning(f"API call failed (attempt {attempt+1}): {e}")
                 if attempt < self.max_retries - 1:
                     time.sleep(2)
         
         return {
-            "answer": "[API调用失败]",
+            "answer": "[API call failed]",
             "processing_time": time.time() - start_time,
             "success": False,
-            "error": "所有重试都失败"
+            "error": "All retries failed"
         }
     
     def _construct_prompt(self, question: QuestionAnswerPair, memories: List[Dict]) -> str:
@@ -1578,7 +1579,7 @@ class VLMEvaluator:
         context = self._format_memory_context(memories)
         
         # Get question type
-        question_type = question.question_type.get("subsub_type", "") if question.question_type else ""
+        question_type = question.question_type.get("sub_type", "") if question.question_type else ""
         
         # Build combined question text (with image context if available)
         combined_question = self._build_combined_question(question)
@@ -1609,13 +1610,13 @@ class VLMEvaluator:
     def evaluate_single_question(self, question: QuestionAnswerPair) -> EvaluationResult:
         start_time = time.time()
         
-        # 时间记录变量
+        # Timing variables
         recall_time = 0.0
         prompt_build_time = 0.0
         api_call_time = 0.0
         
         try:
-            # 1. 构建查询
+            # 1. Build query
             if question.image_context and os.path.exists(question.image_context[0]):
                 query = {
                     'text': question.question_text,
@@ -1624,17 +1625,17 @@ class VLMEvaluator:
             else:
                 query = question.question_text
             
-            # 2. 基于查询召回相关记忆（记录时间）
+            # 2. Recall relevant memories based on query (record time)
             recall_start = time.time()
             memories = self.memory_system.recall(query)
             recall_time = time.time() - recall_start
             
-            # 3. 构建提示词（记录时间）
+            # 3. Build prompt (record time)
             prompt_start = time.time()
             prompt = self._construct_prompt(question, memories)
             prompt_build_time = time.time() - prompt_start
             
-            # 4. 准备图片
+            # 4. Prepare images
             images = {"memory_image": [], "question_image": []}
             if question.image_context and os.path.exists(question.image_context[0]):
                 images["question_image"].append({"image": question.image_context[0]})
@@ -1647,15 +1648,15 @@ class VLMEvaluator:
                     }
                     images['memory_image'].append(dic1)
             
-            # 5. 调用VLM（记录时间）
+            # 5. Call VLM (record time)
             api_start = time.time()
             vlm_response = self._call_vlm_api(prompt, images)
             api_call_time = vlm_response.get("processing_time", time.time() - api_start)
             
-            # 总处理时间
+            # Total processing time
             total_processing_time = time.time() - start_time
             
-            # 6. 创建结果
+            # 6. Create result
             result = EvaluationResult(
                 sample_id=f"{question.session_id}_{question.question_id}_{int(time.time())}",
                 session_id=question.session_id,
@@ -1670,20 +1671,20 @@ class VLMEvaluator:
                 category=question.category,
                 difficulty=question.difficulty,
                 timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                memory_type="NGM",
+                memory_type="NGMMemorySystem",
                 vlm_model=self.model,
                 processing_time=total_processing_time,
                 confidence=0.7 if vlm_response.get("success") else 0.0,
                 retrieved_nodes=[memories[i]["dialogue_id"] for i in range(len(memories))],
                 graph_stats=self.memory_system.get_graph_statistics(),
                 success=vlm_response.get("success", False),
-                # 新增时间字段
+                # New timing fields
                 recall_time=recall_time,
                 prompt_build_time=prompt_build_time,
                 api_call_time=api_call_time
             )
             
-            # 更新统计
+            # Update statistics
             stats = self.session_statistics[question.session_id]
             stats["successful"] += 1
             stats["processing_time"] += total_processing_time
@@ -1691,16 +1692,16 @@ class VLMEvaluator:
             stats["total_prompt_build_time"] = stats.get("total_prompt_build_time", 0) + prompt_build_time
             stats["total_api_call_time"] = stats.get("total_api_call_time", 0) + api_call_time
                         
-            logger.info(f"✓ 成功处理: {question.question_id} "
-                        f"(总: {total_processing_time:.2f}s, 召回: {recall_time:.3f}s, "
-                        f"提示词: {prompt_build_time:.3f}s, API: {api_call_time:.2f}s)")
+            logger.info(f"✓ Successfully processed: {question.question_id} "
+                        f"(Total: {total_processing_time:.2f}s, Recall: {recall_time:.3f}s, "
+                        f"Prompt: {prompt_build_time:.3f}s, API: {api_call_time:.2f}s)")
             
             return result
             
         except Exception as e:
             total_processing_time = time.time() - start_time
             error_msg = str(e)[:200]
-            logger.error(f"处理问题 {question.question_id} 失败: {error_msg}")
+            logger.error(f"Failed to process question {question.question_id}: {error_msg}")
             
             
             return EvaluationResult(
@@ -1710,14 +1711,14 @@ class VLMEvaluator:
                 question_id=question.question_id,
                 question_text=question.question_text,
                 question_image=question.question_image,
-                system_answer=f"[处理错误: {error_msg}]",
+                system_answer=f"[Processing error: {error_msg}]",
                 original_answer=question.original_answer,
                 answer_source=question.answer_source,
                 question_type=question.question_type,
                 category=question.category,
                 difficulty=question.difficulty,
                 timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                memory_type="NGM",
+                memory_type="NGMMemorySystem",
                 vlm_model=self.model,
                 processing_time=total_processing_time,
                 confidence=0.0,
@@ -1728,143 +1729,207 @@ class VLMEvaluator:
                 api_call_time=api_call_time
             )
     
-    def evaluate_session(self, session_id: str, questions: List[QuestionAnswerPair], session_path: Path) -> List[Dict]:
+    def evaluate_session(self, session_id: str, questions: List[QuestionAnswerPair], session_path: Path) -> Dict:
+        """Evaluate entire session, return dictionary containing results and metadata"""
         self.session_statistics[session_id]["total"] = len(questions)
         
         results = []
         for i, q in enumerate(questions):
-            logger.info(f"  处理问题 {i+1}/{len(questions)}: {q.question_id}")
+            logger.info(f"  Processing question {i+1}/{len(questions)}: {q.question_id}")
             result = self.evaluate_single_question(q)
             results.append(asdict(result))
             
-            # 保存中间结果
+            # Save intermediate results
             self._save_intermediate_results(session_id, results, session_path)
         
-        # 输出session时间统计
+        # Output session timing statistics
         stats = self.session_statistics[session_id]
         successful = stats["successful"]
         if successful > 0:
-            logger.info(f"Session {session_id} 时间统计 - "
-                        f"平均召回: {stats['total_recall_time']/successful:.3f}s, "
-                        f"平均提示词: {stats['total_prompt_build_time']/successful:.3f}s, "
-                        f"平均API: {stats['total_api_call_time']/successful:.2f}s")
+            logger.info(f"Session {session_id} timing statistics - "
+                        f"Avg recall: {stats['total_recall_time']/successful:.3f}s, "
+                        f"Avg prompt: {stats['total_prompt_build_time']/successful:.3f}s, "
+                        f"Avg API: {stats['total_api_call_time']/successful:.2f}s")
         
-        return results
+        # Build metadata
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        graph_stats = self.memory_system.get_graph_statistics()
+        
+        metadata = {
+            "session_id": session_id,
+            "session_path": str(session_path),
+            "vlm_model": self.model,
+            "memory_type": type(self.memory_system).__name__,
+            "base_url": self.base_url,
+            "context_type": "multimodal_ngm",
+            "retrieval_topk": getattr(self, 'retrieval_topk', 10),
+            "max_context_tokens": getattr(self, 'max_context_tokens', 4096),
+            "max_images": getattr(self, 'max_images', 5),
+            "evaluation_time": timestamp,
+            "total_questions": len(questions),
+            "successful_questions": successful,
+            "graph_total_nodes": graph_stats.get('total_nodes', 0) if graph_stats else 0,
+            "graph_total_edges": graph_stats.get('total_edges', 0) if graph_stats else 0,
+            "graph_avg_degree": graph_stats.get('avg_degree', 0) if graph_stats else 0,
+            "similarity_threshold": getattr(self.memory_system.store_op, 'similarity_threshold', 0.7),
+            "traversal_strategy": getattr(self.memory_system.recall_op, 'traversal_strategy', 'breadth_first'),
+            "max_depth": getattr(self.memory_system.recall_op, 'max_depth', 3),
+            "max_nodes": getattr(self.memory_system.recall_op, 'max_nodes', 10),
+            "test_mode": self.test_mode,
+        }
+        
+        return {
+            "metadata": metadata,
+            "results": results,
+            "statistics": dict(stats)  # Convert to regular dictionary
+        }
     
     def _save_intermediate_results(self, session_id: str, results: List[Dict], session_path: Path):
-        """保存中间结果"""
+        """Save intermediate results, including metadata"""
         session_dir = session_path / "evaluation_results"
         session_dir.mkdir(exist_ok=True)
         
         output_file = os.path.join(session_dir, "results_NGM.json")
+        
+        # Build metadata
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        graph_stats = self.memory_system.get_graph_statistics()
+        
+        metadata = {
+            "session_id": session_id,
+            "session_path": str(session_path),
+            "vlm_model": self.model,
+            "memory_type": type(self.memory_system).__name__,
+            "base_url": self.base_url,
+            "context_type": "multimodal_ngm",
+            "retrieval_topk": getattr(self, 'retrieval_topk', 10),
+            "max_context_tokens": getattr(self, 'max_context_tokens', 4096),
+            "max_images": getattr(self, 'max_images', 5),
+            "evaluation_time": timestamp,
+            "total_questions": len(results),
+            "successful_questions": sum(1 for r in results if r.get('success', False)),
+            "graph_total_nodes": graph_stats.get('total_nodes', 0) if graph_stats else 0,
+            "graph_total_edges": graph_stats.get('total_edges', 0) if graph_stats else 0,
+            "graph_avg_degree": graph_stats.get('avg_degree', 0) if graph_stats else 0,
+            "similarity_threshold": getattr(self.memory_system.store_op, 'similarity_threshold', 0.7),
+            "traversal_strategy": getattr(self.memory_system.recall_op, 'traversal_strategy', 'breadth_first'),
+            "max_depth": getattr(self.memory_system.recall_op, 'max_depth', 3),
+            "max_nodes": getattr(self.memory_system.recall_op, 'max_nodes', 10),
+            "test_mode": self.test_mode,
+        }
+        
+        # Get current statistics
+        current_stats = self.session_statistics[session_id]
+        
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({
-                "session_id": session_id,
+                "metadata": metadata,
                 "results": results,
-                "statistics": self.session_statistics[session_id]
+                "statistics": dict(current_stats)
             }, f, ensure_ascii=False, indent=2)
 
 
-# ==================== 主函数 ====================
+# ==================== Main Function ====================
 
 def parse_arguments():
-    """解析命令行参数"""
-    parser = argparse.ArgumentParser(description="NGM记忆系统 - 完整实现 (GME编码器)")
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description="NGM Memory System - Complete Implementation (GME Encoder)")
     
-    # 路径参数 – 全部改为必需
+    # Path parameters - all required
     parser.add_argument("--conversations_dir", type=str, required=True,
-                       help="对话数据目录（必需）")
-    parser.add_argument("--output_dir", type=str, required=True,
-                       help="输出目录（必需）")
+                       help="Conversation data directory (required)")
     parser.add_argument("--image_base_path", type=str, default="",
-                       help="图片基础路径，用于相对路径图片（可选）")
+                       help="Base path for images, used for relative image paths (optional)")
     
-    # 编码器参数
+    # Encoder parameters
     parser.add_argument("--encoder_method", type=str, default="GMEEncoder",
                        choices=["GMEEncoder", "CLIPEncoder"],
-                       help="编码器类型")
-    parser.add_argument("--encoder_path", type=str, 
+                       help="Encoder type")
+    parser.add_argument("--encoder_model", type=str, 
                        default="Alibaba-NLP/gme-Qwen2-VL-7B-Instruct",
-                       help="编码器模型路径或名称")
+                       help="Encoder model path or name")
     parser.add_argument("--embedding_dim", type=int, default=1024,
-                       help="嵌入向量维度")
+                       help="Embedding vector dimension")
     parser.add_argument("--retrieval_mode", type=str, default="cosine",
                        choices=["cosine", "dot", "L2"],
-                       help="检索模式")
+                       help="Retrieval mode")
     parser.add_argument("--retrieval_topk", type=int, default=10,
-                       help="检索返回的最相似记忆数量")
+                       help="Number of most similar memories to retrieve")
     
-    # 图构建参数
+    # Graph construction parameters
     parser.add_argument("--similarity_threshold", type=float, default=0.7,
-                       help="语义相似度阈值，用于创建边")
+                       help="Semantic similarity threshold for creating edges")
     parser.add_argument("--max_edges_per_node", type=int, default=5,
-                       help="每个节点的最大边数")
+                       help="Maximum number of edges per node")
     parser.add_argument("--temporal_decay_constant", type=int, default=3600,
-                       help="时间衰减常数（秒），默认1小时")
+                       help="Temporal decay constant (seconds), default 1 hour")
     
-    # 图遍历参数
+    # Graph traversal parameters
     parser.add_argument("--max_depth", type=int, default=3,
-                       help="图遍历最大深度")
+                       help="Maximum depth for graph traversal")
     parser.add_argument("--max_nodes", type=int, default=10,
-                       help="召回的最大节点数")
+                       help="Maximum number of nodes to recall")
     parser.add_argument("--traversal_threshold", type=float, default=0.5,
-                       help="图遍历相似度阈值")
+                       help="Similarity threshold for graph traversal")
     parser.add_argument("--traversal_strategy", type=str, default="breadth_first",
                        choices=["depth_first", "breadth_first"],
-                       help="图遍历策略")
+                       help="Graph traversal strategy")
     parser.add_argument("--initial_candidate_multiplier", type=int, default=2,
-                       help="初始候选节点乘数")
+                       help="Initial candidate node multiplier")
     
-    # VLM API参数
+    # VLM API parameters
     parser.add_argument("--api_key", type=str, required=True,
-                       help="VLM API密钥（必需）")
+                       help="VLM API key (required)")
     parser.add_argument("--vlm_model", type=str, required=True,
-                       help="VLM模型名称（必需）")
+                       help="VLM model name (required)")
     parser.add_argument("--base_url", type=str, required=True,
-                       help="API基础URL（必需）")
+                       help="API base URL (required)")
     parser.add_argument("--max_retries", type=int, default=3,
-                       help="API调用最大重试次数")
+                       help="Maximum number of API call retries")
     parser.add_argument("--timeout", type=int, default=60,
-                       help="API调用超时时间（秒）")
+                       help="API call timeout (seconds)")
     
-    # 评估参数
+    # Evaluation parameters
     parser.add_argument("--test_mode", action="store_true",
-                       help="测试模式，每个session只处理前2个问题")
-    parser.add_argument("--max_questions_per_session", type=int, default=None,
-                       help="每个session处理的最大问题数")
+                       help="Test mode, process only first 2 questions per session")
     parser.add_argument("--verbose", action="store_true",
-                       help="详细日志输出")
+                       help="Verbose logging output")
+    
+    parser.add_argument("--max_context_tokens", type=int, default=4096,
+                       help="Maximum context tokens")
+    parser.add_argument("--max_images", type=int, default=5,
+                       help="Maximum number of images to include")
     
     return parser.parse_args()
 
 
 def main():
-    """主函数"""
+    """Main function"""
     args = parse_arguments()
     
-    # 设置日志级别
+    # Set log level
     if args.verbose:
         logger.setLevel(logging.DEBUG)
     
     print("=" * 70)
-    print("NGM记忆系统 - 完整实现 (GME编码器)")
+    print("NGM Memory System - Complete Implementation (GME Encoder)")
     print("=" * 70)
-    print(f"配置参数:")
-    print(f"  编码器: {args.encoder_method}")
-    print(f"  模型路径: {args.encoder_path}")
-    print(f"  检索模式: {args.retrieval_mode}")
-    print(f"  相似度阈值: {args.similarity_threshold}")
-    print(f"  遍历策略: {args.traversal_strategy}")
-    print(f"  测试模式: {args.test_mode}")
+    print(f"Configuration:")
+    print(f"  Encoder: {args.encoder_method}")
+    print(f"  Model Path: {args.encoder_model}")
+    print(f"  Retrieval Mode: {args.retrieval_mode}")
+    print(f"  Similarity Threshold: {args.similarity_threshold}")
+    print(f"  Traversal Strategy: {args.traversal_strategy}")
+    print(f"  Test Mode: {args.test_mode}")
     print("=" * 70)
     
-    # 构建配置对象
+    # Build configuration object
     from types import SimpleNamespace
     
-    # 创建配置对象
+    # Create configuration objects
     encoder_config = SimpleNamespace(
         method=args.encoder_method,
-        path=args.encoder_path,
+        encoder_model=args.encoder_model,
         embedding_dim=args.embedding_dim,
         image_base_path=args.image_base_path
     )
@@ -1898,24 +1963,23 @@ def main():
         recall=recall_config
     )
     
-    # 1. 初始化NGM记忆系统
-    print("\n[1] 初始化NGM记忆系统...")
-    memory_system = NGMemorySystem(config)
+    # 1. Initialize NGM memory system
+    print("\n[1] Initializing NGM memory system...")
+    memory_system = NGMMemorySystem(config)
     
-    # 2. 加载并存储对话（添加时间统计）
-    print("\n[2] 加载对话并构建记忆图...")
+    # 2. Load and store conversations (with timing statistics)
+    print("\n[2] Loading conversations and building memory graph...")
     store_start_total = time.time()
     
     conversations = DialogueLoader.load_conversations(args.conversations_dir)
     
-    store_times = []  # 记录每次存储时间
-    encoding_times = []  # 编码时间（来自multimodal_retrieval.add）
+    store_times = []  # Record each store operation time
     
     for i, conv in enumerate(conversations):
         if i % 10 == 0:
-            print(f"   已处理 {i}/{len(conversations)} 条对话")
+            print(f"   Processed {i}/{len(conversations)} conversations")
         
-        # 存储并获取耗时
+        # Store and get duration
         node_id, store_time = memory_system.store(conv)
         store_times.append(store_time)
     
@@ -1924,26 +1988,26 @@ def main():
     stats = memory_system.get_graph_statistics()
     store_stats = memory_system.get_store_statistics()
     
-    print(f"\n   记忆构建完成!")
-    print(f"   总节点数: {stats['total_nodes']}")
-    print(f"   总边数: {stats['total_edges']}")
-    print(f"   平均节点度数: {stats['avg_degree']:.2f}")
+    print(f"\n   Memory construction complete!")
+    print(f"   Total nodes: {stats['total_nodes']}")
+    print(f"   Total edges: {stats['total_edges']}")
+    print(f"   Average node degree: {stats['avg_degree']:.2f}")
     
-    # 输出存储时间统计
-    print(f"\n   【存储时间统计】:")
-    print(f"   总存储对话数: {len(conversations)}")
-    print(f"   总存储耗时: {store_total_time:.2f}秒")
-    print(f"   平均每条存储: {store_total_time/len(conversations):.4f}秒")
-    print(f"   最快存储: {min(store_times):.4f}秒")
-    print(f"   最慢存储: {max(store_times):.4f}秒")
+    # Output storage time statistics
+    print(f"\n   [Storage Time Statistics]:")
+    print(f"   Total conversations stored: {len(conversations)}")
+    print(f"   Total storage time: {store_total_time:.2f} seconds")
+    print(f"   Average per storage: {store_total_time/len(conversations):.4f} seconds")
+    print(f"   Fastest storage: {min(store_times):.4f} seconds")
+    print(f"   Slowest storage: {max(store_times):.4f} seconds")
     
-    # 分阶段统计
+    # Stage statistics
     if store_stats['num_stores'] > 0:
-        print(f"   StoreOp总耗时: {store_stats['total_time']:.2f}秒")
-        print(f"   StoreOp平均耗时: {store_stats['avg_time']:.4f}秒")
+        print(f"   StoreOp total time: {store_stats['total_time']:.2f} seconds")
+        print(f"   StoreOp average time: {store_stats['avg_time']:.4f} seconds")
     
-    # 3. 初始化评估器
-    print("\n[3] 初始化VLM评估器...")
+    # 3. Initialize evaluator
+    print("\n[3] Initializing VLM evaluator...")
     print(args.vlm_model, args.base_url)
     evaluator = VLMEvaluator(
         memory_system=memory_system,
@@ -1954,69 +2018,70 @@ def main():
         max_retries=args.max_retries,
         timeout=args.timeout,
         test_mode=args.test_mode,
-        max_questions_per_session=args.max_questions_per_session
+        retrieval_topk=args.retrieval_topk,  # New
+        max_context_tokens=getattr(args, 'max_context_tokens', 4096),  # New
+        max_images=getattr(args, 'max_images', 5)  # New
     )
     
-    # 4. 加载问题
-    print("\n[4] 加载问题文件...")
+    # 4. Load questions
+    print("\n[4] Loading question files...")
     sessions_questions = evaluator.load_questions(args.conversations_dir)
     
     total_questions = sum(len(data["questions"]) for data in sessions_questions.values())
-    print(f"   从 {len(sessions_questions)} 个session加载了 {total_questions} 个问题")
+    print(f"   Loaded {total_questions} questions from {len(sessions_questions)} sessions")
     
-    # 5. 评估
-    print("\n[5] 开始评估...")
+    # 5. Evaluate
+    print("\n[5] Starting evaluation...")
     print("-" * 70)
     for session_id, session_data in sessions_questions.items():
-        print(f"\n处理 Session: {session_id}")
+        print(f"\nProcessing Session: {session_id}")
         session_path = Path(args.conversations_dir) / "scenes" / str(session_id)
         questions = session_data["questions"]
         
-        # 确定要处理的问题数量
+        # Determine number of questions to process
         if args.test_mode:
             process_questions = questions[:2]
-            print(f"  测试模式: 处理 {len(process_questions)}/{len(questions)} 个问题")
-        elif args.max_questions_per_session:
-            process_questions = questions[:args.max_questions_per_session]
-            print(f"  限制模式: 处理 {len(process_questions)}/{len(questions)} 个问题")
+            print(f"  Test mode: Processing {len(process_questions)}/{len(questions)} questions")
         else:
             process_questions = questions
-            print(f"  处理全部 {len(process_questions)} 个问题")
+            print(f"  Processing all {len(process_questions)} questions")
         
-        results = evaluator.evaluate_session(session_id, process_questions, session_path)
+        # Now evaluate_session returns dictionary containing metadata and results
+        session_result = evaluator.evaluate_session(session_id, process_questions, session_path)
         
-        print(f"  完成 {len(results)} 个问题")
+        print(f"  Completed {len(session_result['results'])} questions")
+
     
-    # 6. 输出统计
+    # 6. Output statistics
     print("\n" + "=" * 70)
-    print("评估完成!")
+    print("Evaluation complete!")
     print("=" * 70)
     
     total_processed = sum(s["total"] for s in evaluator.session_statistics.values())
     total_successful = sum(s["successful"] for s in evaluator.session_statistics.values())
     
-    print(f"\n统计信息:")
-    print(f"   处理问题数: {total_processed}")
-    print(f"   成功数: {total_successful}")
+    print(f"\nStatistics:")
+    print(f"   Questions processed: {total_processed}")
+    print(f"   Successful: {total_successful}")
     if total_processed > 0:
-        print(f"   成功率: {total_successful/total_processed*100:.1f}%")
+        print(f"   Success rate: {total_successful/total_processed*100:.1f}%")
     
-    print(f"\nNGM图统计:")
-    print(f"   总节点数: {stats['total_nodes']}")
-    print(f"   总边数: {stats['total_edges']}")
-    print(f"   平均节点度数: {stats['avg_degree']:.2f}")
-    print(f"   相似度阈值: {stats['config']['similarity_threshold']}")
-    print(f"   遍历策略: {stats['config']['traversal_strategy']}")
+    print(f"\nNGM Graph Statistics:")
+    print(f"   Total nodes: {stats['total_nodes']}")
+    print(f"   Total edges: {stats['total_edges']}")
+    print(f"   Average node degree: {stats['avg_degree']:.2f}")
+    print(f"   Similarity threshold: {stats['config']['similarity_threshold']}")
+    print(f"   Traversal strategy: {stats['config']['traversal_strategy']}")
     
-    # 输出存储时间总览
-    print(f"\n【存储时间总览】:")
-    print(f"   总存储对话数: {len(conversations)}")
-    print(f"   总存储耗时: {store_total_time:.2f}秒")
-    print(f"   平均每条存储: {store_total_time/len(conversations):.4f}秒")
+    # Output storage time summary
+    print(f"\n[Storage Time Summary]:")
+    print(f"   Total conversations stored: {len(conversations)}")
+    print(f"   Total storage time: {store_total_time:.2f} seconds")
+    print(f"   Average per storage: {store_total_time/len(conversations):.4f} seconds")
     
     if store_stats['num_stores'] > 0:
-        print(f"   StoreOp总耗时: {store_stats['total_time']:.2f}秒")
-        print(f"   存储占比: {store_stats['total_time']/store_total_time*100:.1f}%")
+        print(f"   StoreOp total time: {store_stats['total_time']:.2f} seconds")
+        print(f"   Storage percentage: {store_stats['total_time']/store_total_time*100:.1f}%")
     
     print("=" * 70)
 

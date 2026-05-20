@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The problem type is the third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is based on the analytical conclusion derived from the image 3.png by Lu Zhixing.",

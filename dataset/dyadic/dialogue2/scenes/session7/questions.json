@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The question is based on image-driven textual causal inference, asking for conclusions drawn from the image.",

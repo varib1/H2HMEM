@@ -168,7 +168,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Assess whether the user can establish a causal link between the decisions in Session 7 and the visual data from Session 5.",
@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The fundamental reason for implementing specific algorithmic interventions (reinforcement learning) in Session 12 is to assess whether users can identify visual risk signals (abnormal ACWR) in Session 11.",

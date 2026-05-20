@@ -62,7 +62,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "notes": "因果推断：Ricky发送的VAR截图图片（img8.jpg）直接导致大刘做出回应评论。这是图片驱动文本的清晰因果链。"

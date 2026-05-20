@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: Recall corresponding dialogue scenarios based on image information.",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image→Text: Identify devices by combining image and dialogue information.",
@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image→Text: Inferring the exclamatory dialogue triggered by the image.",
@@ -102,7 +102,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image→Text: Tracking the Evolution of Image References in Conversations.",

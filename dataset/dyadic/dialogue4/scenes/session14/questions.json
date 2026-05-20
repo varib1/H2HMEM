@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image 1.png (a dark blue background game promotional page) directly triggered Gu Linfeng's textual response, which falls under the causal inference of image-driven text.",

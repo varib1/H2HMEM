@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The problem type is Multimodal (Text-Image) Causal Inference, specifically image-driven text, inquiring about how the image led to Chen Lu's evaluation.",

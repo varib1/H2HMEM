@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves cross-session causal inference: the connection between the health issue (text) in Session 14 and the design principles (text) in Session 1 reflects Gu Yanci's application of external criticism to reflect on his own predicament.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The issue involves cross-session causal inference: the observation of images (visual) in Session 2 drives the formation of arguments in the article (text) in Session 4, demonstrating a causal chain from specific cases to abstract principles.",

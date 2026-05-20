@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The image (3.png) drives the text (discussion about upper cross syndrome), which is causal inference.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring that the image content triggers the emotional expression in the text falls under causal inference.",

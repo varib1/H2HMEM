@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves cross-session causal inference, where the content of the images in Session 4 drives the theme design of the poster in Session 5.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The issue requires cross-session inference on how the image achievements in Session 2 lead to changes in the textual evaluation in Session 3, reflecting the causal chain.",

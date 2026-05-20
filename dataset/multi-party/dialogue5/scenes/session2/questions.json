@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue5",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring that image img12 (Xiaobai demonstrating crampon installation) drives the text of Xiaobai inquiring about the correctness of the installation, which belongs to the causal inference of image-driven text.",

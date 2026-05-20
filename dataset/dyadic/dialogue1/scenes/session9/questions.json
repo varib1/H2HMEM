@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The second type in Multimodal (Text-Image) Causal Inference: Given an image, ask why someone sent it, recalling the preceding cause? The sending of image2.png is a response to Lin Chang'an's 8th round question, with the answer based on dialogue causal inference.",

@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves comparing the image content between Session 1 and Session 2, requiring cross-session recall of color detail changes.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The issue requires inferring the causal relationships of core concepts by integrating textual information across Session 4 and Session 8, involving a deep comparative analysis of underlying ideas.",

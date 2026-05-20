@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The image drives the textual response, establishing a causal inference relationship.",

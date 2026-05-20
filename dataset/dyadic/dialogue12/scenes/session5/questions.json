@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The question type is image-driven text, asking why Cheng Yanqiu sent the image, and it requires recalling the reason from the previous conversation.",

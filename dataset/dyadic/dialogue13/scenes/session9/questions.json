@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image → Text: The image sparked exclamations or thoughts in the conversation.",

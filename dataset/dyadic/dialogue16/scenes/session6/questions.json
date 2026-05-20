@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: Image1.png (a close-up of ink-stained paws) evokes Shen Jingyan's emotional description of 'the warmth of weight'.",

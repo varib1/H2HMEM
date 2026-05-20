@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 memory_system.py
-智能记忆系统 - 支持混合检索器
+Intelligent Memory System - Supports Hybrid Retriever
 """
 
 import json
@@ -21,39 +21,39 @@ logger = logging.getLogger(__name__)
 
 
 class AgenticMemorySystem:
-    """智能记忆系统 - 管理记忆的获取、加工和进化"""
+    """Intelligent Memory System - Manages memory acquisition, processing, and evolution"""
     
     def __init__(self, 
                  dialogue_name: str = "",
                  embedding_model_name: str = 'all-MiniLM-L6-v2',
-                 llm_model: str = "gpt-4o-mini",
+                 memoryconstruct_model: str = "gpt-4o-mini",
                  evo_threshold: int = 100,
                  api_key: Optional[str] = None,
                  base_url: Optional[str] = None,
-                 retriever_type: str = "hybrid",  # "simple" 或 "hybrid"
-                 hybrid_alpha: float = 0.5):  # 混合检索的权重
+                 retriever_type: str = "hybrid",  # "simple" or "hybrid"
+                 hybrid_alpha: float = 0.5):  # Hybrid retrieval weight
         
         self.dialogue_name = dialogue_name
         self.memories: Dict[str, MemoryNote] = {}  # id -> MemoryNote
         self.retriever_type = retriever_type
         self.hybrid_alpha = hybrid_alpha
         
-        # 初始化检索器
+        # Initialize retriever
         if retriever_type == "hybrid":
             self.retriever = HybridRetriever(model_name=embedding_model_name, alpha=hybrid_alpha)
-            logger.info(f"使用混合检索器: alpha={hybrid_alpha}")
+            logger.info(f"Using hybrid retriever: alpha={hybrid_alpha}")
         else:
             self.retriever = SimpleEmbeddingRetriever(model_name=embedding_model_name)
-            logger.info("使用简单嵌入检索器")
+            logger.info("Using simple embedding retriever")
         
-        # 初始化LLM控制器
+        # Initialize LLM controller
         self.llm_controller = LLMController(
-            model=llm_model,
+            model=memoryconstruct_model,
             api_key=api_key,
             base_url=base_url,
         )
         
-        # 进化系统提示词
+        # Evolution system prompt
         self.evolution_system_prompt = '''
 You are an AI memory evolution agent responsible for managing and evolving a knowledge base.
 Analyze the the new memory note according to keywords and context, also with their several nearest neighbors memory.
@@ -87,7 +87,7 @@ Return your decision in JSON format with the following structure:
 }}
 '''
         
-        # 进化响应格式
+        # Evolution response format
         self.evolution_response_format = {
             "type": "json_schema",
             "json_schema": {
@@ -149,14 +149,14 @@ Return your decision in JSON format with the following structure:
         self.evo_cnt = 0
         self.evo_threshold = evo_threshold
         
-        # 用于检索器的映射
+        # Mappings for retriever
         self.memory_id_to_index: Dict[str, int] = {}
         self.index_to_memory_id: Dict[int, str] = {}
     
     def add_note(self, content: str, time: str = None, **kwargs) -> str:
-        """添加新的记忆笔记"""
+        """Add a new memory note"""
         
-        # 创建记忆节点（LLM分析在MemoryNote内部完成）
+        # Create memory node (LLM analysis done inside MemoryNote)
         note = MemoryNote(
             content=content, 
             llm_controller=self.llm_controller, 
@@ -164,7 +164,7 @@ Return your decision in JSON format with the following structure:
             **kwargs
         )
         
-        # 添加对话相关元数据
+        # Add dialogue-related metadata
         if 'dialogue_name' in kwargs:
             note.dialogue_name = kwargs['dialogue_name']
         if 'session_id' in kwargs:
@@ -174,24 +174,24 @@ Return your decision in JSON format with the following structure:
         if 'role' in kwargs:
             note.role = kwargs['role']
         
-        # 处理记忆进化
+        # Process memory evolution
         evo_label, note = self.process_memory(note)
         
-        # 存储记忆
+        # Store memory
         self.memories[note.id] = note
         
-        # 更新检索器
+        # Update retriever
         search_text = note.get_searchable_text()
         
-        # 记录索引映射
+        # Record index mapping
         current_idx = len(self.retriever.corpus)
         self.memory_id_to_index[note.id] = current_idx
         self.index_to_memory_id[current_idx] = note.id
         
-        # 添加到检索器
+        # Add to retriever
         self.retriever.add_documents([search_text])
         
-        # 进化计数和合并
+        # Evolution count and consolidation
         if evo_label:
             self.evo_cnt += 1
             if self.evo_cnt % self.evo_threshold == 0:
@@ -200,10 +200,10 @@ Return your decision in JSON format with the following structure:
         return note.id
     
     def consolidate_memories(self):
-        """合并记忆 - 重新构建检索器"""
-        logger.info("合并记忆...")
+        """Consolidate memories - rebuild retriever"""
+        logger.info("Consolidating memories...")
         
-        # 保存检索器类型和参数
+        # Save retriever type and parameters
         retriever_type = self.retriever_type
         hybrid_alpha = self.hybrid_alpha if hasattr(self, 'hybrid_alpha') else 0.5
         
@@ -212,7 +212,7 @@ Return your decision in JSON format with the following structure:
         except (AttributeError, KeyError):
             model_name = 'all-MiniLM-L6-v2'
         
-        # 创建新检索器
+        # Create new retriever
         if retriever_type == "hybrid":
             self.retriever = HybridRetriever(model_name=model_name, alpha=hybrid_alpha)
         else:
@@ -221,7 +221,7 @@ Return your decision in JSON format with the following structure:
         self.memory_id_to_index.clear()
         self.index_to_memory_id.clear()
         
-        # 重新添加所有记忆
+        # Re-add all memories
         documents = []
         for memory in self.memories.values():
             documents.append(memory.get_searchable_text())
@@ -229,23 +229,23 @@ Return your decision in JSON format with the following structure:
         if documents:
             self.retriever.add_documents(documents)
             
-            # 重建索引映射
+            # Rebuild index mapping
             for idx, memory in enumerate(self.memories.values()):
                 if idx < len(documents):
                     self.memory_id_to_index[memory.id] = idx
                     self.index_to_memory_id[idx] = memory.id
         
-        logger.info(f"合并完成，共 {len(self.memories)} 条记忆")
+        logger.info(f"Consolidation complete, total {len(self.memories)} memories")
     
     def process_memory(self, note: MemoryNote) -> Tuple[bool, MemoryNote]:
-        """处理记忆进化"""
+        """Process memory evolution"""
         
-        # 查找相关记忆
+        # Find related memories
         neighbor_memory, indices = self.find_related_memories_for_evolution(note.content, k=5)
         if not neighbor_memory:
             return False, note
         
-        # 准备prompt
+        # Prepare prompt
         keywords_str = ", ".join(note.keywords) if isinstance(note.keywords, list) else str(note.keywords)
         
         prompt_memory = self.evolution_system_prompt.format(
@@ -256,27 +256,26 @@ Return your decision in JSON format with the following structure:
             neighbor_number=len(indices)
         )
         
-        logger.debug(f"进化prompt: {prompt_memory[:200]}...")
+        logger.debug(f"Evolution prompt: {prompt_memory[:200]}...")
         
-        # 调用LLM
+        # Call LLM
         try:
             response = self.llm_controller.llm.get_completion(
                 prompt_memory,
                 response_format=self.evolution_response_format,
                 temperature=0.3
             )
-            # 清理响应
+            # Clean response
             response_cleaned = self._clean_json_response(response)
             response_json = json.loads(response_cleaned)
-            logger.debug(f"进化响应: {response_json}")
+            logger.debug(f"Evolution response: {response_json}")
             
         except Exception as e:
-
-            logger.error(f"进化处理失败: {e}")
-            logger.error(f"原始响应: {response if 'response' in locals() else 'No response'}")
+            logger.error(f"Evolution processing failed: {e}")
+            logger.error(f"Original response: {response if 'response' in locals() else 'No response'}")
             return False, note
         
-        # 执行进化决策
+        # Execute evolution decisions
         should_evolve = response_json.get("should_evolve", False)
         
         if should_evolve:
@@ -288,7 +287,7 @@ Return your decision in JSON format with the following structure:
                 elif action == "update_neighbor":
                     self._apply_update_neighbor_action(note, response_json, indices)
             
-            # 记录进化历史
+            # Record evolution history
             note.evolution_history.append({
                 "timestamp": datetime.now().isoformat(),
                 "action": actions,
@@ -298,14 +297,14 @@ Return your decision in JSON format with the following structure:
         return should_evolve, note
     
     def find_related_memories_for_evolution(self, query: str, k: int = 5) -> Tuple[str, List[int]]:
-        """查找相关记忆并返回格式化的文本（用于进化prompt）"""
+        """Find related memories and return formatted text (for evolution prompt)"""
         if not self.memories:
             return "", []
         
-        # 获取检索结果索引
+        # Get retrieval result indices
         indices = self.retriever.search(query, k)
         
-        # 构建格式化的记忆文本
+        # Build formatted memory text
         all_memories = list(self.memories.values())
         memory_str = ""
         
@@ -324,12 +323,11 @@ Return your decision in JSON format with the following structure:
         return memory_str, indices
     
     def find_related_memories(self, query: str, k: int = 5) -> List[MemoryNote]:
-        """查找相关记忆并返回记忆列表"""
+        """Find related memories and return memory list"""
         if not self.memories:
             return []
         
         indices = self.retriever.search(query, k)
-        print(indices)
         all_memories = list(self.memories.values())
         
         result = []
@@ -340,15 +338,15 @@ Return your decision in JSON format with the following structure:
         return result
     
     def find_related_memories_with_scores(self, query: str, k: int = 5) -> List[Dict[str, Any]]:
-        """查找相关记忆并返回带分数的详细信息"""
+        """Find related memories and return detailed information with scores"""
         if not self.memories:
             return []
         
-        # 获取带分数的检索结果
+        # Get retrieval results with scores
         if hasattr(self.retriever, 'search_with_scores'):
             results = self.retriever.search_with_scores(query, k)
         else:
-            # 简单检索器不支持带分数，手动计算
+            # Simple retriever doesn't support scores, calculate manually
             indices = self.retriever.search(query, k)
             all_memories = list(self.memories.values())
             results = []
@@ -357,10 +355,10 @@ Return your decision in JSON format with the following structure:
                     results.append({
                         "index": idx,
                         "document": self.retriever.corpus[idx] if idx < len(self.retriever.corpus) else "",
-                        "score": 0.0  # 简单检索器不返回分数
+                        "score": 0.0  # Simple retriever doesn't return scores
                     })
         
-        # 添加记忆信息
+        # Add memory information
         for r in results:
             idx = r["index"]
             if idx in self.index_to_memory_id:
@@ -371,7 +369,7 @@ Return your decision in JSON format with the following structure:
         return results
     
     def find_related_memories_raw(self, query: str, k: int = 5) -> str:
-        """查找相关记忆并返回包含邻居链接的详细文本"""
+        """Find related memories and return detailed text with neighbor links"""
         if not self.memories:
             return ""
         
@@ -392,7 +390,7 @@ Return your decision in JSON format with the following structure:
                 f"memory tags: {memory.tags}\n"
             )
             
-            # 添加链接的记忆
+            # Add linked memories
             j = 0
             for neighbor_id in memory.links:
                 if neighbor_id in self.memories:
@@ -411,14 +409,14 @@ Return your decision in JSON format with the following structure:
         return memory_str
     
     def _apply_strengthen_action(self, note: MemoryNote, response_json: Dict, indices: List[int]):
-        """应用strengthen动作"""
+        """Apply strengthen action"""
         suggest_connections = response_json.get("suggested_connections", [])
         new_tags = response_json.get("tags_to_update", [])
         
-        # 处理连接建议
+        # Process connection suggestions
         for conn in suggest_connections:
             conn_str = str(conn)
-            # 如果传入的是索引，尝试转换为ID
+            # If index is passed, try to convert to ID
             if conn_str.isdigit() and int(conn_str) in self.index_to_memory_id:
                 conn_id = self.index_to_memory_id[int(conn_str)]
             else:
@@ -427,12 +425,12 @@ Return your decision in JSON format with the following structure:
             if conn_id not in note.links and conn_id in self.memories:
                 note.links.append(conn_id)
         
-        # 更新标签
+        # Update tags
         if new_tags:
             note.tags = new_tags
     
     def _apply_update_neighbor_action(self, note: MemoryNote, response_json: Dict, indices: List[int]):
-        """应用update_neighbor动作"""
+        """Apply update_neighbor action"""
         new_context_neighborhood = response_json.get("new_context_neighborhood", [])
         new_tags_neighborhood = response_json.get("new_tags_neighborhood", [])
         
@@ -447,23 +445,23 @@ Return your decision in JSON format with the following structure:
             if idx >= len(all_memories):
                 continue
             
-            # 获取标签和上下文
+            # Get tags and context
             tag = new_tags_neighborhood[i]
             context = (new_context_neighborhood[i] 
                       if i < len(new_context_neighborhood) 
                       else all_memories[idx].context)
             
-            # 更新记忆
+            # Update memory
             memory_to_update = all_memories[idx]
             memory_to_update.tags = tag if isinstance(tag, list) else [tag]
             memory_to_update.context = context
             
-            # 写回字典
+            # Write back to dictionary
             if idx < len(all_ids):
                 self.memories[all_ids[idx]] = memory_to_update
     
     def _clean_json_response(self, response: str) -> str:
-        """清理JSON响应"""
+        """Clean JSON response"""
         response = re.sub(r'^```json\s*|\s*```$', '', response.strip(), flags=re.MULTILINE)
         
         start_idx = response.find('{')
@@ -475,7 +473,7 @@ Return your decision in JSON format with the following structure:
         return response
     
     def get_retriever_statistics(self) -> Dict[str, Any]:
-        """获取检索器统计信息"""
+        """Get retriever statistics"""
         if hasattr(self.retriever, 'get_statistics'):
             return self.retriever.get_statistics()
         else:
@@ -485,7 +483,7 @@ Return your decision in JSON format with the following structure:
             }
     
     def get_statistics(self) -> Dict:
-        """获取统计信息"""
+        """Get statistics"""
         from collections import defaultdict
         
         tag_count = defaultdict(int)
@@ -510,11 +508,11 @@ Return your decision in JSON format with the following structure:
         }
     
     def save(self, save_dir: Path):
-        """保存记忆系统状态"""
+        """Save memory system state"""
         save_dir = Path(save_dir)
         save_dir.mkdir(parents=True, exist_ok=True)
         
-        # 保存记忆数据
+        # Save memory data
         memories_file = save_dir / f"{self.dialogue_name}_memories.json"
         memories_data = {
             "memories": {mid: m.to_dict() for mid, m in self.memories.items()},
@@ -526,24 +524,30 @@ Return your decision in JSON format with the following structure:
         with open(memories_file, 'w', encoding='utf-8') as f:
             json.dump(memories_data, f, ensure_ascii=False, indent=2)
         
-        # 保存检索器
+        # Save retriever
         retriever_cache = save_dir / f"{self.dialogue_name}_retriever.pkl"
         retriever_embeddings = save_dir / f"{self.dialogue_name}_embeddings.npy"
         self.retriever.save(str(retriever_cache), str(retriever_embeddings))
         
-        # 保存统计信息
+        # Save statistics
         stats_file = save_dir / f"{self.dialogue_name}_stats.json"
         with open(stats_file, 'w', encoding='utf-8') as f:
             json.dump(self.get_statistics(), f, ensure_ascii=False, indent=2)
         
-        logger.info(f"记忆系统已保存到: {save_dir}")
+        logger.info(f"Memory system saved to: {save_dir}")
     
     @classmethod
-    def load(cls, load_dir: Path, dialogue_name: str) -> 'AgenticMemorySystem':
-        """加载记忆系统状态"""
+    def load(cls, 
+             load_dir: Path, 
+             dialogue_name: str, 
+             memoryconstruct_model: str = "gpt-4o-mini",
+             embedding_model: str = "all-MiniLM-L6-v2",
+             api_key: Optional[str] = None,
+             base_url: Optional[str] = None) -> 'AgenticMemorySystem':
+        """Load memory system state"""
         load_dir = Path(load_dir)
         
-        # 加载记忆数据
+        # Load memory data
         memories_file = load_dir / f"{dialogue_name}_memories.json"
         if not memories_file.exists():
             raise FileNotFoundError(f"Memory file not found: {memories_file}")
@@ -551,23 +555,26 @@ Return your decision in JSON format with the following structure:
         with open(memories_file, 'r', encoding='utf-8') as f:
             memories_data = json.load(f)
         
-        # 获取检索器类型和参数
+        # Get retriever type and parameters
         retriever_type = memories_data.get("retriever_type", "hybrid")
         hybrid_alpha = memories_data.get("hybrid_alpha", 0.5)
         
-        # 创建实例
+        # Create instance
         system = cls(
             dialogue_name=dialogue_name,
             retriever_type=retriever_type,
-            hybrid_alpha=hybrid_alpha
+            hybrid_alpha=hybrid_alpha,
+            memoryconstruct_model=memoryconstruct_model,
+            embedding_model_name=embedding_model,
+            api_key=api_key,
+            base_url=base_url
         )
         system.evo_cnt = memories_data.get("evo_cnt", 0)
-        print(system.evo_cnt)
-        # 重建记忆
+        # Rebuild memories
         for mid, mdata in memories_data.get("memories", {}).items():
             system.memories[mid] = MemoryNote.from_dict(mdata)
         
-        # 加载检索器
+        # Load retriever
         retriever_cache = load_dir / f"{dialogue_name}_retriever.pkl"
         retriever_embeddings = load_dir / f"{dialogue_name}_embeddings.npy"
         if retriever_cache.exists() and retriever_embeddings.exists():
@@ -577,7 +584,7 @@ Return your decision in JSON format with the following structure:
                 simple_retriever = SimpleEmbeddingRetriever()
                 system.retriever = simple_retriever.load(str(retriever_cache), str(retriever_embeddings))
             
-            # 重建索引映射
+            # Rebuild index mapping
             all_memories = list(system.memories.values())
             for idx, memory in enumerate(all_memories):
                 if idx < len(system.retriever.corpus):

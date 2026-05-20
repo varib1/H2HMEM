@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring the causal relationship between images and text, image1.png triggered a discussion on preventing travel difficulties.",

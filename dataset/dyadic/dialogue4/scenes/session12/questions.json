@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring that the image (6.png showing an oven and bread) drives the textual discussion (the relationship between crust thickness and steam volume) is a causal inference.",

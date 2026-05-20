@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "[Causal Reasoning]: The image triggered evaluations in the conversation, emphasizing causal relationships."
@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Causal Reasoning]: The image sparked a discussion about the evaluation of Angelica dahurica, emphasizing causal relationships."

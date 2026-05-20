@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Cause Leads to Effect]: The scenario depicted in the image triggered Ji Shi'an's inference (the sound of firecrackers caused a stress response).",

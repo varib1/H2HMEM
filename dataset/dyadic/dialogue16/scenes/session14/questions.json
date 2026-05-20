@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image→Text: It is inferred that the image (3.png) drives the text (exclamation), indicating a causal inference relationship.",

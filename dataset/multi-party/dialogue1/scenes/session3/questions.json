@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The causal inference problem of image-driven text, where the image img5.jpg (showing a cheese leak in a pot) directly triggers B_Kiki's textual comment. Focus on the causal driving relationship, distinguishing it from cross-modal interactions.",

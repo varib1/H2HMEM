@@ -26,7 +26,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image 1.png displays individual small packages and spice packets, sparking Shiyan's discussion on shelf life and moisture resistance, which falls under image-driven textual causal inference."
@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "It is necessary to combine image 3.png with the dialogue content to understand that the plating design is intended to address situations where the spice packet becomes damp or is omitted."

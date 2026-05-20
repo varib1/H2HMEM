@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue9",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "Cross-session causality: The introduction and charts of TNR in Session 2 led to the crowdfunding and sterilization actions in Session 3.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue9",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Cross-session causality: The successful experience of the repair stall in Session 7 led to the proposal of the talent pool plan in Session 16.",

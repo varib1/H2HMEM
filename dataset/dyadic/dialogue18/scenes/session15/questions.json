@@ -43,7 +43,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: Retrieve the corresponding text description based on image information, both related to the same event (discussion of side-opening backpacks)."
@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: The image (2.jpg) drives the text (Ye Lu's evaluation of shoulder pressure), which falls under causal inference."

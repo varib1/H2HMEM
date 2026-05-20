@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 core.py
-记忆系统核心数据模型
+Memory System Core Data Models
 """
 
 import uuid
@@ -13,12 +13,11 @@ from dataclasses import dataclass, field
 
 @dataclass
 class MemoryNote:
-    """记忆节点 - 核心数据单元"""
-    
+    """Memory node - core data unit"""
     content: str
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     keywords: List[str] = field(default_factory=list)
-    links: List[str] = field(default_factory=list)  # 关联的记忆ID
+    links: List[str] = field(default_factory=list)  # Associated memory IDs
     importance_score: float = 1.0
     retrieval_count: int = 0
     timestamp: str = field(default_factory=lambda: datetime.now().strftime("%Y%m%d%H%M"))
@@ -28,7 +27,7 @@ class MemoryNote:
     category: str = "Uncategorized"
     tags: List[str] = field(default_factory=list)
     
-    # 对话相关元数据
+    # Dialogue-related metadata
     dialogue_name: str = ""
     session_id: str = ""
     dialogue_index: int = 0
@@ -36,11 +35,11 @@ class MemoryNote:
     has_image: bool = False
     image_filename: str = ""
     
-    # LLM控制器（用于分析内容）
+    # LLM controller (for content analysis)
     llm_controller: Optional[Any] = None
     
     def __post_init__(self):
-        """初始化后处理，如果有LLM控制器则分析内容"""
+        """Post-initialization processing, analyze content if LLM controller is provided"""
         if self.llm_controller and (not self.keywords or not self.context or not self.tags):
             analysis = self.analyze_content(self.content, self.llm_controller)
             self.keywords = analysis.get("keywords", self.keywords)
@@ -49,20 +48,20 @@ class MemoryNote:
     
     @staticmethod
     def analyze_content(content: str, llm_controller) -> Dict[str, Any]:
-        """使用LLM分析内容"""
+        """Analyze content using LLM"""
         try:
-            # 这里调用llm_controller的analyze_content方法
+            # Call llm_controller's analyze_content method here
             return llm_controller.analyze_content(content)
         except Exception as e:
-            print(f"分析内容失败: {e}")
+            print(f"Failed to analyze content: {e}")
             return {
-                "keywords": ["对话"],
+                "keywords": ["conversation"],
                 "context": "General",
-                "tags": ["对话"]
+                "tags": ["conversation"]
             }
     
     def to_dict(self) -> Dict:
-        """转换为字典"""
+        """Convert to dictionary"""
         return {
             "id": self.id,
             "content": self.content,
@@ -86,7 +85,7 @@ class MemoryNote:
     
     @classmethod
     def from_dict(cls, data: Dict) -> 'MemoryNote':
-        """从字典创建"""
+        """Create from dictionary"""
         note = cls(content=data["content"])
         note.id = data["id"]
         note.keywords = data.get("keywords", [])
@@ -108,14 +107,14 @@ class MemoryNote:
         return note
     
     def get_searchable_text(self) -> str:
-        """获取可搜索的文本（用于检索）"""
+        """Get searchable text (for retrieval)"""
         return (f"content: {self.content} "
                 f"context: {self.context} "
                 f"keywords: {', '.join(self.keywords)} "
                 f"tags: {', '.join(self.tags)}")
     
     def to_evolution_text(self, index: int) -> str:
-        """转换为进化用的文本格式"""
+        """Convert to text format for evolution"""
         return (f"memory index:{index}\t"
                 f"talk start time:{self.timestamp}\t"
                 f"memory content: {self.content}\t"
@@ -125,7 +124,7 @@ class MemoryNote:
 
 
 class ConversationMemoryGroup:
-    """对话记忆组 - 对应一个对话文件夹的所有记忆"""
+    """Conversation memory group - corresponds to all memories of a conversation folder"""
     
     def __init__(self, dialogue_name: str):
         self.dialogue_name = dialogue_name
@@ -140,23 +139,23 @@ class ConversationMemoryGroup:
         return len(self.memories)
     
     def add_memory(self, memory: MemoryNote):
-        """添加记忆"""
+        """Add memory"""
         self.memories[memory.id] = memory
         self.updated_at = datetime.now().isoformat()
     
     def get_memory_list(self) -> List[MemoryNote]:
-        """获取记忆列表"""
+        """Get memory list"""
         return list(self.memories.values())
     
     def get_memory_by_index(self, index: int) -> Optional[MemoryNote]:
-        """通过索引获取记忆"""
+        """Get memory by index"""
         memories = self.get_memory_list()
         if 0 <= index < len(memories):
             return memories[index]
         return None
     
     def get_memories_by_session(self, session_id: str) -> List[MemoryNote]:
-        """获取指定session的所有记忆，按对话索引排序"""
+        """Get all memories of a specified session, sorted by dialogue index"""
         session_memories = [
             m for m in self.memories.values() 
             if m.session_id == session_id
@@ -164,7 +163,7 @@ class ConversationMemoryGroup:
         return sorted(session_memories, key=lambda x: x.dialogue_index)
     
     def to_dict(self) -> Dict:
-        """转换为字典（用于序列化）"""
+        """Convert to dictionary (for serialization)"""
         return {
             "dialogue_name": self.dialogue_name,
             "created_at": self.created_at,
@@ -177,7 +176,7 @@ class ConversationMemoryGroup:
     
     @classmethod
     def from_dict(cls, data: Dict) -> 'ConversationMemoryGroup':
-        """从字典创建"""
+        """Create from dictionary"""
         group = cls(dialogue_name=data["dialogue_name"])
         group.created_at = data.get("created_at", group.created_at)
         group.updated_at = data.get("updated_at", group.updated_at)

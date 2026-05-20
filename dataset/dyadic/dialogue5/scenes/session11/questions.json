@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue5",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring that the image (daughter's drawing) drives the text (comment on the warmth of handmade crafts) is a causal inference.",

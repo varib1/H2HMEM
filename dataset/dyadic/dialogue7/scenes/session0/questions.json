@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "Causal Inference: The discussion on the Mediterranean diet in Session 6 led to a focus on nutritional content during purchases in Session 7.",

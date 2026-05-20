@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: img9.jpg (Figure 9) sparked a discussion about whether the passerby's bag is counterfeit (Round 15).",

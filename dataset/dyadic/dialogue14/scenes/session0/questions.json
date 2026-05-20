@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Examine the direct technical outcomes (effects) resulting from the image scenarios (causes).",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Examine the subsequent shopping behavior (effect) caused by the physical condition in the picture (cause).",

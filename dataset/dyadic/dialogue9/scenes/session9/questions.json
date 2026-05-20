@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue9",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring the content of the image triggered subsequent textual inquiries, focusing on causal-driven relationships.",

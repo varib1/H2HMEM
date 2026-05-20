@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring the content of the image (3.png) triggers an analogy in the text, which falls under causal inference.",

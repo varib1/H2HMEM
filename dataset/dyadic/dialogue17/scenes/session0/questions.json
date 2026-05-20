@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves textual information from Session 3 and Session 8, examining cross-session causal inference: how the step-by-step plan discussed in Session 3 influenced the strategy for game prototype development in Session 8.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The question integrates the image from Session 2 and the text from Session 5 to examine cross-session causal inference: how the calibration tool image in Session 2 drives the threshold setting approach in the experimental design of Session 5.",

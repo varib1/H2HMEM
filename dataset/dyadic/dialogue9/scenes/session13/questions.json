@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue9",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Inferring that the image (1.png) drives the textual response (refer to the arrangement) constitutes a causal inference of image-driven text.",

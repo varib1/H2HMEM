@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "[Causal Inference]: The picture aroused Baizhi's doubt."
@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Causal Inference]: Image 1 triggered Gu Yanci's comment."

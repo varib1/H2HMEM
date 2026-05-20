@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image 3.png (comparison table) directly triggered Zhou Xingchen's comments on the table style, representing a case of image-driven text causal inference.",

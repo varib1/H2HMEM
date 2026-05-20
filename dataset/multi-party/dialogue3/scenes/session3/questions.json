@@ -62,7 +62,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "It is inferred that the image (img8.jpg) drives the text (Pineapple's comment on belt painting), indicating a causal driving relationship.",

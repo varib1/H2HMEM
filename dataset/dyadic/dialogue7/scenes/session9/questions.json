@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The sending (displaying the decision matrix) of Image1.png directly triggered Song Wei'an's comments and Shen Qingyin's subsequent weight adjustment actions, establishing a causal driving relationship.",

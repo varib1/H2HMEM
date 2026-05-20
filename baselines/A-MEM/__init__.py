@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-agentic_memory_system - 智能记忆系统包
+agentic_memory_system
 """
 
 from .core import MemoryNote, ConversationMemoryGroup

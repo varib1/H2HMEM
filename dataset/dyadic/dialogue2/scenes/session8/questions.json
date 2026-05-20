@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The problem type is the second scenario in Multimodal (Text-Image) Causal Inference: given an image, ask why someone sent that image, recalling the preceding cause. The answer combines the dialogue text and image description, where image2.png is the response to Shen Qingyan's question.",

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 process_conversations.py
-处理对话数据，创建记忆系统 - 支持混合检索器
+Process conversation data, create memory system - supports hybrid retriever
 """
 
 import os
@@ -32,11 +32,11 @@ logger = logging.getLogger(__name__)
 
 
 class ConversationProcessor:
-    """对话处理器 - 支持混合检索器"""
+    """Conversation processor - supports hybrid retriever"""
     
     def __init__(self, 
                  dialogue_path: Path,
-                 llm_model: str = "gpt-4o-mini",
+                 memoryconstruct_model: str = "gpt-4o-mini",
                  embedding_model_name: str = 'all-MiniLM-L6-v2',
                  evo_threshold: int = 100,
                  api_key: Optional[str] = None,
@@ -48,11 +48,11 @@ class ConversationProcessor:
         self.dialogue_name = self.dialogue_path.name
         self.scenes_dir = self.dialogue_path / "scenes"
         
-        # 创建记忆系统
+        # Create memory system
         self.memory_system = AgenticMemorySystem(
             dialogue_name=self.dialogue_name,
             embedding_model_name=embedding_model_name,
-            llm_model=llm_model,
+            memoryconstruct_model=memoryconstruct_model,
             evo_threshold=evo_threshold,
             api_key=api_key,
             base_url=base_url,
@@ -60,7 +60,7 @@ class ConversationProcessor:
             hybrid_alpha=hybrid_alpha
         )
         
-        # 统计信息
+        # Statistics
         self.stats = {
             "total_sessions": 0,
             "total_dialogues": 0,
@@ -69,7 +69,7 @@ class ConversationProcessor:
             "sessions": {}
         }
         
-        # 时间统计
+        # Timing statistics
         self.timing_stats = {
             "start_time": None,
             "end_time": None,
@@ -84,41 +84,41 @@ class ConversationProcessor:
             "session_times": {}
         }
         
-        logger.info(f"初始化对话处理器: {self.dialogue_name}")
-        logger.info(f"  路径: {self.dialogue_path}")
-        logger.info(f"  检索器类型: {retriever_type}")
+        logger.info(f"Initializing conversation processor: {self.dialogue_name}")
+        logger.info(f"  Path: {self.dialogue_path}")
+        logger.info(f"  Retriever type: {retriever_type}")
         if retriever_type == "hybrid":
-            logger.info(f"  混合权重 alpha: {hybrid_alpha}")
-        logger.info(f"  进化阈值: {evo_threshold}")
+            logger.info(f"  Hybrid weight alpha: {hybrid_alpha}")
+        logger.info(f"  Evolution threshold: {evo_threshold}")
     
     def scan_sessions(self) -> List[Path]:
-        """扫描所有session目录"""
+        """Scan all session directories"""
         start_time = time.time()
         
         if not self.scenes_dir.exists():
-            logger.error(f"scenes目录不存在: {self.scenes_dir}")
+            logger.error(f"Scenes directory does not exist: {self.scenes_dir}")
             return []
         
         session_dirs = [
             d for d in self.scenes_dir.iterdir() 
-            if d.is_dir() and (d / "conversation.json").exists()
+            if d.is_dir() and (d / "session.json").exists()
         ]
         
         session_dirs = natsorted(session_dirs, key=lambda x: x.name)
         
-        logger.info(f"找到 {len(session_dirs)} 个session目录:")
+        logger.info(f"Found {len(session_dirs)} session directories:")
         for d in session_dirs:
             logger.info(f"  - {d.name}")
         
         self.stats["total_sessions"] = len(session_dirs)
         
         self.timing_stats["scan_sessions_time"] = time.time() - start_time
-        logger.debug(f"扫描sessions耗时: {self.timing_stats['scan_sessions_time']:.2f}秒")
+        logger.debug(f"Session scanning time: {self.timing_stats['scan_sessions_time']:.2f} seconds")
         
         return session_dirs
     
     def load_session_data(self, session_dir: Path) -> Optional[Dict]:
-        """加载session数据"""
+        """Load session data"""
         start_time = time.time()
         
         conv_file = session_dir / "session.json"
@@ -145,7 +145,7 @@ class ConversationProcessor:
             }
             
         except Exception as e:
-            logger.error(f"加载 {conv_file} 失败: {e}")
+            logger.error(f"Failed to load {conv_file}: {e}")
             return None
     
     def process_dialogue(self, 
@@ -154,7 +154,7 @@ class ConversationProcessor:
                         session_timestamp: str,
                         dialogue_index: int,
                         session_dir: Path) -> tuple[bool, float]:
-        """处理单条对话，返回(是否成功, 耗时)"""
+        """Process a single dialogue, returns (success, processing_time)"""
         start_time = time.time()
         
         try:
@@ -165,10 +165,9 @@ class ConversationProcessor:
             image = content.get("image", "")
             caption_text = ""
             
-            # 如果有图片，提取image中的数字
+            # If there is an image, extract the number from the image filename
             if image:
                 caption_json = Path(image).stem + ".json"
-                image_number = image_number.group(1) if image_number else None
                 image_caption_path = session_dir / "caption" / caption_json
                 print(image_caption_path)
                 if image_caption_path.exists():
@@ -202,27 +201,27 @@ class ConversationProcessor:
             
             if self.stats["processed_dialogues"] % 10 == 0:
                 avg_time = sum(self.timing_stats["per_dialogue_times"][-10:]) / min(10, len(self.timing_stats["per_dialogue_times"]))
-                logger.info(f"  已处理 {self.stats['processed_dialogues']} 条对话 (最近10条平均: {avg_time:.3f}秒/条)")
+                logger.info(f"  Processed {self.stats['processed_dialogues']} dialogues (last 10 avg: {avg_time:.3f}s/dialogue)")
             
             return True, process_time
             
         except Exception as e:
-            logger.error(f"处理对话失败: {e}")
+            logger.error(f"Failed to process dialogue: {e}")
             return False, time.time() - start_time
     
     def process_session(self, session_dir: Path) -> Dict:
-        """处理单个session"""
+        """Process a single session"""
         session_start_time = time.time()
         
         session_data = self.load_session_data(session_dir)
         if not session_data:
-            return {"status": "failed", "error": "加载失败"}
+            return {"status": "failed", "error": "Failed to load"}
         
         session_id = session_data["session_id"]
         dialogues = session_data["dialogues"]
         session_timestamp = session_data["timeline_date"]
         
-        logger.info(f"处理session {session_id} ({len(dialogues)} 条对话)")
+        logger.info(f"Processing session {session_id} ({len(dialogues)} dialogues)")
         
         success_count = 0
         dialogue_times = []
@@ -254,8 +253,8 @@ class ConversationProcessor:
         
         self.stats["total_dialogues"] += len(dialogues)
         
-        logger.info(f"  session完成: {success_count}/{len(dialogues)} 条对话")
-        logger.info(f"  耗时: {self._format_time(session_total_time)} (平均: {session_total_time/len(dialogues):.3f}秒/条)")
+        logger.info(f"  Session complete: {success_count}/{len(dialogues)} dialogues")
+        logger.info(f"  Time: {self._format_time(session_total_time)} (avg: {session_total_time/len(dialogues):.3f}s/dialogue)")
         
         return {
             "status": "success",
@@ -266,106 +265,106 @@ class ConversationProcessor:
         }
     
     def _format_time(self, seconds: float) -> str:
-        """格式化时间显示"""
+        """Format time for display"""
         if seconds < 60:
-            return f"{seconds:.2f}秒"
+            return f"{seconds:.2f} seconds"
         elif seconds < 3600:
             minutes = int(seconds // 60)
             secs = seconds % 60
-            return f"{minutes}分{secs:.2f}秒"
+            return f"{minutes} min {secs:.2f} sec"
         else:
             hours = int(seconds // 3600)
             minutes = int((seconds % 3600) // 60)
             secs = seconds % 60
-            return f"{hours}小时{minutes}分{secs:.2f}秒"
+            return f"{hours} hr {minutes} min {secs:.2f} sec"
     
     def process_all(self) -> bool:
-        """处理所有session"""
+        """Process all sessions"""
         self.timing_stats["start_time"] = datetime.now()
         overall_start = time.time()
         
         logger.info(f"\n{'='*60}")
-        logger.info(f"开始处理对话: {self.dialogue_name}")
-        logger.info(f"开始时间: {self.timing_stats['start_time'].strftime('%Y-%m-%d %H:%M:%S')}")
+        logger.info(f"Starting to process conversation: {self.dialogue_name}")
+        logger.info(f"Start time: {self.timing_stats['start_time'].strftime('%Y-%m-%d %H:%M:%S')}")
         logger.info(f"{'='*60}")
         
-        # 扫描sessions
+        # Scan sessions
         scan_start = time.time()
         session_dirs = self.scan_sessions()
         self.timing_stats["scan_sessions_time"] = time.time() - scan_start
         
         if not session_dirs:
-            logger.error("没有找到任何session")
+            logger.error("No sessions found")
             return False
         
-        logger.info(f"\n步骤1: 按顺序处理 {len(session_dirs)} 个session")
+        logger.info(f"\nStep 1: Processing {len(session_dirs)} sessions in order")
         for i, session_dir in enumerate(session_dirs, 1):
-            logger.info(f"\n[{i}/{len(session_dirs)}] 处理 {session_dir.name}")
+            logger.info(f"\n[{i}/{len(session_dirs)}] Processing {session_dir.name}")
             result = self.process_session(session_dir)
             
             if result["status"] == "success":
-                logger.info(f"  ✅ 完成: {result['processed']}/{result['total']} 条对话")
+                logger.info(f"  ✅ Complete: {result['processed']}/{result['total']} dialogues")
             else:
-                logger.warning(f"  ⚠️ 处理失败: {result.get('error', '未知错误')}")
+                logger.warning(f"  ⚠️ Processing failed: {result.get('error', 'Unknown error')}")
         
-        # 保存记忆系统
+        # Save memory system
         save_start = time.time()
         memory_stats = self.memory_system.get_statistics()
         self.stats["evolution_count"] = memory_stats.get("evolution_count", 0)
         self.timing_stats["save_memory_time"] = time.time() - save_start
         
-        # 计算总时间
+        # Calculate total time
         overall_time = time.time() - overall_start
         self.timing_stats["total_duration_seconds"] = overall_time
         self.timing_stats["total_duration_formatted"] = self._format_time(overall_time)
         self.timing_stats["end_time"] = datetime.now()
         self.timing_stats["process_dialogues_time"] = self.timing_stats["process_dialogue_time"]
         
-        # 输出处理统计
+        # Output processing statistics
         logger.info(f"\n{'='*60}")
-        logger.info(f"处理完成: {self.dialogue_name}")
-        logger.info(f"完成时间: {self.timing_stats['end_time'].strftime('%Y-%m-%d %H:%M:%S')}")
-        logger.info(f"总耗时: {self.timing_stats['total_duration_formatted']}")
-        logger.info(f"  总session数: {self.stats['total_sessions']}")
-        logger.info(f"  总对话数: {self.stats['total_dialogues']}")
-        logger.info(f"  成功处理: {self.stats['processed_dialogues']}")
-        logger.info(f"  记忆总数: {memory_stats['total_memories']}")
-        logger.info(f"  进化次数: {self.stats['evolution_count']}")
+        logger.info(f"Processing complete: {self.dialogue_name}")
+        logger.info(f"Completion time: {self.timing_stats['end_time'].strftime('%Y-%m-%d %H:%M:%S')}")
+        logger.info(f"Total time: {self.timing_stats['total_duration_formatted']}")
+        logger.info(f"  Total sessions: {self.stats['total_sessions']}")
+        logger.info(f"  Total dialogues: {self.stats['total_dialogues']}")
+        logger.info(f"  Successfully processed: {self.stats['processed_dialogues']}")
+        logger.info(f"  Total memories: {memory_stats['total_memories']}")
+        logger.info(f"  Evolution count: {self.stats['evolution_count']}")
         
-        # 显示时间统计详情
-        logger.info(f"\n时间统计详情:")
-        logger.info(f"  扫描sessions: {self._format_time(self.timing_stats['scan_sessions_time'])}")
-        logger.info(f"  加载数据: {self._format_time(self.timing_stats['load_session_time'])}")
-        logger.info(f"  处理对话: {self._format_time(self.timing_stats['process_dialogues_time'])}")
-        logger.info(f"  保存记忆: {self._format_time(self.timing_stats['save_memory_time'])}")
+        # Display detailed timing statistics
+        logger.info(f"\nDetailed timing statistics:")
+        logger.info(f"  Scan sessions: {self._format_time(self.timing_stats['scan_sessions_time'])}")
+        logger.info(f"  Load data: {self._format_time(self.timing_stats['load_session_time'])}")
+        logger.info(f"  Process dialogues: {self._format_time(self.timing_stats['process_dialogues_time'])}")
+        logger.info(f"  Save memory: {self._format_time(self.timing_stats['save_memory_time'])}")
         
         if self.timing_stats["per_dialogue_times"]:
             avg_time = sum(self.timing_stats["per_dialogue_times"]) / len(self.timing_stats["per_dialogue_times"])
             min_time = min(self.timing_stats["per_dialogue_times"])
             max_time = max(self.timing_stats["per_dialogue_times"])
-            logger.info(f"\n对话处理统计:")
-            logger.info(f"  平均耗时/对话: {avg_time:.3f}秒")
-            logger.info(f"  最快对话: {min_time:.3f}秒")
-            logger.info(f"  最慢对话: {max_time:.3f}秒")
+            logger.info(f"\nDialogue processing statistics:")
+            logger.info(f"  Average time/dialogue: {avg_time:.3f} seconds")
+            logger.info(f"  Fastest dialogue: {min_time:.3f} seconds")
+            logger.info(f"  Slowest dialogue: {max_time:.3f} seconds")
         
-        # 显示检索器统计
+        # Display retriever information
         retriever_stats = memory_stats.get('retriever', {})
-        logger.info(f"\n检索器信息:")
-        logger.info(f"  检索器类型: {retriever_stats.get('retriever_type', 'unknown')}")
+        logger.info(f"\nRetriever information:")
+        logger.info(f"  Retriever type: {retriever_stats.get('retriever_type', 'unknown')}")
         if 'alpha' in retriever_stats:
-            logger.info(f"  混合权重 alpha: {retriever_stats['alpha']}")
+            logger.info(f"  Hybrid weight alpha: {retriever_stats['alpha']}")
         logger.info(f"{'='*60}")
         
         return True
     
     def save(self):
-        """保存记忆系统"""
+        """Save memory system"""
         save_start = time.time()
         
         memory_dir = self.dialogue_path / "memory_data"
         self.memory_system.save(memory_dir)
         
-        # 添加时间统计到统计文件
+        # Add timing statistics to stats file
         stats_file = memory_dir / "processing_stats.json"
         with open(stats_file, 'w', encoding='utf-8') as f:
             json.dump({
@@ -390,94 +389,98 @@ class ConversationProcessor:
             }, f, ensure_ascii=False, indent=2)
         
         save_time = time.time() - save_start
-        logger.info(f"统计数据已保存: {stats_file}")
-        logger.info(f"保存耗时: {self._format_time(save_time)}")
+        logger.info(f"Statistics saved to: {stats_file}")
+        logger.info(f"Save time: {self._format_time(save_time)}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="处理对话数据并创建记忆系统")
+    parser = argparse.ArgumentParser(description="Process conversation data and create memory system")
     
     parser.add_argument("--base_dir", type=str, required=True,
-                       help="基础目录，包含所有对话文件夹")
+                       help="Base directory containing all conversation folders")
     
     parser.add_argument("--dialogue", type=str, required=True,
-                       help="指定要处理的对话名称（可选）")
+                       help="Specify the dialogue name to process")
     
-    parser.add_argument("--llm_model", type=str, required=True,
-                       help="LLM模型名称")
+    parser.add_argument("--memoryconstruct_model", type=str, required=True,
+                       help="Model name used for memory construction")
     
     parser.add_argument("--embedding_model_name", type=str, required=True,
-                       help="嵌入模型名称")
+                       help="Embedding model name")
     
-    # API 密钥改为可选，但建议从环境变量读取；不设硬编码默认值
-    parser.add_argument("--api_key", type=str,required=True,
-                       help="OpenAI API密钥(也可通过环境变量 OPENAI_API_KEY 设置)")
+    # API key is optional but recommended to read from environment variable; no hardcoded default
+    parser.add_argument("--api_key", type=str, required=True,
+                       help="OpenAI API key (can also be set via environment variable OPENAI_API_KEY)")
+    
+    parser.add_argument("--base_url", type=str, required=True,
+                       help="OpenAI API base URL")
     
     parser.add_argument("--evo_threshold", type=int, default=100,
-                       help="触发记忆合并的进化次数阈值")
+                       help="Evolution threshold to trigger memory consolidation")
     
-    # 检索器配置
+    # Retriever configuration
     parser.add_argument("--retriever_type", type=str, default="hybrid",
                        choices=["simple", "hybrid"],
-                       help="检索器类型: simple(仅语义) 或 hybrid(混合检索)")
+                       help="Retriever type: simple (semantic only) or hybrid (mixed retrieval)")
     parser.add_argument("--hybrid_alpha", type=float, default=0.5,
-                       help="混合检索权重 (0=仅BM25, 1=仅语义)")
+                       help="Hybrid retrieval weight (0=BM25 only, 1=semantic only)")
     
     parser.add_argument("--verbose", action="store_true",
-                       help="详细日志输出")
+                       help="Verbose logging output")
     
     args = parser.parse_args()
     
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
     
-    # 处理 API 密钥：优先使用命令行参数，否则从环境变量读取
+    # Process API key: prioritize command line argument, otherwise read from environment variable
     api_key = args.api_key or os.getenv("OPENAI_API_KEY")
     if not api_key:
-        logger.warning("未提供 API 密钥")
+        logger.warning("API key not provided")
     
     print("\n" + "="*70)
-    print("对话记忆处理工具 - 支持混合检索")
+    print("Conversation Memory Processing Tool - Supports Hybrid Retrieval")
     print("="*70)
-    print(f"基础目录: {args.base_dir}")
-    print(f"嵌入模型: {args.embedding_model_name}")
-    print(f"检索器类型: {args.retriever_type}")
+    print(f"Base directory: {args.base_dir}")
+    print(f"Embedding model: {args.embedding_model_name}")
+    print(f"Retriever type: {args.retriever_type}")
     if args.retriever_type == "hybrid":
-        print(f"混合权重 alpha: {args.hybrid_alpha}")
-    print(f"进化阈值: {args.evo_threshold}")
+        print(f"Hybrid weight alpha: {args.hybrid_alpha}")
+    print(f"Evolution threshold: {args.evo_threshold}")
     if args.dialogue:
-        print(f"指定对话: {args.dialogue}")
+        print(f"Specified dialogue: {args.dialogue}")
     print("="*70 + "\n")
     
     base_path = Path(args.base_dir)
     if not base_path.exists():
-        print(f"❌ 基础目录不存在: {base_path}")
+        print(f"❌ Base directory does not exist: {base_path}")
         return 1
     
-    # 处理单个对话
+    # Process single dialogue
     if args.dialogue:
         dialogue_path = base_path / args.dialogue
         if not dialogue_path.exists():
-            print(f"❌ 对话目录不存在: {dialogue_path}")
+            print(f"❌ Dialogue directory does not exist: {dialogue_path}")
             return 1
         
         processor = ConversationProcessor(
             dialogue_path=dialogue_path,
-            llm_model=args.llm_model,
+            memoryconstruct_model=args.memoryconstruct_model,
             embedding_model_name=args.embedding_model_name,
             evo_threshold=args.evo_threshold,
             api_key=api_key,
             retriever_type=args.retriever_type,
-            hybrid_alpha=args.hybrid_alpha
+            hybrid_alpha=args.hybrid_alpha,
+            base_url=args.base_url
         )
         
         if processor.process_all():
             processor.save()
-            print(f"\n✅ 对话 {args.dialogue} 处理成功!")
-            print(f"⏱️  总耗时: {processor.timing_stats['total_duration_formatted']}")
+            print(f"\n✅ Dialogue {args.dialogue} processed successfully!")
+            print(f"⏱️  Total time: {processor.timing_stats['total_duration_formatted']}")
             return 0
         else:
-            print(f"\n❌ 对话 {args.dialogue} 处理失败")
+            print(f"\n❌ Dialogue {args.dialogue} processing failed")
             return 1
     
     else:
@@ -488,10 +491,10 @@ def main():
         dialogue_dirs = natsorted(dialogue_dirs)
         
         if not dialogue_dirs:
-            print("❌ 未找到任何以“dialogue”开头的文件夹")
+            print("❌ No folders starting with 'dialogue' found")
             return 1
         
-        print(f"找到 {len(dialogue_dirs)} 个对话文件夹:")
+        print(f"Found {len(dialogue_dirs)} dialogue folders:")
         for d in dialogue_dirs:
             print(f"  - {d.name}")
         print()
@@ -502,18 +505,19 @@ def main():
         
         for dialogue_dir in dialogue_dirs:
             print(f"\n{'#'*70}")
-            print(f"处理: {dialogue_dir.name}")
+            print(f"Processing: {dialogue_dir.name}")
             print(f"{'#'*70}")
             
             try:
                 processor = ConversationProcessor(
                     dialogue_path=dialogue_dir,
-                    llm_model=args.llm_model,
+                    memoryconstruct_model=args.memoryconstruct_model,
                     embedding_model_name=args.embedding_model_name,
                     evo_threshold=args.evo_threshold,
                     api_key=api_key,
                     retriever_type=args.retriever_type,
-                    hybrid_alpha=args.hybrid_alpha
+                    hybrid_alpha=args.hybrid_alpha,
+                    base_url=args.base_url
                 )
                 
                 if processor.process_all():
@@ -521,32 +525,32 @@ def main():
                     results[dialogue_dir.name] = True
                     success_count += 1
                     all_timing_stats[dialogue_dir.name] = processor.timing_stats
-                    print(f"\n✅ {dialogue_dir.name} 处理成功")
-                    print(f"⏱️  耗时: {processor.timing_stats['total_duration_formatted']}")
+                    print(f"\n✅ {dialogue_dir.name} processed successfully")
+                    print(f"⏱️  Time: {processor.timing_stats['total_duration_formatted']}")
                 else:
                     results[dialogue_dir.name] = False
-                    print(f"\n❌ {dialogue_dir.name} 处理失败")
+                    print(f"\n❌ {dialogue_dir.name} processing failed")
                     
             except Exception as e:
-                logger.error(f"处理 {dialogue_dir.name} 出错: {e}")
+                logger.error(f"Error processing {dialogue_dir.name}: {e}")
                 results[dialogue_dir.name] = False
         
         print("\n" + "="*70)
-        print("处理结果汇总")
+        print("Processing Results Summary")
         print("="*70)
         for name, success in results.items():
-            status = "✅ 成功" if success else "❌ 失败"
+            status = "✅ Success" if success else "❌ Failed"
             time_info = f" ({all_timing_stats[name]['total_duration_formatted']})" if name in all_timing_stats else ""
             print(f"{status}: {name}{time_info}")
         print("-"*70)
-        print(f"总计: {len(results)} 个对话，成功: {success_count} 个")
+        print(f"Total: {len(results)} dialogues, successful: {success_count}")
         
         if all_timing_stats:
             total_time = sum(stat['total_duration_seconds'] for stat in all_timing_stats.values())
             if 'processor' in locals():
-                print(f"总处理时间: {processor._format_time(total_time)}")
+                print(f"Total processing time: {processor._format_time(total_time)}")
             else:
-                print(f"总处理时间: {total_time:.2f}秒")
+                print(f"Total processing time: {total_time:.2f} seconds")
         print("="*70)
         
         return 0 if success_count == len(results) else 1

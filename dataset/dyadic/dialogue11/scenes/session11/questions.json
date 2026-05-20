@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The issue is based on image-driven textual causal inference, inquiring about the antecedent reasons for sending images, involving proposals and responses in the conversation.",

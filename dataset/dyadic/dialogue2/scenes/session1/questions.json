@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The question is based on image-driven text causal inference, asking for the reason behind sending the image.",

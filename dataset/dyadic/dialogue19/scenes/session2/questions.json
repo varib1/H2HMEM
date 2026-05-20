@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "[Causal Inference]: The image (steak texture) triggers the text (Baizhi's exclamation), indicating a causal driving relationship."
@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Causal Inference]: The image (Gu Yanci's focused profile looking at the menu) triggers the text (angry evaluation of the menu layout), indicating a causal driving relationship."

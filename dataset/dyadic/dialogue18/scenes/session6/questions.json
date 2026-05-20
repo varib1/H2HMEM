@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image→Text: Based on the visual information from image 3.png, recall the corresponding product feature descriptions from the conversation.",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: Image1.png triggered Shi Yan's lament about the environment.",

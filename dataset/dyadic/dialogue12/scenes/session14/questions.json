@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, inquire about someone's evaluation of a specific image. Here, we are asking for Cheng Yanqiu's evaluation of image 3.jpg.",

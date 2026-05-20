@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inference: Images drive textual discussions, focusing on causality rather than direct correlations.",

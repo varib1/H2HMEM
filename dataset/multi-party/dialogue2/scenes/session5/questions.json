@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: img9.jpg (a picture of beer) sparked Instructor Zhang's comments on drinking beer in moderation.",

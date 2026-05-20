@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "It is inferred that the image (2.png) drives the text (the 5th round of dialogue), indicating a causal driving relationship.",

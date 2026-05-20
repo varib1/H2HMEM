@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The fourth scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask what someone's evaluation of a certain image is? The answer is directly from Shen Zhiwei's evaluation in the 5th round of the dialogue.",

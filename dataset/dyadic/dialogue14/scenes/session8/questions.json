@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: The image triggered suggestions in the conversation, which falls under causal inference."

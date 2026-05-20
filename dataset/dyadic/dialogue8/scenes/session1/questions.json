@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue8",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue infers the causal relationship between images driving textual comments, where Image 1 leads Gu Zhizhou to make a down-to-earth atmosphere evaluation.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: The flexible employment ratio data in image1.png (screenshot of a table) sparked Shen Zhiwei's subsequent discussion on motivation and daily life.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue4",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: 4.png (picture of a kitchen scale) sparked Gu Linfeng's attention and evaluation of waterproofing and calibration mechanisms in the next round of conversation.",

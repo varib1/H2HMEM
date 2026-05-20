@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue8",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Infer the causal relationship between images and text, rather than direct associations.",

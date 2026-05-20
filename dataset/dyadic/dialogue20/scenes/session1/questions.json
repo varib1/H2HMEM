@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: Image 3.png (Sweet and Sour Dish) sparked Ji Shi'an's lament about youth participation (Round 10).",
@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: Image 5.png (Fish and Vegetables) triggered Ji Shi'an's comment on preventing post-holiday syndrome (Round 18).",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-GPT-4o 图片批量描述工具（支持 token 限制）
-使用 GPT-4o 生成图片描述，并自动截断到指定 token 数。
+GPT-4o Batch Image Description Tool (with token limit)
+Uses GPT-4o to generate image descriptions with automatic truncation to specified token limit.
 """
 
 import os
@@ -19,12 +19,12 @@ import tiktoken
 
 
 class GPT4oImageDescriber:
-    """使用 GPT-4o 批量描述图片，支持 token 限制和结构化输出"""
+    """Batch image describer using GPT-4o with token limit and structured output"""
 
     def __init__(self, api_key: str, base_url: Optional[str] = None):
         self.client = OpenAI(
             api_key=api_key,
-            base_url=base_url if base_url else "https://api.openai.com/v1"
+            base_url=base_url
         )
         self.tokenizer = tiktoken.get_encoding("cl100k_base")
         self._test_connection()
@@ -32,10 +32,10 @@ class GPT4oImageDescriber:
     def _test_connection(self) -> bool:
         try:
             models = self.client.models.list()
-            print(f"API 连接成功，可用模型数: {len(models.data)}")
+            print(f"API connection successful, available models: {len(models.data)}")
             return True
         except Exception as e:
-            print(f"API 连接失败: {e}")
+            print(f"API connection failed: {e}")
             return False
 
     def count_tokens(self, text: str) -> int:
@@ -46,15 +46,14 @@ class GPT4oImageDescriber:
         if len(tokens) <= max_tokens:
             return text
         truncated = self.tokenizer.decode(tokens[:max_tokens])
-        return truncated + "... [已截断]"
+        return truncated + "... [truncated]"
 
     def describe_image(self, image_path: str, caption_max_tokens: int = 256,
                        prompt: Optional[str] = None,
                        max_tokens: int = 1200, detail: str = "auto") -> Dict[str, Any]:
-        """生成图片描述，自动截断到 caption_max_tokens"""
         img_path = Path(image_path)
         if not img_path.exists():
-            return self._error_result(f"图片文件不存在: {image_path}", image_path)
+            return self._error_result(f"Image file not found: {image_path}", image_path)
 
         with open(img_path, "rb") as f:
             base64_image = base64.b64encode(f.read()).decode('utf-8')
@@ -65,16 +64,16 @@ class GPT4oImageDescriber:
         mime = mime_map.get(ext, 'jpeg')
 
         if prompt is None:
-            prompt = f"""请用简洁的语言描述这张图片，确保描述内容不超过{caption_max_tokens}个token。
+            prompt = f"""Please describe this image in a concise manner, ensuring the description does not exceed {caption_max_tokens} tokens.
 
-请包含：
-- 核心场景
-- 主要元素（物体/人物/动物）
-- 可见文字（如有）
-- 动作/状态
-- 背景环境
+Please include:
+- Core scene
+- Main elements (objects/persons/animals)
+- Visible text (if any)
+- Actions or interactions (if any)
+- Overall mood or atmosphere
 
-用一段流畅的段落呈现。"""
+Please provide a clear and informative description based on the image content. If the description exceeds the token limit, it will be truncated."""
 
         response = self.client.chat.completions.create(
             model="gpt-4o",
@@ -156,12 +155,11 @@ class GPT4oImageDescriber:
         }
 
     def process_single_session(self, session_path: Path, caption_max_tokens: int = 256) -> Dict:
-        """处理一个 session 下的所有图片"""
         image_dir = session_path / "image"
         if not image_dir.exists():
             return {"session": session_path.name, "status": "failed", "error": "No image directory"}
 
-        caption_dir = session_path / f"caption_{caption_max_tokens}"
+        caption_dir = session_path / "caption"
         caption_dir.mkdir(exist_ok=True)
 
         image_files = []
@@ -216,7 +214,7 @@ class GPT4oImageDescriber:
         return result
 
     def process_dialogue(self, dialogue_path: Path, caption_max_tokens: int = 256) -> Dict:
-        """处理一个对话下的所有 session"""
+        print(f"  📁 Processing {dialogue_path.name}...")
         scenes_dir = dialogue_path / "scenes"
         if not scenes_dir.exists():
             return {"dialogue": dialogue_path.name, "status": "failed", "error": "No scenes directory"}
@@ -240,7 +238,7 @@ class GPT4oImageDescriber:
         }
 
         for sess in session_folders:
-            print(f"  📁 处理 {sess.name}...")
+            print(f"  📁 Processing {dialogue_path.name}:{sess.name}...")
             sess_res = self.process_single_session(sess, caption_max_tokens)
             result["session_results"].append(sess_res)
             if "error" not in sess_res:
@@ -251,29 +249,29 @@ class GPT4oImageDescriber:
                     if f.get("success") and f.get("token_stats", {}).get("was_truncated"):
                         result["total_truncated"] += 1
             else:
-                print(f"    ⚠️ {sess.name} 跳过: {sess_res.get('error')}")
+                print(f"    ⚠️ {sess.name} skipped: {sess_res.get('error')}")
 
-        summary_file = dialogue_path / f"caption_{caption_max_tokens}_summary.json"
+        summary_file = dialogue_path / "caption_summary.json"
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
         return result
 
 
 def main():
-    parser = argparse.ArgumentParser(description="GPT-4o 图片批量描述工具（支持 token 限制）")
-    parser.add_argument("--base_path", required=True, help="包含对话文件夹的根目录")
-    parser.add_argument("--api_key", required=True, help="OpenAI API 密钥或兼容服务密钥")
-    parser.add_argument("--base_url", default="https://api.openai.com/v1", help="API 基础 URL")
-    parser.add_argument("--caption_max_tokens", type=int, default=256, help="描述的最大 token 数")
-    parser.add_argument("--dialogue", help="仅处理指定的单个对话文件夹名")
-    parser.add_argument("--dialogue_pattern", default="对话*", help="对话文件夹匹配模式，如 '对话*'")
-    parser.add_argument("--verbose", action="store_true", help="详细输出")
+    parser = argparse.ArgumentParser(description="GPT-4o Batch Image Description Tool (with token limit)")
+    parser.add_argument("--base_path", required=True, help="Root directory containing dialogue folders")
+    parser.add_argument("--api_key", required=True, help="OpenAI API key or compatible service key")
+    parser.add_argument("--base_url", required=True, help="API base URL")
+    parser.add_argument("--caption_max_tokens", type=int, default=256, help="Maximum tokens for description")
+    parser.add_argument("--dialogue", help="Process only a single dialogue folder name")
+    parser.add_argument("--dialogue_pattern", default="dialogue*", help="Dialogue folder matching pattern")
+    parser.add_argument("--verbose", action="store_true", help="Verbose output")
 
     args = parser.parse_args()
 
     base = Path(args.base_path)
     if not base.exists():
-        print(f"错误: 基础路径不存在: {base}")
+        print(f"Error: Base path does not exist: {base}")
         return 1
 
     describer = GPT4oImageDescriber(api_key=args.api_key, base_url=args.base_url)
@@ -281,7 +279,7 @@ def main():
     if args.dialogue:
         dialogue_path = base / args.dialogue
         if not dialogue_path.is_dir():
-            print(f"错误: 对话目录不存在: {dialogue_path}")
+            print(f"Error: Dialogue directory does not exist: {dialogue_path}")
             return 1
         describer.process_dialogue(dialogue_path, args.caption_max_tokens)
     else:
@@ -290,12 +288,12 @@ def main():
             pattern = pattern + '*'
         dialogues = sorted(base.glob(pattern))
         if not dialogues:
-            print(f"未找到匹配 '{args.dialogue_pattern}' 的对话文件夹")
+            print(f"No dialogue folders matching '{args.dialogue_pattern}' found")
             return 1
         for dlg in dialogues:
             describer.process_dialogue(dlg, args.caption_max_tokens)
 
-    print("\n🎉 所有任务完成！")
+    print("\n🎉 All tasks completed!")
     return 0
 
 

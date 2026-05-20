@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The second scenario in Multimodal (Text-Image) Causal Inference: Given an image, ask why someone sent it, recalling the preceding cause? The answer requires causal inference, based on Cheng Yanqiu's mention of motivation and subjective elements in the third round of dialogue, as well as Shen Zhiwei's image and explanation in the fourth round.",

@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: 2.png (photo of a child's bedroom) triggered Zhou Mingyuan to share insights on family care details in the subsequent conversation (Round 7), indicating a causal inference relationship.",

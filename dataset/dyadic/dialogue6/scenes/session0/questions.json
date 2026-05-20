@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue6",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "Integrate the homestay selection from Session 1 with the experience evaluation from Session 3.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue6",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "",

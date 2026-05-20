@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The question is based on image 3.png, inquiring about Chen Lu's conclusion. The answer is derived from his evaluation of the image and subsequent suggestions, representing a causal inference driven by image-based text.",

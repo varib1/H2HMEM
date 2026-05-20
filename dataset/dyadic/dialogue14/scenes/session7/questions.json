@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: The content of the image triggered Lin Xingwan's emotions and complaints."

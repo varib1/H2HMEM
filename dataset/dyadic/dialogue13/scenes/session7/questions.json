@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: Retrieve corresponding dialogue content based on image information.",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: The image triggers subsequent suggestions, focusing on causal inference.",
@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: The image triggers subsequent evaluations, focusing on causal inference.",
@@ -121,7 +121,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Use the newly acquired multimodal information to answer questions, testing online adaptability.",

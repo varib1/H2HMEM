@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The causal inference for the problem type 'image-driven text' inquires about Lu Zhixing's evaluation of the image sent by Shen Qingyan.",

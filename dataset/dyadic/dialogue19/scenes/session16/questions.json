@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Causal Inference]: The content of the image directly triggered the feedback comments in the conversation."

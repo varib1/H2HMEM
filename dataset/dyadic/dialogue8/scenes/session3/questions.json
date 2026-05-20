@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue8",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: Image 2.png (sent) drove the subsequent textual discussion (visual metaphor).",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The third scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what conclusion someone has drawn based on the image? The answer is directly derived from the first round of dialogue, where the image drives the textual conclusion.",

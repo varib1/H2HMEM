@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image→Text: Recall the corresponding experience or location in the conversation based on the image.",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: 4.png sparked Hansuli's comment on HRV improvement.",
@@ -121,7 +121,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Online Adaptation: Learn new information (1.png and description) and apply it to answer questions.",

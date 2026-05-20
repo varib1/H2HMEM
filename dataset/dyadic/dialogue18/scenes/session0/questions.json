@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves the rehabilitation recommendations from Session 6 and the emergency plan from Session 3, requiring cross-session causal inference to link rehabilitation actions with safety principles.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue requires cross-session inference to determine the causal relationship between the dietary optimization in Session 12 and the equipment optimization in Session 2 in terms of safety redundancy design.",

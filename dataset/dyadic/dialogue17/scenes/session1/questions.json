@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: The image triggers concerns in the conversation, with a causal inference relationship present.",
@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Text-driven images: The delays mentioned in the conversation have no direct causal relationship with the images.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue9",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: 3.png (blueprint schematic) sparked Zhao Xiaotang's ideas about project linkage in subsequent rounds, which is causal inference.",

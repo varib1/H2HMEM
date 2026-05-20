@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Causal Chain: Session 13 images demonstrate the success of the experience day and specific interactive formats -> Session 10 decides to establish a dedicated pet-friendly exhibition area in the cultural festival.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue13",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Causal Chain: Health education in Session 12 images -> Session 6 proposes serving chopsticks and spoons; Abundant but repetitive dishes in Session 15 images -> Session 6 suggests communicating the menu in advance.",

@@ -77,7 +77,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Finding the Cause from the Effect]: Identify the image that triggered Gu Yanci's evaluation based on his comments, ensuring a clear causal relationship."

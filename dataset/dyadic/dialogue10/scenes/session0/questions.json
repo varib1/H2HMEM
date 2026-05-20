@@ -168,7 +168,7 @@
       "answer_dialogue": "dialogue10",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The reasons include Xia Qingchuan's own experiences with emotional eating, as well as Su Mingche's guidance and suggestions.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: Image1.png (displaying a tea setting) directly evokes Su Yu'an's exclamation (elegant simplicity, the warmth of autumn).",

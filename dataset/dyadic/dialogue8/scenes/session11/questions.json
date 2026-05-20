@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue8",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: 4.png (Purchase Emotion Curve) sparked Gu Zhizhou's discussion on emotional comparison and pet emotional anchors (Round 5).",

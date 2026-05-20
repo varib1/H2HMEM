@@ -43,7 +43,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "Image→Text: Recall corresponding dialogue topics based on image content."

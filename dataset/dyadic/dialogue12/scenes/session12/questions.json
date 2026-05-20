@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The question type is 'Text Response to Image' in Multimodal (Text-Image) Causal Inference, inquiring about the antecedent cause for sending the image. The answer is inferred from the first round of dialogue, with no ambiguity.",

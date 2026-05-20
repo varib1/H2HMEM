@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue8",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The image drives the textual discussion, focusing on causal inference.",

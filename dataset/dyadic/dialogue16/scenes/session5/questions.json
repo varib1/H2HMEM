@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue16",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: 3.png (dog resting under the table) sparked Su Yu'an's proposal to use art to capture moments of tranquility.",

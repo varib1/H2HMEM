@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The issue involves the textual information from Session 3 where Lin Chang'an is too busy with work to take care of Xing Ren, as well as the images and text from Session 9 where Zhou Pingfan suggests a pet-sitting solution, reflecting cross-session causal inference.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue1",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "The question involves cross-session causal inference based on the menu images and text from Session 2, as well as the concept of \"dignified balance\" mentioned by Lin Chang'an in Session 1.",

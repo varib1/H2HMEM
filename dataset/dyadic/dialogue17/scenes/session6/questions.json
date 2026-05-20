@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: Retrieve corresponding dialogue descriptions based on image information.",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: Image1.png triggered the behavioral description of Optimus Prime generating a video.",
@@ -102,7 +102,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Learn the newly acquired multimodal information (image 3.png and dialogue text) and apply the new knowledge to answer questions.",

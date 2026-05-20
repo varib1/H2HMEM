@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Inferring that the image (3.png) led to the emergence of the text (discussion about joyful experiences) is a causal inference.",

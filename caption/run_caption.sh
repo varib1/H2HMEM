@@ -1,14 +1,27 @@
 #!/bin/bash
-# 批量生成图片描述示例脚本
-# 请根据实际情况修改下面变量
+# Batch image caption generation script
+# Please modify the variables below according to your setup
 
-BASE_PATH=""   # 对话根目录
-API_KEY="your-openai-api-key"             # 你的 API 密钥
-BASE_URL=""      # 如果需要代理，请修改
-CAPTION_MAX_TOKENS=256                    # 描述最大 token 数
-DIALOGUE_PATTERN="dialogue*"                  # 匹配对话文件夹的模式
+# ==================== Path Configuration ====================
+BASE_PATH=""                        # Dialogue root directory (./dataset/dyadic or ./dataset/multi-party)
+SCRIPT_DIR=""                       # Directory containing gpt_4o_caption.py
+PYTHON_SCRIPT="$SCRIPT_DIR/gpt_4o_caption.py"
 
-python caption.py \
+# ==================== API Configuration ====================
+API_KEY=""                          # Your API key
+BASE_URL=""                         # Your API base URL 
+
+# ==================== Caption Configuration ====================
+CAPTION_MAX_TOKENS=256              # Maximum tokens for image description output
+DIALOGUE_PATTERN="dialogue*"        # Pattern to match dialogue folders
+# ================================================================
+
+if [ ! -f "$PYTHON_SCRIPT" ]; then
+    echo "Error: $PYTHON_SCRIPT not found!"
+    exit 1
+fi
+
+python "$PYTHON_SCRIPT" \
     --base_path "$BASE_PATH" \
     --api_key "$API_KEY" \
     --base_url "$BASE_URL" \

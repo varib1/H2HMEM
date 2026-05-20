@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue18",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image→Text: Image3.png (Brewing Coffee) triggered Shiyan's comment on 'Experientialism', requiring causal inference."

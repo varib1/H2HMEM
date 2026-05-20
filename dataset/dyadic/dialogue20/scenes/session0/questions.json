@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: The recommendations (text) from Session 2 influenced the activity practices (text) in Session 3, reflecting a cross-session driving relationship.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: The images and text from Session 7 (New Year's exercise improvement) are the direct cause of Ji Shi'an starting exercise (images and text) in Session 8, tracking influences across sessions.",

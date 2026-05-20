@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The problem type is the first scenario in Multimodal (Text-Image) Causal Inference: Given an image, the question asks what behavior of a person in the conversation was caused by the image? Here, the behavior refers to the question posed by Chen Lu based on the image.",

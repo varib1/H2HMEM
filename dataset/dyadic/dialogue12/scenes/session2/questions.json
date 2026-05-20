@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue12",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "easy",
       "validation_notes": "The problem type is the first scenario in Multimodal (Text-Image) Causal Inference: given an image, ask what action of a person in the dialogue was caused by the image? Here, the action refers to the suggestion made by Shen Zhiwei after sending the image. The answer is directly from turn 15 of the dialogue.",

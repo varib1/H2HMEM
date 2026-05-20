@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-driven text: Image 3.jpg directly triggered the textual discussion about Ling Guang introducing calibration tools, which is causal inference.",

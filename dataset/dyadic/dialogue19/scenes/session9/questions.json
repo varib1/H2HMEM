@@ -26,7 +26,7 @@
       "answer_dialogue": "dialogue19",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Finding the Cause from the Result]: Image 3.png triggered Gu Yanci's comments on light and authentic moments."

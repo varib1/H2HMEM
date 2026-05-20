@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue3",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: Image 1 (featuring a Shiba Inu pattern) drove Su Xiaomeng to propose the theme of \"contrasting cuteness\" in the text responses of subsequent rounds.",

@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue5",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: Images drive the emotional expression in the text, focusing on the driving relationship between images and text.",

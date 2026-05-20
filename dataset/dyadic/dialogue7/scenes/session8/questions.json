@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue7",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The sending of image3.png (horizontal comparison table) directly triggered Shen Qingyin's comments on the trade-off between CADR and noise in the 9th round, which is a causal inference of text driven by images.",

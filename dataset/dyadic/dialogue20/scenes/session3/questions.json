@@ -60,7 +60,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Image-driven text]: Causal inference, the image triggers emotional expression."

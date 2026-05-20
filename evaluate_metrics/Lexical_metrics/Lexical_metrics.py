@@ -1,9 +1,3 @@
-"""
-多模态记忆Benchmark评估指标计算模块
-仅支持 Precision, Recall, BLEU-1, F1 四个指标
-专为英文对话记忆评估设计
-"""
-
 import json
 import re
 import argparse
@@ -15,7 +9,7 @@ from dataclasses import dataclass, asdict
 from datetime import datetime
 from typing import List, Dict, Any, Set, Optional, Union
 
-# 英文 NLP 工具
+# English NLP tools
 try:
     import nltk
     from nltk.tokenize import word_tokenize
@@ -24,9 +18,9 @@ try:
     NLTK_AVAILABLE = True
 except ImportError:
     NLTK_AVAILABLE = False
-    raise ImportError("请安装 nltk: pip install nltk")
+    raise ImportError("Please install nltk: pip install nltk")
 
-# 下载 nltk 数据（首次运行时）
+# Download nltk data (first time run)
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
@@ -36,7 +30,7 @@ try:
 except LookupError:
     nltk.download('stopwords')
 
-# 配置日志
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -46,7 +40,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class QuestionEvaluationResult:
-    """单个问题的评估结果（仅保留四个核心指标）"""
+    """Single question evaluation result (only four core metrics)"""
     sample_id: str
     session_id: str
     dialogue_name: str
@@ -89,68 +83,59 @@ class QuestionEvaluationResult:
 
 
 class EnglishTextProcessor:
-    """英文文本处理器"""
+    """English text processor"""
     
-    # 预定义的9种问题类别（更新为新的 sub_type 结构）
-    # 注意：这些类别现在对应的是 question_type 中的 sub_type 字段
+    # 9 question categories
     CATEGORIES = [
         "Unimodal Precise Recall",
         "Cross-modal Related Retrieval",
         "Knowledge Resolution",
         "Temporal Reasoning",
-        "Multimodal Causal Inference",
-        "Cross-turn Reference Tracking",
+        "Multimodal Causal Reasoning",
+        "Reference & Evolution Tracking",
         "Test-Time Learning",
         "Conflict Detection",
         "Answer Refusal"
     ]
     
-    # 类别显示名称
+    # Category display names
     CATEGORY_DISPLAY_NAMES = {cat: cat for cat in CATEGORIES}
-    
-    # 旧类别名称到新类别的映射（向后兼容）
-    LEGACY_CATEGORY_MAPPING = {
-        "Test-Time Learning (TTL)": "Test-Time Learning",
-        "Conflict Detection (CD)": "Conflict Detection",
-        "Answer Refusal (AR)": "Answer Refusal",
-        "Reference & Evolution Tracking": "Cross-turn Reference Tracking"
-    }
 
     def __init__(self, use_stopwords: bool = True, stopwords_file: str = None):
         self.use_stopwords = use_stopwords
         self.stopwords = self._load_stopwords(stopwords_file) if use_stopwords else set()
 
     def _load_stopwords(self, stopwords_file: str = None) -> Set[str]:
-        """加载英文停用词（NLTK 内置 + 可选外部文件）"""
+        """Load English stopwords (NLTK built-in + optional external file)"""
         stop_words = set(stopwords.words('english'))
-        # 添加一些额外的标点和常见词
+        # Add extra punctuation and common words
         extra = {'.', ',', '!', '?', ';', ':', '"', "'", '(', ')', '[', ']', '{', '}', '-', '–', '—', '...', '..'}
         stop_words.update(extra)
-        # 可选从外部文件加载额外停用词
+        # Optional load extra stopwords from external file
         if stopwords_file and Path(stopwords_file).exists():
             with open(stopwords_file, 'r', encoding='utf-8') as f:
                 for line in f:
                     word = line.strip().lower()
                     if word and not word.startswith('#'):
                         stop_words.add(word)
-            logger.info(f"从 {stopwords_file} 加载了额外停用词")
+            logger.info(f"Loaded extra stopwords from {stopwords_file}")
         return stop_words
 
     def tokenize(self, text: str, remove_stopwords: bool = True) -> List[str]:
-        """英文分词"""
-        if not text:
+        """English tokenization"""
+        if not text or not text.strip():
             return []
-        # 小写化
+        # Lowercase
         text = text.lower()
-        # 基本清理：移除多余空格
+        # Basic cleaning: remove extra spaces
         text = re.sub(r'\s+', ' ', text).strip()
-        # 使用 nltk 的 word_tokenize
+        # Use nltk's word_tokenize
         try:
             tokens = word_tokenize(text)
         except Exception as e:
-            logger.warning(f"nltk tokenize 失败: {e}, 使用简单空格分割")
+            logger.warning(f"nltk tokenization failed: {e}, using simple space split")
             tokens = text.split()
-        # 过滤
+        # Filter
         filtered = []
         for t in tokens:
             t = t.strip()
@@ -158,29 +143,21 @@ class EnglishTextProcessor:
                 continue
             if remove_stopwords and self.use_stopwords and t in self.stopwords:
                 continue
-            # 过滤纯标点符号（可选）
+            # Filter pure punctuation (optional)
             if all(ch in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~" for ch in t):
                 continue
             filtered.append(t)
         return filtered
 
     def normalize_text(self, text: str) -> str:
-        """归一化文本用于精确匹配：小写、去标点、去空格"""
+        """Normalize text for exact matching: lowercase, remove punctuation, remove spaces"""
         if not text:
             return ""
         text = text.lower()
-        # 移除非字母数字字符（保留字母数字和空格）
+        # Remove non-alphanumeric characters (keep alphanumeric and spaces)
         text = re.sub(r'[^a-z0-9\s]', '', text)
-        # 移除多余空格
+        # Remove extra spaces
         return re.sub(r'\s+', ' ', text).strip()
-    
-    def map_category(self, category: str) -> str:
-        """将类别名称映射到标准格式"""
-        if category in self.CATEGORIES:
-            return category
-        if category in self.LEGACY_CATEGORY_MAPPING:
-            return self.LEGACY_CATEGORY_MAPPING[category]
-        return category
 
 
 class EvaluationMetricsCalculator:
@@ -196,43 +173,80 @@ class EvaluationMetricsCalculator:
         }
 
     def _precision(self, pred: str, ref: str) -> float:
-        p = set(self.text_processor.tokenize(pred))
-        r = set(self.text_processor.tokenize(ref))
-        if not p:
+        p_tokens = self.text_processor.tokenize(pred)
+        r_tokens = self.text_processor.tokenize(ref)
+        
+        if not p_tokens:
             return 0.0
-        inter = p & r
-        return len(inter) / len(p) if inter else 0.0
+        
+        p_set = set(p_tokens)
+        r_set = set(r_tokens)
+        
+        if not p_set:
+            return 0.0
+            
+        intersection = p_set & r_set
+        return len(intersection) / len(p_set)
 
     def _recall(self, pred: str, ref: str) -> float:
-        p = set(self.text_processor.tokenize(pred))
-        r = set(self.text_processor.tokenize(ref))
-        if not r:
+        p_tokens = self.text_processor.tokenize(pred)
+        r_tokens = self.text_processor.tokenize(ref)
+        
+        if not r_tokens:
             return 0.0
-        inter = p & r
-        return len(inter) / len(r) if inter else 0.0
+        
+        p_set = set(p_tokens)
+        r_set = set(r_tokens)
+        
+        if not r_set:
+            return 0.0
+            
+        intersection = p_set & r_set
+        return len(intersection) / len(r_set)
 
     def _f1(self, pred: str, ref: str) -> float:
-        p = set(self.text_processor.tokenize(pred))
-        r = set(self.text_processor.tokenize(ref))
-        if not p or not r:
+        precision = self._precision(pred, ref)
+        recall = self._recall(pred, ref)
+        
+        if precision + recall == 0:
             return 0.0
-        inter = p & r
-        if not inter:
-            return 0.0
-        prec = len(inter) / len(p)
-        rec = len(inter) / len(r)
-        return 2 * prec * rec / (prec + rec) if (prec + rec) > 0 else 0.0
+            
+        return 2 * precision * recall / (precision + recall)
 
-    def _bleu1(self, pred: str, ref: str) -> float:
-        p_tokens = self.text_processor.tokenize(pred, remove_stopwords=False)
-        r_tokens = self.text_processor.tokenize(ref, remove_stopwords=False)
-        if not p_tokens or not r_tokens:
+    def _bleu1(self, prediction: str, reference: str, **kwargs) -> float:
+        """
+        Calculate BLEU-1 score using sentence_bleu
+        
+        Args:
+            prediction: Model generated answer
+            reference: Ground truth answer
+            
+        Returns:
+            float: BLEU-1 score, range [0,1]
+        """
+        # Tokenize
+        pred_tokens = self.text_processor.tokenize(prediction, remove_stopwords=False)
+        ref_tokens = self.text_processor.tokenize(reference, remove_stopwords=False)
+
+        if not pred_tokens or not ref_tokens:
             return 0.0
+        if pred_tokens == ref_tokens:
+            return 1.0
+        
+        # Use sentence_bleu to calculate BLEU-1 (weights=(1, 0, 0, 0) means use only 1-gram)
         try:
-            smooth = SmoothingFunction().method4
-            return sentence_bleu([r_tokens], p_tokens, weights=(1.0, 0, 0, 0), smoothing_function=smooth)
+            # Add smoothing function to avoid zero score issues
+            smoothie = SmoothingFunction().method4
+            bleu_score = sentence_bleu(
+                [ref_tokens],  # Reference needs to be a list of lists
+                pred_tokens,
+                weights=(1.0, 0, 0, 0),  # BLEU-1
+                smoothing_function=smoothie
+            )
+            return float(bleu_score)
         except Exception as e:
-            logger.warning(f"BLEU计算失败: {e}")
+            print(prediction, reference)
+            logger.warning(f"Error calculating BLEU score: {e}")
             return 0.0
 
 
@@ -253,31 +267,31 @@ class MethodAggregatedEvaluator:
     def scan_and_evaluate(self, base_path: Union[str, Path], pattern: str = "results_*.json"):
         base = Path(base_path)
         if not base.exists():
-            raise FileNotFoundError(f"路径不存在: {base_path}")
+            raise FileNotFoundError(f"Path does not exist: {base_path}")
         
-        # 支持 dialogue 和 dialogue1 两种命名格式
+        # Support both dialogue and dialogue1 naming patterns
         dialogue_patterns = ["dialogue*", "对话*"]
         dialogues = []
         for pattern_name in dialogue_patterns:
             dialogues.extend(sorted(base.glob(pattern_name)))
-        dialogues = sorted(set(dialogues))  # 去重
+        dialogues = sorted(set(dialogues))  # Remove duplicates
         
-        logger.info(f"找到 {len(dialogues)} 个对话文件夹")
+        logger.info(f"Found {len(dialogues)} dialogue folders")
         for dialogue in dialogues:
-            logger.info(f"\n处理对话: {dialogue.name}")
+            logger.info(f"\nProcessing dialogue: {dialogue.name}")
             scenes = dialogue / "scenes"
             if not scenes.exists():
-                logger.warning(f"  scenes 目录不存在: {scenes}")
+                logger.warning(f"  scenes directory does not exist: {scenes}")
                 continue
             sessions = [d for d in scenes.iterdir() if d.is_dir() and d.name.startswith('session')]
-            logger.info(f"  找到 {len(sessions)} 个session")
+            logger.info(f"  Found {len(sessions)} sessions")
             for sess in sessions:
-                eval_dir = sess / "evaluation_results_qwen_3B"
+                eval_dir = sess / "evaluation_results"
                 if not eval_dir.exists():
                     continue
                 for f in eval_dir.glob(pattern):
                     self._process_file(f, dialogue.name, sess.name)
-        logger.info(f"扫描完成，发现 {len(self.method_results)} 种方法")
+        logger.info(f"Scan complete, found {len(self.method_results)} methods")
         for method in self.method_results:
             self._generate_report(method)
         self.generate_overall_comparison()
@@ -292,7 +306,7 @@ class MethodAggregatedEvaluator:
             vlm = vlm.split('/')[-1]
         method = f"{memory_type}_{vlm}"
         items = data.get('results', [])
-        logger.info(f"    处理 {method}: {len(items)} 个问题")
+        logger.info(f"    Processing {method}: {len(items)} questions")
         for it in items:
             eval_res = self._evaluate_item(it, dialogue, session, method, memory_type, vlm)
             if eval_res:
@@ -305,28 +319,31 @@ class MethodAggregatedEvaluator:
 
     def _evaluate_item(self, item: Dict, dialogue: str, session: str, method: str, mem_type: str, vlm: str):
         try:
-            metrics = self.metrics_calc.calculate_single_pair(
-                item.get('system_answer', '').strip(),
-                item.get('original_answer', '').strip()
-            )
+            # Get answers and perform safety check
+            system_answer = item.get('system_answer', '').strip()
+            original_answer = item.get('original_answer', '').strip()
             
-            # 获取 question_type，适配新的结构
+            # If both answers are empty, return default values directly
+            if not system_answer and not original_answer:
+                logger.debug(f"Question {item.get('question_id', 'unknown')} has empty answers")
+                metrics = {'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'bleu1': 0.0}
+            else:
+                metrics = self.metrics_calc.calculate_single_pair(system_answer, original_answer)
+            
+            # get question category
+            category = item.get('category', 'unknown')
+
+            # Get question_type
             qtype = item.get('question_type', {})
             if isinstance(qtype, str):
                 qtype = {'main_type': qtype, 'sub_type': ''}
             elif isinstance(qtype, dict):
-                # 确保有 main_type 和 sub_type
+                # Ensure main_type and sub_type exist
                 if 'main_type' not in qtype:
                     qtype['main_type'] = ''
                 if 'sub_type' not in qtype:
                     qtype['sub_type'] = ''
             
-            # 获取 category：优先使用 item 中的 category，否则从 question_type 的 sub_type 获取
-            category = item.get('category', '')
-            if not category:
-                category = qtype.get('sub_type', 'unknown')
-            # 映射类别名称
-            category = self.text_processor.map_category(category)
             
             return QuestionEvaluationResult(
                 sample_id=item.get('sample_id', ''),
@@ -338,8 +355,8 @@ class MethodAggregatedEvaluator:
                 category=category,
                 difficulty=item.get('difficulty', 'medium'),
                 question_type=qtype,
-                original_answer=item.get('original_answer', ''),
-                system_answer=item.get('system_answer', ''),
+                original_answer=original_answer,
+                system_answer=system_answer,
                 model_name=method,
                 memory_type=mem_type,
                 vlm_model=vlm,
@@ -355,7 +372,7 @@ class MethodAggregatedEvaluator:
                 error_message=item.get('error_message', '')
             )
         except Exception as e:
-            logger.error(f"评估问题出错: {e}")
+            logger.error(f"Error evaluating question: {e}, item_id={item.get('question_id', 'unknown')}")
             return None
 
     def _generate_report(self, method: str):
@@ -380,7 +397,7 @@ class MethodAggregatedEvaluator:
                 stats[k] = {'mean': float(np.mean(v)), 'std': float(np.std(v)),
                             'min': float(np.min(v)), 'max': float(np.max(v)),
                             'median': float(np.median(v))}
-        # 按类别统计
+        # Statistics by category
         cat_stats = {cat: {'count': 0, 'p': 0.0, 'r': 0.0, 'f1': 0.0, 'b': 0.0} for cat in self.categories}
         for r in results:
             if r.category in cat_stats:
@@ -399,7 +416,7 @@ class MethodAggregatedEvaluator:
             for k in ['p', 'r', 'f1', 'b']:
                 cat_stats[cat].pop(k, None)
         stats['by_category'] = cat_stats
-        # 按难度统计
+        # Statistics by difficulty
         diff_stats = {}
         for r in results:
             d = r.difficulty
@@ -466,7 +483,7 @@ class MethodAggregatedEvaluator:
                     'confidence': r.confidence,
                     'success': r.success
                 })
-        logger.info(f"结果已保存到 {out_dir}")
+        logger.info(f"Results saved to {out_dir}")
 
     def _save_report(self, method: str, results: List[QuestionEvaluationResult], metadata: Dict,
                      stats: Dict, dialogue_stats: Dict, session_stats: Dict):
@@ -480,7 +497,7 @@ class MethodAggregatedEvaluator:
         lines.append(f"Memory Type: {metadata.get('memory_type', 'unknown')}")
         lines.append(f"Total Questions: {len(results)}")
         lines.append("")
-        lines.append("【Overall Metrics】")
+        lines.append("[Overall Metrics]")
         lines.append(f"{'Metric':<12} {'Mean':>8} {'Std':>8} {'Median':>8} {'Min':>8} {'Max':>8}")
         lines.append("-" * 52)
         for m in ['precision', 'recall', 'f1', 'bleu1']:
@@ -488,7 +505,7 @@ class MethodAggregatedEvaluator:
             name = {'precision':'Precision','recall':'Recall','f1':'F1','bleu1':'BLEU-1'}[m]
             lines.append(f"{name:<12} {s.get('mean',0):>8.4f} {s.get('std',0):>8.4f} {s.get('median',0):>8.4f} {s.get('min',0):>8.4f} {s.get('max',0):>8.4f}")
         lines.append("")
-        lines.append("【Per Category】")
+        lines.append("[Per Category]")
         lines.append(f"{'Category':<30} {'Count':>6} {'Prec':>8} {'Rec':>8} {'F1':>8} {'BLEU':>8}")
         lines.append("-" * 70)
         for cat, info in stats.get('by_category', {}).items():
@@ -502,17 +519,17 @@ class MethodAggregatedEvaluator:
         report_file = out_dir / f"{method}_report.txt"
         with open(report_file, 'w', encoding='utf-8') as f:
             f.write("\n".join(lines))
-        logger.info(f"报告已保存到 {report_file}")
+        logger.info(f"Report saved to {report_file}")
 
     def generate_overall_comparison(self):
         if len(self.method_results) < 2:
-            logger.info("只有一种方法，跳过对比")
+            logger.info("Only one method, skipping comparison")
             return
         lines = []
         lines.append("=" * 80)
         lines.append("Multimodal Memory Evaluation - Method Comparison")
         lines.append("=" * 80)
-        lines.append("【Overall Metrics Comparison】")
+        lines.append("[Overall Metrics Comparison]")
         lines.append(f"{'Method':<30} {'Count':>6} {'Prec':>8} {'Rec':>8} {'F1':>8} {'BLEU':>8}")
         lines.append("-" * 70)
         for method, data in sorted(self.method_results.items()):
@@ -520,7 +537,7 @@ class MethodAggregatedEvaluator:
             short = method[:28] + ".." if len(method) > 30 else method
             lines.append(f"{short:<30} {len(data['results']):>6} {stats['precision']['mean']:>8.4f} {stats['recall']['mean']:>8.4f} {stats['f1']['mean']:>8.4f} {stats['bleu1']['mean']:>8.4f}")
         lines.append("")
-        lines.append("【Best Performance】")
+        lines.append("[Best Performance]")
         for metric in ['precision', 'recall', 'f1', 'bleu1']:
             best = max(self.method_results.items(), key=lambda x: self._calc_stats(x[1]['results'])[metric]['mean'])
             name = {'precision':'Precision','recall':'Recall','f1':'F1','bleu1':'BLEU-1'}[metric]
@@ -529,7 +546,7 @@ class MethodAggregatedEvaluator:
         comp_file = self.output_dir / "method_comparison_report.txt"
         with open(comp_file, 'w', encoding='utf-8') as f:
             f.write("\n".join(lines))
-        logger.info(f"对比报告已保存到 {comp_file}")
+        logger.info(f"Comparison report saved to {comp_file}")
 
 
 def main():

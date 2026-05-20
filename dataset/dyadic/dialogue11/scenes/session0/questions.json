@@ -168,7 +168,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Reasoning: Chen Lu emphasized the importance of systematic preparation in Session 1 → leading to → Fang Qing proposing the health corner concept in Session 2.",
@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue11",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: Canteen hygiene issues in Session 5 (grease stains, mixing of raw and cooked food) → leads to → Fang Qing proposing a meal preparation plan as a solution in Session 6.",

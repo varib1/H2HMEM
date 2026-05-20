@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue14",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Causal inference of text driven by images, image 4.png triggered Lin Xingwan's reflections.",

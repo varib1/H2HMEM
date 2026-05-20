@@ -62,7 +62,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: img10.jpg (Da Liu's stretching posture) sparked a discussion where Coach Zhang pointed out the error and adjusted the posture.",

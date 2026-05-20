@@ -45,7 +45,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image → Text: Recall corresponding dialogue content based on image information, both related to the same event (post-match data comparison).",
@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue15",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Image-driven text: 1.png sparked Lin Cedu's suggestions for pre-match strategies.",

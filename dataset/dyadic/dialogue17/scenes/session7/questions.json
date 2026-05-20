@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue17",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Image-Driven Text: Image 2.jpg (Cyber City AR Scene Sketch) sparked subsequent evaluations and creative ideas from Optimus Prime (shaping the world with consciousness).",

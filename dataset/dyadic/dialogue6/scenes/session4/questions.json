@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue6",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Inferring the causal relationship between images and text: After Qin Shuo sent 1.png, he later commented in the conversation that HRV monitoring is accurate.",

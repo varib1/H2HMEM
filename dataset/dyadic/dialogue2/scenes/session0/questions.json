@@ -188,7 +188,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "Causal Inference: The recommendations from Session 8 (text and images) directly led to the purchase decision in Session 9 (text and images), involving cross-session driving relationships.",
@@ -208,7 +208,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "Causal Inference: The image information from Session 2 (abnormal lab results) drives the textual decision-making in Session 3 (conservative treatment and care plan), reflecting a cross-session causal chain.",

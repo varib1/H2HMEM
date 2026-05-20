@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue2",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "The problem type is the first scenario in Multimodal (Text-Image) Causal Inference: given an image, asking what behavior (here, behavior refers to association) of a person in the dialogue is caused by the image. The answer is directly derived from the dialogue text, with no ambiguity.",

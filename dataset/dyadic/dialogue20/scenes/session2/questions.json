@@ -64,7 +64,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "hard",
       "validation_notes": "[Cause Leads to Effect]: The doll shown in image6.png prompted Ji Shi'an to suggest adding a Year of the Dragon doll to attract children.",
@@ -83,7 +83,7 @@
       "answer_dialogue": "dialogue20",
       "question_type": {
         "main_type": "Memory Reasoning",
-        "sub_type": "Multimodal Causal Inference"
+        "sub_type": "Multimodal Causal Reasoning"
       },
       "difficulty": "medium",
       "validation_notes": "[Finding the Cause from the Result]: Image1.png (Activity Process Checklist) prompted Ji Shi'an to propose adding award categories in the text.",

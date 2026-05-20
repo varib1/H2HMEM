@@ -73,7 +73,7 @@ bash ./caption/run_caption.sh
 |:--|:--|
 | **Full (Text)** | `bash ./baselines/Full (Text)/evaluate.sh` |
 | **Naive RAG** | `bash ./baselines/Naive RAG/evaluate.sh` |
-| **A-MEM** | 1. `bash /home/zhushiping/H2HMEM1/baselines/A-MEM/memory_construct.sh` (build memory)<br>2. `bash ./baselines/A-MEM/evaluate.sh` (run evaluation) |
+| **A-MEM** | 1. `bash ./baselines/A-MEM/memory_construct.sh` (build memory)<br>2. `bash ./baselines/A-MEM/evaluate.sh` (run evaluation) |
 
 
 ### 🖼️ Multimodal Methods

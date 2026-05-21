@@ -133,7 +133,7 @@ Your final submission should include two JSON files formatted according to the t
 
 ```text
 prediction_dyadic.json
-prediction_multi_party.json
+prediction_multiparty.json
 ```
 ### 📤Submit to Leaderboard
 
@@ -143,7 +143,7 @@ prediction_multi_party.json
 
 2. Upload:
    - `prediction_dyadic.json`
-   - `prediction_multi_party.json`
+   - `prediction_multiparty.json`
 
 3. Fill in:
    - Method name

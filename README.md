@@ -10,6 +10,14 @@
 </div>
 
 ---
+## 📥 Dataset Download
+
+Please download the dataset from Hugging Face: [https://huggingface.co/datasets/varib/H2HMEM](https://huggingface.co/datasets/varib/H2HMEM)
+
+Save the contents to the following local folders:
+
+- `./dataset/dyadic`
+- `./dataset/multi-party`
 
 ## 📊 Dataset Overview
 

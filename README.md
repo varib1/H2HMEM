@@ -1,4 +1,4 @@
-# H2HMem: A Multimodal Memory Benchmark for Agents in Human--Human Interactions
+# H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions
 
 <div align="center">
 

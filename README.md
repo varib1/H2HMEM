@@ -125,7 +125,12 @@ This makes H2HMem fundamentally different from prior benchmarks that focus on si
 
 ## 📊 Main Results
 
-We evaluate multiple baseline methods on H2HMem across text-based and multimodal approaches.
+Experiments reveal substantial limitations in current memory systems. The best weighted average LLM-as-Judge score reaches only 0.5757 (A-Mem). Four major bottlenecks are identified:
+
+- **Cross-modal alignment** remains challenging, with consistent gaps between unimodal and cross-modal retrieval.
+- **Weak distractor filtering** despite successful retrieval, showing large recall–precision gaps across methods.
+- **Limited causal reasoning** and adaptation to human referential conventions, particularly in Multimodal Causal Reasoning (MCR) and Reference & Evolution Tracking (RET).
+- **Poor robustness to conflicting information**, with near-zero lexical precision and recall in Conflict Detection (CD).
 
 <p align="center">
   <img src="assets/LLM_judge_result.png" width="85%" alt="H2HMem LLM judge evaluation" />

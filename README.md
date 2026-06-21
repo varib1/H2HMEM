@@ -6,6 +6,7 @@
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2606.09461v1">📄 Paper</a> •
   <a href="https://huggingface.co/datasets/varib/H2HMEM">🤗 Hugging Face Dataset</a> •
   <a href="https://h2hmemleaderboard1.vercel.app/">🏆 Leaderboard</a> •
   <a href="https://h2hmemprojectpage.vercel.app/">🌐 Project Page</a> •
